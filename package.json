@@ -12,14 +12,14 @@
     "npm": ">=5"
   },
   "dependencies": {
-    "@angular/common": "4.2.3",
-    "@angular/compiler": "4.2.3",
-    "@angular/core": "4.2.3",
-    "@angular/forms": "4.2.3",
-    "@angular/http": "4.2.3",
-    "@angular/platform-browser": "4.2.3",
-    "@angular/platform-browser-dynamic": "4.2.3",
-    "@angular/router": "4.2.3",
+    "@angular/common": "4.2.4",
+    "@angular/compiler": "4.2.4",
+    "@angular/core": "4.2.4",
+    "@angular/forms": "4.2.4",
+    "@angular/http": "4.2.4",
+    "@angular/platform-browser": "4.2.4",
+    "@angular/platform-browser-dynamic": "4.2.4",
+    "@angular/router": "4.2.4",
     "core-js": "2.4.1",
     "es6-shim": "0.35.3",
     "reflect-metadata": "0.1.10",
@@ -28,15 +28,15 @@
     "zone.js": "0.8.12"
   },
   "devDependencies": {
-    "@angular/compiler-cli": "4.2.3",
+    "@angular/compiler-cli": "4.2.4",
     "@types/dateformat": "1.0.1",
     "@types/es6-shim": "0.31.34",
     "@types/googlemaps": "3.26.14",
-    "@types/jquery": "3.2.1",
+    "@types/jquery": "3.2.4",
     "bootstrap-sass": "3.3.7",
     "browserify": "14.4.0",
     "concat-cli": "4.0.0",
-    "convict": "3.0.0",
+    "convict": "4.0.0",
     "cpy-cli": "1.0.1",
     "dateformat": "2.0.0",
     "html-minifier": "3.5.2",
@@ -57,7 +57,7 @@
     "tslint": "5.4.3",
     "typedoc": "0.7.1",
     "typescript": "2.3.4",
-    "uglify-js": "3.0.18"
+    "uglify-js": "3.0.19"
   },
   "scripts": {
     "postinstall": "npm prune",
