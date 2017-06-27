@@ -1,4 +1,3 @@
-import Event = JQuery.Event;
 import {Component, OnInit} from '@angular/core';
 import {AppService} from '../services/app';
 import {cancelableDelay} from '../../shared/common/delay';
@@ -21,7 +20,7 @@ export class AppComponent implements OnInit {
 
   initSmoothPageScroll() {
     (($: JQueryStatic) => {
-      $('a[href*="#"]:not([href="#"])').click((e: Event) => {
+      $('a[href*="#"]:not([href="#"])').click((e: JQuery.Event) => {
         e.preventDefault();
         const targetEl: HTMLAnchorElement = <HTMLAnchorElement><any>e.target;
         if (location.pathname.replace(/^\//, '') === targetEl.pathname.replace(/^\//, '')
@@ -36,7 +35,7 @@ export class AppComponent implements OnInit {
         }
       });
 
-      $('#js_menu_button').click((e: JQueryEventObject) => {
+      $('#js_menu_button').click((e: JQuery.Event) => {
         e.preventDefault();
 
         if (this._timeoutMenuAnimate) {

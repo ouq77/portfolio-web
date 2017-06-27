@@ -32,7 +32,7 @@
     "@types/dateformat": "1.0.1",
     "@types/es6-shim": "0.31.34",
     "@types/googlemaps": "3.26.14",
-    "@types/jquery": "3.2.4",
+    "@types/jquery": "3.2.5",
     "bootstrap-sass": "3.3.7",
     "browserify": "14.4.0",
     "concat-cli": "4.0.0",

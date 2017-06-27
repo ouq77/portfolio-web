@@ -122,7 +122,7 @@ export class ContactMapComponent implements OnInit {
 
   initClickListener() {
     (($: JQueryStatic) => {
-      $('#js_click_address').click((e: JQueryEventObject) => {
+      $('#js_click_address').click((e: JQuery.Event) => {
         e.preventDefault();
         if (this._cityMarkers.length === CITIES.length) {
           let cityMarker = this._cityMarkers[this._cityMarkers.length - 1];
@@ -138,7 +138,7 @@ export class ContactMapComponent implements OnInit {
     this._markerWait = wait;
     (($: JQueryStatic) => {
       $('.js_trigger_map_marker').each((index: number, triggerEl: Element) => {
-        if (!this._mapMarkersDrawn && elementInViewport($, $(triggerEl))) {
+        if (!this._mapMarkersDrawn && elementInViewport($, <JQuery>$(triggerEl))) {
           if (this._tilesLoaded) {
             this._mapMarkersDrawn = true;
             delay(this._markerWait)
