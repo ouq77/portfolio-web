@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {FormGroup, FormControl, Validators, FormBuilder} from '@angular/forms';
 import {ContactService} from '../services/contact';
-import {ErrorMessage} from '../definitions/error.message';
+import {IErrorMessage} from '../definitions/error.message';
 import {ContactMessage} from '../definitions/contact.message';
 import {WrappedError} from '../../shared/definitions/wrapped.error';
 
@@ -14,7 +14,7 @@ import {WrappedError} from '../../shared/definitions/wrapped.error';
 })
 export class ContactFormComponent implements OnInit {
   public email: FormControl;
-  public errorMessages: Array<ErrorMessage>;
+  public errorMessages: Array<IErrorMessage>;
   public form: FormGroup;
   public heuning: FormControl;
   public message: FormControl;
@@ -98,7 +98,7 @@ export class ContactFormComponent implements OnInit {
   }
 
   errorFromCode(code: string): string {
-    return this.errorMessages.find((message: ErrorMessage) => {
+    return this.errorMessages.find((message: IErrorMessage) => {
       return message.code === code;
     }).message;
   }

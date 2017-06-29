@@ -1,7 +1,7 @@
 /**
  * Interface for ErrorMessage
  */
-export interface ErrorMessage {
+export interface IErrorMessage {
   code: string;
   message: string;
 }

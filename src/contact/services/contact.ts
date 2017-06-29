@@ -3,7 +3,7 @@ import {Http, Headers, RequestOptions} from '@angular/http';
 import {Observable} from 'rxjs/Observable';
 import 'rxjs/Rx';
 import {ERROR_MESSAGES} from './../models/error.messages';
-import {ErrorMessage} from '../definitions/error.message';
+import {IErrorMessage} from '../definitions/error.message';
 import {ContactMessage} from '../definitions/contact.message';
 import {WrappedError} from '../../shared/definitions/wrapped.error';
 import {wrapError} from '../../shared/common/wrap.error';
@@ -12,7 +12,7 @@ import {wrapError} from '../../shared/common/wrap.error';
 export class ContactService {
   private _http: Http;
 
-  static getErrorMessages(): Promise<Array<ErrorMessage>> {
+  static getErrorMessages(): Promise<Array<IErrorMessage>> {
     return Promise.resolve(ERROR_MESSAGES);
   }
 

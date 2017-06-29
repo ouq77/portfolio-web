@@ -3,7 +3,7 @@
  */
 export interface Link {
   /**
-   * Icon for the link
+   * IIcon for the link
    */
   icon: string;
   /**

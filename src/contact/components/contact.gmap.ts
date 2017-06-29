@@ -3,6 +3,7 @@ import event = google.maps.event;
 import InfoWindow = google.maps.InfoWindow;
 import LatLng = google.maps.LatLng;
 import Map = google.maps.Map;
+import MapOptions = google.maps.MapOptions;
 import Marker = google.maps.Marker;
 import Polyline = google.maps.Polyline;
 import {Component, OnInit} from '@angular/core';
@@ -12,8 +13,8 @@ import {CITIES} from '../models/cities';
 import {AIRPORTS} from '../models/airports';
 import {JOURNEYS, UPCOMING_JOURNEYS} from '../models/journeys';
 import * as points from '../models/points';
-import {City} from '../definitions/city';
-import {Airport} from '../definitions/airport';
+import {ICity} from '../definitions/city';
+import {IAirport} from '../definitions/airport';
 import {cancelableDelay, delay} from '../../shared/common/delay';
 import {elementInViewport} from '../../shared/common/element.in.viewport';
 
@@ -64,13 +65,13 @@ export class ContactMapComponent implements OnInit {
     (($: JQueryStatic) => {
       delay(250)
         .then(() => {
-          let mapOptions = Object.assign({}, MAP_OPTIONS);
+          let mapOptions: MapOptions = Object.assign({}, MAP_OPTIONS);
           if ($(window).width() < MAP_MAX_MOBILE_ZOOM_ZERO) {
             mapOptions.zoom = 1;
             mapOptions.minZoom = 1;
           }
           this.map = new Map(document.getElementById('map-canvas'), mapOptions);
-          JOURNEYS.forEach((journey: Array<Airport>, index: number) => {
+          JOURNEYS.forEach((journey: Array<IAirport>, index: number) => {
             this._journeyLines[index] = new Polyline({
               geodesic: true,
               map: this.map,
@@ -79,15 +80,11 @@ export class ContactMapComponent implements OnInit {
               strokeWeight: 2,
             });
           });
-          UPCOMING_JOURNEYS.forEach((upcomingJourney: Array<Airport>, index: number) => {
+          UPCOMING_JOURNEYS.forEach((upcomingJourney: Array<IAirport>, index: number) => {
             this._upcomingJourneyLines[index] = new Polyline({
               geodesic: true,
               icons: [{
-                icon: {
-                  path: 'M 0, -1 0,1',
-                  strokeOpacity: 0.5,
-                  strokeWeight: 2,
-                },
+                icon: {path: 'M 0, -1 0,1', strokeOpacity: 0.5, strokeWeight: 2},
                 offset: '0',
                 repeat: '12px',
               }],
@@ -143,57 +140,46 @@ export class ContactMapComponent implements OnInit {
             this._mapMarkersDrawn = true;
             delay(this._markerWait)
               .then(() => {
-                AIRPORTS.forEach((airport: Airport) => {
+                AIRPORTS.forEach((airport: IAirport) => {
                   this._airportMarkerDropWait++;
                   delay(this._airportMarkerDropWait * 135)
                     .then(() => {
                       let marker = new Marker({
                         animation: Animation.DROP,
                         draggable: false,
-                        icon: {
-                          size: points.AIRPORT_SIZE,
-                          url: 'assets/images/markerairport.png',
-                        },
+                        icon: {size: points.AIRPORT_SIZE, url: 'assets/images/markerairport.png'},
                         map: this.map,
                         position: new LatLng(airport.loc.lat, airport.loc.lng),
                         title: `${airport.iataCode} // ${airport.name}`,
                         zIndex: 100,
                       });
                       event.addListener(marker, 'click', () => {
-                        this.toggleBounce(
-                          marker,
-                          airport.iataCode,
-                          `${airport.name}<br>${airport.city}, ${airport.country}`,
-                        );
+                        this.toggleBounce(marker, airport.iataCode, `${airport.name}<br>${airport.city}, ${airport.country}`);
                       });
                     });
                 });
-                JOURNEYS.forEach((journey: Array<Airport>, index: number) => {
+                JOURNEYS.forEach((journey: Array<IAirport>, index: number) => {
                   let journeyLine: Polyline = this._journeyLines[index];
-                  journey.forEach((leg: Airport) => {
+                  journey.forEach((leg: IAirport) => {
                     this._journeyLineDrawWait++;
                     delay(this._journeyLineDrawWait * 65)
                       .then(() => {
-                        journeyLine.getPath().push(
-                          new LatLng(leg.loc.lat, leg.loc.lng),
-                        );
+                        journeyLine.getPath().push(new LatLng(leg.loc.lat, leg.loc.lng));
                       });
                   });
                 });
-                UPCOMING_JOURNEYS.forEach((journey: Array<Airport>, index: number) => {
+                UPCOMING_JOURNEYS.forEach((journey: Array<IAirport>, index: number) => {
                   let upcomingJourneyLine: Polyline = this._upcomingJourneyLines[index];
-                  journey.forEach((leg: Airport) => {
+                  journey.forEach((leg: IAirport) => {
                     this._journeyLineDrawWait++;
                     delay(this._journeyLineDrawWait * 65)
                       .then(() => {
-                        upcomingJourneyLine.getPath().push(
-                          new LatLng(leg.loc.lat, leg.loc.lng),
-                        );
+                        upcomingJourneyLine.getPath().push(new LatLng(leg.loc.lat, leg.loc.lng));
                       });
                   });
                 });
                 this._additionalMarkerWait = ((AIRPORTS.length - 1) * 100);
-                CITIES.forEach((city: City, index: number) => {
+                CITIES.forEach((city: ICity, index: number) => {
                   delay((index * 650) + this._additionalMarkerWait)
                     .then(() => {
                       this.addMarker(city);
@@ -211,7 +197,7 @@ export class ContactMapComponent implements OnInit {
     })(jQuery);
   }
 
-  addMarker(city: City) {
+  addMarker(city: ICity) {
     let cityMarker: Marker = new Marker({
       animation: Animation.DROP,
       draggable: false,
@@ -254,12 +240,7 @@ export class ContactMapComponent implements OnInit {
     this._markerBounce = marker;
     this._markerBounce.setAnimation(Animation.BOUNCE);
     this._infoWindow.close();
-    this._infoWindow.setContent(`
-        <div class="map-info-window">
-          <h3>${infoTitle}</h3>
-          <p>${infoContent}</p>
-        </div>
-      `);
+    this._infoWindow.setContent(`<div class="map-info-window"><h3>${infoTitle}</h3><p>${infoContent}</p></div>`);
     this._infoWindow.open(this.map, this._markerBounce);
     this._timeoutMarkerBounce = cancelableDelay(2000, () => {
       this._markerBounce.setAnimation(null);

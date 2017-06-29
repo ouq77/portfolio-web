@@ -1,10 +1,10 @@
-import {ErrorMessage} from './../definitions/error.message';
+import {IErrorMessage} from './../definitions/error.message';
 
 /**
  * Array of Journeys for the Contact section
- * @type {Airport[][]}
+ * @type {IAirport[][]}
  */
-export const ERROR_MESSAGES: Array<ErrorMessage> = [
+export const ERROR_MESSAGES: Array<IErrorMessage> = [
   {
     code: 'e_spam',
     message: 'The spam filter has been triggered',
