@@ -34,23 +34,23 @@ const GOOGLE_MAPS_API_KEY = config.get('GOOGLE_MAPS_API_KEY');
 const GOOGLE_SITE_VERIFICATION = config.get('GOOGLE_SITE_VERIFICATION');
 const NAME = 'Louw Swart';
 const TITLE = `${NAME} // Portfolio`;
-const URL = 'https://portfolio.ouq77.kiwi/';
+const SITE_URL = 'https://portfolio.ouq77.kiwi/';
 
 const now = new Date();
 
 const META_TAGS = {
   facebook: {
     'og:description': DESCRIPTION,
-    'og:image': `${URL}assets/images/icon.png`,
+    'og:image': `${SITE_URL}assets/images/icon.png`,
     'og:site_name': 'portfolio.ouq77.kiwi',
     'og:title': TITLE,
     'og:type': 'website',
     'og:updated_time': dateFormat(now, 'isoDateTime'),
-    'og:url': URL,
+    'og:url': SITE_URL,
   },
   google: {
     name: NAME,
-    url: URL,
+    url: SITE_URL,
   },
   linkPreconnectTags: [
     '//fonts.gstatic.com',
@@ -61,7 +61,7 @@ const META_TAGS = {
   ],
   linkTags: {
     author: 'https://plus.google.com/u/0/+LouwSwart/posts',
-    canonical: URL,
+    canonical: SITE_URL,
     publisher: 'https://plus.google.com/u/0/+LouwSwart',
   },
   site: {
@@ -74,7 +74,7 @@ const META_TAGS = {
     'twitter:card': 'summary',
     'twitter:creator': '@ouq77',
     'twitter:description': DESCRIPTION,
-    'twitter:image': `${URL}assets/images/icon.png`,
+    'twitter:image': `${SITE_URL}assets/images/icon.png`,
     'twitter:site': '@ouq77',
     'twitter:title': TITLE,
   },
