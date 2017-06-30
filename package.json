@@ -12,23 +12,19 @@
     "npm": ">=5"
   },
   "dependencies": {
-    "@angular/common": "4.2.4",
-    "@angular/compiler": "4.2.4",
-    "@angular/core": "4.2.4",
-    "@angular/forms": "4.2.4",
-    "@angular/http": "4.2.4",
-    "@angular/platform-browser": "4.2.4",
-    "@angular/platform-browser-dynamic": "4.2.4",
-    "@angular/router": "4.2.4",
+    "@angular/common": "4.2.5",
+    "@angular/compiler": "4.2.5",
+    "@angular/core": "4.2.5",
+    "@angular/forms": "4.2.5",
+    "@angular/http": "4.2.5",
+    "@angular/platform-browser": "4.2.5",
+    "@angular/platform-browser-dynamic": "4.2.5",
     "core-js": "2.4.1",
-    "es6-shim": "0.35.3",
-    "reflect-metadata": "0.1.10",
     "rxjs": "5.4.1",
-    "systemjs": "0.20.14",
     "zone.js": "0.8.12"
   },
   "devDependencies": {
-    "@angular/compiler-cli": "4.2.4",
+    "@angular/compiler-cli": "4.2.5",
     "@types/dateformat": "1.0.1",
     "@types/es6-shim": "0.31.34",
     "@types/googlemaps": "3.26.14",
@@ -57,7 +53,7 @@
     "tslint": "5.4.3",
     "typedoc": "0.7.1",
     "typescript": "2.3.4",
-    "uglify-js": "3.0.20"
+    "uglify-js": "3.0.22"
   },
   "scripts": {
     "postinstall": "npm prune",
