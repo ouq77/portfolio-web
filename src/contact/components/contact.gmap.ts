@@ -5,10 +5,10 @@ import MapOptions = google.maps.MapOptions;
 import Marker = google.maps.Marker;
 import Polyline = google.maps.Polyline;
 import {Component, OnInit} from '@angular/core';
+import {MapUtil} from './gmap/map.util';
 import {MarkerUtil} from './gmap/marker.util';
 import {MAP_OPTIONS} from '../models/map.config';
-import {CURRENT_LOCATION} from '../models/cities';
-import {CITIES} from '../models/cities';
+import {CITIES, CURRENT_LOCATION} from '../models/cities';
 import {AIRPORTS} from '../models/airports';
 import {JOURNEYS, UPCOMING_JOURNEYS} from '../models/journeys';
 import * as points from '../models/points';
@@ -32,6 +32,7 @@ export class ContactMapComponent implements OnInit {
   private _journeyLines: Array<Polyline>;
   private _journeyLineDrawWait: number;
   private _mapMarkersDrawn: boolean;
+  private _mapUtil: MapUtil;
   private _markerUtil: MarkerUtil;
   private _markerWait: number;
   private _tilesLoaded: boolean;
@@ -46,6 +47,7 @@ export class ContactMapComponent implements OnInit {
     this._journeyLines = [];
     this._journeyLineDrawWait = 0;
     this._mapMarkersDrawn = false;
+    this._mapUtil = new MapUtil();
     this._markerUtil = new MarkerUtil();
     this._tilesLoaded = false;
     this._upcomingJourneyLines = [];
@@ -54,7 +56,7 @@ export class ContactMapComponent implements OnInit {
   ngOnInit() {
     this.initializeMap();
     this.initScrollListener();
-    this.initClickListener();
+    this._markerUtil.initClickListener(this.map, this._cityMarkers);
   }
 
   initializeMap() {
@@ -70,21 +72,13 @@ export class ContactMapComponent implements OnInit {
           this.map = new Map(document.getElementById('map-canvas'), mapOptions);
           JOURNEYS.forEach((journey: Array<IAirport>, index: number) => {
             this._journeyLines[index] = new Polyline({
-              geodesic: true,
-              map: this.map,
-              strokeColor: '#1b1f29',
-              strokeOpacity: 0.5,
-              strokeWeight: 2,
+              geodesic: true, map: this.map, strokeColor: '#1b1f29', strokeOpacity: 0.5, strokeWeight: 2,
             });
           });
           UPCOMING_JOURNEYS.forEach((upcomingJourney: Array<IAirport>, index: number) => {
             this._upcomingJourneyLines[index] = new Polyline({
               geodesic: true,
-              icons: [{
-                icon: {path: 'M 0, -1 0,1', strokeOpacity: 0.5, strokeWeight: 2},
-                offset: '0',
-                repeat: '12px',
-              }],
+              icons: [{icon: {path: 'M 0, -1 0,1', strokeOpacity: 0.5, strokeWeight: 2}, offset: '0', repeat: '12px'}],
               map: this.map,
               strokeOpacity: 0,
             });
@@ -110,20 +104,6 @@ export class ContactMapComponent implements OnInit {
             this.dropMarkers(500);
           }
         });
-      });
-    })(jQuery);
-  }
-
-  initClickListener() {
-    (($: JQueryStatic) => {
-      $('#js_click_address').click((e: JQuery.Event) => {
-        e.preventDefault();
-        if (this._cityMarkers.length === CITIES.length) {
-          let cityMarker = this._cityMarkers[this._cityMarkers.length - 1];
-          if (cityMarker) {
-            this._markerUtil.toggleBounce(this.map, cityMarker, CURRENT_LOCATION.name, CURRENT_LOCATION.description);
-          }
-        }
       });
     })(jQuery);
   }
@@ -174,29 +154,12 @@ export class ContactMapComponent implements OnInit {
                 delay(((CITIES.length) * 700) + this._additionalMarkerWait)
                   .then(() => {
                     this.map.panTo(points.WELLINGTON);
-                    this.zoomMap(this.map.getZoom() + 1, $(window).width() >= 1000 ? 11 : 10);
+                    this._mapUtil.zoomMap(this.map, this.map.getZoom() + 1, $(window).width() >= 1000 ? 11 : 10);
                   });
               });
           }
         }
       });
     })(jQuery);
-  }
-
-  zoomMap(nextZoomLevel: number = 0, maxZoom: number = 0) {
-    if (nextZoomLevel < maxZoom) {
-      this._tilesLoadedEvent = event.addListener(this.map, 'tilesloaded', () => {
-        event.removeListener(this._tilesLoadedEvent);
-        this.zoomMap(this.map.getZoom() + 1, maxZoom);
-      });
-      delay(280)
-        .then(() => {
-          this.map.setZoom(nextZoomLevel);
-        });
-    } else {
-      this.map.setOptions({
-        scrollwheel: true,
-      });
-    }
   }
 }

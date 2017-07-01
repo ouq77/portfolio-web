@@ -4,6 +4,7 @@ import InfoWindow = google.maps.InfoWindow;
 import LatLng = google.maps.LatLng;
 import Map = google.maps.Map;
 import Marker = google.maps.Marker;
+import {CITIES, CURRENT_LOCATION} from '../../models/cities';
 import {IAirport} from '../../definitions/airport';
 import {ICity} from '../../definitions/city';
 import * as points from '../../models/points';
@@ -47,6 +48,20 @@ export class MarkerUtil {
     event.addListener(cityMarker, 'click', () => {
       this.toggleBounce(map, cityMarker, city.name, city.description);
     });
+  }
+
+  initClickListener(map: Map, cityMarkers: Array<Marker>) {
+    (($: JQueryStatic) => {
+      $('#js_click_address').click((e: JQuery.Event) => {
+        e.preventDefault();
+        if (cityMarkers.length === CITIES.length) {
+          let cityMarker = cityMarkers[cityMarkers.length - 1];
+          if (cityMarker) {
+            this.toggleBounce(map, cityMarker, CURRENT_LOCATION.name, CURRENT_LOCATION.description);
+          }
+        }
+      });
+    })(jQuery);
   }
 
   toggleBounce(map: Map, marker: Marker, infoTitle: string, infoContent: string) {

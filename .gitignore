@@ -45,6 +45,7 @@ src/**/*.ngstyle.ts
 src/**/*.js.map
 tools/**/*.js
 tools/**/*.js.map
+!tools/compile.js
 !src/assets/js/**
 
 # Generated folders
