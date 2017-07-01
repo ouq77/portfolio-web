@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>MapOptions | Louw Swart // Portfolio</title>
+	<title>ICity | Louw Swart // Portfolio</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -54,25 +54,38 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_src_contact_definitions_map_options_.html">&quot;src/contact/definitions/map.options&quot;</a>
+					<a href="../modules/_src_contact_definitions_city_.html">&quot;src/contact/definitions/city&quot;</a>
 				</li>
 				<li>
-					<a href="_src_contact_definitions_map_options_.mapoptions.html">MapOptions</a>
+					<a href="_src_contact_definitions_city_.icity.html">ICity</a>
 				</li>
 			</ul>
-			<h1>Interface MapOptions</h1>
+			<h1>Interface ICity</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Interface for a City object</p>
+					</div>
+				</div>
+			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">MapOptions</span>
+						<span class="target">ICity</span>
 					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel">
+				<h3>Implemented by</h3>
+				<ul class="tsd-hierarchy">
+					<li><a href="../classes/_src_contact_definitions_city_.city.html" class="tsd-signature-type">City</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -82,11 +95,10 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_src_contact_definitions_map_options_.mapoptions.html#center" class="tsd-kind-icon">center</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_src_contact_definitions_map_options_.mapoptions.html#minzoom" class="tsd-kind-icon">min<wbr>Zoom</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_src_contact_definitions_map_options_.mapoptions.html#scrollwheel" class="tsd-kind-icon">scrollwheel</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_src_contact_definitions_map_options_.mapoptions.html#styles" class="tsd-kind-icon">styles</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_src_contact_definitions_map_options_.mapoptions.html#zoom" class="tsd-kind-icon">zoom</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_src_contact_definitions_city_.icity.html#description" class="tsd-kind-icon">description</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_src_contact_definitions_city_.icity.html#icon" class="tsd-kind-icon">icon</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_src_contact_definitions_city_.icity.html#loc" class="tsd-kind-icon">loc</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_src_contact_definitions_city_.icity.html#name" class="tsd-kind-icon">name</a></li>
 							</ul>
 						</section>
 					</div>
@@ -95,54 +107,64 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="center" class="tsd-anchor"></a>
-					<h3>center</h3>
-					<div class="tsd-signature tsd-kind-icon">center<span class="tsd-signature-symbol">:</span> <a href="_src_contact_definitions_point_.point.html" class="tsd-signature-type">Point</a></div>
+					<a name="description" class="tsd-anchor"></a>
+					<h3>description</h3>
+					<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ouq77/portfolio-web/blob/4e4b3028/src/contact/definitions/map.options.ts#L6">src/contact/definitions/map.options.ts:6</a></li>
+							<li>Defined in <a href="https://github.com/ouq77/portfolio-web/blob/907d4ca05/src/contact/definitions/city.ts#L11">src/contact/definitions/city.ts:11</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Location title</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="minzoom" class="tsd-anchor"></a>
-					<h3>min<wbr>Zoom</h3>
-					<div class="tsd-signature tsd-kind-icon">min<wbr>Zoom<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<a name="icon" class="tsd-anchor"></a>
+					<h3>icon</h3>
+					<div class="tsd-signature tsd-kind-icon">icon<span class="tsd-signature-symbol">:</span> <a href="_src_contact_definitions_icon_.iicon.html" class="tsd-signature-type">IIcon</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ouq77/portfolio-web/blob/4e4b3028/src/contact/definitions/map.options.ts#L8">src/contact/definitions/map.options.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/ouq77/portfolio-web/blob/907d4ca05/src/contact/definitions/city.ts#L15">src/contact/definitions/city.ts:15</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Location icon</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="scrollwheel" class="tsd-anchor"></a>
-					<h3>scrollwheel</h3>
-					<div class="tsd-signature tsd-kind-icon">scrollwheel<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<a name="loc" class="tsd-anchor"></a>
+					<h3>loc</h3>
+					<div class="tsd-signature tsd-kind-icon">loc<span class="tsd-signature-symbol">:</span> <a href="_src_contact_definitions_point_.ipoint.html" class="tsd-signature-type">IPoint</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ouq77/portfolio-web/blob/4e4b3028/src/contact/definitions/map.options.ts#L5">src/contact/definitions/map.options.ts:5</a></li>
+							<li>Defined in <a href="https://github.com/ouq77/portfolio-web/blob/907d4ca05/src/contact/definitions/city.ts#L19">src/contact/definitions/city.ts:19</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Location of the city</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="styles" class="tsd-anchor"></a>
-					<h3>styles</h3>
-					<div class="tsd-signature tsd-kind-icon">styles<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="_src_contact_definitions_map_style_.mapstyle.html" class="tsd-signature-type">MapStyle</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<a name="name" class="tsd-anchor"></a>
+					<h3>name</h3>
+					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/ouq77/portfolio-web/blob/4e4b3028/src/contact/definitions/map.options.ts#L9">src/contact/definitions/map.options.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/ouq77/portfolio-web/blob/907d4ca05/src/contact/definitions/city.ts#L23">src/contact/definitions/city.ts:23</a></li>
 						</ul>
 					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="zoom" class="tsd-anchor"></a>
-					<h3>zoom</h3>
-					<div class="tsd-signature tsd-kind-icon">zoom<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/ouq77/portfolio-web/blob/4e4b3028/src/contact/definitions/map.options.ts#L7">src/contact/definitions/map.options.ts:7</a></li>
-						</ul>
-					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Location name</p>
+						</div>
+					</div>
 				</section>
 			</section>
 		</div>
@@ -153,31 +175,31 @@
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 					<li class="current tsd-kind-external-module">
-						<a href="../modules/_src_contact_definitions_map_options_.html">"src/contact/definitions/map.options"</a>
+						<a href="../modules/_src_contact_definitions_city_.html">"src/contact/definitions/city"</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-class tsd-parent-kind-external-module">
+						<a href="../classes/_src_contact_definitions_city_.city.html" class="tsd-kind-icon">City</a>
+					</li>
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_src_contact_definitions_map_options_.mapoptions.html" class="tsd-kind-icon">Map<wbr>Options</a>
+						<a href="_src_contact_definitions_city_.icity.html" class="tsd-kind-icon">ICity</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_src_contact_definitions_map_options_.mapoptions.html#center" class="tsd-kind-icon">center</a>
+								<a href="_src_contact_definitions_city_.icity.html#description" class="tsd-kind-icon">description</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_src_contact_definitions_map_options_.mapoptions.html#minzoom" class="tsd-kind-icon">min<wbr>Zoom</a>
+								<a href="_src_contact_definitions_city_.icity.html#icon" class="tsd-kind-icon">icon</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_src_contact_definitions_map_options_.mapoptions.html#scrollwheel" class="tsd-kind-icon">scrollwheel</a>
+								<a href="_src_contact_definitions_city_.icity.html#loc" class="tsd-kind-icon">loc</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_src_contact_definitions_map_options_.mapoptions.html#styles" class="tsd-kind-icon">styles</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="_src_contact_definitions_map_options_.mapoptions.html#zoom" class="tsd-kind-icon">zoom</a>
+								<a href="_src_contact_definitions_city_.icity.html#name" class="tsd-kind-icon">name</a>
 							</li>
 						</ul>
 					</li>
