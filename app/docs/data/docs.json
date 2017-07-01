@@ -30,14 +30,14 @@
 								"name": "Component"
 							},
 							"arguments": {
-								"obj": "{\n  selector: 'about',\n  styleUrls: [\n    './about.css',\n  ],\n  templateUrl: 'about.htm',\n}"
+								"obj": "{\n  selector: 'about',\n  styleUrls: ['./about.css'],\n  templateUrl: 'about.htm',\n}"
 							}
 						}
 					],
 					"sources": [
 						{
 							"fileName": "src/about/components/about.ts",
-							"line": 10,
+							"line": 8,
 							"character": 27
 						}
 					]
@@ -142,7 +142,7 @@
 								"name": "Component"
 							},
 							"arguments": {
-								"obj": "{\n  selector: 'container',\n  styleUrls: [\n    './app.css',\n  ],\n  templateUrl: 'app.htm',\n}"
+								"obj": "{\n  selector: 'container',\n  styleUrls: ['./app.css'],\n  templateUrl: 'app.htm',\n}"
 							}
 						}
 					],
@@ -171,7 +171,7 @@
 							"sources": [
 								{
 									"fileName": "src/app/components/app.ts",
-									"line": 21,
+									"line": 19,
 									"character": 22
 								}
 							]
@@ -200,7 +200,7 @@
 							"sources": [
 								{
 									"fileName": "src/app/components/app.ts",
-									"line": 16,
+									"line": 14,
 									"character": 10
 								}
 							]
@@ -219,7 +219,7 @@
 					"sources": [
 						{
 							"fileName": "src/app/components/app.ts",
-							"line": 13,
+							"line": 11,
 							"character": 25
 						}
 					],
@@ -359,14 +359,14 @@
 								"name": "Component"
 							},
 							"arguments": {
-								"obj": "{\n  selector: 'contact',\n  styleUrls: [\n    './contact.css',\n  ],\n  templateUrl: 'contact.htm',\n}"
+								"obj": "{\n  selector: 'contact',\n  styleUrls: ['./contact.css'],\n  templateUrl: 'contact.htm',\n}"
 							}
 						}
 					],
 					"sources": [
 						{
 							"fileName": "src/contact/components/contact.ts",
-							"line": 10,
+							"line": 8,
 							"character": 29
 						}
 					]
@@ -415,7 +415,7 @@
 								"name": "Component"
 							},
 							"arguments": {
-								"obj": "{\n  selector: 'contact-form',\n  styleUrls: [\n    './contact.form.css',\n  ],\n  templateUrl: 'contact.form.htm',\n}"
+								"obj": "{\n  selector: 'contact-form',\n  styleUrls: ['./contact.form.css'],\n  templateUrl: 'contact.form.htm',\n}"
 							}
 						}
 					],
@@ -470,7 +470,7 @@
 							"sources": [
 								{
 									"fileName": "src/contact/components/contact.form.ts",
-									"line": 27,
+									"line": 25,
 									"character": 42
 								}
 							]
@@ -487,7 +487,7 @@
 							"sources": [
 								{
 									"fileName": "src/contact/components/contact.form.ts",
-									"line": 16,
+									"line": 14,
 									"character": 14
 								}
 							],
@@ -508,7 +508,7 @@
 							"sources": [
 								{
 									"fileName": "src/contact/components/contact.form.ts",
-									"line": 17,
+									"line": 15,
 									"character": 22
 								}
 							],
@@ -536,7 +536,7 @@
 							"sources": [
 								{
 									"fileName": "src/contact/components/contact.form.ts",
-									"line": 18,
+									"line": 16,
 									"character": 13
 								}
 							],
@@ -557,7 +557,7 @@
 							"sources": [
 								{
 									"fileName": "src/contact/components/contact.form.ts",
-									"line": 19,
+									"line": 17,
 									"character": 16
 								}
 							],
@@ -578,7 +578,7 @@
 							"sources": [
 								{
 									"fileName": "src/contact/components/contact.form.ts",
-									"line": 20,
+									"line": 18,
 									"character": 16
 								}
 							],
@@ -599,7 +599,7 @@
 							"sources": [
 								{
 									"fileName": "src/contact/components/contact.form.ts",
-									"line": 21,
+									"line": 19,
 									"character": 13
 								}
 							],
@@ -620,7 +620,7 @@
 							"sources": [
 								{
 									"fileName": "src/contact/components/contact.form.ts",
-									"line": 22,
+									"line": 20,
 									"character": 25
 								}
 							],
@@ -641,7 +641,7 @@
 							"sources": [
 								{
 									"fileName": "src/contact/components/contact.form.ts",
-									"line": 23,
+									"line": 21,
 									"character": 21
 								}
 							],
@@ -662,7 +662,7 @@
 							"sources": [
 								{
 									"fileName": "src/contact/components/contact.form.ts",
-									"line": 24,
+									"line": 22,
 									"character": 22
 								}
 							],
@@ -683,7 +683,7 @@
 							"sources": [
 								{
 									"fileName": "src/contact/components/contact.form.ts",
-									"line": 25,
+									"line": 23,
 									"character": 22
 								}
 							],
@@ -704,7 +704,7 @@
 							"sources": [
 								{
 									"fileName": "src/contact/components/contact.form.ts",
-									"line": 26,
+									"line": 24,
 									"character": 19
 								}
 							],
@@ -750,7 +750,7 @@
 							"sources": [
 								{
 									"fileName": "src/contact/components/contact.form.ts",
-									"line": 106,
+									"line": 104,
 									"character": 13
 								}
 							]
@@ -792,7 +792,7 @@
 							"sources": [
 								{
 									"fileName": "src/contact/components/contact.form.ts",
-									"line": 100,
+									"line": 98,
 									"character": 15
 								}
 							]
@@ -821,7 +821,7 @@
 							"sources": [
 								{
 									"fileName": "src/contact/components/contact.form.ts",
-									"line": 51,
+									"line": 49,
 									"character": 18
 								}
 							]
@@ -864,7 +864,7 @@
 							"sources": [
 								{
 									"fileName": "src/contact/components/contact.form.ts",
-									"line": 85,
+									"line": 83,
 									"character": 14
 								}
 							]
@@ -893,7 +893,7 @@
 							"sources": [
 								{
 									"fileName": "src/contact/components/contact.form.ts",
-									"line": 80,
+									"line": 78,
 									"character": 15
 								}
 							]
@@ -922,7 +922,7 @@
 							"sources": [
 								{
 									"fileName": "src/contact/components/contact.form.ts",
-									"line": 47,
+									"line": 45,
 									"character": 10
 								}
 							]
@@ -951,7 +951,7 @@
 							"sources": [
 								{
 									"fileName": "src/contact/components/contact.form.ts",
-									"line": 59,
+									"line": 57,
 									"character": 9
 								}
 							]
@@ -980,7 +980,7 @@
 							"sources": [
 								{
 									"fileName": "src/contact/components/contact.form.ts",
-									"line": 63,
+									"line": 61,
 									"character": 10
 								}
 							]
@@ -1009,7 +1009,7 @@
 							"sources": [
 								{
 									"fileName": "src/contact/components/contact.form.ts",
-									"line": 115,
+									"line": 113,
 									"character": 18
 								}
 							]
@@ -1059,7 +1059,7 @@
 					"sources": [
 						{
 							"fileName": "src/contact/components/contact.form.ts",
-							"line": 15,
+							"line": 13,
 							"character": 33
 						}
 					],
@@ -1114,7 +1114,7 @@
 								"name": "Component"
 							},
 							"arguments": {
-								"obj": "{\n  selector: 'googlemap',\n  styleUrls: [\n    './contact.gmap.css',\n  ],\n  templateUrl: 'contact.gmap.htm',\n}"
+								"obj": "{\n  selector: 'googlemap',\n  styleUrls: ['./contact.gmap.css'],\n  templateUrl: 'contact.gmap.htm',\n}"
 							}
 						}
 					],
@@ -1144,7 +1144,7 @@
 							"sources": [
 								{
 									"fileName": "src/contact/components/contact.gmap.ts",
-									"line": 41,
+									"line": 39,
 									"character": 49
 								}
 							]
@@ -1161,7 +1161,7 @@
 							"sources": [
 								{
 									"fileName": "src/contact/components/contact.gmap.ts",
-									"line": 28,
+									"line": 26,
 									"character": 12
 								}
 							],
@@ -1208,7 +1208,7 @@
 							"sources": [
 								{
 									"fileName": "src/contact/components/contact.gmap.ts",
-									"line": 111,
+									"line": 106,
 									"character": 13
 								}
 							]
@@ -1237,7 +1237,7 @@
 							"sources": [
 								{
 									"fileName": "src/contact/components/contact.gmap.ts",
-									"line": 95,
+									"line": 90,
 									"character": 20
 								}
 							]
@@ -1266,7 +1266,7 @@
 							"sources": [
 								{
 									"fileName": "src/contact/components/contact.gmap.ts",
-									"line": 62,
+									"line": 60,
 									"character": 15
 								}
 							]
@@ -1295,7 +1295,7 @@
 							"sources": [
 								{
 									"fileName": "src/contact/components/contact.gmap.ts",
-									"line": 56,
+									"line": 54,
 									"character": 10
 								}
 							]
@@ -1330,7 +1330,7 @@
 					"sources": [
 						{
 							"fileName": "src/contact/components/contact.gmap.ts",
-							"line": 27,
+							"line": 25,
 							"character": 32
 						}
 					],
@@ -7788,7 +7788,7 @@
 								"name": "Component"
 							},
 							"arguments": {
-								"obj": "{\n  selector: 'education',\n  styleUrls: [\n    './education.css',\n  ],\n  templateUrl: 'education.htm',\n}"
+								"obj": "{\n  selector: 'education',\n  styleUrls: ['./education.css'],\n  templateUrl: 'education.htm',\n}"
 							}
 						}
 					],
@@ -7832,7 +7832,7 @@
 							"sources": [
 								{
 									"fileName": "src/education/components/education.ts",
-									"line": 16,
+									"line": 14,
 									"character": 46
 								}
 							]
@@ -7849,7 +7849,7 @@
 							"sources": [
 								{
 									"fileName": "src/education/components/education.ts",
-									"line": 15,
+									"line": 13,
 									"character": 19
 								}
 							],
@@ -7871,7 +7871,7 @@
 							"sources": [
 								{
 									"fileName": "src/education/components/education.ts",
-									"line": 14,
+									"line": 12,
 									"character": 16
 								}
 							],
@@ -7911,7 +7911,7 @@
 							"sources": [
 								{
 									"fileName": "src/education/components/education.ts",
-									"line": 33,
+									"line": 31,
 									"character": 15
 								}
 							]
@@ -7940,7 +7940,7 @@
 							"sources": [
 								{
 									"fileName": "src/education/components/education.ts",
-									"line": 27,
+									"line": 25,
 									"character": 12
 								}
 							]
@@ -7969,7 +7969,7 @@
 							"sources": [
 								{
 									"fileName": "src/education/components/education.ts",
-									"line": 22,
+									"line": 20,
 									"character": 10
 								}
 							]
@@ -8004,7 +8004,7 @@
 					"sources": [
 						{
 							"fileName": "src/education/components/education.ts",
-							"line": 13,
+							"line": 11,
 							"character": 31
 						}
 					],
@@ -9117,7 +9117,7 @@
 								"name": "Component"
 							},
 							"arguments": {
-								"obj": "{\n  selector: 'experience',\n  styleUrls: [\n    './experience.css',\n  ],\n  templateUrl: 'experience.htm',\n}"
+								"obj": "{\n  selector: 'experience',\n  styleUrls: ['./experience.css'],\n  templateUrl: 'experience.htm',\n}"
 							}
 						}
 					],
@@ -9134,7 +9134,7 @@
 							"sources": [
 								{
 									"fileName": "src/experience/components/experience.ts",
-									"line": 13,
+									"line": 11,
 									"character": 13
 								}
 							],
@@ -9174,7 +9174,7 @@
 							"sources": [
 								{
 									"fileName": "src/experience/components/experience.ts",
-									"line": 19,
+									"line": 17,
 									"character": 9
 								}
 							]
@@ -9203,7 +9203,7 @@
 							"sources": [
 								{
 									"fileName": "src/experience/components/experience.ts",
-									"line": 15,
+									"line": 13,
 									"character": 10
 								}
 							]
@@ -9229,7 +9229,7 @@
 					"sources": [
 						{
 							"fileName": "src/experience/components/experience.ts",
-							"line": 12,
+							"line": 10,
 							"character": 32
 						}
 					],
@@ -9808,7 +9808,7 @@
 								"name": "Component"
 							},
 							"arguments": {
-								"obj": "{\n  selector: 'footer',\n  styleUrls: [\n    './footer.css',\n  ],\n  templateUrl: 'footer.htm',\n}"
+								"obj": "{\n  selector: 'footer',\n  styleUrls: ['./footer.css'],\n  templateUrl: 'footer.htm',\n}"
 							}
 						}
 					],
@@ -9838,7 +9838,7 @@
 							"sources": [
 								{
 									"fileName": "src/footer/components/footer.ts",
-									"line": 14,
+									"line": 12,
 									"character": 27
 								}
 							]
@@ -9855,7 +9855,7 @@
 							"sources": [
 								{
 									"fileName": "src/footer/components/footer.ts",
-									"line": 14,
+									"line": 12,
 									"character": 20
 								}
 							],
@@ -9876,7 +9876,7 @@
 							"sources": [
 								{
 									"fileName": "src/footer/components/footer.ts",
-									"line": 13,
+									"line": 11,
 									"character": 14
 								}
 							],
@@ -9916,7 +9916,7 @@
 							"sources": [
 								{
 									"fileName": "src/footer/components/footer.ts",
-									"line": 24,
+									"line": 22,
 									"character": 10
 								}
 							]
@@ -9945,7 +9945,7 @@
 							"sources": [
 								{
 									"fileName": "src/footer/components/footer.ts",
-									"line": 20,
+									"line": 18,
 									"character": 10
 								}
 							]
@@ -9979,7 +9979,7 @@
 					"sources": [
 						{
 							"fileName": "src/footer/components/footer.ts",
-							"line": 12,
+							"line": 10,
 							"character": 28
 						}
 					],
@@ -10326,7 +10326,7 @@
 								"name": "Component"
 							},
 							"arguments": {
-								"obj": "{\n  selector: 'header',\n  styleUrls: [\n    './header.css',\n  ],\n  templateUrl: 'header.htm',\n}"
+								"obj": "{\n  selector: 'header',\n  styleUrls: ['./header.css'],\n  templateUrl: 'header.htm',\n}"
 							}
 						}
 					],
@@ -10370,7 +10370,7 @@
 							"sources": [
 								{
 									"fileName": "src/header/components/header.ts",
-									"line": 19,
+									"line": 17,
 									"character": 28
 								}
 							]
@@ -10387,7 +10387,7 @@
 							"sources": [
 								{
 									"fileName": "src/header/components/header.ts",
-									"line": 15,
+									"line": 13,
 									"character": 17
 								}
 							],
@@ -10445,7 +10445,7 @@
 							"sources": [
 								{
 									"fileName": "src/header/components/header.ts",
-									"line": 45,
+									"line": 43,
 									"character": 17
 								}
 							]
@@ -10474,7 +10474,7 @@
 							"sources": [
 								{
 									"fileName": "src/header/components/header.ts",
-									"line": 30,
+									"line": 28,
 									"character": 14
 								}
 							]
@@ -10503,7 +10503,7 @@
 							"sources": [
 								{
 									"fileName": "src/header/components/header.ts",
-									"line": 61,
+									"line": 59,
 									"character": 16
 								}
 							]
@@ -10532,7 +10532,7 @@
 							"sources": [
 								{
 									"fileName": "src/header/components/header.ts",
-									"line": 37,
+									"line": 35,
 									"character": 20
 								}
 							]
@@ -10561,7 +10561,7 @@
 							"sources": [
 								{
 									"fileName": "src/header/components/header.ts",
-									"line": 25,
+									"line": 23,
 									"character": 10
 								}
 							]
@@ -10616,7 +10616,7 @@
 							"sources": [
 								{
 									"fileName": "src/header/components/header.ts",
-									"line": 79,
+									"line": 77,
 									"character": 15
 								}
 							]
@@ -10645,7 +10645,7 @@
 							"sources": [
 								{
 									"fileName": "src/header/components/header.ts",
-									"line": 104,
+									"line": 102,
 									"character": 21
 								}
 							]
@@ -10683,7 +10683,7 @@
 					"sources": [
 						{
 							"fileName": "src/header/components/header.ts",
-							"line": 14,
+							"line": 12,
 							"character": 28
 						}
 					],
@@ -12662,7 +12662,7 @@
 								"name": "Component"
 							},
 							"arguments": {
-								"obj": "{\n  selector: 'skills',\n  styleUrls: [\n    './skills.css',\n  ],\n  templateUrl: 'skills.htm',\n}"
+								"obj": "{\n  selector: 'skills',\n  styleUrls: ['./skills.css'],\n  templateUrl: 'skills.htm',\n}"
 							}
 						}
 					],
@@ -12692,7 +12692,7 @@
 							"sources": [
 								{
 									"fileName": "src/skills/components/skills.ts",
-									"line": 17,
+									"line": 15,
 									"character": 36
 								}
 							]
@@ -12709,7 +12709,7 @@
 							"sources": [
 								{
 									"fileName": "src/skills/components/skills.ts",
-									"line": 15,
+									"line": 13,
 									"character": 15
 								}
 							],
@@ -12749,7 +12749,7 @@
 							"sources": [
 								{
 									"fileName": "src/skills/components/skills.ts",
-									"line": 57,
+									"line": 55,
 									"character": 11
 								}
 							]
@@ -12778,7 +12778,7 @@
 							"sources": [
 								{
 									"fileName": "src/skills/components/skills.ts",
-									"line": 28,
+									"line": 26,
 									"character": 11
 								}
 							]
@@ -12807,7 +12807,7 @@
 							"sources": [
 								{
 									"fileName": "src/skills/components/skills.ts",
-									"line": 37,
+									"line": 35,
 									"character": 20
 								}
 							]
@@ -12836,7 +12836,7 @@
 							"sources": [
 								{
 									"fileName": "src/skills/components/skills.ts",
-									"line": 23,
+									"line": 21,
 									"character": 10
 								}
 							]
@@ -12871,7 +12871,7 @@
 					"sources": [
 						{
 							"fileName": "src/skills/components/skills.ts",
-							"line": 14,
+							"line": 12,
 							"character": 28
 						}
 					],
