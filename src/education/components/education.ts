@@ -5,9 +5,7 @@ import {CodeSchool} from '../definitions/code.school';
 
 @Component({
   selector: 'education',
-  styleUrls: [
-    './education.css',
-  ],
+  styleUrls: ['./education.css'],
   templateUrl: 'education.htm',
 })
 export class EducationComponent implements OnInit {

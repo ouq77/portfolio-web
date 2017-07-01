@@ -6,9 +6,7 @@ import {elementInViewport} from '../../shared/common/element.in.viewport';
 
 @Component({
   selector: 'skills',
-  styleUrls: [
-    './skills.css',
-  ],
+  styleUrls: ['./skills.css'],
   templateUrl: 'skills.htm',
 })
 export class SkillsComponent implements OnInit {

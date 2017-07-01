@@ -13,7 +13,6 @@
   },
   "dependencies": {
     "@angular/common": "4.2.5",
-    "@angular/compiler": "4.2.5",
     "@angular/core": "4.2.5",
     "@angular/forms": "4.2.5",
     "@angular/http": "4.2.5",
@@ -24,6 +23,7 @@
     "zone.js": "0.8.12"
   },
   "devDependencies": {
+    "@angular/compiler": "4.2.5",
     "@angular/compiler-cli": "4.2.5",
     "@types/dateformat": "1.0.1",
     "@types/es6-shim": "0.31.34",

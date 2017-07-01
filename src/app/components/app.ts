@@ -5,9 +5,7 @@ import {elementInViewport} from '../../shared/common/element.in.viewport';
 
 @Component({
   selector: 'container',
-  styleUrls: [
-    './app.css',
-  ],
+  styleUrls: ['./app.css'],
   templateUrl: 'app.htm',
 })
 export class AppComponent implements OnInit {

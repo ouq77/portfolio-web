@@ -6,9 +6,7 @@ import {delay} from '../../shared/common/delay';
 
 @Component({
   selector: 'header',
-  styleUrls: [
-    './header.css',
-  ],
+  styleUrls: ['./header.css'],
   templateUrl: 'header.htm',
 })
 export class HeaderComponent implements OnInit {

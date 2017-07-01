@@ -8,7 +8,7 @@ import {Component, OnInit} from '@angular/core';
 import {MapUtil} from './gmap/map.util';
 import {MarkerUtil} from './gmap/marker.util';
 import {MAP_OPTIONS} from '../models/map.config';
-import {CITIES, CURRENT_LOCATION} from '../models/cities';
+import {CITIES} from '../models/cities';
 import {AIRPORTS} from '../models/airports';
 import {JOURNEYS, UPCOMING_JOURNEYS} from '../models/journeys';
 import * as points from '../models/points';
@@ -19,9 +19,7 @@ import {elementInViewport} from '../../shared/common/element.in.viewport';
 
 @Component({
   selector: 'googlemap',
-  styleUrls: [
-    './contact.gmap.css',
-  ],
+  styleUrls: ['./contact.gmap.css'],
   templateUrl: 'contact.gmap.htm',
 })
 export class ContactMapComponent implements OnInit {
@@ -61,7 +59,7 @@ export class ContactMapComponent implements OnInit {
 
   initializeMap() {
     const MAP_MAX_MOBILE_ZOOM_ZERO: number = 768;
-    (($: JQueryStatic) => {
+    (($: JQueryStatic) =>
       delay(250)
         .then(() => {
           let mapOptions: MapOptions = Object.assign({}, MAP_OPTIONS);
@@ -70,26 +68,23 @@ export class ContactMapComponent implements OnInit {
             mapOptions.minZoom = 1;
           }
           this.map = new Map(document.getElementById('map-canvas'), mapOptions);
-          JOURNEYS.forEach((journey: Array<IAirport>, index: number) => {
+          JOURNEYS.forEach((journey: Array<IAirport>, index: number) =>
             this._journeyLines[index] = new Polyline({
               geodesic: true, map: this.map, strokeColor: '#1b1f29', strokeOpacity: 0.5, strokeWeight: 2,
-            });
-          });
-          UPCOMING_JOURNEYS.forEach((upcomingJourney: Array<IAirport>, index: number) => {
+            }));
+          UPCOMING_JOURNEYS.forEach((upcomingJourney: Array<IAirport>, index: number) =>
             this._upcomingJourneyLines[index] = new Polyline({
               geodesic: true,
               icons: [{icon: {path: 'M 0, -1 0,1', strokeOpacity: 0.5, strokeWeight: 2}, offset: '0', repeat: '12px'}],
               map: this.map,
               strokeOpacity: 0,
-            });
-          });
+            }));
           this._tilesLoadedEvent = event.addListener(this.map, 'tilesloaded', () => {
             event.removeListener(this._tilesLoadedEvent);
             this._tilesLoaded = true;
             this.dropMarkers();
           });
-        });
-    })(jQuery);
+        }))(jQuery);
   }
 
   initScrollListener() {
@@ -110,7 +105,7 @@ export class ContactMapComponent implements OnInit {
 
   dropMarkers(wait: number = 750) {
     this._markerWait = wait;
-    (($: JQueryStatic) => {
+    (($: JQueryStatic) =>
       $('.js_trigger_map_marker').each((index: number, triggerEl: Element) => {
         if (!this._mapMarkersDrawn && elementInViewport($, <JQuery>$(triggerEl))) {
           if (this._tilesLoaded) {
@@ -120,18 +115,14 @@ export class ContactMapComponent implements OnInit {
                 AIRPORTS.forEach((airport: IAirport) => {
                   this._airportMarkerDropWait++;
                   delay(this._airportMarkerDropWait * 135)
-                    .then(() => {
-                      this._markerUtil.addAirportMarker(this.map, airport);
-                    });
+                    .then(() => this._markerUtil.addAirportMarker(this.map, airport));
                 });
                 JOURNEYS.forEach((journey: Array<IAirport>, index: number) => {
                   let journeyLine: Polyline = this._journeyLines[index];
                   journey.forEach((leg: IAirport) => {
                     this._journeyLineDrawWait++;
                     delay(this._journeyLineDrawWait * 65)
-                      .then(() => {
-                        journeyLine.getPath().push(new LatLng(leg.loc.lat, leg.loc.lng));
-                      });
+                      .then(() => journeyLine.getPath().push(new LatLng(leg.loc.lat, leg.loc.lng)));
                   });
                 });
                 UPCOMING_JOURNEYS.forEach((journey: Array<IAirport>, index: number) => {
@@ -139,17 +130,13 @@ export class ContactMapComponent implements OnInit {
                   journey.forEach((leg: IAirport) => {
                     this._journeyLineDrawWait++;
                     delay(this._journeyLineDrawWait * 65)
-                      .then(() => {
-                        upcomingJourneyLine.getPath().push(new LatLng(leg.loc.lat, leg.loc.lng));
-                      });
+                      .then(() => upcomingJourneyLine.getPath().push(new LatLng(leg.loc.lat, leg.loc.lng)));
                   });
                 });
                 this._additionalMarkerWait = ((AIRPORTS.length - 1) * 100);
                 CITIES.forEach((city: ICity, index: number) => {
                   delay((index * 650) + this._additionalMarkerWait)
-                    .then(() => {
-                      this._markerUtil.addCityMarker(this.map, city, this._cityMarkers);
-                    });
+                    .then(() => this._markerUtil.addCityMarker(this.map, city, this._cityMarkers));
                 });
                 delay(((CITIES.length) * 700) + this._additionalMarkerWait)
                   .then(() => {
@@ -159,7 +146,6 @@ export class ContactMapComponent implements OnInit {
               });
           }
         }
-      });
-    })(jQuery);
+      }))(jQuery);
   }
 }

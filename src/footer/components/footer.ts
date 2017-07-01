@@ -4,9 +4,7 @@ import {Link} from '../definitions/link';
 
 @Component({
   selector: 'footer',
-  styleUrls: [
-    './footer.css',
-  ],
+  styleUrls: ['./footer.css'],
   templateUrl: 'footer.htm',
 })
 export class FooterComponent implements OnInit {
