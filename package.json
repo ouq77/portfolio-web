@@ -38,7 +38,7 @@
     "prerender-node": "2.7.1",
     "referrer-policy": "1.1.0",
     "require-directory": "2.1.1",
-    "sharp": "0.18.2"
+    "sharp": "0.18.1"
   },
   "devDependencies": {
     "standard": "10.0.2"
