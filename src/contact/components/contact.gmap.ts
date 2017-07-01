@@ -1,12 +1,11 @@
-import Animation = google.maps.Animation;
 import event = google.maps.event;
-import InfoWindow = google.maps.InfoWindow;
 import LatLng = google.maps.LatLng;
 import Map = google.maps.Map;
 import MapOptions = google.maps.MapOptions;
 import Marker = google.maps.Marker;
 import Polyline = google.maps.Polyline;
 import {Component, OnInit} from '@angular/core';
+import {MarkerUtil} from './gmap/marker.util';
 import {MAP_OPTIONS} from '../models/map.config';
 import {CURRENT_LOCATION} from '../models/cities';
 import {CITIES} from '../models/cities';
@@ -30,15 +29,13 @@ export class ContactMapComponent implements OnInit {
   private _additionalMarkerWait: number;
   private _airportMarkerDropWait: number;
   private _cityMarkers: Array<Marker>;
-  private _infoWindow: InfoWindow;
   private _journeyLines: Array<Polyline>;
   private _journeyLineDrawWait: number;
   private _mapMarkersDrawn: boolean;
-  private _markerBounce: Marker;
+  private _markerUtil: MarkerUtil;
   private _markerWait: number;
   private _tilesLoaded: boolean;
   private _tilesLoadedEvent: any;
-  private _timeoutMarkerBounce: any;
   private _timeoutScroll: any;
   private _upcomingJourneyLines: Array<Polyline>;
 
@@ -46,10 +43,10 @@ export class ContactMapComponent implements OnInit {
     this._additionalMarkerWait = 0;
     this._airportMarkerDropWait = 0;
     this._cityMarkers = [];
-    this._infoWindow = new InfoWindow();
     this._journeyLines = [];
     this._journeyLineDrawWait = 0;
     this._mapMarkersDrawn = false;
+    this._markerUtil = new MarkerUtil();
     this._tilesLoaded = false;
     this._upcomingJourneyLines = [];
   }
@@ -124,7 +121,7 @@ export class ContactMapComponent implements OnInit {
         if (this._cityMarkers.length === CITIES.length) {
           let cityMarker = this._cityMarkers[this._cityMarkers.length - 1];
           if (cityMarker) {
-            this.toggleBounce(cityMarker, CURRENT_LOCATION.name, CURRENT_LOCATION.description);
+            this._markerUtil.toggleBounce(this.map, cityMarker, CURRENT_LOCATION.name, CURRENT_LOCATION.description);
           }
         }
       });
@@ -144,18 +141,7 @@ export class ContactMapComponent implements OnInit {
                   this._airportMarkerDropWait++;
                   delay(this._airportMarkerDropWait * 135)
                     .then(() => {
-                      let marker = new Marker({
-                        animation: Animation.DROP,
-                        draggable: false,
-                        icon: {size: points.AIRPORT_SIZE, url: 'assets/images/markerairport.png'},
-                        map: this.map,
-                        position: new LatLng(airport.loc.lat, airport.loc.lng),
-                        title: `${airport.iataCode} // ${airport.name}`,
-                        zIndex: 100,
-                      });
-                      event.addListener(marker, 'click', () => {
-                        this.toggleBounce(marker, airport.iataCode, `${airport.name}<br>${airport.city}, ${airport.country}`);
-                      });
+                      this._markerUtil.addAirportMarker(this.map, airport);
                     });
                 });
                 JOURNEYS.forEach((journey: Array<IAirport>, index: number) => {
@@ -182,7 +168,7 @@ export class ContactMapComponent implements OnInit {
                 CITIES.forEach((city: ICity, index: number) => {
                   delay((index * 650) + this._additionalMarkerWait)
                     .then(() => {
-                      this.addMarker(city);
+                      this._markerUtil.addCityMarker(this.map, city, this._cityMarkers);
                     });
                 });
                 delay(((CITIES.length) * 700) + this._additionalMarkerWait)
@@ -195,22 +181,6 @@ export class ContactMapComponent implements OnInit {
         }
       });
     })(jQuery);
-  }
-
-  addMarker(city: ICity) {
-    let cityMarker: Marker = new Marker({
-      animation: Animation.DROP,
-      draggable: false,
-      icon: city.icon,
-      map: this.map,
-      position: new LatLng(city.loc.lat, city.loc.lng),
-      title: city.name,
-      zIndex: 200,
-    });
-    this._cityMarkers.push(cityMarker);
-    event.addListener(cityMarker, 'click', () => {
-      this.toggleBounce(cityMarker, city.name, city.description);
-    });
   }
 
   zoomMap(nextZoomLevel: number = 0, maxZoom: number = 0) {
@@ -228,23 +198,5 @@ export class ContactMapComponent implements OnInit {
         scrollwheel: true,
       });
     }
-  }
-
-  toggleBounce(marker: Marker, infoTitle: string, infoContent: string) {
-    if (this._timeoutMarkerBounce) {
-      clearTimeout(this._timeoutMarkerBounce);
-      if (this._markerBounce) {
-        this._markerBounce.setAnimation(null);
-      }
-    }
-    this._markerBounce = marker;
-    this._markerBounce.setAnimation(Animation.BOUNCE);
-    this._infoWindow.close();
-    this._infoWindow.setContent(`<div class="map-info-window"><h3>${infoTitle}</h3><p>${infoContent}</p></div>`);
-    this._infoWindow.open(this.map, this._markerBounce);
-    this._timeoutMarkerBounce = cancelableDelay(2000, () => {
-      this._markerBounce.setAnimation(null);
-      this._markerBounce = null;
-    });
   }
 }
