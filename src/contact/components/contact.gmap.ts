@@ -107,44 +107,41 @@ export class ContactMapComponent implements OnInit {
     this._markerWait = wait;
     (($: JQueryStatic) =>
       $('.js_trigger_map_marker').each((index: number, triggerEl: Element) => {
-        if (!this._mapMarkersDrawn && elementInViewport($, <JQuery>$(triggerEl))) {
-          if (this._tilesLoaded) {
-            this._mapMarkersDrawn = true;
-            delay(this._markerWait)
-              .then(() => {
-                AIRPORTS.forEach((airport: IAirport) => {
-                  this._airportMarkerDropWait++;
-                  delay(this._airportMarkerDropWait * 135)
-                    .then(() => this._markerUtil.addAirportMarker(this.map, airport));
-                });
-                JOURNEYS.forEach((journey: Array<IAirport>, index: number) => {
-                  let journeyLine: Polyline = this._journeyLines[index];
-                  journey.forEach((leg: IAirport) => {
-                    this._journeyLineDrawWait++;
-                    delay(this._journeyLineDrawWait * 65)
-                      .then(() => journeyLine.getPath().push(new LatLng(leg.loc.lat, leg.loc.lng)));
-                  });
-                });
-                UPCOMING_JOURNEYS.forEach((journey: Array<IAirport>, index: number) => {
-                  let upcomingJourneyLine: Polyline = this._upcomingJourneyLines[index];
-                  journey.forEach((leg: IAirport) => {
-                    this._journeyLineDrawWait++;
-                    delay(this._journeyLineDrawWait * 65)
-                      .then(() => upcomingJourneyLine.getPath().push(new LatLng(leg.loc.lat, leg.loc.lng)));
-                  });
-                });
-                this._additionalMarkerWait = ((AIRPORTS.length - 1) * 100);
-                CITIES.forEach((city: ICity, index: number) => {
-                  delay((index * 650) + this._additionalMarkerWait)
-                    .then(() => this._markerUtil.addCityMarker(this.map, city, this._cityMarkers));
-                });
-                delay(((CITIES.length) * 700) + this._additionalMarkerWait)
-                  .then(() => {
-                    this.map.panTo(points.WELLINGTON);
-                    this._mapUtil.zoomMap(this.map, this.map.getZoom() + 1, $(window).width() >= 1000 ? 11 : 10);
-                  });
+        if (!this._mapMarkersDrawn && elementInViewport($, <JQuery>$(triggerEl)) && this._tilesLoaded) {
+          this._mapMarkersDrawn = true;
+          delay(this._markerWait)
+            .then(() => {
+              AIRPORTS.forEach((airport: IAirport) => {
+                this._airportMarkerDropWait++;
+                delay(this._airportMarkerDropWait * 135)
+                  .then(() => this._markerUtil.addAirportMarker(this.map, airport));
               });
-          }
+              JOURNEYS.forEach((journey: Array<IAirport>, index: number) => {
+                let journeyLine: Polyline = this._journeyLines[index];
+                journey.forEach((leg: IAirport) => {
+                  this._journeyLineDrawWait++;
+                  delay(this._journeyLineDrawWait * 65)
+                    .then(() => journeyLine.getPath().push(new LatLng(leg.loc.lat, leg.loc.lng)));
+                });
+              });
+              UPCOMING_JOURNEYS.forEach((journey: Array<IAirport>, index: number) => {
+                let upcomingJourneyLine: Polyline = this._upcomingJourneyLines[index];
+                journey.forEach((leg: IAirport) => {
+                  this._journeyLineDrawWait++;
+                  delay(this._journeyLineDrawWait * 65)
+                    .then(() => upcomingJourneyLine.getPath().push(new LatLng(leg.loc.lat, leg.loc.lng)));
+                });
+              });
+              this._additionalMarkerWait = ((AIRPORTS.length - 1) * 100);
+              CITIES.forEach((city: ICity, index: number) =>
+                delay((index * 650) + this._additionalMarkerWait)
+                  .then(() => this._markerUtil.addCityMarker(this.map, city, this._cityMarkers)));
+              delay(((CITIES.length) * 700) + this._additionalMarkerWait)
+                .then(() => {
+                  this.map.panTo(points.WELLINGTON);
+                  this._mapUtil.zoomMap(this.map, this.map.getZoom() + 1, $(window).width() >= 1000 ? 11 : 10);
+                });
+            });
         }
       }))(jQuery);
   }
