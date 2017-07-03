@@ -38,11 +38,10 @@
     "prerender-node": "2.7.1",
     "referrer-policy": "1.1.0",
     "require-directory": "2.1.1",
-    "sharp": "0.18.1"
-  },
-  "devDependencies": {
+    "sharp": "0.18.2",
     "standard": "10.0.2"
   },
+  "devDependencies": {},
   "scripts": {
     "start": "standard && node server/start.js"
   }
