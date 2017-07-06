@@ -1,23 +1,28 @@
 {
+  "compileOnSave": false,
   "compilerOptions": {
-    "target": "es2015",
-    "module": "es2015",
-    "moduleResolution": "node",
-    "declaration": false,
-    "removeComments": true,
-    "noLib": false,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "lib": ["es6", "es2015", "dom"],
-    "sourceMap": false,
-    "pretty": true,
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
+    "declaration": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "lib": [
+      "es6",
+      "es2015",
+      "dom"
+    ],
+    "module": "es2015",
+    "moduleResolution": "node",
+    "noLib": false,
+    "noFallthroughCasesInSwitch": true,
     "noImplicitAny": false,
     "noImplicitReturns": true,
     "noImplicitUseStrict": true,
-    "noFallthroughCasesInSwitch": true,
     "outDir": "tmp",
+    "pretty": true,
+    "removeComments": true,
+    "sourceMap": false,
+    "target": "es2015",
     "typeRoots": [
       "node_modules/@types",
       "node_modules",
@@ -28,14 +33,13 @@
       "googlemaps"
     ]
   },
-  "files": [
-    "tmp/main.ts",
-    "tools/manual_typings/index.d.ts"
-  ],
   "exclude": [
     "node_modules",
     "dist",
     "src"
   ],
-  "compileOnSave": false
+  "files": [
+    "tmp/main.ts",
+    "tools/manual_typings/index.d.ts"
+  ]
 }

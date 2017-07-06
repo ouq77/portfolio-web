@@ -1,21 +1,22 @@
 {
+  "compileOnSave": false,
   "compilerOptions": {
-    "target": "es5",
-    "module": "es2015",
-    "moduleResolution": "node",
-    "declaration": false,
-    "removeComments": true,
-    "noLib": false,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "sourceMap": false,
-    "pretty": true,
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
+    "declaration": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "module": "es2015",
+    "moduleResolution": "node",
+    "noFallthroughCasesInSwitch": true,
     "noImplicitAny": false,
     "noImplicitReturns": true,
     "noImplicitUseStrict": true,
-    "noFallthroughCasesInSwitch": true,
+    "noLib": false,
+    "pretty": false,
+    "removeComments": true,
+    "sourceMap": false,
+    "target": "es5",
     "typeRoots": [
       "node_modules/@types",
       "node_modules",
@@ -26,13 +27,12 @@
       "googlemaps"
     ]
   },
-  "files": [
-    "src/",
-    "tools/manual_typings/jquery.plugins.d.ts"
-  ],
   "exclude": [
     "node_modules",
     "*-prod.ts"
   ],
-  "compileOnSave": false
+  "files": [
+    "src/",
+    "tools/manual_typings/jquery.plugins.d.ts"
+  ]
 }
