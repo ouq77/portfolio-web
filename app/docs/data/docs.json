@@ -61,7 +61,7 @@
 			]
 		},
 		{
-			"id": 590,
+			"id": 674,
 			"name": "\"src/app.module\"",
 			"kind": 1,
 			"kindString": "External module",
@@ -71,7 +71,7 @@
 			"originalName": "/home/louw/workspace/heroku/portfolio-web/src/app.module.ts",
 			"children": [
 				{
-					"id": 591,
+					"id": 675,
 					"name": "AppModule",
 					"kind": 128,
 					"kindString": "Class",
@@ -104,7 +104,7 @@
 					"title": "Classes",
 					"kind": 128,
 					"children": [
-						591
+						675
 					]
 				}
 			],
@@ -1089,7 +1089,7 @@
 			]
 		},
 		{
-			"id": 358,
+			"id": 442,
 			"name": "\"src/contact/components/contact.gmap\"",
 			"kind": 1,
 			"kindString": "External module",
@@ -1099,7 +1099,7 @@
 			"originalName": "/home/louw/workspace/heroku/portfolio-web/src/contact/components/contact.gmap.ts",
 			"children": [
 				{
-					"id": 359,
+					"id": 443,
 					"name": "ContactMapComponent",
 					"kind": 128,
 					"kindString": "Class",
@@ -1120,7 +1120,7 @@
 					],
 					"children": [
 						{
-							"id": 361,
+							"id": 445,
 							"name": "constructor",
 							"kind": 512,
 							"kindString": "Constructor",
@@ -1129,7 +1129,7 @@
 							},
 							"signatures": [
 								{
-									"id": 362,
+									"id": 446,
 									"name": "new ContactMapComponent",
 									"kind": 16384,
 									"kindString": "Constructor signature",
@@ -1137,7 +1137,7 @@
 									"type": {
 										"type": "reference",
 										"name": "ContactMapComponent",
-										"id": 359
+										"id": 443
 									}
 								}
 							],
@@ -1150,7 +1150,7 @@
 							]
 						},
 						{
-							"id": 360,
+							"id": 444,
 							"name": "map",
 							"kind": 1024,
 							"kindString": "Property",
@@ -1171,7 +1171,7 @@
 							}
 						},
 						{
-							"id": 369,
+							"id": 453,
 							"name": "dropMarkers",
 							"kind": 2048,
 							"kindString": "Method",
@@ -1180,14 +1180,14 @@
 							},
 							"signatures": [
 								{
-									"id": 370,
+									"id": 454,
 									"name": "dropMarkers",
 									"kind": 4096,
 									"kindString": "Call signature",
 									"flags": {},
 									"parameters": [
 										{
-											"id": 371,
+											"id": 455,
 											"name": "wait",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -1214,7 +1214,7 @@
 							]
 						},
 						{
-							"id": 367,
+							"id": 451,
 							"name": "initScrollListener",
 							"kind": 2048,
 							"kindString": "Method",
@@ -1223,7 +1223,7 @@
 							},
 							"signatures": [
 								{
-									"id": 368,
+									"id": 452,
 									"name": "initScrollListener",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -1243,7 +1243,7 @@
 							]
 						},
 						{
-							"id": 365,
+							"id": 449,
 							"name": "initializeMap",
 							"kind": 2048,
 							"kindString": "Method",
@@ -1252,7 +1252,7 @@
 							},
 							"signatures": [
 								{
-									"id": 366,
+									"id": 450,
 									"name": "initializeMap",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -1272,7 +1272,7 @@
 							]
 						},
 						{
-							"id": 363,
+							"id": 447,
 							"name": "ngOnInit",
 							"kind": 2048,
 							"kindString": "Method",
@@ -1281,7 +1281,7 @@
 							},
 							"signatures": [
 								{
-									"id": 364,
+									"id": 448,
 									"name": "ngOnInit",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -1306,24 +1306,24 @@
 							"title": "Constructors",
 							"kind": 512,
 							"children": [
-								361
+								445
 							]
 						},
 						{
 							"title": "Properties",
 							"kind": 1024,
 							"children": [
-								360
+								444
 							]
 						},
 						{
 							"title": "Methods",
 							"kind": 2048,
 							"children": [
-								369,
-								367,
-								365,
-								363
+								453,
+								451,
+								449,
+								447
 							]
 						}
 					],
@@ -1347,7 +1347,7 @@
 					"title": "Classes",
 					"kind": 128,
 					"children": [
-						359
+						443
 					]
 				}
 			],
@@ -3569,7 +3569,7 @@
 			]
 		},
 		{
-			"id": 266,
+			"id": 350,
 			"name": "\"src/contact/models/airports\"",
 			"kind": 1,
 			"kindString": "External module",
@@ -3579,7 +3579,7 @@
 			"originalName": "/home/louw/workspace/heroku/portfolio-web/src/contact/models/airports.ts",
 			"children": [
 				{
-					"id": 299,
+					"id": 383,
 					"name": "ABJ",
 					"kind": 32,
 					"kindString": "Variable",
@@ -3601,7 +3601,7 @@
 					"defaultValue": " new Airport('Abidjan', 'Côte d\\'Ivoire', 'ABJ', new Point(5.254863, -3.932870), 'Felix Houphouet Boigny IAirport')"
 				},
 				{
-					"id": 300,
+					"id": 384,
 					"name": "ACC",
 					"kind": 32,
 					"kindString": "Variable",
@@ -3623,7 +3623,7 @@
 					"defaultValue": " new Airport('Accra', 'Ghana', 'ACC', new Point(5.606068, -0.168107), 'Kotoka International IAirport')"
 				},
 				{
-					"id": 328,
+					"id": 412,
 					"name": "ADL",
 					"kind": 32,
 					"kindString": "Variable",
@@ -3645,7 +3645,7 @@
 					"defaultValue": " new Airport('Adelaide', AUSTRALIA, 'ADL', new Point(-34.946134, 138.533726), 'Adelaide IAirport')"
 				},
 				{
-					"id": 354,
+					"id": 438,
 					"name": "AIRPORTS",
 					"kind": 32,
 					"kindString": "Variable",
@@ -3682,7 +3682,7 @@
 					"defaultValue": " [\n  KIM, PLZ, ELS, JNB, AMS, LHR, NBO, CPT, MBD, DUR, BFN, GRJ, MPM, GBE, WDH, BUQ, HRE, LVI, LUN, LAD, DAR, EBB,\n  FIH, LOS, ABJ, ACC, DKR, SID, MIA, ATL, IAD, JFK, LGA, MRU, HKG, PER, SYD, EZE, GRU, YVR, FRA, ZRH, CDG, CPH,\n  BOM, BKK, KIX, BKKN, USM, HKGN, DPS, DRW, ADL, HLZ, CHC, ZQN, AKL, WLG, NSN, TRG, ROT, RAR, NRT, SIN, ARN, BGO,\n  TRD, BOO, SJV, TOS, TIU, CBR, NPL, KBV, HKT, MEL, GIS,\n]"
 				},
 				{
-					"id": 333,
+					"id": 417,
 					"name": "AKL",
 					"kind": 32,
 					"kindString": "Variable",
@@ -3704,7 +3704,7 @@
 					"defaultValue": " new Airport('Auckland', NEW_ZEALAND, 'AKL', new Point(-37.008227, 174.785760), 'Auckland IAirport')"
 				},
 				{
-					"id": 317,
+					"id": 401,
 					"name": "AMS",
 					"kind": 32,
 					"kindString": "Variable",
@@ -3726,7 +3726,7 @@
 					"defaultValue": " new Airport('Amsterdam', 'Netherlands', 'AMS', new Point(52.310523, 4.768740), 'Amsterdam IAirport Schiphol')"
 				},
 				{
-					"id": 341,
+					"id": 425,
 					"name": "ARN",
 					"kind": 32,
 					"kindString": "Variable",
@@ -3748,7 +3748,7 @@
 					"defaultValue": " new Airport('Stockholm', 'Sweden', 'ARN', new Point(59.6497649, 17.921592), 'Stockholm Arlanda IAirport')"
 				},
 				{
-					"id": 307,
+					"id": 391,
 					"name": "ATL",
 					"kind": 32,
 					"kindString": "Variable",
@@ -3770,7 +3770,7 @@
 					"defaultValue": " new Airport('Atlanta', USA, 'ATL', new Point(33.640795, -84.427223), 'Hartsfield–Jackson Atlanta International IAirport')"
 				},
 				{
-					"id": 271,
+					"id": 355,
 					"name": "AUSTRALIA",
 					"kind": 32,
 					"kindString": "Variable",
@@ -3789,7 +3789,7 @@
 					"defaultValue": "\"Australia\""
 				},
 				{
-					"id": 282,
+					"id": 366,
 					"name": "BFN",
 					"kind": 32,
 					"kindString": "Variable",
@@ -3811,7 +3811,7 @@
 					"defaultValue": " new Airport('Bloemfontein', SOUTH_AFRICA, 'BFN', new Point(-29.095735, 26.298145), 'Bram Fischer International IAirport')"
 				},
 				{
-					"id": 342,
+					"id": 426,
 					"name": "BGO",
 					"kind": 32,
 					"kindString": "Variable",
@@ -3833,7 +3833,7 @@
 					"defaultValue": " new Airport('Bergen', NORWAY, 'BGO', new Point(60.2918326, 5.2198286), 'Bergen IAirport')"
 				},
 				{
-					"id": 319,
+					"id": 403,
 					"name": "BKK",
 					"kind": 32,
 					"kindString": "Variable",
@@ -3855,7 +3855,7 @@
 					"defaultValue": " new Airport('Bangkok', THAILAND, 'BKK', new Point(13.913019, 100.604164), 'Donmuang IAirport (old)')"
 				},
 				{
-					"id": 320,
+					"id": 404,
 					"name": "BKKN",
 					"kind": 32,
 					"kindString": "Variable",
@@ -3877,7 +3877,7 @@
 					"defaultValue": " new Airport('Bangkok', THAILAND, 'BKK', new Point(13.689084, 100.751023), 'Suvarnabhumi IAirport')"
 				},
 				{
-					"id": 318,
+					"id": 402,
 					"name": "BOM",
 					"kind": 32,
 					"kindString": "Variable",
@@ -3899,7 +3899,7 @@
 					"defaultValue": " new Airport('Mumbai', 'India', 'BOM', new Point(19.090121, 72.868905), 'Chhatrapati Shivaji International IAirport')"
 				},
 				{
-					"id": 344,
+					"id": 428,
 					"name": "BOO",
 					"kind": 32,
 					"kindString": "Variable",
@@ -3921,7 +3921,7 @@
 					"defaultValue": " new Airport('Bodø', NORWAY, 'BOO', new Point(67.268313, 14.3600464), 'Bodø IAirport')"
 				},
 				{
-					"id": 289,
+					"id": 373,
 					"name": "BUQ",
 					"kind": 32,
 					"kindString": "Variable",
@@ -3943,7 +3943,7 @@
 					"defaultValue": " new Airport('Bulawayo', ZIMBABWE, 'BUQ', new Point(-20.018368, 28.624652), 'Joshua Mqabuko Nkomo International IAirport')"
 				},
 				{
-					"id": 348,
+					"id": 432,
 					"name": "CBR",
 					"kind": 32,
 					"kindString": "Variable",
@@ -3965,7 +3965,7 @@
 					"defaultValue": " new Airport('Canberra', AUSTRALIA, 'CBR', new Point(-35.3032616, 149.1746154), 'Canberra IAirport')"
 				},
 				{
-					"id": 315,
+					"id": 399,
 					"name": "CDG",
 					"kind": 32,
 					"kindString": "Variable",
@@ -3987,7 +3987,7 @@
 					"defaultValue": " new Airport('Paris', 'France', 'CDG', new Point(49.009702, 2.548251), 'Charles de Gaulle IAirport')"
 				},
 				{
-					"id": 331,
+					"id": 415,
 					"name": "CHC",
 					"kind": 32,
 					"kindString": "Variable",
@@ -4009,7 +4009,7 @@
 					"defaultValue": " new Airport('Christchurch', NEW_ZEALAND, 'CHC', new Point(-43.486456, 172.537369), 'Christchurch International IAirport')"
 				},
 				{
-					"id": 316,
+					"id": 400,
 					"name": "CPH",
 					"kind": 32,
 					"kindString": "Variable",
@@ -4031,7 +4031,7 @@
 					"defaultValue": " new Airport('Copenhagen', 'Denmark', 'CPH', new Point(55.618039, 12.651198), 'Copenhagen IAirport')"
 				},
 				{
-					"id": 278,
+					"id": 362,
 					"name": "CPT",
 					"kind": 32,
 					"kindString": "Variable",
@@ -4053,7 +4053,7 @@
 					"defaultValue": " new Airport('Cape Town', SOUTH_AFRICA, 'CPT', new Point(-33.971459, 18.602241), 'Cape Town International IAirport')"
 				},
 				{
-					"id": 294,
+					"id": 378,
 					"name": "DAR",
 					"kind": 32,
 					"kindString": "Variable",
@@ -4075,7 +4075,7 @@
 					"defaultValue": " new Airport('Dar es Salaam', 'Tanzania', 'DAR', new Point(-6.872619, 39.206986), 'Julius Nyerere International IAirport')"
 				},
 				{
-					"id": 301,
+					"id": 385,
 					"name": "DKR",
 					"kind": 32,
 					"kindString": "Variable",
@@ -4097,7 +4097,7 @@
 					"defaultValue": " new Airport('Dakar', 'Senegal', 'DKR', new Point(14.744887, -17.490146), 'Léopold Sédar Senghor International IAirport')"
 				},
 				{
-					"id": 326,
+					"id": 410,
 					"name": "DPS",
 					"kind": 32,
 					"kindString": "Variable",
@@ -4119,7 +4119,7 @@
 					"defaultValue": " new Airport('Denpasar', 'Bali', 'DPS', new Point(-8.746727, 115.166801), 'Ngurah Rai International IAirport')"
 				},
 				{
-					"id": 327,
+					"id": 411,
 					"name": "DRW",
 					"kind": 32,
 					"kindString": "Variable",
@@ -4141,7 +4141,7 @@
 					"defaultValue": " new Airport('Darwin', AUSTRALIA, 'DRW', new Point(-12.411127, 130.878227), 'Darwin International IAirport')"
 				},
 				{
-					"id": 280,
+					"id": 364,
 					"name": "DUR",
 					"kind": 32,
 					"kindString": "Variable",
@@ -4163,7 +4163,7 @@
 					"defaultValue": " new Airport('Durban', SOUTH_AFRICA, 'DUR', new Point(-29.967507, 30.947187), 'Durban International IAirport')"
 				},
 				{
-					"id": 295,
+					"id": 379,
 					"name": "EBB",
 					"kind": 32,
 					"kindString": "Variable",
@@ -4185,7 +4185,7 @@
 					"defaultValue": " new Airport('Entebbe', 'Uganda', 'EBB', new Point(0.044929, 32.442880), 'Entebbe International IAirport')"
 				},
 				{
-					"id": 284,
+					"id": 368,
 					"name": "ELS",
 					"kind": 32,
 					"kindString": "Variable",
@@ -4207,7 +4207,7 @@
 					"defaultValue": " new Airport('East London', SOUTH_AFRICA, 'ELS', new Point(-33.038191, 27.828955), 'East London IAirport')"
 				},
 				{
-					"id": 305,
+					"id": 389,
 					"name": "EZE",
 					"kind": 32,
 					"kindString": "Variable",
@@ -4229,7 +4229,7 @@
 					"defaultValue": " new Airport('Beunos Aires', 'Argentina', 'EZE', new Point(-34.822544, -58.534969), 'Ministro Pistarini International IAirport')"
 				},
 				{
-					"id": 297,
+					"id": 381,
 					"name": "FIH",
 					"kind": 32,
 					"kindString": "Variable",
@@ -4251,7 +4251,7 @@
 					"defaultValue": " new Airport('Kinshasa', 'Congo (DRC)', 'FIH', new Point(-4.385679, 15.444503), 'N\\'djili International IAirport')"
 				},
 				{
-					"id": 313,
+					"id": 397,
 					"name": "FRA",
 					"kind": 32,
 					"kindString": "Variable",
@@ -4273,7 +4273,7 @@
 					"defaultValue": " new Airport('Frankfurt', 'Germany', 'FRA', new Point(50.037936, 8.562608), 'Frankfurt IAirport')"
 				},
 				{
-					"id": 287,
+					"id": 371,
 					"name": "GBE",
 					"kind": 32,
 					"kindString": "Variable",
@@ -4295,7 +4295,7 @@
 					"defaultValue": " new Airport('Gaborone', 'Botswana', 'GBE', new Point(-24.555994, 25.918776), 'Sir Seretse Khama International IAirport')"
 				},
 				{
-					"id": 353,
+					"id": 437,
 					"name": "GIS",
 					"kind": 32,
 					"kindString": "Variable",
@@ -4317,7 +4317,7 @@
 					"defaultValue": " new Airport('Gisborne', NEW_ZEALAND, 'GIS', new Point(-38.6628665, 177.9806031), 'Gisborne IAirport')"
 				},
 				{
-					"id": 285,
+					"id": 369,
 					"name": "GRJ",
 					"kind": 32,
 					"kindString": "Variable",
@@ -4339,7 +4339,7 @@
 					"defaultValue": " new Airport('George', SOUTH_AFRICA, 'GRJ', new Point(-34.005193, 22.378423), 'George IAirport')"
 				},
 				{
-					"id": 304,
+					"id": 388,
 					"name": "GRU",
 					"kind": 32,
 					"kindString": "Variable",
@@ -4361,7 +4361,7 @@
 					"defaultValue": " new Airport('São Paulo', 'Brazil', 'GRU', new Point(-23.434617, -46.478013), 'Guarulhos International IAirport')"
 				},
 				{
-					"id": 323,
+					"id": 407,
 					"name": "HKG",
 					"kind": 32,
 					"kindString": "Variable",
@@ -4383,7 +4383,7 @@
 					"defaultValue": " new Airport(HONG_KONG, HONG_KONG, 'HKG', new Point(22.324767, 114.198590), 'Kai Tak IAirport (old)')"
 				},
 				{
-					"id": 324,
+					"id": 408,
 					"name": "HKGN",
 					"kind": 32,
 					"kindString": "Variable",
@@ -4405,7 +4405,7 @@
 					"defaultValue": " new Airport('Chek Lap Kok', HONG_KONG, 'HKG', new Point(22.307862, 113.922394), 'Hong Kong International IAirport')"
 				},
 				{
-					"id": 351,
+					"id": 435,
 					"name": "HKT",
 					"kind": 32,
 					"kindString": "Variable",
@@ -4427,7 +4427,7 @@
 					"defaultValue": " new Airport('Phuket', THAILAND, 'HKT', new Point(8.1103541, 98.3081319), 'Phuket International IAirport')"
 				},
 				{
-					"id": 330,
+					"id": 414,
 					"name": "HLZ",
 					"kind": 32,
 					"kindString": "Variable",
@@ -4449,7 +4449,7 @@
 					"defaultValue": " new Airport('Hamilton', NEW_ZEALAND, 'HLZ', new Point(-37.865470, 175.337267), 'Hamilton International IAirport')"
 				},
 				{
-					"id": 272,
+					"id": 356,
 					"name": "HONG_KONG",
 					"kind": 32,
 					"kindString": "Variable",
@@ -4468,7 +4468,7 @@
 					"defaultValue": "\"Hong Kong\""
 				},
 				{
-					"id": 290,
+					"id": 374,
 					"name": "HRE",
 					"kind": 32,
 					"kindString": "Variable",
@@ -4490,7 +4490,7 @@
 					"defaultValue": " new Airport('Harare', ZIMBABWE, 'HRE', new Point(-17.918871, 31.097359), 'Harare International IAirport')"
 				},
 				{
-					"id": 308,
+					"id": 392,
 					"name": "IAD",
 					"kind": 32,
 					"kindString": "Variable",
@@ -4512,7 +4512,7 @@
 					"defaultValue": " new Airport('Washington', USA, 'IAD', new Point(38.952765, -77.451732), 'Washington Dulles International IAirport')"
 				},
 				{
-					"id": 270,
+					"id": 354,
 					"name": "JAPAN",
 					"kind": 32,
 					"kindString": "Variable",
@@ -4531,7 +4531,7 @@
 					"defaultValue": "\"Japan\""
 				},
 				{
-					"id": 309,
+					"id": 393,
 					"name": "JFK",
 					"kind": 32,
 					"kindString": "Variable",
@@ -4553,7 +4553,7 @@
 					"defaultValue": " new Airport('New York', USA, 'JFK', new Point(40.641242, -73.777941), 'John F. Kennedy International IAirport')"
 				},
 				{
-					"id": 277,
+					"id": 361,
 					"name": "JNB",
 					"kind": 32,
 					"kindString": "Variable",
@@ -4575,7 +4575,7 @@
 					"defaultValue": " new Airport('Johannesburg', SOUTH_AFRICA, 'JNB', new Point(-26.136837, 28.241157), 'OR Tambo International IAirport')"
 				},
 				{
-					"id": 350,
+					"id": 434,
 					"name": "KBV",
 					"kind": 32,
 					"kindString": "Variable",
@@ -4597,7 +4597,7 @@
 					"defaultValue": " new Airport('Krabi', THAILAND, 'KBV', new Point(8.0992802, 98.9810008), 'Krabi IAirport')"
 				},
 				{
-					"id": 281,
+					"id": 365,
 					"name": "KIM",
 					"kind": 32,
 					"kindString": "Variable",
@@ -4619,7 +4619,7 @@
 					"defaultValue": " new Airport('Kimberley', SOUTH_AFRICA, 'KIM', new Point(-28.802682, 24.765399), 'Kimberley IAirport')"
 				},
 				{
-					"id": 321,
+					"id": 405,
 					"name": "KIX",
 					"kind": 32,
 					"kindString": "Variable",
@@ -4641,7 +4641,7 @@
 					"defaultValue": " new Airport('Osaka', JAPAN, 'KIX', new Point(34.432015, 135.230817), 'Kansai International IAirport')"
 				},
 				{
-					"id": 293,
+					"id": 377,
 					"name": "LAD",
 					"kind": 32,
 					"kindString": "Variable",
@@ -4663,7 +4663,7 @@
 					"defaultValue": " new Airport('Luanda', 'Angola', 'LAD', new Point(-8.848009, 13.234900), 'Quatro de Fevereiro IAirport')"
 				},
 				{
-					"id": 310,
+					"id": 394,
 					"name": "LGA",
 					"kind": 32,
 					"kindString": "Variable",
@@ -4685,7 +4685,7 @@
 					"defaultValue": " new Airport('New York', USA, 'LGA', new Point(40.776992, -73.873376), 'LaGuardia IAirport')"
 				},
 				{
-					"id": 312,
+					"id": 396,
 					"name": "LHR",
 					"kind": 32,
 					"kindString": "Variable",
@@ -4707,7 +4707,7 @@
 					"defaultValue": " new Airport('London', 'United Kingdom', 'LHR', new Point(51.469979, -0.454044), 'London Heathrow IAirport')"
 				},
 				{
-					"id": 298,
+					"id": 382,
 					"name": "LOS",
 					"kind": 32,
 					"kindString": "Variable",
@@ -4729,7 +4729,7 @@
 					"defaultValue": " new Airport('Lagos', 'Nigeria', 'LOS', new Point(6.581759, 3.321484), 'Murtala Muhammed International IAirport')"
 				},
 				{
-					"id": 292,
+					"id": 376,
 					"name": "LUN",
 					"kind": 32,
 					"kindString": "Variable",
@@ -4751,7 +4751,7 @@
 					"defaultValue": " new Airport('Lusaka', ZAMBIA, 'LUN', new Point(-15.330899, 28.454393), 'Kenneth Kaunda International IAirport')"
 				},
 				{
-					"id": 291,
+					"id": 375,
 					"name": "LVI",
 					"kind": 32,
 					"kindString": "Variable",
@@ -4773,7 +4773,7 @@
 					"defaultValue": " new Airport('Livingstone ', ZAMBIA, 'LVI', new Point(-17.818925, 25.818595), 'Harry Mwanga Nkumbula International IAirport')"
 				},
 				{
-					"id": 279,
+					"id": 363,
 					"name": "MBD",
 					"kind": 32,
 					"kindString": "Variable",
@@ -4795,7 +4795,7 @@
 					"defaultValue": " new Airport('Mafikeng', SOUTH_AFRICA, 'MBD', new Point(-25.807261, 25.544465), 'Mafikeng International IAirport')"
 				},
 				{
-					"id": 352,
+					"id": 436,
 					"name": "MEL",
 					"kind": 32,
 					"kindString": "Variable",
@@ -4817,7 +4817,7 @@
 					"defaultValue": " new Airport('Melbourne', AUSTRALIA, 'MEL', new Point(-37.6662769, 144.8354746), 'Melbourne IAirport (Tullamarine)')"
 				},
 				{
-					"id": 306,
+					"id": 390,
 					"name": "MIA",
 					"kind": 32,
 					"kindString": "Variable",
@@ -4839,7 +4839,7 @@
 					"defaultValue": " new Airport('Miami', USA, 'MIA', new Point(25.795947, -80.286611), 'Miami International IAirport')"
 				},
 				{
-					"id": 286,
+					"id": 370,
 					"name": "MPM",
 					"kind": 32,
 					"kindString": "Variable",
@@ -4861,7 +4861,7 @@
 					"defaultValue": " new Airport('Maputo', 'Mozambique', 'MPM', new Point(-25.919804, 32.572997), 'Maputo International IAirport')"
 				},
 				{
-					"id": 303,
+					"id": 387,
 					"name": "MRU",
 					"kind": 32,
 					"kindString": "Variable",
@@ -4883,7 +4883,7 @@
 					"defaultValue": " new Airport('Plaine Magnien', 'Mauritius', 'MRU', new Point(-20.430714, 57.675511), 'Sir Seewoosagur Ramgoolam IAirport')"
 				},
 				{
-					"id": 296,
+					"id": 380,
 					"name": "NBO",
 					"kind": 32,
 					"kindString": "Variable",
@@ -4905,7 +4905,7 @@
 					"defaultValue": " new Airport('Nairobi', 'Kenya', 'NBO', new Point(-1.322705, 36.926611), 'Jomo Kenyatta International IAirport')"
 				},
 				{
-					"id": 268,
+					"id": 352,
 					"name": "NEW_ZEALAND",
 					"kind": 32,
 					"kindString": "Variable",
@@ -4924,7 +4924,7 @@
 					"defaultValue": "\"New Zealand\""
 				},
 				{
-					"id": 269,
+					"id": 353,
 					"name": "NORWAY",
 					"kind": 32,
 					"kindString": "Variable",
@@ -4943,7 +4943,7 @@
 					"defaultValue": "\"Norway\""
 				},
 				{
-					"id": 349,
+					"id": 433,
 					"name": "NPL",
 					"kind": 32,
 					"kindString": "Variable",
@@ -4965,7 +4965,7 @@
 					"defaultValue": " new Airport('New Plymouth', NEW_ZEALAND, 'NPL', new Point(-39.007847, 174.1754103), 'New Plymouth IAirport')"
 				},
 				{
-					"id": 339,
+					"id": 423,
 					"name": "NRT",
 					"kind": 32,
 					"kindString": "Variable",
@@ -4987,7 +4987,7 @@
 					"defaultValue": " new Airport('Tokyo', JAPAN, 'NRT', new Point(35.771991, 140.3906614), 'Narita International IAirport')"
 				},
 				{
-					"id": 335,
+					"id": 419,
 					"name": "NSN",
 					"kind": 32,
 					"kindString": "Variable",
@@ -5009,7 +5009,7 @@
 					"defaultValue": " new Airport('Nelson', NEW_ZEALAND, 'NSN', new Point(-41.300020, 173.225254), 'Nelson IAirport')"
 				},
 				{
-					"id": 325,
+					"id": 409,
 					"name": "PER",
 					"kind": 32,
 					"kindString": "Variable",
@@ -5031,7 +5031,7 @@
 					"defaultValue": " new Airport('Perth', AUSTRALIA, 'PER', new Point(-31.938471, 115.967523), 'Perth IAirport')"
 				},
 				{
-					"id": 283,
+					"id": 367,
 					"name": "PLZ",
 					"kind": 32,
 					"kindString": "Variable",
@@ -5053,7 +5053,7 @@
 					"defaultValue": " new Airport('Port Elizabeth', SOUTH_AFRICA, 'PLZ', new Point(-33.986448, 25.610390), 'Port Elizabeth IAirport')"
 				},
 				{
-					"id": 338,
+					"id": 422,
 					"name": "RAR",
 					"kind": 32,
 					"kindString": "Variable",
@@ -5075,7 +5075,7 @@
 					"defaultValue": " new Airport('Avarua', 'Cook Islands', 'RAR', new Point(-21.202310, -159.805334), 'Rarotonga International IAirport')"
 				},
 				{
-					"id": 337,
+					"id": 421,
 					"name": "ROT",
 					"kind": 32,
 					"kindString": "Variable",
@@ -5097,7 +5097,7 @@
 					"defaultValue": " new Airport('Rotorua', NEW_ZEALAND, 'ROT', new Point(-38.109354, 176.317118), 'Rotorua International IAirport')"
 				},
 				{
-					"id": 302,
+					"id": 386,
 					"name": "SID",
 					"kind": 32,
 					"kindString": "Variable",
@@ -5119,7 +5119,7 @@
 					"defaultValue": " new Airport('Ilha do Sal', 'Cape Verde', 'SID', new Point(16.734608, -22.943608), 'Amilcar Cabral International IAirport')"
 				},
 				{
-					"id": 340,
+					"id": 424,
 					"name": "SIN",
 					"kind": 32,
 					"kindString": "Variable",
@@ -5141,7 +5141,7 @@
 					"defaultValue": " new Airport('Singapore', 'Singapore', 'SIN', new Point(1.3644256, 103.9893421), 'Changi IAirport Singapore')"
 				},
 				{
-					"id": 345,
+					"id": 429,
 					"name": "SJV",
 					"kind": 32,
 					"kindString": "Variable",
@@ -5163,7 +5163,7 @@
 					"defaultValue": " new Airport('Svolvær', NORWAY, 'SJV', new Point(68.243335, 14.6669783), 'Svolvær IAirport')"
 				},
 				{
-					"id": 267,
+					"id": 351,
 					"name": "SOUTH_AFRICA",
 					"kind": 32,
 					"kindString": "Variable",
@@ -5182,7 +5182,7 @@
 					"defaultValue": "\"South Africa\""
 				},
 				{
-					"id": 329,
+					"id": 413,
 					"name": "SYD",
 					"kind": 32,
 					"kindString": "Variable",
@@ -5204,7 +5204,7 @@
 					"defaultValue": " new Airport('Sydney', AUSTRALIA, 'SYD', new Point(-33.939953, 151.175249), 'Kingsford Smith IAirport')"
 				},
 				{
-					"id": 273,
+					"id": 357,
 					"name": "THAILAND",
 					"kind": 32,
 					"kindString": "Variable",
@@ -5223,7 +5223,7 @@
 					"defaultValue": "\"Thailand\""
 				},
 				{
-					"id": 347,
+					"id": 431,
 					"name": "TIU",
 					"kind": 32,
 					"kindString": "Variable",
@@ -5245,7 +5245,7 @@
 					"defaultValue": " new Airport('Timaru', NEW_ZEALAND, 'TIU', new Point(-44.303448, 171.2241313), 'Richard Pearse IAirport')"
 				},
 				{
-					"id": 346,
+					"id": 430,
 					"name": "TOS",
 					"kind": 32,
 					"kindString": "Variable",
@@ -5267,7 +5267,7 @@
 					"defaultValue": " new Airport('Tromsø', NORWAY, 'TOS', new Point(69.6819372, 18.914075), 'Tromsø IAirport')"
 				},
 				{
-					"id": 343,
+					"id": 427,
 					"name": "TRD",
 					"kind": 32,
 					"kindString": "Variable",
@@ -5289,7 +5289,7 @@
 					"defaultValue": " new Airport('Trondheim', NORWAY, 'TRD', new Point(63.4582722, 10.9204103), 'Trondheim IAirport')"
 				},
 				{
-					"id": 336,
+					"id": 420,
 					"name": "TRG",
 					"kind": 32,
 					"kindString": "Variable",
@@ -5311,7 +5311,7 @@
 					"defaultValue": " new Airport('Tauranga', NEW_ZEALAND, 'TRG', new Point(-37.672093, 176.197666), 'Tauranga ICity IAirport')"
 				},
 				{
-					"id": 274,
+					"id": 358,
 					"name": "USA",
 					"kind": 32,
 					"kindString": "Variable",
@@ -5330,7 +5330,7 @@
 					"defaultValue": "\"United States\""
 				},
 				{
-					"id": 322,
+					"id": 406,
 					"name": "USM",
 					"kind": 32,
 					"kindString": "Variable",
@@ -5352,7 +5352,7 @@
 					"defaultValue": " new Airport('Koh Samui', THAILAND, 'USM', new Point(9.548389, 100.063484), 'Koh Samui IAirport')"
 				},
 				{
-					"id": 288,
+					"id": 372,
 					"name": "WDH",
 					"kind": 32,
 					"kindString": "Variable",
@@ -5374,7 +5374,7 @@
 					"defaultValue": " new Airport('Windhoek', 'Namibia', 'WDH', new Point(-22.480292, 17.470903), 'Hosea Kutako International IAirport')"
 				},
 				{
-					"id": 334,
+					"id": 418,
 					"name": "WLG",
 					"kind": 32,
 					"kindString": "Variable",
@@ -5396,7 +5396,7 @@
 					"defaultValue": " new Airport('Wellington', NEW_ZEALAND, 'WLG', new Point(-41.327551, 174.808308), 'Wellington International IAirport')"
 				},
 				{
-					"id": 311,
+					"id": 395,
 					"name": "YVR",
 					"kind": 32,
 					"kindString": "Variable",
@@ -5418,7 +5418,7 @@
 					"defaultValue": " new Airport('Vancouver', 'Canada', 'YVR', new Point(49.196659, -123.181056), 'Vancouver International IAirport')"
 				},
 				{
-					"id": 275,
+					"id": 359,
 					"name": "ZAMBIA",
 					"kind": 32,
 					"kindString": "Variable",
@@ -5437,7 +5437,7 @@
 					"defaultValue": "\"Zambia\""
 				},
 				{
-					"id": 276,
+					"id": 360,
 					"name": "ZIMBABWE",
 					"kind": 32,
 					"kindString": "Variable",
@@ -5456,7 +5456,7 @@
 					"defaultValue": "\"Zimbabwe\""
 				},
 				{
-					"id": 332,
+					"id": 416,
 					"name": "ZQN",
 					"kind": 32,
 					"kindString": "Variable",
@@ -5478,7 +5478,7 @@
 					"defaultValue": " new Airport('Queenstown', NEW_ZEALAND, 'ZQN', new Point(-45.020983, 168.740325), 'Queenstown IAirport')"
 				},
 				{
-					"id": 314,
+					"id": 398,
 					"name": "ZRH",
 					"kind": 32,
 					"kindString": "Variable",
@@ -5505,94 +5505,94 @@
 					"title": "Variables",
 					"kind": 32,
 					"children": [
-						299,
-						300,
-						328,
+						383,
+						384,
+						412,
+						438,
+						417,
+						401,
+						425,
+						391,
+						355,
+						366,
+						426,
+						403,
+						404,
+						402,
+						428,
+						373,
+						432,
+						399,
+						415,
+						400,
+						362,
+						378,
+						385,
+						410,
+						411,
+						364,
+						379,
+						368,
+						389,
+						381,
+						397,
+						371,
+						437,
+						369,
+						388,
+						407,
+						408,
+						435,
+						414,
+						356,
+						374,
+						392,
 						354,
-						333,
-						317,
-						341,
-						307,
-						271,
-						282,
-						342,
-						319,
-						320,
-						318,
-						344,
-						289,
-						348,
-						315,
-						331,
-						316,
-						278,
-						294,
-						301,
-						326,
-						327,
-						280,
-						295,
-						284,
-						305,
-						297,
-						313,
-						287,
-						353,
-						285,
-						304,
-						323,
-						324,
-						351,
-						330,
-						272,
-						290,
-						308,
-						270,
-						309,
-						277,
-						350,
-						281,
-						321,
-						293,
-						310,
-						312,
-						298,
-						292,
-						291,
-						279,
+						393,
+						361,
+						434,
+						365,
+						405,
+						377,
+						394,
+						396,
+						382,
+						376,
+						375,
+						363,
+						436,
+						390,
+						370,
+						387,
+						380,
 						352,
-						306,
-						286,
-						303,
-						296,
-						268,
-						269,
-						349,
-						339,
-						335,
-						325,
-						283,
-						338,
-						337,
-						302,
-						340,
-						345,
-						267,
-						329,
-						273,
-						347,
-						346,
-						343,
-						336,
-						274,
-						322,
-						288,
-						334,
-						311,
-						275,
-						276,
-						332,
-						314
+						353,
+						433,
+						423,
+						419,
+						409,
+						367,
+						422,
+						421,
+						386,
+						424,
+						429,
+						351,
+						413,
+						357,
+						431,
+						430,
+						427,
+						420,
+						358,
+						406,
+						372,
+						418,
+						395,
+						359,
+						360,
+						416,
+						398
 					]
 				}
 			],
@@ -6009,7 +6009,7 @@
 			]
 		},
 		{
-			"id": 355,
+			"id": 439,
 			"name": "\"src/contact/models/journeys\"",
 			"kind": 1,
 			"kindString": "External module",
@@ -6019,7 +6019,7 @@
 			"originalName": "/home/louw/workspace/heroku/portfolio-web/src/contact/models/journeys.ts",
 			"children": [
 				{
-					"id": 356,
+					"id": 440,
 					"name": "JOURNEYS",
 					"kind": 32,
 					"kindString": "Variable",
@@ -6062,7 +6062,7 @@
 					"defaultValue": " [\n  [airports.KIM, airports.PLZ, airports.ELS], [airports.KIM, airports.JNB], [airports.JNB, airports.AMS, airports.LHR],\n  [airports.JNB, airports.NBO, airports.LHR], [airports.JNB, airports.CPT], [airports.JNB, airports.MBD],\n  [airports.JNB, airports.DUR], [airports.JNB, airports.BFN], [airports.JNB, airports.PLZ], [airports.JNB, airports.ELS],\n  [airports.JNB, airports.GRJ], [airports.JNB, airports.MPM], [airports.JNB, airports.GBE], [airports.JNB, airports.WDH],\n  [airports.JNB, airports.BUQ], [airports.JNB, airports.HRE], [airports.JNB, airports.LVI], [airports.JNB, airports.LUN],\n  [airports.JNB, airports.LAD], [airports.JNB, airports.DAR], [airports.JNB, airports.EBB], [airports.JNB, airports.FIH],\n  [airports.JNB, airports.LOS], [airports.JNB, airports.ABJ, airports.ACC, airports.JNB], [airports.JNB, airports.DKR],\n  [airports.JNB, airports.SID, airports.JFK, airports.JNB], [airports.SID, airports.MIA, airports.CPT],\n  [airports.SID, airports.ATL, airports.IAD, airports.LGA, airports.ATL, airports.JNB], [airports.JNB, airports.MRU],\n  [airports.JNB, airports.HKG], [airports.JNB, airports.PER, airports.SYD], [airports.JNB, airports.EZE],\n  [airports.JNB, airports.GRU, airports.EZE, airports.CPT], [airports.LHR, airports.YVR],\n  [airports.JNB, airports.FRA, airports.AMS], [airports.JNB, airports.ZRH, airports.CPH], [airports.ZRH, airports.CDG],\n  [airports.JNB, airports.BOM], [airports.JNB, airports.BKK, airports.KIX], [airports.JNB, airports.HKGN],\n  [airports.BKK, airports.HKGN], [airports.BKK, airports.USM], [airports.JNB, airports.BKKN, airports.USM],\n  [airports.JNB, airports.SYD], [airports.PER, airports.DPS, airports.DRW, airports.ADL, airports.SYD],\n  [airports.CPT, airports.BFN], [airports.CPT, airports.KIM], [airports.CPT, airports.LHR], [airports.CPT, airports.FRA],\n  [airports.CPT, airports.PLZ, airports.DUR], [airports.HKGN, airports.AKL], [airports.AKL, airports.SYD, airports.BKKN],\n  [airports.AKL, airports.WLG], [airports.AKL, airports.CHC], [airports.HLZ, airports.WLG], [airports.HLZ, airports.CHC],\n  [airports.AKL, airports.ZQN], [airports.AKL, airports.NSN], [airports.WLG, airports.TRG], [airports.WLG, airports.ROT],\n  [airports.WLG, airports.CHC], [airports.AKL, airports.RAR], [airports.AKL, airports.NRT, airports.LHR],\n  [airports.LHR, airports.ARN], [airports.BGO, airports.TRD], [airports.BOO, airports.SJV], [airports.TOS, airports.ARN],\n  [airports.LHR, airports.SIN, airports.SYD, airports.WLG], [airports.WLG, airports.TIU], [airports.WLG, airports.NSN],\n  [airports.WLG, airports.NPL], [airports.WLG, airports.CBR, airports.SIN, airports.JNB], [airports.WLG, airports.ZQN],\n  [airports.BKKN, airports.KBV], [airports.HKT, airports.SIN, airports.MEL, airports.WLG],\n]"
 				},
 				{
-					"id": 357,
+					"id": 441,
 					"name": "UPCOMING_JOURNEYS",
 					"kind": 32,
 					"kindString": "Variable",
@@ -6110,8 +6110,8 @@
 					"title": "Variables",
 					"kind": 32,
 					"children": [
-						356,
-						357
+						440,
+						441
 					]
 				}
 			],
@@ -6372,7 +6372,7 @@
 														"sources": [
 															{
 																"fileName": "src/contact/models/map.config.ts",
-																"line": 26,
+																"line": 18,
 																"character": 17
 															}
 														],
@@ -6391,7 +6391,7 @@
 														"sources": [
 															{
 																"fileName": "src/contact/models/map.config.ts",
-																"line": 27,
+																"line": 19,
 																"character": 17
 															}
 														],
@@ -6399,7 +6399,7 @@
 															"type": "intrinsic",
 															"name": "string"
 														},
-														"defaultValue": "\"landscape.natural.terrain\""
+														"defaultValue": "\"landscape.man_made\""
 													},
 													{
 														"id": 257,
@@ -6410,7 +6410,7 @@
 														"sources": [
 															{
 																"fileName": "src/contact/models/map.config.ts",
-																"line": 28,
+																"line": 20,
 																"character": 13
 															}
 														],
@@ -6427,22 +6427,22 @@
 																	"children": [
 																		{
 																			"id": 259,
-																			"name": "visibility",
+																			"name": "color",
 																			"kind": 32,
 																			"kindString": "Variable",
 																			"flags": {},
 																			"sources": [
 																				{
 																					"fileName": "src/contact/models/map.config.ts",
-																					"line": 28,
-																					"character": 27
+																					"line": 20,
+																					"character": 22
 																				}
 																			],
 																			"type": {
 																				"type": "intrinsic",
 																				"name": "string"
 																			},
-																			"defaultValue": "\"off\""
+																			"defaultValue": "\"#f7f1df\""
 																		}
 																	],
 																	"groups": [
@@ -6457,7 +6457,7 @@
 																}
 															}
 														},
-														"defaultValue": " [{visibility: 'off'}]"
+														"defaultValue": " [{color: '#f7f1df'}]"
 													}
 												],
 												"groups": [
@@ -6484,6 +6484,601 @@
 												"children": [
 													{
 														"id": 261,
+														"name": "elementType",
+														"kind": 32,
+														"kindString": "Variable",
+														"flags": {},
+														"sources": [
+															{
+																"fileName": "src/contact/models/map.config.ts",
+																"line": 22,
+																"character": 17
+															}
+														],
+														"type": {
+															"type": "intrinsic",
+															"name": "string"
+														},
+														"defaultValue": "\"geometry\""
+													},
+													{
+														"id": 262,
+														"name": "featureType",
+														"kind": 32,
+														"kindString": "Variable",
+														"flags": {},
+														"sources": [
+															{
+																"fileName": "src/contact/models/map.config.ts",
+																"line": 23,
+																"character": 17
+															}
+														],
+														"type": {
+															"type": "intrinsic",
+															"name": "string"
+														},
+														"defaultValue": "\"landscape.natural\""
+													},
+													{
+														"id": 263,
+														"name": "stylers",
+														"kind": 32,
+														"kindString": "Variable",
+														"flags": {},
+														"sources": [
+															{
+																"fileName": "src/contact/models/map.config.ts",
+																"line": 24,
+																"character": 13
+															}
+														],
+														"type": {
+															"type": "array",
+															"elementType": {
+																"type": "reflection",
+																"declaration": {
+																	"id": 264,
+																	"name": "__type",
+																	"kind": 65536,
+																	"kindString": "Type literal",
+																	"flags": {},
+																	"children": [
+																		{
+																			"id": 265,
+																			"name": "color",
+																			"kind": 32,
+																			"kindString": "Variable",
+																			"flags": {},
+																			"sources": [
+																				{
+																					"fileName": "src/contact/models/map.config.ts",
+																					"line": 24,
+																					"character": 22
+																				}
+																			],
+																			"type": {
+																				"type": "intrinsic",
+																				"name": "string"
+																			},
+																			"defaultValue": "\"#bde6ab\""
+																		}
+																	],
+																	"groups": [
+																		{
+																			"title": "Variables",
+																			"kind": 32,
+																			"children": [
+																				265
+																			]
+																		}
+																	]
+																}
+															}
+														},
+														"defaultValue": " [{color: '#bde6ab'}]"
+													}
+												],
+												"groups": [
+													{
+														"title": "Variables",
+														"kind": 32,
+														"children": [
+															261,
+															262,
+															263
+														]
+													}
+												]
+											}
+										},
+										{
+											"type": "reflection",
+											"declaration": {
+												"id": 266,
+												"name": "__type",
+												"kind": 65536,
+												"kindString": "Type literal",
+												"flags": {},
+												"children": [
+													{
+														"id": 267,
+														"name": "elementType",
+														"kind": 32,
+														"kindString": "Variable",
+														"flags": {},
+														"sources": [
+															{
+																"fileName": "src/contact/models/map.config.ts",
+																"line": 26,
+																"character": 17
+															}
+														],
+														"type": {
+															"type": "intrinsic",
+															"name": "string"
+														},
+														"defaultValue": "\"geometry\""
+													},
+													{
+														"id": 268,
+														"name": "featureType",
+														"kind": 32,
+														"kindString": "Variable",
+														"flags": {},
+														"sources": [
+															{
+																"fileName": "src/contact/models/map.config.ts",
+																"line": 27,
+																"character": 17
+															}
+														],
+														"type": {
+															"type": "intrinsic",
+															"name": "string"
+														},
+														"defaultValue": "\"landscape.natural.terrain\""
+													},
+													{
+														"id": 269,
+														"name": "stylers",
+														"kind": 32,
+														"kindString": "Variable",
+														"flags": {},
+														"sources": [
+															{
+																"fileName": "src/contact/models/map.config.ts",
+																"line": 28,
+																"character": 13
+															}
+														],
+														"type": {
+															"type": "array",
+															"elementType": {
+																"type": "reflection",
+																"declaration": {
+																	"id": 270,
+																	"name": "__type",
+																	"kind": 65536,
+																	"kindString": "Type literal",
+																	"flags": {},
+																	"children": [
+																		{
+																			"id": 271,
+																			"name": "visibility",
+																			"kind": 32,
+																			"kindString": "Variable",
+																			"flags": {},
+																			"sources": [
+																				{
+																					"fileName": "src/contact/models/map.config.ts",
+																					"line": 28,
+																					"character": 27
+																				}
+																			],
+																			"type": {
+																				"type": "intrinsic",
+																				"name": "string"
+																			},
+																			"defaultValue": "\"off\""
+																		}
+																	],
+																	"groups": [
+																		{
+																			"title": "Variables",
+																			"kind": 32,
+																			"children": [
+																				271
+																			]
+																		}
+																	]
+																}
+															}
+														},
+														"defaultValue": " [{visibility: 'off'}]"
+													}
+												],
+												"groups": [
+													{
+														"title": "Variables",
+														"kind": 32,
+														"children": [
+															267,
+															268,
+															269
+														]
+													}
+												]
+											}
+										},
+										{
+											"type": "reflection",
+											"declaration": {
+												"id": 272,
+												"name": "__type",
+												"kind": 65536,
+												"kindString": "Type literal",
+												"flags": {},
+												"children": [
+													{
+														"id": 273,
+														"name": "elementType",
+														"kind": 32,
+														"kindString": "Variable",
+														"flags": {},
+														"sources": [
+															{
+																"fileName": "src/contact/models/map.config.ts",
+																"line": 30,
+																"character": 17
+															}
+														],
+														"type": {
+															"type": "intrinsic",
+															"name": "string"
+														},
+														"defaultValue": "\"geometry\""
+													},
+													{
+														"id": 274,
+														"name": "featureType",
+														"kind": 32,
+														"kindString": "Variable",
+														"flags": {},
+														"sources": [
+															{
+																"fileName": "src/contact/models/map.config.ts",
+																"line": 31,
+																"character": 17
+															}
+														],
+														"type": {
+															"type": "intrinsic",
+															"name": "string"
+														},
+														"defaultValue": "\"poi.park\""
+													},
+													{
+														"id": 275,
+														"name": "stylers",
+														"kind": 32,
+														"kindString": "Variable",
+														"flags": {},
+														"sources": [
+															{
+																"fileName": "src/contact/models/map.config.ts",
+																"line": 32,
+																"character": 13
+															}
+														],
+														"type": {
+															"type": "array",
+															"elementType": {
+																"type": "reflection",
+																"declaration": {
+																	"id": 276,
+																	"name": "__type",
+																	"kind": 65536,
+																	"kindString": "Type literal",
+																	"flags": {},
+																	"children": [
+																		{
+																			"id": 277,
+																			"name": "color",
+																			"kind": 32,
+																			"kindString": "Variable",
+																			"flags": {},
+																			"sources": [
+																				{
+																					"fileName": "src/contact/models/map.config.ts",
+																					"line": 32,
+																					"character": 22
+																				}
+																			],
+																			"type": {
+																				"type": "intrinsic",
+																				"name": "string"
+																			},
+																			"defaultValue": "\"#abce83\""
+																		}
+																	],
+																	"groups": [
+																		{
+																			"title": "Variables",
+																			"kind": 32,
+																			"children": [
+																				277
+																			]
+																		}
+																	]
+																}
+															}
+														},
+														"defaultValue": " [{color: '#abce83'}]"
+													}
+												],
+												"groups": [
+													{
+														"title": "Variables",
+														"kind": 32,
+														"children": [
+															273,
+															274,
+															275
+														]
+													}
+												]
+											}
+										},
+										{
+											"type": "reflection",
+											"declaration": {
+												"id": 278,
+												"name": "__type",
+												"kind": 65536,
+												"kindString": "Type literal",
+												"flags": {},
+												"children": [
+													{
+														"id": 279,
+														"name": "elementType",
+														"kind": 32,
+														"kindString": "Variable",
+														"flags": {},
+														"sources": [
+															{
+																"fileName": "src/contact/models/map.config.ts",
+																"line": 34,
+																"character": 17
+															}
+														],
+														"type": {
+															"type": "intrinsic",
+															"name": "string"
+														},
+														"defaultValue": "\"labels\""
+													},
+													{
+														"id": 280,
+														"name": "featureType",
+														"kind": 32,
+														"kindString": "Variable",
+														"flags": {},
+														"sources": [
+															{
+																"fileName": "src/contact/models/map.config.ts",
+																"line": 35,
+																"character": 17
+															}
+														],
+														"type": {
+															"type": "intrinsic",
+															"name": "string"
+														},
+														"defaultValue": "\"poi\""
+													},
+													{
+														"id": 281,
+														"name": "stylers",
+														"kind": 32,
+														"kindString": "Variable",
+														"flags": {},
+														"sources": [
+															{
+																"fileName": "src/contact/models/map.config.ts",
+																"line": 36,
+																"character": 13
+															}
+														],
+														"type": {
+															"type": "array",
+															"elementType": {
+																"type": "reflection",
+																"declaration": {
+																	"id": 282,
+																	"name": "__type",
+																	"kind": 65536,
+																	"kindString": "Type literal",
+																	"flags": {},
+																	"children": [
+																		{
+																			"id": 283,
+																			"name": "visibility",
+																			"kind": 32,
+																			"kindString": "Variable",
+																			"flags": {},
+																			"sources": [
+																				{
+																					"fileName": "src/contact/models/map.config.ts",
+																					"line": 36,
+																					"character": 27
+																				}
+																			],
+																			"type": {
+																				"type": "intrinsic",
+																				"name": "string"
+																			},
+																			"defaultValue": "\"off\""
+																		}
+																	],
+																	"groups": [
+																		{
+																			"title": "Variables",
+																			"kind": 32,
+																			"children": [
+																				283
+																			]
+																		}
+																	]
+																}
+															}
+														},
+														"defaultValue": " [{visibility: 'off'}]"
+													}
+												],
+												"groups": [
+													{
+														"title": "Variables",
+														"kind": 32,
+														"children": [
+															279,
+															280,
+															281
+														]
+													}
+												]
+											}
+										},
+										{
+											"type": "reflection",
+											"declaration": {
+												"id": 284,
+												"name": "__type",
+												"kind": 65536,
+												"kindString": "Type literal",
+												"flags": {},
+												"children": [
+													{
+														"id": 285,
+														"name": "elementType",
+														"kind": 32,
+														"kindString": "Variable",
+														"flags": {},
+														"sources": [
+															{
+																"fileName": "src/contact/models/map.config.ts",
+																"line": 38,
+																"character": 17
+															}
+														],
+														"type": {
+															"type": "intrinsic",
+															"name": "string"
+														},
+														"defaultValue": "\"geometry\""
+													},
+													{
+														"id": 286,
+														"name": "featureType",
+														"kind": 32,
+														"kindString": "Variable",
+														"flags": {},
+														"sources": [
+															{
+																"fileName": "src/contact/models/map.config.ts",
+																"line": 39,
+																"character": 17
+															}
+														],
+														"type": {
+															"type": "intrinsic",
+															"name": "string"
+														},
+														"defaultValue": "\"poi.medical\""
+													},
+													{
+														"id": 287,
+														"name": "stylers",
+														"kind": 32,
+														"kindString": "Variable",
+														"flags": {},
+														"sources": [
+															{
+																"fileName": "src/contact/models/map.config.ts",
+																"line": 40,
+																"character": 13
+															}
+														],
+														"type": {
+															"type": "array",
+															"elementType": {
+																"type": "reflection",
+																"declaration": {
+																	"id": 288,
+																	"name": "__type",
+																	"kind": 65536,
+																	"kindString": "Type literal",
+																	"flags": {},
+																	"children": [
+																		{
+																			"id": 289,
+																			"name": "color",
+																			"kind": 32,
+																			"kindString": "Variable",
+																			"flags": {},
+																			"sources": [
+																				{
+																					"fileName": "src/contact/models/map.config.ts",
+																					"line": 40,
+																					"character": 22
+																				}
+																			],
+																			"type": {
+																				"type": "intrinsic",
+																				"name": "string"
+																			},
+																			"defaultValue": "\"#fbd3da\""
+																		}
+																	],
+																	"groups": [
+																		{
+																			"title": "Variables",
+																			"kind": 32,
+																			"children": [
+																				289
+																			]
+																		}
+																	]
+																}
+															}
+														},
+														"defaultValue": " [{color: '#fbd3da'}]"
+													}
+												],
+												"groups": [
+													{
+														"title": "Variables",
+														"kind": 32,
+														"children": [
+															285,
+															286,
+															287
+														]
+													}
+												]
+											}
+										},
+										{
+											"type": "reflection",
+											"declaration": {
+												"id": 290,
+												"name": "__type",
+												"kind": 65536,
+												"kindString": "Type literal",
+												"flags": {},
+												"children": [
+													{
+														"id": 291,
 														"name": "featureType",
 														"kind": 32,
 														"kindString": "Variable",
@@ -6502,7 +7097,7 @@
 														"defaultValue": "\"poi.business\""
 													},
 													{
-														"id": 262,
+														"id": 292,
 														"name": "stylers",
 														"kind": 32,
 														"kindString": "Variable",
@@ -6519,14 +7114,14 @@
 															"elementType": {
 																"type": "reflection",
 																"declaration": {
-																	"id": 263,
+																	"id": 293,
 																	"name": "__type",
 																	"kind": 65536,
 																	"kindString": "Type literal",
 																	"flags": {},
 																	"children": [
 																		{
-																			"id": 264,
+																			"id": 294,
 																			"name": "visibility",
 																			"kind": 32,
 																			"kindString": "Variable",
@@ -6550,7 +7145,7 @@
 																			"title": "Variables",
 																			"kind": 32,
 																			"children": [
-																				264
+																				294
 																			]
 																		}
 																	]
@@ -6565,8 +7160,1079 @@
 														"title": "Variables",
 														"kind": 32,
 														"children": [
-															261,
-															262
+															291,
+															292
+														]
+													}
+												]
+											}
+										},
+										{
+											"type": "reflection",
+											"declaration": {
+												"id": 295,
+												"name": "__type",
+												"kind": 65536,
+												"kindString": "Type literal",
+												"flags": {},
+												"children": [
+													{
+														"id": 296,
+														"name": "elementType",
+														"kind": 32,
+														"kindString": "Variable",
+														"flags": {},
+														"sources": [
+															{
+																"fileName": "src/contact/models/map.config.ts",
+																"line": 45,
+																"character": 17
+															}
+														],
+														"type": {
+															"type": "intrinsic",
+															"name": "string"
+														},
+														"defaultValue": "\"geometry.stroke\""
+													},
+													{
+														"id": 297,
+														"name": "featureType",
+														"kind": 32,
+														"kindString": "Variable",
+														"flags": {},
+														"sources": [
+															{
+																"fileName": "src/contact/models/map.config.ts",
+																"line": 46,
+																"character": 17
+															}
+														],
+														"type": {
+															"type": "intrinsic",
+															"name": "string"
+														},
+														"defaultValue": "\"road\""
+													},
+													{
+														"id": 298,
+														"name": "stylers",
+														"kind": 32,
+														"kindString": "Variable",
+														"flags": {},
+														"sources": [
+															{
+																"fileName": "src/contact/models/map.config.ts",
+																"line": 47,
+																"character": 13
+															}
+														],
+														"type": {
+															"type": "array",
+															"elementType": {
+																"type": "reflection",
+																"declaration": {
+																	"id": 299,
+																	"name": "__type",
+																	"kind": 65536,
+																	"kindString": "Type literal",
+																	"flags": {},
+																	"children": [
+																		{
+																			"id": 300,
+																			"name": "visibility",
+																			"kind": 32,
+																			"kindString": "Variable",
+																			"flags": {},
+																			"sources": [
+																				{
+																					"fileName": "src/contact/models/map.config.ts",
+																					"line": 47,
+																					"character": 27
+																				}
+																			],
+																			"type": {
+																				"type": "intrinsic",
+																				"name": "string"
+																			},
+																			"defaultValue": "\"off\""
+																		}
+																	],
+																	"groups": [
+																		{
+																			"title": "Variables",
+																			"kind": 32,
+																			"children": [
+																				300
+																			]
+																		}
+																	]
+																}
+															}
+														},
+														"defaultValue": " [{visibility: 'off'}]"
+													}
+												],
+												"groups": [
+													{
+														"title": "Variables",
+														"kind": 32,
+														"children": [
+															296,
+															297,
+															298
+														]
+													}
+												]
+											}
+										},
+										{
+											"type": "reflection",
+											"declaration": {
+												"id": 301,
+												"name": "__type",
+												"kind": 65536,
+												"kindString": "Type literal",
+												"flags": {},
+												"children": [
+													{
+														"id": 302,
+														"name": "elementType",
+														"kind": 32,
+														"kindString": "Variable",
+														"flags": {},
+														"sources": [
+															{
+																"fileName": "src/contact/models/map.config.ts",
+																"line": 49,
+																"character": 17
+															}
+														],
+														"type": {
+															"type": "intrinsic",
+															"name": "string"
+														},
+														"defaultValue": "\"labels\""
+													},
+													{
+														"id": 303,
+														"name": "featureType",
+														"kind": 32,
+														"kindString": "Variable",
+														"flags": {},
+														"sources": [
+															{
+																"fileName": "src/contact/models/map.config.ts",
+																"line": 50,
+																"character": 17
+															}
+														],
+														"type": {
+															"type": "intrinsic",
+															"name": "string"
+														},
+														"defaultValue": "\"road\""
+													},
+													{
+														"id": 304,
+														"name": "stylers",
+														"kind": 32,
+														"kindString": "Variable",
+														"flags": {},
+														"sources": [
+															{
+																"fileName": "src/contact/models/map.config.ts",
+																"line": 51,
+																"character": 13
+															}
+														],
+														"type": {
+															"type": "array",
+															"elementType": {
+																"type": "reflection",
+																"declaration": {
+																	"id": 305,
+																	"name": "__type",
+																	"kind": 65536,
+																	"kindString": "Type literal",
+																	"flags": {},
+																	"children": [
+																		{
+																			"id": 306,
+																			"name": "visibility",
+																			"kind": 32,
+																			"kindString": "Variable",
+																			"flags": {},
+																			"sources": [
+																				{
+																					"fileName": "src/contact/models/map.config.ts",
+																					"line": 51,
+																					"character": 27
+																				}
+																			],
+																			"type": {
+																				"type": "intrinsic",
+																				"name": "string"
+																			},
+																			"defaultValue": "\"off\""
+																		}
+																	],
+																	"groups": [
+																		{
+																			"title": "Variables",
+																			"kind": 32,
+																			"children": [
+																				306
+																			]
+																		}
+																	]
+																}
+															}
+														},
+														"defaultValue": " [{visibility: 'off'}]"
+													}
+												],
+												"groups": [
+													{
+														"title": "Variables",
+														"kind": 32,
+														"children": [
+															302,
+															303,
+															304
+														]
+													}
+												]
+											}
+										},
+										{
+											"type": "reflection",
+											"declaration": {
+												"id": 307,
+												"name": "__type",
+												"kind": 65536,
+												"kindString": "Type literal",
+												"flags": {},
+												"children": [
+													{
+														"id": 308,
+														"name": "elementType",
+														"kind": 32,
+														"kindString": "Variable",
+														"flags": {},
+														"sources": [
+															{
+																"fileName": "src/contact/models/map.config.ts",
+																"line": 53,
+																"character": 17
+															}
+														],
+														"type": {
+															"type": "intrinsic",
+															"name": "string"
+														},
+														"defaultValue": "\"geometry.fill\""
+													},
+													{
+														"id": 309,
+														"name": "featureType",
+														"kind": 32,
+														"kindString": "Variable",
+														"flags": {},
+														"sources": [
+															{
+																"fileName": "src/contact/models/map.config.ts",
+																"line": 54,
+																"character": 17
+															}
+														],
+														"type": {
+															"type": "intrinsic",
+															"name": "string"
+														},
+														"defaultValue": "\"road.highway\""
+													},
+													{
+														"id": 310,
+														"name": "stylers",
+														"kind": 32,
+														"kindString": "Variable",
+														"flags": {},
+														"sources": [
+															{
+																"fileName": "src/contact/models/map.config.ts",
+																"line": 55,
+																"character": 13
+															}
+														],
+														"type": {
+															"type": "array",
+															"elementType": {
+																"type": "reflection",
+																"declaration": {
+																	"id": 311,
+																	"name": "__type",
+																	"kind": 65536,
+																	"kindString": "Type literal",
+																	"flags": {},
+																	"children": [
+																		{
+																			"id": 312,
+																			"name": "color",
+																			"kind": 32,
+																			"kindString": "Variable",
+																			"flags": {},
+																			"sources": [
+																				{
+																					"fileName": "src/contact/models/map.config.ts",
+																					"line": 55,
+																					"character": 22
+																				}
+																			],
+																			"type": {
+																				"type": "intrinsic",
+																				"name": "string"
+																			},
+																			"defaultValue": "\"#f5534b\""
+																		}
+																	],
+																	"groups": [
+																		{
+																			"title": "Variables",
+																			"kind": 32,
+																			"children": [
+																				312
+																			]
+																		}
+																	]
+																}
+															}
+														},
+														"defaultValue": " [{color: '#f5534b'}]"
+													}
+												],
+												"groups": [
+													{
+														"title": "Variables",
+														"kind": 32,
+														"children": [
+															308,
+															309,
+															310
+														]
+													}
+												]
+											}
+										},
+										{
+											"type": "reflection",
+											"declaration": {
+												"id": 313,
+												"name": "__type",
+												"kind": 65536,
+												"kindString": "Type literal",
+												"flags": {},
+												"children": [
+													{
+														"id": 314,
+														"name": "elementType",
+														"kind": 32,
+														"kindString": "Variable",
+														"flags": {},
+														"sources": [
+															{
+																"fileName": "src/contact/models/map.config.ts",
+																"line": 57,
+																"character": 17
+															}
+														],
+														"type": {
+															"type": "intrinsic",
+															"name": "string"
+														},
+														"defaultValue": "\"geometry.stroke\""
+													},
+													{
+														"id": 315,
+														"name": "featureType",
+														"kind": 32,
+														"kindString": "Variable",
+														"flags": {},
+														"sources": [
+															{
+																"fileName": "src/contact/models/map.config.ts",
+																"line": 58,
+																"character": 17
+															}
+														],
+														"type": {
+															"type": "intrinsic",
+															"name": "string"
+														},
+														"defaultValue": "\"road.highway\""
+													},
+													{
+														"id": 316,
+														"name": "stylers",
+														"kind": 32,
+														"kindString": "Variable",
+														"flags": {},
+														"sources": [
+															{
+																"fileName": "src/contact/models/map.config.ts",
+																"line": 59,
+																"character": 13
+															}
+														],
+														"type": {
+															"type": "array",
+															"elementType": {
+																"type": "reflection",
+																"declaration": {
+																	"id": 317,
+																	"name": "__type",
+																	"kind": 65536,
+																	"kindString": "Type literal",
+																	"flags": {},
+																	"children": [
+																		{
+																			"id": 318,
+																			"name": "color",
+																			"kind": 32,
+																			"kindString": "Variable",
+																			"flags": {},
+																			"sources": [
+																				{
+																					"fileName": "src/contact/models/map.config.ts",
+																					"line": 59,
+																					"character": 22
+																				}
+																			],
+																			"type": {
+																				"type": "intrinsic",
+																				"name": "string"
+																			},
+																			"defaultValue": "\"#f5534b\""
+																		}
+																	],
+																	"groups": [
+																		{
+																			"title": "Variables",
+																			"kind": 32,
+																			"children": [
+																				318
+																			]
+																		}
+																	]
+																}
+															}
+														},
+														"defaultValue": " [{color: '#f5534b'}]"
+													}
+												],
+												"groups": [
+													{
+														"title": "Variables",
+														"kind": 32,
+														"children": [
+															314,
+															315,
+															316
+														]
+													}
+												]
+											}
+										},
+										{
+											"type": "reflection",
+											"declaration": {
+												"id": 319,
+												"name": "__type",
+												"kind": 65536,
+												"kindString": "Type literal",
+												"flags": {},
+												"children": [
+													{
+														"id": 320,
+														"name": "elementType",
+														"kind": 32,
+														"kindString": "Variable",
+														"flags": {},
+														"sources": [
+															{
+																"fileName": "src/contact/models/map.config.ts",
+																"line": 61,
+																"character": 17
+															}
+														],
+														"type": {
+															"type": "intrinsic",
+															"name": "string"
+														},
+														"defaultValue": "\"geometry.fill\""
+													},
+													{
+														"id": 321,
+														"name": "featureType",
+														"kind": 32,
+														"kindString": "Variable",
+														"flags": {},
+														"sources": [
+															{
+																"fileName": "src/contact/models/map.config.ts",
+																"line": 62,
+																"character": 17
+															}
+														],
+														"type": {
+															"type": "intrinsic",
+															"name": "string"
+														},
+														"defaultValue": "\"road.arterial\""
+													},
+													{
+														"id": 322,
+														"name": "stylers",
+														"kind": 32,
+														"kindString": "Variable",
+														"flags": {},
+														"sources": [
+															{
+																"fileName": "src/contact/models/map.config.ts",
+																"line": 63,
+																"character": 13
+															}
+														],
+														"type": {
+															"type": "array",
+															"elementType": {
+																"type": "reflection",
+																"declaration": {
+																	"id": 323,
+																	"name": "__type",
+																	"kind": 65536,
+																	"kindString": "Type literal",
+																	"flags": {},
+																	"children": [
+																		{
+																			"id": 324,
+																			"name": "color",
+																			"kind": 32,
+																			"kindString": "Variable",
+																			"flags": {},
+																			"sources": [
+																				{
+																					"fileName": "src/contact/models/map.config.ts",
+																					"line": 63,
+																					"character": 22
+																				}
+																			],
+																			"type": {
+																				"type": "intrinsic",
+																				"name": "string"
+																			},
+																			"defaultValue": "\"#ff675f\""
+																		}
+																	],
+																	"groups": [
+																		{
+																			"title": "Variables",
+																			"kind": 32,
+																			"children": [
+																				324
+																			]
+																		}
+																	]
+																}
+															}
+														},
+														"defaultValue": " [{color: '#ff675f'}]"
+													}
+												],
+												"groups": [
+													{
+														"title": "Variables",
+														"kind": 32,
+														"children": [
+															320,
+															321,
+															322
+														]
+													}
+												]
+											}
+										},
+										{
+											"type": "reflection",
+											"declaration": {
+												"id": 325,
+												"name": "__type",
+												"kind": 65536,
+												"kindString": "Type literal",
+												"flags": {},
+												"children": [
+													{
+														"id": 326,
+														"name": "elementType",
+														"kind": 32,
+														"kindString": "Variable",
+														"flags": {},
+														"sources": [
+															{
+																"fileName": "src/contact/models/map.config.ts",
+																"line": 65,
+																"character": 17
+															}
+														],
+														"type": {
+															"type": "intrinsic",
+															"name": "string"
+														},
+														"defaultValue": "\"geometry.fill\""
+													},
+													{
+														"id": 327,
+														"name": "featureType",
+														"kind": 32,
+														"kindString": "Variable",
+														"flags": {},
+														"sources": [
+															{
+																"fileName": "src/contact/models/map.config.ts",
+																"line": 66,
+																"character": 17
+															}
+														],
+														"type": {
+															"type": "intrinsic",
+															"name": "string"
+														},
+														"defaultValue": "\"road.local\""
+													},
+													{
+														"id": 328,
+														"name": "stylers",
+														"kind": 32,
+														"kindString": "Variable",
+														"flags": {},
+														"sources": [
+															{
+																"fileName": "src/contact/models/map.config.ts",
+																"line": 67,
+																"character": 13
+															}
+														],
+														"type": {
+															"type": "array",
+															"elementType": {
+																"type": "reflection",
+																"declaration": {
+																	"id": 329,
+																	"name": "__type",
+																	"kind": 65536,
+																	"kindString": "Type literal",
+																	"flags": {},
+																	"children": [
+																		{
+																			"id": 330,
+																			"name": "color",
+																			"kind": 32,
+																			"kindString": "Variable",
+																			"flags": {},
+																			"sources": [
+																				{
+																					"fileName": "src/contact/models/map.config.ts",
+																					"line": 67,
+																					"character": 22
+																				}
+																			],
+																			"type": {
+																				"type": "intrinsic",
+																				"name": "string"
+																			},
+																			"defaultValue": "\"black\""
+																		}
+																	],
+																	"groups": [
+																		{
+																			"title": "Variables",
+																			"kind": 32,
+																			"children": [
+																				330
+																			]
+																		}
+																	]
+																}
+															}
+														},
+														"defaultValue": " [{color: 'black'}]"
+													}
+												],
+												"groups": [
+													{
+														"title": "Variables",
+														"kind": 32,
+														"children": [
+															326,
+															327,
+															328
+														]
+													}
+												]
+											}
+										},
+										{
+											"type": "reflection",
+											"declaration": {
+												"id": 331,
+												"name": "__type",
+												"kind": 65536,
+												"kindString": "Type literal",
+												"flags": {},
+												"children": [
+													{
+														"id": 332,
+														"name": "elementType",
+														"kind": 32,
+														"kindString": "Variable",
+														"flags": {},
+														"sources": [
+															{
+																"fileName": "src/contact/models/map.config.ts",
+																"line": 69,
+																"character": 17
+															}
+														],
+														"type": {
+															"type": "intrinsic",
+															"name": "string"
+														},
+														"defaultValue": "\"geometry.fill\""
+													},
+													{
+														"id": 333,
+														"name": "featureType",
+														"kind": 32,
+														"kindString": "Variable",
+														"flags": {},
+														"sources": [
+															{
+																"fileName": "src/contact/models/map.config.ts",
+																"line": 70,
+																"character": 17
+															}
+														],
+														"type": {
+															"type": "intrinsic",
+															"name": "string"
+														},
+														"defaultValue": "\"transit.station.airport\""
+													},
+													{
+														"id": 334,
+														"name": "stylers",
+														"kind": 32,
+														"kindString": "Variable",
+														"flags": {},
+														"sources": [
+															{
+																"fileName": "src/contact/models/map.config.ts",
+																"line": 71,
+																"character": 13
+															}
+														],
+														"type": {
+															"type": "array",
+															"elementType": {
+																"type": "reflection",
+																"declaration": {
+																	"id": 335,
+																	"name": "__type",
+																	"kind": 65536,
+																	"kindString": "Type literal",
+																	"flags": {},
+																	"children": [
+																		{
+																			"id": 336,
+																			"name": "color",
+																			"kind": 32,
+																			"kindString": "Variable",
+																			"flags": {},
+																			"sources": [
+																				{
+																					"fileName": "src/contact/models/map.config.ts",
+																					"line": 71,
+																					"character": 22
+																				}
+																			],
+																			"type": {
+																				"type": "intrinsic",
+																				"name": "string"
+																			},
+																			"defaultValue": "\"#cfb2db\""
+																		}
+																	],
+																	"groups": [
+																		{
+																			"title": "Variables",
+																			"kind": 32,
+																			"children": [
+																				336
+																			]
+																		}
+																	]
+																}
+															}
+														},
+														"defaultValue": " [{color: '#cfb2db'}]"
+													}
+												],
+												"groups": [
+													{
+														"title": "Variables",
+														"kind": 32,
+														"children": [
+															332,
+															333,
+															334
+														]
+													}
+												]
+											}
+										},
+										{
+											"type": "reflection",
+											"declaration": {
+												"id": 337,
+												"name": "__type",
+												"kind": 65536,
+												"kindString": "Type literal",
+												"flags": {},
+												"children": [
+													{
+														"id": 338,
+														"name": "elementType",
+														"kind": 32,
+														"kindString": "Variable",
+														"flags": {},
+														"sources": [
+															{
+																"fileName": "src/contact/models/map.config.ts",
+																"line": 73,
+																"character": 17
+															}
+														],
+														"type": {
+															"type": "intrinsic",
+															"name": "string"
+														},
+														"defaultValue": "\"geometry.fill\""
+													},
+													{
+														"id": 339,
+														"name": "featureType",
+														"kind": 32,
+														"kindString": "Variable",
+														"flags": {},
+														"sources": [
+															{
+																"fileName": "src/contact/models/map.config.ts",
+																"line": 74,
+																"character": 17
+															}
+														],
+														"type": {
+															"type": "intrinsic",
+															"name": "string"
+														},
+														"defaultValue": "\"transit.line\""
+													},
+													{
+														"id": 340,
+														"name": "stylers",
+														"kind": 32,
+														"kindString": "Variable",
+														"flags": {},
+														"sources": [
+															{
+																"fileName": "src/contact/models/map.config.ts",
+																"line": 75,
+																"character": 13
+															}
+														],
+														"type": {
+															"type": "array",
+															"elementType": {
+																"type": "reflection",
+																"declaration": {
+																	"id": 341,
+																	"name": "__type",
+																	"kind": 65536,
+																	"kindString": "Type literal",
+																	"flags": {},
+																	"children": [
+																		{
+																			"id": 342,
+																			"name": "color",
+																			"kind": 32,
+																			"kindString": "Variable",
+																			"flags": {},
+																			"sources": [
+																				{
+																					"fileName": "src/contact/models/map.config.ts",
+																					"line": 75,
+																					"character": 22
+																				}
+																			],
+																			"type": {
+																				"type": "intrinsic",
+																				"name": "string"
+																			},
+																			"defaultValue": "\"#474d5d\""
+																		}
+																	],
+																	"groups": [
+																		{
+																			"title": "Variables",
+																			"kind": 32,
+																			"children": [
+																				342
+																			]
+																		}
+																	]
+																}
+															}
+														},
+														"defaultValue": " [{color: '#474d5d'}]"
+													}
+												],
+												"groups": [
+													{
+														"title": "Variables",
+														"kind": 32,
+														"children": [
+															338,
+															339,
+															340
+														]
+													}
+												]
+											}
+										},
+										{
+											"type": "reflection",
+											"declaration": {
+												"id": 343,
+												"name": "__type",
+												"kind": 65536,
+												"kindString": "Type literal",
+												"flags": {},
+												"children": [
+													{
+														"id": 344,
+														"name": "elementType",
+														"kind": 32,
+														"kindString": "Variable",
+														"flags": {},
+														"sources": [
+															{
+																"fileName": "src/contact/models/map.config.ts",
+																"line": 77,
+																"character": 17
+															}
+														],
+														"type": {
+															"type": "intrinsic",
+															"name": "string"
+														},
+														"defaultValue": "\"geometry.stroke\""
+													},
+													{
+														"id": 345,
+														"name": "featureType",
+														"kind": 32,
+														"kindString": "Variable",
+														"flags": {},
+														"sources": [
+															{
+																"fileName": "src/contact/models/map.config.ts",
+																"line": 78,
+																"character": 17
+															}
+														],
+														"type": {
+															"type": "intrinsic",
+															"name": "string"
+														},
+														"defaultValue": "\"transit.line\""
+													},
+													{
+														"id": 346,
+														"name": "stylers",
+														"kind": 32,
+														"kindString": "Variable",
+														"flags": {},
+														"sources": [
+															{
+																"fileName": "src/contact/models/map.config.ts",
+																"line": 79,
+																"character": 13
+															}
+														],
+														"type": {
+															"type": "array",
+															"elementType": {
+																"type": "reflection",
+																"declaration": {
+																	"id": 347,
+																	"name": "__type",
+																	"kind": 65536,
+																	"kindString": "Type literal",
+																	"flags": {},
+																	"children": [
+																		{
+																			"id": 348,
+																			"name": "color",
+																			"kind": 32,
+																			"kindString": "Variable",
+																			"flags": {},
+																			"sources": [
+																				{
+																					"fileName": "src/contact/models/map.config.ts",
+																					"line": 79,
+																					"character": 22
+																				}
+																			],
+																			"type": {
+																				"type": "intrinsic",
+																				"name": "string"
+																			},
+																			"defaultValue": "\"#474d5d\""
+																		}
+																	],
+																	"groups": [
+																		{
+																			"title": "Variables",
+																			"kind": 32,
+																			"children": [
+																				348
+																			]
+																		}
+																	]
+																}
+															}
+														},
+														"defaultValue": " [{color: '#474d5d'}]"
+													}
+												],
+												"groups": [
+													{
+														"title": "Variables",
+														"kind": 32,
+														"children": [
+															344,
+															345,
+															346
 														]
 													}
 												]
@@ -6578,7 +8244,7 @@
 							"defaultValue": " [\n    {\n      elementType: 'geometry',\n      featureType: 'water',\n      stylers: [{color: '#00bdbd'}],\n    }, {\n      elementType: 'geometry',\n      featureType: 'landscape.man_made',\n      stylers: [{color: '#f7f1df'}],\n    }, {\n      elementType: 'geometry',\n      featureType: 'landscape.natural',\n      stylers: [{color: '#bde6ab'}],\n    }, {\n      elementType: 'geometry',\n      featureType: 'landscape.natural.terrain',\n      stylers: [{visibility: 'off'}],\n    }, {\n      elementType: 'geometry',\n      featureType: 'poi.park',\n      stylers: [{color: '#abce83'}],\n    }, {\n      elementType: 'labels',\n      featureType: 'poi',\n      stylers: [{visibility: 'off'}],\n    }, {\n      elementType: 'geometry',\n      featureType: 'poi.medical',\n      stylers: [{color: '#fbd3da'}],\n    }, {\n      featureType: 'poi.business',\n      stylers: [{visibility: 'off'}],\n    }, {\n      elementType: 'geometry.stroke',\n      featureType: 'road',\n      stylers: [{visibility: 'off'}],\n    }, {\n      elementType: 'labels',\n      featureType: 'road',\n      stylers: [{visibility: 'off'}],\n    }, {\n      elementType: 'geometry.fill',\n      featureType: 'road.highway',\n      stylers: [{color: '#f5534b'}],\n    }, {\n      elementType: 'geometry.stroke',\n      featureType: 'road.highway',\n      stylers: [{color: '#f5534b'}],\n    }, {\n      elementType: 'geometry.fill',\n      featureType: 'road.arterial',\n      stylers: [{color: '#ff675f'}],\n    }, {\n      elementType: 'geometry.fill',\n      featureType: 'road.local',\n      stylers: [{color: 'black'}],\n    }, {\n      elementType: 'geometry.fill',\n      featureType: 'transit.station.airport',\n      stylers: [{color: '#cfb2db'}],\n    }, {\n      elementType: 'geometry.fill',\n      featureType: 'transit.line',\n      stylers: [{color: '#474d5d'}],\n    }, {\n      elementType: 'geometry.stroke',\n      featureType: 'transit.line',\n      stylers: [{color: '#474d5d'}],\n    },\n  ]"
 						},
 						{
-							"id": 265,
+							"id": 349,
 							"name": "zoom",
 							"kind": 32,
 							"kindString": "Variable",
@@ -6608,7 +8274,7 @@
 								245,
 								246,
 								247,
-								265
+								349
 							]
 						}
 					],
@@ -7763,7 +9429,7 @@
 			]
 		},
 		{
-			"id": 417,
+			"id": 501,
 			"name": "\"src/education/components/education\"",
 			"kind": 1,
 			"kindString": "External module",
@@ -7773,7 +9439,7 @@
 			"originalName": "/home/louw/workspace/heroku/portfolio-web/src/education/components/education.ts",
 			"children": [
 				{
-					"id": 418,
+					"id": 502,
 					"name": "EducationComponent",
 					"kind": 128,
 					"kindString": "Class",
@@ -7794,7 +9460,7 @@
 					],
 					"children": [
 						{
-							"id": 421,
+							"id": 505,
 							"name": "constructor",
 							"kind": 512,
 							"kindString": "Constructor",
@@ -7803,14 +9469,14 @@
 							},
 							"signatures": [
 								{
-									"id": 422,
+									"id": 506,
 									"name": "new EducationComponent",
 									"kind": 16384,
 									"kindString": "Constructor signature",
 									"flags": {},
 									"parameters": [
 										{
-											"id": 423,
+											"id": 507,
 											"name": "educationService",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -7818,14 +9484,14 @@
 											"type": {
 												"type": "reference",
 												"name": "EducationService",
-												"id": 409
+												"id": 493
 											}
 										}
 									],
 									"type": {
 										"type": "reference",
 										"name": "EducationComponent",
-										"id": 418
+										"id": 502
 									}
 								}
 							],
@@ -7838,7 +9504,7 @@
 							]
 						},
 						{
-							"id": 420,
+							"id": 504,
 							"name": "codeSchool",
 							"kind": 1024,
 							"kindString": "Property",
@@ -7856,11 +9522,11 @@
 							"type": {
 								"type": "reference",
 								"name": "CodeSchool",
-								"id": 401
+								"id": 485
 							}
 						},
 						{
-							"id": 419,
+							"id": 503,
 							"name": "schools",
 							"kind": 1024,
 							"kindString": "Property",
@@ -7882,13 +9548,13 @@
 									{
 										"type": "reference",
 										"name": "School",
-										"id": 373
+										"id": 457
 									}
 								]
 							}
 						},
 						{
-							"id": 428,
+							"id": 512,
 							"name": "getCodeSchool",
 							"kind": 2048,
 							"kindString": "Method",
@@ -7897,7 +9563,7 @@
 							},
 							"signatures": [
 								{
-									"id": 429,
+									"id": 513,
 									"name": "getCodeSchool",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -7917,7 +9583,7 @@
 							]
 						},
 						{
-							"id": 426,
+							"id": 510,
 							"name": "getSchools",
 							"kind": 2048,
 							"kindString": "Method",
@@ -7926,7 +9592,7 @@
 							},
 							"signatures": [
 								{
-									"id": 427,
+									"id": 511,
 									"name": "getSchools",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -7946,7 +9612,7 @@
 							]
 						},
 						{
-							"id": 424,
+							"id": 508,
 							"name": "ngOnInit",
 							"kind": 2048,
 							"kindString": "Method",
@@ -7955,7 +9621,7 @@
 							},
 							"signatures": [
 								{
-									"id": 425,
+									"id": 509,
 									"name": "ngOnInit",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -7980,24 +9646,24 @@
 							"title": "Constructors",
 							"kind": 512,
 							"children": [
-								421
+								505
 							]
 						},
 						{
 							"title": "Properties",
 							"kind": 1024,
 							"children": [
-								420,
-								419
+								504,
+								503
 							]
 						},
 						{
 							"title": "Methods",
 							"kind": 2048,
 							"children": [
-								428,
-								426,
-								424
+								512,
+								510,
+								508
 							]
 						}
 					],
@@ -8021,7 +9687,7 @@
 					"title": "Classes",
 					"kind": 128,
 					"children": [
-						418
+						502
 					]
 				}
 			],
@@ -8034,7 +9700,7 @@
 			]
 		},
 		{
-			"id": 387,
+			"id": 471,
 			"name": "\"src/education/definitions/code.school\"",
 			"kind": 1,
 			"kindString": "External module",
@@ -8044,7 +9710,7 @@
 			"originalName": "/home/louw/workspace/heroku/portfolio-web/src/education/definitions/code.school.ts",
 			"children": [
 				{
-					"id": 401,
+					"id": 485,
 					"name": "CodeSchool",
 					"kind": 256,
 					"kindString": "Interface",
@@ -8056,7 +9722,7 @@
 					},
 					"children": [
 						{
-							"id": 407,
+							"id": 491,
 							"name": "badges",
 							"kind": 1024,
 							"kindString": "Property",
@@ -8077,13 +9743,13 @@
 									{
 										"type": "reference",
 										"name": "CodeSchoolBadge",
-										"id": 397
+										"id": 481
 									}
 								]
 							}
 						},
 						{
-							"id": 403,
+							"id": 487,
 							"name": "courses",
 							"kind": 1024,
 							"kindString": "Property",
@@ -8100,14 +9766,14 @@
 							"type": {
 								"type": "reflection",
 								"declaration": {
-									"id": 404,
+									"id": 488,
 									"name": "__type",
 									"kind": 65536,
 									"kindString": "Type literal",
 									"flags": {},
 									"children": [
 										{
-											"id": 405,
+											"id": 489,
 											"name": "completed",
 											"kind": 32,
 											"kindString": "Variable",
@@ -8126,13 +9792,13 @@
 													{
 														"type": "reference",
 														"name": "CodeSchoolCourse",
-														"id": 393
+														"id": 477
 													}
 												]
 											}
 										},
 										{
-											"id": 406,
+											"id": 490,
 											"name": "in_progress",
 											"kind": 32,
 											"kindString": "Variable",
@@ -8151,7 +9817,7 @@
 													{
 														"type": "reference",
 														"name": "CodeSchoolCourse",
-														"id": 393
+														"id": 477
 													}
 												]
 											}
@@ -8162,8 +9828,8 @@
 											"title": "Variables",
 											"kind": 32,
 											"children": [
-												405,
-												406
+												489,
+												490
 											]
 										}
 									],
@@ -8178,7 +9844,7 @@
 							}
 						},
 						{
-							"id": 402,
+							"id": 486,
 							"name": "user",
 							"kind": 1024,
 							"kindString": "Property",
@@ -8195,7 +9861,7 @@
 							"type": {
 								"type": "reference",
 								"name": "CodeSchoolUser",
-								"id": 388
+								"id": 472
 							}
 						}
 					],
@@ -8204,9 +9870,9 @@
 							"title": "Properties",
 							"kind": 1024,
 							"children": [
-								407,
-								403,
-								402
+								491,
+								487,
+								486
 							]
 						}
 					],
@@ -8219,7 +9885,7 @@
 					]
 				},
 				{
-					"id": 397,
+					"id": 481,
 					"name": "CodeSchoolBadge",
 					"kind": 256,
 					"kindString": "Interface",
@@ -8229,7 +9895,7 @@
 					},
 					"children": [
 						{
-							"id": 399,
+							"id": 483,
 							"name": "badge",
 							"kind": 1024,
 							"kindString": "Property",
@@ -8247,7 +9913,7 @@
 							}
 						},
 						{
-							"id": 400,
+							"id": 484,
 							"name": "course_url",
 							"kind": 1024,
 							"kindString": "Property",
@@ -8265,7 +9931,7 @@
 							}
 						},
 						{
-							"id": 398,
+							"id": 482,
 							"name": "name",
 							"kind": 1024,
 							"kindString": "Property",
@@ -8288,9 +9954,9 @@
 							"title": "Properties",
 							"kind": 1024,
 							"children": [
-								399,
-								400,
-								398
+								483,
+								484,
+								482
 							]
 						}
 					],
@@ -8303,7 +9969,7 @@
 					]
 				},
 				{
-					"id": 393,
+					"id": 477,
 					"name": "CodeSchoolCourse",
 					"kind": 256,
 					"kindString": "Interface",
@@ -8313,7 +9979,7 @@
 					},
 					"children": [
 						{
-							"id": 396,
+							"id": 480,
 							"name": "badge",
 							"kind": 1024,
 							"kindString": "Property",
@@ -8331,7 +9997,7 @@
 							}
 						},
 						{
-							"id": 394,
+							"id": 478,
 							"name": "title",
 							"kind": 1024,
 							"kindString": "Property",
@@ -8349,7 +10015,7 @@
 							}
 						},
 						{
-							"id": 395,
+							"id": 479,
 							"name": "url",
 							"kind": 1024,
 							"kindString": "Property",
@@ -8372,9 +10038,9 @@
 							"title": "Properties",
 							"kind": 1024,
 							"children": [
-								396,
-								394,
-								395
+								480,
+								478,
+								479
 							]
 						}
 					],
@@ -8387,7 +10053,7 @@
 					]
 				},
 				{
-					"id": 388,
+					"id": 472,
 					"name": "CodeSchoolUser",
 					"kind": 256,
 					"kindString": "Interface",
@@ -8397,7 +10063,7 @@
 					},
 					"children": [
 						{
-							"id": 392,
+							"id": 476,
 							"name": "avatar",
 							"kind": 1024,
 							"kindString": "Property",
@@ -8415,7 +10081,7 @@
 							}
 						},
 						{
-							"id": 390,
+							"id": 474,
 							"name": "member_since",
 							"kind": 1024,
 							"kindString": "Property",
@@ -8433,7 +10099,7 @@
 							}
 						},
 						{
-							"id": 391,
+							"id": 475,
 							"name": "total_score",
 							"kind": 1024,
 							"kindString": "Property",
@@ -8451,7 +10117,7 @@
 							}
 						},
 						{
-							"id": 389,
+							"id": 473,
 							"name": "username",
 							"kind": 1024,
 							"kindString": "Property",
@@ -8474,10 +10140,10 @@
 							"title": "Properties",
 							"kind": 1024,
 							"children": [
-								392,
-								390,
-								391,
-								389
+								476,
+								474,
+								475,
+								473
 							]
 						}
 					],
@@ -8495,10 +10161,10 @@
 					"title": "Interfaces",
 					"kind": 256,
 					"children": [
-						401,
-						397,
-						393,
-						388
+						485,
+						481,
+						477,
+						472
 					]
 				}
 			],
@@ -8511,7 +10177,7 @@
 			]
 		},
 		{
-			"id": 372,
+			"id": 456,
 			"name": "\"src/education/definitions/school\"",
 			"kind": 1,
 			"kindString": "External module",
@@ -8521,7 +10187,7 @@
 			"originalName": "/home/louw/workspace/heroku/portfolio-web/src/education/definitions/school.ts",
 			"children": [
 				{
-					"id": 373,
+					"id": 457,
 					"name": "School",
 					"kind": 256,
 					"kindString": "Interface",
@@ -8533,7 +10199,7 @@
 					},
 					"children": [
 						{
-							"id": 374,
+							"id": 458,
 							"name": "content",
 							"kind": 1024,
 							"kindString": "Property",
@@ -8556,7 +10222,7 @@
 							}
 						},
 						{
-							"id": 375,
+							"id": 459,
 							"name": "institution",
 							"kind": 1024,
 							"kindString": "Property",
@@ -8576,14 +10242,14 @@
 							"type": {
 								"type": "reflection",
 								"declaration": {
-									"id": 376,
+									"id": 460,
 									"name": "__type",
 									"kind": 65536,
 									"kindString": "Type literal",
 									"flags": {},
 									"children": [
 										{
-											"id": 377,
+											"id": 461,
 											"name": "location",
 											"kind": 32,
 											"kindString": "Variable",
@@ -8604,7 +10270,7 @@
 											}
 										},
 										{
-											"id": 378,
+											"id": 462,
 											"name": "name",
 											"kind": 32,
 											"kindString": "Variable",
@@ -8625,7 +10291,7 @@
 											}
 										},
 										{
-											"id": 379,
+											"id": 463,
 											"name": "url",
 											"kind": 32,
 											"kindString": "Variable",
@@ -8653,9 +10319,9 @@
 											"title": "Variables",
 											"kind": 32,
 											"children": [
-												377,
-												378,
-												379
+												461,
+												462,
+												463
 											]
 										}
 									],
@@ -8670,7 +10336,7 @@
 							}
 						},
 						{
-							"id": 380,
+							"id": 464,
 							"name": "qualification",
 							"kind": 1024,
 							"kindString": "Property",
@@ -8693,7 +10359,7 @@
 							}
 						},
 						{
-							"id": 381,
+							"id": 465,
 							"name": "year",
 							"kind": 1024,
 							"kindString": "Property",
@@ -8713,14 +10379,14 @@
 							"type": {
 								"type": "reflection",
 								"declaration": {
-									"id": 382,
+									"id": 466,
 									"name": "__type",
 									"kind": 65536,
 									"kindString": "Type literal",
 									"flags": {},
 									"children": [
 										{
-											"id": 383,
+											"id": 467,
 											"name": "from",
 											"kind": 32,
 											"kindString": "Variable",
@@ -8741,7 +10407,7 @@
 											}
 										},
 										{
-											"id": 384,
+											"id": 468,
 											"name": "to",
 											"kind": 32,
 											"kindString": "Variable",
@@ -8767,8 +10433,8 @@
 											"title": "Variables",
 											"kind": 32,
 											"children": [
-												383,
-												384
+												467,
+												468
 											]
 										}
 									],
@@ -8788,10 +10454,10 @@
 							"title": "Properties",
 							"kind": 1024,
 							"children": [
-								374,
-								375,
-								380,
-								381
+								458,
+								459,
+								464,
+								465
 							]
 						}
 					],
@@ -8809,7 +10475,7 @@
 					"title": "Interfaces",
 					"kind": 256,
 					"children": [
-						373
+						457
 					]
 				}
 			],
@@ -8822,7 +10488,7 @@
 			]
 		},
 		{
-			"id": 385,
+			"id": 469,
 			"name": "\"src/education/models/schools\"",
 			"kind": 1,
 			"kindString": "External module",
@@ -8832,7 +10498,7 @@
 			"originalName": "/home/louw/workspace/heroku/portfolio-web/src/education/models/schools.ts",
 			"children": [
 				{
-					"id": 386,
+					"id": 470,
 					"name": "SCHOOLS",
 					"kind": 32,
 					"kindString": "Variable",
@@ -8862,7 +10528,7 @@
 							{
 								"type": "reference",
 								"name": "School",
-								"id": 373
+								"id": 457
 							}
 						]
 					},
@@ -8874,7 +10540,7 @@
 					"title": "Variables",
 					"kind": 32,
 					"children": [
-						386
+						470
 					]
 				}
 			],
@@ -8887,7 +10553,7 @@
 			]
 		},
 		{
-			"id": 408,
+			"id": 492,
 			"name": "\"src/education/services/education\"",
 			"kind": 1,
 			"kindString": "External module",
@@ -8897,7 +10563,7 @@
 			"originalName": "/home/louw/workspace/heroku/portfolio-web/src/education/services/education.ts",
 			"children": [
 				{
-					"id": 409,
+					"id": 493,
 					"name": "EducationService",
 					"kind": 128,
 					"kindString": "Class",
@@ -8916,7 +10582,7 @@
 					],
 					"children": [
 						{
-							"id": 412,
+							"id": 496,
 							"name": "constructor",
 							"kind": 512,
 							"kindString": "Constructor",
@@ -8925,14 +10591,14 @@
 							},
 							"signatures": [
 								{
-									"id": 413,
+									"id": 497,
 									"name": "new EducationService",
 									"kind": 16384,
 									"kindString": "Constructor signature",
 									"flags": {},
 									"parameters": [
 										{
-											"id": 414,
+											"id": 498,
 											"name": "http",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -8946,7 +10612,7 @@
 									"type": {
 										"type": "reference",
 										"name": "EducationService",
-										"id": 409
+										"id": 493
 									}
 								}
 							],
@@ -8959,7 +10625,7 @@
 							]
 						},
 						{
-							"id": 415,
+							"id": 499,
 							"name": "getCodeSchool",
 							"kind": 2048,
 							"kindString": "Method",
@@ -8968,7 +10634,7 @@
 							},
 							"signatures": [
 								{
-									"id": 416,
+									"id": 500,
 									"name": "getCodeSchool",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -8983,7 +10649,7 @@
 													{
 														"type": "reference",
 														"name": "CodeSchool",
-														"id": 401
+														"id": 485
 													},
 													{
 														"type": "reference",
@@ -9005,7 +10671,7 @@
 							]
 						},
 						{
-							"id": 410,
+							"id": 494,
 							"name": "getSchools",
 							"kind": 2048,
 							"kindString": "Method",
@@ -9015,7 +10681,7 @@
 							},
 							"signatures": [
 								{
-									"id": 411,
+									"id": 495,
 									"name": "getSchools",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -9031,7 +10697,7 @@
 													{
 														"type": "reference",
 														"name": "School",
-														"id": 373
+														"id": 457
 													}
 												]
 											}
@@ -9053,15 +10719,15 @@
 							"title": "Constructors",
 							"kind": 512,
 							"children": [
-								412
+								496
 							]
 						},
 						{
 							"title": "Methods",
 							"kind": 2048,
 							"children": [
-								415,
-								410
+								499,
+								494
 							]
 						}
 					],
@@ -9079,7 +10745,7 @@
 					"title": "Classes",
 					"kind": 128,
 					"children": [
-						409
+						493
 					]
 				}
 			],
@@ -9092,7 +10758,7 @@
 			]
 		},
 		{
-			"id": 451,
+			"id": 535,
 			"name": "\"src/experience/components/experience\"",
 			"kind": 1,
 			"kindString": "External module",
@@ -9102,7 +10768,7 @@
 			"originalName": "/home/louw/workspace/heroku/portfolio-web/src/experience/components/experience.ts",
 			"children": [
 				{
-					"id": 452,
+					"id": 536,
 					"name": "ExperienceComponent",
 					"kind": 128,
 					"kindString": "Class",
@@ -9123,7 +10789,7 @@
 					],
 					"children": [
 						{
-							"id": 453,
+							"id": 537,
 							"name": "jobs",
 							"kind": 1024,
 							"kindString": "Property",
@@ -9145,13 +10811,13 @@
 									{
 										"type": "reference",
 										"name": "Job",
-										"id": 431
+										"id": 515
 									}
 								]
 							}
 						},
 						{
-							"id": 456,
+							"id": 540,
 							"name": "getJobs",
 							"kind": 2048,
 							"kindString": "Method",
@@ -9160,7 +10826,7 @@
 							},
 							"signatures": [
 								{
-									"id": 457,
+									"id": 541,
 									"name": "getJobs",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -9180,7 +10846,7 @@
 							]
 						},
 						{
-							"id": 454,
+							"id": 538,
 							"name": "ngOnInit",
 							"kind": 2048,
 							"kindString": "Method",
@@ -9189,7 +10855,7 @@
 							},
 							"signatures": [
 								{
-									"id": 455,
+									"id": 539,
 									"name": "ngOnInit",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -9214,15 +10880,15 @@
 							"title": "Properties",
 							"kind": 1024,
 							"children": [
-								453
+								537
 							]
 						},
 						{
 							"title": "Methods",
 							"kind": 2048,
 							"children": [
-								456,
-								454
+								540,
+								538
 							]
 						}
 					],
@@ -9246,7 +10912,7 @@
 					"title": "Classes",
 					"kind": 128,
 					"children": [
-						452
+						536
 					]
 				}
 			],
@@ -9259,7 +10925,7 @@
 			]
 		},
 		{
-			"id": 430,
+			"id": 514,
 			"name": "\"src/experience/definitions/job\"",
 			"kind": 1,
 			"kindString": "External module",
@@ -9269,7 +10935,7 @@
 			"originalName": "/home/louw/workspace/heroku/portfolio-web/src/experience/definitions/job.ts",
 			"children": [
 				{
-					"id": 431,
+					"id": 515,
 					"name": "Job",
 					"kind": 256,
 					"kindString": "Interface",
@@ -9281,7 +10947,7 @@
 					},
 					"children": [
 						{
-							"id": 432,
+							"id": 516,
 							"name": "accomplishments",
 							"kind": 1024,
 							"kindString": "Property",
@@ -9305,7 +10971,7 @@
 							}
 						},
 						{
-							"id": 433,
+							"id": 517,
 							"name": "content",
 							"kind": 1024,
 							"kindString": "Property",
@@ -9328,7 +10994,7 @@
 							}
 						},
 						{
-							"id": 434,
+							"id": 518,
 							"name": "institution",
 							"kind": 1024,
 							"kindString": "Property",
@@ -9348,14 +11014,14 @@
 							"type": {
 								"type": "reflection",
 								"declaration": {
-									"id": 435,
+									"id": 519,
 									"name": "__type",
 									"kind": 65536,
 									"kindString": "Type literal",
 									"flags": {},
 									"children": [
 										{
-											"id": 436,
+											"id": 520,
 											"name": "location",
 											"kind": 32,
 											"kindString": "Variable",
@@ -9376,7 +11042,7 @@
 											}
 										},
 										{
-											"id": 437,
+											"id": 521,
 											"name": "name",
 											"kind": 32,
 											"kindString": "Variable",
@@ -9397,7 +11063,7 @@
 											}
 										},
 										{
-											"id": 438,
+											"id": 522,
 											"name": "url",
 											"kind": 32,
 											"kindString": "Variable",
@@ -9425,9 +11091,9 @@
 											"title": "Variables",
 											"kind": 32,
 											"children": [
-												436,
-												437,
-												438
+												520,
+												521,
+												522
 											]
 										}
 									],
@@ -9442,7 +11108,7 @@
 							}
 						},
 						{
-							"id": 439,
+							"id": 523,
 							"name": "title",
 							"kind": 1024,
 							"kindString": "Property",
@@ -9465,7 +11131,7 @@
 							}
 						},
 						{
-							"id": 440,
+							"id": 524,
 							"name": "video",
 							"kind": 1024,
 							"kindString": "Property",
@@ -9489,7 +11155,7 @@
 							}
 						},
 						{
-							"id": 441,
+							"id": 525,
 							"name": "year",
 							"kind": 1024,
 							"kindString": "Property",
@@ -9509,14 +11175,14 @@
 							"type": {
 								"type": "reflection",
 								"declaration": {
-									"id": 442,
+									"id": 526,
 									"name": "__type",
 									"kind": 65536,
 									"kindString": "Type literal",
 									"flags": {},
 									"children": [
 										{
-											"id": 443,
+											"id": 527,
 											"name": "from",
 											"kind": 32,
 											"kindString": "Variable",
@@ -9537,7 +11203,7 @@
 											}
 										},
 										{
-											"id": 444,
+											"id": 528,
 											"name": "to",
 											"kind": 32,
 											"kindString": "Variable",
@@ -9563,8 +11229,8 @@
 											"title": "Variables",
 											"kind": 32,
 											"children": [
-												443,
-												444
+												527,
+												528
 											]
 										}
 									],
@@ -9584,12 +11250,12 @@
 							"title": "Properties",
 							"kind": 1024,
 							"children": [
-								432,
-								433,
-								434,
-								439,
-								440,
-								441
+								516,
+								517,
+								518,
+								523,
+								524,
+								525
 							]
 						}
 					],
@@ -9607,7 +11273,7 @@
 					"title": "Interfaces",
 					"kind": 256,
 					"children": [
-						431
+						515
 					]
 				}
 			],
@@ -9620,7 +11286,7 @@
 			]
 		},
 		{
-			"id": 445,
+			"id": 529,
 			"name": "\"src/experience/models/jobs\"",
 			"kind": 1,
 			"kindString": "External module",
@@ -9630,7 +11296,7 @@
 			"originalName": "/home/louw/workspace/heroku/portfolio-web/src/experience/models/jobs.ts",
 			"children": [
 				{
-					"id": 446,
+					"id": 530,
 					"name": "JOBS",
 					"kind": 32,
 					"kindString": "Variable",
@@ -9660,7 +11326,7 @@
 							{
 								"type": "reference",
 								"name": "Job",
-								"id": 431
+								"id": 515
 							}
 						]
 					},
@@ -9672,7 +11338,7 @@
 					"title": "Variables",
 					"kind": 32,
 					"children": [
-						446
+						530
 					]
 				}
 			],
@@ -9685,7 +11351,7 @@
 			]
 		},
 		{
-			"id": 447,
+			"id": 531,
 			"name": "\"src/experience/services/experience\"",
 			"kind": 1,
 			"kindString": "External module",
@@ -9695,7 +11361,7 @@
 			"originalName": "/home/louw/workspace/heroku/portfolio-web/src/experience/services/experience.ts",
 			"children": [
 				{
-					"id": 448,
+					"id": 532,
 					"name": "ExperienceService",
 					"kind": 128,
 					"kindString": "Class",
@@ -9704,7 +11370,7 @@
 					},
 					"children": [
 						{
-							"id": 449,
+							"id": 533,
 							"name": "getJobs",
 							"kind": 2048,
 							"kindString": "Method",
@@ -9714,7 +11380,7 @@
 							},
 							"signatures": [
 								{
-									"id": 450,
+									"id": 534,
 									"name": "getJobs",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -9730,7 +11396,7 @@
 													{
 														"type": "reference",
 														"name": "Job",
-														"id": 431
+														"id": 515
 													}
 												]
 											}
@@ -9752,7 +11418,7 @@
 							"title": "Methods",
 							"kind": 2048,
 							"children": [
-								449
+								533
 							]
 						}
 					],
@@ -9770,7 +11436,7 @@
 					"title": "Classes",
 					"kind": 128,
 					"children": [
-						448
+						532
 					]
 				}
 			],
@@ -9783,7 +11449,7 @@
 			]
 		},
 		{
-			"id": 469,
+			"id": 553,
 			"name": "\"src/footer/components/footer\"",
 			"kind": 1,
 			"kindString": "External module",
@@ -9793,7 +11459,7 @@
 			"originalName": "/home/louw/workspace/heroku/portfolio-web/src/footer/components/footer.ts",
 			"children": [
 				{
-					"id": 470,
+					"id": 554,
 					"name": "FooterComponent",
 					"kind": 128,
 					"kindString": "Class",
@@ -9814,7 +11480,7 @@
 					],
 					"children": [
 						{
-							"id": 473,
+							"id": 557,
 							"name": "constructor",
 							"kind": 512,
 							"kindString": "Constructor",
@@ -9823,7 +11489,7 @@
 							},
 							"signatures": [
 								{
-									"id": 474,
+									"id": 558,
 									"name": "new FooterComponent",
 									"kind": 16384,
 									"kindString": "Constructor signature",
@@ -9831,7 +11497,7 @@
 									"type": {
 										"type": "reference",
 										"name": "FooterComponent",
-										"id": 470
+										"id": 554
 									}
 								}
 							],
@@ -9844,7 +11510,7 @@
 							]
 						},
 						{
-							"id": 472,
+							"id": 556,
 							"name": "currentDate",
 							"kind": 1024,
 							"kindString": "Property",
@@ -9865,7 +11531,7 @@
 							}
 						},
 						{
-							"id": 471,
+							"id": 555,
 							"name": "links",
 							"kind": 1024,
 							"kindString": "Property",
@@ -9887,13 +11553,13 @@
 									{
 										"type": "reference",
 										"name": "Link",
-										"id": 459
+										"id": 543
 									}
 								]
 							}
 						},
 						{
-							"id": 477,
+							"id": 561,
 							"name": "getLinks",
 							"kind": 2048,
 							"kindString": "Method",
@@ -9902,7 +11568,7 @@
 							},
 							"signatures": [
 								{
-									"id": 478,
+									"id": 562,
 									"name": "getLinks",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -9922,7 +11588,7 @@
 							]
 						},
 						{
-							"id": 475,
+							"id": 559,
 							"name": "ngOnInit",
 							"kind": 2048,
 							"kindString": "Method",
@@ -9931,7 +11597,7 @@
 							},
 							"signatures": [
 								{
-									"id": 476,
+									"id": 560,
 									"name": "ngOnInit",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -9956,23 +11622,23 @@
 							"title": "Constructors",
 							"kind": 512,
 							"children": [
-								473
+								557
 							]
 						},
 						{
 							"title": "Properties",
 							"kind": 1024,
 							"children": [
-								472,
-								471
+								556,
+								555
 							]
 						},
 						{
 							"title": "Methods",
 							"kind": 2048,
 							"children": [
-								477,
-								475
+								561,
+								559
 							]
 						}
 					],
@@ -9996,7 +11662,7 @@
 					"title": "Classes",
 					"kind": 128,
 					"children": [
-						470
+						554
 					]
 				}
 			],
@@ -10009,7 +11675,7 @@
 			]
 		},
 		{
-			"id": 458,
+			"id": 542,
 			"name": "\"src/footer/definitions/link\"",
 			"kind": 1,
 			"kindString": "External module",
@@ -10019,7 +11685,7 @@
 			"originalName": "/home/louw/workspace/heroku/portfolio-web/src/footer/definitions/link.ts",
 			"children": [
 				{
-					"id": 459,
+					"id": 543,
 					"name": "Link",
 					"kind": 256,
 					"kindString": "Interface",
@@ -10031,7 +11697,7 @@
 					},
 					"children": [
 						{
-							"id": 460,
+							"id": 544,
 							"name": "icon",
 							"kind": 1024,
 							"kindString": "Property",
@@ -10054,7 +11720,7 @@
 							}
 						},
 						{
-							"id": 461,
+							"id": 545,
 							"name": "title",
 							"kind": 1024,
 							"kindString": "Property",
@@ -10077,7 +11743,7 @@
 							}
 						},
 						{
-							"id": 462,
+							"id": 546,
 							"name": "url",
 							"kind": 1024,
 							"kindString": "Property",
@@ -10105,9 +11771,9 @@
 							"title": "Properties",
 							"kind": 1024,
 							"children": [
-								460,
-								461,
-								462
+								544,
+								545,
+								546
 							]
 						}
 					],
@@ -10125,7 +11791,7 @@
 					"title": "Interfaces",
 					"kind": 256,
 					"children": [
-						459
+						543
 					]
 				}
 			],
@@ -10138,7 +11804,7 @@
 			]
 		},
 		{
-			"id": 463,
+			"id": 547,
 			"name": "\"src/footer/models/links\"",
 			"kind": 1,
 			"kindString": "External module",
@@ -10148,7 +11814,7 @@
 			"originalName": "/home/louw/workspace/heroku/portfolio-web/src/footer/models/links.ts",
 			"children": [
 				{
-					"id": 464,
+					"id": 548,
 					"name": "LINKS",
 					"kind": 32,
 					"kindString": "Variable",
@@ -10178,7 +11844,7 @@
 							{
 								"type": "reference",
 								"name": "Link",
-								"id": 459
+								"id": 543
 							}
 						]
 					},
@@ -10190,7 +11856,7 @@
 					"title": "Variables",
 					"kind": 32,
 					"children": [
-						464
+						548
 					]
 				}
 			],
@@ -10203,7 +11869,7 @@
 			]
 		},
 		{
-			"id": 465,
+			"id": 549,
 			"name": "\"src/footer/services/footer\"",
 			"kind": 1,
 			"kindString": "External module",
@@ -10213,7 +11879,7 @@
 			"originalName": "/home/louw/workspace/heroku/portfolio-web/src/footer/services/footer.ts",
 			"children": [
 				{
-					"id": 466,
+					"id": 550,
 					"name": "FooterService",
 					"kind": 128,
 					"kindString": "Class",
@@ -10222,7 +11888,7 @@
 					},
 					"children": [
 						{
-							"id": 467,
+							"id": 551,
 							"name": "getLinks",
 							"kind": 2048,
 							"kindString": "Method",
@@ -10232,7 +11898,7 @@
 							},
 							"signatures": [
 								{
-									"id": 468,
+									"id": 552,
 									"name": "getLinks",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -10248,7 +11914,7 @@
 													{
 														"type": "reference",
 														"name": "Link",
-														"id": 459
+														"id": 543
 													}
 												]
 											}
@@ -10270,7 +11936,7 @@
 							"title": "Methods",
 							"kind": 2048,
 							"children": [
-								467
+								551
 							]
 						}
 					],
@@ -10288,7 +11954,7 @@
 					"title": "Classes",
 					"kind": 128,
 					"children": [
-						466
+						550
 					]
 				}
 			],
@@ -10301,7 +11967,7 @@
 			]
 		},
 		{
-			"id": 519,
+			"id": 603,
 			"name": "\"src/header/components/header\"",
 			"kind": 1,
 			"kindString": "External module",
@@ -10311,7 +11977,7 @@
 			"originalName": "/home/louw/workspace/heroku/portfolio-web/src/header/components/header.ts",
 			"children": [
 				{
-					"id": 520,
+					"id": 604,
 					"name": "HeaderComponent",
 					"kind": 128,
 					"kindString": "Class",
@@ -10332,7 +11998,7 @@
 					],
 					"children": [
 						{
-							"id": 522,
+							"id": 606,
 							"name": "constructor",
 							"kind": 512,
 							"kindString": "Constructor",
@@ -10341,14 +12007,14 @@
 							},
 							"signatures": [
 								{
-									"id": 523,
+									"id": 607,
 									"name": "new HeaderComponent",
 									"kind": 16384,
 									"kindString": "Constructor signature",
 									"flags": {},
 									"parameters": [
 										{
-											"id": 524,
+											"id": 608,
 											"name": "_headerService",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -10356,14 +12022,14 @@
 											"type": {
 												"type": "reference",
 												"name": "HeaderService",
-												"id": 483
+												"id": 567
 											}
 										}
 									],
 									"type": {
 										"type": "reference",
 										"name": "HeaderComponent",
-										"id": 520
+										"id": 604
 									}
 								}
 							],
@@ -10376,7 +12042,7 @@
 							]
 						},
 						{
-							"id": 521,
+							"id": 605,
 							"name": "imageIds",
 							"kind": 1024,
 							"kindString": "Property",
@@ -10403,7 +12069,7 @@
 							}
 						},
 						{
-							"id": 531,
+							"id": 615,
 							"name": "initGridRotator",
 							"kind": 2048,
 							"kindString": "Method",
@@ -10412,14 +12078,14 @@
 							},
 							"signatures": [
 								{
-									"id": 532,
+									"id": 616,
 									"name": "initGridRotator",
 									"kind": 4096,
 									"kindString": "Call signature",
 									"flags": {},
 									"parameters": [
 										{
-											"id": 533,
+											"id": 617,
 											"name": "imageIds",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -10451,7 +12117,7 @@
 							]
 						},
 						{
-							"id": 527,
+							"id": 611,
 							"name": "initImageIds",
 							"kind": 2048,
 							"kindString": "Method",
@@ -10460,7 +12126,7 @@
 							},
 							"signatures": [
 								{
-									"id": 528,
+									"id": 612,
 									"name": "initImageIds",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -10480,7 +12146,7 @@
 							]
 						},
 						{
-							"id": 534,
+							"id": 618,
 							"name": "initNavigation",
 							"kind": 2048,
 							"kindString": "Method",
@@ -10489,7 +12155,7 @@
 							},
 							"signatures": [
 								{
-									"id": 535,
+									"id": 619,
 									"name": "initNavigation",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -10509,7 +12175,7 @@
 							]
 						},
 						{
-							"id": 529,
+							"id": 613,
 							"name": "initResizeListener",
 							"kind": 2048,
 							"kindString": "Method",
@@ -10518,7 +12184,7 @@
 							},
 							"signatures": [
 								{
-									"id": 530,
+									"id": 614,
 									"name": "initResizeListener",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -10538,7 +12204,7 @@
 							]
 						},
 						{
-							"id": 525,
+							"id": 609,
 							"name": "ngOnInit",
 							"kind": 2048,
 							"kindString": "Method",
@@ -10547,7 +12213,7 @@
 							},
 							"signatures": [
 								{
-									"id": 526,
+									"id": 610,
 									"name": "ngOnInit",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -10567,7 +12233,7 @@
 							]
 						},
 						{
-							"id": 536,
+							"id": 620,
 							"name": "setBannerSize",
 							"kind": 2048,
 							"kindString": "Method",
@@ -10576,14 +12242,14 @@
 							},
 							"signatures": [
 								{
-									"id": 537,
+									"id": 621,
 									"name": "setBannerSize",
 									"kind": 4096,
 									"kindString": "Call signature",
 									"flags": {},
 									"parameters": [
 										{
-											"id": 538,
+											"id": 622,
 											"name": "previousWidth",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -10595,7 +12261,7 @@
 											"defaultValue": "0"
 										},
 										{
-											"id": 539,
+											"id": 623,
 											"name": "previousHeight",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -10622,7 +12288,7 @@
 							]
 						},
 						{
-							"id": 540,
+							"id": 624,
 							"name": "setDynamicCssValues",
 							"kind": 2048,
 							"kindString": "Method",
@@ -10631,7 +12297,7 @@
 							},
 							"signatures": [
 								{
-									"id": 541,
+									"id": 625,
 									"name": "setDynamicCssValues",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -10656,27 +12322,27 @@
 							"title": "Constructors",
 							"kind": 512,
 							"children": [
-								522
+								606
 							]
 						},
 						{
 							"title": "Properties",
 							"kind": 1024,
 							"children": [
-								521
+								605
 							]
 						},
 						{
 							"title": "Methods",
 							"kind": 2048,
 							"children": [
-								531,
-								527,
-								534,
-								529,
-								525,
-								536,
-								540
+								615,
+								611,
+								618,
+								613,
+								609,
+								620,
+								624
 							]
 						}
 					],
@@ -10700,7 +12366,7 @@
 					"title": "Classes",
 					"kind": 128,
 					"children": [
-						520
+						604
 					]
 				}
 			],
@@ -10713,7 +12379,7 @@
 			]
 		},
 		{
-			"id": 479,
+			"id": 563,
 			"name": "\"src/header/definitions/image.ids\"",
 			"kind": 1,
 			"kindString": "External module",
@@ -10723,7 +12389,7 @@
 			"originalName": "/home/louw/workspace/heroku/portfolio-web/src/header/definitions/image.ids.ts",
 			"children": [
 				{
-					"id": 480,
+					"id": 564,
 					"name": "ImageIds",
 					"kind": 256,
 					"kindString": "Interface",
@@ -10735,7 +12401,7 @@
 					},
 					"children": [
 						{
-							"id": 481,
+							"id": 565,
 							"name": "imageIds",
 							"kind": 1024,
 							"kindString": "Property",
@@ -10766,7 +12432,7 @@
 							"title": "Properties",
 							"kind": 1024,
 							"children": [
-								481
+								565
 							]
 						}
 					],
@@ -10784,7 +12450,7 @@
 					"title": "Interfaces",
 					"kind": 256,
 					"children": [
-						480
+						564
 					]
 				}
 			],
@@ -10797,7 +12463,7 @@
 			]
 		},
 		{
-			"id": 489,
+			"id": 573,
 			"name": "\"src/header/models/header.config\"",
 			"kind": 1,
 			"kindString": "External module",
@@ -10807,7 +12473,7 @@
 			"originalName": "/home/louw/workspace/heroku/portfolio-web/src/header/models/header.config.ts",
 			"children": [
 				{
-					"id": 502,
+					"id": 586,
 					"name": "GRID_ROTATOR_CONFIG",
 					"kind": 2097152,
 					"kindString": "Object literal",
@@ -10825,7 +12491,7 @@
 					},
 					"children": [
 						{
-							"id": 503,
+							"id": 587,
 							"name": "animSpeed",
 							"kind": 32,
 							"kindString": "Variable",
@@ -10846,7 +12512,7 @@
 							"defaultValue": "300"
 						},
 						{
-							"id": 504,
+							"id": 588,
 							"name": "animType",
 							"kind": 32,
 							"kindString": "Variable",
@@ -10867,7 +12533,7 @@
 							"defaultValue": "\"rotateBottom\""
 						},
 						{
-							"id": 505,
+							"id": 589,
 							"name": "columns",
 							"kind": 32,
 							"kindString": "Variable",
@@ -10888,7 +12554,7 @@
 							"defaultValue": "8"
 						},
 						{
-							"id": 506,
+							"id": 590,
 							"name": "container",
 							"kind": 32,
 							"kindString": "Variable",
@@ -10909,7 +12575,7 @@
 							"defaultValue": "\"#home\""
 						},
 						{
-							"id": 507,
+							"id": 591,
 							"name": "maxStep",
 							"kind": 32,
 							"kindString": "Variable",
@@ -10930,7 +12596,7 @@
 							"defaultValue": "3"
 						},
 						{
-							"id": 508,
+							"id": 592,
 							"name": "onhover",
 							"kind": 32,
 							"kindString": "Variable",
@@ -10951,7 +12617,7 @@
 							"defaultValue": "true"
 						},
 						{
-							"id": 509,
+							"id": 593,
 							"name": "preventClick",
 							"kind": 32,
 							"kindString": "Variable",
@@ -10972,7 +12638,7 @@
 							"defaultValue": "true"
 						},
 						{
-							"id": 510,
+							"id": 594,
 							"name": "step",
 							"kind": 32,
 							"kindString": "Variable",
@@ -10993,7 +12659,7 @@
 							"defaultValue": "\"random\""
 						},
 						{
-							"id": 511,
+							"id": 595,
 							"name": "w1024",
 							"kind": 2097152,
 							"kindString": "Object literal",
@@ -11002,7 +12668,7 @@
 							},
 							"children": [
 								{
-									"id": 512,
+									"id": 596,
 									"name": "columns",
 									"kind": 32,
 									"kindString": "Variable",
@@ -11028,7 +12694,7 @@
 									"title": "Variables",
 									"kind": 32,
 									"children": [
-										512
+										596
 									]
 								}
 							],
@@ -11045,7 +12711,7 @@
 							}
 						},
 						{
-							"id": 513,
+							"id": 597,
 							"name": "w320",
 							"kind": 2097152,
 							"kindString": "Object literal",
@@ -11054,7 +12720,7 @@
 							},
 							"children": [
 								{
-									"id": 514,
+									"id": 598,
 									"name": "columns",
 									"kind": 32,
 									"kindString": "Variable",
@@ -11080,7 +12746,7 @@
 									"title": "Variables",
 									"kind": 32,
 									"children": [
-										514
+										598
 									]
 								}
 							],
@@ -11097,7 +12763,7 @@
 							}
 						},
 						{
-							"id": 515,
+							"id": 599,
 							"name": "w480",
 							"kind": 2097152,
 							"kindString": "Object literal",
@@ -11106,7 +12772,7 @@
 							},
 							"children": [
 								{
-									"id": 516,
+									"id": 600,
 									"name": "columns",
 									"kind": 32,
 									"kindString": "Variable",
@@ -11132,7 +12798,7 @@
 									"title": "Variables",
 									"kind": 32,
 									"children": [
-										516
+										600
 									]
 								}
 							],
@@ -11149,7 +12815,7 @@
 							}
 						},
 						{
-							"id": 517,
+							"id": 601,
 							"name": "w768",
 							"kind": 2097152,
 							"kindString": "Object literal",
@@ -11158,7 +12824,7 @@
 							},
 							"children": [
 								{
-									"id": 518,
+									"id": 602,
 									"name": "columns",
 									"kind": 32,
 									"kindString": "Variable",
@@ -11184,7 +12850,7 @@
 									"title": "Variables",
 									"kind": 32,
 									"children": [
-										518
+										602
 									]
 								}
 							],
@@ -11206,24 +12872,24 @@
 							"title": "Variables",
 							"kind": 32,
 							"children": [
-								503,
-								504,
-								505,
-								506,
-								507,
-								508,
-								509,
-								510
+								587,
+								588,
+								589,
+								590,
+								591,
+								592,
+								593,
+								594
 							]
 						},
 						{
 							"title": "Object literals",
 							"kind": 2097152,
 							"children": [
-								511,
-								513,
-								515,
-								517
+								595,
+								597,
+								599,
+								601
 							]
 						}
 					],
@@ -11240,7 +12906,7 @@
 					}
 				},
 				{
-					"id": 490,
+					"id": 574,
 					"name": "MENU_CONFIG",
 					"kind": 2097152,
 					"kindString": "Object literal",
@@ -11258,7 +12924,7 @@
 					},
 					"children": [
 						{
-							"id": 491,
+							"id": 575,
 							"name": "itemClass",
 							"kind": 32,
 							"kindString": "Variable",
@@ -11279,7 +12945,7 @@
 							"defaultValue": "\"menu-item\""
 						},
 						{
-							"id": 492,
+							"id": 576,
 							"name": "itemHover",
 							"kind": 32,
 							"kindString": "Variable",
@@ -11300,7 +12966,7 @@
 							"defaultValue": "\"active\""
 						},
 						{
-							"id": 501,
+							"id": 585,
 							"name": "topMargin",
 							"kind": 32,
 							"kindString": "Variable",
@@ -11321,7 +12987,7 @@
 							"defaultValue": "\"auto\""
 						},
 						{
-							"id": 493,
+							"id": 577,
 							"name": "parts",
 							"kind": 2097152,
 							"kindString": "Object literal",
@@ -11330,7 +12996,7 @@
 							},
 							"children": [
 								{
-									"id": 494,
+									"id": 578,
 									"name": "0",
 									"kind": 32,
 									"kindString": "Variable",
@@ -11351,7 +13017,7 @@
 									"defaultValue": "\"home\""
 								},
 								{
-									"id": 495,
+									"id": 579,
 									"name": "1",
 									"kind": 32,
 									"kindString": "Variable",
@@ -11372,7 +13038,7 @@
 									"defaultValue": "\"about\""
 								},
 								{
-									"id": 496,
+									"id": 580,
 									"name": "2",
 									"kind": 32,
 									"kindString": "Variable",
@@ -11393,7 +13059,7 @@
 									"defaultValue": "\"skills\""
 								},
 								{
-									"id": 497,
+									"id": 581,
 									"name": "3",
 									"kind": 32,
 									"kindString": "Variable",
@@ -11414,7 +13080,7 @@
 									"defaultValue": "\"experience\""
 								},
 								{
-									"id": 498,
+									"id": 582,
 									"name": "4",
 									"kind": 32,
 									"kindString": "Variable",
@@ -11435,7 +13101,7 @@
 									"defaultValue": "\"education\""
 								},
 								{
-									"id": 499,
+									"id": 583,
 									"name": "5",
 									"kind": 32,
 									"kindString": "Variable",
@@ -11456,7 +13122,7 @@
 									"defaultValue": "\"contact\""
 								},
 								{
-									"id": 500,
+									"id": 584,
 									"name": "6",
 									"kind": 32,
 									"kindString": "Variable",
@@ -11482,13 +13148,13 @@
 									"title": "Variables",
 									"kind": 32,
 									"children": [
-										494,
-										495,
-										496,
-										497,
-										498,
-										499,
-										500
+										578,
+										579,
+										580,
+										581,
+										582,
+										583,
+										584
 									]
 								}
 							],
@@ -11510,16 +13176,16 @@
 							"title": "Variables",
 							"kind": 32,
 							"children": [
-								491,
-								492,
-								501
+								575,
+								576,
+								585
 							]
 						},
 						{
 							"title": "Object literals",
 							"kind": 2097152,
 							"children": [
-								493
+								577
 							]
 						}
 					],
@@ -11541,8 +13207,8 @@
 					"title": "Object literals",
 					"kind": 2097152,
 					"children": [
-						502,
-						490
+						586,
+						574
 					]
 				}
 			],
@@ -11555,7 +13221,7 @@
 			]
 		},
 		{
-			"id": 482,
+			"id": 566,
 			"name": "\"src/header/services/header\"",
 			"kind": 1,
 			"kindString": "External module",
@@ -11565,7 +13231,7 @@
 			"originalName": "/home/louw/workspace/heroku/portfolio-web/src/header/services/header.ts",
 			"children": [
 				{
-					"id": 483,
+					"id": 567,
 					"name": "HeaderService",
 					"kind": 128,
 					"kindString": "Class",
@@ -11584,7 +13250,7 @@
 					],
 					"children": [
 						{
-							"id": 484,
+							"id": 568,
 							"name": "constructor",
 							"kind": 512,
 							"kindString": "Constructor",
@@ -11593,14 +13259,14 @@
 							},
 							"signatures": [
 								{
-									"id": 485,
+									"id": 569,
 									"name": "new HeaderService",
 									"kind": 16384,
 									"kindString": "Constructor signature",
 									"flags": {},
 									"parameters": [
 										{
-											"id": 486,
+											"id": 570,
 											"name": "http",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -11614,7 +13280,7 @@
 									"type": {
 										"type": "reference",
 										"name": "HeaderService",
-										"id": 483
+										"id": 567
 									}
 								}
 							],
@@ -11627,7 +13293,7 @@
 							]
 						},
 						{
-							"id": 487,
+							"id": 571,
 							"name": "getImageIds",
 							"kind": 2048,
 							"kindString": "Method",
@@ -11636,7 +13302,7 @@
 							},
 							"signatures": [
 								{
-									"id": 488,
+									"id": 572,
 									"name": "getImageIds",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -11651,7 +13317,7 @@
 													{
 														"type": "reference",
 														"name": "ImageIds",
-														"id": 480
+														"id": 564
 													},
 													{
 														"type": "reference",
@@ -11678,14 +13344,14 @@
 							"title": "Constructors",
 							"kind": 512,
 							"children": [
-								484
+								568
 							]
 						},
 						{
 							"title": "Methods",
 							"kind": 2048,
 							"children": [
-								487
+								571
 							]
 						}
 					],
@@ -11703,7 +13369,7 @@
 					"title": "Classes",
 					"kind": 128,
 					"children": [
-						483
+						567
 					]
 				}
 			],
@@ -11716,7 +13382,7 @@
 			]
 		},
 		{
-			"id": 592,
+			"id": 676,
 			"name": "\"src/main\"",
 			"kind": 1,
 			"kindString": "External module",
@@ -11944,7 +13610,7 @@
 			]
 		},
 		{
-			"id": 566,
+			"id": 650,
 			"name": "\"src/shared/common/pipes\"",
 			"kind": 1,
 			"kindString": "External module",
@@ -11954,7 +13620,7 @@
 			"originalName": "/home/louw/workspace/heroku/portfolio-web/src/shared/common/pipes.ts",
 			"children": [
 				{
-					"id": 571,
+					"id": 655,
 					"name": "BadgeUrlPipe",
 					"kind": 128,
 					"kindString": "Class",
@@ -11975,7 +13641,7 @@
 					],
 					"children": [
 						{
-							"id": 572,
+							"id": 656,
 							"name": "transform",
 							"kind": 2048,
 							"kindString": "Method",
@@ -11984,14 +13650,14 @@
 							},
 							"signatures": [
 								{
-									"id": 573,
+									"id": 657,
 									"name": "transform",
 									"kind": 4096,
 									"kindString": "Call signature",
 									"flags": {},
 									"parameters": [
 										{
-											"id": 574,
+											"id": 658,
 											"name": "badge",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -12022,7 +13688,7 @@
 							"title": "Methods",
 							"kind": 2048,
 							"children": [
-								572
+								656
 							]
 						}
 					],
@@ -12041,7 +13707,7 @@
 					]
 				},
 				{
-					"id": 575,
+					"id": 659,
 					"name": "MemberDatePipe",
 					"kind": 128,
 					"kindString": "Class",
@@ -12062,7 +13728,7 @@
 					],
 					"children": [
 						{
-							"id": 576,
+							"id": 660,
 							"name": "transform",
 							"kind": 2048,
 							"kindString": "Method",
@@ -12071,14 +13737,14 @@
 							},
 							"signatures": [
 								{
-									"id": 577,
+									"id": 661,
 									"name": "transform",
 									"kind": 4096,
 									"kindString": "Call signature",
 									"flags": {},
 									"parameters": [
 										{
-											"id": 578,
+											"id": 662,
 											"name": "memberDate",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -12109,7 +13775,7 @@
 							"title": "Methods",
 							"kind": 2048,
 							"children": [
-								576
+								660
 							]
 						}
 					],
@@ -12128,7 +13794,7 @@
 					]
 				},
 				{
-					"id": 579,
+					"id": 663,
 					"name": "ScorePipe",
 					"kind": 128,
 					"kindString": "Class",
@@ -12149,7 +13815,7 @@
 					],
 					"children": [
 						{
-							"id": 580,
+							"id": 664,
 							"name": "transform",
 							"kind": 2048,
 							"kindString": "Method",
@@ -12158,14 +13824,14 @@
 							},
 							"signatures": [
 								{
-									"id": 581,
+									"id": 665,
 									"name": "transform",
 									"kind": 4096,
 									"kindString": "Call signature",
 									"flags": {},
 									"parameters": [
 										{
-											"id": 582,
+											"id": 666,
 											"name": "score",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -12196,7 +13862,7 @@
 							"title": "Methods",
 							"kind": 2048,
 							"children": [
-								580
+								664
 							]
 						}
 					],
@@ -12215,7 +13881,7 @@
 					]
 				},
 				{
-					"id": 567,
+					"id": 651,
 					"name": "TrimPipe",
 					"kind": 128,
 					"kindString": "Class",
@@ -12236,7 +13902,7 @@
 					],
 					"children": [
 						{
-							"id": 568,
+							"id": 652,
 							"name": "transform",
 							"kind": 2048,
 							"kindString": "Method",
@@ -12245,14 +13911,14 @@
 							},
 							"signatures": [
 								{
-									"id": 569,
+									"id": 653,
 									"name": "transform",
 									"kind": 4096,
 									"kindString": "Call signature",
 									"flags": {},
 									"parameters": [
 										{
-											"id": 570,
+											"id": 654,
 											"name": "value",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -12283,7 +13949,7 @@
 							"title": "Methods",
 							"kind": 2048,
 							"children": [
-								568
+								652
 							]
 						}
 					],
@@ -12302,7 +13968,7 @@
 					]
 				},
 				{
-					"id": 583,
+					"id": 667,
 					"name": "VideoUrlPipe",
 					"kind": 128,
 					"kindString": "Class",
@@ -12323,7 +13989,7 @@
 					],
 					"children": [
 						{
-							"id": 584,
+							"id": 668,
 							"name": "constructor",
 							"kind": 512,
 							"kindString": "Constructor",
@@ -12332,14 +13998,14 @@
 							},
 							"signatures": [
 								{
-									"id": 585,
+									"id": 669,
 									"name": "new VideoUrlPipe",
 									"kind": 16384,
 									"kindString": "Constructor signature",
 									"flags": {},
 									"parameters": [
 										{
-											"id": 586,
+											"id": 670,
 											"name": "sanitationService",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -12353,7 +14019,7 @@
 									"type": {
 										"type": "reference",
 										"name": "VideoUrlPipe",
-										"id": 583
+										"id": 667
 									}
 								}
 							],
@@ -12366,7 +14032,7 @@
 							]
 						},
 						{
-							"id": 587,
+							"id": 671,
 							"name": "transform",
 							"kind": 2048,
 							"kindString": "Method",
@@ -12375,14 +14041,14 @@
 							},
 							"signatures": [
 								{
-									"id": 588,
+									"id": 672,
 									"name": "transform",
 									"kind": 4096,
 									"kindString": "Call signature",
 									"flags": {},
 									"parameters": [
 										{
-											"id": 589,
+											"id": 673,
 											"name": "videoUrl",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -12413,14 +14079,14 @@
 							"title": "Constructors",
 							"kind": 512,
 							"children": [
-								584
+								668
 							]
 						},
 						{
 							"title": "Methods",
 							"kind": 2048,
 							"children": [
-								587
+								671
 							]
 						}
 					],
@@ -12444,11 +14110,11 @@
 					"title": "Classes",
 					"kind": 128,
 					"children": [
-						571,
-						575,
-						579,
-						567,
-						583
+						655,
+						659,
+						663,
+						651,
+						667
 					]
 				}
 			],
@@ -12637,7 +14303,7 @@
 			]
 		},
 		{
-			"id": 553,
+			"id": 637,
 			"name": "\"src/skills/components/skills\"",
 			"kind": 1,
 			"kindString": "External module",
@@ -12647,7 +14313,7 @@
 			"originalName": "/home/louw/workspace/heroku/portfolio-web/src/skills/components/skills.ts",
 			"children": [
 				{
-					"id": 554,
+					"id": 638,
 					"name": "SkillsComponent",
 					"kind": 128,
 					"kindString": "Class",
@@ -12668,7 +14334,7 @@
 					],
 					"children": [
 						{
-							"id": 556,
+							"id": 640,
 							"name": "constructor",
 							"kind": 512,
 							"kindString": "Constructor",
@@ -12677,7 +14343,7 @@
 							},
 							"signatures": [
 								{
-									"id": 557,
+									"id": 641,
 									"name": "new SkillsComponent",
 									"kind": 16384,
 									"kindString": "Constructor signature",
@@ -12685,7 +14351,7 @@
 									"type": {
 										"type": "reference",
 										"name": "SkillsComponent",
-										"id": 554
+										"id": 638
 									}
 								}
 							],
@@ -12698,7 +14364,7 @@
 							]
 						},
 						{
-							"id": 555,
+							"id": 639,
 							"name": "skills",
 							"kind": 1024,
 							"kindString": "Property",
@@ -12720,13 +14386,13 @@
 									{
 										"type": "reference",
 										"name": "Skill",
-										"id": 543
+										"id": 627
 									}
 								]
 							}
 						},
 						{
-							"id": 564,
+							"id": 648,
 							"name": "drawChart",
 							"kind": 2048,
 							"kindString": "Method",
@@ -12735,7 +14401,7 @@
 							},
 							"signatures": [
 								{
-									"id": 565,
+									"id": 649,
 									"name": "drawChart",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -12755,7 +14421,7 @@
 							]
 						},
 						{
-							"id": 560,
+							"id": 644,
 							"name": "getSkills",
 							"kind": 2048,
 							"kindString": "Method",
@@ -12764,7 +14430,7 @@
 							},
 							"signatures": [
 								{
-									"id": 561,
+									"id": 645,
 									"name": "getSkills",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -12784,7 +14450,7 @@
 							]
 						},
 						{
-							"id": 562,
+							"id": 646,
 							"name": "initScrollListener",
 							"kind": 2048,
 							"kindString": "Method",
@@ -12793,7 +14459,7 @@
 							},
 							"signatures": [
 								{
-									"id": 563,
+									"id": 647,
 									"name": "initScrollListener",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -12813,7 +14479,7 @@
 							]
 						},
 						{
-							"id": 558,
+							"id": 642,
 							"name": "ngOnInit",
 							"kind": 2048,
 							"kindString": "Method",
@@ -12822,7 +14488,7 @@
 							},
 							"signatures": [
 								{
-									"id": 559,
+									"id": 643,
 									"name": "ngOnInit",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -12847,24 +14513,24 @@
 							"title": "Constructors",
 							"kind": 512,
 							"children": [
-								556
+								640
 							]
 						},
 						{
 							"title": "Properties",
 							"kind": 1024,
 							"children": [
-								555
+								639
 							]
 						},
 						{
 							"title": "Methods",
 							"kind": 2048,
 							"children": [
-								564,
-								560,
-								562,
-								558
+								648,
+								644,
+								646,
+								642
 							]
 						}
 					],
@@ -12888,7 +14554,7 @@
 					"title": "Classes",
 					"kind": 128,
 					"children": [
-						554
+						638
 					]
 				}
 			],
@@ -12901,7 +14567,7 @@
 			]
 		},
 		{
-			"id": 542,
+			"id": 626,
 			"name": "\"src/skills/definitions/skill\"",
 			"kind": 1,
 			"kindString": "External module",
@@ -12911,7 +14577,7 @@
 			"originalName": "/home/louw/workspace/heroku/portfolio-web/src/skills/definitions/skill.ts",
 			"children": [
 				{
-					"id": 543,
+					"id": 627,
 					"name": "Skill",
 					"kind": 256,
 					"kindString": "Interface",
@@ -12923,7 +14589,7 @@
 					},
 					"children": [
 						{
-							"id": 544,
+							"id": 628,
 							"name": "content",
 							"kind": 1024,
 							"kindString": "Property",
@@ -12946,7 +14612,7 @@
 							}
 						},
 						{
-							"id": 545,
+							"id": 629,
 							"name": "level",
 							"kind": 1024,
 							"kindString": "Property",
@@ -12969,7 +14635,7 @@
 							}
 						},
 						{
-							"id": 546,
+							"id": 630,
 							"name": "name",
 							"kind": 1024,
 							"kindString": "Property",
@@ -12997,9 +14663,9 @@
 							"title": "Properties",
 							"kind": 1024,
 							"children": [
-								544,
-								545,
-								546
+								628,
+								629,
+								630
 							]
 						}
 					],
@@ -13017,7 +14683,7 @@
 					"title": "Interfaces",
 					"kind": 256,
 					"children": [
-						543
+						627
 					]
 				}
 			],
@@ -13030,7 +14696,7 @@
 			]
 		},
 		{
-			"id": 547,
+			"id": 631,
 			"name": "\"src/skills/models/skills\"",
 			"kind": 1,
 			"kindString": "External module",
@@ -13040,7 +14706,7 @@
 			"originalName": "/home/louw/workspace/heroku/portfolio-web/src/skills/models/skills.ts",
 			"children": [
 				{
-					"id": 548,
+					"id": 632,
 					"name": "SKILLS",
 					"kind": 32,
 					"kindString": "Variable",
@@ -13070,7 +14736,7 @@
 							{
 								"type": "reference",
 								"name": "Skill",
-								"id": 543
+								"id": 627
 							}
 						]
 					},
@@ -13082,7 +14748,7 @@
 					"title": "Variables",
 					"kind": 32,
 					"children": [
-						548
+						632
 					]
 				}
 			],
@@ -13095,7 +14761,7 @@
 			]
 		},
 		{
-			"id": 549,
+			"id": 633,
 			"name": "\"src/skills/services/skills\"",
 			"kind": 1,
 			"kindString": "External module",
@@ -13105,7 +14771,7 @@
 			"originalName": "/home/louw/workspace/heroku/portfolio-web/src/skills/services/skills.ts",
 			"children": [
 				{
-					"id": 550,
+					"id": 634,
 					"name": "SkillService",
 					"kind": 128,
 					"kindString": "Class",
@@ -13114,7 +14780,7 @@
 					},
 					"children": [
 						{
-							"id": 551,
+							"id": 635,
 							"name": "getSkills",
 							"kind": 2048,
 							"kindString": "Method",
@@ -13124,7 +14790,7 @@
 							},
 							"signatures": [
 								{
-									"id": 552,
+									"id": 636,
 									"name": "getSkills",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -13140,7 +14806,7 @@
 													{
 														"type": "reference",
 														"name": "Skill",
-														"id": 543
+														"id": 627
 													}
 												]
 											}
@@ -13162,7 +14828,7 @@
 							"title": "Methods",
 							"kind": 2048,
 							"children": [
-								551
+								635
 							]
 						}
 					],
@@ -13180,7 +14846,7 @@
 					"title": "Classes",
 					"kind": 128,
 					"children": [
-						550
+						634
 					]
 				}
 			],
@@ -13193,7 +14859,7 @@
 			]
 		},
 		{
-			"id": 593,
+			"id": 677,
 			"name": "\"tools/manual_typings/jquery.plugins.d\"",
 			"kind": 1,
 			"kindString": "External module",
@@ -13203,28 +14869,28 @@
 			"originalName": "/home/louw/workspace/heroku/portfolio-web/tools/manual_typings/jquery.plugins.d.ts",
 			"children": [
 				{
-					"id": 594,
+					"id": 678,
 					"name": "JQuery",
 					"kind": 256,
 					"kindString": "Interface",
 					"flags": {},
 					"children": [
 						{
-							"id": 595,
+							"id": 679,
 							"name": "easyPieChart",
 							"kind": 2048,
 							"kindString": "Method",
 							"flags": {},
 							"signatures": [
 								{
-									"id": 596,
+									"id": 680,
 									"name": "easyPieChart",
 									"kind": 4096,
 									"kindString": "Call signature",
 									"flags": {},
 									"parameters": [
 										{
-											"id": 597,
+											"id": 681,
 											"name": "options",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -13252,21 +14918,21 @@
 							]
 						},
 						{
-							"id": 598,
+							"id": 682,
 							"name": "gridrotator",
 							"kind": 2048,
 							"kindString": "Method",
 							"flags": {},
 							"signatures": [
 								{
-									"id": 599,
+									"id": 683,
 									"name": "gridrotator",
 									"kind": 4096,
 									"kindString": "Call signature",
 									"flags": {},
 									"parameters": [
 										{
-											"id": 600,
+											"id": 684,
 											"name": "options",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -13294,21 +14960,21 @@
 							]
 						},
 						{
-							"id": 601,
+							"id": 685,
 							"name": "stickUp",
 							"kind": 2048,
 							"kindString": "Method",
 							"flags": {},
 							"signatures": [
 								{
-									"id": 602,
+									"id": 686,
 									"name": "stickUp",
 									"kind": 4096,
 									"kindString": "Call signature",
 									"flags": {},
 									"parameters": [
 										{
-											"id": 603,
+											"id": 687,
 											"name": "options",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -13341,9 +15007,9 @@
 							"title": "Methods",
 							"kind": 2048,
 							"children": [
-								595,
-								598,
-								601
+								679,
+								682,
+								685
 							]
 						}
 					],
@@ -13361,7 +15027,7 @@
 					"title": "Interfaces",
 					"kind": 256,
 					"children": [
-						594
+						678
 					]
 				}
 			],
@@ -13380,12 +15046,12 @@
 			"kind": 1,
 			"children": [
 				1,
-				590,
+				674,
 				20,
 				3,
 				26,
 				64,
-				358,
+				442,
 				102,
 				219,
 				199,
@@ -13394,41 +15060,41 @@
 				28,
 				109,
 				120,
-				266,
+				350,
 				184,
 				32,
-				355,
+				439,
 				242,
 				148,
 				54,
-				417,
-				387,
-				372,
-				385,
-				408,
-				451,
-				430,
-				445,
-				447,
+				501,
+				471,
+				456,
 				469,
-				458,
-				463,
-				465,
-				519,
-				479,
-				489,
-				482,
-				592,
-				7,
-				15,
-				566,
-				50,
-				46,
+				492,
+				535,
+				514,
+				529,
+				531,
 				553,
 				542,
 				547,
 				549,
-				593
+				603,
+				563,
+				573,
+				566,
+				676,
+				7,
+				15,
+				650,
+				50,
+				46,
+				637,
+				626,
+				631,
+				633,
+				677
 			]
 		}
 	]
