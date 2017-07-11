@@ -6,7 +6,19 @@ import {Job} from '../definitions/job';
  */
 export const JOBS: Array<Job> = [
   {
-    content: '<p>Currently on the 3rd extension of a contract assignment with Fairfax NZ as a <b>JavaScript Developer</b> in one of the Wellington-based development teams.</p><p>Closely involved in the implementation of a new <b>React</b> based front-end for the <a href="https://www.stuff.co.nz" target="_blank" rel="noopener noreferrer" class="link js_track_link_click">Stuff.co.nz</a> news site. The application, including the back-end interfaces like <b>GraphQL</b>, is served via <b>Express</b> in a <b>Node.js</b> runtime.</p><p>Other projects have included the implementation of an implicit flow client-side <b>OpenID Connect</b> login, as well as the integration of the <b>Nativform (FFX Native platform)</b> advertising SDK.</p>',
+    content: '',
+    institution: {
+      location: 'Wellington, New Zealand',
+      name: 'Solnet',
+      url: 'https://solnet.co.nz/',
+    },
+    title: 'Senior JavaScript Developer (Contract)',
+    year: {
+      from: 'Jul 2017',
+      to: 'Present',
+    },
+  }, {
+    content: '<p>Fulfilled a contract assignment with Fairfax NZ as a <b>JavaScript Developer</b> in one of the Wellington-based development teams.</p><p>Was closely involved in the implementation of a new <b>React</b> based front-end for the <a href="https://www.stuff.co.nz" target="_blank" rel="noopener noreferrer" class="link js_track_link_click">Stuff.co.nz</a> news site. The application, including the back-end interfaces like <b>GraphQL</b>, was served via <b>Express</b> in a <b>Node.js</b> runtime.</p><p>Other projects included the implementation of an implicit flow client-side <b>OpenID Connect</b> login, as well as the integration of the <b>Nativform (FFX Native platform)</b> advertising SDK.</p>',
     institution: {
       location: 'Wellington, New Zealand',
       name: 'Fairfax Media',
@@ -15,7 +27,7 @@ export const JOBS: Array<Job> = [
     title: 'JavaScript Developer (Contract)',
     year: {
       from: 'Apr 2016',
-      to: 'Present',
+      to: 'Jun 2017',
     },
   }, {
     content: '<p>Worked as a <b>UI Developer</b> at Westpac NZ, where I was involved in various projects, including <b><i>Direct from Account&trade;</i></b>, <b><i>Westpac Exchange&trade;</i></b> and <b><i>Westpac One&reg;</i></b>.</p><p>The server-side development environment was <b>Java</b>, while the client-side was built using a variety of <b>JavaScript technologies</b> and <b>frameworks</b>, most notably <b>RequireJS</b>, <b>Backbone</b>, Marionette, <b>Underscore</b>, <b>AngularJS</b>, SCSS, and, during development, <b>Node.js</b>.</p><p>Build and Testing tools included <b>Grunt</b>, Maven, Jenkins, JUnit, Cucumber, <b>Jasmine</b> and <b>Karma</b>.</p>',
