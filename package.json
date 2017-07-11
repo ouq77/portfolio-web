@@ -21,7 +21,7 @@
     "body-parser": "1.17.2",
     "cache-manager": "2.4.0",
     "camelcase": "4.1.0",
-    "compression": "1.6.2",
+    "compression": "1.7.0",
     "convict": "4.0.0",
     "express": "4.15.3",
     "express-cache-headers": "0.1.3",
