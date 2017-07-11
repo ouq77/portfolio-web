@@ -50,12 +50,12 @@
     "npmversion": "1.4.0",
     "postbuild": "2.0.0",
     "rimraf": "2.6.1",
-    "rollup": "0.43.0",
+    "rollup": "0.45.1",
     "rollup-plugin-commonjs": "8.0.2",
     "rollup-plugin-node-resolve": "3.0.0",
     "tslint": "5.5.0",
     "typedoc": "0.7.1",
-    "typescript": "2.5.0-dev.20170629",
+    "typescript": "2.5.0-dev.20170707",
     "uglify-js": "3.0.24"
   },
   "scripts": {
@@ -92,6 +92,7 @@
     "build:angular-compile": "ngc -p tsconfig.ngc.json",
     "build:typescript-compile": "tsc -p tsconfig.tsc.json",
     "build:rollup": "rollup -f iife -c rollup.config.js -o compiled/bundle.es2015.js",
+    "#build:es5": "tsc --target es5 --allowJs true compiled/bundle.es2015.js --out compiled/bundle.es5.js",
     "build:es5": "babel compiled/bundle.es2015.js --presets=es2015 --out-file compiled/bundle.es5.js",
     "build:concat-js": "concat-cli -f node_modules/jquery/dist/jquery.min.js node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js tmp/assets/js/modernizr.custom.js tmp/assets/js/jquery.gridrotator.js tmp/assets/js/stick.up.js tmp/assets/js/jquery.easypiechart.js tmp/assets/js/google-analytics.js tmp/assets/js/pre-render.js -o compiled/bundle.deps.js",
     "build:concat-css": "concat-cli -f tmp/assets/css/layout.css -o compiled/common.min.css",
