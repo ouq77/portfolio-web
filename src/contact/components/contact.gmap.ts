@@ -132,11 +132,12 @@ export class ContactMapComponent implements OnInit {
                     .then(() => upcomingJourneyLine.getPath().push(new LatLng(leg.loc.lat, leg.loc.lng)));
                 });
               });
-              this._additionalMarkerWait = ((AIRPORTS.length - 1) * 100);
+              this._additionalMarkerWait = AIRPORTS.length - 1;
               CITIES.forEach((city: ICity, index: number) =>
                 delay((index * 650) + this._additionalMarkerWait)
                   .then(() => this._markerUtil.addCityMarker(this.map, city, this._cityMarkers)));
-              delay(((CITIES.length) * 700) + this._additionalMarkerWait)
+              this._additionalMarkerWait = this._additionalMarkerWait * 100;
+              delay((CITIES.length * 700) + this._additionalMarkerWait)
                 .then(() => {
                   this.map.panTo(points.WELLINGTON);
                   this._mapUtil.zoomMap(this.map, this.map.getZoom() + 1, $(window).width() >= 1000 ? 11 : 10);

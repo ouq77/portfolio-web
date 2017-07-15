@@ -7,27 +7,27 @@ import {Skill} from '../definitions/skill';
 export const SKILLS: Array<Skill> = [
   {
     content: 'AngularJS; Node.js; JavaScript;',
-    level: 95,
+    level: 85,
     name: 'Scripting',
   }, {
     content: 'HTML5; CSS3; SCSS;',
-    level: 80,
+    level: 75,
     name: 'Web Markup',
   }, {
     content: 'Java EE; Java SE 6/7; Java ME;',
-    level: 85,
+    level: 70,
     name: 'Java',
   }, {
     content: 'JAX-WS; JAXB; RESTful Web Services;',
-    level: 85,
+    level: 75,
     name: 'Web Services',
   }, {
     content: 'PostgreSQL; PostGIS; MySQL/MSSQL; Hibernate;',
-    level: 85,
+    level: 75,
     name: 'Databases',
   }, {
     content: 'GIT; Mercurial; SVN;',
-    level: 90,
+    level: 80,
     name: 'Version Control',
   },
 ];
