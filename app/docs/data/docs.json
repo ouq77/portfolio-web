@@ -3598,7 +3598,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('Abidjan', 'Côte d\\'Ivoire', 'ABJ', new Point(5.254863, -3.932870), 'Felix Houphouet Boigny IAirport')"
+					"defaultValue": " new Airport('Abidjan', 'Côte d\\'Ivoire', 'ABJ', new Point(5.254863, -3.932870), 'Felix Houphouet Boigny Airport')"
 				},
 				{
 					"id": 384,
@@ -3620,7 +3620,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('Accra', 'Ghana', 'ACC', new Point(5.606068, -0.168107), 'Kotoka International IAirport')"
+					"defaultValue": " new Airport('Accra', 'Ghana', 'ACC', new Point(5.606068, -0.168107), 'Kotoka International Airport')"
 				},
 				{
 					"id": 412,
@@ -3642,7 +3642,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('Adelaide', AUSTRALIA, 'ADL', new Point(-34.946134, 138.533726), 'Adelaide IAirport')"
+					"defaultValue": " new Airport('Adelaide', AUSTRALIA, 'ADL', new Point(-34.946134, 138.533726), 'Adelaide Airport')"
 				},
 				{
 					"id": 438,
@@ -3701,7 +3701,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('Auckland', NEW_ZEALAND, 'AKL', new Point(-37.008227, 174.785760), 'Auckland IAirport')"
+					"defaultValue": " new Airport('Auckland', NEW_ZEALAND, 'AKL', new Point(-37.008227, 174.785760), 'Auckland Airport')"
 				},
 				{
 					"id": 401,
@@ -3723,7 +3723,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('Amsterdam', 'Netherlands', 'AMS', new Point(52.310523, 4.768740), 'Amsterdam IAirport Schiphol')"
+					"defaultValue": " new Airport('Amsterdam', 'Netherlands', 'AMS', new Point(52.310523, 4.768740), 'Amsterdam Airport Schiphol')"
 				},
 				{
 					"id": 425,
@@ -3745,7 +3745,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('Stockholm', 'Sweden', 'ARN', new Point(59.6497649, 17.921592), 'Stockholm Arlanda IAirport')"
+					"defaultValue": " new Airport('Stockholm', 'Sweden', 'ARN', new Point(59.6497649, 17.921592), 'Stockholm Arlanda Airport')"
 				},
 				{
 					"id": 391,
@@ -3767,7 +3767,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('Atlanta', USA, 'ATL', new Point(33.640795, -84.427223), 'Hartsfield–Jackson Atlanta International IAirport')"
+					"defaultValue": " new Airport('Atlanta', USA, 'ATL', new Point(33.640795, -84.427223), 'Hartsfield–Jackson Atlanta International Airport')"
 				},
 				{
 					"id": 355,
@@ -3808,7 +3808,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('Bloemfontein', SOUTH_AFRICA, 'BFN', new Point(-29.095735, 26.298145), 'Bram Fischer International IAirport')"
+					"defaultValue": " new Airport('Bloemfontein', SOUTH_AFRICA, 'BFN', new Point(-29.095735, 26.298145), 'Bram Fischer International Airport')"
 				},
 				{
 					"id": 426,
@@ -3830,7 +3830,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('Bergen', NORWAY, 'BGO', new Point(60.2918326, 5.2198286), 'Bergen IAirport')"
+					"defaultValue": " new Airport('Bergen', NORWAY, 'BGO', new Point(60.2918326, 5.2198286), 'Bergen Airport')"
 				},
 				{
 					"id": 403,
@@ -3852,7 +3852,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('Bangkok', THAILAND, 'BKK', new Point(13.913019, 100.604164), 'Donmuang IAirport (old)')"
+					"defaultValue": " new Airport('Bangkok', THAILAND, 'BKK', new Point(13.913019, 100.604164), 'Donmuang Airport (old)')"
 				},
 				{
 					"id": 404,
@@ -3874,7 +3874,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('Bangkok', THAILAND, 'BKK', new Point(13.689084, 100.751023), 'Suvarnabhumi IAirport')"
+					"defaultValue": " new Airport('Bangkok', THAILAND, 'BKK', new Point(13.689084, 100.751023), 'Suvarnabhumi Airport')"
 				},
 				{
 					"id": 402,
@@ -3896,7 +3896,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('Mumbai', 'India', 'BOM', new Point(19.090121, 72.868905), 'Chhatrapati Shivaji International IAirport')"
+					"defaultValue": " new Airport('Mumbai', 'India', 'BOM', new Point(19.090121, 72.868905), 'Chhatrapati Shivaji International Airport')"
 				},
 				{
 					"id": 428,
@@ -3918,7 +3918,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('Bodø', NORWAY, 'BOO', new Point(67.268313, 14.3600464), 'Bodø IAirport')"
+					"defaultValue": " new Airport('Bodø', NORWAY, 'BOO', new Point(67.268313, 14.3600464), 'Bodø Airport')"
 				},
 				{
 					"id": 373,
@@ -3940,7 +3940,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('Bulawayo', ZIMBABWE, 'BUQ', new Point(-20.018368, 28.624652), 'Joshua Mqabuko Nkomo International IAirport')"
+					"defaultValue": " new Airport('Bulawayo', ZIMBABWE, 'BUQ', new Point(-20.018368, 28.624652), 'Joshua Mqabuko Nkomo International Airport')"
 				},
 				{
 					"id": 432,
@@ -3962,7 +3962,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('Canberra', AUSTRALIA, 'CBR', new Point(-35.3032616, 149.1746154), 'Canberra IAirport')"
+					"defaultValue": " new Airport('Canberra', AUSTRALIA, 'CBR', new Point(-35.3032616, 149.1746154), 'Canberra Airport')"
 				},
 				{
 					"id": 399,
@@ -3984,7 +3984,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('Paris', 'France', 'CDG', new Point(49.009702, 2.548251), 'Charles de Gaulle IAirport')"
+					"defaultValue": " new Airport('Paris', 'France', 'CDG', new Point(49.009702, 2.548251), 'Charles de Gaulle Airport')"
 				},
 				{
 					"id": 415,
@@ -4006,7 +4006,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('Christchurch', NEW_ZEALAND, 'CHC', new Point(-43.486456, 172.537369), 'Christchurch International IAirport')"
+					"defaultValue": " new Airport('Christchurch', NEW_ZEALAND, 'CHC', new Point(-43.486456, 172.537369), 'Christchurch International Airport')"
 				},
 				{
 					"id": 400,
@@ -4028,7 +4028,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('Copenhagen', 'Denmark', 'CPH', new Point(55.618039, 12.651198), 'Copenhagen IAirport')"
+					"defaultValue": " new Airport('Copenhagen', 'Denmark', 'CPH', new Point(55.618039, 12.651198), 'Copenhagen Airport')"
 				},
 				{
 					"id": 362,
@@ -4050,7 +4050,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('Cape Town', SOUTH_AFRICA, 'CPT', new Point(-33.971459, 18.602241), 'Cape Town International IAirport')"
+					"defaultValue": " new Airport('Cape Town', SOUTH_AFRICA, 'CPT', new Point(-33.971459, 18.602241), 'Cape Town International Airport')"
 				},
 				{
 					"id": 378,
@@ -4072,7 +4072,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('Dar es Salaam', 'Tanzania', 'DAR', new Point(-6.872619, 39.206986), 'Julius Nyerere International IAirport')"
+					"defaultValue": " new Airport('Dar es Salaam', 'Tanzania', 'DAR', new Point(-6.872619, 39.206986), 'Julius Nyerere International Airport')"
 				},
 				{
 					"id": 385,
@@ -4094,7 +4094,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('Dakar', 'Senegal', 'DKR', new Point(14.744887, -17.490146), 'Léopold Sédar Senghor International IAirport')"
+					"defaultValue": " new Airport('Dakar', 'Senegal', 'DKR', new Point(14.744887, -17.490146), 'Léopold Sédar Senghor International Airport')"
 				},
 				{
 					"id": 410,
@@ -4116,7 +4116,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('Denpasar', 'Bali', 'DPS', new Point(-8.746727, 115.166801), 'Ngurah Rai International IAirport')"
+					"defaultValue": " new Airport('Denpasar', 'Bali', 'DPS', new Point(-8.746727, 115.166801), 'Ngurah Rai International Airport')"
 				},
 				{
 					"id": 411,
@@ -4138,7 +4138,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('Darwin', AUSTRALIA, 'DRW', new Point(-12.411127, 130.878227), 'Darwin International IAirport')"
+					"defaultValue": " new Airport('Darwin', AUSTRALIA, 'DRW', new Point(-12.411127, 130.878227), 'Darwin International Airport')"
 				},
 				{
 					"id": 364,
@@ -4160,7 +4160,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('Durban', SOUTH_AFRICA, 'DUR', new Point(-29.967507, 30.947187), 'Durban International IAirport')"
+					"defaultValue": " new Airport('Durban', SOUTH_AFRICA, 'DUR', new Point(-29.967507, 30.947187), 'Durban International Airport')"
 				},
 				{
 					"id": 379,
@@ -4182,7 +4182,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('Entebbe', 'Uganda', 'EBB', new Point(0.044929, 32.442880), 'Entebbe International IAirport')"
+					"defaultValue": " new Airport('Entebbe', 'Uganda', 'EBB', new Point(0.044929, 32.442880), 'Entebbe International Airport')"
 				},
 				{
 					"id": 368,
@@ -4204,7 +4204,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('East London', SOUTH_AFRICA, 'ELS', new Point(-33.038191, 27.828955), 'East London IAirport')"
+					"defaultValue": " new Airport('East London', SOUTH_AFRICA, 'ELS', new Point(-33.038191, 27.828955), 'East London Airport')"
 				},
 				{
 					"id": 389,
@@ -4226,7 +4226,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('Beunos Aires', 'Argentina', 'EZE', new Point(-34.822544, -58.534969), 'Ministro Pistarini International IAirport')"
+					"defaultValue": " new Airport('Beunos Aires', 'Argentina', 'EZE', new Point(-34.822544, -58.534969), 'Ministro Pistarini International Airport')"
 				},
 				{
 					"id": 381,
@@ -4248,7 +4248,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('Kinshasa', 'Congo (DRC)', 'FIH', new Point(-4.385679, 15.444503), 'N\\'djili International IAirport')"
+					"defaultValue": " new Airport('Kinshasa', 'Congo (DRC)', 'FIH', new Point(-4.385679, 15.444503), 'N\\'djili International Airport')"
 				},
 				{
 					"id": 397,
@@ -4270,7 +4270,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('Frankfurt', 'Germany', 'FRA', new Point(50.037936, 8.562608), 'Frankfurt IAirport')"
+					"defaultValue": " new Airport('Frankfurt', 'Germany', 'FRA', new Point(50.037936, 8.562608), 'Frankfurt Airport')"
 				},
 				{
 					"id": 371,
@@ -4292,7 +4292,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('Gaborone', 'Botswana', 'GBE', new Point(-24.555994, 25.918776), 'Sir Seretse Khama International IAirport')"
+					"defaultValue": " new Airport('Gaborone', 'Botswana', 'GBE', new Point(-24.555994, 25.918776), 'Sir Seretse Khama International Airport')"
 				},
 				{
 					"id": 437,
@@ -4314,7 +4314,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('Gisborne', NEW_ZEALAND, 'GIS', new Point(-38.6628665, 177.9806031), 'Gisborne IAirport')"
+					"defaultValue": " new Airport('Gisborne', NEW_ZEALAND, 'GIS', new Point(-38.6628665, 177.9806031), 'Gisborne Airport')"
 				},
 				{
 					"id": 369,
@@ -4336,7 +4336,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('George', SOUTH_AFRICA, 'GRJ', new Point(-34.005193, 22.378423), 'George IAirport')"
+					"defaultValue": " new Airport('George', SOUTH_AFRICA, 'GRJ', new Point(-34.005193, 22.378423), 'George Airport')"
 				},
 				{
 					"id": 388,
@@ -4358,7 +4358,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('São Paulo', 'Brazil', 'GRU', new Point(-23.434617, -46.478013), 'Guarulhos International IAirport')"
+					"defaultValue": " new Airport('São Paulo', 'Brazil', 'GRU', new Point(-23.434617, -46.478013), 'Guarulhos International Airport')"
 				},
 				{
 					"id": 407,
@@ -4380,7 +4380,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport(HONG_KONG, HONG_KONG, 'HKG', new Point(22.324767, 114.198590), 'Kai Tak IAirport (old)')"
+					"defaultValue": " new Airport(HONG_KONG, HONG_KONG, 'HKG', new Point(22.324767, 114.198590), 'Kai Tak Airport (old)')"
 				},
 				{
 					"id": 408,
@@ -4402,7 +4402,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('Chek Lap Kok', HONG_KONG, 'HKG', new Point(22.307862, 113.922394), 'Hong Kong International IAirport')"
+					"defaultValue": " new Airport('Chek Lap Kok', HONG_KONG, 'HKG', new Point(22.307862, 113.922394), 'Hong Kong International Airport')"
 				},
 				{
 					"id": 435,
@@ -4424,7 +4424,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('Phuket', THAILAND, 'HKT', new Point(8.1103541, 98.3081319), 'Phuket International IAirport')"
+					"defaultValue": " new Airport('Phuket', THAILAND, 'HKT', new Point(8.1103541, 98.3081319), 'Phuket International Airport')"
 				},
 				{
 					"id": 414,
@@ -4446,7 +4446,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('Hamilton', NEW_ZEALAND, 'HLZ', new Point(-37.865470, 175.337267), 'Hamilton International IAirport')"
+					"defaultValue": " new Airport('Hamilton', NEW_ZEALAND, 'HLZ', new Point(-37.865470, 175.337267), 'Hamilton International Airport')"
 				},
 				{
 					"id": 356,
@@ -4487,7 +4487,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('Harare', ZIMBABWE, 'HRE', new Point(-17.918871, 31.097359), 'Harare International IAirport')"
+					"defaultValue": " new Airport('Harare', ZIMBABWE, 'HRE', new Point(-17.918871, 31.097359), 'Harare International Airport')"
 				},
 				{
 					"id": 392,
@@ -4509,7 +4509,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('Washington', USA, 'IAD', new Point(38.952765, -77.451732), 'Washington Dulles International IAirport')"
+					"defaultValue": " new Airport('Washington', USA, 'IAD', new Point(38.952765, -77.451732), 'Washington Dulles International Airport')"
 				},
 				{
 					"id": 354,
@@ -4550,7 +4550,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('New York', USA, 'JFK', new Point(40.641242, -73.777941), 'John F. Kennedy International IAirport')"
+					"defaultValue": " new Airport('New York', USA, 'JFK', new Point(40.641242, -73.777941), 'John F. Kennedy International Airport')"
 				},
 				{
 					"id": 361,
@@ -4572,7 +4572,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('Johannesburg', SOUTH_AFRICA, 'JNB', new Point(-26.136837, 28.241157), 'OR Tambo International IAirport')"
+					"defaultValue": " new Airport('Johannesburg', SOUTH_AFRICA, 'JNB', new Point(-26.136837, 28.241157), 'OR Tambo International Airport')"
 				},
 				{
 					"id": 434,
@@ -4594,7 +4594,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('Krabi', THAILAND, 'KBV', new Point(8.0992802, 98.9810008), 'Krabi IAirport')"
+					"defaultValue": " new Airport('Krabi', THAILAND, 'KBV', new Point(8.0992802, 98.9810008), 'Krabi Airport')"
 				},
 				{
 					"id": 365,
@@ -4616,7 +4616,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('Kimberley', SOUTH_AFRICA, 'KIM', new Point(-28.802682, 24.765399), 'Kimberley IAirport')"
+					"defaultValue": " new Airport('Kimberley', SOUTH_AFRICA, 'KIM', new Point(-28.802682, 24.765399), 'Kimberley Airport')"
 				},
 				{
 					"id": 405,
@@ -4638,7 +4638,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('Osaka', JAPAN, 'KIX', new Point(34.432015, 135.230817), 'Kansai International IAirport')"
+					"defaultValue": " new Airport('Osaka', JAPAN, 'KIX', new Point(34.432015, 135.230817), 'Kansai International Airport')"
 				},
 				{
 					"id": 377,
@@ -4660,7 +4660,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('Luanda', 'Angola', 'LAD', new Point(-8.848009, 13.234900), 'Quatro de Fevereiro IAirport')"
+					"defaultValue": " new Airport('Luanda', 'Angola', 'LAD', new Point(-8.848009, 13.234900), 'Quatro de Fevereiro Airport')"
 				},
 				{
 					"id": 394,
@@ -4682,7 +4682,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('New York', USA, 'LGA', new Point(40.776992, -73.873376), 'LaGuardia IAirport')"
+					"defaultValue": " new Airport('New York', USA, 'LGA', new Point(40.776992, -73.873376), 'LaGuardia Airport')"
 				},
 				{
 					"id": 396,
@@ -4704,7 +4704,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('London', 'United Kingdom', 'LHR', new Point(51.469979, -0.454044), 'London Heathrow IAirport')"
+					"defaultValue": " new Airport('London', 'United Kingdom', 'LHR', new Point(51.469979, -0.454044), 'London Heathrow Airport')"
 				},
 				{
 					"id": 382,
@@ -4726,7 +4726,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('Lagos', 'Nigeria', 'LOS', new Point(6.581759, 3.321484), 'Murtala Muhammed International IAirport')"
+					"defaultValue": " new Airport('Lagos', 'Nigeria', 'LOS', new Point(6.581759, 3.321484), 'Murtala Muhammed International Airport')"
 				},
 				{
 					"id": 376,
@@ -4748,7 +4748,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('Lusaka', ZAMBIA, 'LUN', new Point(-15.330899, 28.454393), 'Kenneth Kaunda International IAirport')"
+					"defaultValue": " new Airport('Lusaka', ZAMBIA, 'LUN', new Point(-15.330899, 28.454393), 'Kenneth Kaunda International Airport')"
 				},
 				{
 					"id": 375,
@@ -4770,7 +4770,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('Livingstone ', ZAMBIA, 'LVI', new Point(-17.818925, 25.818595), 'Harry Mwanga Nkumbula International IAirport')"
+					"defaultValue": " new Airport('Livingstone ', ZAMBIA, 'LVI', new Point(-17.818925, 25.818595), 'Harry Mwanga Nkumbula International Airport')"
 				},
 				{
 					"id": 363,
@@ -4792,7 +4792,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('Mafikeng', SOUTH_AFRICA, 'MBD', new Point(-25.807261, 25.544465), 'Mafikeng International IAirport')"
+					"defaultValue": " new Airport('Mafikeng', SOUTH_AFRICA, 'MBD', new Point(-25.807261, 25.544465), 'Mafikeng International Airport')"
 				},
 				{
 					"id": 436,
@@ -4814,7 +4814,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('Melbourne', AUSTRALIA, 'MEL', new Point(-37.6662769, 144.8354746), 'Melbourne IAirport (Tullamarine)')"
+					"defaultValue": " new Airport('Melbourne', AUSTRALIA, 'MEL', new Point(-37.6662769, 144.8354746), 'Melbourne Airport (Tullamarine)')"
 				},
 				{
 					"id": 390,
@@ -4836,7 +4836,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('Miami', USA, 'MIA', new Point(25.795947, -80.286611), 'Miami International IAirport')"
+					"defaultValue": " new Airport('Miami', USA, 'MIA', new Point(25.795947, -80.286611), 'Miami International Airport')"
 				},
 				{
 					"id": 370,
@@ -4858,7 +4858,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('Maputo', 'Mozambique', 'MPM', new Point(-25.919804, 32.572997), 'Maputo International IAirport')"
+					"defaultValue": " new Airport('Maputo', 'Mozambique', 'MPM', new Point(-25.919804, 32.572997), 'Maputo International Airport')"
 				},
 				{
 					"id": 387,
@@ -4880,7 +4880,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('Plaine Magnien', 'Mauritius', 'MRU', new Point(-20.430714, 57.675511), 'Sir Seewoosagur Ramgoolam IAirport')"
+					"defaultValue": " new Airport('Plaine Magnien', 'Mauritius', 'MRU', new Point(-20.430714, 57.675511), 'Sir Seewoosagur Ramgoolam Airport')"
 				},
 				{
 					"id": 380,
@@ -4902,7 +4902,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('Nairobi', 'Kenya', 'NBO', new Point(-1.322705, 36.926611), 'Jomo Kenyatta International IAirport')"
+					"defaultValue": " new Airport('Nairobi', 'Kenya', 'NBO', new Point(-1.322705, 36.926611), 'Jomo Kenyatta International Airport')"
 				},
 				{
 					"id": 352,
@@ -4962,7 +4962,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('New Plymouth', NEW_ZEALAND, 'NPL', new Point(-39.007847, 174.1754103), 'New Plymouth IAirport')"
+					"defaultValue": " new Airport('New Plymouth', NEW_ZEALAND, 'NPL', new Point(-39.007847, 174.1754103), 'New Plymouth Airport')"
 				},
 				{
 					"id": 423,
@@ -4984,7 +4984,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('Tokyo', JAPAN, 'NRT', new Point(35.771991, 140.3906614), 'Narita International IAirport')"
+					"defaultValue": " new Airport('Tokyo', JAPAN, 'NRT', new Point(35.771991, 140.3906614), 'Narita International Airport')"
 				},
 				{
 					"id": 419,
@@ -5006,7 +5006,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('Nelson', NEW_ZEALAND, 'NSN', new Point(-41.300020, 173.225254), 'Nelson IAirport')"
+					"defaultValue": " new Airport('Nelson', NEW_ZEALAND, 'NSN', new Point(-41.300020, 173.225254), 'Nelson Airport')"
 				},
 				{
 					"id": 409,
@@ -5028,7 +5028,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('Perth', AUSTRALIA, 'PER', new Point(-31.938471, 115.967523), 'Perth IAirport')"
+					"defaultValue": " new Airport('Perth', AUSTRALIA, 'PER', new Point(-31.938471, 115.967523), 'Perth Airport')"
 				},
 				{
 					"id": 367,
@@ -5050,7 +5050,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('Port Elizabeth', SOUTH_AFRICA, 'PLZ', new Point(-33.986448, 25.610390), 'Port Elizabeth IAirport')"
+					"defaultValue": " new Airport('Port Elizabeth', SOUTH_AFRICA, 'PLZ', new Point(-33.986448, 25.610390), 'Port Elizabeth Airport')"
 				},
 				{
 					"id": 422,
@@ -5072,7 +5072,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('Avarua', 'Cook Islands', 'RAR', new Point(-21.202310, -159.805334), 'Rarotonga International IAirport')"
+					"defaultValue": " new Airport('Avarua', 'Cook Islands', 'RAR', new Point(-21.202310, -159.805334), 'Rarotonga International Airport')"
 				},
 				{
 					"id": 421,
@@ -5094,7 +5094,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('Rotorua', NEW_ZEALAND, 'ROT', new Point(-38.109354, 176.317118), 'Rotorua International IAirport')"
+					"defaultValue": " new Airport('Rotorua', NEW_ZEALAND, 'ROT', new Point(-38.109354, 176.317118), 'Rotorua International Airport')"
 				},
 				{
 					"id": 386,
@@ -5116,7 +5116,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('Ilha do Sal', 'Cape Verde', 'SID', new Point(16.734608, -22.943608), 'Amilcar Cabral International IAirport')"
+					"defaultValue": " new Airport('Ilha do Sal', 'Cape Verde', 'SID', new Point(16.734608, -22.943608), 'Amilcar Cabral International Airport')"
 				},
 				{
 					"id": 424,
@@ -5138,7 +5138,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('Singapore', 'Singapore', 'SIN', new Point(1.3644256, 103.9893421), 'Changi IAirport Singapore')"
+					"defaultValue": " new Airport('Singapore', 'Singapore', 'SIN', new Point(1.3644256, 103.9893421), 'Changi Airport Singapore')"
 				},
 				{
 					"id": 429,
@@ -5160,7 +5160,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('Svolvær', NORWAY, 'SJV', new Point(68.243335, 14.6669783), 'Svolvær IAirport')"
+					"defaultValue": " new Airport('Svolvær', NORWAY, 'SJV', new Point(68.243335, 14.6669783), 'Svolvær Airport')"
 				},
 				{
 					"id": 351,
@@ -5201,7 +5201,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('Sydney', AUSTRALIA, 'SYD', new Point(-33.939953, 151.175249), 'Kingsford Smith IAirport')"
+					"defaultValue": " new Airport('Sydney', AUSTRALIA, 'SYD', new Point(-33.939953, 151.175249), 'Kingsford Smith Airport')"
 				},
 				{
 					"id": 357,
@@ -5242,7 +5242,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('Timaru', NEW_ZEALAND, 'TIU', new Point(-44.303448, 171.2241313), 'Richard Pearse IAirport')"
+					"defaultValue": " new Airport('Timaru', NEW_ZEALAND, 'TIU', new Point(-44.303448, 171.2241313), 'Richard Pearse Airport')"
 				},
 				{
 					"id": 430,
@@ -5264,7 +5264,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('Tromsø', NORWAY, 'TOS', new Point(69.6819372, 18.914075), 'Tromsø IAirport')"
+					"defaultValue": " new Airport('Tromsø', NORWAY, 'TOS', new Point(69.6819372, 18.914075), 'Tromsø Airport')"
 				},
 				{
 					"id": 427,
@@ -5286,7 +5286,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('Trondheim', NORWAY, 'TRD', new Point(63.4582722, 10.9204103), 'Trondheim IAirport')"
+					"defaultValue": " new Airport('Trondheim', NORWAY, 'TRD', new Point(63.4582722, 10.9204103), 'Trondheim Airport')"
 				},
 				{
 					"id": 420,
@@ -5308,7 +5308,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('Tauranga', NEW_ZEALAND, 'TRG', new Point(-37.672093, 176.197666), 'Tauranga ICity IAirport')"
+					"defaultValue": " new Airport('Tauranga', NEW_ZEALAND, 'TRG', new Point(-37.672093, 176.197666), 'Tauranga ICity Airport')"
 				},
 				{
 					"id": 358,
@@ -5349,7 +5349,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('Koh Samui', THAILAND, 'USM', new Point(9.548389, 100.063484), 'Koh Samui IAirport')"
+					"defaultValue": " new Airport('Koh Samui', THAILAND, 'USM', new Point(9.548389, 100.063484), 'Koh Samui Airport')"
 				},
 				{
 					"id": 372,
@@ -5371,7 +5371,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('Windhoek', 'Namibia', 'WDH', new Point(-22.480292, 17.470903), 'Hosea Kutako International IAirport')"
+					"defaultValue": " new Airport('Windhoek', 'Namibia', 'WDH', new Point(-22.480292, 17.470903), 'Hosea Kutako International Airport')"
 				},
 				{
 					"id": 418,
@@ -5393,7 +5393,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('Wellington', NEW_ZEALAND, 'WLG', new Point(-41.327551, 174.808308), 'Wellington International IAirport')"
+					"defaultValue": " new Airport('Wellington', NEW_ZEALAND, 'WLG', new Point(-41.327551, 174.808308), 'Wellington International Airport')"
 				},
 				{
 					"id": 395,
@@ -5415,7 +5415,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('Vancouver', 'Canada', 'YVR', new Point(49.196659, -123.181056), 'Vancouver International IAirport')"
+					"defaultValue": " new Airport('Vancouver', 'Canada', 'YVR', new Point(49.196659, -123.181056), 'Vancouver International Airport')"
 				},
 				{
 					"id": 359,
@@ -5475,7 +5475,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('Queenstown', NEW_ZEALAND, 'ZQN', new Point(-45.020983, 168.740325), 'Queenstown IAirport')"
+					"defaultValue": " new Airport('Queenstown', NEW_ZEALAND, 'ZQN', new Point(-45.020983, 168.740325), 'Queenstown Airport')"
 				},
 				{
 					"id": 398,
@@ -5497,7 +5497,7 @@
 						"name": "IAirport",
 						"id": 200
 					},
-					"defaultValue": " new Airport('Zurich', 'Switzerland', 'ZRH', new Point(47.458256, 8.555717), 'Zurich IAirport')"
+					"defaultValue": " new Airport('Zurich', 'Switzerland', 'ZRH', new Point(47.458256, 8.555717), 'Zurich Airport')"
 				}
 			],
 			"groups": [
@@ -14740,7 +14740,7 @@
 							}
 						]
 					},
-					"defaultValue": " [\n  {\n    content: 'AngularJS; Node.js; JavaScript;',\n    level: 95,\n    name: 'Scripting',\n  }, {\n    content: 'HTML5; CSS3; SCSS;',\n    level: 80,\n    name: 'Web Markup',\n  }, {\n    content: 'Java EE; Java SE 6/7; Java ME;',\n    level: 85,\n    name: 'Java',\n  }, {\n    content: 'JAX-WS; JAXB; RESTful Web Services;',\n    level: 85,\n    name: 'Web Services',\n  }, {\n    content: 'PostgreSQL; PostGIS; MySQL/MSSQL; Hibernate;',\n    level: 85,\n    name: 'Databases',\n  }, {\n    content: 'GIT; Mercurial; SVN;',\n    level: 90,\n    name: 'Version Control',\n  },\n]"
+					"defaultValue": " [\n  {\n    content: 'AngularJS; Node.js; JavaScript;',\n    level: 85,\n    name: 'Scripting',\n  }, {\n    content: 'HTML5; CSS3; SCSS;',\n    level: 75,\n    name: 'Web Markup',\n  }, {\n    content: 'Java EE; Java SE 6/7; Java ME;',\n    level: 70,\n    name: 'Java',\n  }, {\n    content: 'JAX-WS; JAXB; RESTful Web Services;',\n    level: 75,\n    name: 'Web Services',\n  }, {\n    content: 'PostgreSQL; PostGIS; MySQL/MSSQL; Hibernate;',\n    level: 75,\n    name: 'Databases',\n  }, {\n    content: 'GIT; Mercurial; SVN;',\n    level: 80,\n    name: 'Version Control',\n  },\n]"
 				}
 			],
 			"groups": [
