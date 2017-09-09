@@ -1,7 +1,7 @@
 {
   "name": "ouq77-portfolio",
   "author": "ouq77",
-  "version": "4.9.17",
+  "version": "4.9.18",
   "description": "On-line portfolio of Louw Swart, based on 'angular2-seed'",
   "main": "server/server.js",
   "repository": {
@@ -18,7 +18,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "body-parser": "1.17.2",
+    "body-parser": "1.18.0",
     "cache-manager": "2.4.0",
     "camelcase": "4.1.0",
     "compression": "1.7.0",
@@ -32,7 +32,7 @@
     "hpkp": "2.0.0",
     "hsts": "2.1.0",
     "netjet": "1.1.4",
-    "node-fetch": "1.7.2",
+    "node-fetch": "1.7.3",
     "nodemailer": "4.1.0",
     "ord": "0.1.1",
     "prerender-node": "2.7.2",
