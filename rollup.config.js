@@ -2,12 +2,11 @@ import nodeResolve from 'rollup-plugin-node-resolve-angular';
 import commonjs from 'rollup-plugin-commonjs';
 
 export default {
-  entry: 'compiled/main-prod.js',
+  input: 'compiled/main-prod.js',
   sourceMap: false,
   treeshake: true,
-  moduleName: 'bundle',
+  name: 'bundle',
   plugins: [
-    // rollupNG2(),
     nodeResolve({
       es2015: true,
       jsnext: true,

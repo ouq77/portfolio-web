@@ -1,6 +1,6 @@
 {
   "name": "ouq77-portfolio",
-  "version": "4.9.18",
+  "version": "4.9.19",
   "author": "Louw Swart",
   "description": "On-line portfolio of Louw Swart, based on 'angular2-seed'",
   "license": "MIT",
@@ -38,7 +38,7 @@
     "convict": "4.0.0",
     "cpy-cli": "1.0.1",
     "dateformat": "2.0.0",
-    "html-minifier": "3.5.3",
+    "html-minifier": "3.5.4",
     "jquery": "3.2.1",
     "jsonfile": "3.0.1",
     "lodash": "4.17.4",
@@ -56,7 +56,7 @@
     "tslint": "5.7.0",
     "typedoc": "0.8.0",
     "typescript": "2.5.2",
-    "uglify-js": "3.0.28"
+    "uglify-js": "3.1.0"
   },
   "scripts": {
     "ncu:update": "ncu -u && npm update && npm update -D",
