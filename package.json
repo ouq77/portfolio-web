@@ -1,7 +1,7 @@
 {
   "name": "ouq77-portfolio",
   "author": "ouq77",
-  "version": "4.9.20",
+  "version": "4.9.21",
   "description": "On-line portfolio of Louw Swart, based on 'angular2-seed'",
   "main": "server/server.js",
   "repository": {
@@ -38,7 +38,7 @@
     "prerender-node": "2.7.2",
     "referrer-policy": "1.1.0",
     "require-directory": "2.1.1",
-    "sharp": "0.18.2"
+    "sharp": "0.18.4"
   },
   "devDependencies": {
     "standard": "10.0.3"
