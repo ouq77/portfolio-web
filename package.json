@@ -1,6 +1,6 @@
 {
   "name": "ouq77-portfolio",
-  "version": "4.9.20",
+  "version": "4.9.21",
   "author": "Louw Swart",
   "description": "On-line portfolio of Louw Swart, based on 'angular2-seed'",
   "license": "MIT",
@@ -12,19 +12,19 @@
     "npm": ">=5"
   },
   "dependencies": {
-    "@angular/common": "4.3.6",
-    "@angular/core": "4.3.6",
-    "@angular/forms": "4.3.6",
-    "@angular/http": "4.3.6",
-    "@angular/platform-browser": "4.3.6",
-    "@angular/platform-browser-dynamic": "4.3.6",
+    "@angular/common": "4.4.3",
+    "@angular/core": "4.4.3",
+    "@angular/forms": "4.4.3",
+    "@angular/http": "4.4.3",
+    "@angular/platform-browser": "4.4.3",
+    "@angular/platform-browser-dynamic": "4.4.3",
     "core-js": "2.5.1",
     "rxjs": "5.4.3",
     "zone.js": "0.8.17"
   },
   "devDependencies": {
-    "@angular/compiler": "4.3.6",
-    "@angular/compiler-cli": "4.3.6",
+    "@angular/compiler": "4.4.3",
+    "@angular/compiler-cli": "4.4.3",
     "@types/dateformat": "1.0.1",
     "@types/es6-shim": "0.31.35",
     "@types/googlemaps": "3.26.20",
@@ -37,7 +37,7 @@
     "concat-cli": "4.0.0",
     "convict": "4.0.0",
     "cpy-cli": "1.0.1",
-    "dateformat": "2.0.0",
+    "dateformat": "3.0.0",
     "html-minifier": "3.5.5",
     "jquery": "3.2.1",
     "jsonfile": "4.0.0",
@@ -50,13 +50,13 @@
     "npmversion": "1.4.0",
     "postbuild": "2.1.0",
     "rimraf": "2.6.2",
-    "rollup": "0.49.3",
+    "rollup": "0.50.0",
     "rollup-plugin-commonjs": "8.2.1",
     "rollup-plugin-node-resolve-angular": "2.0.3",
     "tslint": "5.7.0",
     "typedoc": "0.8.0",
     "typescript": "2.5.2",
-    "uglify-js": "3.1.0"
+    "uglify-js": "3.1.1"
   },
   "scripts": {
     "ncu:update": "ncu -u && npm update && npm update -D",
