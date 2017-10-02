@@ -1,6 +1,6 @@
 {
   "name": "ouq77-portfolio",
-  "version": "4.9.21",
+  "version": "4.9.22",
   "author": "Louw Swart",
   "description": "On-line portfolio of Louw Swart, based on 'angular2-seed'",
   "license": "MIT",
@@ -12,22 +12,22 @@
     "npm": ">=5"
   },
   "dependencies": {
-    "@angular/common": "4.4.3",
-    "@angular/core": "4.4.3",
-    "@angular/forms": "4.4.3",
-    "@angular/http": "4.4.3",
-    "@angular/platform-browser": "4.4.3",
-    "@angular/platform-browser-dynamic": "4.4.3",
+    "@angular/common": "4.4.4",
+    "@angular/core": "4.4.4",
+    "@angular/forms": "4.4.4",
+    "@angular/http": "4.4.4",
+    "@angular/platform-browser": "4.4.4",
+    "@angular/platform-browser-dynamic": "4.4.4",
     "core-js": "2.5.1",
     "rxjs": "5.4.3",
-    "zone.js": "0.8.17"
+    "zone.js": "0.8.18"
   },
   "devDependencies": {
-    "@angular/compiler": "4.4.3",
-    "@angular/compiler-cli": "4.4.3",
+    "@angular/compiler": "4.4.4",
+    "@angular/compiler-cli": "4.4.4",
     "@types/dateformat": "1.0.1",
     "@types/es6-shim": "0.31.35",
-    "@types/googlemaps": "3.26.20",
+    "@types/googlemaps": "3.29.0",
     "@types/jquery": "3.2.12",
     "babel-cli": "6.26.0",
     "babel-preset-es2015": "6.24.1",
@@ -35,9 +35,9 @@
     "browserify": "14.4.0",
     "command-line-args": "4.0.7",
     "concat-cli": "4.0.0",
-    "convict": "4.0.0",
+    "convict": "4.0.1",
     "cpy-cli": "1.0.1",
-    "dateformat": "3.0.0",
+    "dateformat": "3.0.2",
     "html-minifier": "3.5.5",
     "jquery": "3.2.1",
     "jsonfile": "4.0.0",
@@ -55,8 +55,8 @@
     "rollup-plugin-node-resolve-angular": "2.0.3",
     "tslint": "5.7.0",
     "typedoc": "0.8.0",
-    "typescript": "2.5.2",
-    "uglify-js": "3.1.1"
+    "typescript": "2.5.3",
+    "uglify-js": "3.1.3"
   },
   "scripts": {
     "ncu:update": "ncu -u && npm update && npm update -D",
