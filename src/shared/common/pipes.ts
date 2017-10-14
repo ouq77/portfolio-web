@@ -8,6 +8,7 @@ export class TrimPipe implements PipeTransform {
     return value.trim();
   }
 }
+
 @Pipe({name: 'badgeUrl'})
 export class BadgeUrlPipe implements PipeTransform {
 
@@ -16,6 +17,7 @@ export class BadgeUrlPipe implements PipeTransform {
     return `https://www.codeschool.com/users/ouq77/badges${badgeId && badgeId[0] || ''}`;
   }
 }
+
 @Pipe({name: 'memberDate'})
 export class MemberDatePipe implements PipeTransform {
 
@@ -23,6 +25,7 @@ export class MemberDatePipe implements PipeTransform {
     return new Date(memberDate).toLocaleDateString();
   }
 }
+
 @Pipe({name: 'score'})
 export class ScorePipe implements PipeTransform {
 
@@ -30,6 +33,7 @@ export class ScorePipe implements PipeTransform {
     return score.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
   }
 }
+
 @Pipe({name: 'videoUrl'})
 export class VideoUrlPipe implements PipeTransform {
   private _sanitationService: DomSanitizer;

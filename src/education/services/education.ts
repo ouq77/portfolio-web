@@ -19,9 +19,7 @@ export class EducationService {
     this._http = http;
   }
 
-  getCodeSchool(): Observable<CodeSchool|WrappedError> {
-    return this._http.get('/codeschool')
-      .map(resp => resp.json())
-      .catch(err => wrapError(err));
+  getCodeSchool(): Observable<CodeSchool | WrappedError> {
+    return this._http.get('/codeschool').map(resp => resp.json()).catch(err => wrapError(err));
   }
 }

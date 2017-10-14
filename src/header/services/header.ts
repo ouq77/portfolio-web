@@ -13,9 +13,7 @@ export class HeaderService {
     this._http = http;
   }
 
-  getImageIds(): Observable<ImageIds|WrappedError> {
-    return this._http.get('/imageids')
-      .map(resp => resp.json())
-      .catch(err => wrapError(err));
+  getImageIds(): Observable<ImageIds | WrappedError> {
+    return this._http.get('/imageids').map(resp => resp.json()).catch(err => wrapError(err));
   }
 }

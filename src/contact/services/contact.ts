@@ -20,11 +20,9 @@ export class ContactService {
     this._http = http;
   }
 
-  send(message: ContactMessage): Observable<JSON|WrappedError> {
+  send(message: ContactMessage): Observable<JSON | WrappedError> {
     let body = JSON.stringify(message);
     let options = new RequestOptions({headers: new Headers({'Content-Type': 'application/json'})});
-    return this._http.post('/send', body, options)
-      .map(resp => resp.json())
-      .catch(err => wrapError(err));
+    return this._http.post('/send', body, options).map(resp => resp.json()).catch(err => wrapError(err));
   }
 }

@@ -81,8 +81,8 @@
       $('.' + itemClass).removeClass(itemHover);
       $('.' + itemClass + ':eq(0)').addClass(itemHover);
     } else if (i < (menuSize - 1) &&
-        varScroll > contentTop[i] - 100 &&
-        varScroll < contentTop[i + 1] + 100) {
+      varScroll > contentTop[i] - 100 &&
+      varScroll < contentTop[i + 1] + 100) {
       $('.' + itemClass).removeClass(itemHover);
       $('.' + itemClass + ':eq(' + i + ')').addClass(itemHover);
     }
@@ -98,7 +98,7 @@
       elementOffset = el.offset();
 
     return ((elementOffset.top > minTop && elementOffset.top < maxTop) &&
-    (elementOffset.left > minLeft && elementOffset.left < maxLeft));
+      (elementOffset.left > minLeft && elementOffset.left < maxLeft));
   }
 
   function handleScroll() {

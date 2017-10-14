@@ -22,7 +22,7 @@ export class AppComponent implements OnInit {
         e.preventDefault();
         const targetEl: HTMLAnchorElement = <HTMLAnchorElement><any>e.target;
         if (location.pathname.replace(/^\//, '') === targetEl.pathname.replace(/^\//, '')
-            && location.hostname === targetEl.hostname) {
+          && location.hostname === targetEl.hostname) {
           let target: JQuery = <JQuery>$(targetEl.hash);
           target = target.length ? target : <JQuery>$(`[name=${targetEl.hash.slice(1)}]`);
           if (target.length) {

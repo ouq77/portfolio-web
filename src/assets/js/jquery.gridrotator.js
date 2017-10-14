@@ -36,7 +36,7 @@
 
       execAsap ? dispatch() : resizeTimeout = setTimeout(dispatch, $special.threshold);
     },
-    threshold: 100
+    threshold: 100,
   };
 
   // http://www.hardcode.nl/subcategory_1/article_317-array-shuffle-function
@@ -102,19 +102,19 @@
     // number of columns
     columns: 10,
     w1024: {
-      columns: 8
+      columns: 8,
     },
     w768: {
-      columns: 7
+      columns: 7,
     },
     w480: {
-      columns: 5
+      columns: 5,
     },
     w320: {
-      columns: 4
+      columns: 4,
     },
     w240: {
-      columns: 3
+      columns: 3,
     },
     // step: number of items that are replaced at the same time
     // random || [some number]
@@ -150,11 +150,12 @@
     // ids of elements that shouldn't change
     nochange: [],
     // callback function when drawn
-    onDraw: function() {},
+    onDraw: function() {
+    },
     // Height to Width Ratio (Height/Width). A 0.5 ratio would be used for an
     // image that is twice as large as it's height. Default is 1 (square
     // images).
-    heightToWidthRatio: 1
+    heightToWidthRatio: 1,
   };
 
   $.GridRotator.prototype = {
@@ -167,13 +168,13 @@
     },
     _config: function() {
       var self = this,
-          transEndEventNames = {
-            'WebkitTransition': 'webkitTransitionEnd',
-            'MozTransition': 'transitionend',
-            'OTransition': 'oTransitionEnd',
-            'msTransition': 'MSTransitionEnd',
-            'transition': 'transitionend'
-          };
+        transEndEventNames = {
+          'WebkitTransition': 'webkitTransitionEnd',
+          'MozTransition': 'transitionend',
+          'OTransition': 'oTransitionEnd',
+          'msTransition': 'MSTransitionEnd',
+          'transition': 'transitionend',
+        };
 
       // support CSS transitions and 3d transforms
       this.supportTransitions = Modernizr.csstransitions;
@@ -182,7 +183,8 @@
       this.transEndEventName = transEndEventNames[Modernizr.prefixed('transition')] + '.gridrotator';
 
       // all animation types for the random option
-      this.animTypes = this.supportTransforms3D ? ['fadeInOut', 'slideLeft',
+      this.animTypes = this.supportTransforms3D ? [
+        'fadeInOut', 'slideLeft',
         'slideRight', 'slideTop', 'slideBottom', 'rotateLeft', 'rotateRight',
         'rotateTop', 'rotateBottom', 'scale', 'rotate3d', 'rotateLeftScale',
         'rotateRightScale', 'rotateTopScale', 'rotateBottomScale'] : [
@@ -190,7 +192,8 @@
 
       this.animType = this.options.animType;
 
-      if (this.animType !== 'random' && !this.supportTransforms3D && $.inArray(this.animType, this.animTypes) === -1 && this.animType !== 'showHide') {
+      if (this.animType !== 'random' && !this.supportTransforms3D && $.inArray(this.animType, this.animTypes) === -1 &&
+        this.animType !== 'showHide') {
         // fallback to 'fadeInOut' if user sets a type which is not supported
         this.animType = 'fadeInOut';
       }
@@ -201,8 +204,8 @@
       this.$list = this.$el.children('ul');
       // remove images and add background-image to anchors
       var $imgs = this.$list.find('img'),
-          subColors = ['#d92727', '#ffe433', '#0db8b5'],
-          imgSources = [];
+        subColors = ['#d92727', '#ffe433', '#0db8b5'],
+        imgSources = [];
 
       $imgs.each(function() {
         var $img = $(this);
@@ -228,18 +231,20 @@
       this.$list.empty();
       this.$items = this.$itemsCache.clone().appendTo(this.$list);
       var $outItems = this.$items.filter(':gt(' + (this.showTotal - 1) + ')'),
-          $outAItems = $outItems.children('a');
+        $outAItems = $outItems.children('a');
       this.outItems.length = 0;
       $outAItems.each(function() {
         self.outItems.push($(this));
       });
       $outItems.remove();
-          // container's width
-      var containerWidth = (document.defaultView) ? parseInt(document.defaultView.getComputedStyle(this.$el.get(0), null).width) : this.$el.width(),
-          // item's width
-          itemWidth = Math.floor(containerWidth / this.columns),
-          // calculate gap
-          gapWidth = containerWidth - (this.columns * Math.floor(itemWidth));
+      // container's width
+      var containerWidth = (document.defaultView) ?
+        parseInt(document.defaultView.getComputedStyle(this.$el.get(0), null).width) :
+        this.$el.width(),
+        // item's width
+        itemWidth = Math.floor(containerWidth / this.columns),
+        // calculate gap
+        gapWidth = containerWidth - (this.columns * Math.floor(itemWidth));
 
       for (var i = 0; i < this.rows; ++i) {
         for (var j = 0; j < this.columns; ++j) {
@@ -247,7 +252,7 @@
 
           $item.css({
             width: j < Math.floor(gapWidth) ? itemWidth + 1 : itemWidth,
-            height: Math.floor(itemWidth * this.options.heightToWidthRatio)
+            height: Math.floor(itemWidth * this.options.heightToWidthRatio),
           });
 
           if ($.inArray(idx, this.options.nochange) !== -1) {
@@ -361,11 +366,14 @@
     },
     // get which type of animation
     _getAnimType: function() {
-      return this.animType === 'random' ? this.animTypes[Math.floor(Math.random() * this.animTypesTotal)] : this.animType;
+      return this.animType === 'random' ?
+        this.animTypes[Math.floor(Math.random() * this.animTypesTotal)] :
+        this.animType;
     },
     // get css properties for the transition effect
     _getAnimProperties: function($out) {
-      var startInProp = {}, startOutProp = {}, endInProp = {}, endOutProp = {}, animType = this._getAnimType(), speed, delay = 0;
+      var startInProp = {}, startOutProp = {}, endInProp = {}, endOutProp = {}, animType = this._getAnimType(), speed,
+        delay = 0;
 
       switch (animType) {
         case 'showHide':
@@ -478,7 +486,7 @@
         endInProp: endInProp,
         endOutProp: endOutProp,
         delay: delay,
-        animSpeed: speed !== undefined ? speed : this.options.animSpeed
+        animSpeed: speed !== undefined ? speed : this.options.animSpeed,
       };
     },
     // show next [option.step] elements
@@ -492,10 +500,10 @@
           max = self.showTotal;
         }
 
-            // number of items to swith at this point of time
+        // number of items to swith at this point of time
         var nmbOut = step === 'random' ? Math.floor(Math.random() * max + min) : Math.min(Math.abs(step), max),
-            // array with random indexes. These will be the indexes of the items we will replace
-            randArr = self._getRandom(nmbOut, self.showTotal);
+          // array with random indexes. These will be the indexes of the items we will replace
+          randArr = self._getRandom(nmbOut, self.showTotal);
 
         for (var i = 0; i < nmbOut; ++i) {
           // element to go out
@@ -518,7 +526,7 @@
       $out.data('active', true);
       var self = this, $outA = $out.children('a:last'), newElProp = {
         width: $outA.width(),
-        height: $outA.height()
+        height: $outA.height(),
       };
 
       // element stays active
@@ -556,14 +564,15 @@
             $el.next().remove();
             $el.parent().data('active', false);
           }, t);
-        }, animProp.animSpeed === 0 || isEmpty(animProp.endInProp)
+        },
+        animProp.animSpeed === 0 || isEmpty(animProp.endInProp)
       );
       this._applyTransition($outA, animProp.endOutProp, animProp.animSpeed);
     },
     _getRandom: function(cnt, limit) {
       var randArray = [];
       for (var i = 0; i < limit; ++i) {
-        randArray.push(i)
+        randArray.push(i);
       }
       return randArray.shuffle().slice(0, cnt);
     },
@@ -588,10 +597,10 @@
         };
         el.stop().applyStyle(styleCSS, $.extend(true, [], {
           duration: speed + 'ms',
-          complete: fncomplete
+          complete: fncomplete,
         }));
       }, 25);
-    }
+    },
   };
 
   var logError = function(message) {
@@ -606,7 +615,8 @@
       var args = Array.prototype.slice.call(arguments, 1);
       this.each(function() {
         if (!instance) {
-          logError('cannot call methods on gridrotator prior to initialization; attempted to call method "' + options + '"');
+          logError('cannot call methods on gridrotator prior to initialization; attempted to call method "' + options +
+            '"');
           return;
         }
 

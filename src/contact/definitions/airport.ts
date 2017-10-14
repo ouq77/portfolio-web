@@ -1,4 +1,4 @@
-import {IPoint}  from './point';
+import {IPoint} from './point';
 
 /**
  * Interface for an Airport object
@@ -26,7 +26,7 @@ export interface IAirport {
   name: string;
 }
 
-export  class Airport implements IAirport {
+export class Airport implements IAirport {
   public city: string;
   public country: string;
   public iataCode: string;

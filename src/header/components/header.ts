@@ -47,19 +47,18 @@ export class HeaderComponent implements OnInit {
     this.imageIds = imageIds;
     (($) => {
       // Delay 250ms for images to be rendered in template
-      delay(250)
-        .then(() => {
-          this.setBannerSize(this._previousWidth, this._previousHeight);
-          $('#ri-grid').gridrotator($.extend({}, GRID_ROTATOR_CONFIG, {onDraw: this._onDraw}));
-          this.initNavigation();
-        });
+      delay(250).then(() => {
+        this.setBannerSize(this._previousWidth, this._previousHeight);
+        (<any>$('#ri-grid')).gridrotator($.extend({}, GRID_ROTATOR_CONFIG, {onDraw: this._onDraw}));
+        this.initNavigation();
+      });
     })(jQuery);
   }
 
   initNavigation() {
     (($) => {
       $(document).ready(() => {
-        $('.navbar-wrapper').stickUp(MENU_CONFIG);
+        (<any>$('.navbar-wrapper')).stickUp(MENU_CONFIG);
 
         $('.navbar.navbar-inverse.navbar-static-top a').click(
           () =>

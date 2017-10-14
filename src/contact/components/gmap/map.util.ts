@@ -11,10 +11,9 @@ export class MapUtil {
         event.removeListener(this._tilesLoadedEvent);
         this.zoomMap(map, map.getZoom() + 1, maxZoom);
       });
-      delay(280)
-        .then(() => {
-          map.setZoom(nextZoomLevel);
-        });
+      delay(280).then(() => {
+        map.setZoom(nextZoomLevel);
+      });
     } else {
       map.setOptions({
         scrollwheel: true,

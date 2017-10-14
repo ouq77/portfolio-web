@@ -1,6 +1,6 @@
 {
   "name": "ouq77-portfolio",
-  "version": "4.10.0",
+  "version": "4.10.1",
   "author": "Louw Swart",
   "description": "On-line portfolio of Louw Swart, based on 'angular2-seed'",
   "license": "MIT",
@@ -12,19 +12,19 @@
     "npm": ">=5"
   },
   "dependencies": {
-    "@angular/common": "4.4.4",
-    "@angular/core": "4.4.4",
-    "@angular/forms": "4.4.4",
-    "@angular/http": "4.4.4",
-    "@angular/platform-browser": "4.4.4",
-    "@angular/platform-browser-dynamic": "4.4.4",
+    "@angular/common": "4.4.5",
+    "@angular/core": "4.4.5",
+    "@angular/forms": "4.4.5",
+    "@angular/http": "4.4.5",
+    "@angular/platform-browser": "4.4.5",
+    "@angular/platform-browser-dynamic": "4.4.5",
     "core-js": "2.5.1",
     "rxjs": "5.4.3",
     "zone.js": "0.8.18"
   },
   "devDependencies": {
-    "@angular/compiler": "4.4.4",
-    "@angular/compiler-cli": "4.4.4",
+    "@angular/compiler": "4.4.5",
+    "@angular/compiler-cli": "4.4.5",
     "@types/dateformat": "1.0.1",
     "@types/es6-shim": "0.31.35",
     "@types/googlemaps": "3.29.2",

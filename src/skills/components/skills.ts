@@ -58,11 +58,11 @@ export class SkillsComponent implements OnInit {
         if (!this._skillChartDrawn && elementInViewport($, <JQuery>$(triggerEl))) {
           this._skillChartDrawn = true;
           $('.chart').each((index: number, chartEl: Element) => {
-              $(chartEl).easyPieChart({
-                onStep: (from: number, to: number, percent: number) => {
-                  $(chartEl).find('.percent').text(Math.round(percent));
-                },
-              });
+            (<any>$(chartEl)).easyPieChart({
+              onStep: (from: number, to: number, percent: number) => {
+                $(chartEl).find('.percent').text(Math.round(percent));
+              },
+            });
           });
         }
       });

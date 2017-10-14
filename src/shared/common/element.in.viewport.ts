@@ -8,5 +8,5 @@ export const elementInViewport = ($: JQueryStatic, el: JQuery) => {
   let elementOffset = el.offset();
 
   return ((elementOffset.top > minTop && elementOffset.top < maxTop) &&
-  (elementOffset.left > minLeft && elementOffset.left < maxLeft));
+    (elementOffset.left > minLeft && elementOffset.left < maxLeft));
 };

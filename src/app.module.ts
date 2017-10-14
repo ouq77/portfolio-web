@@ -50,8 +50,7 @@ import {SkillService} from './skills/services/skills';
     TrimPipe,
     VideoUrlPipe,
   ],
-  exports: [
-  ],
+  exports: [],
   imports: [
     BrowserModule,
     CommonModule,
