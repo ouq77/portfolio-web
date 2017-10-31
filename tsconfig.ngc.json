@@ -38,7 +38,7 @@
     "dist",
     "src"
   ],
-  "files": [
+  "include": [
     "tmp/main.ts",
     "tools/manual_typings/index.d.ts"
   ]

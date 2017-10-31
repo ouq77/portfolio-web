@@ -31,7 +31,7 @@
     "node_modules",
     "*-prod.ts"
   ],
-  "files": [
+  "include": [
     "src/",
     "tools/manual_typings/jquery.plugins.d.ts"
   ]

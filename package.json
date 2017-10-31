@@ -28,7 +28,7 @@
     "@types/dateformat": "1.0.1",
     "@types/es6-shim": "0.31.35",
     "@types/googlemaps": "3.29.2",
-    "@types/jquery": "3.2.15",
+    "@types/jquery": "3.2.16",
     "babel-cli": "6.26.0",
     "babel-preset-env": "1.6.1",
     "bootstrap-sass": "3.3.7",
@@ -51,12 +51,12 @@
     "postbuild": "2.1.0",
     "rimraf": "2.6.2",
     "rollup": "0.50.0",
-    "rollup-plugin-commonjs": "8.2.5",
+    "rollup-plugin-commonjs": "8.2.6",
     "rollup-plugin-node-resolve-angular": "2.0.3",
     "tslint": "5.8.0",
     "typedoc": "0.9.0",
     "typescript": "2.5.3",
-    "uglify-js": "3.1.5"
+    "uglify-js": "3.1.6"
   },
   "scripts": {
     "ncu:update": "ncu -u && npm update && npm update -D",
