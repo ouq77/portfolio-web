@@ -43,6 +43,7 @@ src/**/*.metadata.json
 src/**/*.ngfactory.ts
 src/**/*.ngstyle.ts
 src/**/*.js.map
+tools/**/*.ngsummary.json
 tools/**/*.js
 tools/**/*.js.map
 !tools/compile.js

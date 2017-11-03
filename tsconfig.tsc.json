@@ -1,6 +1,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "allowJs": true,
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
     "declaration": false,
