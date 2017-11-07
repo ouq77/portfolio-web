@@ -45,7 +45,7 @@
     "mkdirp": "0.5.1",
     "ncp": "2.0.0",
     "node-rev": "2.0.0",
-    "node-sass": "4.5.3",
+    "node-sass": "4.6.0",
     "npm-run-all": "4.1.1",
     "npmversion": "1.4.0",
     "postbuild": "2.1.0",
@@ -56,7 +56,7 @@
     "tslint": "5.8.0",
     "typedoc": "0.9.0",
     "typescript": "2.6.1",
-    "uglify-js": "3.1.6"
+    "uglify-js": "3.1.8"
   },
   "scripts": {
     "ncu:update": "ncu -u && npm update && npm update -D",
@@ -94,7 +94,7 @@
     "build:typescript-compile": "tsc -p tsconfig.tsc.json",
     "build:rollup": "rollup -f iife -c rollup.config.js -o compiled/bundle.es2015.js",
     "#build:es5": "tsc --target es5 --allowJs true compiled/bundle.es2015.js --out compiled/bundle.es5.js",
-    "build:es5": "babel compiled/bundle.es2015.js --presets=env --out-file compiled/bundle.es5.js",
+    "build:es5": "babel compiled/bundle.es2015.js --presets env --out-file compiled/bundle.es5.js",
     "build:concat-js": "concat-cli -f node_modules/jquery/dist/jquery.min.js node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js tmp/assets/js/modernizr.custom.js tmp/assets/js/jquery.gridrotator.js tmp/assets/js/stick.up.js tmp/assets/js/jquery.easypiechart.js tmp/assets/js/google-analytics.js tmp/assets/js/pre-render.js -o compiled/bundle.deps.js",
     "build:concat-css": "concat-cli -f tmp/assets/css/layout.css -o compiled/common.min.css",
     "build:minify": "npm-run-all build:minify:*",

@@ -1,5 +1,5 @@
 import {Injectable} from '@angular/core';
-import {Http} from '@angular/http';
+import {HttpClient} from '@angular/common/http';
 import {Observable} from 'rxjs/Observable';
 import {SCHOOLS} from '../models/schools';
 import {School} from '../definitions/school';
@@ -9,17 +9,17 @@ import {wrapError} from '../../shared/common/wrap.error';
 
 @Injectable()
 export class EducationService {
-  private _http: Http;
+  private _http: HttpClient;
 
   static getSchools(): Promise<Array<School>> {
     return Promise.resolve(SCHOOLS);
   }
 
-  constructor(http: Http) {
+  constructor(http: HttpClient) {
     this._http = http;
   }
 
   getCodeSchool(): Observable<CodeSchool | WrappedError> {
-    return this._http.get('/codeschool').map(resp => resp.json()).catch(err => wrapError(err));
+    return this._http.get<CodeSchool>('/codeschool').catch(err => wrapError(err));
   }
 }
