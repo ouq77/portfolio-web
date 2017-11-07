@@ -86,7 +86,7 @@
 								"name": "NgModule"
 							},
 							"arguments": {
-								"obj": "{\n  bootstrap: [AppComponent],\n  declarations: [\n    // Components\n    AboutComponent,\n    AppComponent,\n    ContactComponent,\n    ContactFormComponent,\n    ContactMapComponent,\n    EducationComponent,\n    ExperienceComponent,\n    FooterComponent,\n    HeaderComponent,\n    SkillsComponent,\n    // Pipes\n    BadgeUrlPipe,\n    MemberDatePipe,\n    ScorePipe,\n    TrimPipe,\n    VideoUrlPipe,\n  ],\n  exports: [],\n  imports: [\n    BrowserModule,\n    CommonModule,\n    FormsModule,\n    HttpModule,\n    ReactiveFormsModule,\n  ],\n  providers: [\n    {\n      provide: APP_BASE_HREF,\n      useValue: '/',\n    },\n    FormBuilder,\n    AppService,\n    ContactService,\n    EducationService,\n    ExperienceService,\n    FooterService,\n    HeaderService,\n    SkillService,\n  ],\n}"
+								"obj": "{\n  bootstrap: [AppComponent],\n  declarations: [\n    // Components\n    AboutComponent,\n    AppComponent,\n    ContactComponent,\n    ContactFormComponent,\n    ContactMapComponent,\n    EducationComponent,\n    ExperienceComponent,\n    FooterComponent,\n    HeaderComponent,\n    SkillsComponent,\n    // Pipes\n    BadgeUrlPipe,\n    MemberDatePipe,\n    ScorePipe,\n    TrimPipe,\n    VideoUrlPipe,\n  ],\n  exports: [],\n  imports: [\n    BrowserModule,\n    CommonModule,\n    FormsModule,\n    HttpClientModule,\n    ReactiveFormsModule,\n  ],\n  providers: [\n    {\n      provide: APP_BASE_HREF,\n      useValue: '/',\n    },\n    FormBuilder,\n    AppService,\n    ContactService,\n    EducationService,\n    ExperienceService,\n    FooterService,\n    HeaderService,\n    SkillService,\n  ],\n}"
 							}
 						}
 					],
@@ -6979,7 +6979,7 @@
 											"flags": {},
 											"type": {
 												"type": "reference",
-												"name": "Http"
+												"name": "HttpClient"
 											}
 										}
 									],
@@ -7851,7 +7851,7 @@
 											"flags": {},
 											"type": {
 												"type": "reference",
-												"name": "Http"
+												"name": "HttpClient"
 											}
 										}
 									],
@@ -10387,7 +10387,7 @@
 											"flags": {},
 											"type": {
 												"type": "reference",
-												"name": "Http"
+												"name": "HttpClient"
 											}
 										}
 									],
@@ -10402,7 +10402,7 @@
 								{
 									"fileName": "header/services/header.ts",
 									"line": 10,
-									"character": 22
+									"character": 28
 								}
 							]
 						},
@@ -11274,7 +11274,7 @@
 									"flags": {},
 									"type": {
 										"type": "reference",
-										"name": "Response"
+										"name": "HttpErrorResponse"
 									}
 								}
 							],
