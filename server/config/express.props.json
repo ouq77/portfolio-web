@@ -3,7 +3,7 @@
     {
       "uri": "/assets",
       "location": "./app/assets",
-      "cache": "30d"
+      "cache": "180d"
     },
     {
       "uri": "/css",
