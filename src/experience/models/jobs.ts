@@ -76,7 +76,10 @@ export const JOBS: Array<Job> = [
       url: 'http://www.quirk.biz',
     },
     title: 'Software Engineer',
-    video: 'https://www.youtube.com/embed/34Tb79-2ekc?rel=0',
+    video: {
+      videoTitle: 'Team Quirk Live Tracker',
+      videoUrl: 'https://www.youtube.com/embed/34Tb79-2ekc?rel=0',
+    },
     year: {
       from: 'Nov 2008',
       to: 'Apr 2011',

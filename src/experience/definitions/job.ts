@@ -32,9 +32,18 @@ export interface Job {
    */
   title: string;
   /**
-   * Optional YouTube video id
+   * Optional YouTube video
    */
-  video?: string;
+  video?: {
+    /**
+     * YouTube video title
+     */
+    videoTitle: string;
+    /**
+     * YouTube video url
+     */
+    videoUrl: string;
+  };
   /**
    * Years of service
    */

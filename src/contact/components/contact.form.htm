@@ -14,9 +14,9 @@
         <span *ngIf="serverErrors" class="error-message" [innerHtml]="serverErrors"></span>
       </div>
     </div>
-    <input formControlName="name" required type="text" class="col-xs-12 col-sm-6 col-md-6 col-lg-6" placeholder="Your name...">
-    <input formControlName="email" autocapitalize="off" required type="email" class="col-xs-12 col-sm-6 col-md-6 col-lg-6 no-margin" placeholder="Your email...">
-    <textarea formControlName="message" required cols="1" rows="1" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="Your message..."></textarea>
+    <input formControlName="name" aria-label="Your name" required type="text" class="col-xs-12 col-sm-6 col-md-6 col-lg-6" placeholder="Your name...">
+    <input formControlName="email" aria-label="Your email" autocapitalize="off" required type="email" class="col-xs-12 col-sm-6 col-md-6 col-lg-6 no-margin" placeholder="Your email...">
+    <textarea formControlName="message" aria-label="Your message" required cols="1" rows="1" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="Your message..."></textarea>
     <input formControlName="heuning" type="hidden">
     <img *ngIf="submitting" src="assets/images/loading.gif" class="contact-loader" />
     <input [disabled]="(!form.valid && submitClicked) || submitting" (click)="onClick()" type="submit" name="send" class="btn-submit" value="{{submitBtnText}}">
