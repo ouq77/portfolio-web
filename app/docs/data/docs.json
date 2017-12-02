@@ -61,7 +61,7 @@
 			]
 		},
 		{
-			"id": 543,
+			"id": 544,
 			"name": "\"app.module\"",
 			"kind": 1,
 			"kindString": "External module",
@@ -71,7 +71,7 @@
 			"originalName": "/home/louw/workspace/heroku/portfolio-web/src/app.module.ts",
 			"children": [
 				{
-					"id": 544,
+					"id": 545,
 					"name": "AppModule",
 					"kind": 128,
 					"kindString": "Class",
@@ -104,7 +104,7 @@
 					"title": "Classes",
 					"kind": 128,
 					"children": [
-						544
+						545
 					]
 				}
 			],
@@ -8004,7 +8004,7 @@
 			]
 		},
 		{
-			"id": 404,
+			"id": 405,
 			"name": "\"experience/components/experience\"",
 			"kind": 1,
 			"kindString": "External module",
@@ -8014,7 +8014,7 @@
 			"originalName": "/home/louw/workspace/heroku/portfolio-web/src/experience/components/experience.ts",
 			"children": [
 				{
-					"id": 405,
+					"id": 406,
 					"name": "ExperienceComponent",
 					"kind": 128,
 					"kindString": "Class",
@@ -8035,7 +8035,7 @@
 					],
 					"children": [
 						{
-							"id": 406,
+							"id": 407,
 							"name": "jobs",
 							"kind": 1024,
 							"kindString": "Property",
@@ -8063,7 +8063,7 @@
 							}
 						},
 						{
-							"id": 409,
+							"id": 410,
 							"name": "getJobs",
 							"kind": 2048,
 							"kindString": "Method",
@@ -8072,7 +8072,7 @@
 							},
 							"signatures": [
 								{
-									"id": 410,
+									"id": 411,
 									"name": "getJobs",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -8092,7 +8092,7 @@
 							]
 						},
 						{
-							"id": 407,
+							"id": 408,
 							"name": "ngOnInit",
 							"kind": 2048,
 							"kindString": "Method",
@@ -8101,7 +8101,7 @@
 							},
 							"signatures": [
 								{
-									"id": 408,
+									"id": 409,
 									"name": "ngOnInit",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -8126,15 +8126,15 @@
 							"title": "Properties",
 							"kind": 1024,
 							"children": [
-								406
+								407
 							]
 						},
 						{
 							"title": "Methods",
 							"kind": 2048,
 							"children": [
-								409,
-								407
+								410,
+								408
 							]
 						}
 					],
@@ -8158,7 +8158,7 @@
 					"title": "Classes",
 					"kind": 128,
 					"children": [
-						405
+						406
 					]
 				}
 			],
@@ -8308,7 +8308,7 @@
 								"isOptional": true
 							},
 							"comment": {
-								"shortText": "Optional YouTube video id"
+								"shortText": "Optional YouTube video"
 							},
 							"sources": [
 								{
@@ -8318,12 +8318,25 @@
 								}
 							],
 							"type": {
-								"type": "intrinsic",
-								"name": "string"
+								"type": "reflection",
+								"declaration": {
+									"id": 396,
+									"name": "__type",
+									"kind": 65536,
+									"kindString": "Type literal",
+									"flags": {},
+									"sources": [
+										{
+											"fileName": "experience/definitions/job.ts",
+											"line": 37,
+											"character": 9
+										}
+									]
+								}
 							}
 						},
 						{
-							"id": 396,
+							"id": 397,
 							"name": "year",
 							"kind": 1024,
 							"kindString": "Property",
@@ -8336,14 +8349,14 @@
 							"sources": [
 								{
 									"fileName": "experience/definitions/job.ts",
-									"line": 41,
+									"line": 50,
 									"character": 6
 								}
 							],
 							"type": {
 								"type": "reflection",
 								"declaration": {
-									"id": 397,
+									"id": 398,
 									"name": "__type",
 									"kind": 65536,
 									"kindString": "Type literal",
@@ -8351,7 +8364,7 @@
 									"sources": [
 										{
 											"fileName": "experience/definitions/job.ts",
-											"line": 41,
+											"line": 50,
 											"character": 7
 										}
 									]
@@ -8369,7 +8382,7 @@
 								392,
 								394,
 								395,
-								396
+								397
 							]
 						}
 					],
@@ -8400,7 +8413,7 @@
 			]
 		},
 		{
-			"id": 398,
+			"id": 399,
 			"name": "\"experience/models/jobs\"",
 			"kind": 1,
 			"kindString": "External module",
@@ -8410,7 +8423,7 @@
 			"originalName": "/home/louw/workspace/heroku/portfolio-web/src/experience/models/jobs.ts",
 			"children": [
 				{
-					"id": 399,
+					"id": 400,
 					"name": "JOBS",
 					"kind": 32,
 					"kindString": "Variable",
@@ -8444,7 +8457,7 @@
 							}
 						]
 					},
-					"defaultValue": " [\n  {\n    content: '',\n    institution: {\n      location: 'Wellington, New Zealand',\n      name: 'Fairfax Media',\n      url: 'https://www.fairfaxmedia.co.nz/',\n    },\n    title: 'Full-stack Engineer',\n    year: {\n      from: 'Sep 2017',\n      to: 'Present',\n    },\n  }, {\n    content: '<p>Fulfilled a contract assignment with Fairfax NZ as a <b>JavaScript Developer</b> in one of the Wellington-based development teams.</p><p>Was closely involved in the implementation of a new <b>React</b> based front-end for the <a href=\"https://www.stuff.co.nz\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"link js_track_link_click\">Stuff.co.nz</a> news site. The application, including the back-end interfaces like <b>GraphQL</b>, was served via <b>Express</b> in a <b>Node.js</b> runtime.</p><p>Other projects included the implementation of an implicit flow client-side <b>OpenID Connect</b> login, as well as the integration of the <b>Nativform (FFX Native platform)</b> advertising SDK.</p>',\n    institution: {\n      location: 'Wellington, New Zealand',\n      name: 'Fairfax Media',\n      url: 'https://www.fairfaxmedia.co.nz/',\n    },\n    title: 'JavaScript Developer (Contract)',\n    year: {\n      from: 'Apr 2016',\n      to: 'Jun 2017',\n    },\n  }, {\n    content: '<p>Worked as a <b>UI Developer</b> at Westpac NZ, where I was involved in various projects, including <b><i>Direct from Account&trade;</i></b>, <b><i>Westpac Exchange&trade;</i></b> and <b><i>Westpac One&reg;</i></b>.</p><p>The server-side development environment was <b>Java</b>, while the client-side was built using a variety of <b>JavaScript technologies</b> and <b>frameworks</b>, most notably <b>RequireJS</b>, <b>Backbone</b>, Marionette, <b>Underscore</b>, <b>AngularJS</b>, SCSS, and, during development, <b>Node.js</b>.</p><p>Build and Testing tools included <b>Grunt</b>, Maven, Jenkins, JUnit, Cucumber, <b>Jasmine</b> and <b>Karma</b>.</p>',\n    institution: {\n      location: 'Wellington, New Zealand',\n      name: 'Westpac NZ Ltd',\n      url: 'https://www.westpac.co.nz',\n    },\n    title: 'Analyst Programmer (UI)',\n    year: {\n      from: 'Jun 2014',\n      to: 'Mar 2016',\n    },\n  }, {\n    accomplishments: '<p>Worked alongside members of the hardware team on the implementation of a <b>RESTful JSON</b> communication protocol over HTTP for the 2nd Generation On-board Units.</p>',\n    content: '<p>Employed as a Java Developer at EROAD, New Zealand\\'s leading transport technology and services company. Worked in an <b>Agile environment</b> developing and unit testing enhancements, which involved user <b>interface</b>, <b>web services</b> and <b>back-end integration</b> for EROAD\\'s <b>Cloud Based SaaS application</b>.</p><p>The development environment was <b>Java</b>, and frameworks and technologies included <b>Spring MVC</b>, <b>JSP</b>, <b>JQuery</b>, <b>RESTful</b> web services over <b>HTTP</b>, <b>JAX-WS/JAXB</b> web services over <b>SOAP</b>, <b>Hibernate</b> and <b>PostgreSQL</b>.</p><p>Mainly functioned within the Tax and Localisation team, which included the <b>GIS</b> and mapping layer.</p>',\n    institution: {\n      location: 'Auckland, New Zealand',\n      name: 'EROAD',\n      url: 'http://www.eroad.co.nz',\n    },\n    title: 'Senior Java Developer',\n    year: {\n      from: 'Jan 2013',\n      to: 'Apr 2014',\n    },\n  }, {\n    accomplishments: '<p>Was involved in a major overhaul of the UI for the PPM System, which, amongst other tasks, included the implementation of a <b>WYSIWYG editor</b> inside GWT. Worked with my team in New Zealand alongside teams in the US and China to re-build the data collection component.</p>',\n    content: '<p>Worked as a Software Developer at the New Zealand campus of Rockwell Automation. Functioned within an <b>agile team</b> developing <b>user interface</b> elements as well as <b>web services</b> and <b>back-end integration</b> for a performance management platform used in a variety of industries worldwide. The deployment of this <b>multi-tier application</b> consisted of a web environment (<b>Tomcat</b> &amp; <b>JBoss</b>), on the <b>Java EE technology stack</b>.</p><p>The development environment was <b>Java</b>, utilising third-party technologies such as <b>GWT</b>, to deliver a rich user experience.</p>',\n    institution: {\n      location: 'Hamilton, New Zealand',\n      name: 'Rockwell',\n      url: 'http://nz.rockwellautomation.com',\n    },\n    title: 'Software Developer',\n    year: {\n      from: 'Jul 2011',\n      to: 'Dec 2012',\n    },\n  }, {\n    accomplishments: '<p>Integrated an open source <b>mobile framework</b> (WURFL) into the Quirk software stack enabling development of mobile client solutions. Converted <b>Google\\'s server-side JSP tracking</b> code to fit into the Quirk stack and WebWork framework.</p><p>Developed a <b>live tracking solution</b> of a  colleague\\'s mountain bike race via <b>GPS</b>, Vodacom API and <b>Google Maps API</b>.</p>',\n    content: '<p>Worked as a Software Engineer at the Cape Town office of Quirk developing <b>Java</b> (<b>Java EE</b>) <b>web-based applications</b> to client specifications within specified deadlines. Projects included <b>SEO optimised websites</b> and <b>mobile websites</b>, <b>custom built CMS</b> solutions, <b>Facebook Applications</b>, integrations with <b>Twitter</b> and other <b>3rd party APIs</b>, <b>RSS Feeds</b> (both generating and parsing). The development environment was <b>Java</b>, utilising the <b>MVC WebWork</b> framework and <b>Freemarker Template</b> engine, backed by <b>Spring</b>, <b>MySQL</b> and <b>Hibernate</b>.</p><p>Maintained and supported existing applications. Interfaced with clients regularly for presentations and training. Compiled client facing documentation where required. Performed on-call server monitoring duties.</p>',\n    institution: {\n      location: 'Cape Town, South Africa',\n      name: 'Quirk',\n      url: 'http://www.quirk.biz',\n    },\n    title: 'Software Engineer',\n    video: 'https://www.youtube.com/embed/34Tb79-2ekc?rel=0',\n    year: {\n      from: 'Nov 2008',\n      to: 'Apr 2011',\n    },\n  }, {\n    content: '<p>Developed <b>Java ME</b> applications for <b>embedded systems</b>. Was also involved with the server-side software and mobile sites to support the download and installation thereof. Maintained existing software.</p>',\n    institution: {\n      location: 'Cape Town, South Africa',\n      name: 'Cellsmart',\n    },\n    title: 'Java Developer',\n    year: {\n      from: 'Feb 2008',\n      to: 'Oct 2008',\n    },\n  }, {\n    content: '<p><br><i class=\"icon-globe icon-2x\"></i><i class=\"icon-plus\"></i><i class=\"icon-flight icon-2x\"></i></p>',\n    institution: {\n      location: 'Cape Town & Johannesburg, South Africa',\n      name: 'South African Airways',\n    },\n    title: 'Flight Attendant',\n    year: {\n      from: 'Dec 1997',\n      to: 'Jan 2006',\n    },\n  },\n]"
+					"defaultValue": " [\n  {\n    content: '',\n    institution: {\n      location: 'Wellington, New Zealand',\n      name: 'Fairfax Media',\n      url: 'https://www.fairfaxmedia.co.nz/',\n    },\n    title: 'Full-stack Engineer',\n    year: {\n      from: 'Sep 2017',\n      to: 'Present',\n    },\n  }, {\n    content: '<p>Fulfilled a contract assignment with Fairfax NZ as a <b>JavaScript Developer</b> in one of the Wellington-based development teams.</p><p>Was closely involved in the implementation of a new <b>React</b> based front-end for the <a href=\"https://www.stuff.co.nz\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"link js_track_link_click\">Stuff.co.nz</a> news site. The application, including the back-end interfaces like <b>GraphQL</b>, was served via <b>Express</b> in a <b>Node.js</b> runtime.</p><p>Other projects included the implementation of an implicit flow client-side <b>OpenID Connect</b> login, as well as the integration of the <b>Nativform (FFX Native platform)</b> advertising SDK.</p>',\n    institution: {\n      location: 'Wellington, New Zealand',\n      name: 'Fairfax Media',\n      url: 'https://www.fairfaxmedia.co.nz/',\n    },\n    title: 'JavaScript Developer (Contract)',\n    year: {\n      from: 'Apr 2016',\n      to: 'Jun 2017',\n    },\n  }, {\n    content: '<p>Worked as a <b>UI Developer</b> at Westpac NZ, where I was involved in various projects, including <b><i>Direct from Account&trade;</i></b>, <b><i>Westpac Exchange&trade;</i></b> and <b><i>Westpac One&reg;</i></b>.</p><p>The server-side development environment was <b>Java</b>, while the client-side was built using a variety of <b>JavaScript technologies</b> and <b>frameworks</b>, most notably <b>RequireJS</b>, <b>Backbone</b>, Marionette, <b>Underscore</b>, <b>AngularJS</b>, SCSS, and, during development, <b>Node.js</b>.</p><p>Build and Testing tools included <b>Grunt</b>, Maven, Jenkins, JUnit, Cucumber, <b>Jasmine</b> and <b>Karma</b>.</p>',\n    institution: {\n      location: 'Wellington, New Zealand',\n      name: 'Westpac NZ Ltd',\n      url: 'https://www.westpac.co.nz',\n    },\n    title: 'Analyst Programmer (UI)',\n    year: {\n      from: 'Jun 2014',\n      to: 'Mar 2016',\n    },\n  }, {\n    accomplishments: '<p>Worked alongside members of the hardware team on the implementation of a <b>RESTful JSON</b> communication protocol over HTTP for the 2nd Generation On-board Units.</p>',\n    content: '<p>Employed as a Java Developer at EROAD, New Zealand\\'s leading transport technology and services company. Worked in an <b>Agile environment</b> developing and unit testing enhancements, which involved user <b>interface</b>, <b>web services</b> and <b>back-end integration</b> for EROAD\\'s <b>Cloud Based SaaS application</b>.</p><p>The development environment was <b>Java</b>, and frameworks and technologies included <b>Spring MVC</b>, <b>JSP</b>, <b>JQuery</b>, <b>RESTful</b> web services over <b>HTTP</b>, <b>JAX-WS/JAXB</b> web services over <b>SOAP</b>, <b>Hibernate</b> and <b>PostgreSQL</b>.</p><p>Mainly functioned within the Tax and Localisation team, which included the <b>GIS</b> and mapping layer.</p>',\n    institution: {\n      location: 'Auckland, New Zealand',\n      name: 'EROAD',\n      url: 'http://www.eroad.co.nz',\n    },\n    title: 'Senior Java Developer',\n    year: {\n      from: 'Jan 2013',\n      to: 'Apr 2014',\n    },\n  }, {\n    accomplishments: '<p>Was involved in a major overhaul of the UI for the PPM System, which, amongst other tasks, included the implementation of a <b>WYSIWYG editor</b> inside GWT. Worked with my team in New Zealand alongside teams in the US and China to re-build the data collection component.</p>',\n    content: '<p>Worked as a Software Developer at the New Zealand campus of Rockwell Automation. Functioned within an <b>agile team</b> developing <b>user interface</b> elements as well as <b>web services</b> and <b>back-end integration</b> for a performance management platform used in a variety of industries worldwide. The deployment of this <b>multi-tier application</b> consisted of a web environment (<b>Tomcat</b> &amp; <b>JBoss</b>), on the <b>Java EE technology stack</b>.</p><p>The development environment was <b>Java</b>, utilising third-party technologies such as <b>GWT</b>, to deliver a rich user experience.</p>',\n    institution: {\n      location: 'Hamilton, New Zealand',\n      name: 'Rockwell',\n      url: 'http://nz.rockwellautomation.com',\n    },\n    title: 'Software Developer',\n    year: {\n      from: 'Jul 2011',\n      to: 'Dec 2012',\n    },\n  }, {\n    accomplishments: '<p>Integrated an open source <b>mobile framework</b> (WURFL) into the Quirk software stack enabling development of mobile client solutions. Converted <b>Google\\'s server-side JSP tracking</b> code to fit into the Quirk stack and WebWork framework.</p><p>Developed a <b>live tracking solution</b> of a  colleague\\'s mountain bike race via <b>GPS</b>, Vodacom API and <b>Google Maps API</b>.</p>',\n    content: '<p>Worked as a Software Engineer at the Cape Town office of Quirk developing <b>Java</b> (<b>Java EE</b>) <b>web-based applications</b> to client specifications within specified deadlines. Projects included <b>SEO optimised websites</b> and <b>mobile websites</b>, <b>custom built CMS</b> solutions, <b>Facebook Applications</b>, integrations with <b>Twitter</b> and other <b>3rd party APIs</b>, <b>RSS Feeds</b> (both generating and parsing). The development environment was <b>Java</b>, utilising the <b>MVC WebWork</b> framework and <b>Freemarker Template</b> engine, backed by <b>Spring</b>, <b>MySQL</b> and <b>Hibernate</b>.</p><p>Maintained and supported existing applications. Interfaced with clients regularly for presentations and training. Compiled client facing documentation where required. Performed on-call server monitoring duties.</p>',\n    institution: {\n      location: 'Cape Town, South Africa',\n      name: 'Quirk',\n      url: 'http://www.quirk.biz',\n    },\n    title: 'Software Engineer',\n    video: {\n      videoTitle: 'Team Quirk Live Tracker',\n      videoUrl: 'https://www.youtube.com/embed/34Tb79-2ekc?rel=0',\n    },\n    year: {\n      from: 'Nov 2008',\n      to: 'Apr 2011',\n    },\n  }, {\n    content: '<p>Developed <b>Java ME</b> applications for <b>embedded systems</b>. Was also involved with the server-side software and mobile sites to support the download and installation thereof. Maintained existing software.</p>',\n    institution: {\n      location: 'Cape Town, South Africa',\n      name: 'Cellsmart',\n    },\n    title: 'Java Developer',\n    year: {\n      from: 'Feb 2008',\n      to: 'Oct 2008',\n    },\n  }, {\n    content: '<p><br><i class=\"icon-globe icon-2x\"></i><i class=\"icon-plus\"></i><i class=\"icon-flight icon-2x\"></i></p>',\n    institution: {\n      location: 'Cape Town & Johannesburg, South Africa',\n      name: 'South African Airways',\n    },\n    title: 'Flight Attendant',\n    year: {\n      from: 'Dec 1997',\n      to: 'Jan 2006',\n    },\n  },\n]"
 				}
 			],
 			"groups": [
@@ -8452,7 +8465,7 @@
 					"title": "Variables",
 					"kind": 32,
 					"children": [
-						399
+						400
 					]
 				}
 			],
@@ -8465,7 +8478,7 @@
 			]
 		},
 		{
-			"id": 400,
+			"id": 401,
 			"name": "\"experience/services/experience\"",
 			"kind": 1,
 			"kindString": "External module",
@@ -8475,7 +8488,7 @@
 			"originalName": "/home/louw/workspace/heroku/portfolio-web/src/experience/services/experience.ts",
 			"children": [
 				{
-					"id": 401,
+					"id": 402,
 					"name": "ExperienceService",
 					"kind": 128,
 					"kindString": "Class",
@@ -8484,7 +8497,7 @@
 					},
 					"children": [
 						{
-							"id": 402,
+							"id": 403,
 							"name": "getJobs",
 							"kind": 2048,
 							"kindString": "Method",
@@ -8494,7 +8507,7 @@
 							},
 							"signatures": [
 								{
-									"id": 403,
+									"id": 404,
 									"name": "getJobs",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -8532,7 +8545,7 @@
 							"title": "Methods",
 							"kind": 2048,
 							"children": [
-								402
+								403
 							]
 						}
 					],
@@ -8550,7 +8563,7 @@
 					"title": "Classes",
 					"kind": 128,
 					"children": [
-						401
+						402
 					]
 				}
 			],
@@ -8563,7 +8576,7 @@
 			]
 		},
 		{
-			"id": 422,
+			"id": 423,
 			"name": "\"footer/components/footer\"",
 			"kind": 1,
 			"kindString": "External module",
@@ -8573,7 +8586,7 @@
 			"originalName": "/home/louw/workspace/heroku/portfolio-web/src/footer/components/footer.ts",
 			"children": [
 				{
-					"id": 423,
+					"id": 424,
 					"name": "FooterComponent",
 					"kind": 128,
 					"kindString": "Class",
@@ -8594,7 +8607,7 @@
 					],
 					"children": [
 						{
-							"id": 426,
+							"id": 427,
 							"name": "constructor",
 							"kind": 512,
 							"kindString": "Constructor",
@@ -8603,7 +8616,7 @@
 							},
 							"signatures": [
 								{
-									"id": 427,
+									"id": 428,
 									"name": "new FooterComponent",
 									"kind": 16384,
 									"kindString": "Constructor signature",
@@ -8611,7 +8624,7 @@
 									"type": {
 										"type": "reference",
 										"name": "FooterComponent",
-										"id": 423
+										"id": 424
 									}
 								}
 							],
@@ -8624,7 +8637,7 @@
 							]
 						},
 						{
-							"id": 425,
+							"id": 426,
 							"name": "currentDate",
 							"kind": 1024,
 							"kindString": "Property",
@@ -8645,7 +8658,7 @@
 							}
 						},
 						{
-							"id": 424,
+							"id": 425,
 							"name": "links",
 							"kind": 1024,
 							"kindString": "Property",
@@ -8667,13 +8680,13 @@
 									{
 										"type": "reference",
 										"name": "Link",
-										"id": 412
+										"id": 413
 									}
 								]
 							}
 						},
 						{
-							"id": 430,
+							"id": 431,
 							"name": "getLinks",
 							"kind": 2048,
 							"kindString": "Method",
@@ -8682,7 +8695,7 @@
 							},
 							"signatures": [
 								{
-									"id": 431,
+									"id": 432,
 									"name": "getLinks",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -8702,7 +8715,7 @@
 							]
 						},
 						{
-							"id": 428,
+							"id": 429,
 							"name": "ngOnInit",
 							"kind": 2048,
 							"kindString": "Method",
@@ -8711,7 +8724,7 @@
 							},
 							"signatures": [
 								{
-									"id": 429,
+									"id": 430,
 									"name": "ngOnInit",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -8736,23 +8749,23 @@
 							"title": "Constructors",
 							"kind": 512,
 							"children": [
-								426
+								427
 							]
 						},
 						{
 							"title": "Properties",
 							"kind": 1024,
 							"children": [
-								425,
-								424
+								426,
+								425
 							]
 						},
 						{
 							"title": "Methods",
 							"kind": 2048,
 							"children": [
-								430,
-								428
+								431,
+								429
 							]
 						}
 					],
@@ -8776,7 +8789,7 @@
 					"title": "Classes",
 					"kind": 128,
 					"children": [
-						423
+						424
 					]
 				}
 			],
@@ -8789,7 +8802,7 @@
 			]
 		},
 		{
-			"id": 411,
+			"id": 412,
 			"name": "\"footer/definitions/link\"",
 			"kind": 1,
 			"kindString": "External module",
@@ -8799,7 +8812,7 @@
 			"originalName": "/home/louw/workspace/heroku/portfolio-web/src/footer/definitions/link.ts",
 			"children": [
 				{
-					"id": 412,
+					"id": 413,
 					"name": "Link",
 					"kind": 256,
 					"kindString": "Interface",
@@ -8811,7 +8824,7 @@
 					},
 					"children": [
 						{
-							"id": 413,
+							"id": 414,
 							"name": "icon",
 							"kind": 1024,
 							"kindString": "Property",
@@ -8834,7 +8847,7 @@
 							}
 						},
 						{
-							"id": 414,
+							"id": 415,
 							"name": "title",
 							"kind": 1024,
 							"kindString": "Property",
@@ -8857,7 +8870,7 @@
 							}
 						},
 						{
-							"id": 415,
+							"id": 416,
 							"name": "url",
 							"kind": 1024,
 							"kindString": "Property",
@@ -8885,9 +8898,9 @@
 							"title": "Properties",
 							"kind": 1024,
 							"children": [
-								413,
 								414,
-								415
+								415,
+								416
 							]
 						}
 					],
@@ -8905,7 +8918,7 @@
 					"title": "Interfaces",
 					"kind": 256,
 					"children": [
-						412
+						413
 					]
 				}
 			],
@@ -8918,7 +8931,7 @@
 			]
 		},
 		{
-			"id": 416,
+			"id": 417,
 			"name": "\"footer/models/links\"",
 			"kind": 1,
 			"kindString": "External module",
@@ -8928,7 +8941,7 @@
 			"originalName": "/home/louw/workspace/heroku/portfolio-web/src/footer/models/links.ts",
 			"children": [
 				{
-					"id": 417,
+					"id": 418,
 					"name": "LINKS",
 					"kind": 32,
 					"kindString": "Variable",
@@ -8958,7 +8971,7 @@
 							{
 								"type": "reference",
 								"name": "Link",
-								"id": 412
+								"id": 413
 							}
 						]
 					},
@@ -8970,7 +8983,7 @@
 					"title": "Variables",
 					"kind": 32,
 					"children": [
-						417
+						418
 					]
 				}
 			],
@@ -8983,7 +8996,7 @@
 			]
 		},
 		{
-			"id": 418,
+			"id": 419,
 			"name": "\"footer/services/footer\"",
 			"kind": 1,
 			"kindString": "External module",
@@ -8993,7 +9006,7 @@
 			"originalName": "/home/louw/workspace/heroku/portfolio-web/src/footer/services/footer.ts",
 			"children": [
 				{
-					"id": 419,
+					"id": 420,
 					"name": "FooterService",
 					"kind": 128,
 					"kindString": "Class",
@@ -9002,7 +9015,7 @@
 					},
 					"children": [
 						{
-							"id": 420,
+							"id": 421,
 							"name": "getLinks",
 							"kind": 2048,
 							"kindString": "Method",
@@ -9012,7 +9025,7 @@
 							},
 							"signatures": [
 								{
-									"id": 421,
+									"id": 422,
 									"name": "getLinks",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -9028,7 +9041,7 @@
 													{
 														"type": "reference",
 														"name": "Link",
-														"id": 412
+														"id": 413
 													}
 												]
 											}
@@ -9050,7 +9063,7 @@
 							"title": "Methods",
 							"kind": 2048,
 							"children": [
-								420
+								421
 							]
 						}
 					],
@@ -9068,7 +9081,7 @@
 					"title": "Classes",
 					"kind": 128,
 					"children": [
-						419
+						420
 					]
 				}
 			],
@@ -9081,7 +9094,7 @@
 			]
 		},
 		{
-			"id": 472,
+			"id": 473,
 			"name": "\"header/components/header\"",
 			"kind": 1,
 			"kindString": "External module",
@@ -9091,7 +9104,7 @@
 			"originalName": "/home/louw/workspace/heroku/portfolio-web/src/header/components/header.ts",
 			"children": [
 				{
-					"id": 473,
+					"id": 474,
 					"name": "HeaderComponent",
 					"kind": 128,
 					"kindString": "Class",
@@ -9112,7 +9125,7 @@
 					],
 					"children": [
 						{
-							"id": 475,
+							"id": 476,
 							"name": "constructor",
 							"kind": 512,
 							"kindString": "Constructor",
@@ -9121,14 +9134,14 @@
 							},
 							"signatures": [
 								{
-									"id": 476,
+									"id": 477,
 									"name": "new HeaderComponent",
 									"kind": 16384,
 									"kindString": "Constructor signature",
 									"flags": {},
 									"parameters": [
 										{
-											"id": 477,
+											"id": 478,
 											"name": "_headerService",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -9136,14 +9149,14 @@
 											"type": {
 												"type": "reference",
 												"name": "HeaderService",
-												"id": 436
+												"id": 437
 											}
 										}
 									],
 									"type": {
 										"type": "reference",
 										"name": "HeaderComponent",
-										"id": 473
+										"id": 474
 									}
 								}
 							],
@@ -9156,7 +9169,7 @@
 							]
 						},
 						{
-							"id": 474,
+							"id": 475,
 							"name": "imageIds",
 							"kind": 1024,
 							"kindString": "Property",
@@ -9183,7 +9196,7 @@
 							}
 						},
 						{
-							"id": 484,
+							"id": 485,
 							"name": "initGridRotator",
 							"kind": 2048,
 							"kindString": "Method",
@@ -9192,14 +9205,14 @@
 							},
 							"signatures": [
 								{
-									"id": 485,
+									"id": 486,
 									"name": "initGridRotator",
 									"kind": 4096,
 									"kindString": "Call signature",
 									"flags": {},
 									"parameters": [
 										{
-											"id": 486,
+											"id": 487,
 											"name": "imageIds",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -9231,7 +9244,7 @@
 							]
 						},
 						{
-							"id": 480,
+							"id": 481,
 							"name": "initImageIds",
 							"kind": 2048,
 							"kindString": "Method",
@@ -9240,7 +9253,7 @@
 							},
 							"signatures": [
 								{
-									"id": 481,
+									"id": 482,
 									"name": "initImageIds",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -9260,7 +9273,7 @@
 							]
 						},
 						{
-							"id": 487,
+							"id": 488,
 							"name": "initNavigation",
 							"kind": 2048,
 							"kindString": "Method",
@@ -9269,7 +9282,7 @@
 							},
 							"signatures": [
 								{
-									"id": 488,
+									"id": 489,
 									"name": "initNavigation",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -9289,7 +9302,7 @@
 							]
 						},
 						{
-							"id": 482,
+							"id": 483,
 							"name": "initResizeListener",
 							"kind": 2048,
 							"kindString": "Method",
@@ -9298,7 +9311,7 @@
 							},
 							"signatures": [
 								{
-									"id": 483,
+									"id": 484,
 									"name": "initResizeListener",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -9318,7 +9331,7 @@
 							]
 						},
 						{
-							"id": 478,
+							"id": 479,
 							"name": "ngOnInit",
 							"kind": 2048,
 							"kindString": "Method",
@@ -9327,7 +9340,7 @@
 							},
 							"signatures": [
 								{
-									"id": 479,
+									"id": 480,
 									"name": "ngOnInit",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -9347,7 +9360,7 @@
 							]
 						},
 						{
-							"id": 489,
+							"id": 490,
 							"name": "setBannerSize",
 							"kind": 2048,
 							"kindString": "Method",
@@ -9356,14 +9369,14 @@
 							},
 							"signatures": [
 								{
-									"id": 490,
+									"id": 491,
 									"name": "setBannerSize",
 									"kind": 4096,
 									"kindString": "Call signature",
 									"flags": {},
 									"parameters": [
 										{
-											"id": 491,
+											"id": 492,
 											"name": "previousWidth",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -9375,7 +9388,7 @@
 											"defaultValue": "0"
 										},
 										{
-											"id": 492,
+											"id": 493,
 											"name": "previousHeight",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -9402,7 +9415,7 @@
 							]
 						},
 						{
-							"id": 493,
+							"id": 494,
 							"name": "setDynamicCssValues",
 							"kind": 2048,
 							"kindString": "Method",
@@ -9411,7 +9424,7 @@
 							},
 							"signatures": [
 								{
-									"id": 494,
+									"id": 495,
 									"name": "setDynamicCssValues",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -9436,27 +9449,27 @@
 							"title": "Constructors",
 							"kind": 512,
 							"children": [
-								475
+								476
 							]
 						},
 						{
 							"title": "Properties",
 							"kind": 1024,
 							"children": [
-								474
+								475
 							]
 						},
 						{
 							"title": "Methods",
 							"kind": 2048,
 							"children": [
-								484,
-								480,
-								487,
-								482,
-								478,
-								489,
-								493
+								485,
+								481,
+								488,
+								483,
+								479,
+								490,
+								494
 							]
 						}
 					],
@@ -9480,7 +9493,7 @@
 					"title": "Classes",
 					"kind": 128,
 					"children": [
-						473
+						474
 					]
 				}
 			],
@@ -9493,7 +9506,7 @@
 			]
 		},
 		{
-			"id": 432,
+			"id": 433,
 			"name": "\"header/definitions/image.ids\"",
 			"kind": 1,
 			"kindString": "External module",
@@ -9503,7 +9516,7 @@
 			"originalName": "/home/louw/workspace/heroku/portfolio-web/src/header/definitions/image.ids.ts",
 			"children": [
 				{
-					"id": 433,
+					"id": 434,
 					"name": "ImageIds",
 					"kind": 256,
 					"kindString": "Interface",
@@ -9515,7 +9528,7 @@
 					},
 					"children": [
 						{
-							"id": 434,
+							"id": 435,
 							"name": "imageIds",
 							"kind": 1024,
 							"kindString": "Property",
@@ -9546,7 +9559,7 @@
 							"title": "Properties",
 							"kind": 1024,
 							"children": [
-								434
+								435
 							]
 						}
 					],
@@ -9564,7 +9577,7 @@
 					"title": "Interfaces",
 					"kind": 256,
 					"children": [
-						433
+						434
 					]
 				}
 			],
@@ -9577,7 +9590,7 @@
 			]
 		},
 		{
-			"id": 442,
+			"id": 443,
 			"name": "\"header/models/header.config\"",
 			"kind": 1,
 			"kindString": "External module",
@@ -9587,7 +9600,7 @@
 			"originalName": "/home/louw/workspace/heroku/portfolio-web/src/header/models/header.config.ts",
 			"children": [
 				{
-					"id": 455,
+					"id": 456,
 					"name": "GRID_ROTATOR_CONFIG",
 					"kind": 2097152,
 					"kindString": "Object literal",
@@ -9605,7 +9618,7 @@
 					},
 					"children": [
 						{
-							"id": 456,
+							"id": 457,
 							"name": "animSpeed",
 							"kind": 32,
 							"kindString": "Variable",
@@ -9626,7 +9639,7 @@
 							"defaultValue": "300"
 						},
 						{
-							"id": 457,
+							"id": 458,
 							"name": "animType",
 							"kind": 32,
 							"kindString": "Variable",
@@ -9647,7 +9660,7 @@
 							"defaultValue": "\"rotateBottom\""
 						},
 						{
-							"id": 458,
+							"id": 459,
 							"name": "columns",
 							"kind": 32,
 							"kindString": "Variable",
@@ -9668,7 +9681,7 @@
 							"defaultValue": "8"
 						},
 						{
-							"id": 459,
+							"id": 460,
 							"name": "container",
 							"kind": 32,
 							"kindString": "Variable",
@@ -9689,7 +9702,7 @@
 							"defaultValue": "\"#home\""
 						},
 						{
-							"id": 460,
+							"id": 461,
 							"name": "maxStep",
 							"kind": 32,
 							"kindString": "Variable",
@@ -9710,7 +9723,7 @@
 							"defaultValue": "3"
 						},
 						{
-							"id": 461,
+							"id": 462,
 							"name": "onhover",
 							"kind": 32,
 							"kindString": "Variable",
@@ -9731,7 +9744,7 @@
 							"defaultValue": "true"
 						},
 						{
-							"id": 462,
+							"id": 463,
 							"name": "preventClick",
 							"kind": 32,
 							"kindString": "Variable",
@@ -9752,7 +9765,7 @@
 							"defaultValue": "true"
 						},
 						{
-							"id": 463,
+							"id": 464,
 							"name": "step",
 							"kind": 32,
 							"kindString": "Variable",
@@ -9773,7 +9786,7 @@
 							"defaultValue": "\"random\""
 						},
 						{
-							"id": 464,
+							"id": 465,
 							"name": "w1024",
 							"kind": 2097152,
 							"kindString": "Object literal",
@@ -9782,7 +9795,7 @@
 							},
 							"children": [
 								{
-									"id": 465,
+									"id": 466,
 									"name": "columns",
 									"kind": 32,
 									"kindString": "Variable",
@@ -9808,7 +9821,7 @@
 									"title": "Variables",
 									"kind": 32,
 									"children": [
-										465
+										466
 									]
 								}
 							],
@@ -9825,7 +9838,7 @@
 							}
 						},
 						{
-							"id": 466,
+							"id": 467,
 							"name": "w320",
 							"kind": 2097152,
 							"kindString": "Object literal",
@@ -9834,7 +9847,7 @@
 							},
 							"children": [
 								{
-									"id": 467,
+									"id": 468,
 									"name": "columns",
 									"kind": 32,
 									"kindString": "Variable",
@@ -9860,7 +9873,7 @@
 									"title": "Variables",
 									"kind": 32,
 									"children": [
-										467
+										468
 									]
 								}
 							],
@@ -9877,7 +9890,7 @@
 							}
 						},
 						{
-							"id": 468,
+							"id": 469,
 							"name": "w480",
 							"kind": 2097152,
 							"kindString": "Object literal",
@@ -9886,7 +9899,7 @@
 							},
 							"children": [
 								{
-									"id": 469,
+									"id": 470,
 									"name": "columns",
 									"kind": 32,
 									"kindString": "Variable",
@@ -9912,7 +9925,7 @@
 									"title": "Variables",
 									"kind": 32,
 									"children": [
-										469
+										470
 									]
 								}
 							],
@@ -9929,7 +9942,7 @@
 							}
 						},
 						{
-							"id": 470,
+							"id": 471,
 							"name": "w768",
 							"kind": 2097152,
 							"kindString": "Object literal",
@@ -9938,7 +9951,7 @@
 							},
 							"children": [
 								{
-									"id": 471,
+									"id": 472,
 									"name": "columns",
 									"kind": 32,
 									"kindString": "Variable",
@@ -9964,7 +9977,7 @@
 									"title": "Variables",
 									"kind": 32,
 									"children": [
-										471
+										472
 									]
 								}
 							],
@@ -9986,24 +9999,24 @@
 							"title": "Variables",
 							"kind": 32,
 							"children": [
-								456,
 								457,
 								458,
 								459,
 								460,
 								461,
 								462,
-								463
+								463,
+								464
 							]
 						},
 						{
 							"title": "Object literals",
 							"kind": 2097152,
 							"children": [
-								464,
-								466,
-								468,
-								470
+								465,
+								467,
+								469,
+								471
 							]
 						}
 					],
@@ -10020,7 +10033,7 @@
 					}
 				},
 				{
-					"id": 443,
+					"id": 444,
 					"name": "MENU_CONFIG",
 					"kind": 2097152,
 					"kindString": "Object literal",
@@ -10038,7 +10051,7 @@
 					},
 					"children": [
 						{
-							"id": 444,
+							"id": 445,
 							"name": "itemClass",
 							"kind": 32,
 							"kindString": "Variable",
@@ -10059,7 +10072,7 @@
 							"defaultValue": "\"menu-item\""
 						},
 						{
-							"id": 445,
+							"id": 446,
 							"name": "itemHover",
 							"kind": 32,
 							"kindString": "Variable",
@@ -10080,7 +10093,7 @@
 							"defaultValue": "\"active\""
 						},
 						{
-							"id": 454,
+							"id": 455,
 							"name": "topMargin",
 							"kind": 32,
 							"kindString": "Variable",
@@ -10101,7 +10114,7 @@
 							"defaultValue": "\"auto\""
 						},
 						{
-							"id": 446,
+							"id": 447,
 							"name": "parts",
 							"kind": 2097152,
 							"kindString": "Object literal",
@@ -10110,7 +10123,7 @@
 							},
 							"children": [
 								{
-									"id": 447,
+									"id": 448,
 									"name": "0",
 									"kind": 32,
 									"kindString": "Variable",
@@ -10131,7 +10144,7 @@
 									"defaultValue": "\"home\""
 								},
 								{
-									"id": 448,
+									"id": 449,
 									"name": "1",
 									"kind": 32,
 									"kindString": "Variable",
@@ -10152,7 +10165,7 @@
 									"defaultValue": "\"about\""
 								},
 								{
-									"id": 449,
+									"id": 450,
 									"name": "2",
 									"kind": 32,
 									"kindString": "Variable",
@@ -10173,7 +10186,7 @@
 									"defaultValue": "\"skills\""
 								},
 								{
-									"id": 450,
+									"id": 451,
 									"name": "3",
 									"kind": 32,
 									"kindString": "Variable",
@@ -10194,7 +10207,7 @@
 									"defaultValue": "\"experience\""
 								},
 								{
-									"id": 451,
+									"id": 452,
 									"name": "4",
 									"kind": 32,
 									"kindString": "Variable",
@@ -10215,7 +10228,7 @@
 									"defaultValue": "\"education\""
 								},
 								{
-									"id": 452,
+									"id": 453,
 									"name": "5",
 									"kind": 32,
 									"kindString": "Variable",
@@ -10236,7 +10249,7 @@
 									"defaultValue": "\"contact\""
 								},
 								{
-									"id": 453,
+									"id": 454,
 									"name": "6",
 									"kind": 32,
 									"kindString": "Variable",
@@ -10262,13 +10275,13 @@
 									"title": "Variables",
 									"kind": 32,
 									"children": [
-										447,
 										448,
 										449,
 										450,
 										451,
 										452,
-										453
+										453,
+										454
 									]
 								}
 							],
@@ -10290,16 +10303,16 @@
 							"title": "Variables",
 							"kind": 32,
 							"children": [
-								444,
 								445,
-								454
+								446,
+								455
 							]
 						},
 						{
 							"title": "Object literals",
 							"kind": 2097152,
 							"children": [
-								446
+								447
 							]
 						}
 					],
@@ -10321,8 +10334,8 @@
 					"title": "Object literals",
 					"kind": 2097152,
 					"children": [
-						455,
-						443
+						456,
+						444
 					]
 				}
 			],
@@ -10335,7 +10348,7 @@
 			]
 		},
 		{
-			"id": 435,
+			"id": 436,
 			"name": "\"header/services/header\"",
 			"kind": 1,
 			"kindString": "External module",
@@ -10345,7 +10358,7 @@
 			"originalName": "/home/louw/workspace/heroku/portfolio-web/src/header/services/header.ts",
 			"children": [
 				{
-					"id": 436,
+					"id": 437,
 					"name": "HeaderService",
 					"kind": 128,
 					"kindString": "Class",
@@ -10364,7 +10377,7 @@
 					],
 					"children": [
 						{
-							"id": 437,
+							"id": 438,
 							"name": "constructor",
 							"kind": 512,
 							"kindString": "Constructor",
@@ -10373,14 +10386,14 @@
 							},
 							"signatures": [
 								{
-									"id": 438,
+									"id": 439,
 									"name": "new HeaderService",
 									"kind": 16384,
 									"kindString": "Constructor signature",
 									"flags": {},
 									"parameters": [
 										{
-											"id": 439,
+											"id": 440,
 											"name": "http",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -10394,7 +10407,7 @@
 									"type": {
 										"type": "reference",
 										"name": "HeaderService",
-										"id": 436
+										"id": 437
 									}
 								}
 							],
@@ -10407,7 +10420,7 @@
 							]
 						},
 						{
-							"id": 440,
+							"id": 441,
 							"name": "getImageIds",
 							"kind": 2048,
 							"kindString": "Method",
@@ -10416,7 +10429,7 @@
 							},
 							"signatures": [
 								{
-									"id": 441,
+									"id": 442,
 									"name": "getImageIds",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -10431,7 +10444,7 @@
 													{
 														"type": "reference",
 														"name": "ImageIds",
-														"id": 433
+														"id": 434
 													},
 													{
 														"type": "reference",
@@ -10458,14 +10471,14 @@
 							"title": "Constructors",
 							"kind": 512,
 							"children": [
-								437
+								438
 							]
 						},
 						{
 							"title": "Methods",
 							"kind": 2048,
 							"children": [
-								440
+								441
 							]
 						}
 					],
@@ -10483,7 +10496,7 @@
 					"title": "Classes",
 					"kind": 128,
 					"children": [
-						436
+						437
 					]
 				}
 			],
@@ -10496,7 +10509,7 @@
 			]
 		},
 		{
-			"id": 545,
+			"id": 546,
 			"name": "\"main\"",
 			"kind": 1,
 			"kindString": "External module",
@@ -10724,7 +10737,7 @@
 			]
 		},
 		{
-			"id": 519,
+			"id": 520,
 			"name": "\"shared/common/pipes\"",
 			"kind": 1,
 			"kindString": "External module",
@@ -10734,7 +10747,7 @@
 			"originalName": "/home/louw/workspace/heroku/portfolio-web/src/shared/common/pipes.ts",
 			"children": [
 				{
-					"id": 524,
+					"id": 525,
 					"name": "BadgeUrlPipe",
 					"kind": 128,
 					"kindString": "Class",
@@ -10755,7 +10768,7 @@
 					],
 					"children": [
 						{
-							"id": 525,
+							"id": 526,
 							"name": "transform",
 							"kind": 2048,
 							"kindString": "Method",
@@ -10764,14 +10777,14 @@
 							},
 							"signatures": [
 								{
-									"id": 526,
+									"id": 527,
 									"name": "transform",
 									"kind": 4096,
 									"kindString": "Call signature",
 									"flags": {},
 									"parameters": [
 										{
-											"id": 527,
+											"id": 528,
 											"name": "badge",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -10802,7 +10815,7 @@
 							"title": "Methods",
 							"kind": 2048,
 							"children": [
-								525
+								526
 							]
 						}
 					],
@@ -10821,7 +10834,7 @@
 					]
 				},
 				{
-					"id": 528,
+					"id": 529,
 					"name": "MemberDatePipe",
 					"kind": 128,
 					"kindString": "Class",
@@ -10842,7 +10855,7 @@
 					],
 					"children": [
 						{
-							"id": 529,
+							"id": 530,
 							"name": "transform",
 							"kind": 2048,
 							"kindString": "Method",
@@ -10851,14 +10864,14 @@
 							},
 							"signatures": [
 								{
-									"id": 530,
+									"id": 531,
 									"name": "transform",
 									"kind": 4096,
 									"kindString": "Call signature",
 									"flags": {},
 									"parameters": [
 										{
-											"id": 531,
+											"id": 532,
 											"name": "memberDate",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -10889,7 +10902,7 @@
 							"title": "Methods",
 							"kind": 2048,
 							"children": [
-								529
+								530
 							]
 						}
 					],
@@ -10908,7 +10921,7 @@
 					]
 				},
 				{
-					"id": 532,
+					"id": 533,
 					"name": "ScorePipe",
 					"kind": 128,
 					"kindString": "Class",
@@ -10929,7 +10942,7 @@
 					],
 					"children": [
 						{
-							"id": 533,
+							"id": 534,
 							"name": "transform",
 							"kind": 2048,
 							"kindString": "Method",
@@ -10938,14 +10951,14 @@
 							},
 							"signatures": [
 								{
-									"id": 534,
+									"id": 535,
 									"name": "transform",
 									"kind": 4096,
 									"kindString": "Call signature",
 									"flags": {},
 									"parameters": [
 										{
-											"id": 535,
+											"id": 536,
 											"name": "score",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -10976,7 +10989,7 @@
 							"title": "Methods",
 							"kind": 2048,
 							"children": [
-								533
+								534
 							]
 						}
 					],
@@ -10995,7 +11008,7 @@
 					]
 				},
 				{
-					"id": 520,
+					"id": 521,
 					"name": "TrimPipe",
 					"kind": 128,
 					"kindString": "Class",
@@ -11016,7 +11029,7 @@
 					],
 					"children": [
 						{
-							"id": 521,
+							"id": 522,
 							"name": "transform",
 							"kind": 2048,
 							"kindString": "Method",
@@ -11025,14 +11038,14 @@
 							},
 							"signatures": [
 								{
-									"id": 522,
+									"id": 523,
 									"name": "transform",
 									"kind": 4096,
 									"kindString": "Call signature",
 									"flags": {},
 									"parameters": [
 										{
-											"id": 523,
+											"id": 524,
 											"name": "value",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -11063,7 +11076,7 @@
 							"title": "Methods",
 							"kind": 2048,
 							"children": [
-								521
+								522
 							]
 						}
 					],
@@ -11082,7 +11095,7 @@
 					]
 				},
 				{
-					"id": 536,
+					"id": 537,
 					"name": "VideoUrlPipe",
 					"kind": 128,
 					"kindString": "Class",
@@ -11103,7 +11116,7 @@
 					],
 					"children": [
 						{
-							"id": 537,
+							"id": 538,
 							"name": "constructor",
 							"kind": 512,
 							"kindString": "Constructor",
@@ -11112,14 +11125,14 @@
 							},
 							"signatures": [
 								{
-									"id": 538,
+									"id": 539,
 									"name": "new VideoUrlPipe",
 									"kind": 16384,
 									"kindString": "Constructor signature",
 									"flags": {},
 									"parameters": [
 										{
-											"id": 539,
+											"id": 540,
 											"name": "sanitationService",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -11133,7 +11146,7 @@
 									"type": {
 										"type": "reference",
 										"name": "VideoUrlPipe",
-										"id": 536
+										"id": 537
 									}
 								}
 							],
@@ -11146,7 +11159,7 @@
 							]
 						},
 						{
-							"id": 540,
+							"id": 541,
 							"name": "transform",
 							"kind": 2048,
 							"kindString": "Method",
@@ -11155,14 +11168,14 @@
 							},
 							"signatures": [
 								{
-									"id": 541,
+									"id": 542,
 									"name": "transform",
 									"kind": 4096,
 									"kindString": "Call signature",
 									"flags": {},
 									"parameters": [
 										{
-											"id": 542,
+											"id": 543,
 											"name": "videoUrl",
 											"kind": 32768,
 											"kindString": "Parameter",
@@ -11193,14 +11206,14 @@
 							"title": "Constructors",
 							"kind": 512,
 							"children": [
-								537
+								538
 							]
 						},
 						{
 							"title": "Methods",
 							"kind": 2048,
 							"children": [
-								540
+								541
 							]
 						}
 					],
@@ -11224,11 +11237,11 @@
 					"title": "Classes",
 					"kind": 128,
 					"children": [
-						524,
-						528,
-						532,
-						520,
-						536
+						525,
+						529,
+						533,
+						521,
+						537
 					]
 				}
 			],
@@ -11417,7 +11430,7 @@
 			]
 		},
 		{
-			"id": 506,
+			"id": 507,
 			"name": "\"skills/components/skills\"",
 			"kind": 1,
 			"kindString": "External module",
@@ -11427,7 +11440,7 @@
 			"originalName": "/home/louw/workspace/heroku/portfolio-web/src/skills/components/skills.ts",
 			"children": [
 				{
-					"id": 507,
+					"id": 508,
 					"name": "SkillsComponent",
 					"kind": 128,
 					"kindString": "Class",
@@ -11448,7 +11461,7 @@
 					],
 					"children": [
 						{
-							"id": 509,
+							"id": 510,
 							"name": "constructor",
 							"kind": 512,
 							"kindString": "Constructor",
@@ -11457,7 +11470,7 @@
 							},
 							"signatures": [
 								{
-									"id": 510,
+									"id": 511,
 									"name": "new SkillsComponent",
 									"kind": 16384,
 									"kindString": "Constructor signature",
@@ -11465,7 +11478,7 @@
 									"type": {
 										"type": "reference",
 										"name": "SkillsComponent",
-										"id": 507
+										"id": 508
 									}
 								}
 							],
@@ -11478,7 +11491,7 @@
 							]
 						},
 						{
-							"id": 508,
+							"id": 509,
 							"name": "skills",
 							"kind": 1024,
 							"kindString": "Property",
@@ -11500,13 +11513,13 @@
 									{
 										"type": "reference",
 										"name": "Skill",
-										"id": 496
+										"id": 497
 									}
 								]
 							}
 						},
 						{
-							"id": 517,
+							"id": 518,
 							"name": "drawChart",
 							"kind": 2048,
 							"kindString": "Method",
@@ -11515,7 +11528,7 @@
 							},
 							"signatures": [
 								{
-									"id": 518,
+									"id": 519,
 									"name": "drawChart",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -11535,7 +11548,7 @@
 							]
 						},
 						{
-							"id": 513,
+							"id": 514,
 							"name": "getSkills",
 							"kind": 2048,
 							"kindString": "Method",
@@ -11544,7 +11557,7 @@
 							},
 							"signatures": [
 								{
-									"id": 514,
+									"id": 515,
 									"name": "getSkills",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -11564,7 +11577,7 @@
 							]
 						},
 						{
-							"id": 515,
+							"id": 516,
 							"name": "initScrollListener",
 							"kind": 2048,
 							"kindString": "Method",
@@ -11573,7 +11586,7 @@
 							},
 							"signatures": [
 								{
-									"id": 516,
+									"id": 517,
 									"name": "initScrollListener",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -11593,7 +11606,7 @@
 							]
 						},
 						{
-							"id": 511,
+							"id": 512,
 							"name": "ngOnInit",
 							"kind": 2048,
 							"kindString": "Method",
@@ -11602,7 +11615,7 @@
 							},
 							"signatures": [
 								{
-									"id": 512,
+									"id": 513,
 									"name": "ngOnInit",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -11627,24 +11640,24 @@
 							"title": "Constructors",
 							"kind": 512,
 							"children": [
-								509
+								510
 							]
 						},
 						{
 							"title": "Properties",
 							"kind": 1024,
 							"children": [
-								508
+								509
 							]
 						},
 						{
 							"title": "Methods",
 							"kind": 2048,
 							"children": [
-								517,
-								513,
-								515,
-								511
+								518,
+								514,
+								516,
+								512
 							]
 						}
 					],
@@ -11668,7 +11681,7 @@
 					"title": "Classes",
 					"kind": 128,
 					"children": [
-						507
+						508
 					]
 				}
 			],
@@ -11681,7 +11694,7 @@
 			]
 		},
 		{
-			"id": 495,
+			"id": 496,
 			"name": "\"skills/definitions/skill\"",
 			"kind": 1,
 			"kindString": "External module",
@@ -11691,7 +11704,7 @@
 			"originalName": "/home/louw/workspace/heroku/portfolio-web/src/skills/definitions/skill.ts",
 			"children": [
 				{
-					"id": 496,
+					"id": 497,
 					"name": "Skill",
 					"kind": 256,
 					"kindString": "Interface",
@@ -11703,7 +11716,7 @@
 					},
 					"children": [
 						{
-							"id": 497,
+							"id": 498,
 							"name": "content",
 							"kind": 1024,
 							"kindString": "Property",
@@ -11726,7 +11739,7 @@
 							}
 						},
 						{
-							"id": 498,
+							"id": 499,
 							"name": "level",
 							"kind": 1024,
 							"kindString": "Property",
@@ -11749,7 +11762,7 @@
 							}
 						},
 						{
-							"id": 499,
+							"id": 500,
 							"name": "name",
 							"kind": 1024,
 							"kindString": "Property",
@@ -11777,9 +11790,9 @@
 							"title": "Properties",
 							"kind": 1024,
 							"children": [
-								497,
 								498,
-								499
+								499,
+								500
 							]
 						}
 					],
@@ -11797,7 +11810,7 @@
 					"title": "Interfaces",
 					"kind": 256,
 					"children": [
-						496
+						497
 					]
 				}
 			],
@@ -11810,7 +11823,7 @@
 			]
 		},
 		{
-			"id": 500,
+			"id": 501,
 			"name": "\"skills/models/skills\"",
 			"kind": 1,
 			"kindString": "External module",
@@ -11820,7 +11833,7 @@
 			"originalName": "/home/louw/workspace/heroku/portfolio-web/src/skills/models/skills.ts",
 			"children": [
 				{
-					"id": 501,
+					"id": 502,
 					"name": "SKILLS",
 					"kind": 32,
 					"kindString": "Variable",
@@ -11850,7 +11863,7 @@
 							{
 								"type": "reference",
 								"name": "Skill",
-								"id": 496
+								"id": 497
 							}
 						]
 					},
@@ -11862,7 +11875,7 @@
 					"title": "Variables",
 					"kind": 32,
 					"children": [
-						501
+						502
 					]
 				}
 			],
@@ -11875,7 +11888,7 @@
 			]
 		},
 		{
-			"id": 502,
+			"id": 503,
 			"name": "\"skills/services/skills\"",
 			"kind": 1,
 			"kindString": "External module",
@@ -11885,7 +11898,7 @@
 			"originalName": "/home/louw/workspace/heroku/portfolio-web/src/skills/services/skills.ts",
 			"children": [
 				{
-					"id": 503,
+					"id": 504,
 					"name": "SkillService",
 					"kind": 128,
 					"kindString": "Class",
@@ -11894,7 +11907,7 @@
 					},
 					"children": [
 						{
-							"id": 504,
+							"id": 505,
 							"name": "getSkills",
 							"kind": 2048,
 							"kindString": "Method",
@@ -11904,7 +11917,7 @@
 							},
 							"signatures": [
 								{
-									"id": 505,
+									"id": 506,
 									"name": "getSkills",
 									"kind": 4096,
 									"kindString": "Call signature",
@@ -11920,7 +11933,7 @@
 													{
 														"type": "reference",
 														"name": "Skill",
-														"id": 496
+														"id": 497
 													}
 												]
 											}
@@ -11942,7 +11955,7 @@
 							"title": "Methods",
 							"kind": 2048,
 							"children": [
-								504
+								505
 							]
 						}
 					],
@@ -11960,7 +11973,7 @@
 					"title": "Classes",
 					"kind": 128,
 					"children": [
-						503
+						504
 					]
 				}
 			],
@@ -11979,7 +11992,7 @@
 			"kind": 1,
 			"children": [
 				1,
-				543,
+				544,
 				20,
 				3,
 				26,
@@ -12005,28 +12018,28 @@
 				350,
 				358,
 				366,
-				404,
+				405,
 				388,
-				398,
-				400,
-				422,
-				411,
-				416,
-				418,
-				472,
-				432,
-				442,
-				435,
-				545,
+				399,
+				401,
+				423,
+				412,
+				417,
+				419,
+				473,
+				433,
+				443,
+				436,
+				546,
 				7,
 				15,
-				519,
+				520,
 				50,
 				46,
-				506,
-				495,
-				500,
-				502
+				507,
+				496,
+				501,
+				503
 			]
 		}
 	]
