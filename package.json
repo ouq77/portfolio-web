@@ -1,6 +1,6 @@
 {
   "name": "ouq77-portfolio",
-  "version": "5.0.6",
+  "version": "5.0.7",
   "author": "Louw Swart",
   "description": "On-line portfolio of Louw Swart, based on 'angular2-seed'",
   "license": "MIT",
@@ -12,19 +12,19 @@
     "npm": ">=5"
   },
   "dependencies": {
-    "@angular/common": "5.0.5",
-    "@angular/core": "5.0.5",
-    "@angular/forms": "5.0.5",
-    "@angular/http": "5.0.5",
-    "@angular/platform-browser": "5.0.5",
-    "@angular/platform-browser-dynamic": "5.0.5",
+    "@angular/common": "5.1.0",
+    "@angular/core": "5.1.0",
+    "@angular/forms": "5.1.0",
+    "@angular/http": "5.1.0",
+    "@angular/platform-browser": "5.1.0",
+    "@angular/platform-browser-dynamic": "5.1.0",
     "core-js": "2.5.1",
-    "rxjs": "5.5.3",
+    "rxjs": "5.5.5",
     "zone.js": "0.8.18"
   },
   "devDependencies": {
-    "@angular/compiler": "5.0.5",
-    "@angular/compiler-cli": "5.0.5",
+    "@angular/compiler": "5.1.0",
+    "@angular/compiler-cli": "5.1.0",
     "@types/dateformat": "1.0.1",
     "@types/es6-shim": "0.31.35",
     "@types/googlemaps": "3.30.0",
@@ -50,13 +50,13 @@
     "npmversion": "1.4.0",
     "postbuild": "2.1.0",
     "rimraf": "2.6.2",
-    "rollup": "0.52.0",
+    "rollup": "0.52.1",
     "rollup-plugin-commonjs": "8.2.6",
     "rollup-plugin-node-resolve-angular": "2.0.3",
     "tslint": "5.8.0",
     "typedoc": "0.9.0",
     "typescript": "2.6.2",
-    "uglify-js": "3.2.0"
+    "uglify-js": "3.2.1"
   },
   "scripts": {
     "ncu:update": "ncu -u && npm update && npm update -D",
