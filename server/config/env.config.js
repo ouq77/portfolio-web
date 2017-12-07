@@ -44,6 +44,12 @@ const envConfig = convict({
     env: 'INSTAGRAM_IMAGE_IDS',
     format: String
   },
+  IMAGE_DISPLAY_COUNT: {
+    default: 75,
+    doc: 'The number of images to fetch',
+    env: 'IMAGE_DISPLAY_COUNT',
+    format: Number
+  },
   USE_HPKP: {
     default: false,
     doc: 'Whether to use HTTP Public Key Pinning or not',
