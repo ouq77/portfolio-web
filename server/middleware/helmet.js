@@ -14,8 +14,8 @@ module.exports = () => {
         frameSrc: ['\'self\'', 'https://*.youtube.com'],
         fontSrc: ['\'self\'', 'data:', 'https://*.gstatic.com', 'https://maxcdn.bootstrapcdn.com'],
         imgSrc: ['\'self\'', 'data:', 'https://*.googleapis.com', 'https://*.gstatic.com', 'https://*.google-analytics.com', 'https://david-dm.org', 'https://cdn.rawgit.com'],
-        objectSrc: ['\'none\''],
-        scriptSrc: ['\'self\'', 'https://*.googleapis.com', 'https://*.google-analytics.com'],
+        objectSrc: ['\'self\''],
+        scriptSrc: ['\'self\'', '\'unsafe-inline\'', 'https://*.googleapis.com', 'https://*.google-analytics.com'],
         styleSrc: ['\'self\'', '\'unsafe-inline\'', 'https://*.googleapis.com', 'https://*.bootstrapcdn.com']
       },
       browserSniff: false
