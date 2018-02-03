@@ -37,14 +37,14 @@
                         <a data-type="chapter-link" href="./"><span class="fa fa-home"></span>Getting started</a>
                         <ul class="links">
                                 <li class="link">
-                                    <a href="./"  class="active" ><span class="fa fa-file-text-o"></span>README</a>
+                                    <a href="./" ><span class="fa fa-file-text-o"></span>README</a>
                                 </li>
                                 <li class="link">
-                                    <a  href="./overview.html" 
-                                        
+                                    <a 
                                          href="./overview.html" 
                                         
-                                        >
+                                         href="./overview.html" 
+                                         class="active" >
                                         <span class="fa fa-th"></span>Overview
                                     </a>
                                 </li>
@@ -448,14 +448,14 @@
                                <a data-type="chapter-link" href="./"><span class="fa fa-home"></span>Getting started</a>
                                <ul class="links">
                                        <li class="link">
-                                           <a href="./"  class="active" ><span class="fa fa-file-text-o"></span>README</a>
+                                           <a href="./" ><span class="fa fa-file-text-o"></span>README</a>
                                        </li>
                                        <li class="link">
-                                           <a  href="./overview.html" 
-                                               
+                                           <a 
                                                 href="./overview.html" 
                                                
-                                               >
+                                                href="./overview.html" 
+                                                class="active" >
                                                <span class="fa fa-th"></span>Overview
                                            </a>
                                        </li>
@@ -837,26 +837,75 @@
                    
                    </nav>
                </div>
-               <div class="content readme">
+               <div class="content overview">
                    <div class="content-data">
-<h1 id="ouq77portfolio-dependency-status-https-david-dm-org-ouq77-portfolio-web-portfolio-web-ng2-heroku-svg-https-david-dm-org-ouq77-portfolio-web-portfolio-web-ng2-heroku-devdependency-status-https-david-dm-org-ouq77-portfolio-web-portfolio-web-ng2-heroku-dev-status-svg-https-david-dm-org-ouq77-portfolio-web-portfolio-web-ng2-heroku-info-devdependencies-">ouq77portfolio <a href="https://david-dm.org/ouq77/portfolio-web/portfolio-web-ng2-heroku"><img src="https://david-dm.org/ouq77/portfolio-web/portfolio-web-ng2-heroku.svg" alt="Dependency Status" class="img-responsive"></a> <a href="https://david-dm.org/ouq77/portfolio-web/portfolio-web-ng2-heroku#info=devDependencies"><img src="https://david-dm.org/ouq77/portfolio-web/portfolio-web-ng2-heroku/dev-status.svg" alt="devDependency Status" class="img-responsive"></a></h1>
-<p>Angular2 app, built on top of <a href="https://github.com/mgechev/angular2-seed">angular2-seed</a>, that can be run on Heroku in NodeJS. </p>
-<h1 id="requires">Requires</h1>
-<ol>
-<li>Angular2 (beta)</li>
-<li>Environment Variables:<ul>
-<li>CUSTOM_APP_DOMAIN - Custom domain, if not run on Heroku</li>
-<li>GMAIL_APP_EMAIL - Email address for logging into Gmail account</li>
-<li>GMAIL_APP_PASSWORD - Password for the email address used for sending</li>
-<li>GMAIL_SENDER_EMAIL - Email address including name, e.g. <pre>&quot;Jake the Dog <a href="&#x6d;&#x61;&#x69;&#x6c;&#x74;&#111;&#58;&#x60;&#x6a;&#x61;&#x6b;&#x65;&#64;&#x74;&#104;&#x65;&#x2e;&#100;&#x6f;&#x67;&#x60;">&#x60;&#x6a;&#x61;&#x6b;&#x65;&#64;&#x74;&#104;&#x65;&#x2e;&#100;&#x6f;&#x67;&#x60;</a>&quot;</pre></li>
-<li>GOOGLE_MAPS_API_KEY - Google Maps API key</li>
-<li>GOOGLE_ANALYTICS_ID - Analytics id for tracking</li>
-<li>INSTAGRAM_IMAGE_IDS - List of comma separated public Instagram image ids</li>
-</ul>
-</li>
-</ol>
-<p><img src="https://portfolio.ouq77.kiwi/assets/images/manifesticons/eightbitme-192.png" alt="icon.png" class="img-responsive"></p>
-
+<h3>Overview</h3>
+<div class="text-center">
+    <object id="demo-svg" type="image/svg+xml" data="graph/dependencies.svg" style="width: 100%; height: 250px;">
+            Your browser does not support SVG
+    </object>
+    <div class="btn-group">
+        <button id="zoom-in" class="btn btn-default btn-sm">Zoom in</button>
+        <button id="reset" class="btn btn-default btn-sm">Reset</button>
+        <button id="zoom-out" class="btn btn-default btn-sm">Zoom out</button>
+    </div>
+</div>
+<div class="container-fluid overview">
+    <div class="row">
+            <div class="col-sm-3">
+                <div class="card text-center">
+                    <div class="card-block">
+                        <h4 class="card-title"><span class="fa fa-archive"></span></h4>
+                        <p class="card-text">
+                            <a href="./modules.html">2 modules</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card text-center">
+                    <div class="card-block">
+                        <h4 class="card-title"><span class="fa fa-cogs"></span></h4>
+                        <p class="card-text">20 components</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card text-center">
+                    <div class="card-block">
+                        <h4 class="card-title"><span class="fa fa-code-fork"></span></h4>
+                        <p class="card-text">6 injectables</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card text-center">
+                    <div class="card-block">
+                        <h4 class="card-title"><span class="fa fa-plus"></span></h4>
+                        <p class="card-text">10 pipes</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card text-center">
+                    <div class="card-block">
+                        <h4 class="card-title"><span class="fa fa-file-code-o"></span></h4>
+                        <p class="card-text">22 classes</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card text-center">
+                    <div class="card-block">
+                        <h4 class="card-title"><span class="fa fa-info"></span></h4>
+                        <p class="card-text">30 interfaces</p>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+<script src="js/libs/svg-pan-zoom.min.js"></script>
+<script src="js/svg-pan-zoom.controls.js"></script>
 
 
 
