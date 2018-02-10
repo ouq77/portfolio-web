@@ -7,20 +7,25 @@
     </div>
     <ul>
       <li *ngFor="let link of links">
-        <a href="{{link.url}}" target="_blank" rel="noopener noreferrer" title="{{link.title}}" class="js_track_link_click">
+        <a href="{{link.url}}"
+           target="_blank"
+           rel="noopener noreferrer"
+           title="{{link.title}}"
+           class="js_track_link_click"
+           name="{{link.title}}">
           <i class="icon-{{link.icon}} icon-2x"></i>
         </a>
       </li>
     </ul>
     <div class="footer-info">
-      <p><i class="icon-copyright"></i>&nbsp;{{currentDate | date:"yyyy"}} &ndash; HTML Template by <i><a href="https://themeforest.net/user/themeelite" target="_blank" rel="noopener noreferrer" class="js_track_link_click">themeelite</a></i></p>
-      <p>Hosted on the <i><a href="https://heroku.com" target="_blank" rel="noopener noreferrer" class="js_track_link_click">heroku.com</a></i> cloud platform</p>
+      <p><i class="icon-copyright"></i>&nbsp;{{currentDate | date:"yyyy"}} &ndash; HTML Template by <i><a href="https://themeforest.net/user/themeelite" target="_blank" rel="noopener noreferrer" class="js_track_link_click" name="Themeforest themeelite">themeelite</a></i></p>
+      <p>Hosted on the <i><a href="https://heroku.com" target="_blank" rel="noopener noreferrer" class="js_track_link_click" name="Heroku">heroku.com</a></i> cloud platform</p>
       <p>Angular, TypeScript, SCSS</p>
-      <p>Node.js server code <a href="https://github.com/feross/standard" target="_blank" rel="noopener noreferrer"><img class="js-standard-style" src="https://cdn.rawgit.com/feross/standard/master/badge.svg" alt="JS Standard style"></a>&nbsp;compliant</p>
-      <p><i class="icon-git"></i>&nbsp;Deployed from <a href="https://github.com/ouq77/portfolio-web/tree/portfolio-web-ng2-heroku" target="_blank" rel="noopener noreferrer" class="js_track_link_click">this repo</a></p>
-      <p><i class="icon-file-code"></i>&nbsp;Docs <a href="/docs/index.html" target="_blank" rel="noopener noreferrer" class="js_track_link_click">hosted here</a></p>
-      <p><a href="https://david-dm.org/ouq77/portfolio-web/portfolio-web-ng2" target="_blank" rel="noopener noreferrer" title="dependencies status"><img src="https://david-dm.org/ouq77/portfolio-web/portfolio-web-ng2/status.svg" alt="dependencies status"/></a></p>
-      <p><a href="https://david-dm.org/ouq77/portfolio-web/portfolio-web-ng2?type=dev" target="_blank" rel="noopener noreferrer" title="devDependencies status"><img src="https://david-dm.org/ouq77/portfolio-web/portfolio-web-ng2/dev-status.svg" alt="devDependencies status"/></a></p>
+      <p>Node.js server code <a href="https://github.com/feross/standard" target="_blank" rel="noopener noreferrer" name="Standard style"><img class="js-standard-style" src="https://cdn.rawgit.com/feross/standard/master/badge.svg" alt="JS Standard style"></a>&nbsp;compliant</p>
+      <p><i class="icon-git"></i>&nbsp;Deployed from <a href="https://github.com/ouq77/portfolio-web/tree/portfolio-web-ng2-heroku" target="_blank" rel="noopener noreferrer" class="js_track_link_click" name="Github repo">this repo</a></p>
+      <p><i class="icon-file-code"></i>&nbsp;Docs <a href="/docs/index.html" target="_blank" rel="noopener noreferrer" class="js_track_link_click" name="Docs location">hosted here</a></p>
+      <p><a href="https://david-dm.org/ouq77/portfolio-web/portfolio-web-ng2" target="_blank" rel="noopener noreferrer" title="dependencies status" name="Dependencies status"><img src="https://david-dm.org/ouq77/portfolio-web/portfolio-web-ng2/status.svg" alt="dependencies status"/></a></p>
+      <p><a href="https://david-dm.org/ouq77/portfolio-web/portfolio-web-ng2?type=dev" target="_blank" rel="noopener noreferrer" title="devDependencies status" name="Dev dependencies status"><img src="https://david-dm.org/ouq77/portfolio-web/portfolio-web-ng2/dev-status.svg" alt="devDependencies status"/></a></p>
     </div>
   </div>
   <div class="last-modified">

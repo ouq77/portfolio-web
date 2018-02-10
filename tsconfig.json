@@ -3,6 +3,7 @@
   "compilerOptions": {
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,
+    "baseUrl": "./src",
     "declaration": false,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
@@ -37,7 +38,7 @@
     "*-prod.ts"
   ],
   "include": [
-    "src/",
+    "src/**/*",
     "tools/manual_typings/index.d.ts"
   ]
 }

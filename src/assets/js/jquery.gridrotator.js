@@ -317,7 +317,7 @@
         var evtname = visProp.replace(/[H|h]idden/, '') + 'visibilitychange';
         document.addEventListener(evtname, function() {
           self._visChange();
-        });
+        }, {passive: true});
       }
 
       if (!Modernizr.touch && this.options.onhover) {
