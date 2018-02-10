@@ -102,7 +102,7 @@
     "build:rev:css": "nodeRev 'compiled/common.min.css' --hash -o dist/css",
     "build:assets": "npm-run-all build:assets:*",
     "build:assets:images": "mkdirp dist/assets/images && ncp src/assets/images dist/assets/images",
-    "build:assets:static": "cpy 'tmp/*.html' 'tmp/*.ico' 'tmp/manifest.json' 'tmp/*.txt' 'tmp/*.xml' dist",
+    "build:assets:static": "cpy 'tmp/*.html' 'tmp/*.ico' 'tmp/manifest.json' 'tmp/*.txt' 'tmp/*.xml' dist && cpy 'README.md' heroku",
     "build:assets:fonts": "mkdirp dist/fonts && ncp src/assets/fonts dist/fonts",
     "build:inject": "postbuild -i tmp/index.html -o dist/index.html -c dist/css -j dist/js -g dist/",
     "build:html-min-final": "html-minifier --case-sensitive --collapse-whitespace --remove-comments --minify-css --minify-js --input-dir dist --output-dir dist --file-ext html",

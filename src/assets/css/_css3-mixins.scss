@@ -387,3 +387,14 @@
 @mixin animation($str) {
   @include css3-prefix('animation', $str);
 }
+
+@mixin placeholder($color) {
+  /* Chrome/Opera/Safari */
+  ::-webkit-input-placeholder { color: $color; }
+  /* Firefox 19+ */
+  ::-moz-placeholder { color: $color; }
+  /* IE 10+ */
+  :-ms-input-placeholder { color: $color; }
+  /* Firefox 18- */
+  :-moz-placeholder { color: $color; }
+}

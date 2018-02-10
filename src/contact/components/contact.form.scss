@@ -82,4 +82,6 @@
     padding-bottom: 15px;
     font-weight: 500;
   }
+
+  @include placeholder($snow);
 }
