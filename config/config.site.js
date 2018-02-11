@@ -99,6 +99,7 @@ const GOOGLE_ACCOUNT = {
 
 const LAST_MOD_SITE = dateFormat(now, 'dd/mm/yyyy');
 const LAST_MOD_SITEMAP = dateFormat(now, 'yyyy-mm-dd');
+const LAST_MOD_TIME = +now;
 
 module.exports = {
   META_TAGS,
@@ -106,4 +107,5 @@ module.exports = {
   GOOGLE_ACCOUNT,
   LAST_MOD_SITE,
   LAST_MOD_SITEMAP,
+  LAST_MOD_TIME,
 }
