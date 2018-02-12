@@ -17,9 +17,13 @@
 // resources to be cached again.
 var CACHE_VERSION = <%= LAST_MOD_TIME %>;
 var CURRENT_CACHES = {
-  offline: 'offline-v' + CACHE_VERSION
+  offline: 'offline-v' + CACHE_VERSION,
+  regular: 'regular-v' + CACHE_VERSION,
 };
 var OFFLINE_URL = '/offline';
+var REGULAR_URLS = [
+  '/',
+];
 
 function createCacheBustedRequest(url) {
   var request = new Request(url, {cache: 'reload'});
@@ -46,6 +50,11 @@ self.addEventListener('install', function(event) {
       });
     })
   );
+  event.waitUntil(caches.open(CURRENT_CACHES.regular)
+    .then(function(cache) {
+      return cache.addAll(REGULAR_URLS);
+    })
+  );
 });
 
 self.addEventListener('activate', function(event) {
@@ -61,8 +70,7 @@ self.addEventListener('activate', function(event) {
       return Promise.all(
         cacheNames.map(function(cacheName) {
           if (expectedCacheNames.indexOf(cacheName) === -1) {
-            // If this cache name isn't present in the array of "expected" cache names,
-            // then delete it.
+            // If this cache name isn't present in the array of "expected" cache names, then delete it.
             console.log('Deleting out of date cache:', cacheName);
             return caches.delete(cacheName);
           }
@@ -78,20 +86,51 @@ self.addEventListener('fetch', function(event) {
   // request.mode of 'navigate' is unfortunately not supported in Chrome
   // versions older than 49, so we need to include a less precise fallback,
   // which checks for a GET request with an Accept: text/html header.
-  if (event.request.mode === 'navigate' ||
-    (event.request.method === 'GET' &&
-      event.request.headers.get('accept').includes('text/html'))) {
-    console.log('Handling fetch event for', event.request.url);
+  if (event.request.mode === 'navigate' || (event.request.method === 'GET' && event.request.headers.get('accept').includes('text/html'))) {
     event.respondWith(
-      fetch(event.request).catch(function(error) {
-        // The catch is only triggered if fetch() throws an exception, which will most likely
-        // happen due to the server being unreachable.
-        // If fetch() returns a valid HTTP response with an response code in the 4xx or 5xx
-        // range, the catch() will NOT be called. If you need custom handling for 4xx or 5xx
-        // errors, see https://github.com/GoogleChrome/samples/tree/gh-pages/service-worker/fallback-response
-        console.log('Fetch failed; returning offline page instead.', error);
-        return caches.match(OFFLINE_URL);
-      })
+      caches.match(event.request)
+        .then(function(response) {
+          // Cache hit - return response
+          if (response) {
+            return response;
+          }
+
+          // IMPORTANT: Clone the request. A request is a stream and
+          // can only be consumed once. Since we are consuming this
+          // once by cache and once by the browser for fetch, we need
+          // to clone the response.
+          var fetchRequest = event.request.clone();
+
+          return fetch(fetchRequest).then(
+            function(response) {
+              // Check if we received a valid response
+              if(!response || response.status !== 200 || response.type !== 'basic') {
+                return response;
+              }
+
+              // IMPORTANT: Clone the response. A response is a stream
+              // and because we want the browser to consume the response
+              // as well as the cache consuming the response, we need
+              // to clone it so we have two streams.
+              var responseToCache = response.clone();
+
+              caches.open(CURRENT_CACHES.regular)
+                .then(function(cache) {
+                  cache.put(event.request, responseToCache);
+                });
+
+              return response;
+            }
+          ).catch(function(error) {
+            // The catch is only triggered if fetch() throws an exception, which will most likely
+            // happen due to the server being unreachable.
+            // If fetch() returns a valid HTTP response with an response code in the 4xx or 5xx
+            // range, the catch() will NOT be called. If you need custom handling for 4xx or 5xx
+            // errors, see https://github.com/GoogleChrome/samples/tree/gh-pages/service-worker/fallback-response
+            console.log('Fetch failed; returning offline page instead.', error);
+            return caches.match(OFFLINE_URL);
+          });
+        })
     );
   }
 
