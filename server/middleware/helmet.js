@@ -15,8 +15,8 @@ module.exports = () => {
         fontSrc: ['\'self\'', 'data:', 'https://*.gstatic.com', 'https://maxcdn.bootstrapcdn.com'],
         imgSrc: ['\'self\'', 'data:', 'https://*.googleapis.com', 'https://*.gstatic.com', 'https://*.google-analytics.com', 'https://*.bithound.io', 'https://*.rawgit.com'],
         objectSrc: ['\'none\''],
-        scriptSrc: ['\'self\'', '\'unsafe-inline\'', 'https://*.googleapis.com', 'https://*.google-analytics.com', 'https://*.cloudflare.com'],
-        styleSrc: ['\'self\'', '\'unsafe-inline\'', 'https://*.googleapis.com', 'https://*.bootstrapcdn.com']
+        scriptSrc: ['\'self\'', '\'unsafe-inline\'', 'https://*.googleapis.com', 'https://*.google-analytics.com', 'https://*.cloudflare.com', 'https://*.github.io', 'https://*.github.com', 'http://ajax.googleapis.com'],
+        styleSrc: ['\'self\'', '\'unsafe-inline\'', 'https://*.googleapis.com', 'https://*.bootstrapcdn.com', 'http://*.github.com', 'http://*.github.io']
       },
       browserSniff: false
     }),
