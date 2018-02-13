@@ -110,6 +110,7 @@ header {
 // ========================================================================== //
 
 .ri-grid {
+  width: 100%;
   margin: 0 auto;
   position: relative;
   height: auto;
@@ -154,184 +155,174 @@ header {
       }
     }
   }
-}
-
-//
-// Grid wrapper
-// ========================================================================== //
-
-.ri-grid-size-1 {
-  width: 55%;
-}
-
-.ri-grid-size-2 {
-  width: 100%;
-}
-
-.ri-grid-size-3 {
-  width: 100%;
-  margin-top: 0;
-}
-
-.ri-grid-loading {
-  overflow: hidden;
-  margin: 0 auto !important;
-  background: $midnight-express;
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 25;
-
-  .cb-slideshow {
-    opacity: 0;
-  }
 
   .ri-loading-image {
-    position: relative;
-    width: 40px;
-    height: 40px;
-    top: calc(50% - 20px);
-    left: calc(50% - 20px);
-    display: block;
+    display: none;
   }
-}
 
-.ri-loading-image {
-  display: none;
+  &.ri-grid-loading {
+    overflow: hidden;
+    margin: 0 auto !important;
+    background: $midnight-express;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 25;
+
+    .cb-slideshow {
+      opacity: 0;
+    }
+
+    .ri-loading-image {
+      position: relative;
+      width: 40px;
+      height: 40px;
+      top: calc(50% - 20px);
+      left: calc(50% - 20px);
+      display: block;
+    }
+  }
 }
 
 //
 // Menu
 // ========================================================================== //
 
-.is-stuck {
-  left: 0;
-  width: 100%;
-}
-
 .menu {
   margin-top: 0;
   position: static;
   left: 0;
   right: 0;
-}
 
-.nav-wrapper .container {
-  padding: 0;
-  width: auto;
+  .navbar-wrapper {
+    margin-top: 0;
+    position: relative;
+    z-index: 15;
+    background: $midnight-express;
 
-  @include respond-to {
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-}
-
-.navbar-header {
-  display: none;
-
-  @include respond-to {
-    display: block;
-  }
-}
-
-.nav > li > a {
-  display: inline-block;
-}
-
-.navbar-nav > li {
-  float: none;
-  display: inline;
-}
-
-.navbar-nav {
-  margin: 0 auto;
-  text-align: center;
-  float: none;
-}
-
-.navbar-toggle {
-  margin-top: 14px;
-}
-
-// Special class on .container surrounding .navbar, used for positioning it into place. //
-.navbar-wrapper {
-  margin-top: 0;
-  position: relative;
-  z-index: 15;
-  background: $midnight-express;
-}
-
-.navbar-wrapper .container {
-  padding: 0;
-
-  @include respond-to {
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-}
-
-.navbar-collapse {
-  padding: 0;
-}
-
-.navbar-collapse.in {
-  max-height: 100%;
-}
-
-.navbar.navbar-inverse.navbar-static-top {
-  margin: 2px auto;
-  background: $midnight-express;
-  color: $link-water;
-  border: none;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
-  text-transform: uppercase;
-
-  a {
-    padding: 22px 25px;
-    line-height: 18px;
-    text-align: center;
-    @include transition(all .2s ease);
-
-    &:hover {
-      color: $white;
+    &.stuck-menu {
+      &.is-stuck {
+        left: 0;
+        width: 100%;
+      }
     }
 
-    @include respond-to($query: $screen-m1-min) {
-      padding-left: 18px;
-      padding-right: 18px;
+    .container {
+      padding: 0;
+
+      @include respond-to {
+        padding-right: 15px;
+        padding-left: 15px;
+      }
+
+      .nav-wrapper {
+        .navbar {
+          &.navbar-inverse {
+            &.navbar-static-top {
+              margin: 2px auto;
+              background: $midnight-express;
+              color: $link-water;
+              border: none;
+              font-family: 'Open Sans', sans-serif;
+              font-size: 14px;
+              text-transform: uppercase;
+
+              a {
+                padding: 22px 25px;
+                line-height: 18px;
+                text-align: center;
+                @include transition(all .2s ease);
+
+                &:hover {
+                  color: $white;
+                }
+
+                @include respond-to($query: $screen-m1-min) {
+                  padding-left: 18px;
+                  padding-right: 18px;
+                }
+
+                @include respond-to($query: $screen-m2-min) {
+                  padding-left: 17px;
+                }
+
+                @include respond-to($query: $screen-x2-min) {
+                  line-height: 17px;
+                  padding-top: 20px;
+                  padding-bottom: 11px;
+                }
+              }
+            }
+          }
+
+          .container {
+            padding: 0;
+            width: auto;
+
+            @include respond-to {
+              padding-right: 15px;
+              padding-left: 15px;
+            }
+
+            .navbar-header {
+              display: none;
+
+              @include respond-to {
+                display: block;
+              }
+
+              .navbar-toggle {
+                margin-top: 14px;
+              }
+            }
+
+            .navbar-collapse {
+              padding: 0;
+
+              &.in {
+                max-height: 100%;
+              }
+
+              .nav {
+                & > li > a {
+                  display: inline-block;
+
+                  @include respond-to {
+                      display: block;
+                  }
+                }
+
+                &.navbar-nav {
+                  & > li {
+                    float: none;
+                    display: inline;
+                  }
+
+                  margin: 0 auto;
+                  text-align: center;
+                  float: none;
+                }
+              }
+            }
+          }
+        }
+
+        .navbar-inverse .navbar-nav > .active > a {
+          background: $black-forest;
+          color: $link-water;
+
+          &:focus {
+            color: $link-water;
+          }
+
+          &:hover {
+            color: $white;
+          }
+        }
+      }
     }
-
-    @include respond-to($query: $screen-m2-min) {
-      padding-left: 17px;
-    }
-
-    @include respond-to($query: $screen-x2-min) {
-      line-height: 17px;
-      padding-top: 20px;
-      padding-bottom: 11px;
-    }
-  }
-}
-
-.navbar-inverse .navbar-nav > .active > a {
-  background: $black-forest;
-  color: $link-water;
-
-  &:focus {
-    color: $link-water;
-  }
-
-  &:hover {
-    color: $white;
-  }
-}
-
-@include respond-to {
-  ul.navbar-nav li a {
-    display: block;
   }
 }
 

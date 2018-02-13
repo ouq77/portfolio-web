@@ -8,63 +8,65 @@
   background: $iris-blue;
   @include container-heading();
 
-  ul {
-    margin: 0 auto;
-    text-align: center;
-    list-style-type: none;
-    li {
-      display: inline-block;
+  .container {
+    ul {
+      margin: 0 auto;
       text-align: center;
-      background: $white;
-      color: $iris-blue;
-      line-height: 42px;
-      margin: 0 6px;
-      width: 42px !important;
-      height: 42px !important;
-      @include border-radius(50%);
-      @include transition(all .2s ease-in-out);
-
-      @include respond-to($val: max-width, $query: $screen-x3-min) {
-        width: 35px !important;
-        height: 35px !important;
-      }
-
-      &:hover {
-        background: $persian-green;
-        a {
-          color: $white;
-        }
-      }
-      a {
+      list-style-type: none;
+      li {
+        display: inline-block;
+        text-align: center;
+        background: $white;
         color: $iris-blue;
+        line-height: 42px;
+        margin: 0 6px;
         width: 42px !important;
         height: 42px !important;
+        @include border-radius(50%);
+        @include transition(all .2s ease-in-out);
 
         @include respond-to($val: max-width, $query: $screen-x3-min) {
           width: 35px !important;
           height: 35px !important;
         }
 
-        i {
-          line-height: 40px !important;
+        &:hover {
+          background: $persian-green;
+          a {
+            color: $white;
+          }
+        }
+        a {
+          color: $iris-blue;
+          width: 42px !important;
+          height: 42px !important;
 
           @include respond-to($val: max-width, $query: $screen-x3-min) {
-            line-height: 33px !important;;
+            width: 35px !important;
+            height: 35px !important;
+          }
+
+          i {
+            line-height: 40px !important;
+
+            @include respond-to($val: max-width, $query: $screen-x3-min) {
+              line-height: 33px !important;;
+            }
           }
         }
       }
     }
-  }
 
-  .footer-info {
-    text-align: center;
-    padding-top: 15px;
-    p {
-      padding-bottom: 5px;
-    }
+    .footer-info {
+      text-align: center;
+      padding-top: 15px;
+      p {
+        padding-bottom: 5px;
+      }
 
-    .js-standard-style {
-      height: 22px;
+      .js-standard-style {
+        height: 22px;
+      }
     }
   }
 

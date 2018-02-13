@@ -13,35 +13,38 @@
   background: $whisper;
   color: $blue-zodiac;
   @include container-heading(70px);
-  p {
-    color: $blue-zodiac;
-  }
-  h2 {
-    color: $bitter-sweet;
-  }
-  .skills-area {
-    padding: 0;
-  }
-  .skills {
-    margin: 0 auto 23px;
-    text-align: center;
-    float: none;
-    padding: 0;
-    width: 200px;
+
+  .container {
     p {
-      color: $manatee;
-      font-size: 13px;
-      line-height: 18px;
-      text-align: center;
+      color: $blue-zodiac;
     }
-    img {
-      margin: 0 auto 33px;
-      width: 100%;
-      max-width: 152px;
+    h2 {
+      color: $bitter-sweet;
     }
-    h4 {
-      font-weight: 700;
-      text-transform: uppercase;
+    .skill-area {
+      padding: 0;
+      .skill {
+        margin: 0 auto 23px;
+        text-align: center;
+        float: none;
+        padding: 0;
+        width: 200px;
+        p {
+          color: $manatee;
+          font-size: 13px;
+          line-height: 18px;
+          text-align: center;
+        }
+        img {
+          margin: 0 auto 33px;
+          width: 100%;
+          max-width: 152px;
+        }
+        h4 {
+          font-weight: 700;
+          text-transform: uppercase;
+        }
+      }
     }
   }
 }
