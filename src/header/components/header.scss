@@ -338,21 +338,3 @@ header {
 .hide-class {
   display: none;
 }
-
-// Since positioning the image, we need to help out the caption //
-.carousel-caption {
-  z-index: 10;
-}
-
-// Declare heights because of positioning of img element //
-.carousel .item {
-  height: 600px;
-  background-color: $cerulean;
-}
-
-.carousel-inner > .item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-}
