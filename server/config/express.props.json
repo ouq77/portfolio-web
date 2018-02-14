@@ -1,11 +1,6 @@
 {
   "static": [
     {
-      "uri": "/assets",
-      "location": "./app/assets",
-      "cache": "180d"
-    },
-    {
       "uri": "/css",
       "location": "./app/css",
       "cache": "365d"

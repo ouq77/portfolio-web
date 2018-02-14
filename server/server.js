@@ -4,6 +4,7 @@ const userAgentBlocker = require('express-user-agent-blocker')
 const middleware = require('./middleware')
 const routes = require('./routes')
 const envConfig = require('./config/env.config').get()
+const cacheTimes = require('./config/cache.times')
 const instagramImages = require('./modules/instagram.images')
 const expressStaticMappings = require('./config/express.props.json').static
 const expressRedirectMappings = require('./config/express.props.json').redirects
@@ -34,12 +35,13 @@ expressRedirectMappings.forEach((mapping) => {
 })
 
 app.post('/report-violation', cache({nocache: true}), routes.reportviolation)
+app.get('/assets/*', cache({ttl: cacheTimes.DAYS_IN_SECS_180}), routes.assets)
 app.get('/imageids', cache({nocache: true}), routes.imageids)
 app.post('/send', cache({nocache: true}), routes.send)
-app.get('/exclude', cache({ttl: 5184000}), routes.exclude)
+app.get('/exclude', cache({ttl: cacheTimes.DAYS_IN_SECS_60}), routes.exclude)
 app.get('/codeschool', cache({nocache: true}), routes.codeschool)
 app.get('/', cache({nocache: true}), routes.html)
-app.get('/*', cache({ttl: 5184000}), routes.fourohfour)
+app.get('/*', cache({ttl: cacheTimes.DAYS_IN_SECS_60}), routes.fourohfour)
 
 instagramImages.fetchInstaImages(instagramImageIds)
   .then((result) => {
