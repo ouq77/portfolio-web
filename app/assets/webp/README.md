@@ -1,0 +1,1 @@
+Webp images will be cached here.
