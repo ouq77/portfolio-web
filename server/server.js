@@ -21,7 +21,7 @@ app.use(middleware.helmet())
 app.use(require('prerender-node').set('prerenderToken', preRenderToken))
 app.use(require('body-parser').json({type: ['json', 'application/csp-report']}))
 app.use(middleware.heroku)
-app.use('/assets/*', middleware.varyHeader)
+app.use('/assets/*', middleware.assetsHeader)
 
 expressStaticMappings.forEach((mapping) => {
   console.info(`mapping resource "${mapping.uri}" to static location "${mapping.location}" with cache "${mapping.cache}"`)
@@ -35,8 +35,10 @@ expressRedirectMappings.forEach((mapping) => {
   })
 })
 
+// cache set by middleware.assetsHeader
+app.get('/assets/*', routes.assets)
+
 app.post('/report-violation', cache({nocache: true}), routes.reportviolation)
-app.get('/assets/*', cache({ttl: cacheTimes.DAYS_IN_SECS_180}), routes.assets)
 app.get('/imageids', cache({nocache: true}), routes.imageids)
 app.post('/send', cache({nocache: true}), routes.send)
 app.get('/exclude', cache({ttl: cacheTimes.DAYS_IN_SECS_60}), routes.exclude)
