@@ -21,7 +21,7 @@ app.use(middleware.helmet())
 app.use(require('prerender-node').set('prerenderToken', preRenderToken))
 app.use(require('body-parser').json({type: ['json', 'application/csp-report']}))
 app.use(middleware.heroku)
-app.use('/assets/*', middleware.varyUa)
+app.use('/assets/*', middleware.varyHeader)
 
 expressStaticMappings.forEach((mapping) => {
   console.info(`mapping resource "${mapping.uri}" to static location "${mapping.location}" with cache "${mapping.cache}"`)
