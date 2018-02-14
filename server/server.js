@@ -35,7 +35,7 @@ expressRedirectMappings.forEach((mapping) => {
 })
 
 app.post('/report-violation', cache({nocache: true}), routes.reportviolation)
-app.get('/assets/*', cache({nocache: true}), routes.assets)
+app.get('/assets/*', cache({ttl: cacheTimes.DAYS_IN_SECS_180}), routes.assets)
 app.get('/imageids', cache({nocache: true}), routes.imageids)
 app.post('/send', cache({nocache: true}), routes.send)
 app.get('/exclude', cache({ttl: cacheTimes.DAYS_IN_SECS_60}), routes.exclude)
