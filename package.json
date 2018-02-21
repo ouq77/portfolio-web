@@ -1,7 +1,7 @@
 {
   "name": "ouq77-portfolio",
   "author": "ouq77",
-  "version": "5.3.0",
+  "version": "5.3.1",
   "description": "On-line portfolio of Louw Swart, based on 'angular2-seed'",
   "main": "server/server.js",
   "repository": {
@@ -21,7 +21,7 @@
     "body-parser": "1.18.2",
     "cache-manager": "2.7.0",
     "camelcase": "4.1.0",
-    "compression": "1.7.1",
+    "compression": "1.7.2",
     "convict": "4.0.2",
     "debug": "3.1.0",
     "express": "4.16.2",
@@ -43,7 +43,7 @@
     "sharp": "0.19.0"
   },
   "devDependencies": {
-    "standard": "10.0.3"
+    "standard": "11.0.0"
   },
   "scripts": {
     "ncu:update": "ncu -u && npm update && npm update -D",
