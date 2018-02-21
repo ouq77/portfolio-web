@@ -1,6 +1,6 @@
 {
   "name": "ouq77-portfolio",
-  "version": "5.3.0",
+  "version": "5.3.1",
   "author": "Louw Swart",
   "description": "On-line portfolio of Louw Swart, based on 'angular2-seed'",
   "license": "MIT",
@@ -25,7 +25,7 @@
   "devDependencies": {
     "@angular/compiler": "5.2.5",
     "@angular/compiler-cli": "5.2.5",
-    "@compodoc/compodoc": "1.0.6",
+    "@compodoc/compodoc": "1.0.7",
     "@types/dateformat": "1.0.1",
     "@types/es6-shim": "0.31.35",
     "@types/googlemaps": "3.30.7",
@@ -46,15 +46,15 @@
     "node-rev": "2.0.0",
     "node-sass": "4.7.2",
     "npm-run-all": "4.1.2",
-    "npmversion": "1.6.1",
+    "npmversion": "1.6.2",
     "postbuild": "2.1.0",
     "rimraf": "2.6.2",
-    "rollup": "0.55.5",
+    "rollup": "0.56.2",
     "rollup-plugin-commonjs": "8.3.0",
     "rollup-plugin-node-resolve-angular": "2.0.3",
     "tslint": "5.9.1",
-    "typescript": "2.7.1",
-    "uglify-js": "3.3.10"
+    "typescript": "2.7.2",
+    "uglify-js": "3.3.11"
   },
   "scripts": {
     "ncu:update": "ncu -u && npm update && npm update -D",
