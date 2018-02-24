@@ -1,6 +1,6 @@
 {
   "name": "ouq77-portfolio",
-  "version": "5.3.1",
+  "version": "5.3.2",
   "author": "Louw Swart",
   "description": "On-line portfolio of Louw Swart, based on 'angular2-seed'",
   "license": "MIT",
@@ -12,19 +12,19 @@
     "npm": ">=5"
   },
   "dependencies": {
-    "@angular/common": "5.2.5",
-    "@angular/core": "5.2.5",
-    "@angular/forms": "5.2.5",
-    "@angular/http": "5.2.5",
-    "@angular/platform-browser": "5.2.5",
-    "@angular/platform-browser-dynamic": "5.2.5",
+    "@angular/common": "5.2.6",
+    "@angular/core": "5.2.6",
+    "@angular/forms": "5.2.6",
+    "@angular/http": "5.2.6",
+    "@angular/platform-browser": "5.2.6",
+    "@angular/platform-browser-dynamic": "5.2.6",
     "core-js": "2.5.3",
     "rxjs": "5.5.6",
     "zone.js": "0.8.20"
   },
   "devDependencies": {
-    "@angular/compiler": "5.2.5",
-    "@angular/compiler-cli": "5.2.5",
+    "@angular/compiler": "5.2.6",
+    "@angular/compiler-cli": "5.2.6",
     "@compodoc/compodoc": "1.0.7",
     "@types/dateformat": "1.0.1",
     "@types/es6-shim": "0.31.35",
@@ -54,7 +54,7 @@
     "rollup-plugin-node-resolve-angular": "2.0.3",
     "tslint": "5.9.1",
     "typescript": "2.7.2",
-    "uglify-js": "3.3.11"
+    "uglify-js": "3.3.12"
   },
   "scripts": {
     "ncu:update": "ncu -u && npm update && npm update -D",
