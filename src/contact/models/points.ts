@@ -48,3 +48,4 @@ export const BROOKLYN: IPoint = {
 
 export const MARKER_SIZE: Size = new google.maps.Size(20, 32);
 export const AIRPORT_SIZE: Size = new google.maps.Size(9, 12);
+export const PORT_SIZE: Size = AIRPORT_SIZE;

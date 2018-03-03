@@ -1,8 +1,8 @@
 import {IErrorMessage} from './../definitions/error.message';
 
 /**
- * Array of Journeys for the Contact section
- * @type {IAirport[][]}
+ * Array of Error messages for the Contact section
+ * @type {IErrorMessage[]}
  */
 export const ERROR_MESSAGES: Array<IErrorMessage> = [
   {

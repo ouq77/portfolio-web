@@ -7,6 +7,7 @@ import Marker = google.maps.Marker;
 import {CITIES, CURRENT_LOCATION} from '../../models/cities';
 import {IAirport} from '../../definitions/airport';
 import {ICity} from '../../definitions/city';
+import {IPort} from '../../definitions/port';
 import * as points from '../../models/points';
 import {cancelableDelay} from '../../../shared/common/delay';
 
@@ -31,6 +32,21 @@ export class MarkerUtil {
     });
     event.addListener(marker, 'click', () => {
       this.toggleBounce(map, marker, airport.iataCode, `${airport.name}<br>${airport.city}, ${airport.country}`);
+    });
+  }
+
+  addPortMarker(map: Map, port: IPort) {
+    let marker = new Marker({
+      animation: Animation.DROP,
+      draggable: false,
+      icon: {size: points.PORT_SIZE, url: 'assets/images/markerport.png'},
+      map,
+      position: new LatLng(port.loc.lat, port.loc.lng),
+      title: `${port.portCode} // ${port.name}`,
+      zIndex: 100,
+    });
+    event.addListener(marker, 'click', () => {
+      this.toggleBounce(map, marker, port.portCode, `${port.name}<br>${port.city}, ${port.country}`);
     });
   }
 

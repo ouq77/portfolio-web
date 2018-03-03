@@ -10,10 +10,14 @@ import {MarkerUtil} from './gmap/marker.util';
 import {MAP_OPTIONS} from '../models/map.config';
 import {CITIES} from '../models/cities';
 import {AIRPORTS} from '../models/airports';
-import {JOURNEYS, UPCOMING_JOURNEYS} from '../models/journeys';
+import {PORTS} from '../models/ports';
+import {CRUISES, UPCOMING_CRUISES} from '../models/cruises';
+import {FLIGHTS, UPCOMING_FLIGHTS} from '../models/flights';
 import * as points from '../models/points';
-import {ICity} from '../definitions/city';
 import {IAirport} from '../definitions/airport';
+import {ICity} from '../definitions/city';
+import {IPoint} from '../definitions/point';
+import {IPort} from '../definitions/port';
 import {cancelableDelay, delay} from '../../shared/common/delay';
 import {elementInViewport} from '../../shared/common/element.in.viewport';
 
@@ -25,10 +29,11 @@ import {elementInViewport} from '../../shared/common/element.in.viewport';
 export class ContactMapComponent implements OnInit {
   public map: Map;
   private _additionalMarkerWait: number;
-  private _airportMarkerDropWait: number;
+  private _markerDropWait: number;
   private _cityMarkers: Array<Marker>;
-  private _journeyLines: Array<Polyline>;
-  private _journeyLineDrawWait: number;
+  private _cruiseLines: Array<Polyline>;
+  private _flightLines: Array<Polyline>;
+  private _lineDrawWait: number;
   private _mapMarkersDrawn: boolean;
   private _mapUtil: MapUtil;
   private _markerUtil: MarkerUtil;
@@ -36,19 +41,22 @@ export class ContactMapComponent implements OnInit {
   private _tilesLoaded: boolean;
   private _tilesLoadedEvent: any;
   private _timeoutScroll: any;
-  private _upcomingJourneyLines: Array<Polyline>;
+  private _upcomingCruiseLines: Array<Polyline>;
+  private _upcomingFlightLines: Array<Polyline>;
 
   constructor() {
     this._additionalMarkerWait = 0;
-    this._airportMarkerDropWait = 0;
+    this._markerDropWait = 0;
     this._cityMarkers = [];
-    this._journeyLines = [];
-    this._journeyLineDrawWait = 0;
+    this._cruiseLines = [];
+    this._flightLines = [];
+    this._lineDrawWait = 0;
     this._mapMarkersDrawn = false;
     this._mapUtil = new MapUtil();
     this._markerUtil = new MarkerUtil();
     this._tilesLoaded = false;
-    this._upcomingJourneyLines = [];
+    this._upcomingCruiseLines = [];
+    this._upcomingFlightLines = [];
   }
 
   ngOnInit() {
@@ -67,21 +75,62 @@ export class ContactMapComponent implements OnInit {
           mapOptions.minZoom = 1;
         }
         this.map = new Map(document.getElementById('map-canvas'), mapOptions);
-        JOURNEYS.forEach((journey: Array<IAirport>, index: number) =>
-          this._journeyLines[index] = new Polyline({
-            geodesic: true, map: this.map, strokeColor: '#1b1f29', strokeOpacity: 0.5, strokeWeight: 2,
-          }));
-        UPCOMING_JOURNEYS.forEach((upcomingJourney: Array<IAirport>, index: number) =>
-          this._upcomingJourneyLines[index] = new Polyline({
+        FLIGHTS.forEach((flight: Array<IAirport>, index: number) =>
+          this._flightLines[index] = new Polyline({
             geodesic: true,
-            icons: [{icon: {path: 'M 0, -1 0,1', strokeOpacity: 0.5, strokeWeight: 2}, offset: '0', repeat: '12px'}],
+            map: this.map,
+            strokeColor: '#494c54',
+            strokeOpacity: 0.7,
+            strokeWeight: 2,
+          }));
+        UPCOMING_FLIGHTS.forEach((upcomingFlights: Array<IAirport>, index: number) =>
+          this._upcomingFlightLines[index] = new Polyline({
+            geodesic: true,
+            icons: [
+              {
+                icon: {
+                  path: 'M 0, -1 0,1',
+                  strokeColor: '#494c54',
+                  strokeOpacity: 0.7,
+                  strokeWeight: 2,
+                },
+                offset: '0',
+                repeat: '12px',
+              },
+            ],
+            map: this.map,
+            strokeOpacity: 0,
+          }));
+        CRUISES.forEach((cruise: Array<IPoint>, index: number) =>
+          this._cruiseLines[index] = new Polyline({
+            geodesic: true,
+            map: this.map,
+            strokeColor: '#007271',
+            strokeOpacity: 0.7,
+            strokeWeight: 2,
+          }));
+        UPCOMING_CRUISES.forEach((upcomingCruise: Array<IPoint>, index: number) =>
+          this._upcomingCruiseLines[index] = new Polyline({
+            geodesic: true,
+            icons: [
+              {
+                icon: {
+                  path: 'M 0, -1 0,1',
+                  strokeColor: '#007271',
+                  strokeOpacity: 0.7,
+                  strokeWeight: 2,
+                },
+                offset: '0',
+                repeat: '12px',
+              },
+            ],
             map: this.map,
             strokeOpacity: 0,
           }));
         this._tilesLoadedEvent = event.addListener(this.map, 'tilesloaded', () => {
           event.removeListener(this._tilesLoadedEvent);
           this._tilesLoaded = true;
-          this.dropMarkers();
+          this.dropMarkersDrawLines();
         });
       }))(jQuery);
   }
@@ -95,14 +144,14 @@ export class ContactMapComponent implements OnInit {
         }
         this._timeoutScroll = cancelableDelay(250, () => {
           if (!this._mapMarkersDrawn) {
-            this.dropMarkers(500);
+            this.dropMarkersDrawLines(500);
           }
         });
       });
     })(jQuery);
   }
 
-  dropMarkers(wait: number = 750) {
+  dropMarkersDrawLines(wait: number = 750) {
     this._markerWait = wait;
     (($: JQueryStatic) =>
       $('.js_trigger_map_marker').each((index: number, triggerEl: Element) => {
@@ -110,26 +159,46 @@ export class ContactMapComponent implements OnInit {
           this._mapMarkersDrawn = true;
           delay(this._markerWait).then(() => {
             AIRPORTS.forEach((airport: IAirport) => {
-              this._airportMarkerDropWait++;
-              delay(this._airportMarkerDropWait * 135).then(() => this._markerUtil.addAirportMarker(this.map, airport));
+              this._markerDropWait++;
+              delay(this._markerDropWait * 135).then(() => this._markerUtil.addAirportMarker(this.map, airport));
             });
-            JOURNEYS.forEach((journey: Array<IAirport>, index: number) => {
-              let journeyLine: Polyline = this._journeyLines[index];
-              journey.forEach((leg: IAirport) => {
-                this._journeyLineDrawWait++;
-                delay(this._journeyLineDrawWait * 65).
-                  then(() => journeyLine.getPath().push(new LatLng(leg.loc.lat, leg.loc.lng)));
+            PORTS.forEach((port: IPort) => {
+              this._markerDropWait++;
+              delay(this._markerDropWait * 135).then(() => this._markerUtil.addPortMarker(this.map, port));
+            });
+            FLIGHTS.forEach((flight: Array<IAirport>, index: number) => {
+              let flightLine: Polyline = this._flightLines[index];
+              flight.forEach((leg: IAirport) => {
+                this._lineDrawWait++;
+                delay(this._lineDrawWait * 65).
+                  then(() => flightLine.getPath().push(new LatLng(leg.loc.lat, leg.loc.lng)));
               });
             });
-            UPCOMING_JOURNEYS.forEach((journey: Array<IAirport>, index: number) => {
-              let upcomingJourneyLine: Polyline = this._upcomingJourneyLines[index];
-              journey.forEach((leg: IAirport) => {
-                this._journeyLineDrawWait++;
-                delay(this._journeyLineDrawWait * 65).
-                  then(() => upcomingJourneyLine.getPath().push(new LatLng(leg.loc.lat, leg.loc.lng)));
+            UPCOMING_FLIGHTS.forEach((upcomingFlight: Array<IAirport>, index: number) => {
+              let upcomingFlightLine: Polyline = this._upcomingFlightLines[index];
+              upcomingFlight.forEach((leg: IAirport) => {
+                this._lineDrawWait++;
+                delay(this._lineDrawWait * 65).
+                  then(() => upcomingFlightLine.getPath().push(new LatLng(leg.loc.lat, leg.loc.lng)));
               });
             });
-            this._additionalMarkerWait = AIRPORTS.length - 1;
+            CRUISES.forEach((cruise: Array<IPoint>, index: number) => {
+              let cruiseLine: Polyline = this._cruiseLines[index];
+              cruise.forEach((leg: IPoint) => {
+                this._lineDrawWait++;
+                delay(this._lineDrawWait * 65).
+                then(() => cruiseLine.getPath().push(new LatLng(leg.lat, leg.lng)));
+              });
+            });
+            UPCOMING_CRUISES.forEach((upcomingCruise: Array<IPoint>, index: number) => {
+              let upcomingCruiseLine: Polyline = this._upcomingCruiseLines[index];
+              upcomingCruise.forEach((leg: IPoint) => {
+                this._lineDrawWait++;
+                delay(this._lineDrawWait * 65).
+                then(() => upcomingCruiseLine.getPath().push(new LatLng(leg.lat, leg.lng)));
+              });
+            });
+            this._additionalMarkerWait = AIRPORTS.length + PORTS.length;
             CITIES.forEach((city: ICity, index: number) =>
               delay((index * 650) + this._additionalMarkerWait).
                 then(() => this._markerUtil.addCityMarker(this.map, city, this._cityMarkers)));
