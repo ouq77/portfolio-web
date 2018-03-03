@@ -105,7 +105,7 @@ export class ContactMapComponent implements OnInit {
           this._cruiseLines[index] = new Polyline({
             geodesic: true,
             map: this.map,
-            strokeColor: '#007271',
+            strokeColor: '#00739c',
             strokeOpacity: 0.7,
             strokeWeight: 2,
           }));
@@ -116,7 +116,7 @@ export class ContactMapComponent implements OnInit {
               {
                 icon: {
                   path: 'M 0, -1 0,1',
-                  strokeColor: '#007271',
+                  strokeColor: '#00739c',
                   strokeOpacity: 0.7,
                   strokeWeight: 2,
                 },
