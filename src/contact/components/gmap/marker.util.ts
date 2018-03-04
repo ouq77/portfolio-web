@@ -8,7 +8,7 @@ import {CITIES, CURRENT_LOCATION} from '../../models/cities';
 import {IAirport} from '../../definitions/airport';
 import {ICity} from '../../definitions/city';
 import {IPort} from '../../definitions/port';
-import * as points from '../../models/points';
+import {AIRPORT_SIZE, PORT_SIZE} from '../../models/points';
 import {cancelableDelay} from '../../../shared/common/delay';
 
 export class MarkerUtil {
@@ -24,7 +24,7 @@ export class MarkerUtil {
     let marker = new Marker({
       animation: Animation.DROP,
       draggable: false,
-      icon: {size: points.AIRPORT_SIZE, url: 'assets/images/markerairport.png'},
+      icon: {size: AIRPORT_SIZE, url: 'assets/images/markerairport.png'},
       map,
       position: new LatLng(airport.loc.lat, airport.loc.lng),
       title: `${airport.iataCode} // ${airport.name}`,
@@ -39,7 +39,7 @@ export class MarkerUtil {
     let marker = new Marker({
       animation: Animation.DROP,
       draggable: false,
-      icon: {size: points.PORT_SIZE, url: 'assets/images/markerport.png'},
+      icon: {size: PORT_SIZE, url: 'assets/images/markerport.png'},
       map,
       position: new LatLng(port.loc.lat, port.loc.lng),
       title: `${port.portCode} // ${port.name}`,

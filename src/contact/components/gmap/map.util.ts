@@ -5,7 +5,7 @@ import {delay} from '../../../shared/common/delay';
 export class MapUtil {
   private _tilesLoadedEvent: any;
 
-  zoomMap(map: Map, nextZoomLevel: number = 0, maxZoom: number = 0) {
+  zoomMap(map: Map, nextZoomLevel: number = 0, maxZoom: number = 0): void {
     if (nextZoomLevel < maxZoom) {
       this._tilesLoadedEvent = event.addListener(map, 'tilesloaded', () => {
         event.removeListener(this._tilesLoadedEvent);
