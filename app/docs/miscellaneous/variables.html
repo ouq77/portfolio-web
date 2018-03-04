@@ -171,6 +171,9 @@
                                     <a href="../classes/Point.html" >Point</a>
                                 </li>
                                 <li class="link">
+                                    <a href="../classes/PolylineUtil.html" >PolylineUtil</a>
+                                </li>
+                                <li class="link">
                                     <a href="../classes/Port.html" >Port</a>
                                 </li>
                                 <li class="link">
@@ -481,6 +484,9 @@
                                        </li>
                                        <li class="link">
                                            <a href="../classes/Point.html" >Point</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/PolylineUtil.html" >PolylineUtil</a>
                                        </li>
                                        <li class="link">
                                            <a href="../classes/Port.html" >Port</a>
@@ -5664,44 +5670,53 @@
                     </tr>
                     <tr>
                         <td class="col-md-4">
-                            <code>FLIGHTS:     <code><a href="../interfaces/IAirport.html" target="_self" >Array&lt;Array&lt;IAirport&gt;&gt;</a></code>
+                            <code>FLIGHTS:     <code><a href="../interfaces/IPoint.html" target="_self" >Array&lt;Array&lt;IPoint&gt;&gt;</a></code>
     </code>
                         </td>
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                <i>Type : </i>    <code><a href="../interfaces/IAirport.html" target="_self" >Array&lt;Array&lt;IAirport&gt;&gt;</a></code>
+                                <i>Type : </i>    <code><a href="../interfaces/IPoint.html" target="_self" >Array&lt;Array&lt;IPoint&gt;&gt;</a></code>
     
                             </td>
                         </tr>
                         <tr>
                             <td class="col-md-4">
                                 <i>Default value : </i><code>[
-      [airports.KIM, airports.PLZ, airports.ELS], [airports.KIM, airports.JNB], [airports.JNB, airports.AMS, airports.LHR],
-      [airports.JNB, airports.NBO, airports.LHR], [airports.JNB, airports.CPT], [airports.JNB, airports.MBD],
-      [airports.JNB, airports.DUR], [airports.JNB, airports.BFN], [airports.JNB, airports.PLZ], [airports.JNB, airports.ELS],
-      [airports.JNB, airports.GRJ], [airports.JNB, airports.MPM], [airports.JNB, airports.GBE], [airports.JNB, airports.WDH],
-      [airports.JNB, airports.BUQ], [airports.JNB, airports.HRE], [airports.JNB, airports.LVI], [airports.JNB, airports.LUN],
-      [airports.JNB, airports.LAD], [airports.JNB, airports.DAR], [airports.JNB, airports.EBB], [airports.JNB, airports.FIH],
-      [airports.JNB, airports.LOS], [airports.JNB, airports.ABJ, airports.ACC, airports.JNB], [airports.JNB, airports.DKR],
-      [airports.JNB, airports.SID, airports.JFK, airports.JNB], [airports.SID, airports.MIA, airports.CPT],
-      [airports.SID, airports.ATL, airports.IAD, airports.LGA, airports.ATL, airports.JNB], [airports.JNB, airports.MRU],
-      [airports.JNB, airports.HKG], [airports.JNB, airports.PER, airports.SYD], [airports.JNB, airports.EZE],
-      [airports.JNB, airports.GRU, airports.EZE, airports.CPT], [airports.LHR, airports.YVR],
-      [airports.JNB, airports.FRA, airports.AMS], [airports.JNB, airports.ZRH, airports.CPH], [airports.ZRH, airports.CDG],
-      [airports.JNB, airports.BOM], [airports.JNB, airports.BKK, airports.KIX], [airports.JNB, airports.HKGN],
-      [airports.BKK, airports.HKGN], [airports.BKK, airports.USM], [airports.JNB, airports.BKKN, airports.USM],
-      [airports.JNB, airports.SYD], [airports.PER, airports.DPS, airports.DRW, airports.ADL, airports.SYD],
-      [airports.CPT, airports.BFN], [airports.CPT, airports.KIM], [airports.CPT, airports.LHR], [airports.CPT, airports.FRA],
-      [airports.CPT, airports.PLZ, airports.DUR], [airports.HKGN, airports.AKL], [airports.AKL, airports.SYD, airports.BKKN],
-      [airports.AKL, airports.WLG], [airports.AKL, airports.CHC], [airports.HLZ, airports.WLG], [airports.HLZ, airports.CHC],
-      [airports.AKL, airports.ZQN], [airports.AKL, airports.NSN], [airports.WLG, airports.TRG], [airports.WLG, airports.ROT],
-      [airports.WLG, airports.CHC], [airports.AKL, airports.RAR], [airports.AKL, airports.NRT, airports.LHR],
-      [airports.LHR, airports.ARN], [airports.BGO, airports.TRD], [airports.BOO, airports.SJV], [airports.TOS, airports.ARN],
-      [airports.LHR, airports.SIN, airports.SYD, airports.WLG], [airports.WLG, airports.TIU], [airports.WLG, airports.NSN],
-      [airports.WLG, airports.NPL], [airports.WLG, airports.CBR, airports.SIN, airports.JNB], [airports.WLG, airports.ZQN],
-      [airports.BKKN, airports.KBV], [airports.HKT, airports.SIN, airports.MEL, airports.WLG], [airports.WLG, airports.GIS],
-      [airports.AKL, airports.YVR],
+      [airports.KIM.loc, airports.PLZ.loc, airports.ELS.loc], [airports.KIM.loc, airports.JNB.loc],
+      [airports.JNB.loc, airports.AMS.loc, airports.LHR.loc], [airports.JNB.loc, airports.NBO.loc, airports.LHR.loc],
+      [airports.JNB.loc, airports.CPT.loc], [airports.JNB.loc, airports.MBD.loc], [airports.JNB.loc, airports.DUR.loc],
+      [airports.JNB.loc, airports.BFN.loc], [airports.JNB.loc, airports.PLZ.loc], [airports.JNB.loc, airports.ELS.loc],
+      [airports.JNB.loc, airports.GRJ.loc], [airports.JNB.loc, airports.MPM.loc], [airports.JNB.loc, airports.GBE.loc],
+      [airports.JNB.loc, airports.WDH.loc], [airports.JNB.loc, airports.BUQ.loc], [airports.JNB.loc, airports.HRE.loc],
+      [airports.JNB.loc, airports.LVI.loc], [airports.JNB.loc, airports.LUN.loc], [airports.JNB.loc, airports.LAD.loc],
+      [airports.JNB.loc, airports.DAR.loc], [airports.JNB.loc, airports.EBB.loc], [airports.JNB.loc, airports.FIH.loc],
+      [airports.JNB.loc, airports.LOS.loc], [airports.JNB.loc, airports.ABJ.loc, airports.ACC.loc, airports.JNB.loc],
+      [airports.JNB.loc, airports.DKR.loc], [airports.JNB.loc, airports.SID.loc, airports.JFK.loc, airports.JNB.loc],
+      [airports.SID.loc, airports.MIA.loc, airports.CPT.loc],
+      [airports.SID.loc, airports.ATL.loc, airports.IAD.loc, airports.LGA.loc, airports.ATL.loc, airports.JNB.loc],
+      [airports.JNB.loc, airports.MRU.loc], [airports.JNB.loc, airports.HKG.loc],
+      [airports.JNB.loc, airports.PER.loc, airports.SYD.loc], [airports.JNB.loc, airports.EZE.loc],
+      [airports.JNB.loc, airports.GRU.loc, airports.EZE.loc, airports.CPT.loc], [airports.LHR.loc, airports.YVR.loc],
+      [airports.JNB.loc, airports.FRA.loc, airports.AMS.loc], [airports.JNB.loc, airports.ZRH.loc, airports.CPH.loc],
+      [airports.ZRH.loc, airports.CDG.loc], [airports.JNB.loc, airports.BOM.loc],
+      [airports.JNB.loc, airports.BKK.loc, airports.KIX.loc], [airports.JNB.loc, airports.HKGN.loc],
+      [airports.BKK.loc, airports.HKGN.loc], [airports.BKK.loc, airports.USM.loc],
+      [airports.JNB.loc, airports.BKKN.loc, airports.USM.loc], [airports.JNB.loc, airports.SYD.loc],
+      [airports.PER.loc, airports.DPS.loc, airports.DRW.loc, airports.ADL.loc, airports.SYD.loc],
+      [airports.CPT.loc, airports.BFN.loc], [airports.CPT.loc, airports.KIM.loc], [airports.CPT.loc, airports.LHR.loc],
+      [airports.CPT.loc, airports.FRA.loc], [airports.CPT.loc, airports.PLZ.loc, airports.DUR.loc],
+      [airports.HKGN.loc, airports.AKL.loc], [airports.AKL.loc, airports.SYD.loc, airports.BKKN.loc],
+      [airports.AKL.loc, airports.WLG.loc], [airports.AKL.loc, airports.CHC.loc], [airports.HLZ.loc, airports.WLG.loc],
+      [airports.HLZ.loc, airports.CHC.loc], [airports.AKL.loc, airports.ZQN.loc], [airports.AKL.loc, airports.NSN.loc],
+      [airports.WLG.loc, airports.TRG.loc], [airports.WLG.loc, airports.ROT.loc], [airports.WLG.loc, airports.CHC.loc],
+      [airports.AKL.loc, airports.RAR.loc], [airports.AKL.loc, airports.NRT.loc, airports.LHR.loc],
+      [airports.LHR.loc, airports.ARN.loc], [airports.BGO.loc, airports.TRD.loc], [airports.BOO.loc, airports.SJV.loc],
+      [airports.TOS.loc, airports.ARN.loc], [airports.LHR.loc, airports.SIN.loc, airports.SYD.loc, airports.WLG.loc],
+      [airports.WLG.loc, airports.TIU.loc], [airports.WLG.loc, airports.NSN.loc], [airports.WLG.loc, airports.NPL.loc],
+      [airports.WLG.loc, airports.CBR.loc, airports.SIN.loc, airports.JNB.loc], [airports.WLG.loc, airports.ZQN.loc],
+      [airports.BKKN.loc, airports.KBV.loc], [airports.HKT.loc, airports.SIN.loc, airports.MEL.loc, airports.WLG.loc],
+      [airports.WLG.loc, airports.GIS.loc], [airports.AKL.loc, airports.YVR.loc],
     ]</code>
                             </td>
                         </tr>
@@ -5730,13 +5745,13 @@
                     </tr>
                     <tr>
                         <td class="col-md-4">
-                            <code>UPCOMING_FLIGHTS:     <code><a href="../interfaces/IAirport.html" target="_self" >Array&lt;Array&lt;IAirport&gt;&gt;</a></code>
+                            <code>UPCOMING_FLIGHTS:     <code><a href="../interfaces/IPoint.html" target="_self" >Array&lt;Array&lt;IPoint&gt;&gt;</a></code>
     </code>
                         </td>
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                <i>Type : </i>    <code><a href="../interfaces/IAirport.html" target="_self" >Array&lt;Array&lt;IAirport&gt;&gt;</a></code>
+                                <i>Type : </i>    <code><a href="../interfaces/IPoint.html" target="_self" >Array&lt;Array&lt;IPoint&gt;&gt;</a></code>
     
                             </td>
                         </tr>

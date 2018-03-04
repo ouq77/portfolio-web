@@ -171,6 +171,9 @@
                                     <a href="../classes/Point.html" >Point</a>
                                 </li>
                                 <li class="link">
+                                    <a href="../classes/PolylineUtil.html" >PolylineUtil</a>
+                                </li>
+                                <li class="link">
                                     <a href="../classes/Port.html" >Port</a>
                                 </li>
                                 <li class="link">
@@ -481,6 +484,9 @@
                                        </li>
                                        <li class="link">
                                            <a href="../classes/Point.html" >Point</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/PolylineUtil.html" >PolylineUtil</a>
                                        </li>
                                        <li class="link">
                                            <a href="../classes/Port.html" >Port</a>
@@ -1338,7 +1344,7 @@ import {CITIES, CURRENT_LOCATION} from &#x27;../../models/cities&#x27;;
 import {IAirport} from &#x27;../../definitions/airport&#x27;;
 import {ICity} from &#x27;../../definitions/city&#x27;;
 import {IPort} from &#x27;../../definitions/port&#x27;;
-import * as points from &#x27;../../models/points&#x27;;
+import {AIRPORT_SIZE, PORT_SIZE} from &#x27;../../models/points&#x27;;
 import {cancelableDelay} from &#x27;../../../shared/common/delay&#x27;;
 
 export class MarkerUtil {
@@ -1354,7 +1360,7 @@ export class MarkerUtil {
     let marker &#x3D; new Marker({
       animation: Animation.DROP,
       draggable: false,
-      icon: {size: points.AIRPORT_SIZE, url: &#x27;assets/images/markerairport.png&#x27;},
+      icon: {size: AIRPORT_SIZE, url: &#x27;assets/images/markerairport.png&#x27;},
       map,
       position: new LatLng(airport.loc.lat, airport.loc.lng),
       title: &#x60;${airport.iataCode} // ${airport.name}&#x60;,
@@ -1369,7 +1375,7 @@ export class MarkerUtil {
     let marker &#x3D; new Marker({
       animation: Animation.DROP,
       draggable: false,
-      icon: {size: points.PORT_SIZE, url: &#x27;assets/images/markerport.png&#x27;},
+      icon: {size: PORT_SIZE, url: &#x27;assets/images/markerport.png&#x27;},
       map,
       position: new LatLng(port.loc.lat, port.loc.lng),
       title: &#x60;${port.portCode} // ${port.name}&#x60;,

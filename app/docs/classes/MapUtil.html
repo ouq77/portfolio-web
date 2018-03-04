@@ -171,6 +171,9 @@
                                     <a href="../classes/Point.html" >Point</a>
                                 </li>
                                 <li class="link">
+                                    <a href="../classes/PolylineUtil.html" >PolylineUtil</a>
+                                </li>
+                                <li class="link">
                                     <a href="../classes/Port.html" >Port</a>
                                 </li>
                                 <li class="link">
@@ -481,6 +484,9 @@
                                        </li>
                                        <li class="link">
                                            <a href="../classes/Point.html" >Point</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/PolylineUtil.html" >PolylineUtil</a>
                                        </li>
                                        <li class="link">
                                            <a href="../classes/Port.html" >Port</a>
@@ -882,7 +888,7 @@ import {delay} from &#x27;../../../shared/common/delay&#x27;;
 export class MapUtil {
   private _tilesLoadedEvent: any;
 
-  zoomMap(map: Map, nextZoomLevel: number &#x3D; 0, maxZoom: number &#x3D; 0) {
+  zoomMap(map: Map, nextZoomLevel: number &#x3D; 0, maxZoom: number &#x3D; 0): void {
     if (nextZoomLevel &lt; maxZoom) {
       this._tilesLoadedEvent &#x3D; event.addListener(map, &#x27;tilesloaded&#x27;, () &#x3D;&gt; {
         event.removeListener(this._tilesLoadedEvent);
