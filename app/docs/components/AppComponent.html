@@ -108,9 +108,6 @@
                                     <a href="../components/ContactFormComponent.html" >ContactFormComponent</a>
                                 </li>
                                 <li class="link">
-                                    <a href="../components/ContactMapComponent.html" >ContactMapComponent</a>
-                                </li>
-                                <li class="link">
                                     <a href="../components/EducationComponent.html" >EducationComponent</a>
                                 </li>
                                 <li class="link">
@@ -124,6 +121,12 @@
                                 </li>
                                 <li class="link">
                                     <a href="../components/SkillsComponent.html" >SkillsComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/TravelComponent.html" >TravelComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/TravelMapComponent.html" >TravelMapComponent</a>
                                 </li>
                         </ul>
                     </li>
@@ -423,9 +426,6 @@
                                            <a href="../components/ContactFormComponent.html" >ContactFormComponent</a>
                                        </li>
                                        <li class="link">
-                                           <a href="../components/ContactMapComponent.html" >ContactMapComponent</a>
-                                       </li>
-                                       <li class="link">
                                            <a href="../components/EducationComponent.html" >EducationComponent</a>
                                        </li>
                                        <li class="link">
@@ -439,6 +439,12 @@
                                        </li>
                                        <li class="link">
                                            <a href="../components/SkillsComponent.html" >SkillsComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/TravelComponent.html" >TravelComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/TravelMapComponent.html" >TravelMapComponent</a>
                                        </li>
                                </ul>
                            </li>
@@ -968,6 +974,7 @@ export class AppComponent implements OnInit {
     &lt;skills&gt;&lt;/skills&gt;
     &lt;experience&gt;&lt;/experience&gt;
     &lt;education&gt;&lt;/education&gt;
+    &lt;travel&gt;&lt;/travel&gt;
     &lt;contact&gt;&lt;/contact&gt;
   &lt;/main&gt;
   &lt;footer&gt;&lt;/footer&gt;
@@ -999,8 +1006,8 @@ export class AppComponent implements OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><!--wrapper start--><div class="wrapper">  <header></header>  <main>    <about></about>    <skills></skills>    <experience></experience>    <education></education>    <contact></contact>  </main>  <footer></footer></div><!-- wrapper end --></div>'
-    var COMPONENTS = [{'name': 'AboutComponent', 'selector': 'about'},{'name': 'AppComponent', 'selector': 'container'},{'name': 'ContactComponent', 'selector': 'contact'},{'name': 'ContactFormComponent', 'selector': 'contact-form'},{'name': 'ContactMapComponent', 'selector': 'googlemap'},{'name': 'EducationComponent', 'selector': 'education'},{'name': 'ExperienceComponent', 'selector': 'experience'},{'name': 'FooterComponent', 'selector': 'footer'},{'name': 'HeaderComponent', 'selector': 'header'},{'name': 'SkillsComponent', 'selector': 'skills'}];
+        var COMPONENT_TEMPLATE = '<div><!--wrapper start--><div class="wrapper">  <header></header>  <main>    <about></about>    <skills></skills>    <experience></experience>    <education></education>    <travel></travel>    <contact></contact>  </main>  <footer></footer></div><!-- wrapper end --></div>'
+    var COMPONENTS = [{'name': 'AboutComponent', 'selector': 'about'},{'name': 'AppComponent', 'selector': 'container'},{'name': 'ContactComponent', 'selector': 'contact'},{'name': 'ContactFormComponent', 'selector': 'contact-form'},{'name': 'EducationComponent', 'selector': 'education'},{'name': 'ExperienceComponent', 'selector': 'experience'},{'name': 'FooterComponent', 'selector': 'footer'},{'name': 'HeaderComponent', 'selector': 'header'},{'name': 'SkillsComponent', 'selector': 'skills'},{'name': 'TravelComponent', 'selector': 'travel'},{'name': 'TravelMapComponent', 'selector': 'googlemap'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'AppComponent'};
 </script>

@@ -123,7 +123,7 @@
                                     <a href="../components/SkillsComponent.html" >SkillsComponent</a>
                                 </li>
                                 <li class="link">
-                                    <a href="../components/TravelComponent.html" >TravelComponent</a>
+                                    <a href="../components/TravelComponent.html"  data-type="entity-link" class="active" >TravelComponent</a>
                                 </li>
                                 <li class="link">
                                     <a href="../components/TravelMapComponent.html" >TravelMapComponent</a>
@@ -230,7 +230,7 @@
                                     <a href="../interfaces/CodeSchoolCourse.html" >CodeSchoolCourse</a>
                                 </li>
                                 <li class="link">
-                                    <a href="../interfaces/CodeSchoolUser.html"  data-type="entity-link" class="active" >CodeSchoolUser</a>
+                                    <a href="../interfaces/CodeSchoolUser.html" >CodeSchoolUser</a>
                                 </li>
                                 <li class="link">
                                     <a href="../interfaces/IAirport.html" >IAirport</a>
@@ -441,7 +441,7 @@
                                            <a href="../components/SkillsComponent.html" >SkillsComponent</a>
                                        </li>
                                        <li class="link">
-                                           <a href="../components/TravelComponent.html" >TravelComponent</a>
+                                           <a href="../components/TravelComponent.html"  data-type="entity-link" class="active" >TravelComponent</a>
                                        </li>
                                        <li class="link">
                                            <a href="../components/TravelMapComponent.html" >TravelMapComponent</a>
@@ -548,7 +548,7 @@
                                            <a href="../interfaces/CodeSchoolCourse.html" >CodeSchoolCourse</a>
                                        </li>
                                        <li class="link">
-                                           <a href="../interfaces/CodeSchoolUser.html"  data-type="entity-link" class="active" >CodeSchoolUser</a>
+                                           <a href="../interfaces/CodeSchoolUser.html" >CodeSchoolUser</a>
                                        </li>
                                        <li class="link">
                                            <a href="../interfaces/IAirport.html" >IAirport</a>
@@ -651,21 +651,15 @@
                    
                    </nav>
                </div>
-               <div class="content interface">
+               <div class="content component">
                    <div class="content-data">
 
 
 
 
-
-
-
-
-
-
 <ol class="breadcrumb">
-  <li>Interfaces</li>
-  <li>CodeSchoolUser</li>
+  <li>Components</li>
+  <li>TravelComponent</li>
 </ol>
 
 <ul class="nav nav-tabs" role="tablist">
@@ -673,245 +667,142 @@
         <a href="#info" id="info-tab" role="tab" data-toggle="tab" data-link="info">Info</a>
     </li>
 
-
     <li>
         <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+    </li>
+
+    <li>
+        <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+    </li>
+    <li>
+        <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
     </li>
 </ul>
 
 <div class="tab-content">
-    <div class="tab-pane fade active in" id="c-info">
-        <p class="comment">
-            <h3>File</h3>
-        </p>
-        <p class="comment">
-            <code>src/education/definitions/code.school.ts</code>
-        </p>
-
-            <p class="comment">
-                <h3>Description</h3>
-            </p>
-            <p class="comment">
-                <p>Interface for a CodeSchool User</p>
-
-            </p>
-
-
-        <section>
-            <h3 id="index">Index</h3>
-            <table class="table table-sm table-bordered index-table">
-                <tbody>
-                    <tr>
-                        <td class="col-md-4">
-                            <h6><b>Properties</b></h6>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <ul class="index-list">
-                                <li>
-                                        <a href="#avatar">avatar</a>
-                                </li>
-                                <li>
-                                        <a href="#member_since">member_since</a>
-                                </li>
-                                <li>
-                                        <a href="#total_score">total_score</a>
-                                </li>
-                                <li>
-                                        <a href="#username">username</a>
-                                </li>
-                            </ul>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-
-
-            <section>
-                <h3 id="inputs">Properties</h3>
-                    <table class="table table-sm table-bordered">
-                        <tbody>
-                                <tr>
-                                    <td class="col-md-4">
-                                        <a name="avatar"></a>
-                                        <span class="name"><b>avatar</b><a href="#avatar"><span class="fa fa-link"></span></a></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="col-md-4">
-                                        <code>avatar:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-</code>
-                                    </td>
-                                </tr>
-
-
-                                    <tr>
-                                        <td class="col-md-4">
-                                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-
-                                        </td>
-                                    </tr>
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/travel/components/travel.ts</code>
+</p>
 
 
 
 
-                                    <tr>
-                                        <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="8" class="link-to-prism">src/education/definitions/code.school.ts:8</a></div>
-                                        </td>
-                                    </tr>
 
-                        </tbody>
-                    </table>
-                    <table class="table table-sm table-bordered">
-                        <tbody>
-                                <tr>
-                                    <td class="col-md-4">
-                                        <a name="member_since"></a>
-                                        <span class="name"><b>member_since</b><a href="#member_since"><span class="fa fa-link"></span></a></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="col-md-4">
-                                        <code>member_since:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-</code>
-                                    </td>
-                                </tr>
-
-
-                                    <tr>
-                                        <td class="col-md-4">
-                                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-
-                                        </td>
-                                    </tr>
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
 
 
 
 
-                                    <tr>
-                                        <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="6" class="link-to-prism">src/education/definitions/code.school.ts:6</a></div>
-                                        </td>
-                                    </tr>
-
-                        </tbody>
-                    </table>
-                    <table class="table table-sm table-bordered">
-                        <tbody>
-                                <tr>
-                                    <td class="col-md-4">
-                                        <a name="total_score"></a>
-                                        <span class="name"><b>total_score</b><a href="#total_score"><span class="fa fa-link"></span></a></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="col-md-4">
-                                        <code>total_score:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
-</code>
-                                    </td>
-                                </tr>
-
-
-                                    <tr>
-                                        <td class="col-md-4">
-                                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
-
-                                        </td>
-                                    </tr>
 
 
 
 
-                                    <tr>
-                                        <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="7" class="link-to-prism">src/education/definitions/code.school.ts:7</a></div>
-                                        </td>
-                                    </tr>
-
-                        </tbody>
-                    </table>
-                    <table class="table table-sm table-bordered">
-                        <tbody>
-                                <tr>
-                                    <td class="col-md-4">
-                                        <a name="username"></a>
-                                        <span class="name"><b>username</b><a href="#username"><span class="fa fa-link"></span></a></span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="col-md-4">
-                                        <code>username:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-</code>
-                                    </td>
-                                </tr>
-
-
-                                    <tr>
-                                        <td class="col-md-4">
-                                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-
-                                        </td>
-                                    </tr>
 
 
 
 
-                                    <tr>
-                                        <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="5" class="link-to-prism">src/education/definitions/code.school.ts:5</a></div>
-                                        </td>
-                                    </tr>
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>travel</code></td>
+            </tr>
 
-                        </tbody>
-                    </table>
-            </section>
-    </div>
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>travel.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>travel.htm</code></td>
+            </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+
+
+
+
+
+
+
+
+</div>
 
 
     <div class="tab-pane fade tab-source-code" id="c-source">
-        <pre class="line-numbers"><code class="language-typescript">interface CodeSchoolUser {
-  username: string;
-  member_since: string;
-  total_score: number;
-  avatar: string;
-}
+        <pre class="line-numbers"><code class="language-typescript">import {Component} from &#x27;@angular/core&#x27;;
 
-/**
- * Interface for a CodeSchool Course
- */
-interface CodeSchoolCourse {
-  title: string;
-  url: string;
-  badge: string;
-}
-
-/**
- * Interface for a CodeSchool Badge
- */
-interface CodeSchoolBadge {
-  name: string;
-  badge: string;
-  course_url: string;
-}
-
-/**
- * Interface for a CodeSchool object
- */
-export interface CodeSchool {
-  user: CodeSchoolUser;
-  courses: {
-    completed: Array&lt;CodeSchoolCourse&gt;;
-    in_progress: Array&lt;CodeSchoolCourse&gt;;
-  };
-  badges: Array&lt;CodeSchoolBadge&gt;;
+@Component({
+  selector: &#x27;travel&#x27;,
+  styleUrls: [&#x27;./travel.css&#x27;],
+  templateUrl: &#x27;travel.htm&#x27;,
+})
+export class TravelComponent {
 }
 </code></pre>
     </div>
+
+    <div class="tab-pane fade" id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;!--travel start--&gt;
+&lt;section class&#x3D;&quot;travel&quot; id&#x3D;&quot;travel&quot;&gt;
+  &lt;div class&#x3D;&quot;container&quot;&gt;
+    &lt;div class&#x3D;&quot;heading&quot;&gt;
+      &lt;h2 class&#x3D;&quot;js_trigger_map_marker&quot;&gt;Places I&#x27;ve been&lt;/h2&gt;
+      &lt;blockquote&gt;&quot;you have brains in your head. you have feet in your shoes.&lt;br&gt;you can steer yourself any direction you choose.&quot; - dr. seuss&lt;/blockquote&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;googlemap&gt;&lt;/googlemap&gt;
+&lt;/section&gt;
+&lt;!--travel end--&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade" id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
 </div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><!--travel start--><section class="travel" id="travel">  <div class="container">    <div class="heading">      <h2 class="js_trigger_map_marker">Places I\'ve been</h2>      <blockquote>"you have brains in your head. you have feet in your shoes.<br>you can steer yourself any direction you choose." - dr. seuss</blockquote>    </div>  </div>  <googlemap></googlemap></section><!--travel end--></div>'
+    var COMPONENTS = [{'name': 'AboutComponent', 'selector': 'about'},{'name': 'AppComponent', 'selector': 'container'},{'name': 'ContactComponent', 'selector': 'contact'},{'name': 'ContactFormComponent', 'selector': 'contact-form'},{'name': 'EducationComponent', 'selector': 'education'},{'name': 'ExperienceComponent', 'selector': 'experience'},{'name': 'FooterComponent', 'selector': 'footer'},{'name': 'HeaderComponent', 'selector': 'header'},{'name': 'SkillsComponent', 'selector': 'skills'},{'name': 'TravelComponent', 'selector': 'travel'},{'name': 'TravelMapComponent', 'selector': 'googlemap'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'TravelComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
 
 
 

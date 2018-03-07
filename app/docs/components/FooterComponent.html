@@ -108,9 +108,6 @@
                                     <a href="../components/ContactFormComponent.html" >ContactFormComponent</a>
                                 </li>
                                 <li class="link">
-                                    <a href="../components/ContactMapComponent.html" >ContactMapComponent</a>
-                                </li>
-                                <li class="link">
                                     <a href="../components/EducationComponent.html" >EducationComponent</a>
                                 </li>
                                 <li class="link">
@@ -124,6 +121,12 @@
                                 </li>
                                 <li class="link">
                                     <a href="../components/SkillsComponent.html" >SkillsComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/TravelComponent.html" >TravelComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/TravelMapComponent.html" >TravelMapComponent</a>
                                 </li>
                         </ul>
                     </li>
@@ -423,9 +426,6 @@
                                            <a href="../components/ContactFormComponent.html" >ContactFormComponent</a>
                                        </li>
                                        <li class="link">
-                                           <a href="../components/ContactMapComponent.html" >ContactMapComponent</a>
-                                       </li>
-                                       <li class="link">
                                            <a href="../components/EducationComponent.html" >EducationComponent</a>
                                        </li>
                                        <li class="link">
@@ -439,6 +439,12 @@
                                        </li>
                                        <li class="link">
                                            <a href="../components/SkillsComponent.html" >SkillsComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/TravelComponent.html" >TravelComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/TravelMapComponent.html" >TravelMapComponent</a>
                                        </li>
                                </ul>
                            </li>
@@ -1051,7 +1057,7 @@ export class FooterComponent implements OnInit {
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
         var COMPONENT_TEMPLATE = '<div><!--footer start--><section class="footer" id="links">  <div class="container">    <div class="heading">      <h2>Links</h2>      <p>social links and page info</p>    </div>    <ul>      <li *ngFor="let link of links">        <a href="{{link.url}}"           target="_blank"           rel="noopener noreferrer"           title="{{link.title}}"           class="js_track_link_click"           attr.aria-label="{{link.title}}">          <i class="icon-{{link.icon}} icon-2x"></i>        </a>      </li>    </ul>    <div class="footer-info">      <p><i class="icon-copyright"></i>&nbsp;{{currentDate | date:"yyyy"}} &ndash; HTML Template by <i><a href="https://themeforest.net/user/themeelite" target="_blank" rel="noopener noreferrer" class="js_track_link_click" aria-label="Themeforest themeelite">themeelite</a></i></p>      <p>Hosted on the <i><a href="https://heroku.com" target="_blank" rel="noopener noreferrer" class="js_track_link_click" aria-label="Heroku">heroku.com</a></i> cloud platform</p>      <p>Angular, TypeScript, SCSS</p>      <p>Node.js server code <a href="https://github.com/feross/standard" target="_blank" rel="noopener noreferrer" aria-label="Standard style"><img class="js-standard-style" src="https://cdn.rawgit.com/feross/standard/master/badge.svg" alt="JS Standard style"></a>&nbsp;compliant</p>      <p><i class="icon-git"></i>&nbsp;Deployed from <a href="https://github.com/ouq77/portfolio-web/tree/portfolio-web-ng2-heroku" target="_blank" rel="noopener noreferrer" class="js_track_link_click" aria-label="Github repo">this repo</a></p>      <p><i class="icon-file-code"></i>&nbsp;Docs <a href="/docs/index.html" target="_blank" rel="noopener noreferrer" class="js_track_link_click" aria-label="Docs location">hosted here</a></p>      <p><a href="https://www.bithound.io/github/ouq77/portfolio-web/portfolio-web-ng2/dependencies/npm" target="_blank" rel="noopener noreferrer" title="dependencies status" aria-label="Dependencies status"><img src="https://www.bithound.io/github/ouq77/portfolio-web/badges/dependencies.svg" alt="bitHound Dependencies"></a></p>      <p><a href="https://www.bithound.io/github/ouq77/portfolio-web/portfolio-web-ng2/dependencies/npm" target="_blank" rel="noopener noreferrer" title="devDependencies status" aria-label="Dev dependencies status"><img src="https://www.bithound.io/github/ouq77/portfolio-web/badges/devDependencies.svg" alt="bitHound Dev Dependencies"></a></p>    </div>  </div>  <div class="last-modified">    <p><sup>Last updated: <%= LAST_MOD_SITE %></sup></p>  </div></section><!--footer end--></div>'
-    var COMPONENTS = [{'name': 'AboutComponent', 'selector': 'about'},{'name': 'AppComponent', 'selector': 'container'},{'name': 'ContactComponent', 'selector': 'contact'},{'name': 'ContactFormComponent', 'selector': 'contact-form'},{'name': 'ContactMapComponent', 'selector': 'googlemap'},{'name': 'EducationComponent', 'selector': 'education'},{'name': 'ExperienceComponent', 'selector': 'experience'},{'name': 'FooterComponent', 'selector': 'footer'},{'name': 'HeaderComponent', 'selector': 'header'},{'name': 'SkillsComponent', 'selector': 'skills'}];
+    var COMPONENTS = [{'name': 'AboutComponent', 'selector': 'about'},{'name': 'AppComponent', 'selector': 'container'},{'name': 'ContactComponent', 'selector': 'contact'},{'name': 'ContactFormComponent', 'selector': 'contact-form'},{'name': 'EducationComponent', 'selector': 'education'},{'name': 'ExperienceComponent', 'selector': 'experience'},{'name': 'FooterComponent', 'selector': 'footer'},{'name': 'HeaderComponent', 'selector': 'header'},{'name': 'SkillsComponent', 'selector': 'skills'},{'name': 'TravelComponent', 'selector': 'travel'},{'name': 'TravelMapComponent', 'selector': 'googlemap'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'FooterComponent'};
 </script>

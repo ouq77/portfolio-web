@@ -108,9 +108,6 @@
                                     <a href="../components/ContactFormComponent.html" >ContactFormComponent</a>
                                 </li>
                                 <li class="link">
-                                    <a href="../components/ContactMapComponent.html" >ContactMapComponent</a>
-                                </li>
-                                <li class="link">
                                     <a href="../components/EducationComponent.html" >EducationComponent</a>
                                 </li>
                                 <li class="link">
@@ -124,6 +121,12 @@
                                 </li>
                                 <li class="link">
                                     <a href="../components/SkillsComponent.html" >SkillsComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/TravelComponent.html" >TravelComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/TravelMapComponent.html" >TravelMapComponent</a>
                                 </li>
                         </ul>
                     </li>
@@ -423,9 +426,6 @@
                                            <a href="../components/ContactFormComponent.html" >ContactFormComponent</a>
                                        </li>
                                        <li class="link">
-                                           <a href="../components/ContactMapComponent.html" >ContactMapComponent</a>
-                                       </li>
-                                       <li class="link">
                                            <a href="../components/EducationComponent.html" >EducationComponent</a>
                                        </li>
                                        <li class="link">
@@ -439,6 +439,12 @@
                                        </li>
                                        <li class="link">
                                            <a href="../components/SkillsComponent.html" >SkillsComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/TravelComponent.html" >TravelComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/TravelMapComponent.html" >TravelMapComponent</a>
                                        </li>
                                </ul>
                            </li>
@@ -752,11 +758,10 @@ export class ContactComponent {
 &lt;section class&#x3D;&quot;contact&quot; id&#x3D;&quot;contact&quot;&gt;
   &lt;div class&#x3D;&quot;container top-container&quot;&gt;
     &lt;div class&#x3D;&quot;heading&quot;&gt;
-      &lt;h2 class&#x3D;&quot;js_trigger_map_marker&quot;&gt;Get In Touch&lt;/h2&gt;
+      &lt;h2&gt;Get In Touch&lt;/h2&gt;
       &lt;p&gt;contact me to have a chat&lt;/p&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-  &lt;googlemap&gt;&lt;/googlemap&gt;
 &lt;/section&gt;
 &lt;section class&#x3D;&quot;contact-details&quot; id&#x3D;&quot;contact-form&quot;&gt;
   &lt;div class&#x3D;&quot;container&quot;&gt;
@@ -765,14 +770,14 @@ export class ContactComponent {
       &lt;h4 class&#x3D;&quot;js_trigger_map_marker&quot;&gt;Contact details&lt;/h4&gt;
       &lt;p&gt;
         &lt;i class&#x3D;&quot;icon-location icon-lg&quot;&gt;&lt;/i&gt;&amp;nbsp;
-        &lt;a href&#x3D;&quot;#address&quot;
-           id&#x3D;&quot;js_click_address&quot;
-           class&#x3D;&quot;js_track_link_click&quot;
-           aria-label&#x3D;&quot;Address&quot;&gt;Brooklyn, Wellington, New Zealand&lt;/a&gt;
+        Brooklyn, Wellington, New Zealand
       &lt;/p&gt;
       &lt;p&gt;
         &lt;i class&#x3D;&quot;icon-phone icon-lg&quot;&gt;&lt;/i&gt;&amp;nbsp;
-        +64 22 031 3927
+        &lt;a href&#x3D;&quot;tel:+64220313927&quot;
+           class&#x3D;&quot;js_track_link_click&quot;
+           itemscope&#x3D;&quot;tel&quot;
+           aria-label&#x3D;&quot;Telephone&quot;&gt;+64 22 031 3927&lt;/a&gt;
       &lt;/p&gt;
       &lt;p&gt;
         &lt;i class&#x3D;&quot;icon-link icon-lg&quot;&gt;&lt;/i&gt;&amp;nbsp;
@@ -814,8 +819,8 @@ export class ContactComponent {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><!--contact start--><section class="contact" id="contact">  <div class="container top-container">    <div class="heading">      <h2 class="js_trigger_map_marker">Get In Touch</h2>      <p>contact me to have a chat</p>    </div>  </div>  <googlemap></googlemap></section><section class="contact-details" id="contact-form">  <div class="container">    <!--contact info start-->    <div class="col-xs-12 col-sm-3 col-md-4 col-lg-4">      <h4 class="js_trigger_map_marker">Contact details</h4>      <p>        <i class="icon-location icon-lg"></i>&nbsp;        <a href="#address"           id="js_click_address"           class="js_track_link_click"           aria-label="Address">Brooklyn, Wellington, New Zealand</a>      </p>      <p>        <i class="icon-phone icon-lg"></i>&nbsp;        +64 22 031 3927      </p>      <p>        <i class="icon-link icon-lg"></i>&nbsp;        <a href="https://portfolio.ouq77.kiwi"           target="_blank"           rel="noopener noreferrer"           class="js_track_link_click"           itemscope="url"           aria-label="Portfolio link">portfolio.ouq77.kiwi</a></p>    </div>    <!--contact info end-->    <contact-form></contact-form>  </div></section><!--contact end--></div>'
-    var COMPONENTS = [{'name': 'AboutComponent', 'selector': 'about'},{'name': 'AppComponent', 'selector': 'container'},{'name': 'ContactComponent', 'selector': 'contact'},{'name': 'ContactFormComponent', 'selector': 'contact-form'},{'name': 'ContactMapComponent', 'selector': 'googlemap'},{'name': 'EducationComponent', 'selector': 'education'},{'name': 'ExperienceComponent', 'selector': 'experience'},{'name': 'FooterComponent', 'selector': 'footer'},{'name': 'HeaderComponent', 'selector': 'header'},{'name': 'SkillsComponent', 'selector': 'skills'}];
+        var COMPONENT_TEMPLATE = '<div><!--contact start--><section class="contact" id="contact">  <div class="container top-container">    <div class="heading">      <h2>Get In Touch</h2>      <p>contact me to have a chat</p>    </div>  </div></section><section class="contact-details" id="contact-form">  <div class="container">    <!--contact info start-->    <div class="col-xs-12 col-sm-3 col-md-4 col-lg-4">      <h4 class="js_trigger_map_marker">Contact details</h4>      <p>        <i class="icon-location icon-lg"></i>&nbsp;        Brooklyn, Wellington, New Zealand      </p>      <p>        <i class="icon-phone icon-lg"></i>&nbsp;        <a href="tel:+64220313927"           class="js_track_link_click"           itemscope="tel"           aria-label="Telephone">+64 22 031 3927</a>      </p>      <p>        <i class="icon-link icon-lg"></i>&nbsp;        <a href="https://portfolio.ouq77.kiwi"           target="_blank"           rel="noopener noreferrer"           class="js_track_link_click"           itemscope="url"           aria-label="Portfolio link">portfolio.ouq77.kiwi</a></p>    </div>    <!--contact info end-->    <contact-form></contact-form>  </div></section><!--contact end--></div>'
+    var COMPONENTS = [{'name': 'AboutComponent', 'selector': 'about'},{'name': 'AppComponent', 'selector': 'container'},{'name': 'ContactComponent', 'selector': 'contact'},{'name': 'ContactFormComponent', 'selector': 'contact-form'},{'name': 'EducationComponent', 'selector': 'education'},{'name': 'ExperienceComponent', 'selector': 'experience'},{'name': 'FooterComponent', 'selector': 'footer'},{'name': 'HeaderComponent', 'selector': 'header'},{'name': 'SkillsComponent', 'selector': 'skills'},{'name': 'TravelComponent', 'selector': 'travel'},{'name': 'TravelMapComponent', 'selector': 'googlemap'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'ContactComponent'};
 </script>
