@@ -12,15 +12,17 @@
 .skills {
   background: $whisper;
   color: $blue-zodiac;
-  @include container-heading(70px);
 
-  .container {
+  @include container-heading(70px) {
     p {
       color: $blue-zodiac;
     }
     h2 {
       color: $bitter-sweet;
     }
+  };
+
+  .container {
     .skill-area {
       padding: 0;
       .skill {

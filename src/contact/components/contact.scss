@@ -5,25 +5,20 @@
 // ========================================================================== //
 
 .contact {
-  background: $white;
-  @include container-heading();
+  background: $whisper;
 
-  h2 {
-    color: $bitter-sweet;
-  }
-
-  p {
-    color: $manatee;
-    line-height: 18px;
-  }
-
-  .heading p {
-    padding-bottom: 41px;
-  }
-
-  h4 {
-    font-weight: 700;
-  }
+  @include container-heading() {
+    h2 {
+      color: $bitter-sweet;
+    }
+    p {
+      color: $manatee;
+      line-height: 18px;
+    }
+    h4 {
+      font-weight: 700;
+    }
+  };
 }
 
 .top-container {

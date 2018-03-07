@@ -66,20 +66,6 @@ export class MarkerUtil {
     });
   }
 
-  initClickListener(map: Map, cityMarkers: Array<Marker>) {
-    (($: JQueryStatic) => {
-      $('#js_click_address').click((e: JQuery.Event) => {
-        e.preventDefault();
-        if (cityMarkers.length === CITIES.length) {
-          let cityMarker = cityMarkers[cityMarkers.length - 1];
-          if (cityMarker) {
-            this.toggleBounce(map, cityMarker, CURRENT_LOCATION.name, CURRENT_LOCATION.description);
-          }
-        }
-      });
-    })(jQuery);
-  }
-
   toggleBounce(map: Map, marker: Marker, infoTitle: string, infoContent: string) {
     if (this._timeoutMarkerBounce) {
       clearTimeout(this._timeoutMarkerBounce);

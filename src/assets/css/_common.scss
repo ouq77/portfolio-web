@@ -66,6 +66,13 @@ $screen-lg-min: 1200px;
     .heading {
       text-align: center;
       padding-bottom: 15px;
+
+      p, blockquote {
+        padding-top: 5px;
+        padding-bottom: 41px;
+      }
+
+      @content;
     }
     .row {
       margin: 0;

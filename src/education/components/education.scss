@@ -6,9 +6,8 @@
 
 .education {
   background: $whisper;
-  @include container-heading();
 
-  .container {
+  @include container-heading() {
     h2 {
       color: $bitter-sweet;
     }
@@ -16,13 +15,12 @@
       color: $manatee;
       line-height: 18px;
     }
-    .heading p {
-      padding-bottom: 41px;
-    }
     h4 {
       font-weight: 700;
     }
+  };
 
+  .container {
     .education-details {
       .right-area {
         padding-bottom: 47px;

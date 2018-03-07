@@ -22,10 +22,10 @@ import {elementInViewport} from '../../shared/common/element.in.viewport';
 
 @Component({
   selector: 'googlemap',
-  styleUrls: ['./contact.gmap.css'],
-  templateUrl: 'contact.gmap.htm',
+  styleUrls: ['./travel.gmap.css'],
+  templateUrl: 'travel.gmap.htm',
 })
-export class ContactMapComponent implements OnInit {
+export class TravelMapComponent implements OnInit {
   public map: Map;
   private _additionalMarkerWait: number;
   private _markerDropWait: number;
@@ -60,7 +60,6 @@ export class ContactMapComponent implements OnInit {
   ngOnInit() {
     this.initializeMap();
     this.initScrollListener();
-    this._markerUtil.initClickListener(this.map, this._cityMarkers);
   }
 
   initializeMap() {

@@ -5,7 +5,7 @@
  *      itemClass: string,
  *      itemHover: string,
  *      parts: {
- *        0: string, 1: string, 2: string, 3: string, 4: string, 5: string, 6: string
+ *        0: string, 1: string, 2: string, 3: string, 4: string, 5: string, 6: string, 7: string
  *      },
  *      topMargin: string
  *    }
@@ -20,8 +20,9 @@ export const MENU_CONFIG: any = {
     2: 'skills',
     3: 'experience',
     4: 'education',
-    5: 'contact',
-    6: 'links',
+    5: 'travel',
+    6: 'contact',
+    7: 'links',
   },
   topMargin: 'auto',
 };
