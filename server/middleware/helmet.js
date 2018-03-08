@@ -11,6 +11,7 @@ module.exports = () => {
     csp({
       directives: {
         defaultSrc: ['\'self\''],
+        connectSrc: ['\'self\'', 'https://*.google-analytics.com'],
         frameSrc: ['\'self\'', 'https://*.youtube.com'],
         fontSrc: ['\'self\'', 'data:', 'https://*.gstatic.com', 'https://maxcdn.bootstrapcdn.com'],
         imgSrc: ['\'self\'', 'data:', 'https://*.googleapis.com', 'https://*.gstatic.com', 'https://*.google-analytics.com', 'https://*.bithound.io', 'https://*.rawgit.com'],
