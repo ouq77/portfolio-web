@@ -12,7 +12,7 @@ const getIds = () => {
       reducedImageIds.push(imageIdsCopy.splice(Math.floor(Math.random() * (imageIdsCopy.length)), 1)[0])
     }
   } else {
-    console.error(`Not enough image ids: ${imageIds.length}`)
+    console.error(`Not enough image ids: ${imageIds.length} of ${imageDisplayCount} required`)
   }
   return reducedImageIds
 }

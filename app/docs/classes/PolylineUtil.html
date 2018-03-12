@@ -780,7 +780,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/travel/components/gmap/polyline.util.ts:27</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/travel/components/gmap/polyline.util.ts:38</a></div>
                                         </td>
                                     </tr>
             
@@ -843,7 +843,7 @@
                                         <div>
                                         </div>
                                         <div class="io-description">
-                                            <b>Returns : </b>    <code>Array&lt;Polyline&gt;</code>
+                                            <b>Returns : </b>    <code>Array&lt;Array&lt;Polyline&gt;&gt;</code>
             
                                         </div>
                                             <div class="io-description">
@@ -875,7 +875,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/travel/components/gmap/polyline.util.ts:14</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/travel/components/gmap/polyline.util.ts:14</a></div>
                                         </td>
                                     </tr>
             
@@ -938,7 +938,7 @@
                                         <div>
                                         </div>
                                         <div class="io-description">
-                                            <b>Returns : </b>    <code>Array&lt;Polyline&gt;</code>
+                                            <b>Returns : </b>    <code>Array&lt;Array&lt;Polyline&gt;&gt;</code>
             
                                         </div>
                                             <div class="io-description">
@@ -963,14 +963,14 @@
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-            <code>pushToPolylines(polylines: Array<Polyline>, journeys: <a href="../interfaces/IPoint.html">Array<Array<IPoint>></a>)</code>
+            <code>pushToPolylines(polylines: Array<Array<Polyline>>, journeys: <a href="../interfaces/IPoint.html">Array<Array<IPoint>></a>)</code>
                                 </td>
                             </tr>
             
             
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="50" class="link-to-prism">src/travel/components/gmap/polyline.util.ts:50</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="82" class="link-to-prism">src/travel/components/gmap/polyline.util.ts:82</a></div>
                                         </td>
                                     </tr>
             
@@ -992,7 +992,7 @@
                                                                 <td>polylines</td>
                                                                 
                                                                     <td>
-                                                                                <code>Array&lt;Polyline&gt;</code>
+                                                                                <code>Array&lt;Array&lt;Polyline&gt;&gt;</code>
                                                                     </td>
                                                                 
                                                                 <td>
@@ -1066,7 +1066,7 @@
                                 </tr>
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="8" class="link-to-prism">src/travel/components/gmap/polyline.util.ts:8</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="8" class="link-to-prism">src/travel/components/gmap/polyline.util.ts:8</a></div>
                                         </td>
                                     </tr>
             
@@ -1079,7 +1079,7 @@
 
 
     <div class="tab-pane fade tab-source-code" id="c-source">
-        <pre class="line-numbers"><code class="language-typescript">import LatLng &#x3D; google.maps.LatLng;
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import LatLng &#x3D; google.maps.LatLng;
 import Map &#x3D; google.maps.Map;
 import Polyline &#x3D; google.maps.Polyline;
 import {IPoint} from &#x27;../../definitions/point&#x27;;
@@ -1092,22 +1092,34 @@ export class PolylineUtil {
     this._lineDrawWait &#x3D; 0;
   }
 
-  createPolylines(journeys: Array&lt;Array&lt;IPoint&gt;&gt;, map: Map, strokeColor: string): Array&lt;Polyline&gt; {
+  createPolylines(journeys: Array&lt;Array&lt;IPoint&gt;&gt;, map: Map, strokeColor: string): Array&lt;Array&lt;Polyline&gt;&gt; {
     const lines: Array&lt;Polyline&gt; &#x3D; [];
-    journeys.forEach((journey: Array&lt;IPoint&gt;, index: number) &#x3D;&gt;
+    const borderLines: Array&lt;Polyline&gt; &#x3D; [];
+    journeys.forEach((journey: Array&lt;IPoint&gt;, index: number) &#x3D;&gt; {
       lines[index] &#x3D; new Polyline({
         geodesic: true,
         map,
         strokeColor,
-        strokeOpacity: 0.7,
+        strokeOpacity: 0.9,
         strokeWeight: 2,
-      }));
-    return lines;
+        zIndex: 2,
+      });
+      borderLines[index] &#x3D; new Polyline({
+        geodesic: true,
+        map,
+        strokeColor: &#x27;#ccc&#x27;,
+        strokeOpacity: 0.7,
+        strokeWeight: 4,
+        zIndex: 0,
+      });
+    });
+    return [lines, borderLines];
   }
 
-  createDottedPolylines(journeys: Array&lt;Array&lt;IPoint&gt;&gt;, map: Map, strokeColor: string): Array&lt;Polyline&gt; {
+  createDottedPolylines(journeys: Array&lt;Array&lt;IPoint&gt;&gt;, map: Map, strokeColor: string): Array&lt;Array&lt;Polyline&gt;&gt; {
     const lines: Array&lt;Polyline&gt; &#x3D; [];
-    journeys.forEach((journey: Array&lt;IPoint&gt;, index: number) &#x3D;&gt;
+    const borderLines: Array&lt;Polyline&gt; &#x3D; [];
+    journeys.forEach((journey: Array&lt;IPoint&gt;, index: number) &#x3D;&gt; {
       lines[index] &#x3D; new Polyline({
         geodesic: true,
         icons: [
@@ -1115,7 +1127,7 @@ export class PolylineUtil {
             icon: {
               path: &#x27;M 0, -1 0,1&#x27;,
               strokeColor,
-              strokeOpacity: 0.7,
+              strokeOpacity: 0.9,
               strokeWeight: 2,
             },
             offset: &#x27;0&#x27;,
@@ -1124,17 +1136,42 @@ export class PolylineUtil {
         ],
         map,
         strokeOpacity: 0,
-      }));
-    return lines;
+        zIndex: 2,
+      });
+      borderLines[index] &#x3D; new Polyline({
+        geodesic: true,
+        icons: [
+          {
+            icon: {
+              path: &#x27;M 0, -1 0,1&#x27;,
+              strokeColor: &#x27;#ccc&#x27;,
+              strokeOpacity: 0.7,
+              strokeWeight: 4,
+            },
+            offset: &#x27;0&#x27;,
+            repeat: &#x27;12px&#x27;,
+          },
+        ],
+        map,
+        strokeOpacity: 0,
+        zIndex: 0,
+      });
+    });
+    return [lines, borderLines];
   }
 
-  pushToPolylines(polylines: Array&lt;Polyline&gt;, journeys: Array&lt;Array&lt;IPoint&gt;&gt;): void {
+  pushToPolylines(polylines: Array&lt;Array&lt;Polyline&gt;&gt;, journeys: Array&lt;Array&lt;IPoint&gt;&gt;): void {
     journeys.forEach((journey: Array&lt;IPoint&gt;, index: number) &#x3D;&gt; {
-      const polyline: Polyline &#x3D; polylines[index];
+      const polyline: Polyline &#x3D; polylines[0][index];
+      const borderPolyline: Polyline &#x3D; polylines[1][index];
       this._lineDrawWait++;
       journey.forEach((leg: IPoint) &#x3D;&gt;
         delay(this._lineDrawWait * 130)
-          .then(() &#x3D;&gt; polyline.getPath().push(new LatLng(leg.lat, leg.lng))));
+          .then(() &#x3D;&gt; {
+            const coordinates &#x3D; new LatLng(leg.lat, leg.lng);
+            polyline.getPath().push(coordinates);
+            borderPolyline.getPath().push(coordinates);
+          }));
     });
   }
 }
