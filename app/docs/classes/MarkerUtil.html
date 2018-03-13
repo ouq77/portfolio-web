@@ -182,6 +182,9 @@
                                 <li class="link">
                                     <a href="../classes/SkillService.html" >SkillService</a>
                                 </li>
+                                <li class="link">
+                                    <a href="../classes/Station.html" >Station</a>
+                                </li>
                         </ul>
                     </li>
             
@@ -249,6 +252,9 @@
                                 </li>
                                 <li class="link">
                                     <a href="../interfaces/IPort.html" >IPort</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IStation.html" >IStation</a>
                                 </li>
                                 <li class="link">
                                     <a href="../interfaces/ImageIds.html" >ImageIds</a>
@@ -500,6 +506,9 @@
                                        <li class="link">
                                            <a href="../classes/SkillService.html" >SkillService</a>
                                        </li>
+                                       <li class="link">
+                                           <a href="../classes/Station.html" >Station</a>
+                                       </li>
                                </ul>
                            </li>
                    
@@ -567,6 +576,9 @@
                                        </li>
                                        <li class="link">
                                            <a href="../interfaces/IPort.html" >IPort</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IStation.html" >IStation</a>
                                        </li>
                                        <li class="link">
                                            <a href="../interfaces/ImageIds.html" >ImageIds</a>
@@ -736,6 +748,9 @@
                                         <a href="#addPortMarker">addPortMarker</a>
                                     </li>
                                     <li>
+                                        <a href="#addStationMarker">addStationMarker</a>
+                                    </li>
+                                    <li>
                                         <a href="#toggleBounce">toggleBounce</a>
                                     </li>
                                 </ul>
@@ -756,7 +771,7 @@
                             </tr>
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/travel/components/gmap/marker.util.ts:17</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/travel/components/gmap/marker.util.ts:18</a></div>
                                         </td>
                                     </tr>
             
@@ -791,7 +806,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/travel/components/gmap/marker.util.ts:23</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/travel/components/gmap/marker.util.ts:24</a></div>
                                         </td>
                                     </tr>
             
@@ -873,7 +888,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="53" class="link-to-prism">src/travel/components/gmap/marker.util.ts:53</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="69" class="link-to-prism">src/travel/components/gmap/marker.util.ts:69</a></div>
                                         </td>
                                     </tr>
             
@@ -968,7 +983,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/travel/components/gmap/marker.util.ts:38</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/travel/components/gmap/marker.util.ts:39</a></div>
                                         </td>
                                     </tr>
             
@@ -1032,6 +1047,88 @@
                         <tbody>
                             <tr>
                                 <td class="col-md-4">
+                                    <a name="addStationMarker"></a>
+                                    <span class="name">
+                                        <b>
+                                        addStationMarker
+                                        </b>
+                                        <a href="#addStationMarker"><span class="fa fa-link"></span></a>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+            <code>addStationMarker(map: Map, station: <a href="../interfaces/IStation.html">IStation</a>)</code>
+                                </td>
+                            </tr>
+            
+            
+                                    <tr>
+                                        <td class="col-md-4">
+                                                <div class="io-line">Defined in <a href="" data-line="54" class="link-to-prism">src/travel/components/gmap/marker.util.ts:54</a></div>
+                                        </td>
+                                    </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+            
+                                        <div class="io-description">
+                                                <b>Parameters :</b>
+                                                <table class="params">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Name</td>
+                                                                <td>Type</td>
+                                                            <td>Optional</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                            <tr>
+                                                                <td>map</td>
+                                                                
+                                                                    <td>
+                                                                                <code>Map</code>
+                                                                    </td>
+                                                                
+                                                                <td>
+                                                                        no
+                                                                </td>
+                                                                
+            
+                                                            </tr>
+                                                            <tr>
+                                                                <td>station</td>
+                                                                
+                                                                    <td>
+                                                                                <code><a href="../interfaces/IStation.html" target="_self" >IStation</a></code>
+                                                                    </td>
+                                                                
+                                                                <td>
+                                                                        no
+                                                                </td>
+                                                                
+            
+                                                            </tr>
+                                                    </tbody>
+                                                </table>
+                                        </div>
+                                        <div>
+                                        </div>
+                                        <div class="io-description">
+                                            <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+            
+                                        </div>
+                                            <div class="io-description">
+                                                
+                                            </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
                                     <a name="toggleBounce"></a>
                                     <span class="name">
                                         <b>
@@ -1050,7 +1147,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="69" class="link-to-prism">src/travel/components/gmap/marker.util.ts:69</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="85" class="link-to-prism">src/travel/components/gmap/marker.util.ts:85</a></div>
                                         </td>
                                     </tr>
             
@@ -1172,7 +1269,7 @@
                                 </tr>
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/travel/components/gmap/marker.util.ts:15</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/travel/components/gmap/marker.util.ts:16</a></div>
                                         </td>
                                     </tr>
             
@@ -1207,7 +1304,7 @@
                                 </tr>
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/travel/components/gmap/marker.util.ts:16</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/travel/components/gmap/marker.util.ts:17</a></div>
                                         </td>
                                     </tr>
             
@@ -1242,7 +1339,7 @@
                                 </tr>
                                     <tr>
                                         <td class="col-md-4">
-                                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/travel/components/gmap/marker.util.ts:17</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/travel/components/gmap/marker.util.ts:18</a></div>
                                         </td>
                                     </tr>
             
@@ -1267,6 +1364,7 @@ import {ICity} from &#x27;../../definitions/city&#x27;;
 import {IPort} from &#x27;../../definitions/port&#x27;;
 import {AIRPORT_SIZE, PORT_SIZE} from &#x27;../../models/points&#x27;;
 import {cancelableDelay} from &#x27;../../../shared/common/delay&#x27;;
+import {IStation} from &#x27;../../definitions/station&#x27;;
 
 export class MarkerUtil {
   private _infoWindow: InfoWindow;
@@ -1304,6 +1402,21 @@ export class MarkerUtil {
     });
     event.addListener(marker, &#x27;click&#x27;, () &#x3D;&gt; {
       this.toggleBounce(map, marker, port.portCode, &#x60;${port.name}&lt;br&gt;${port.city}, ${port.country}&#x60;);
+    });
+  }
+
+  addStationMarker(map: Map, station: IStation) {
+    let marker &#x3D; new Marker({
+      animation: Animation.DROP,
+      draggable: false,
+      icon: {size: PORT_SIZE, url: &#x27;assets/images/markerstation.png&#x27;},
+      map,
+      position: new LatLng(station.loc.lat, station.loc.lng),
+      title: &#x60;${station.stationCode} // ${station.name}&#x60;,
+      zIndex: 100,
+    });
+    event.addListener(marker, &#x27;click&#x27;, () &#x3D;&gt; {
+      this.toggleBounce(map, marker, station.stationCode, &#x60;${station.name}&lt;br&gt;${station.city}, ${station.country}&#x60;);
     });
   }
 
