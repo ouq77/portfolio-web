@@ -28,11 +28,37 @@ export class PolylineUtil {
         map,
         strokeColor: '#ccc',
         strokeOpacity: 0.7,
-        strokeWeight: 4,
+        strokeWeight: 5,
         zIndex: 0,
       });
     });
     return [lines, borderLines];
+  }
+
+  createPolylineFromPath(encodedPaths: Array<string>, map: Map, strokeColor: string): void {
+    encodedPaths.forEach((encodedPath: string) => {
+      const path: Array<LatLng> = google.maps.geometry.encoding.decodePath(encodedPath);
+      const line: Polyline = new google.maps.Polyline({
+        path,
+        strokeColor,
+        strokeOpacity: 0.9,
+        strokeWeight: 2,
+        zIndex: 2,
+      });
+      const borderLine: Polyline = new Polyline({
+        path,
+        strokeColor: '#ccc',
+        strokeOpacity: 0.7,
+        strokeWeight: 5,
+        zIndex: 0,
+      });
+
+      delay(++this._lineDrawWait * 130)
+        .then(() => {
+          line.setMap(map);
+          borderLine.setMap(map);
+        });
+    });
   }
 
   createDottedPolylines(journeys: Array<Array<IPoint>>, map: Map, strokeColor: string): Array<Array<Polyline>> {
@@ -65,7 +91,7 @@ export class PolylineUtil {
               path: 'M 0, -1 0,1',
               strokeColor: '#ccc',
               strokeOpacity: 0.7,
-              strokeWeight: 4,
+              strokeWeight: 5,
             },
             offset: '0',
             repeat: '12px',
@@ -77,6 +103,52 @@ export class PolylineUtil {
       });
     });
     return [lines, borderLines];
+  }
+
+  createDottedPolylineFromPath(encodedPaths: Array<string>, map: Map, strokeColor: string): void {
+    encodedPaths.forEach((encodedPath: string) => {
+      const path: Array<LatLng> = google.maps.geometry.encoding.decodePath(encodedPath);
+      const line: Polyline = new google.maps.Polyline({
+        icons: [
+          {
+            icon: {
+              path: 'M 0, -1 0,1',
+              strokeColor,
+              strokeOpacity: 0.9,
+              strokeWeight: 2,
+            },
+            offset: '0',
+            repeat: '12px',
+          },
+        ],
+        path,
+        strokeOpacity: 0,
+        zIndex: 2,
+      });
+      const borderLine: Polyline = new Polyline({
+        icons: [
+          {
+            icon: {
+              path: 'M 0, -1 0,1',
+              strokeColor: '#ccc',
+              strokeOpacity: 0.7,
+              strokeWeight: 5,
+            },
+            offset: '0',
+            repeat: '12px',
+          },
+        ],
+        path,
+        strokeOpacity: 0,
+        zIndex: 0,
+      });
+
+      delay(++this._lineDrawWait * 130)
+        .then(() => {
+          line.setMap(map);
+          borderLine.setMap(map);
+        });
+    });
   }
 
   pushToPolylines(polylines: Array<Array<Polyline>>, journeys: Array<Array<IPoint>>): void {

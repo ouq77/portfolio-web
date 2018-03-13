@@ -10,6 +10,7 @@ import {ICity} from '../../definitions/city';
 import {IPort} from '../../definitions/port';
 import {AIRPORT_SIZE, PORT_SIZE} from '../../models/points';
 import {cancelableDelay} from '../../../shared/common/delay';
+import {IStation} from '../../definitions/station';
 
 export class MarkerUtil {
   private _infoWindow: InfoWindow;
@@ -47,6 +48,21 @@ export class MarkerUtil {
     });
     event.addListener(marker, 'click', () => {
       this.toggleBounce(map, marker, port.portCode, `${port.name}<br>${port.city}, ${port.country}`);
+    });
+  }
+
+  addStationMarker(map: Map, station: IStation) {
+    let marker = new Marker({
+      animation: Animation.DROP,
+      draggable: false,
+      icon: {size: PORT_SIZE, url: 'assets/images/markerstation.png'},
+      map,
+      position: new LatLng(station.loc.lat, station.loc.lng),
+      title: `${station.stationCode} // ${station.name}`,
+      zIndex: 100,
+    });
+    event.addListener(marker, 'click', () => {
+      this.toggleBounce(map, marker, station.stationCode, `${station.name}<br>${station.city}, ${station.country}`);
     });
   }
 

@@ -37,10 +37,6 @@ export const AUCKLAND: IPoint = {
   lat: -36.847639,
   lng: 174.762473,
 };
-export const WELLINGTON: IPoint = {
-  lat: -41.284938,
-  lng: 174.762324,
-};
 export const BROOKLYN: IPoint = {
   lat: -41.3081336,
   lng: 174.7661233,
