@@ -18,12 +18,12 @@ export class SkillsComponent implements OnInit {
     this._skillChartDrawn = false;
   }
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.getSkills();
     this.initScrollListener();
   }
 
-  getSkills() {
+  getSkills(): void {
     SkillService.getSkills().then(
       (skills) => {
         this.skills = skills;
@@ -32,7 +32,7 @@ export class SkillsComponent implements OnInit {
     );
   }
 
-  initScrollListener() {
+  initScrollListener(): void {
     (($: JQueryStatic) => {
       $(document).on('scroll', () => {
         // wait half a second for scroll to stop
@@ -52,7 +52,7 @@ export class SkillsComponent implements OnInit {
     }
   }
 
-  drawChart() {
+  drawChart(): void {
     (($) => {
       $('.js_trigger_skills').each((index: number, triggerEl: Element) => {
         if (!this._skillChartDrawn && elementInViewport($, <JQuery>$(triggerEl))) {

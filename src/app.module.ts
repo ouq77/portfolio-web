@@ -29,6 +29,7 @@ import {ExperienceService} from './experience/services/experience';
 import {FooterService} from './footer/services/footer';
 import {HeaderService} from './header/services/header';
 import {SkillService} from './skills/services/skills';
+import {TravelService} from './travel/service/travel';
 
 @NgModule({
   bootstrap: [AppComponent],
@@ -73,6 +74,7 @@ import {SkillService} from './skills/services/skills';
     FooterService,
     HeaderService,
     SkillService,
+    TravelService,
   ],
 })
 

@@ -42,11 +42,11 @@ export class ContactFormComponent implements OnInit {
     this._contactService = contactService;
   }
 
-  ngOnInit() {
-    this.getErrorMessages();
+  ngOnInit(): void {
+    this.loadErrorMessages();
   }
 
-  getErrorMessages() {
+  loadErrorMessages(): void {
     ContactService.getErrorMessages().then(
       (errorMessages) => {
         this.errorMessages = errorMessages;
@@ -54,11 +54,11 @@ export class ContactFormComponent implements OnInit {
     );
   }
 
-  onClick() {
+  onClick(): void {
     this.submitClicked = true;
   }
 
-  onSubmit() {
+  onSubmit(): void {
     this.toggleSubmitting();
     this.serverErrors = '';
 
@@ -70,17 +70,17 @@ export class ContactFormComponent implements OnInit {
     );
 
     this._contactService.send(submission).subscribe(
-      resp => this.handleSuccess(),
+      () => this.handleSuccess(),
       err => this.handleErrors(err),
     );
   }
 
-  handleSuccess() {
+  handleSuccess(): void {
     this.toggleSubmitting();
     this.sentSuccessfully = true;
   }
 
-  handleErrors(err: WrappedError) {
+  handleErrors(err: WrappedError): void {
     this.toggleSubmitting();
     switch (err.status) {
       case 400:
@@ -101,7 +101,7 @@ export class ContactFormComponent implements OnInit {
     }).message;
   }
 
-  appendError(error: string) {
+  appendError(error: string): void {
     if (error) {
       if (this.serverErrors) {
         this.serverErrors += '<br>';
@@ -110,7 +110,7 @@ export class ContactFormComponent implements OnInit {
     }
   }
 
-  toggleSubmitting() {
+  toggleSubmitting(): void {
     this.submitting = !this.submitting;
     this.submitBtnText = this.submitting ? 'Sending...' : 'Send message';
   }

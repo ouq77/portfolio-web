@@ -21,7 +21,8 @@ import {cancelableDelay, delay} from '../../shared/common/delay';
 import {elementInViewport} from '../../shared/common/element.in.viewport';
 import {STATIONS} from '../models/stations';
 import {IStation} from '../definitions/station';
-import {RAIL_TRIPS, UPCOMING_RAIL_TRIPS} from '../models/railtrips';
+import {RailTrip, RailTrips} from '../definitions/rail.trips';
+import {TravelService} from '../service/travel';
 
 @Component({
   selector: 'googlemap',
@@ -30,12 +31,13 @@ import {RAIL_TRIPS, UPCOMING_RAIL_TRIPS} from '../models/railtrips';
 })
 export class TravelMapComponent implements OnInit {
   public map: Map;
+  private _travelService: TravelService;
   private _additionalMarkerWait: number;
   private _markerDropWait: number;
   private _cityMarkers: Array<Marker>;
   private _cruiseLines: Array<Array<Polyline>>;
   private _flightLines: Array<Array<Polyline>>;
-  private _railLines: Array<Polyline>;
+  private _railPaths: Array<string>;
   private _mapMarkersDrawn: boolean;
   private _mapUtil: MapUtil;
   private _markerUtil: MarkerUtil;
@@ -46,9 +48,11 @@ export class TravelMapComponent implements OnInit {
   private _timeoutScroll: any;
   private _upcomingCruiseLines: Array<Array<Polyline>>;
   private _upcomingFlightLines: Array<Array<Polyline>>;
-  private _upcomingRailLines: Array<Polyline>;
+  private _upcomingRailPaths: Array<string>;
+  private _railPathsLoaded: boolean;
 
-  constructor() {
+  constructor(_travelService: TravelService) {
+    this._travelService = _travelService;
     this._additionalMarkerWait = 0;
     this._markerDropWait = 0;
     this._cityMarkers = [];
@@ -60,14 +64,27 @@ export class TravelMapComponent implements OnInit {
     this._tilesLoaded = false;
     this._upcomingCruiseLines = [];
     this._upcomingFlightLines = [];
+    this._railPathsLoaded = false;
   }
 
-  ngOnInit() {
+  ngOnInit(): void {
+    this.initRailTripPaths();
     this.initializeMap();
     this.initScrollListener();
   }
 
-  initializeMap() {
+  initRailTripPaths(): void {
+    this._travelService.getRailTripPaths().subscribe(
+      (resp: RailTrips) => {
+        this._railPaths = resp.railTrips.map((railTrip: RailTrip) => railTrip.path);
+        this._upcomingRailPaths = resp.upcomingRailTrips.map((railTrip: RailTrip) => railTrip.path);
+        this._railPathsLoaded = true;
+      },
+      () => console.warn('railTripPaths not returned'),
+    );
+  }
+
+  initializeMap(): void {
     const MAP_MAX_MOBILE_ZOOM_ZERO: number = 768;
     (($: JQueryStatic) =>
       delay(250).then(() => {
@@ -89,7 +106,7 @@ export class TravelMapComponent implements OnInit {
       }))(jQuery);
   }
 
-  initScrollListener() {
+  initScrollListener(): void {
     (($: JQueryStatic) => {
       $(document).on('scroll', () => {
         // wait half a second for scroll to stop
@@ -105,11 +122,15 @@ export class TravelMapComponent implements OnInit {
     })(jQuery);
   }
 
-  dropMarkersDrawLines(wait: number = 750) {
+  canDropMarkersDrawLines(): boolean {
+    return !this._mapMarkersDrawn && this._tilesLoaded && this._railPathsLoaded;
+  }
+
+  dropMarkersDrawLines(wait: number = 750): void {
     this._markerWait = wait;
     (($: JQueryStatic) =>
       $('.js_trigger_map_marker').each((index: number, triggerEl: Element) => {
-        if (!this._mapMarkersDrawn && elementInViewport($, <JQuery>$(triggerEl)) && this._tilesLoaded) {
+        if (this.canDropMarkersDrawLines() && elementInViewport($, <JQuery>$(triggerEl))) {
           this._mapMarkersDrawn = true;
           delay(this._markerWait).then(() => {
             AIRPORTS.forEach((airport: IAirport) => {
@@ -128,8 +149,8 @@ export class TravelMapComponent implements OnInit {
             this._polylineUtil.pushToPolylines(this._upcomingFlightLines, UPCOMING_FLIGHTS);
             this._polylineUtil.pushToPolylines(this._cruiseLines, CRUISES);
             this._polylineUtil.pushToPolylines(this._upcomingCruiseLines, UPCOMING_CRUISES);
-            this._polylineUtil.createPolylineFromPath(RAIL_TRIPS, this.map, '#ac3333');
-            this._polylineUtil.createDottedPolylineFromPath(UPCOMING_RAIL_TRIPS, this.map, '#ac3333');
+            this._polylineUtil.createPolylineFromPath(this._railPaths, this.map, '#ac3333');
+            this._polylineUtil.createDottedPolylineFromPath(this._upcomingRailPaths, this.map, '#ac3333');
 
             this._additionalMarkerWait = AIRPORTS.length + PORTS.length;
             CITIES.forEach((city: ICity, index: number) =>

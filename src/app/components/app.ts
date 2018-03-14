@@ -11,14 +11,14 @@ import {elementInViewport} from '../../shared/common/element.in.viewport';
 export class AppComponent implements OnInit {
   private _timeoutMenuAnimate: any;
 
-  ngOnInit() {
+  ngOnInit(): void {
     AppService.consoleMessage();
     this.initSmoothPageScroll();
   }
 
-  initSmoothPageScroll() {
+  initSmoothPageScroll(): void {
     (($: JQueryStatic) => {
-      $('a[href*="#"]:not([href="#"])').click((e: JQuery.Event) => {
+      $('a[href*="#"]:not([href="#"])').on('click', (e: JQuery.Event) => {
         e.preventDefault();
         const targetEl: HTMLAnchorElement = <HTMLAnchorElement><any>e.target;
         if (location.pathname.replace(/^\//, '') === targetEl.pathname.replace(/^\//, '')
@@ -33,7 +33,7 @@ export class AppComponent implements OnInit {
         }
       });
 
-      $('#js_menu_button').click((e: JQuery.Event) => {
+      $('#js_menu_button').on('click', (e: JQuery.Event) => {
         e.preventDefault();
 
         if (this._timeoutMenuAnimate) {

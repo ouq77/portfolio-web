@@ -18,17 +18,17 @@ export class EducationComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.getSchools();
-    this.getCodeSchool();
+    this.loadSchools();
+    this.loadCodeSchool();
   }
 
-  getSchools() {
+  loadSchools(): void {
     EducationService.getSchools().then(
       schools => this.schools = schools,
     );
   }
 
-  getCodeSchool() {
+  loadCodeSchool(): void {
     this._educationService.getCodeSchool().subscribe(
       codeSchool => this.codeSchool = <CodeSchool>codeSchool,
     );

@@ -10,11 +10,11 @@ import {Job} from '../definitions/job';
 export class ExperienceComponent implements OnInit {
   public jobs: Array<Job>;
 
-  ngOnInit() {
-    this.getJobs();
+  ngOnInit(): void {
+    this.loadJobs();
   }
 
-  getJobs() {
+  loadJobs(): void {
     ExperienceService.getJobs().then(
       jobs =>
         this.jobs = jobs,

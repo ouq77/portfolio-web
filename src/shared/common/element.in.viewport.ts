@@ -1,4 +1,4 @@
-export const elementInViewport = ($: JQueryStatic, el: JQuery) => {
+export const elementInViewport = ($: JQueryStatic, el: JQuery): boolean => {
   let viewportWidth = $(window).width();
   let viewportHeight = $(window).height();
   let minTop = $(document).scrollTop();

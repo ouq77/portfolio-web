@@ -20,19 +20,19 @@ export class HeaderComponent implements OnInit {
     this._headerService = _headerService;
   }
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.initImageIds();
     this.initResizeListener();
   }
 
-  initImageIds() {
+  initImageIds(): void {
     this._headerService.getImageIds().subscribe(
       resp => this.initGridRotator((<ImageIds>resp).imageIds),
-      err => console.warn('imageIds not returned'),
+      () => console.warn('imageIds not returned'),
     );
   }
 
-  initResizeListener() {
+  initResizeListener(): void {
     (($: JQueryStatic) => {
       $(window).on('resize', () => {
         this.setBannerSize(this._previousWidth, this._previousHeight);
@@ -40,7 +40,7 @@ export class HeaderComponent implements OnInit {
     })(jQuery);
   }
 
-  initGridRotator(imageIds: Array<string>) {
+  initGridRotator(imageIds: Array<string>): void {
     this._onDraw = () => {
       this.setDynamicCssValues();
     };
@@ -55,25 +55,25 @@ export class HeaderComponent implements OnInit {
     })(jQuery);
   }
 
-  initNavigation() {
+  initNavigation(): void {
     (($) => {
       $(() => {
         (<any>$('.navbar-wrapper')).stickUp(MENU_CONFIG);
 
-        $('.navbar.navbar-inverse.navbar-static-top a').click(
-          () =>
-            $('.navbar-collapse').addClass('hide-class').addClass('collapse').removeClass('in'),
+        $('.navbar.navbar-inverse.navbar-static-top a').on(
+          'click',
+          () => $('.navbar-collapse').addClass('hide-class').addClass('collapse').removeClass('in'),
         );
 
-        $('.navbar-toggle').click(
-          () =>
-            $('.navbar-collapse').removeClass('hide-class'),
+        $('.navbar-toggle').on(
+          'click',
+          () => $('.navbar-collapse').removeClass('hide-class'),
         );
       });
     })(jQuery);
   }
 
-  setBannerSize(previousWidth: number = 0, previousHeight: number = 0) {
+  setBannerSize(previousWidth: number = 0, previousHeight: number = 0): void {
     (($: JQueryStatic, previousWidth: number, previousHeight: number) => {
       const windowWidth: number = $(window).width();
       const windowHeight: number = $(window).height();
@@ -98,7 +98,7 @@ export class HeaderComponent implements OnInit {
     })(jQuery, previousWidth, previousHeight);
   }
 
-  setDynamicCssValues() {
+  setDynamicCssValues(): void {
     (($: JQueryStatic) => {
       const bannerText: JQuery = <JQuery>$('.banner-text');
       if ($(window).width() <= 480) {
