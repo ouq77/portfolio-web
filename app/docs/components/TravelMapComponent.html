@@ -208,6 +208,9 @@
                                 <li class="link">
                                     <a href="../injectables/HeaderService.html" >HeaderService</a>
                                 </li>
+                                <li class="link">
+                                    <a href="../injectables/TravelService.html" >TravelService</a>
+                                </li>
                         </ul>
                     </li>
             
@@ -264,6 +267,12 @@
                                 </li>
                                 <li class="link">
                                     <a href="../interfaces/Link.html" >Link</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/RailTrip.html" >RailTrip</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/RailTrips.html" >RailTrips</a>
                                 </li>
                                 <li class="link">
                                     <a href="../interfaces/School.html" >School</a>
@@ -532,6 +541,9 @@
                                        <li class="link">
                                            <a href="../injectables/HeaderService.html" >HeaderService</a>
                                        </li>
+                                       <li class="link">
+                                           <a href="../injectables/TravelService.html" >TravelService</a>
+                                       </li>
                                </ul>
                            </li>
                    
@@ -588,6 +600,12 @@
                                        </li>
                                        <li class="link">
                                            <a href="../interfaces/Link.html" >Link</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/RailTrip.html" >RailTrip</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/RailTrips.html" >RailTrips</a>
                                        </li>
                                        <li class="link">
                                            <a href="../interfaces/School.html" >School</a>
@@ -801,7 +819,11 @@
                             </li>
                             <li>
                                     <span class="modifier">Private</span>
-                                <a href="#_railLines">_railLines</a>
+                                <a href="#_railPaths">_railPaths</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_railPathsLoaded">_railPathsLoaded</a>
                             </li>
                             <li>
                                     <span class="modifier">Private</span>
@@ -817,6 +839,10 @@
                             </li>
                             <li>
                                     <span class="modifier">Private</span>
+                                <a href="#_travelService">_travelService</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
                                 <a href="#_upcomingCruiseLines">_upcomingCruiseLines</a>
                             </li>
                             <li>
@@ -825,7 +851,7 @@
                             </li>
                             <li>
                                     <span class="modifier">Private</span>
-                                <a href="#_upcomingRailLines">_upcomingRailLines</a>
+                                <a href="#_upcomingRailPaths">_upcomingRailPaths</a>
                             </li>
                             <li>
                                     <span class="modifier">Public</span>
@@ -843,10 +869,16 @@
                     <td class="col-md-4">
                         <ul class="index-list">
                             <li>
+                                <a href="#canDropMarkersDrawLines">canDropMarkersDrawLines</a>
+                            </li>
+                            <li>
                                 <a href="#dropMarkersDrawLines">dropMarkersDrawLines</a>
                             </li>
                             <li>
                                 <a href="#initializeMap">initializeMap</a>
+                            </li>
+                            <li>
+                                <a href="#initRailTripPaths">initRailTripPaths</a>
                             </li>
                             <li>
                                 <a href="#initScrollListener">initScrollListener</a>
@@ -867,15 +899,45 @@
                 <tbody>
                     <tr>
                         <td class="col-md-4">
-    <code>constructor()</code>
+    <code>constructor(_travelService: <a href="../injectables/TravelService.html">TravelService</a>)</code>
                         </td>
                     </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">src/travel/components/travel.gmap.ts:49</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="52" class="link-to-prism">src/travel/components/travel.gmap.ts:52</a></div>
                                 </td>
                             </tr>
     
+                    <tr>
+                        <td class="col-md-4">
+                                <div>
+                                        <b>Parameters :</b>
+                                        <table class="params">
+                                            <thead>
+                                                <tr>
+                                                    <td>Name</td>
+                                                        <td>Type</td>
+                                                    <td>Optional</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                    <tr>
+                                                        <td>_travelService</td>
+                                                      
+                                                            <td>
+                                                                        <code><a href="../injectables/TravelService.html" target="_self" >TravelService</a></code>
+                                                            </td>
+                                                      
+                                                        <td>
+                                                                no
+                                                        </td>
+                                                        
+                                                    </tr>
+                                            </tbody>
+                                        </table>
+                                </div>
+                        </td>
+                    </tr>
                 </tbody>
             </table>
     </section>
@@ -889,6 +951,43 @@
             <h3 id="methods">
                 Methods
             </h3>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="canDropMarkersDrawLines"></a>
+                            <span class="name">
+                                <b>
+                                canDropMarkersDrawLines
+                                </b>
+                                <a href="#canDropMarkersDrawLines"><span class="fa fa-link"></span></a>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+    <code>canDropMarkersDrawLines()</code>
+                        </td>
+                    </tr>
+    
+    
+                            <tr>
+                                <td class="col-md-4">
+                                        <div class="io-line">Defined in <a href="" data-line="125" class="link-to-prism">src/travel/components/travel.gmap.ts:125</a></div>
+                                </td>
+                            </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
             <table class="table table-sm table-bordered">
                 <tbody>
                     <tr>
@@ -911,7 +1010,7 @@
     
                             <tr>
                                 <td class="col-md-4">
-                                        <div class="io-line">Defined in <a href="" data-line="108" class="link-to-prism">src/travel/components/travel.gmap.ts:108</a></div>
+                                        <div class="io-line">Defined in <a href="" data-line="129" class="link-to-prism">src/travel/components/travel.gmap.ts:129</a></div>
                                 </td>
                             </tr>
     
@@ -984,7 +1083,44 @@
     
                             <tr>
                                 <td class="col-md-4">
-                                        <div class="io-line">Defined in <a href="" data-line="70" class="link-to-prism">src/travel/components/travel.gmap.ts:70</a></div>
+                                        <div class="io-line">Defined in <a href="" data-line="87" class="link-to-prism">src/travel/components/travel.gmap.ts:87</a></div>
+                                </td>
+                            </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="initRailTripPaths"></a>
+                            <span class="name">
+                                <b>
+                                initRailTripPaths
+                                </b>
+                                <a href="#initRailTripPaths"><span class="fa fa-link"></span></a>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+    <code>initRailTripPaths()</code>
+                        </td>
+                    </tr>
+    
+    
+                            <tr>
+                                <td class="col-md-4">
+                                        <div class="io-line">Defined in <a href="" data-line="76" class="link-to-prism">src/travel/components/travel.gmap.ts:76</a></div>
                                 </td>
                             </tr>
     
@@ -1021,7 +1157,7 @@
     
                             <tr>
                                 <td class="col-md-4">
-                                        <div class="io-line">Defined in <a href="" data-line="92" class="link-to-prism">src/travel/components/travel.gmap.ts:92</a></div>
+                                        <div class="io-line">Defined in <a href="" data-line="109" class="link-to-prism">src/travel/components/travel.gmap.ts:109</a></div>
                                 </td>
                             </tr>
     
@@ -1058,7 +1194,7 @@
     
                             <tr>
                                 <td class="col-md-4">
-                                        <div class="io-line">Defined in <a href="" data-line="65" class="link-to-prism">src/travel/components/travel.gmap.ts:65</a></div>
+                                        <div class="io-line">Defined in <a href="" data-line="70" class="link-to-prism">src/travel/components/travel.gmap.ts:70</a></div>
                                 </td>
                             </tr>
     
@@ -1108,7 +1244,7 @@
                         </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/travel/components/travel.gmap.ts:33</a></div>
+                                        <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/travel/components/travel.gmap.ts:35</a></div>
                                 </td>
                             </tr>
     
@@ -1143,7 +1279,7 @@
                         </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/travel/components/travel.gmap.ts:35</a></div>
+                                        <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/travel/components/travel.gmap.ts:37</a></div>
                                 </td>
                             </tr>
     
@@ -1178,7 +1314,7 @@
                         </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/travel/components/travel.gmap.ts:36</a></div>
+                                        <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/travel/components/travel.gmap.ts:38</a></div>
                                 </td>
                             </tr>
     
@@ -1213,7 +1349,7 @@
                         </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/travel/components/travel.gmap.ts:37</a></div>
+                                        <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/travel/components/travel.gmap.ts:39</a></div>
                                 </td>
                             </tr>
     
@@ -1248,7 +1384,7 @@
                         </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/travel/components/travel.gmap.ts:39</a></div>
+                                        <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/travel/components/travel.gmap.ts:41</a></div>
                                 </td>
                             </tr>
     
@@ -1283,7 +1419,7 @@
                         </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/travel/components/travel.gmap.ts:40</a></div>
+                                        <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/travel/components/travel.gmap.ts:42</a></div>
                                 </td>
                             </tr>
     
@@ -1318,7 +1454,7 @@
                         </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/travel/components/travel.gmap.ts:34</a></div>
+                                        <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/travel/components/travel.gmap.ts:36</a></div>
                                 </td>
                             </tr>
     
@@ -1353,7 +1489,7 @@
                         </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/travel/components/travel.gmap.ts:41</a></div>
+                                        <div class="io-line">Defined in <a href="" data-line="43" class="link-to-prism">src/travel/components/travel.gmap.ts:43</a></div>
                                 </td>
                             </tr>
     
@@ -1388,7 +1524,7 @@
                         </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <div class="io-line">Defined in <a href="" data-line="43" class="link-to-prism">src/travel/components/travel.gmap.ts:43</a></div>
+                                        <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/travel/components/travel.gmap.ts:45</a></div>
                                 </td>
                             </tr>
     
@@ -1423,7 +1559,7 @@
                         </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/travel/components/travel.gmap.ts:42</a></div>
+                                        <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/travel/components/travel.gmap.ts:44</a></div>
                                 </td>
                             </tr>
     
@@ -1434,31 +1570,66 @@
                 <tbody>
                     <tr>
                         <td class="col-md-4">
-                            <a name="_railLines"></a>
+                            <a name="_railPaths"></a>
                             <span class="name">
                                 <b>
                                     <span class="modifier">Private</span>
-                                _railLines
+                                _railPaths
                                 </b>
-                                <a href="#_railLines"><span class="fa fa-link"></span></a>
+                                <a href="#_railPaths"><span class="fa fa-link"></span></a>
                             </span>
                         </td>
                     </tr>
                     <tr>
                         <td class="col-md-4">
-                            <span class="modifier-icon fa fa-reset"></span><code>_railLines:     <code>Array&lt;Polyline&gt;</code>
+                            <span class="modifier-icon fa fa-reset"></span><code>_railPaths:     <code>Array&lt;string&gt;</code>
     </code>
                         </td>
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                <i>Type : </i>    <code>Array&lt;Polyline&gt;</code>
+                                <i>Type : </i>    <code>Array&lt;string&gt;</code>
     
                             </td>
                         </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/travel/components/travel.gmap.ts:38</a></div>
+                                        <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/travel/components/travel.gmap.ts:40</a></div>
+                                </td>
+                            </tr>
+    
+    
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="_railPathsLoaded"></a>
+                            <span class="name">
+                                <b>
+                                    <span class="modifier">Private</span>
+                                _railPathsLoaded
+                                </b>
+                                <a href="#_railPathsLoaded"><span class="fa fa-link"></span></a>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <span class="modifier-icon fa fa-reset"></span><code>_railPathsLoaded:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+    </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+    
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                        <div class="io-line">Defined in <a href="" data-line="52" class="link-to-prism">src/travel/components/travel.gmap.ts:52</a></div>
                                 </td>
                             </tr>
     
@@ -1493,7 +1664,7 @@
                         </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/travel/components/travel.gmap.ts:44</a></div>
+                                        <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">src/travel/components/travel.gmap.ts:46</a></div>
                                 </td>
                             </tr>
     
@@ -1528,7 +1699,7 @@
                         </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/travel/components/travel.gmap.ts:45</a></div>
+                                        <div class="io-line">Defined in <a href="" data-line="47" class="link-to-prism">src/travel/components/travel.gmap.ts:47</a></div>
                                 </td>
                             </tr>
     
@@ -1563,7 +1734,42 @@
                         </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">src/travel/components/travel.gmap.ts:46</a></div>
+                                        <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/travel/components/travel.gmap.ts:48</a></div>
+                                </td>
+                            </tr>
+    
+    
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="_travelService"></a>
+                            <span class="name">
+                                <b>
+                                    <span class="modifier">Private</span>
+                                _travelService
+                                </b>
+                                <a href="#_travelService"><span class="fa fa-link"></span></a>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <span class="modifier-icon fa fa-reset"></span><code>_travelService:     <code><a href="../injectables/TravelService.html" target="_self" >TravelService</a></code>
+    </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <i>Type : </i>    <code><a href="../injectables/TravelService.html" target="_self" >TravelService</a></code>
+    
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                        <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/travel/components/travel.gmap.ts:34</a></div>
                                 </td>
                             </tr>
     
@@ -1598,7 +1804,7 @@
                         </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <div class="io-line">Defined in <a href="" data-line="47" class="link-to-prism">src/travel/components/travel.gmap.ts:47</a></div>
+                                        <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">src/travel/components/travel.gmap.ts:49</a></div>
                                 </td>
                             </tr>
     
@@ -1633,7 +1839,7 @@
                         </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/travel/components/travel.gmap.ts:48</a></div>
+                                        <div class="io-line">Defined in <a href="" data-line="50" class="link-to-prism">src/travel/components/travel.gmap.ts:50</a></div>
                                 </td>
                             </tr>
     
@@ -1644,31 +1850,31 @@
                 <tbody>
                     <tr>
                         <td class="col-md-4">
-                            <a name="_upcomingRailLines"></a>
+                            <a name="_upcomingRailPaths"></a>
                             <span class="name">
                                 <b>
                                     <span class="modifier">Private</span>
-                                _upcomingRailLines
+                                _upcomingRailPaths
                                 </b>
-                                <a href="#_upcomingRailLines"><span class="fa fa-link"></span></a>
+                                <a href="#_upcomingRailPaths"><span class="fa fa-link"></span></a>
                             </span>
                         </td>
                     </tr>
                     <tr>
                         <td class="col-md-4">
-                            <span class="modifier-icon fa fa-reset"></span><code>_upcomingRailLines:     <code>Array&lt;Polyline&gt;</code>
+                            <span class="modifier-icon fa fa-reset"></span><code>_upcomingRailPaths:     <code>Array&lt;string&gt;</code>
     </code>
                         </td>
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                <i>Type : </i>    <code>Array&lt;Polyline&gt;</code>
+                                <i>Type : </i>    <code>Array&lt;string&gt;</code>
     
                             </td>
                         </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">src/travel/components/travel.gmap.ts:49</a></div>
+                                        <div class="io-line">Defined in <a href="" data-line="51" class="link-to-prism">src/travel/components/travel.gmap.ts:51</a></div>
                                 </td>
                             </tr>
     
@@ -1703,7 +1909,7 @@
                         </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/travel/components/travel.gmap.ts:32</a></div>
+                                        <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/travel/components/travel.gmap.ts:33</a></div>
                                 </td>
                             </tr>
     
@@ -1739,7 +1945,8 @@ import {cancelableDelay, delay} from &#x27;../../shared/common/delay&#x27;;
 import {elementInViewport} from &#x27;../../shared/common/element.in.viewport&#x27;;
 import {STATIONS} from &#x27;../models/stations&#x27;;
 import {IStation} from &#x27;../definitions/station&#x27;;
-import {RAIL_TRIPS, UPCOMING_RAIL_TRIPS} from &#x27;../models/railtrips&#x27;;
+import {RailTrip, RailTrips} from &#x27;../definitions/rail.trips&#x27;;
+import {TravelService} from &#x27;../service/travel&#x27;;
 
 @Component({
   selector: &#x27;googlemap&#x27;,
@@ -1748,12 +1955,13 @@ import {RAIL_TRIPS, UPCOMING_RAIL_TRIPS} from &#x27;../models/railtrips&#x27;;
 })
 export class TravelMapComponent implements OnInit {
   public map: Map;
+  private _travelService: TravelService;
   private _additionalMarkerWait: number;
   private _markerDropWait: number;
   private _cityMarkers: Array&lt;Marker&gt;;
   private _cruiseLines: Array&lt;Array&lt;Polyline&gt;&gt;;
   private _flightLines: Array&lt;Array&lt;Polyline&gt;&gt;;
-  private _railLines: Array&lt;Polyline&gt;;
+  private _railPaths: Array&lt;string&gt;;
   private _mapMarkersDrawn: boolean;
   private _mapUtil: MapUtil;
   private _markerUtil: MarkerUtil;
@@ -1764,9 +1972,11 @@ export class TravelMapComponent implements OnInit {
   private _timeoutScroll: any;
   private _upcomingCruiseLines: Array&lt;Array&lt;Polyline&gt;&gt;;
   private _upcomingFlightLines: Array&lt;Array&lt;Polyline&gt;&gt;;
-  private _upcomingRailLines: Array&lt;Polyline&gt;;
+  private _upcomingRailPaths: Array&lt;string&gt;;
+  private _railPathsLoaded: boolean;
 
-  constructor() {
+  constructor(_travelService: TravelService) {
+    this._travelService &#x3D; _travelService;
     this._additionalMarkerWait &#x3D; 0;
     this._markerDropWait &#x3D; 0;
     this._cityMarkers &#x3D; [];
@@ -1778,14 +1988,27 @@ export class TravelMapComponent implements OnInit {
     this._tilesLoaded &#x3D; false;
     this._upcomingCruiseLines &#x3D; [];
     this._upcomingFlightLines &#x3D; [];
+    this._railPathsLoaded &#x3D; false;
   }
 
-  ngOnInit() {
+  ngOnInit(): void {
+    this.initRailTripPaths();
     this.initializeMap();
     this.initScrollListener();
   }
 
-  initializeMap() {
+  initRailTripPaths(): void {
+    this._travelService.getRailTripPaths().subscribe(
+      (resp: RailTrips) &#x3D;&gt; {
+        this._railPaths &#x3D; resp.railTrips.map((railTrip: RailTrip) &#x3D;&gt; railTrip.path);
+        this._upcomingRailPaths &#x3D; resp.upcomingRailTrips.map((railTrip: RailTrip) &#x3D;&gt; railTrip.path);
+        this._railPathsLoaded &#x3D; true;
+      },
+      () &#x3D;&gt; console.warn(&#x27;railTripPaths not returned&#x27;),
+    );
+  }
+
+  initializeMap(): void {
     const MAP_MAX_MOBILE_ZOOM_ZERO: number &#x3D; 768;
     (($: JQueryStatic) &#x3D;&gt;
       delay(250).then(() &#x3D;&gt; {
@@ -1807,7 +2030,7 @@ export class TravelMapComponent implements OnInit {
       }))(jQuery);
   }
 
-  initScrollListener() {
+  initScrollListener(): void {
     (($: JQueryStatic) &#x3D;&gt; {
       $(document).on(&#x27;scroll&#x27;, () &#x3D;&gt; {
         // wait half a second for scroll to stop
@@ -1823,11 +2046,15 @@ export class TravelMapComponent implements OnInit {
     })(jQuery);
   }
 
-  dropMarkersDrawLines(wait: number &#x3D; 750) {
+  canDropMarkersDrawLines(): boolean {
+    return !this._mapMarkersDrawn &amp;&amp; this._tilesLoaded &amp;&amp; this._railPathsLoaded;
+  }
+
+  dropMarkersDrawLines(wait: number &#x3D; 750): void {
     this._markerWait &#x3D; wait;
     (($: JQueryStatic) &#x3D;&gt;
       $(&#x27;.js_trigger_map_marker&#x27;).each((index: number, triggerEl: Element) &#x3D;&gt; {
-        if (!this._mapMarkersDrawn &amp;&amp; elementInViewport($, &lt;JQuery&gt;$(triggerEl)) &amp;&amp; this._tilesLoaded) {
+        if (this.canDropMarkersDrawLines() &amp;&amp; elementInViewport($, &lt;JQuery&gt;$(triggerEl))) {
           this._mapMarkersDrawn &#x3D; true;
           delay(this._markerWait).then(() &#x3D;&gt; {
             AIRPORTS.forEach((airport: IAirport) &#x3D;&gt; {
@@ -1846,8 +2073,8 @@ export class TravelMapComponent implements OnInit {
             this._polylineUtil.pushToPolylines(this._upcomingFlightLines, UPCOMING_FLIGHTS);
             this._polylineUtil.pushToPolylines(this._cruiseLines, CRUISES);
             this._polylineUtil.pushToPolylines(this._upcomingCruiseLines, UPCOMING_CRUISES);
-            this._polylineUtil.createPolylineFromPath(RAIL_TRIPS, this.map, &#x27;#ac3333&#x27;);
-            this._polylineUtil.createDottedPolylineFromPath(UPCOMING_RAIL_TRIPS, this.map, &#x27;#ac3333&#x27;);
+            this._polylineUtil.createPolylineFromPath(this._railPaths, this.map, &#x27;#ac3333&#x27;);
+            this._polylineUtil.createDottedPolylineFromPath(this._upcomingRailPaths, this.map, &#x27;#ac3333&#x27;);
 
             this._additionalMarkerWait &#x3D; AIRPORTS.length + PORTS.length;
             CITIES.forEach((city: ICity, index: number) &#x3D;&gt;

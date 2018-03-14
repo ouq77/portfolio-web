@@ -208,6 +208,9 @@
                                 <li class="link">
                                     <a href="../injectables/HeaderService.html" >HeaderService</a>
                                 </li>
+                                <li class="link">
+                                    <a href="../injectables/TravelService.html" >TravelService</a>
+                                </li>
                         </ul>
                     </li>
             
@@ -264,6 +267,12 @@
                                 </li>
                                 <li class="link">
                                     <a href="../interfaces/Link.html" >Link</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/RailTrip.html" >RailTrip</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/RailTrips.html" >RailTrips</a>
                                 </li>
                                 <li class="link">
                                     <a href="../interfaces/School.html" >School</a>
@@ -532,6 +541,9 @@
                                        <li class="link">
                                            <a href="../injectables/HeaderService.html" >HeaderService</a>
                                        </li>
+                                       <li class="link">
+                                           <a href="../injectables/TravelService.html" >TravelService</a>
+                                       </li>
                                </ul>
                            </li>
                    
@@ -588,6 +600,12 @@
                                        </li>
                                        <li class="link">
                                            <a href="../interfaces/Link.html" >Link</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/RailTrip.html" >RailTrip</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/RailTrips.html" >RailTrips</a>
                                        </li>
                                        <li class="link">
                                            <a href="../interfaces/School.html" >School</a>
@@ -775,7 +793,7 @@
                     <td class="col-md-4">
                         <ul class="index-list">
                             <li>
-                                <a href="#getJobs">getJobs</a>
+                                <a href="#loadJobs">loadJobs</a>
                             </li>
                             <li>
                                 <a href="#ngOnInit">ngOnInit</a>
@@ -801,18 +819,18 @@
                 <tbody>
                     <tr>
                         <td class="col-md-4">
-                            <a name="getJobs"></a>
+                            <a name="loadJobs"></a>
                             <span class="name">
                                 <b>
-                                getJobs
+                                loadJobs
                                 </b>
-                                <a href="#getJobs"><span class="fa fa-link"></span></a>
+                                <a href="#loadJobs"><span class="fa fa-link"></span></a>
                             </span>
                         </td>
                     </tr>
                     <tr>
                         <td class="col-md-4">
-    <code>getJobs()</code>
+    <code>loadJobs()</code>
                         </td>
                     </tr>
     
@@ -931,11 +949,11 @@ import {Job} from &#x27;../definitions/job&#x27;;
 export class ExperienceComponent implements OnInit {
   public jobs: Array&lt;Job&gt;;
 
-  ngOnInit() {
-    this.getJobs();
+  ngOnInit(): void {
+    this.loadJobs();
   }
 
-  getJobs() {
+  loadJobs(): void {
     ExperienceService.getJobs().then(
       jobs &#x3D;&gt;
         this.jobs &#x3D; jobs,

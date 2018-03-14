@@ -208,6 +208,9 @@
                                 <li class="link">
                                     <a href="../injectables/HeaderService.html" >HeaderService</a>
                                 </li>
+                                <li class="link">
+                                    <a href="../injectables/TravelService.html" >TravelService</a>
+                                </li>
                         </ul>
                     </li>
             
@@ -264,6 +267,12 @@
                                 </li>
                                 <li class="link">
                                     <a href="../interfaces/Link.html" >Link</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/RailTrip.html" >RailTrip</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/RailTrips.html" >RailTrips</a>
                                 </li>
                                 <li class="link">
                                     <a href="../interfaces/School.html" >School</a>
@@ -532,6 +541,9 @@
                                        <li class="link">
                                            <a href="../injectables/HeaderService.html" >HeaderService</a>
                                        </li>
+                                       <li class="link">
+                                           <a href="../injectables/TravelService.html" >TravelService</a>
+                                       </li>
                                </ul>
                            </li>
                    
@@ -588,6 +600,12 @@
                                        </li>
                                        <li class="link">
                                            <a href="../interfaces/Link.html" >Link</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/RailTrip.html" >RailTrip</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/RailTrips.html" >RailTrips</a>
                                        </li>
                                        <li class="link">
                                            <a href="../interfaces/School.html" >School</a>
@@ -1115,12 +1133,12 @@ export class SkillsComponent implements OnInit {
     this._skillChartDrawn &#x3D; false;
   }
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.getSkills();
     this.initScrollListener();
   }
 
-  getSkills() {
+  getSkills(): void {
     SkillService.getSkills().then(
       (skills) &#x3D;&gt; {
         this.skills &#x3D; skills;
@@ -1129,7 +1147,7 @@ export class SkillsComponent implements OnInit {
     );
   }
 
-  initScrollListener() {
+  initScrollListener(): void {
     (($: JQueryStatic) &#x3D;&gt; {
       $(document).on(&#x27;scroll&#x27;, () &#x3D;&gt; {
         // wait half a second for scroll to stop
@@ -1149,7 +1167,7 @@ export class SkillsComponent implements OnInit {
     }
   }
 
-  drawChart() {
+  drawChart(): void {
     (($) &#x3D;&gt; {
       $(&#x27;.js_trigger_skills&#x27;).each((index: number, triggerEl: Element) &#x3D;&gt; {
         if (!this._skillChartDrawn &amp;&amp; elementInViewport($, &lt;JQuery&gt;$(triggerEl))) {

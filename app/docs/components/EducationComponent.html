@@ -208,6 +208,9 @@
                                 <li class="link">
                                     <a href="../injectables/HeaderService.html" >HeaderService</a>
                                 </li>
+                                <li class="link">
+                                    <a href="../injectables/TravelService.html" >TravelService</a>
+                                </li>
                         </ul>
                     </li>
             
@@ -264,6 +267,12 @@
                                 </li>
                                 <li class="link">
                                     <a href="../interfaces/Link.html" >Link</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/RailTrip.html" >RailTrip</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/RailTrips.html" >RailTrips</a>
                                 </li>
                                 <li class="link">
                                     <a href="../interfaces/School.html" >School</a>
@@ -532,6 +541,9 @@
                                        <li class="link">
                                            <a href="../injectables/HeaderService.html" >HeaderService</a>
                                        </li>
+                                       <li class="link">
+                                           <a href="../injectables/TravelService.html" >TravelService</a>
+                                       </li>
                                </ul>
                            </li>
                    
@@ -588,6 +600,12 @@
                                        </li>
                                        <li class="link">
                                            <a href="../interfaces/Link.html" >Link</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/RailTrip.html" >RailTrip</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/RailTrips.html" >RailTrips</a>
                                        </li>
                                        <li class="link">
                                            <a href="../interfaces/School.html" >School</a>
@@ -783,10 +801,10 @@
                     <td class="col-md-4">
                         <ul class="index-list">
                             <li>
-                                <a href="#getCodeSchool">getCodeSchool</a>
+                                <a href="#loadCodeSchool">loadCodeSchool</a>
                             </li>
                             <li>
-                                <a href="#getSchools">getSchools</a>
+                                <a href="#loadSchools">loadSchools</a>
                             </li>
                             <li>
                                 <a href="#ngOnInit">ngOnInit</a>
@@ -860,18 +878,18 @@
                 <tbody>
                     <tr>
                         <td class="col-md-4">
-                            <a name="getCodeSchool"></a>
+                            <a name="loadCodeSchool"></a>
                             <span class="name">
                                 <b>
-                                getCodeSchool
+                                loadCodeSchool
                                 </b>
-                                <a href="#getCodeSchool"><span class="fa fa-link"></span></a>
+                                <a href="#loadCodeSchool"><span class="fa fa-link"></span></a>
                             </span>
                         </td>
                     </tr>
                     <tr>
                         <td class="col-md-4">
-    <code>getCodeSchool()</code>
+    <code>loadCodeSchool()</code>
                         </td>
                     </tr>
     
@@ -897,18 +915,18 @@
                 <tbody>
                     <tr>
                         <td class="col-md-4">
-                            <a name="getSchools"></a>
+                            <a name="loadSchools"></a>
                             <span class="name">
                                 <b>
-                                getSchools
+                                loadSchools
                                 </b>
-                                <a href="#getSchools"><span class="fa fa-link"></span></a>
+                                <a href="#loadSchools"><span class="fa fa-link"></span></a>
                             </span>
                         </td>
                     </tr>
                     <tr>
                         <td class="col-md-4">
-    <code>getSchools()</code>
+    <code>loadSchools()</code>
                         </td>
                     </tr>
     
@@ -1105,17 +1123,17 @@ export class EducationComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.getSchools();
-    this.getCodeSchool();
+    this.loadSchools();
+    this.loadCodeSchool();
   }
 
-  getSchools() {
+  loadSchools(): void {
     EducationService.getSchools().then(
       schools &#x3D;&gt; this.schools &#x3D; schools,
     );
   }
 
-  getCodeSchool() {
+  loadCodeSchool(): void {
     this._educationService.getCodeSchool().subscribe(
       codeSchool &#x3D;&gt; this.codeSchool &#x3D; &lt;CodeSchool&gt;codeSchool,
     );

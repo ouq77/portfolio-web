@@ -208,6 +208,9 @@
                                 <li class="link">
                                     <a href="../injectables/HeaderService.html" >HeaderService</a>
                                 </li>
+                                <li class="link">
+                                    <a href="../injectables/TravelService.html" >TravelService</a>
+                                </li>
                         </ul>
                     </li>
             
@@ -264,6 +267,12 @@
                                 </li>
                                 <li class="link">
                                     <a href="../interfaces/Link.html" >Link</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/RailTrip.html" >RailTrip</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/RailTrips.html" >RailTrips</a>
                                 </li>
                                 <li class="link">
                                     <a href="../interfaces/School.html" >School</a>
@@ -532,6 +541,9 @@
                                        <li class="link">
                                            <a href="../injectables/HeaderService.html" >HeaderService</a>
                                        </li>
+                                       <li class="link">
+                                           <a href="../injectables/TravelService.html" >TravelService</a>
+                                       </li>
                                </ul>
                            </li>
                    
@@ -588,6 +600,12 @@
                                        </li>
                                        <li class="link">
                                            <a href="../interfaces/Link.html" >Link</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/RailTrip.html" >RailTrip</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/RailTrips.html" >RailTrips</a>
                                        </li>
                                        <li class="link">
                                            <a href="../interfaces/School.html" >School</a>
@@ -1429,19 +1447,19 @@ export class HeaderComponent implements OnInit {
     this._headerService &#x3D; _headerService;
   }
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.initImageIds();
     this.initResizeListener();
   }
 
-  initImageIds() {
+  initImageIds(): void {
     this._headerService.getImageIds().subscribe(
       resp &#x3D;&gt; this.initGridRotator((&lt;ImageIds&gt;resp).imageIds),
-      err &#x3D;&gt; console.warn(&#x27;imageIds not returned&#x27;),
+      () &#x3D;&gt; console.warn(&#x27;imageIds not returned&#x27;),
     );
   }
 
-  initResizeListener() {
+  initResizeListener(): void {
     (($: JQueryStatic) &#x3D;&gt; {
       $(window).on(&#x27;resize&#x27;, () &#x3D;&gt; {
         this.setBannerSize(this._previousWidth, this._previousHeight);
@@ -1449,7 +1467,7 @@ export class HeaderComponent implements OnInit {
     })(jQuery);
   }
 
-  initGridRotator(imageIds: Array&lt;string&gt;) {
+  initGridRotator(imageIds: Array&lt;string&gt;): void {
     this._onDraw &#x3D; () &#x3D;&gt; {
       this.setDynamicCssValues();
     };
@@ -1464,25 +1482,25 @@ export class HeaderComponent implements OnInit {
     })(jQuery);
   }
 
-  initNavigation() {
+  initNavigation(): void {
     (($) &#x3D;&gt; {
       $(() &#x3D;&gt; {
         (&lt;any&gt;$(&#x27;.navbar-wrapper&#x27;)).stickUp(MENU_CONFIG);
 
-        $(&#x27;.navbar.navbar-inverse.navbar-static-top a&#x27;).click(
-          () &#x3D;&gt;
-            $(&#x27;.navbar-collapse&#x27;).addClass(&#x27;hide-class&#x27;).addClass(&#x27;collapse&#x27;).removeClass(&#x27;in&#x27;),
+        $(&#x27;.navbar.navbar-inverse.navbar-static-top a&#x27;).on(
+          &#x27;click&#x27;,
+          () &#x3D;&gt; $(&#x27;.navbar-collapse&#x27;).addClass(&#x27;hide-class&#x27;).addClass(&#x27;collapse&#x27;).removeClass(&#x27;in&#x27;),
         );
 
-        $(&#x27;.navbar-toggle&#x27;).click(
-          () &#x3D;&gt;
-            $(&#x27;.navbar-collapse&#x27;).removeClass(&#x27;hide-class&#x27;),
+        $(&#x27;.navbar-toggle&#x27;).on(
+          &#x27;click&#x27;,
+          () &#x3D;&gt; $(&#x27;.navbar-collapse&#x27;).removeClass(&#x27;hide-class&#x27;),
         );
       });
     })(jQuery);
   }
 
-  setBannerSize(previousWidth: number &#x3D; 0, previousHeight: number &#x3D; 0) {
+  setBannerSize(previousWidth: number &#x3D; 0, previousHeight: number &#x3D; 0): void {
     (($: JQueryStatic, previousWidth: number, previousHeight: number) &#x3D;&gt; {
       const windowWidth: number &#x3D; $(window).width();
       const windowHeight: number &#x3D; $(window).height();
@@ -1507,7 +1525,7 @@ export class HeaderComponent implements OnInit {
     })(jQuery, previousWidth, previousHeight);
   }
 
-  setDynamicCssValues() {
+  setDynamicCssValues(): void {
     (($: JQueryStatic) &#x3D;&gt; {
       const bannerText: JQuery &#x3D; &lt;JQuery&gt;$(&#x27;.banner-text&#x27;);
       if ($(window).width() &lt;&#x3D; 480) {

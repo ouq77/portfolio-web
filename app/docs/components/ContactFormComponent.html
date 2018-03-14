@@ -208,6 +208,9 @@
                                 <li class="link">
                                     <a href="../injectables/HeaderService.html" >HeaderService</a>
                                 </li>
+                                <li class="link">
+                                    <a href="../injectables/TravelService.html" >TravelService</a>
+                                </li>
                         </ul>
                     </li>
             
@@ -264,6 +267,12 @@
                                 </li>
                                 <li class="link">
                                     <a href="../interfaces/Link.html" >Link</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/RailTrip.html" >RailTrip</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/RailTrips.html" >RailTrips</a>
                                 </li>
                                 <li class="link">
                                     <a href="../interfaces/School.html" >School</a>
@@ -532,6 +541,9 @@
                                        <li class="link">
                                            <a href="../injectables/HeaderService.html" >HeaderService</a>
                                        </li>
+                                       <li class="link">
+                                           <a href="../injectables/TravelService.html" >TravelService</a>
+                                       </li>
                                </ul>
                            </li>
                    
@@ -588,6 +600,12 @@
                                        </li>
                                        <li class="link">
                                            <a href="../interfaces/Link.html" >Link</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/RailTrip.html" >RailTrip</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/RailTrips.html" >RailTrips</a>
                                        </li>
                                        <li class="link">
                                            <a href="../interfaces/School.html" >School</a>
@@ -825,13 +843,13 @@
                                 <a href="#errorFromCode">errorFromCode</a>
                             </li>
                             <li>
-                                <a href="#getErrorMessages">getErrorMessages</a>
-                            </li>
-                            <li>
                                 <a href="#handleErrors">handleErrors</a>
                             </li>
                             <li>
                                 <a href="#handleSuccess">handleSuccess</a>
+                            </li>
+                            <li>
+                                <a href="#loadErrorMessages">loadErrorMessages</a>
                             </li>
                             <li>
                                 <a href="#ngOnInit">ngOnInit</a>
@@ -1064,43 +1082,6 @@
                 <tbody>
                     <tr>
                         <td class="col-md-4">
-                            <a name="getErrorMessages"></a>
-                            <span class="name">
-                                <b>
-                                getErrorMessages
-                                </b>
-                                <a href="#getErrorMessages"><span class="fa fa-link"></span></a>
-                            </span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-md-4">
-    <code>getErrorMessages()</code>
-                        </td>
-                    </tr>
-    
-    
-                            <tr>
-                                <td class="col-md-4">
-                                        <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">src/contact/components/contact.form.ts:49</a></div>
-                                </td>
-                            </tr>
-    
-                    <tr>
-                        <td class="col-md-4">
-    
-                                <div class="io-description">
-                                    <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
-    
-                                </div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-4">
                             <a name="handleErrors"></a>
                             <span class="name">
                                 <b>
@@ -1189,6 +1170,43 @@
                             <tr>
                                 <td class="col-md-4">
                                         <div class="io-line">Defined in <a href="" data-line="78" class="link-to-prism">src/contact/components/contact.form.ts:78</a></div>
+                                </td>
+                            </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="loadErrorMessages"></a>
+                            <span class="name">
+                                <b>
+                                loadErrorMessages
+                                </b>
+                                <a href="#loadErrorMessages"><span class="fa fa-link"></span></a>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+    <code>loadErrorMessages()</code>
+                        </td>
+                    </tr>
+    
+    
+                            <tr>
+                                <td class="col-md-4">
+                                        <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">src/contact/components/contact.form.ts:49</a></div>
                                 </td>
                             </tr>
     
@@ -1828,11 +1846,11 @@ export class ContactFormComponent implements OnInit {
     this._contactService &#x3D; contactService;
   }
 
-  ngOnInit() {
-    this.getErrorMessages();
+  ngOnInit(): void {
+    this.loadErrorMessages();
   }
 
-  getErrorMessages() {
+  loadErrorMessages(): void {
     ContactService.getErrorMessages().then(
       (errorMessages) &#x3D;&gt; {
         this.errorMessages &#x3D; errorMessages;
@@ -1840,11 +1858,11 @@ export class ContactFormComponent implements OnInit {
     );
   }
 
-  onClick() {
+  onClick(): void {
     this.submitClicked &#x3D; true;
   }
 
-  onSubmit() {
+  onSubmit(): void {
     this.toggleSubmitting();
     this.serverErrors &#x3D; &#x27;&#x27;;
 
@@ -1856,17 +1874,17 @@ export class ContactFormComponent implements OnInit {
     );
 
     this._contactService.send(submission).subscribe(
-      resp &#x3D;&gt; this.handleSuccess(),
+      () &#x3D;&gt; this.handleSuccess(),
       err &#x3D;&gt; this.handleErrors(err),
     );
   }
 
-  handleSuccess() {
+  handleSuccess(): void {
     this.toggleSubmitting();
     this.sentSuccessfully &#x3D; true;
   }
 
-  handleErrors(err: WrappedError) {
+  handleErrors(err: WrappedError): void {
     this.toggleSubmitting();
     switch (err.status) {
       case 400:
@@ -1887,7 +1905,7 @@ export class ContactFormComponent implements OnInit {
     }).message;
   }
 
-  appendError(error: string) {
+  appendError(error: string): void {
     if (error) {
       if (this.serverErrors) {
         this.serverErrors +&#x3D; &#x27;&lt;br&gt;&#x27;;
@@ -1896,7 +1914,7 @@ export class ContactFormComponent implements OnInit {
     }
   }
 
-  toggleSubmitting() {
+  toggleSubmitting(): void {
     this.submitting &#x3D; !this.submitting;
     this.submitBtnText &#x3D; this.submitting ? &#x27;Sending...&#x27; : &#x27;Send message&#x27;;
   }

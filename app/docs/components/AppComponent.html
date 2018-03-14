@@ -208,6 +208,9 @@
                                 <li class="link">
                                     <a href="../injectables/HeaderService.html" >HeaderService</a>
                                 </li>
+                                <li class="link">
+                                    <a href="../injectables/TravelService.html" >TravelService</a>
+                                </li>
                         </ul>
                     </li>
             
@@ -264,6 +267,12 @@
                                 </li>
                                 <li class="link">
                                     <a href="../interfaces/Link.html" >Link</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/RailTrip.html" >RailTrip</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/RailTrips.html" >RailTrips</a>
                                 </li>
                                 <li class="link">
                                     <a href="../interfaces/School.html" >School</a>
@@ -532,6 +541,9 @@
                                        <li class="link">
                                            <a href="../injectables/HeaderService.html" >HeaderService</a>
                                        </li>
+                                       <li class="link">
+                                           <a href="../injectables/TravelService.html" >TravelService</a>
+                                       </li>
                                </ul>
                            </li>
                    
@@ -588,6 +600,12 @@
                                        </li>
                                        <li class="link">
                                            <a href="../interfaces/Link.html" >Link</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/RailTrip.html" >RailTrip</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/RailTrips.html" >RailTrips</a>
                                        </li>
                                        <li class="link">
                                            <a href="../interfaces/School.html" >School</a>
@@ -932,14 +950,14 @@ import {elementInViewport} from &#x27;../../shared/common/element.in.viewport&#x
 export class AppComponent implements OnInit {
   private _timeoutMenuAnimate: any;
 
-  ngOnInit() {
+  ngOnInit(): void {
     AppService.consoleMessage();
     this.initSmoothPageScroll();
   }
 
-  initSmoothPageScroll() {
+  initSmoothPageScroll(): void {
     (($: JQueryStatic) &#x3D;&gt; {
-      $(&#x27;a[href*&#x3D;&quot;#&quot;]:not([href&#x3D;&quot;#&quot;])&#x27;).click((e: JQuery.Event) &#x3D;&gt; {
+      $(&#x27;a[href*&#x3D;&quot;#&quot;]:not([href&#x3D;&quot;#&quot;])&#x27;).on(&#x27;click&#x27;, (e: JQuery.Event) &#x3D;&gt; {
         e.preventDefault();
         const targetEl: HTMLAnchorElement &#x3D; &lt;HTMLAnchorElement&gt;&lt;any&gt;e.target;
         if (location.pathname.replace(/^\//, &#x27;&#x27;) &#x3D;&#x3D;&#x3D; targetEl.pathname.replace(/^\//, &#x27;&#x27;)
@@ -954,7 +972,7 @@ export class AppComponent implements OnInit {
         }
       });
 
-      $(&#x27;#js_menu_button&#x27;).click((e: JQuery.Event) &#x3D;&gt; {
+      $(&#x27;#js_menu_button&#x27;).on(&#x27;click&#x27;, (e: JQuery.Event) &#x3D;&gt; {
         e.preventDefault();
 
         if (this._timeoutMenuAnimate) {

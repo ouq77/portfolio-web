@@ -1,5 +1,5 @@
 const instagramImages = require('./../modules/instagram.images')
-const randomImages = require('./../modules/random.images.js')
+const randomImages = require('./../modules/random.images')
 
 module.exports = (req, res) => {
   const randomImageIds = randomImages.getIds()
