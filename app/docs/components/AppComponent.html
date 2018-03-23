@@ -981,7 +981,7 @@ export class AppComponent implements OnInit {
         // wait half a second for menu collapse/expand to finish
         this._timeoutMenuAnimate &#x3D; cancelableDelay(500, () &#x3D;&gt; {
           if ($(&#x27;#js_navbar&#x27;).hasClass(&#x27;in&#x27;)) {
-            if (!elementInViewport($, &lt;JQuery&gt;$(&#x27;#js_links_li&#x27;))) {
+            if (!elementInViewport($, &lt;JQuery&gt;$(&#x27;#js_contact_li&#x27;))) {
               $(&#x27;html,body&#x27;).animate({
                 scrollTop: $(&#x27;#js_menu_button&#x27;).offset().top,
               }, 1000);
