@@ -22,7 +22,6 @@ export const MENU_CONFIG: any = {
     4: 'education',
     5: 'travel',
     6: 'contact',
-    7: 'links',
   },
   topMargin: 'auto',
 };

@@ -15,7 +15,7 @@
     varScroll = 0,
     comparator;
 
-  $(window).scroll(function() {
+  $(window).on('scroll', function() {
     var st = $(this).scrollTop();
     if (st > lastScrollTop) {
       scrollDir = 'down';
