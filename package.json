@@ -1,6 +1,6 @@
 {
   "name": "ouq77-portfolio",
-  "version": "5.5.8",
+  "version": "5.5.9",
   "author": "Louw Swart",
   "description": "On-line portfolio of Louw Swart, based on 'angular2-seed'",
   "license": "MIT",
@@ -18,14 +18,14 @@
     "@angular/http": "5.2.9",
     "@angular/platform-browser": "5.2.9",
     "@angular/platform-browser-dynamic": "5.2.9",
-    "core-js": "2.5.3",
-    "rxjs": "5.5.7",
-    "zone.js": "0.8.20"
+    "core-js": "2.5.4",
+    "rxjs": "5.5.8",
+    "zone.js": "0.8.23"
   },
   "devDependencies": {
     "@angular/compiler": "5.2.9",
     "@angular/compiler-cli": "5.2.9",
-    "@compodoc/compodoc": "1.0.9",
+    "@compodoc/compodoc": "1.1.1",
     "@types/dateformat": "1.0.1",
     "@types/es6-shim": "0.31.36",
     "@types/googlemaps": "3.30.8",
@@ -37,14 +37,14 @@
     "convict": "4.2.0",
     "cpy-cli": "1.0.1",
     "dateformat": "3.0.3",
-    "html-minifier": "3.5.12",
+    "html-minifier": "3.5.13",
     "jquery": "3.3.1",
     "jsonfile": "4.0.0",
     "lodash": "4.17.5",
     "mkdirp": "0.5.1",
     "ncp": "2.0.0",
     "node-rev": "2.0.0",
-    "node-sass": "4.8.1",
+    "node-sass": "4.8.3",
     "npm-run-all": "4.1.2",
     "npmversion": "1.6.2",
     "postbuild": "2.1.0",
@@ -53,8 +53,8 @@
     "rollup-plugin-commonjs": "9.1.0",
     "rollup-plugin-node-resolve-angular": "2.0.3",
     "tslint": "5.9.1",
-    "typescript": "2.7.2",
-    "uglify-js": "3.3.16"
+    "typescript": "2.8.1",
+    "uglify-js": "3.3.17"
   },
   "scripts": {
     "ncu:update": "ncu -u && npm update && npm update -D",
@@ -98,7 +98,7 @@
     "build:minify": "npm-run-all build:minify:*",
     "build:minify:bundle-deps": "uglifyjs compiled/bundle.deps.js --screw-ie8 --compress properties,dead_code,conditionals,unused,join_vars --mangle toplevel --comments --output compiled/bundle.deps.min.js",
     "build:minify:bundle-es5": "uglifyjs compiled/bundle.es5.js --screw-ie8 --compress properties,dead_code,conditionals,unused,join_vars --mangle toplevel --comments --output compiled/bundle.es5.min.js",
-    "build:minify:sw": "uglifyjs tmp/sw.js --screw-ie8 --compress properties,dead_code,conditionals,unused,join_vars --mangle toplevel --comments --output dist/sw.js",
+    "build:minify:sw": "mkdirp dist && uglifyjs tmp/sw.js --screw-ie8 --compress properties,dead_code,conditionals,unused,join_vars --mangle toplevel --comments --output dist/sw.js",
     "build:rev": "npm-run-all build:rev:*",
     "build:rev:js": "nodeRev 'compiled/*.min.js' --hash -o dist/js",
     "build:rev:css": "nodeRev 'compiled/common.min.css' --hash -o dist/css",

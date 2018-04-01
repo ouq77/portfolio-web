@@ -3,25 +3,29 @@ export class AppService {
   static consoleMessage(): void {
     if (console) {
       console.group('On-line Portfolio and CV for Louw Swart');
-      console.log('\n\n' +
-        '              %c##%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#\n' +
-        '              %c##%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c##%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#\n' +
-        '              %c##%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c##%c####%c#%c#%c#%c#%c##%c#%c#%c#%c#%c#%c#%c#%c#%c#\n' +
-        '              %c##%c#%c#%c#%c#%c#%c#%c#%c#%c#%c##%c#%c#%c##%c##%c#%c#%c#####%c#%c#%c#%c#%c#%c#%c#%c#%c#\n' +
-        '              %c##%c#%c#%c#%c#%c#%c#%c#%c#%c#%c##%c#%c##%c#%c######%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#\n' +
-        '              %c##%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c###%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c##%c#%c#%c#%c#\n' +
-        '              %c##%c#%c#%c#%c##%c#%c#%c#%c#%c####################%c#%c#%c#%c#\n' +
-        '              %c##%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c##%c#%c#%c##%c##%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#\n' +
-        '              %c##%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c######%c#%c#%c#%c#%c######%c#%c#%c#%c#\n' +
-        '              %c##%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#\n' +
-        '              %c##%c#%c#%c#%c#%c#%c#%c#%c#%c#%c##%c##%c#%c#####%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#\n' +
-        '              %c##%c#%c#%c#%c#%c#%c#%c#%c#%c#%c##%c##%c#%c####%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#\n' +
-        '              %c##%c#%c#%c#%c##%c#%c###%c###%c#%c#%c#%c####%c###%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#\n' +
-        '              %c##%c#%c#%c#%c#%c#%c#%c#%c##%c#%c#%c##%c#%c###%c#%c##%c#%c##%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#\n' +
-        '              %c##%c#%c#%c#%c#%c###%c#%c####%c#%c#%c#%c#%c#%c#%c#%c##%c#%c#%c#%c##%c#%c#%c#%c#%c#%c#%c#\n' +
-        '              %c##%c#%c##%c#######%c#%c#%c##%c######%c#%c#%c##%c##%c#%c#%c#%c#%c#%c#%c#\n' +
-        '              %c##%c#%c#%c#%c###%c#%c######%c#%c##%c##%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#\n\n%c' +
-        '             Thanks for checking out my portfolio!\n       Get in touch: %chttps://portfolio.ouq77.kiwi/#contact',
+      console.log(`
+
+              %c##%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#
+              %c##%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c##%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#
+              %c##%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c##%c####%c#%c#%c#%c#%c##%c#%c#%c#%c#%c#%c#%c#%c#%c#
+              %c##%c#%c#%c#%c#%c#%c#%c#%c#%c#%c##%c#%c#%c##%c##%c#%c#%c#####%c#%c#%c#%c#%c#%c#%c#%c#%c#
+              %c##%c#%c#%c#%c#%c#%c#%c#%c#%c#%c##%c#%c##%c#%c######%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#
+              %c##%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c###%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c##%c#%c#%c#%c#
+              %c##%c#%c#%c#%c##%c#%c#%c#%c#%c####################%c#%c#%c#%c#
+              %c##%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c##%c#%c#%c##%c##%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#
+              %c##%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c######%c#%c#%c#%c#%c######%c#%c#%c#%c#
+              %c##%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#
+              %c##%c#%c#%c#%c#%c#%c#%c#%c#%c#%c##%c##%c#%c#####%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#
+              %c##%c#%c#%c#%c#%c#%c#%c#%c#%c#%c##%c##%c#%c####%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#
+              %c##%c#%c#%c#%c##%c#%c###%c###%c#%c#%c#%c####%c###%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#
+              %c##%c#%c#%c#%c#%c#%c#%c#%c##%c#%c#%c##%c#%c###%c#%c##%c#%c##%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#
+              %c##%c#%c#%c#%c#%c###%c#%c####%c#%c#%c#%c#%c#%c#%c#%c##%c#%c#%c#%c##%c#%c#%c#%c#%c#%c#%c#
+              %c##%c#%c##%c#######%c#%c#%c##%c######%c#%c#%c##%c##%c#%c#%c#%c#%c#%c#%c#
+              %c##%c#%c#%c#%c###%c#%c######%c#%c##%c##%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#
+
+
+             %cThanks for checking out my portfolio!
+       Get in touch: %chttps://portfolio.ouq77.kiwi/#contact`,
         'color: #26545b', 'color: #27565d', 'color: #27585f', 'color: #295a62', 'color: #27595f', 'color: #285b61',
         'color: #2c626a', 'color: #2c636b', 'color: #2e676f', 'color: #2d646c', 'color: #316e77', 'color: #326f78',
         'color: #316d75', 'color: #326f79', 'color: #33727c', 'color: #377a84', 'color: #377b85', 'color: #397e89',
