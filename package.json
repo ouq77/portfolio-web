@@ -1,6 +1,6 @@
 {
   "name": "ouq77-portfolio",
-  "version": "5.5.9",
+  "version": "5.5.10",
   "author": "Louw Swart",
   "description": "On-line portfolio of Louw Swart, based on 'angular2-seed'",
   "license": "MIT",
@@ -20,7 +20,7 @@
     "@angular/platform-browser-dynamic": "5.2.9",
     "core-js": "2.5.4",
     "rxjs": "5.5.8",
-    "zone.js": "0.8.23"
+    "zone.js": "0.8.25"
   },
   "devDependencies": {
     "@angular/compiler": "5.2.9",
@@ -54,7 +54,7 @@
     "rollup-plugin-node-resolve-angular": "2.0.3",
     "tslint": "5.9.1",
     "typescript": "2.8.1",
-    "uglify-js": "3.3.17"
+    "uglify-js": "3.3.18"
   },
   "scripts": {
     "ncu:update": "ncu -u && npm update && npm update -D",
