@@ -204,16 +204,15 @@ const NCMEE_NZAKL_WAY_POINTS: Array<IPoint> = [
 export const CRUISES: Array<Array<IPoint>> = [
   [ports.DKCPH.loc, ...DKCPH_NOOSL_WAY_POINTS, ports.NOOSL.loc],
   [ports.NOSVJ.loc, ...NOSVJ_NOTOS_WAY_POINTS, ports.NOTOS.loc],
-];
-
-/**
- * Array of Upcoming Cruises for the Contact section
- * @type {IPoint[][]}
- */
-export const UPCOMING_CRUISES: Array<Array<IPoint>> = [
   [ports.NZAKL.loc, ...NZAKL_NCNOU_WAY_POINTS, ports.NCNOU.loc],
   [ports.NCNOU.loc, ...NCNOU_LIFOU_WAY_POINTS, ports.LIFOU.loc],
   [ports.LIFOU.loc, ...LIFOU_VUVLI_WAY_POINTS, ports.VUVLI.loc],
   [ports.VUVLI.loc, ...VUVLI_NCMEE_WAY_POINTS, ports.NCMEE.loc],
   [ports.NCMEE.loc, ...NCMEE_NZAKL_WAY_POINTS, ports.NZAKL.loc],
 ];
+
+/**
+ * Array of Upcoming Cruises for the Contact section
+ * @type {IPoint[][]}
+ */
+export const UPCOMING_CRUISES: Array<Array<IPoint>> = [];
