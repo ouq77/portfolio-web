@@ -8,8 +8,8 @@
     "url": "https://github.com/ouq77/portfolio-web"
   },
   "engines": {
-    "node": "9",
-    "npm": "5"
+    "node": "10",
+    "npm": "6"
   },
   "standard": {
     "ignore": [
@@ -40,7 +40,7 @@
     "referrer-policy": "1.1.0",
     "require-directory": "2.1.1",
     "serve-webp": "1.0.0",
-    "sharp": "0.20.1"
+    "sharp": "0.20.2"
   },
   "devDependencies": {
     "standard": "11.0.1"

@@ -25,7 +25,7 @@ const fetchInstaImages = (imageIds) => {
 
   return Promise.all(instagramPromises)
     .then(() => {
-      console.log('all instagram images fetched or existing')
+      console.log('all instagram images exist or have been fetched')
       return Promise.resolve('ready to start')
     })
 }
