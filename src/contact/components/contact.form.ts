@@ -1,9 +1,11 @@
 import {Component, OnInit} from '@angular/core';
 import {FormGroup, FormControl, Validators, FormBuilder} from '@angular/forms';
+import {HttpErrorResponse} from '@angular/common/http';
 import {ContactService} from '../services/contact';
 import {IErrorMessage} from '../definitions/error.message';
 import {ContactMessage} from '../definitions/contact.message';
 import {WrappedError} from '../../shared/definitions/wrapped.error';
+import {wrapError} from '../../shared/common/wrap.error';
 
 @Component({
   selector: 'contact-form',
@@ -71,7 +73,7 @@ export class ContactFormComponent implements OnInit {
 
     this._contactService.send(submission).subscribe(
       () => this.handleSuccess(),
-      err => this.handleErrors(err),
+      (err: HttpErrorResponse) => this.handleErrors(wrapError(err)),
     );
   }
 

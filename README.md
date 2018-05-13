@@ -1,7 +1,7 @@
-ouq77portfolio [![bitHound Dependencies](https://www.bithound.io/github/ouq77/portfolio-web/badges/dependencies.svg)](https://www.bithound.io/github/ouq77/portfolio-web/portfolio-web-ng2/dependencies/npm) [![bitHound Dev Dependencies](https://www.bithound.io/github/ouq77/portfolio-web/badges/devDependencies.svg)](https://www.bithound.io/github/ouq77/portfolio-web/portfolio-web-ng2/dependencies/npm)
+ouq77portfolio [![Dependency Status](https://david-dm.org/ouq77/portfolio-web.svg)](https://david-dm.org/ouq77/portfolio-web) [![devDependency Status](https://david-dm.org/ouq77/portfolio-web/dev-status.svg)](https://david-dm.org/ouq77/portfolio-web#info=devDependencies)
 ==============
 
-Angular2 app, built on top of [angular2-seed](https://github.com/mgechev/angular2-seed), that can be run on Heroku in NodeJS. 
+Angular2 app, built on top of [angular2-seed](https://github.com/mgechev/angular2-seed), that can be run on Heroku in NodeJS.
 
 Requires
 ========

@@ -3,9 +3,12 @@ import commonjs from 'rollup-plugin-commonjs';
 
 export default {
   input: 'compiled/main-prod.js',
-  sourceMap: false,
   treeshake: true,
-  name: 'bundle',
+  output:{
+    file: 'compiled/bundle.es2015.js',
+    format: 'iife',
+    sourcemap: false,
+  },
   plugins: [
     nodeResolve({
       es2015: true,
