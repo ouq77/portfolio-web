@@ -40,7 +40,8 @@
     "referrer-policy": "1.1.0",
     "require-directory": "2.1.1",
     "serve-webp": "1.0.0",
-    "sharp": "0.20.2"
+    "sharp": "0.20.2",
+    "webp-converter": "2.1.6"
   },
   "devDependencies": {
     "standard": "11.0.1"
