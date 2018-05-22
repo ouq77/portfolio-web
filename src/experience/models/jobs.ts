@@ -6,7 +6,7 @@ import {Job} from '../definitions/job';
  */
 export const JOBS: Array<Job> = [
   {
-    content: '',
+    content: '<p>I re-joined Stuff (Fairfax Media) as a <b>Full-Stack Engineer</b> in September 2017 where I\'ve been working in a team focused on building new a curation tool to satisfy a number of specific editorial tasks.</p><p>The application is written in <b>Typescript</b> using <b>Angular</b> and the <b>Angular Material Framework</b> (including <b>Jasmine</b> Unit tests and <b>Protractor</b> E2E tests), served via a <b>Node.js</b> back-end, which interfaces with a number of Stuff APIs, while deployed in a <b>Docker</b> container on <b>AWS</b> infrastructure. <b>CI/CD</b> happens as part of <b>Codeship</b> steps, with the intention of moving to Concourse in the near future.</p><p>In progress is an integration with <b>IBM Watson NLU</b> to enable content categorisation via keywords/entities, which is then ingested into an <b>Elasticsearch</b> database to be used in a related content service.</p>',
     institution: {
       location: 'Wellington, New Zealand',
       name: 'Stuff',
@@ -18,10 +18,10 @@ export const JOBS: Array<Job> = [
       to: 'Present',
     },
   }, {
-    content: '<p>Fulfilled a contract assignment with Stuff as a <b>JavaScript Developer</b> in one of the Wellington-based development teams.</p><p>Was closely involved in the implementation of a new <b>React</b> based front-end for the <a href="https://www.stuff.co.nz" target="_blank" rel="noopener noreferrer" class="link js_track_link_click">Stuff.co.nz</a> news site. The application, including the back-end interfaces like <b>GraphQL</b>, was served via <b>Express</b> in a <b>Node.js</b> runtime.</p><p>Other projects included the implementation of an implicit flow client-side <b>OpenID Connect</b> login, as well as the integration of the <b>Nativform (FFX Native platform)</b> advertising SDK.</p>',
+    content: '<p>Completed a contract assignment (extended 3 times) with Fairfax NZ as a <b>JavaScript Developer</b> in one of the Wellington-based development teams.</p><p>I was closely involved in the implementation of a new <b>React</b> based front-end for the Stuff.co.nz news site. The application, including the back-end interfaces like <b>GraphQL</b>, is served via <b>Express</b> in a <b>Node.js</b> runtime.</p><p>Other projects included the implementation of an implicit flow client-side <b>OpenID Connect</b> login, as well as integrating the <b>Nativform</b> (FFX Native platform) advertising SDK.</p>',
     institution: {
       location: 'Wellington, New Zealand',
-      name: 'Stuff',
+      name: 'Fairfax Media (now Stuff)',
       url: 'https://www.stuff.co.nz/',
     },
     title: 'JavaScript Developer (Contract)',
