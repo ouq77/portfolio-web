@@ -6,7 +6,20 @@ import {Job} from '../definitions/job';
  */
 export const JOBS: Array<Job> = [
   {
-    content: '<p>I re-joined Stuff (Fairfax Media) as a <b>Full-Stack Engineer</b> in September 2017 where I\'ve been working in a team focused on building a new curation tool to satisfy a number of specific editorial tasks.</p><p>The application is written in <b>Typescript</b> using <b>Angular</b> and the <b>Angular Material Framework</b> (including <b>Jasmine</b> Unit tests and <b>Protractor</b> E2E tests), served via a <b>Node.js</b> back-end, which interfaces with a number of Stuff APIs, while deployed in a <b>Docker</b> container on <b>AWS</b> infrastructure. <b>CI/CD</b> happens as part of <b>Codeship</b> steps, with the intention of moving to Concourse in the near future.</p><p>In progress is an integration with <b>IBM Watson NLU</b> to enable content categorisation via keywords/entities, which is then ingested into an <b>Elasticsearch</b> database to be used in a related content service.</p>',
+    content: '<p>Currently on assignment with an Accenture client where the tech stack includes <b>Angular</b>, <b>Java Spring Boot</b> and <b>Azure</b>.</p>',
+    institution: {
+      location: 'Wellington, New Zealand',
+      name: 'Accenture',
+      url: 'https://www.accenture.com/nz-en/',
+    },
+    title: 'Full-stack Developer (Contract)',
+    year: {
+      from: 'Jul 2018',
+      to: 'Present',
+    },
+  },
+  {
+    content: '<p>Joined Stuff (Fairfax Media) as a <b>Full-Stack Engineer</b> in September 2017 and worked in a team focused on building a new curation tool to satisfy a number of specific editorial tasks.</p><p>The application was written in <b>Typescript</b> using <b>Angular</b> and the <b>Angular Material Framework</b> (including <b>Jasmine</b> Unit tests and <b>Protractor</b> E2E tests), served via a <b>Node.js</b> back-end, which interfaced with a number of Stuff APIs, while deployed in a <b>Docker</b> container on <b>AWS</b> infrastructure. <b>CI/CD</b> and deployment happened as part of a <b>Concourse</b> pipeline.</p><p>Also worked on an integration with <b>IBM Watson NLU</b> to enable content categorisation via keywords/entities, which was then ingested into an <b>Elasticsearch</b> database and used in a "Related Content" service.</p>',
     institution: {
       location: 'Wellington, New Zealand',
       name: 'Stuff',
@@ -15,10 +28,10 @@ export const JOBS: Array<Job> = [
     title: 'Full-stack Engineer',
     year: {
       from: 'Sep 2017',
-      to: 'Present',
+      to: 'Jul 2018',
     },
   }, {
-    content: '<p>Completed a contract assignment (extended 3 times) with Fairfax NZ as a <b>JavaScript Developer</b> in one of the Wellington-based development teams.</p><p>I was closely involved in the implementation of a new <b>React</b> based front-end for the Stuff.co.nz news site. The application, including the back-end interfaces like <b>GraphQL</b>, is served via <b>Express</b> in a <b>Node.js</b> runtime.</p><p>Other projects included the implementation of an implicit flow client-side <b>OpenID Connect</b> login, as well as integrating the <b>Nativform</b> (FFX Native platform) advertising SDK.</p>',
+    content: '<p>Completed a contract assignment (extended 3 times) with Fairfax Media as a <b>JavaScript Developer</b> in one of the Wellington-based development teams.</p><p>I was closely involved in the implementation of a new <b>React</b> based front-end for the Stuff.co.nz news site. The application, including the back-end interfaces like <b>GraphQL</b>, is served via <b>Express</b> in a <b>Node.js</b> runtime.</p><p>Other projects included the implementation of an implicit flow client-side <b>OpenID Connect</b> login, as well as integrating the <b>Nativform</b> (FFX Native platform) advertising SDK.</p>',
     institution: {
       location: 'Wellington, New Zealand',
       name: 'Fairfax Media (now Stuff)',

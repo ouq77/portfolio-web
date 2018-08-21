@@ -25,9 +25,9 @@ export const LINKS: Array<Link> = [
     icon: 'facebook',
     title: 'See my Facebook here',
     url: 'https://www.facebook.com/ouq77',
-  }, {
-    icon: 'code',
-    title: 'See my Code School progress here',
-    url: 'https://www.codeschool.com/users/819219',
+  // }, {
+  //   icon: 'code',
+  //   title: 'See my Code School progress here',
+  //   url: 'https://www.codeschool.com/users/819219',
   },
 ];
