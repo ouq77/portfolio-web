@@ -79,6 +79,8 @@ export const KBV: IAirport = new Airport('Krabi', countries.THAILAND, 'KBV', new
 export const HKT: IAirport = new Airport('Phuket', countries.THAILAND, 'HKT', new Point(8.1103541, 98.3081319), 'Phuket International Airport');
 export const MEL: IAirport = new Airport('Melbourne', countries.AUSTRALIA, 'MEL', new Point(-37.6662769, 144.8354746), 'Melbourne Airport (Tullamarine)');
 export const GIS: IAirport = new Airport('Gisborne', countries.NEW_ZEALAND, 'GIS', new Point(-38.6628665, 177.9806031), 'Gisborne Airport');
+export const PEK: IAirport = new Airport('Beijing', countries.CHINA, 'PEK', new Point(40.079383, 116.6061803), 'Beijing Capital International Airport');
+export const PVG: IAirport = new Airport('Shanghai', countries.CHINA, 'PVG', new Point(31.1443485, 121.8060843), 'Shanghai Pudong International Airport');
 
 /**
  * Array of all airports for the Contact section
@@ -88,5 +90,5 @@ export const AIRPORTS: Array<IAirport> = [
   KIM, PLZ, ELS, JNB, AMS, LHR, NBO, CPT, MBD, DUR, BFN, GRJ, MPM, GBE, WDH, BUQ, HRE, LVI, LUN, LAD, DAR, EBB,
   FIH, LOS, ABJ, ACC, DKR, SID, MIA, ATL, IAD, JFK, LGA, MRU, HKG, PER, SYD, EZE, GRU, YVR, FRA, ZRH, CDG, CPH,
   BOM, BKK, KIX, BKKN, USM, HKGN, DPS, DRW, ADL, HLZ, CHC, ZQN, AKL, WLG, NSN, TRG, ROT, RAR, NRT, SIN, ARN, BGO,
-  TRD, BOO, SJV, TOS, TIU, CBR, NPL, KBV, HKT, MEL, GIS,
+  TRD, BOO, SJV, TOS, TIU, CBR, NPL, KBV, HKT, MEL, GIS, PEK, PVG,
 ];

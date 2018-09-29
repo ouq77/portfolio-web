@@ -12,3 +12,4 @@ export const USA: string = 'United States';
 export const UK: string = 'United Kingdom';
 export const ZAMBIA: string = 'Zambia';
 export const ZIMBABWE: string = 'Zimbabwe';
+export const CHINA: string = 'China';

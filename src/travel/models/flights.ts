@@ -1,5 +1,6 @@
 import * as airports from './airports';
 import {IPoint} from '../definitions/point';
+import {a} from '@angular/core/src/render3';
 
 /**
  * Array of Flights for the Contact section
@@ -46,4 +47,6 @@ export const FLIGHTS: Array<Array<IPoint>> = [
  * Array of Upcoming Flights for the Contact section
  * @type {IPoint[][]}
  */
-export const UPCOMING_FLIGHTS: Array<Array<IPoint>> = [];
+export const UPCOMING_FLIGHTS: Array<Array<IPoint>> = [
+  [airports.AKL.loc, airports.PEK.loc, airports.FRA.loc, airports.PVG.loc, airports.AKL.loc],
+];
