@@ -15,17 +15,17 @@ const instagramImageIds = envConfig.INSTAGRAM_IMAGE_IDS.split(',')
 const app = express()
 
 app.use(require('compression')())
-app.use(require('netjet')({cache: {max: 100}}))
+app.use(require('netjet')({ cache: { max: 100 } }))
 app.use(userAgentBlocker(blockedUserAgents))
 app.use(middleware.helmet())
 app.use(require('prerender-node').set('prerenderToken', preRenderToken))
-app.use(require('body-parser').json({type: ['json', 'application/csp-report']}))
+app.use(require('body-parser').json({ type: ['json', 'application/csp-report'] }))
 app.use(middleware.heroku)
 app.use('/assets/*', middleware.assetsHeader)
 
 expressStaticMappings.forEach((mapping) => {
   console.info(`mapping resource "${mapping.uri}" to static location "${mapping.location}" with cache "${mapping.cache}"`)
-  app.use(mapping.uri, express.static(mapping.location, {maxAge: mapping.cache}))
+  app.use(mapping.uri, express.static(mapping.location, { maxAge: mapping.cache }))
 })
 
 expressRedirectMappings.forEach((mapping) => {
@@ -38,14 +38,14 @@ expressRedirectMappings.forEach((mapping) => {
 // cache set by middleware.assetsHeader
 app.get('/assets/*', routes.assets)
 
-app.post('/report-violation', cache({nocache: true}), routes.reportviolation)
-app.get('/imageids', cache({nocache: true}), routes.imageids)
-app.post('/send', cache({nocache: true}), routes.send)
-app.get('/exclude', cache({ttl: cacheTimes.DAYS_IN_SECS_60}), routes.exclude)
-app.get('/codeschool', cache({nocache: true}), routes.codeschool)
-app.get('/railtrips', cache({nocache: true}), routes.railtrips)
-app.get('/', cache({nocache: true}), routes.html)
-app.get('/*', cache({ttl: cacheTimes.DAYS_IN_SECS_60}), routes.fourohfour)
+app.post('/report-violation', cache({ nocache: true }), routes.reportviolation)
+app.get('/imageids', cache({ nocache: true }), routes.imageids)
+app.post('/send', cache({ nocache: true }), routes.send)
+app.get('/exclude', cache({ ttl: cacheTimes.DAYS_IN_SECS_60 }), routes.exclude)
+app.get('/codeschool', cache({ nocache: true }), routes.codeschool)
+app.get('/railtrips', cache({ nocache: true }), routes.railtrips)
+app.get('/', cache({ nocache: true }), routes.html)
+app.get('/*', cache({ ttl: cacheTimes.DAYS_IN_SECS_60 }), routes.fourohfour)
 
 instagramImages.fetchInstaImages(instagramImageIds)
   .then((result) => {

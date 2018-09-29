@@ -1,5 +1,5 @@
 const path = require('path')
-const {persist, resize, getImageName, getResizedImageName, getAbsoluteImageOriginalPath, getRelativeImageResizedPath, isResizedImageExists} = require('./../helpers')
+const { persist, resize, getImageName, getResizedImageName, getAbsoluteImageOriginalPath, getRelativeImageResizedPath, isResizedImageExists } = require('./../helpers')
 
 const relativeImagePath = 'assets/images/codeschool'
 const imageBasePath = path.resolve(__dirname, `../../app/${relativeImagePath}`)

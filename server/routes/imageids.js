@@ -5,6 +5,6 @@ module.exports = (req, res) => {
   const randomImageIds = randomImages.getIds()
 
   instagramImages.fetchInstaImages(randomImageIds)
-    .then(() => res.json({imageIds: randomImageIds}))
-    .catch(errors => res.status(400).json({errors: errors}))
+    .then(() => res.json({ imageIds: randomImageIds }))
+    .catch(errors => res.status(400).json({ errors: errors }))
 }

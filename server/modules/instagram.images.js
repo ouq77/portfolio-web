@@ -1,5 +1,5 @@
 const path = require('path')
-const {persist, getAbsoluteImagePath, isResizedImageExists} = require('./../helpers')
+const { persist, getAbsoluteImagePath, isResizedImageExists } = require('./../helpers')
 
 const relativeImagePath = 'assets/images/instagram'
 const imageBasePath = path.resolve(__dirname, `../../app/${relativeImagePath}`)

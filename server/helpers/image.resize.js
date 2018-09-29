@@ -1,5 +1,5 @@
 const sharp = require('sharp')
-const {getImageName, getResizedImageName, getAbsoluteImageOriginalPath, getAbsoluteImageResizedPath} = require('./image.path.js')
+const { getImageName, getResizedImageName, getAbsoluteImageOriginalPath, getAbsoluteImageResizedPath } = require('./image.path.js')
 
 const resize = (imageUrl, imageBasePath, width = 95, height = 95) =>
   new Promise((resolve, reject) => {

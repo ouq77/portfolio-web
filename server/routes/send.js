@@ -1,5 +1,5 @@
 const nodeMailer = require('./../modules/node.mailer.js')
-const {validate, buildMessage, buildMessageCopy} = require('./../helpers')
+const { validate, buildMessage, buildMessageCopy } = require('./../helpers')
 
 /**
  * Validates user submission and sends the message received via the contact from
@@ -14,7 +14,7 @@ module.exports = (req, res) => {
   const errors = validate(submission)
 
   if (errors.length > 0) {
-    res.status(400).json({errors: errors})
+    res.status(400).json({ errors: errors })
   } else {
     const message = buildMessage(submission)
     const messageCopy = buildMessageCopy(submission)
