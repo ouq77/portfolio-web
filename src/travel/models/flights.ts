@@ -1,6 +1,5 @@
 import * as airports from './airports';
 import {IPoint} from '../definitions/point';
-import {a} from '@angular/core/src/render3';
 
 /**
  * Array of Flights for the Contact section
