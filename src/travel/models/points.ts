@@ -37,9 +37,9 @@ export const AUCKLAND: IPoint = {
   lat: -36.847639,
   lng: 174.762473,
 };
-export const BROOKLYN: IPoint = {
-  lat: -41.3081336,
-  lng: 174.7661233,
+export const SILVERSTREAM: IPoint = {
+  lat: -41.1497301,
+  lng: 175.005017,
 };
 
 export const MARKER_SIZE: Size = new google.maps.Size(20, 32);

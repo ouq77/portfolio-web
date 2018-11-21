@@ -15,14 +15,14 @@ const JOHANNESBURG: ICity = new City(lived, prevIcon, points.BENONI, `Johannesbu
 const CAPE_TOWN: ICity = new City('I moved to NZ from here...', prevIcon, points.CAPE_TOWN, `Cape Town, ${countries.SOUTH_AFRICA}`);
 const HAMILTON: ICity = new City(lived, prevIcon, points.HAMILTON, `Hamilton, ${countries.NEW_ZEALAND}`);
 const AUCKLAND: ICity = new City(lived, prevIcon, points.AUCKLAND, `Auckland, ${countries.NEW_ZEALAND}`);
-const BROOKLYN: ICity = new City('I currently live in this area...', curIcon, points.BROOKLYN, `Brooklyn, ${countries.NEW_ZEALAND}`);
+const SILVERSTREAM: ICity = new City('I currently live in this area...', curIcon, points.SILVERSTREAM, `Silverstream, Wellington, ${countries.NEW_ZEALAND}`);
 
-export const CURRENT_LOCATION = BROOKLYN;
+export const CURRENT_LOCATION = SILVERSTREAM;
 
 /**
  * Array of Cities for the Contact section
  * @type {ICity[]}
  */
 export const CITIES: Array<ICity> = [
-  HARTSWATER, HEIDELBERG, VRYBURG, LONDON, JOHANNESBURG, CAPE_TOWN, HAMILTON, AUCKLAND, BROOKLYN,
+  HARTSWATER, HEIDELBERG, VRYBURG, LONDON, JOHANNESBURG, CAPE_TOWN, HAMILTON, AUCKLAND, SILVERSTREAM,
 ];
