@@ -1,7 +1,7 @@
 {
   "name": "ouq77-portfolio",
   "author": "ouq77",
-  "version": "7.0.2",
+  "version": "7.0.3",
   "description": "On-line portfolio of Louw Swart, based on 'angular2-seed'",
   "main": "server/server.js",
   "repository": {
@@ -33,8 +33,8 @@
     "hpkp": "2.0.0",
     "hsts": "2.1.0",
     "netjet": "1.3.0",
-    "node-fetch": "2.2.1",
-    "nodemailer": "4.6.8",
+    "node-fetch": "2.3.0",
+    "nodemailer": "4.7.0",
     "ord": "0.1.1",
     "prerender-node": "3.2.1",
     "referrer-policy": "1.1.0",
