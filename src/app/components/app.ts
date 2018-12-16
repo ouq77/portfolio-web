@@ -20,7 +20,7 @@ export class AppComponent implements OnInit {
     (($: JQueryStatic) => {
       $('a[href*="#"]:not([href="#"])').on('click', (e: JQuery.Event) => {
         e.preventDefault();
-        const targetEl: HTMLAnchorElement = <HTMLAnchorElement><any>e.target;
+        const targetEl: HTMLAnchorElement = <HTMLAnchorElement>(<any>e).target;
         if (location.pathname.replace(/^\//, '') === targetEl.pathname.replace(/^\//, '')
           && location.hostname === targetEl.hostname) {
           let target: JQuery = <JQuery>$(targetEl.hash);
