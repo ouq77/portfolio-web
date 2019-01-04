@@ -40,6 +40,7 @@ export const FLIGHTS: Array<Array<IPoint>> = [
   [airports.WLG.loc, airports.CBR.loc, airports.SIN.loc, airports.JNB.loc], [airports.WLG.loc, airports.ZQN.loc],
   [airports.BKKN.loc, airports.KBV.loc], [airports.HKT.loc, airports.SIN.loc, airports.MEL.loc, airports.WLG.loc],
   [airports.WLG.loc, airports.GIS.loc], [airports.AKL.loc, airports.YVR.loc],
+  [airports.AKL.loc, airports.PEK.loc, airports.FRA.loc, airports.PVG.loc, airports.AKL.loc],
 ];
 
 /**
@@ -47,5 +48,4 @@ export const FLIGHTS: Array<Array<IPoint>> = [
  * @type {IPoint[][]}
  */
 export const UPCOMING_FLIGHTS: Array<Array<IPoint>> = [
-  [airports.AKL.loc, airports.PEK.loc, airports.FRA.loc, airports.PVG.loc, airports.AKL.loc],
 ];
