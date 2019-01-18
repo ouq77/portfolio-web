@@ -22,14 +22,18 @@
   "validthis": true,
   "strict": false,
   "globals": {
-    "window": true,
-    "document": true,
-    "location": true,
-    "System": true,
-    "Reflect": true,
-    "Promise": true,
-    "jQuery": true,
     "_": true,
-    "google": true
+    "caches": true,
+    "document": true,
+    "fetch": true,
+    "google": true,
+    "jQuery": true,
+    "location": true,
+    "window": true,
+    "Promise": true,
+    "Reflect": true,
+    "Request": true,
+    "System": true,
+    "URL": true
   }
 }
