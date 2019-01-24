@@ -1,7 +1,7 @@
 {
   "name": "ouq77-portfolio",
   "author": "ouq77",
-  "version": "7.0.8",
+  "version": "7.0.9",
   "description": "On-line portfolio of Louw Swart, based on 'angular2-seed'",
   "main": "server/server.js",
   "repository": {
@@ -26,7 +26,7 @@
     "debug": "4.1.1",
     "express": "4.16.4",
     "express-cache-headers": "0.1.4",
-    "express-user-agent-blocker": "1.5.2",
+    "express-user-agent-blocker": "2.0.2",
     "forever-monitor": "1.7.1",
     "helmet": "3.15.0",
     "helmet-csp": "2.7.1",
@@ -40,7 +40,7 @@
     "referrer-policy": "1.1.0",
     "require-directory": "2.1.1",
     "serve-webp": "1.0.0",
-    "sharp": "0.21.2",
+    "sharp": "0.21.3",
     "webp-converter": "2.2.2"
   },
   "devDependencies": {
