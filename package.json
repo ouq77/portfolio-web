@@ -1,6 +1,6 @@
 {
   "name": "ouq77-portfolio",
-  "version": "7.0.8",
+  "version": "7.0.9",
   "author": "Louw Swart",
   "description": "On-line portfolio of Louw Swart, based on 'angular2-seed'",
   "license": "MIT",
@@ -12,19 +12,19 @@
     "npm": "6"
   },
   "dependencies": {
-    "@angular/common": "7.2.1",
-    "@angular/core": "7.2.1",
-    "@angular/forms": "7.2.1",
-    "@angular/http": "7.2.1",
-    "@angular/platform-browser": "7.2.1",
-    "@angular/platform-browser-dynamic": "7.2.1",
-    "core-js": "2.6.2",
+    "@angular/common": "7.2.2",
+    "@angular/core": "7.2.2",
+    "@angular/forms": "7.2.2",
+    "@angular/http": "7.2.2",
+    "@angular/platform-browser": "7.2.2",
+    "@angular/platform-browser-dynamic": "7.2.2",
+    "core-js": "2.6.3",
     "rxjs": "6.3.3",
-    "zone.js": "0.8.28"
+    "zone.js": "0.8.29"
   },
   "devDependencies": {
-    "@angular/compiler": "7.2.1",
-    "@angular/compiler-cli": "7.2.1",
+    "@angular/compiler": "7.2.2",
+    "@angular/compiler-cli": "7.2.2",
     "@compodoc/compodoc": "1.1.7",
     "@types/dateformat": "3.0.0",
     "@types/es6-shim": "0.31.39",
@@ -51,7 +51,7 @@
     "npmversion": "1.7.0",
     "postbuild": "2.1.0",
     "rimraf": "2.6.3",
-    "rollup": "1.1.0",
+    "rollup": "1.1.2",
     "rollup-plugin-commonjs": "9.2.0",
     "rollup-plugin-node-resolve-angular": "2.0.3",
     "tslint": "5.12.1",
