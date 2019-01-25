@@ -1,0 +1,327 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Louw Swart // Portfolio</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/laravel.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">Louw Swart // Portfolio</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search">
+</div>
+            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content class">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Classes</li>
+  <li>AppService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/services/app.ts</code>
+        </p>
+
+
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Static</span>
+                                <a href="#consoleMessage">consoleMessage</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+
+
+            <section>
+    
+        <h3 id="methods">
+            Methods
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="consoleMessage"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Static</span>
+                            consoleMessage
+                            </b>
+                            <a href="#consoleMessage"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon icon ion-ios-reset"></span>
+                        <code>consoleMessage()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="3" class="link-to-prism">src/app/services/app.ts:3</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">export class AppService {
+
+  static consoleMessage(): void {
+    if (console) {
+      console.group(&#x27;On-line Portfolio and CV for Louw Swart&#x27;);
+      console.log(&#x60;
+
+              %c##%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#
+              %c##%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c##%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#
+              %c##%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c##%c####%c#%c#%c#%c#%c##%c#%c#%c#%c#%c#%c#%c#%c#%c#
+              %c##%c#%c#%c#%c#%c#%c#%c#%c#%c#%c##%c#%c#%c##%c##%c#%c#%c#####%c#%c#%c#%c#%c#%c#%c#%c#%c#
+              %c##%c#%c#%c#%c#%c#%c#%c#%c#%c#%c##%c#%c##%c#%c######%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#
+              %c##%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c###%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c##%c#%c#%c#%c#
+              %c##%c#%c#%c#%c##%c#%c#%c#%c#%c####################%c#%c#%c#%c#
+              %c##%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c##%c#%c#%c##%c##%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#
+              %c##%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c######%c#%c#%c#%c#%c######%c#%c#%c#%c#
+              %c##%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#
+              %c##%c#%c#%c#%c#%c#%c#%c#%c#%c#%c##%c##%c#%c#####%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#
+              %c##%c#%c#%c#%c#%c#%c#%c#%c#%c#%c##%c##%c#%c####%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#
+              %c##%c#%c#%c#%c##%c#%c###%c###%c#%c#%c#%c####%c###%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#
+              %c##%c#%c#%c#%c#%c#%c#%c#%c##%c#%c#%c##%c#%c###%c#%c##%c#%c##%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#
+              %c##%c#%c#%c#%c#%c###%c#%c####%c#%c#%c#%c#%c#%c#%c#%c##%c#%c#%c#%c##%c#%c#%c#%c#%c#%c#%c#
+              %c##%c#%c##%c#######%c#%c#%c##%c######%c#%c#%c##%c##%c#%c#%c#%c#%c#%c#%c#
+              %c##%c#%c#%c#%c###%c#%c######%c#%c##%c##%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#
+
+
+             %cThanks for checking out my portfolio!
+       Get in touch: %chttps://portfolio.ouq77.kiwi/#contact&#x60;,
+        &#x27;color: #26545b&#x27;, &#x27;color: #27565d&#x27;, &#x27;color: #27585f&#x27;, &#x27;color: #295a62&#x27;, &#x27;color: #27595f&#x27;, &#x27;color: #285b61&#x27;,
+        &#x27;color: #2c626a&#x27;, &#x27;color: #2c636b&#x27;, &#x27;color: #2e676f&#x27;, &#x27;color: #2d646c&#x27;, &#x27;color: #316e77&#x27;, &#x27;color: #326f78&#x27;,
+        &#x27;color: #316d75&#x27;, &#x27;color: #326f79&#x27;, &#x27;color: #33727c&#x27;, &#x27;color: #377a84&#x27;, &#x27;color: #377b85&#x27;, &#x27;color: #397e89&#x27;,
+        &#x27;color: #397e89&#x27;, &#x27;color: #3b838d&#x27;, &#x27;color: #397f8a&#x27;, &#x27;color: #3a828d&#x27;, &#x27;color: #3a808a&#x27;, &#x27;color: #387f89&#x27;,
+        &#x27;color: #387e88&#x27;, &#x27;color: #3a828d&#x27;, &#x27;color: #377a84&#x27;, &#x27;color: #377a84&#x27;, &#x27;color: #397e89&#x27;, &#x27;color: #357781&#x27;,
+        &#x27;color: #34747e&#x27;, &#x27;color: #367882&#x27;, &#x27;color: #357680&#x27;, &#x27;color: #326f78&#x27;, &#x27;color: #285860&#x27;, &#x27;color: #295a62&#x27;,
+        &#x27;color: #2a5d65&#x27;, &#x27;color: #2b5f67&#x27;, &#x27;color: #295b63&#x27;, &#x27;color: #2b5f68&#x27;, &#x27;color: #2e676f&#x27;, &#x27;color: #306b74&#x27;,
+        &#x27;color: #2f676f&#x27;, &#x27;color: #32717a&#x27;, &#x27;color: #33737c&#x27;, &#x27;color: #357680&#x27;, &#x27;color: #357781&#x27;, &#x27;color: #377b85&#x27;,
+        &#x27;color: #397e89&#x27;, &#x27;color: #3a828d&#x27;, &#x27;color: #3a808b&#x27;, &#x27;color: #3b8590&#x27;, &#x27;color: #39808a&#x27;, &#x27;color: #39818b&#x27;,
+        &#x27;color: #3d8893&#x27;, &#x27;color: #39818b&#x27;, &#x27;color: #3a828d&#x27;, &#x27;color: #3c8691&#x27;, &#x27;color: #3c8590&#x27;, &#x27;color: #397e88&#x27;,
+        &#x27;color: #3a818c&#x27;, &#x27;color: #3a808b&#x27;, &#x27;color: #357882&#x27;, &#x27;color: #377b86&#x27;, &#x27;color: #367982&#x27;, &#x27;color: #35767f&#x27;,
+        &#x27;color: #34747d&#x27;, &#x27;color: #295c63&#x27;, &#x27;color: #2a5e66&#x27;, &#x27;color: #2c626a&#x27;, &#x27;color: #2c636b&#x27;, &#x27;color: #2c626a&#x27;,
+        &#x27;color: #2f6971&#x27;, &#x27;color: #316d76&#x27;, &#x27;color: #326f78&#x27;, &#x27;color: #34747e&#x27;, &#x27;color: #33727b&#x27;, &#x27;color: #377a84&#x27;,
+        &#x27;color: #387c86&#x27;, &#x27;color: #3c1106&#x27;, &#x27;color: #3f1206&#x27;, &#x27;color: #3c1106&#x27;, &#x27;color: #3f1206&#x27;, &#x27;color: #3c1106&#x27;,
+        &#x27;color: #3f1206&#x27;, &#x27;color: #3c1106&#x27;, &#x27;color: #3f1206&#x27;, &#x27;color: #3c8691&#x27;, &#x27;color: #39818b&#x27;, &#x27;color: #387d87&#x27;,
+        &#x27;color: #367983&#x27;, &#x27;color: #357882&#x27;, &#x27;color: #377b85&#x27;, &#x27;color: #33727c&#x27;, &#x27;color: #34757f&#x27;, &#x27;color: #316e76&#x27;,
+        &#x27;color: #2b6169&#x27;, &#x27;color: #2d646d&#x27;, &#x27;color: #2e666e&#x27;, &#x27;color: #2f6971&#x27;, &#x27;color: #316c75&#x27;, &#x27;color: #32717a&#x27;,
+        &#x27;color: #34747d&#x27;, &#x27;color: #34757f&#x27;, &#x27;color: #377a84&#x27;, &#x27;color: #387d87&#x27;, &#x27;color: #3c1106&#x27;, &#x27;color: #3f1206&#x27;,
+        &#x27;color: #3c1106&#x27;, &#x27;color: #3f1206&#x27;, &#x27;color: #3c1106&#x27;, &#x27;color: #3f1206&#x27;, &#x27;color: #3c1106&#x27;, &#x27;color: #3f1206&#x27;,
+        &#x27;color: #3d8893&#x27;, &#x27;color: #387f89&#x27;, &#x27;color: #3b838d&#x27;, &#x27;color: #367883&#x27;, &#x27;color: #357680&#x27;, &#x27;color: #34747e&#x27;,
+        &#x27;color: #357680&#x27;, &#x27;color: #326f77&#x27;, &#x27;color: #316c75&#x27;, &#x27;color: #2e666e&#x27;, &#x27;color: #2f6971&#x27;, &#x27;color: #316d76&#x27;,
+        &#x27;color: #327079&#x27;, &#x27;color: #316e76&#x27;, &#x27;color: #35767f&#x27;, &#x27;color: #367882&#x27;, &#x27;color: #357680&#x27;, &#x27;color: #377b85&#x27;,
+        &#x27;color: #387d86&#x27;, &#x27;color: #3f1206&#x27;, &#x27;color: #3c1106&#x27;, &#x27;color: #3f1206&#x27;, &#x27;color: #3c1106&#x27;, &#x27;color: #3f1206&#x27;,
+        &#x27;color: #3e1206&#x27;, &#x27;color: #3c1106&#x27;, &#x27;color: #3f1206&#x27;, &#x27;color: #3a838d&#x27;, &#x27;color: #3b8590&#x27;, &#x27;color: #3a828d&#x27;,
+        &#x27;color: #367a84&#x27;, &#x27;color: #367883&#x27;, &#x27;color: #367882&#x27;, &#x27;color: #35767f&#x27;, &#x27;color: #33727b&#x27;, &#x27;color: #306b73&#x27;,
+        &#x27;color: #306b74&#x27;, &#x27;color: #316e77&#x27;, &#x27;color: #33717b&#x27;, &#x27;color: #35767f&#x27;, &#x27;color: #33737c&#x27;, &#x27;color: #387c86&#x27;,
+        &#x27;color: #39808a&#x27;, &#x27;color: #3b838e&#x27;, &#x27;color: #3c8691&#x27;, &#x27;color: #3a838d&#x27;, &#x27;color: #3f1206&#x27;, &#x27;color: #3c1106&#x27;,
+        &#x27;color: #3f1206&#x27;, &#x27;color: #3c1106&#x27;, &#x27;color: #dfb183&#x27;, &#x27;color: #e6b787&#x27;, &#x27;color: #dbae81&#x27;, &#x27;color: #e6b787&#x27;,
+        &#x27;color: #dbae81&#x27;, &#x27;color: #e6b787&#x27;, &#x27;color: #dbae81&#x27;, &#x27;color: #e2b485&#x27;, &#x27;color: #3b8490&#x27;, &#x27;color: #3a838d&#x27;,
+        &#x27;color: #387f89&#x27;, &#x27;color: #377a84&#x27;, &#x27;color: #377b85&#x27;, &#x27;color: #367882&#x27;, &#x27;color: #34747d&#x27;, &#x27;color: #33717b&#x27;,
+        &#x27;color: #326f78&#x27;, &#x27;color: #32717a&#x27;, &#x27;color: #34747d&#x27;, &#x27;color: #367882&#x27;, &#x27;color: #377b86&#x27;, &#x27;color: #397e89&#x27;,
+        &#x27;color: #3b848f&#x27;, &#x27;color: #3a828d&#x27;, &#x27;color: #3e8b97&#x27;, &#x27;color: #3c8692&#x27;, &#x27;color: #000000&#x27;, &#x27;color: #35767f&#x27;,
+        &#x27;color: #33727b&#x27;, &#x27;color: #327079&#x27;, &#x27;color: #306c74&#x27;, &#x27;color: #34757f&#x27;, &#x27;color: #377a84&#x27;, &#x27;color: #387d87&#x27;,
+        &#x27;color: #397e89&#x27;, &#x27;color: #3b8590&#x27;, &#x27;color: #3d8894&#x27;, &#x27;color: #3b8590&#x27;, &#x27;color: #3c8692&#x27;, &#x27;color: #3d8894&#x27;,
+        &#x27;color: #41929e&#x27;, &#x27;color: #e6b787&#x27;, &#x27;color: #af8b67&#x27;, &#x27;color: #e6b787&#x27;, &#x27;color: #af8b67&#x27;, &#x27;color: #000000&#x27;,
+        &#x27;color: #e6b787&#x27;, &#x27;color: #dbae81&#x27;, &#x27;color: #e6b787&#x27;, &#x27;color: #000000&#x27;, &#x27;color: #dbae81&#x27;, &#x27;color: #e6b787&#x27;,
+        &#x27;color: #000000&#x27;, &#x27;color: #3c8792&#x27;, &#x27;color: #3b838d&#x27;, &#x27;color: #387e88&#x27;, &#x27;color: #34747e&#x27;, &#x27;color: #000000&#x27;,
+        &#x27;color: #34747d&#x27;, &#x27;color: #306c74&#x27;, &#x27;color: #326f78&#x27;, &#x27;color: #2f676f&#x27;, &#x27;color: #367983&#x27;, &#x27;color: #397e89&#x27;,
+        &#x27;color: #3a828d&#x27;, &#x27;color: #3b8590&#x27;, &#x27;color: #3e8a95&#x27;, &#x27;color: #3e8b96&#x27;, &#x27;color: #408f9b&#x27;, &#x27;color: #41929e&#x27;,
+        &#x27;color: #3f8d98&#x27;, &#x27;color: #41919d&#x27;, &#x27;color: #b8926c&#x27;, &#x27;color: #dbae81&#x27;, &#x27;color: #af8b67&#x27;, &#x27;color: #dbae81&#x27;,
+        &#x27;color: #000000&#x27;, &#x27;color: #e5b686&#x27;, &#x27;color: #e6b787&#x27;, &#x27;color: #dbae81&#x27;, &#x27;color: #e6b787&#x27;, &#x27;color: #000000&#x27;,
+        &#x27;color: #316e76&#x27;, &#x27;color: #326f78&#x27;, &#x27;color: #316d76&#x27;, &#x27;color: #2d646c&#x27;, &#x27;color: #3a808b&#x27;, &#x27;color: #3a828d&#x27;,
+        &#x27;color: #3d8893&#x27;, &#x27;color: #3e8b96&#x27;, &#x27;color: #3f8c98&#x27;, &#x27;color: #41919d&#x27;, &#x27;color: #3f8d98&#x27;, &#x27;color: #4497a3&#x27;,
+        &#x27;color: #4497a4&#x27;, &#x27;color: #459aa6&#x27;, &#x27;color: #af8b67&#x27;, &#x27;color: #e5b686&#x27;, &#x27;color: #af8b67&#x27;, &#x27;color: #e6b787&#x27;,
+        &#x27;color: #af8b67&#x27;, &#x27;color: #e6b787&#x27;, &#x27;color: #b8926c&#x27;, &#x27;color: #e6b787&#x27;, &#x27;color: #b8926c&#x27;, &#x27;color: #dbae81&#x27;,
+        &#x27;color: #b8926c&#x27;, &#x27;color: #dbae81&#x27;, &#x27;color: #b8926c&#x27;, &#x27;color: #dbae81&#x27;, &#x27;color: #39808a&#x27;, &#x27;color: #3b848f&#x27;,
+        &#x27;color: #367983&#x27;, &#x27;color: #34747e&#x27;, &#x27;color: #357680&#x27;, &#x27;color: #34747e&#x27;, &#x27;color: #32717a&#x27;, &#x27;color: #316d76&#x27;,
+        &#x27;color: #306b74&#x27;, &#x27;color: #2d646c&#x27;, &#x27;color: #3b8590&#x27;, &#x27;color: #3c8792&#x27;, &#x27;color: #3f8d99&#x27;, &#x27;color: #40909b&#x27;,
+        &#x27;color: #42939f&#x27;, &#x27;color: #408e99&#x27;, &#x27;color: #41919d&#x27;, &#x27;color: #42939f&#x27;, &#x27;color: #459ba8&#x27;, &#x27;color: #469ca9&#x27;,
+        &#x27;color: #e6b787&#x27;, &#x27;color: #dbae81&#x27;, &#x27;color: #b08b67&#x27;, &#x27;color: #b9926c&#x27;, &#x27;color: #42929e&#x27;, &#x27;color: #40909b&#x27;,
+        &#x27;color: #3b8490&#x27;, &#x27;color: #3a838d&#x27;, &#x27;color: #3b8590&#x27;, &#x27;color: #377a84&#x27;, &#x27;color: #387c86&#x27;, &#x27;color: #367982&#x27;,
+        &#x27;color: #35767f&#x27;, &#x27;color: #33727b&#x27;, &#x27;color: #326f78&#x27;, &#x27;color: #2e676f&#x27;, &#x27;color: #2f6972&#x27;, &#x27;color: #2c626b&#x27;,
+        &#x27;color: #3e8b97&#x27;, &#x27;color: #408e9a&#x27;, &#x27;color: #40909b&#x27;, &#x27;color: #4294a0&#x27;, &#x27;color: #4396a2&#x27;, &#x27;color: #459aa7&#x27;,
+        &#x27;color: #469ca8&#x27;, &#x27;color: #4497a3&#x27;, &#x27;color: #479eab&#x27;, &#x27;color: #469aa7&#x27;, &#x27;color: #e6b787&#x27;, &#x27;color: #dbae81&#x27;,
+        &#x27;color: #b08b67&#x27;, &#x27;color: #b9926c&#x27;, &#x27;color: #b08b67&#x27;, &#x27;color: #3d8994&#x27;, &#x27;color: #3c8590&#x27;, &#x27;color: #3d8894&#x27;,
+        &#x27;color: #3c8691&#x27;, &#x27;color: #3a808b&#x27;, &#x27;color: #387c86&#x27;, &#x27;color: #377b85&#x27;, &#x27;color: #35767f&#x27;, &#x27;color: #33737c&#x27;,
+        &#x27;color: #306b73&#x27;, &#x27;color: #2f6870&#x27;, &#x27;color: #306b74&#x27;, &#x27;color: #2c626b&#x27;, &#x27;color: #2d656d&#x27;, &#x27;color: #408e9a&#x27;,
+        &#x27;color: #42929e&#x27;, &#x27;color: #4396a2&#x27;, &#x27;color: #4498a5&#x27;, &#x27;color: #469ca9&#x27;, &#x27;color: #4395a1&#x27;, &#x27;color: #ee382c&#x27;,
+        &#x27;color: #dbae81&#x27;, &#x27;color: #e6b787&#x27;, &#x27;color: #dbae81&#x27;, &#x27;color: #e6b787&#x27;, &#x27;color: #dbae81&#x27;, &#x27;color: #e3352a&#x27;,
+        &#x27;color: #ee382c&#x27;, &#x27;color: #377a84&#x27;, &#x27;color: #357680&#x27;, &#x27;color: #33727c&#x27;, &#x27;color: #326f78&#x27;, &#x27;color: #32717a&#x27;,
+        &#x27;color: #2f6971&#x27;, &#x27;color: #2e666f&#x27;, &#x27;color: #2f6971&#x27;, &#x27;color: #2e676f&#x27;, &#x27;color: #2b5f68&#x27;, &#x27;color: #4294a0&#x27;,
+        &#x27;color: #4395a2&#x27;, &#x27;color: #4498a5&#x27;, &#x27;color: #469ca8&#x27;, &#x27;color: #4497a3&#x27;, &#x27;color: #469da9&#x27;, &#x27;color: #459ba8&#x27;,
+        &#x27;color: #e3352a&#x27;, &#x27;color: #ee382c&#x27;, &#x27;color: #e3352a&#x27;, &#x27;color: #ee382c&#x27;, &#x27;color: #e6b787&#x27;, &#x27;color: #dbae81&#x27;,
+        &#x27;color: #e6b787&#x27;, &#x27;color: #dbae81&#x27;, &#x27;color: #ee382c&#x27;, &#x27;color: #e3352a&#x27;, &#x27;color: #ee382c&#x27;, &#x27;color: #387c86&#x27;,
+        &#x27;color: #33727c&#x27;, &#x27;color: #34757f&#x27;, &#x27;color: #316e76&#x27;, &#x27;color: #316d76&#x27;, &#x27;color: #2f6870&#x27;, &#x27;color: #2f6972&#x27;,
+        &#x27;color: #2e676f&#x27;, &#x27;color: #2b6068&#x27;, &#x27;color: #2d646c&#x27;, &#x27;color: #4498a5&#x27;, &#x27;color: #4498a5&#x27;, &#x27;color: #469ca9&#x27;,
+        &#x27;color: #48a1ae&#x27;, &#x27;color: #e3352a&#x27;, &#x27;color: #ee382c&#x27;, &#x27;color: #e3352a&#x27;, &#x27;color: #ee382c&#x27;, &#x27;color: #e3352a&#x27;,
+        &#x27;color: #dbae81&#x27;, &#x27;color: #e6b787&#x27;, &#x27;color: #e5b686&#x27;, &#x27;color: #ee382c&#x27;, &#x27;color: #e3352a&#x27;, &#x27;color: #ee382c&#x27;,
+        &#x27;color: #e3352a&#x27;, &#x27;color: #ee382c&#x27;, &#x27;color: #e3352a&#x27;, &#x27;color: #ee382c&#x27;, &#x27;color: #e3352a&#x27;, &#x27;color: #327079&#x27;,
+        &#x27;color: #316d76&#x27;, &#x27;color: #306a73&#x27;, &#x27;color: #2c626b&#x27;, &#x27;color: #2c626a&#x27;, &#x27;color: #2d646d&#x27;, &#x27;color: #2a5d65&#x27;,
+        &#x27;color: #4499a5&#x27;, &#x27;color: #469ca9&#x27;, &#x27;color: #479fac&#x27;, &#x27;color: #ee382c&#x27;, &#x27;color: #e3352a&#x27;, &#x27;color: #ee382c&#x27;,
+        &#x27;color: #e3352a&#x27;, &#x27;color: #ee382c&#x27;, &#x27;color: #e3352a&#x27;, &#x27;color: #e7362b&#x27;, &#x27;color: #e3352a&#x27;, &#x27;color: #ee382c&#x27;,
+        &#x27;color: #316e77&#x27;, &#x27;color: #2e666f&#x27;, &#x27;color: #2f6971&#x27;, &#x27;color: #2d646c&#x27;, &#x27;color: #2d646d&#x27;, &#x27;color: #2d646c&#x27;,
+        &#x27;color: #2a5d65&#x27;, &#x27;color: #479fac&#x27;, &#x27;color: #479fac&#x27;, &#x27;color: #49a2af&#x27;, &#x27;color: #49a3b0&#x27;, &#x27;color: #ee382c&#x27;,
+        &#x27;color: #e3352a&#x27;, &#x27;color: #ee382c&#x27;, &#x27;color: #e3352a&#x27;, &#x27;color: #ee382c&#x27;, &#x27;color: #e3352a&#x27;, &#x27;color: #ee382c&#x27;,
+        &#x27;color: #e3352a&#x27;, &#x27;color: #e6362a&#x27;, &#x27;color: #ee382c&#x27;, &#x27;color: #e3352a&#x27;, &#x27;color: #ee382c&#x27;, &#x27;color: #e3352a&#x27;,
+        &#x27;color: #ee382c&#x27;, &#x27;color: #306b74&#x27;, &#x27;color: #2f6971&#x27;, &#x27;color: #2e6770&#x27;, &#x27;color: #2b6068&#x27;, &#x27;color: #2a5e66&#x27;,
+        &#x27;color: #2c626a&#x27;, &#x27;color: #2b6169&#x27;, &#x27;color: #ee382c&#x27;, &#x27;color: #2b6169&#x27;);
+      console.groupEnd();
+    }
+  }
+}
+</code></pre>
+    </div>
+</div>
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'class';
+            var COMPODOC_CURRENT_PAGE_URL = 'AppService.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <script src="../js/menu-wc.js"></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

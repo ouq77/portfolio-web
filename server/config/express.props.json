@@ -16,6 +16,11 @@
       "cache": "365d"
     },
     {
+      "uri": "/markers",
+      "location": "./app/markers",
+      "cache": "365d"
+    },
+    {
       "uri": "/favicon.ico",
       "location": "./app/favicon.ico",
       "cache": "30d"
