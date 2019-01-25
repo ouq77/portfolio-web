@@ -8,7 +8,7 @@
     <!-- Preconnect URLs --><% META_TAGS.linkPreconnectTags.forEach(function(preconnect) { %>
     <link rel="preconnect" href="<%- preconnect %>"><% }) %>
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="manifest" href="/manifest.json">
+    <link rel="manifest" href="/manifest.json?v=<%= LAST_MOD_TIME %>">
     <meta name="viewport" content="initial-scale=1.0, user-scalable=0, width=device-width, height=device-height">
     <meta name="theme-color" content="#0ba5a2">
     <meta name="apple-mobile-web-app-title" content="<%= META_TAGS.title %>">

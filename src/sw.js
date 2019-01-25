@@ -35,12 +35,12 @@ function createCacheBustedRequest(url) {
   }
 
   // If {cache: 'reload'} didn't have any effect, append a cache-busting URL parameter instead.
-  var bustedUrl = new URL(url, window.location.href);
+  var bustedUrl = new URL(url, self.location.href);
   bustedUrl.search += (bustedUrl.search ? '&' : '') + 'cachebust=' + Date.now();
   return new Request(bustedUrl);
 }
 
-window.addEventListener('install', function (event) {
+self.addEventListener('install', function (event) {
   // We can't use cache.add() here, since we want OFFLINE_URL to be the cache key, but
   // the actual URL we end up requesting might include a cache-busting parameter.
   var offLinePromise = fetch(createCacheBustedRequest(OFFLINE_URL))
@@ -60,7 +60,7 @@ window.addEventListener('install', function (event) {
   );
 });
 
-window.addEventListener('activate', function (event) {
+self.addEventListener('activate', function (event) {
   // Delete all caches that aren't named in CURRENT_CACHES.
   // While there is only one cache in this example, the same logic will handle the case where
   // there are multiple versioned caches.
@@ -83,7 +83,7 @@ window.addEventListener('activate', function (event) {
   );
 });
 
-window.addEventListener('fetch', function (event) {
+self.addEventListener('fetch', function (event) {
   // We only want to call event.respondWith() if this is a navigation request
   // for an HTML page.
   // request.mode of 'navigate' is unfortunately not supported in Chrome

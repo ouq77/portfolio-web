@@ -4,7 +4,6 @@ import InfoWindow = google.maps.InfoWindow;
 import LatLng = google.maps.LatLng;
 import Map = google.maps.Map;
 import Marker = google.maps.Marker;
-import {CITIES, CURRENT_LOCATION} from '../../models/cities';
 import {IAirport} from '../../definitions/airport';
 import {ICity} from '../../definitions/city';
 import {IPort} from '../../definitions/port';
@@ -22,11 +21,15 @@ export class MarkerUtil {
   }
 
   addAirportMarker(map: Map, airport: IAirport) {
-    let marker = new Marker({
+    const marker = new Marker({
       animation: Animation.DROP,
       draggable: false,
-      icon: {size: AIRPORT_SIZE, url: 'assets/images/markerairport.png'},
+      icon: {
+        scaledSize: AIRPORT_SIZE,
+        url: 'markers/marker-airport.svg',
+      },
       map,
+      optimized: false,
       position: new LatLng(airport.loc.lat, airport.loc.lng),
       title: `${airport.iataCode} // ${airport.name}`,
       zIndex: 100,
@@ -37,11 +40,15 @@ export class MarkerUtil {
   }
 
   addPortMarker(map: Map, port: IPort) {
-    let marker = new Marker({
+    const marker = new Marker({
       animation: Animation.DROP,
       draggable: false,
-      icon: {size: PORT_SIZE, url: 'assets/images/markerport.png'},
+      icon: {
+        scaledSize: PORT_SIZE,
+        url: 'markers/marker-port.svg',
+      },
       map,
+      optimized: false,
       position: new LatLng(port.loc.lat, port.loc.lng),
       title: `${port.portCode} // ${port.name}`,
       zIndex: 100,
@@ -52,11 +59,15 @@ export class MarkerUtil {
   }
 
   addStationMarker(map: Map, station: IStation) {
-    let marker = new Marker({
+    const marker = new Marker({
       animation: Animation.DROP,
       draggable: false,
-      icon: {size: PORT_SIZE, url: 'assets/images/markerstation.png'},
+      icon: {
+        scaledSize: PORT_SIZE,
+        url: 'markers/marker-station.svg',
+      },
       map,
+      optimized: false,
       position: new LatLng(station.loc.lat, station.loc.lng),
       title: `${station.stationCode} // ${station.name}`,
       zIndex: 100,
@@ -67,11 +78,12 @@ export class MarkerUtil {
   }
 
   addCityMarker(map: Map, city: ICity, cityMarkers: Array<Marker>) {
-    let cityMarker: Marker = new Marker({
+    const cityMarker: Marker = new Marker({
       animation: Animation.DROP,
       draggable: false,
       icon: city.icon,
       map,
+      optimized: false,
       position: new LatLng(city.loc.lat, city.loc.lng),
       title: city.name,
       zIndex: 200,

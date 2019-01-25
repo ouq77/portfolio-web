@@ -7,7 +7,7 @@ export interface IIcon {
   /**
    * The icon size
    */
-  size: Size;
+  scaledSize: Size;
   /**
    * The icon url
    */
@@ -15,11 +15,11 @@ export interface IIcon {
 }
 
 export class Icon implements IIcon {
-  public size: Size;
+  public scaledSize: Size;
   public url: string;
 
-  constructor(size: Size, url: string) {
-    this.size = size;
+  constructor(scaledSize: Size, url: string) {
+    this.scaledSize = scaledSize;
     this.url = url;
   }
 }
