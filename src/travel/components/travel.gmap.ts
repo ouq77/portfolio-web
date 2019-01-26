@@ -35,8 +35,8 @@ export class TravelMapComponent implements OnInit {
   private _additionalMarkerWait: number;
   private _markerDropWait: number;
   private _cityMarkers: Array<Marker>;
-  private _cruiseLines: Array<Array<Polyline>>;
-  private _flightLines: Array<Array<Polyline>>;
+  private _cruiseLines: Array<Polyline>;
+  private _flightLines: Array<Polyline>;
   private _railPaths: Array<string>;
   private _mapMarkersDrawn: boolean;
   private _mapUtil: MapUtil;
@@ -46,8 +46,8 @@ export class TravelMapComponent implements OnInit {
   private _tilesLoaded: boolean;
   private _tilesLoadedEvent: any;
   private _timeoutScroll: any;
-  private _upcomingCruiseLines: Array<Array<Polyline>>;
-  private _upcomingFlightLines: Array<Array<Polyline>>;
+  private _upcomingCruiseLines: Array<Polyline>;
+  private _upcomingFlightLines: Array<Polyline>;
   private _upcomingRailPaths: Array<string>;
   private _railPathsLoaded: boolean;
 

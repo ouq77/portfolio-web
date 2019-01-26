@@ -215,4 +215,5 @@ export const CRUISES: Array<Array<IPoint>> = [
  * Array of Upcoming Cruises for the Contact section
  * @type {IPoint[][]}
  */
-export const UPCOMING_CRUISES: Array<Array<IPoint>> = [];
+export const UPCOMING_CRUISES: Array<Array<IPoint>> = [
+];
