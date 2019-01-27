@@ -4,10 +4,13 @@ import event = google.maps.event;
 import Polyline = google.maps.Polyline;
 import IconSequence = google.maps.IconSequence;
 import {IPoint} from '../../definitions/point';
+import {PolylineIconSequence} from '../../definitions/polyline.icon.sequence';
 import {delay} from '../../../shared/common/delay';
 
 export class PolylineUtil {
   private _lineDrawWait: number;
+  private _polylines: Array<Polyline> = [];
+  private _dottedPolylines: Array<PolylineIconSequence> = [];
   private _weightBase: number = 1;
   private _weightExp1: number = 1;
   private _weightExp2: number = 2;
@@ -30,23 +33,24 @@ export class PolylineUtil {
         strokeWeight: this._weightBase,
         zIndex: 2,
       });
-      this.polylineStrokeWeightByZoom(map, lines[index], this._weightBase);
     });
+
+    this._polylines.push(...lines);
     return lines;
   }
 
   createPolylineFromPath(encodedPaths: Array<string>, map: Map, strokeColor: string): void {
     encodedPaths.forEach((encodedPath: string) => {
       const path: Array<LatLng> = google.maps.geometry.encoding.decodePath(encodedPath);
-      const line: Polyline = new google.maps.Polyline({
+      const line: Polyline = new Polyline({
         path,
         strokeColor,
         strokeOpacity: 0.9,
         strokeWeight: this._weightBase,
         zIndex: 2,
       });
-      this.polylineStrokeWeightByZoom(map, line, this._weightBase);
 
+      this._polylines.push(line);
       delay(++this._lineDrawWait * 130)
         .then(() => {
           line.setMap(map);
@@ -69,14 +73,15 @@ export class PolylineUtil {
           repeat: '12px',
         },
       ];
-      lines[index] = new Polyline({
+      const polyline = new Polyline({
         geodesic: true,
         icons: linesIcons,
         map,
         strokeOpacity: 0,
         zIndex: 2,
       });
-      this.dottedPolylineStrokeWeightByZoom(map, lines[index], this._weightBase, linesIcons);
+      lines[index] = polyline;
+      this._dottedPolylines.push({polyline, linesIcons});
     });
     return lines;
   }
@@ -84,7 +89,7 @@ export class PolylineUtil {
   createDottedPolylineFromPath(encodedPaths: Array<string>, map: Map, strokeColor: string): void {
     encodedPaths.forEach((encodedPath: string) => {
       const path: Array<LatLng> = google.maps.geometry.encoding.decodePath(encodedPath);
-      const lineIcons: IconSequence[] = [
+      const linesIcons: IconSequence[] = [
         {
           icon: {
             path: 'M 0, -1 0,1',
@@ -96,35 +101,18 @@ export class PolylineUtil {
           repeat: '12px',
         },
       ];
-      const line: Polyline = new google.maps.Polyline({
-        icons: lineIcons,
+      const polyline: Polyline = new Polyline({
+        icons: linesIcons,
         path,
         strokeOpacity: 0,
         zIndex: 2,
       });
-      this.dottedPolylineStrokeWeightByZoom(map, line, this._weightBase, lineIcons);
 
+      this._dottedPolylines.push({polyline, linesIcons});
       delay(++this._lineDrawWait * 130)
         .then(() => {
-          line.setMap(map);
+          polyline.setMap(map);
         });
-    });
-  }
-
-  polylineStrokeWeightByZoom(map: Map, polyline: Polyline, baseWeight: number): void {
-    event.addListener(map, 'zoom_changed', () => {
-      polyline.setOptions({
-        strokeWeight: baseWeight * this.getWeightExponent(map.getZoom()),
-      });
-    });
-  }
-
-  dottedPolylineStrokeWeightByZoom(map: Map, polyline: Polyline, baseWeight: number, icons: IconSequence[]): void {
-    event.addListener(map, 'zoom_changed', () => {
-      icons[0].icon.strokeWeight = baseWeight * this.getWeightExponent(map.getZoom());
-      polyline.setOptions({
-        icons,
-      });
     });
   }
 
@@ -138,6 +126,27 @@ export class PolylineUtil {
             const coordinates = new LatLng(leg.lat, leg.lng);
             polyline.getPath().push(coordinates);
           }));
+    });
+  }
+
+
+  setZoomChangedListener(map: Map): void {
+    event.addListener(map, 'zoom_changed', () => {
+      const zoom: number = map.getZoom();
+      const weightExponent: number = this.getWeightExponent(zoom);
+      const strokeWeight = this._weightBase * weightExponent;
+      this._polylines.forEach((polyline: Polyline) => {
+        polyline.setOptions({
+          strokeWeight,
+        });
+      });
+
+      if (zoom < 18) {
+        this._dottedPolylines.forEach((dottedPolyline: PolylineIconSequence) => {
+          dottedPolyline.linesIcons[0].icon.strokeWeight = strokeWeight;
+          dottedPolyline.polyline.setOptions({icons: dottedPolyline.linesIcons});
+        });
+      }
     });
   }
 

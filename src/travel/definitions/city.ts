@@ -21,6 +21,10 @@ export interface ICity {
    * Location name
    */
   name: string;
+  /**
+   * Current location?
+   */
+  current: boolean;
 }
 
 export class City implements ICity {
@@ -28,11 +32,13 @@ export class City implements ICity {
   public icon: IIcon;
   public loc: IPoint;
   public name: string;
+  public current: boolean;
 
-  constructor(description: string, icon: IIcon, loc: IPoint, name: string) {
+  constructor(description: string, icon: IIcon, loc: IPoint, name: string, current: boolean = false) {
     this.description = description;
     this.icon = icon;
     this.loc = loc;
     this.name = name;
+    this.current = current;
   }
 }

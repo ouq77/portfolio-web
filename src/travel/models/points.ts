@@ -1,4 +1,3 @@
-import Size = google.maps.Size;
 import {IPoint} from '../definitions/point';
 
 export const START_POINT: IPoint = {
@@ -41,7 +40,3 @@ export const SILVERSTREAM: IPoint = {
   lat: -41.1497301,
   lng: 175.005017,
 };
-
-export const MARKER_SIZE: Size = new google.maps.Size(26, 26);
-export const AIRPORT_SIZE: Size = new google.maps.Size(16, 16);
-export const PORT_SIZE: Size = AIRPORT_SIZE;
