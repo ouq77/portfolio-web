@@ -1443,6 +1443,8 @@ export class TravelMapComponent implements OnInit {
               this.map.panTo(AUCKLAND);
               this._mapUtil.zoomMap(this.map, this.map.getZoom() + 1, 5);
             });
+            this._polylineUtil.setZoomChangedListener(this.map);
+            this._markerUtil.setZoomChangedListener(this.map);
           });
         }
       }))(jQuery);

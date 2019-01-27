@@ -262,6 +262,9 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                         <a href="interfaces/Link.html" data-type="entity-link">Link</a>
                     </li>
                     <li class="link">
+                        <a href="interfaces/PolylineIconSequence.html" data-type="entity-link">PolylineIconSequence</a>
+                    </li>
+                    <li class="link">
                         <a href="interfaces/RailTrip.html" data-type="entity-link">RailTrip</a>
                     </li>
                     <li class="link">
