@@ -11,12 +11,12 @@ export class PolylineUtil {
   private _lineDrawWait: number;
   private _polylines: Array<Polyline> = [];
   private _dottedPolylines: Array<PolylineIconSequence> = [];
-  private _weightBase: number = 1;
+  private _weightBase: number = 1.25;
   private _weightExp1: number = 1;
   private _weightExp2: number = 2;
   private _weightExp3: number = 4;
-  private _weightExp4: number = 10;
-  private _weightExp5: number = 18;
+  private _weightExp4: number = 8;
+  private _weightExp5: number = 16;
 
   constructor() {
     this._lineDrawWait = 0;
@@ -157,25 +157,25 @@ export class PolylineUtil {
       case 2:
       case 3:
       case 4:
+        return this._weightExp1;
       case 5:
       case 6:
       case 7:
-        return this._weightExp1;
+        return this._weightExp2;
       case 8:
       case 9:
       case 10:
       case 11:
+        return this._weightExp3;
       case 12:
       case 13:
-        return this._weightExp2;
       case 14:
       case 15:
       case 16:
+        return this._weightExp4;
       case 17:
-        return this._weightExp3;
       case 18:
       case 19:
-        return this._weightExp4;
       case 20:
       case 21:
       case 22:

@@ -2,6 +2,11 @@ import {IStation, Station} from '../definitions/station';
 import {Point} from '../definitions/point';
 import * as countries from './countries';
 
+export const KGX: IStation = new Station('London', countries.UK, 'KGX', new Point(51.531955, -0.1278926), `London King's Cross`);
+export const EDB: IStation = new Station('Edinburgh', countries.SCOTLAND, 'EDB', new Point(55.9520009, -3.1921642), 'Edinburgh Waverley');
+export const ZHB: IStation = new Station('Zürich', countries.SWITZERLAND, 'ZHB', new Point(47.3784045, 8.5362146), 'Zürich Hauptbahnhof');
+export const BHB: IStation = new Station('Bern', countries.SWITZERLAND, 'BHB', new Point(46.9485679, 7.4344308), 'Bahnhof Bern');
+export const CHB: IStation = new Station('Chiasso', countries.SWITZERLAND, 'CHB', new Point(45.8310028, 9.0310524), 'Stazione di Chiasso');
 export const WELL: IStation = new Station('Wellington', countries.NEW_ZEALAND, 'WELL', new Point(-41.279217, 174.780331), 'Wellington Station');
 export const HAM: IStation = new Station('Hamilton', countries.NEW_ZEALAND, 'HAM', new Point(-37.790919, 175.265010), 'Hamilton Station');
 export const CHCH: IStation = new Station('Christchurch', countries.NEW_ZEALAND, 'CHCH', new Point(-43.539931, 172.607988), 'Christchurch Station');
@@ -18,5 +23,5 @@ export const BOO: IStation = new Station('Bodø', countries.NORWAY, 'BOO', new P
  * @type {IStation[]}
  */
 export const STATIONS: Array<IStation> = [
-  WELL, HAM, CHCH, PICT, XEV, ZGH, XZO, QFV, XZT, BOO,
+  ZHB, BHB, CHB, KGX, EDB, WELL, HAM, CHCH, PICT, XEV, ZGH, XZO, QFV, XZT, BOO,
 ];
