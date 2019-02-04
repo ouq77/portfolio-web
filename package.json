@@ -1,6 +1,6 @@
 {
   "name": "ouq77-portfolio",
-  "version": "7.2.0",
+  "version": "7.2.1",
   "author": "Louw Swart",
   "description": "On-line portfolio of Louw Swart, based on 'angular2-seed'",
   "license": "MIT",
@@ -30,7 +30,7 @@
     "@types/es6-shim": "0.31.39",
     "@types/googlemaps": "3.30.16",
     "@types/jquery": "3.3.29",
-    "@types/node": "10.12.20",
+    "@types/node": "10.12.21",
     "bootstrap-sass": "3.4.0",
     "browserify": "16.2.3",
     "command-line-args": "5.0.2",

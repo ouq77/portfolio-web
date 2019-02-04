@@ -165,16 +165,16 @@ export class MarkerUtil {
       case 8:
       case 9:
       case 10:
+        return this._sizeBase;
       case 11:
       case 12:
-        return this._sizeBase;
       case 13:
       case 14:
       case 15:
       case 16:
       case 17:
-      case 18:
         return this._sizeExp1;
+      case 18:
       case 19:
       case 20:
       case 21:
