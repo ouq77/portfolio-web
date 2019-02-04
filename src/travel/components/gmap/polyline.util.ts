@@ -14,9 +14,9 @@ export class PolylineUtil {
   private _weightBase: number = 1.25;
   private _weightExp1: number = 1;
   private _weightExp2: number = 2;
-  private _weightExp3: number = 4;
-  private _weightExp4: number = 8;
-  private _weightExp5: number = 16;
+  private _weightExp3: number = 3;
+  private _weightExp4: number = 4;
+  private _weightExp5: number = 6;
 
   constructor() {
     this._lineDrawWait = 0;
