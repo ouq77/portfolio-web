@@ -20,6 +20,7 @@
     "noImplicitUseStrict": true,
     "pretty": true,
     "removeComments": true,
+    "skipLibCheck": true,
     "sourceMap": false,
     "target": "es2015",
     "typeRoots": [

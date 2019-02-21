@@ -1,5 +1,5 @@
 import {IPoint, Point} from '../definitions/point';
-import * as ports from './ports';
+import {DKCPH, LIFOU, NCMEE, NCNOU, NOOSL, NOSVJ, NOTOS, NZAKL, VUVLI} from './ports';
 
 const DKCPH_NOOSL_WAY_POINTS: Array<IPoint> = [
   new Point(55.706266, 12.604649),
@@ -202,13 +202,13 @@ const NCMEE_NZAKL_WAY_POINTS: Array<IPoint> = [
  * @type {IPoint[][]}
  */
 export const CRUISES: Array<Array<IPoint>> = [
-  [ports.DKCPH.loc, ...DKCPH_NOOSL_WAY_POINTS, ports.NOOSL.loc],
-  [ports.NOSVJ.loc, ...NOSVJ_NOTOS_WAY_POINTS, ports.NOTOS.loc],
-  [ports.NZAKL.loc, ...NZAKL_NCNOU_WAY_POINTS, ports.NCNOU.loc],
-  [ports.NCNOU.loc, ...NCNOU_LIFOU_WAY_POINTS, ports.LIFOU.loc],
-  [ports.LIFOU.loc, ...LIFOU_VUVLI_WAY_POINTS, ports.VUVLI.loc],
-  [ports.VUVLI.loc, ...VUVLI_NCMEE_WAY_POINTS, ports.NCMEE.loc],
-  [ports.NCMEE.loc, ...NCMEE_NZAKL_WAY_POINTS, ports.NZAKL.loc],
+  [DKCPH.loc, ...DKCPH_NOOSL_WAY_POINTS, NOOSL.loc],
+  [NOSVJ.loc, ...NOSVJ_NOTOS_WAY_POINTS, NOTOS.loc],
+  [NZAKL.loc, ...NZAKL_NCNOU_WAY_POINTS, NCNOU.loc],
+  [NCNOU.loc, ...NCNOU_LIFOU_WAY_POINTS, LIFOU.loc],
+  [LIFOU.loc, ...LIFOU_VUVLI_WAY_POINTS, VUVLI.loc],
+  [VUVLI.loc, ...VUVLI_NCMEE_WAY_POINTS, NCMEE.loc],
+  [NCMEE.loc, ...NCMEE_NZAKL_WAY_POINTS, NZAKL.loc],
 ];
 
 /**

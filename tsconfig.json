@@ -21,6 +21,7 @@
     "noLib": false,
     "pretty": false,
     "removeComments": true,
+    "skipLibCheck": true,
     "sourceMap": false,
     "target": "es2015",
     "typeRoots": [

@@ -2,22 +2,23 @@ import {CURRENT_ICON_URL, PREVIOUS_ICON_URL} from './marker.icons';
 import {CURRENT_MARKER_SIZE, PREVIOUS_MARKER_SIZE} from './marker.sizes';
 import {ICity, City} from '../definitions/city';
 import {IIcon, Icon} from '../definitions/icon';
-import * as points from './points';
-import * as countries from './countries';
+import {NEW_ZEALAND, SOUTH_AFRICA, UK} from './countries';
+import {AUCKLAND_POINT, BENONI_POINT, CAPE_TOWN_POINT, HAMILTON_POINT, HARTSWATER_POINT, HEIDELBERG_POINT,
+  LONDON_POINT, SILVERSTREAM_POINT, VRYBURG_POINT} from './points';
 
 let lived: string = 'I\'ve lived here...';
 let prevIcon: IIcon = new Icon(PREVIOUS_MARKER_SIZE, PREVIOUS_ICON_URL);
 let curIcon: IIcon = new Icon(CURRENT_MARKER_SIZE, CURRENT_ICON_URL);
 
-const HARTSWATER: ICity = new City('I was born here...', prevIcon, points.HARTSWATER, `Hartswater, ${countries.SOUTH_AFRICA}`);
-const HEIDELBERG: ICity = new City('I grew up here...', prevIcon, points.HEIDELBERG, `Heidelberg, ${countries.SOUTH_AFRICA}`);
-const VRYBURG: ICity = new City('I went to High School here...', prevIcon, points.VRYBURG, `Vryburg, ${countries.SOUTH_AFRICA}`);
-const LONDON: ICity = new City(lived, prevIcon, points.LONDON, `London, ${countries.UK}`);
-const JOHANNESBURG: ICity = new City(lived, prevIcon, points.BENONI, `Johannesburg, ${countries.SOUTH_AFRICA}`);
-const CAPE_TOWN: ICity = new City('I moved to NZ from here...', prevIcon, points.CAPE_TOWN, `Cape Town, ${countries.SOUTH_AFRICA}`);
-const HAMILTON: ICity = new City(lived, prevIcon, points.HAMILTON, `Hamilton, ${countries.NEW_ZEALAND}`);
-const AUCKLAND: ICity = new City(lived, prevIcon, points.AUCKLAND, `Auckland, ${countries.NEW_ZEALAND}`);
-const SILVERSTREAM: ICity = new City('I currently live in this area...', curIcon, points.SILVERSTREAM, `Silverstream, Wellington, ${countries.NEW_ZEALAND}`, true);
+const HARTSWATER: ICity = new City('I was born here...', prevIcon, HARTSWATER_POINT, `Hartswater, ${SOUTH_AFRICA}`);
+const HEIDELBERG: ICity = new City('I grew up here...', prevIcon, HEIDELBERG_POINT, `Heidelberg, ${SOUTH_AFRICA}`);
+const VRYBURG: ICity = new City('I went to High School here...', prevIcon, VRYBURG_POINT, `Vryburg, ${SOUTH_AFRICA}`);
+const LONDON: ICity = new City(lived, prevIcon, LONDON_POINT, `London, ${UK}`);
+const JOHANNESBURG: ICity = new City(lived, prevIcon, BENONI_POINT, `Johannesburg, ${SOUTH_AFRICA}`);
+const CAPE_TOWN: ICity = new City('I moved to NZ from here...', prevIcon, CAPE_TOWN_POINT, `Cape Town, ${SOUTH_AFRICA}`);
+const HAMILTON: ICity = new City(lived, prevIcon, HAMILTON_POINT, `Hamilton, ${NEW_ZEALAND}`);
+const AUCKLAND: ICity = new City(lived, prevIcon, AUCKLAND_POINT, `Auckland, ${NEW_ZEALAND}`);
+const SILVERSTREAM: ICity = new City('I currently live in this area...', curIcon, SILVERSTREAM_POINT, `Silverstream, Wellington, ${NEW_ZEALAND}`, true);
 
 /**
  * Array of Cities for the Contact section

@@ -13,7 +13,7 @@ import {AIRPORTS} from '../models/airports';
 import {PORTS} from '../models/ports';
 import {CRUISES, UPCOMING_CRUISES} from '../models/cruises';
 import {FLIGHTS, UPCOMING_FLIGHTS} from '../models/flights';
-import {AUCKLAND} from '../models/points';
+import {AUCKLAND_POINT} from '../models/points';
 import {IAirport} from '../definitions/airport';
 import {ICity} from '../definitions/city';
 import {IPort} from '../definitions/port';
@@ -158,7 +158,7 @@ export class TravelMapComponent implements OnInit {
                 .then(() => this._markerUtil.addCityMarker(this.map, city, this._cityMarkers)));
             this._additionalMarkerWait = this._additionalMarkerWait * 65;
             delay((CITIES.length * 700) + this._additionalMarkerWait).then(() => {
-              this.map.panTo(AUCKLAND);
+              this.map.panTo(AUCKLAND_POINT);
               this._mapUtil.zoomMap(this.map, this.map.getZoom() + 1, 5);
             });
             this._polylineUtil.setZoomChangedListener(this.map);
