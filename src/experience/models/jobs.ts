@@ -6,7 +6,7 @@ import {Job} from '../definitions/job';
  */
 export const JOBS: Array<Job> = [
   {
-    content: '<p>Currently on assignment with an Accenture client where the tech stack includes <b>Angular</b>, <b>Java Spring Boot</b> and <b>Azure</b>.</p>',
+    content: '<p>Currently on assignment with an Accenture client where the tech stack includes <b>Angular (7)</b>, <b>Java Spring Boot</b>, <b>Node.js</b> and <b>MongoDB</b> running in <b>Azure</b>.</p>',
     institution: {
       location: 'Wellington, New Zealand',
       name: 'Accenture',
