@@ -1,7 +1,7 @@
 {
   "name": "ouq77-portfolio",
   "author": "ouq77",
-  "version": "7.2.4",
+  "version": "7.2.5",
   "description": "On-line portfolio of Louw Swart, based on 'angular2-seed'",
   "main": "server/server.js",
   "repository": {
@@ -20,7 +20,7 @@
   "dependencies": {
     "body-parser": "1.18.3",
     "cache-manager": "2.9.0",
-    "camelcase": "5.0.0",
+    "camelcase": "5.1.0",
     "compression": "1.7.3",
     "convict": "4.4.1",
     "debug": "4.1.1",
