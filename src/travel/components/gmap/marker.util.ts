@@ -129,7 +129,7 @@ export class MarkerUtil {
 
   private setIcon(marker: Marker, size: Size, url: string, sizeExponent: number): void {
     marker.setIcon({
-      scaledSize: new google.maps.Size(size.width * sizeExponent, size.height * sizeExponent),
+      scaledSize: new Size(size.width * sizeExponent, size.height * sizeExponent),
       url,
     });
   }
