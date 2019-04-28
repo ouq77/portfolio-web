@@ -45,6 +45,15 @@
       }
     }
 
+    ul {
+      padding-bottom: 2rem;
+      padding-left: 2.5rem;
+    }
+
+    li > a {
+      color: $white;
+    }
+
     @include respond-to($query: $screen-x2-min) {
       img {
         width: 100%;
