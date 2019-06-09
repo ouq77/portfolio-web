@@ -27,11 +27,11 @@
           <h6 *ngIf="job.accomplishments">Accomplishments</h6>
           <section *ngIf="job.accomplishments" [innerHtml]="job.accomplishments" class="content"></section>
           <ng-container *ngIf="job.video">
-            <ngui-inview>
-              <div *ngIf class="vid-container">
-                <iframe title="{{job.video.videoTitle}}" class="youtube-frame" width="1280" height="720" [src]="job.video.videoUrl | videoUrl" frameborder="0" allowfullscreen></iframe>
-              </div>
-            </ngui-inview>
+            <div class="vid-container">
+              <ngui-inview>
+                <iframe *ngIf title="{{job.video.videoTitle}}" class="youtube-frame" width="1280" height="720" [src]="job.video.videoUrl | videoUrl" frameborder="0" allowfullscreen></iframe>
+              </ngui-inview>
+            </div>
           </ng-container>
         </div>
       </div>
