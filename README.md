@@ -1,12 +1,11 @@
 ouq77portfolio [![Dependency Status](https://david-dm.org/ouq77/portfolio-web.svg)](https://david-dm.org/ouq77/portfolio-web) [![devDependency Status](https://david-dm.org/ouq77/portfolio-web/dev-status.svg)](https://david-dm.org/ouq77/portfolio-web#info=devDependencies)
 ==============
 
-Angular2 app, built on top of [angular2-seed](https://github.com/mgechev/angular2-seed), that can be run on Heroku in NodeJS.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.1.
 
 Requires
 ========
-1. Angular2 (beta)
-2. Environment Variables:
+Environment Variables:
   * CUSTOM_APP_DOMAIN - Custom domain, if not run on Heroku
   * GMAIL_APP_EMAIL - Email address for logging into Gmail account
   * GMAIL_APP_PASSWORD - Password for the email address used for sending
@@ -17,3 +16,19 @@ Requires
 
 
 ![icon.png](https://portfolio.ouq77.kiwi/assets/images/manifesticons/eightbitme-192.png)
+
+## Development server
+
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+## Code scaffolding
+
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+
+## Build
+
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

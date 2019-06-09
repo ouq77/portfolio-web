@@ -1,0 +1,31 @@
+<section class="footer" id="links">
+  <div class="container">
+    <div class="heading">
+      <h2>Links</h2>
+      <p>social links and page info</p>
+    </div>
+    <ul>
+      <li *ngFor="let link of links">
+        <a href="{{link.url}}"
+           target="_blank"
+           rel="noopener noreferrer"
+           title="{{link.title}}"
+           class="js_track_link_click"
+           attr.aria-label="{{link.title}}">
+          <i class="icon-{{link.icon}} icon-2x"></i>
+        </a>
+      </li>
+    </ul>
+    <div class="footer-info">
+      <p><i class="icon-copyright"></i>&nbsp;{{currentDate | date:"yyyy"}} &ndash; HTML Template by <i><a href="https://themeforest.net/user/themeelite" target="_blank" rel="noopener noreferrer" class="js_track_link_click" aria-label="Themeforest themeelite">themeelite</a></i></p>
+      <p>Hosted on the <i><a href="https://heroku.com" target="_blank" rel="noopener noreferrer" class="js_track_link_click" aria-label="Heroku">heroku.com</a></i> cloud platform</p>
+      <p>Angular, TypeScript, SCSS</p>
+      <p>Node.js server code <a href="https://github.com/feross/standard" target="_blank" rel="noopener noreferrer" aria-label="Standard style"><ngui-inview><img *ngIf class="js-standard-style" src="https://cdn.rawgit.com/feross/standard/master/badge.svg" alt="JS Standard style"></ngui-inview></a>&nbsp;compliant</p>
+      <p><i class="icon-git"></i>&nbsp;Deployed from <a href="https://github.com/ouq77/portfolio-web/tree/portfolio-web-ng2-heroku" target="_blank" rel="noopener noreferrer" class="js_track_link_click" aria-label="Github repo">this repo</a></p>
+      <p><i class="icon-file-code"></i>&nbsp;Docs <a href="/docs/index.html" target="_blank" rel="nofollow noopener noreferrer" class="js_track_link_click" aria-label="Docs location">hosted here</a></p>
+    </div>
+  </div>
+  <div class="last-modified">
+    <p><sup>Last updated: <%= LAST_MOD_SITE %></sup></p>
+  </div>
+</section>

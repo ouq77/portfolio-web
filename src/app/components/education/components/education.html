@@ -1,0 +1,31 @@
+<section class="education" id="education">
+  <div class="container">
+    <div class="heading">
+      <h2>Education</h2>
+      <p>what I've studied</p>
+    </div>
+    <div *ngFor="let school of schools" class="row education-details">
+      <div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
+        <div class="education-year">{{school.year.from}} <i class="icon-angle-circled-right"></i><br>{{school.year.to}}</div>
+      </div>
+      <div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 right-area">
+        <div class="arrow-part"></div>
+        <div class="education-container">
+          <h4>{{school.institution.name}}&nbsp;
+            <a *ngIf="school.institution.url"
+               href="{{school.institution.url}}"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="link js_track_link_click"
+               attr.aria-label="{{school.institution.name}}">
+              <i class="icon-link-ext"></i>
+            </a>
+          </h4>
+          <h5>{{school.qualification}}</h5>
+          <h5 class="sub-heading"><i>{{school.institution.location}}</i></h5>
+          <section [innerHTML]="school.content" class="content"></section>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

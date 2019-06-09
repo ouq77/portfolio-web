@@ -1,0 +1,23 @@
+<div class="col-xs-12 col-sm-9 col-md-8 col-lg-8 contact-form">
+  <h4>Send a message</h4>
+  <div *ngIf="sentSuccessfully" class="success-message">
+    <h3>Email Sent Successfully.</h3>
+    <p>Thank you <strong>{{name.value | trim}}</strong>, your message has been sent.</p>
+  </div>
+  <form *ngIf="!sentSuccessfully" (ngSubmit)="onSubmit()" [formGroup]="form">
+    <div id="result">
+      <div *ngIf="errorMessages" [hidden]="!submitClicked || sentSuccessfully" class="error-message">
+        <span [hidden]="name.valid">{{errorFromCode('e_name_required')}}<br></span>
+        <span [hidden]="email.valid">{{errorFromCode('e_email_required')}}<br></span>
+        <span [hidden]="message.valid">{{errorFromCode('e_message_required')}}</span>
+        <span *ngIf="serverErrors" class="error-message" [innerHtml]="serverErrors"></span>
+      </div>
+    </div>
+    <input formControlName="name" aria-label="Your name" required type="text" class="col-xs-12 col-sm-6 col-md-6 col-lg-6" placeholder="Your name...">
+    <input formControlName="email" aria-label="Your email" autocapitalize="off" required type="email" class="col-xs-12 col-sm-6 col-md-6 col-lg-6 no-margin" placeholder="Your email...">
+    <textarea formControlName="message" aria-label="Your message" required cols="1" rows="1" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="Your message..."></textarea>
+    <input formControlName="heuning" type="hidden">
+    <img *ngIf="submitting" src="assets/images/loading.gif" class="contact-loader" />
+    <input [disabled]="(!form.valid && submitClicked) || submitting" (click)="onClick()" type="submit" name="send" class="btn-submit" value="{{submitBtnText}}">
+  </form>
+</div>

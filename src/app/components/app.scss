@@ -1,0 +1,98 @@
+@import '../../assets/css/common';
+
+//
+// Document Setup
+// ========================================================================== //
+
+.wrapper {
+  width: 100%;
+
+  @include respond-to($query: $screen-x1-min) {
+    top: 200px !important;
+  }
+}
+
+.special-height {
+  padding-top: 63px;
+}
+
+.top-margin {
+  margin-top: 20px;
+}
+
+.link {
+  color: $curious-blue;
+  font-size: 12px;
+}
+
+//
+// Print styles
+// Inlined to avoid the additional HTTP request:
+// http://www.phpied.com/delay-loading-your-print-css/
+// ========================================================================== //
+
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: $black !important; // Black prints faster: http://www.sanbeiji.com/archives/953 //
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  // Don't show links that are fragment identifiers,
+  // or use the 'javascript:' pseudo protocol
+
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid $nobel;
+    page-break-inside: avoid;
+  }
+
+  // Printing Tables:
+  // http://css-discuss.incutio.com/wiki/Printing_Tables
+
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}

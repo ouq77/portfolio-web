@@ -1,0 +1,115 @@
+@import '../../../../assets/css/common';
+
+//
+// Work experience
+// ========================================================================== //
+
+.experience {
+  background: $white;
+
+  @include container-heading() {
+    h2 {
+      color: $bitter-sweet;
+    }
+    p {
+      color: $manatee;
+      line-height: 18px;
+    }
+    h4 {
+      font-weight: 700;
+    }
+  };
+
+  .container {
+    .work-details {
+      .right-area {
+        padding-bottom: 47px;
+
+        .arrow-part {
+          float: left;
+          width: 15px;
+          height: 50px;
+          @include bg-image($image: 'arrow-left.png', $y-pos: 23px);
+
+          @include respond-to {
+            float: none;
+            width: 100%;
+            height: 40px;
+            @include bg-image($image: 'arrow-top.png', $x-pos: 50%, $y-pos: 100%);
+          }
+        }
+
+        .experience-container {
+          width: auto;
+          background: $white-smoke;
+          border-bottom: solid 4px $whisper;
+          padding: 22px 47px 6px 47px;
+          margin-left: 15px;
+          text-align: left;
+          h4 {
+            color: $blue-zodiac;
+            padding-bottom: 3px;
+          }
+          h5, h6 {
+            color: $blue-zodiac;
+          }
+          .content {
+            color: $manatee;
+            line-height: 21px;
+          }
+
+          @include respond-to {
+            margin-left: 0;
+          }
+        }
+      }
+
+      &:last-child .right-area {
+        padding-bottom: 0;
+      }
+
+      .work-year {
+        font-size: 17px;
+        color: $white;
+        background: $bitter-sweet;
+        text-align: center;
+        width: 120px;
+        height: 120px;
+        padding: 40px 0 40px 0;
+        @include border-radius(50%);
+
+        @include respond-to($val: min-width, $query: $screen-lg-min) {
+          width: 140px;
+          height: 140px;
+          padding-top: 50px;
+        }
+
+        @include respond-to {
+          margin: 0 auto;
+        }
+      }
+
+      /* Youtube Reflexive */
+
+      .vid-container {
+        position: relative;
+        padding-bottom: 50%;
+        padding-top: 35px;
+        height: 0;
+        overflow: hidden;
+        margin-bottom: 18px;
+        iframe, object, embed {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+        .youtube-frame {
+          border: 0;
+        }
+      }
+    }
+  }
+}
+

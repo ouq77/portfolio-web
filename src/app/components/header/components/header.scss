@@ -1,0 +1,331 @@
+@import '../../../../assets/css/common';
+
+//
+// Header Part
+// ========================================================================== //
+
+header {
+  position: relative;
+
+  @include respond-to($query: $screen-m2-min) {
+    font-size: 38px;
+    span {
+      font-size: 16px;
+    }
+  }
+}
+
+.banner {
+  overflow: hidden;
+  margin: 0 auto !important;
+  background: $midnight-express;
+  height: 3000px;
+
+  .no-padding {
+    padding: 0 !important;
+  }
+}
+
+.banner-text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 30px 0 30px;
+  max-width: 615px;
+  background: $black-forest-trans-point-8;
+  zoom: 1;
+
+  h1 {
+    text-transform: uppercase;
+    font-size: 78px;
+    font-weight: 700;
+  }
+  h2 {
+    font-size: 30px;
+    text-transform: none;
+  }
+
+  @include respond-to($query: $screen-m1-min) {
+    padding-left: 25px;
+    padding-right: 25px;
+    h1 {
+      font-size: 65px;
+      line-height: 71px;
+    }
+    h2 {
+      font-size: 25px;
+    }
+  }
+
+  @include respond-to($query: $screen-x1-min) {
+    h1 {
+      font-size: 42px;
+      line-height: 48px;
+    }
+    h2 {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  @include respond-to($query: $screen-x3-min) {
+    padding-top: 22px;
+    h1 {
+      font-size: 38px;
+      line-height: 46px;
+    }
+    h2 {
+      font-size: 15px;
+      line-height: 22px;
+    }
+  }
+
+  @include respond-to($query: $screen-x4-min) {
+    padding-top: 16px;
+  }
+}
+
+//
+// Slide show background control
+// ========================================================================== //
+
+.cb-slideshow {
+  opacity: 1;
+  background: $black-russian;
+  @include transition(opacity .5s ease-in);
+
+  li {
+    opacity: .5;
+
+    @include respond-to($query: $screen-x1-min) {
+      opacity: .6;
+    }
+  }
+
+}
+
+//
+// Background slider
+// ========================================================================== //
+
+.ri-grid {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  height: auto;
+  ul {
+    list-style: none;
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    &:before {
+      content: '';
+      display: table;
+    }
+    &:after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+    zoom: 1;
+    li {
+      @include css3-prefix(perspective, 400px);
+      margin: 0;
+      padding: 0;
+      float: left;
+      position: relative;
+      display: block;
+      overflow: hidden;
+      background: $black;
+      a {
+        display: block;
+        outline: none;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: $night-rider no-repeat center center;
+        @include css3-prefix(backface-visibility, hidden);
+        @include transform-style;
+        @include background-size;
+        @include box-sizing(content-box);
+      }
+    }
+  }
+
+  .ri-loading-image {
+    display: none;
+  }
+
+  &.ri-grid-loading {
+    overflow: hidden;
+    margin: 0 auto !important;
+    background: $midnight-express;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 25;
+
+    .cb-slideshow {
+      opacity: 0;
+    }
+
+    .ri-loading-image {
+      position: relative;
+      width: 40px;
+      height: 40px;
+      top: calc(50% - 20px);
+      left: calc(50% - 20px);
+      display: block;
+    }
+  }
+}
+
+//
+// Menu
+// ========================================================================== //
+
+.menu {
+  margin-top: 0;
+  position: static;
+  left: 0;
+  right: 0;
+
+  .navbar-wrapper {
+    margin-top: 0;
+    position: relative;
+    z-index: 15;
+    background: $midnight-express;
+
+    &.stuck-menu {
+      &.is-stuck {
+        left: 0;
+        width: 100%;
+      }
+    }
+
+    .container {
+      padding: 0;
+
+      @include respond-to {
+        padding-right: 15px;
+        padding-left: 15px;
+      }
+
+      .nav-wrapper {
+        .navbar {
+          &.navbar-inverse {
+            &.navbar-static-top {
+              margin: 2px auto;
+              background: $midnight-express;
+              color: $link-water;
+              border: none;
+              font-family: 'Open Sans', sans-serif;
+              font-size: 14px;
+              text-transform: uppercase;
+
+              a {
+                padding: 22px 25px;
+                line-height: 18px;
+                text-align: center;
+                @include transition(all .2s ease);
+
+                &:hover {
+                  color: $white;
+                }
+
+                @include respond-to($query: $screen-m1-min) {
+                  padding-left: 18px;
+                  padding-right: 18px;
+                }
+
+                @include respond-to($query: $screen-m2-min) {
+                  padding-left: 17px;
+                }
+
+                @include respond-to($query: $screen-x2-min) {
+                  line-height: 17px;
+                  padding-top: 20px;
+                  padding-bottom: 11px;
+                }
+              }
+            }
+          }
+
+          .container {
+            padding: 0;
+            width: auto;
+
+            @include respond-to {
+              padding-right: 15px;
+              padding-left: 15px;
+            }
+
+            .navbar-header {
+              display: none;
+
+              @include respond-to {
+                display: block;
+              }
+
+              .navbar-toggle {
+                margin-top: 14px;
+              }
+            }
+
+            .navbar-collapse {
+              padding: 0;
+
+              &.in {
+                max-height: 100%;
+              }
+
+              .nav {
+                & > li > a {
+                  display: inline-block;
+
+                  @include respond-to {
+                      display: block;
+                  }
+                }
+
+                &.navbar-nav {
+                  & > li {
+                    float: none;
+                    display: inline;
+                  }
+
+                  margin: 0 auto;
+                  text-align: center;
+                  float: none;
+                }
+              }
+            }
+          }
+        }
+
+        .navbar-inverse .navbar-nav > .active > a {
+          background: $black-forest;
+          color: $link-water;
+
+          &:focus {
+            color: $link-water;
+          }
+
+          &:hover {
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}
+
+.hide-class {
+  display: none;
+}

@@ -1,0 +1,114 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "portfolio.ouq77.kiwi": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "",
+      "sourceRoot": "src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist",
+            "resourcesOutputPath": "assets/resources",
+            "index": "src/index.dev.html",
+            "main": "src/main.ts",
+            "polyfills": "src/polyfills.ts",
+            "tsConfig": "tsconfig.app.json",
+            "assets": [
+              "src/favicon.ico",
+              "src/assets/images",
+              "src/assets/markers",
+              "src/assets/webp",
+              "src/404.html",
+              "src/c022e2f3e4f02807e67dc84432828f3f7b532a66.html",
+              "src/exclude.html",
+              "src/google536c542405d09504.html",
+              "src/manifest.json",
+              "src/offline.html",
+              "src/robots.txt",
+              "src/sitemap.xml",
+              "src/sw.js"
+            ],
+            "styles": [
+              "src/assets/css/layout.scss"
+            ],
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js",
+              "src/assets/js/modernizr.custom.js",
+              "src/assets/js/jquery.gridrotator.js",
+              "src/assets/js/stick.up.js",
+              "src/assets/js/jquery.easypiechart.js",
+              "src/assets/js/pre-render.js",
+              "src/assets/js/google-analytics.js",
+              "src/assets/js/service-worker.js"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],
+              "index": "src/index.html",
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "progress": true,
+              "deployUrl": "static/",
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "portfolio.ouq77.kiwi:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "portfolio.ouq77.kiwi:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "portfolio.ouq77.kiwi:build"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "tsconfig.app.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "portfolio.ouq77.kiwi"
+}

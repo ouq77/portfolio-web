@@ -1,0 +1,59 @@
+@import '../../../../assets/css/common';
+
+//
+// Get in touch
+// ========================================================================== //
+
+.contact {
+  background: $whisper;
+
+  @include container-heading() {
+    h2 {
+      color: $bitter-sweet;
+    }
+    p {
+      color: $manatee;
+      line-height: 18px;
+    }
+    h4 {
+      font-weight: 700;
+    }
+  };
+}
+
+.top-container {
+  padding-bottom: 0 !important;
+}
+
+.contact-details {
+  @include bg-image($color: $blue-zodiac, $image: 'map-bro.png', $repeat: repeat-x);
+  .container {
+    padding-top: 85px;
+    padding-bottom: 90px;
+  }
+  h4 {
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+  }
+  p {
+    color: $mischka;
+    font-size: 13px;
+    line-height: 19px;
+    padding-bottom: 14px;
+    a {
+      color: $mischka;
+      &:hover {
+        color: $snow;
+        text-decoration: none;
+      }
+    }
+  }
+  i {
+    padding-right: 15px;
+
+    @include respond-to($query: $screen-m2-min) {
+      padding-right: 5px;
+    }
+  }
+}

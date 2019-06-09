@@ -1,0 +1,87 @@
+@import '../../../../assets/css/common';
+
+//
+// Contact form
+// ========================================================================== //
+
+.contact-form {
+  h4 {
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+  }
+  input {
+    background: $chambray;
+    color: $snow;
+    padding: 15px 30px;
+    border: none;
+    margin-right: 3%;
+    margin-bottom: 30px;
+    outline: none;
+    font-style: italic;
+    &.no-margin {
+      margin-right: 0;
+    }
+
+    @include respond-to($val: min-width, $query: $screen-sm-min) {
+      &.col-sm-6, &.col-lg-6 {
+        width: 48.5%;
+      }
+    }
+
+    @include respond-to($query: $screen-x2-min) {
+      margin-bottom: 20px;
+    }
+  }
+  textarea {
+    background: $chambray;
+    color: $snow;
+    padding: 15px 30px;
+    border: none;
+    margin-bottom: 40px;
+    outline: none;
+    height: 100px;
+    font-style: italic;
+  }
+  .btn-submit {
+    color: $whisper;
+    background: $bitter-sweet;
+    font-family: $font-family-base;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    float: right;
+    margin: 0;
+    @include transition(all .2s ease-in-out);
+
+    &:hover {
+      color: $white;
+      background: $sunset-orange;
+      text-decoration: none;
+    }
+    &:disabled {
+      background: $sunset-orange-tint;
+    }
+  }
+
+  .contact-loader {
+    width: 35px;
+    height: 35px;
+  }
+
+  .success-message {
+    h3 {
+      font-size: 17px;
+    }
+    color: $iris-blue;
+    font-weight: 500;
+  }
+
+  .error-message {
+    color: $bitter-sweet;
+    padding-bottom: 15px;
+    font-weight: 500;
+  }
+
+  @include placeholder($snow);
+}

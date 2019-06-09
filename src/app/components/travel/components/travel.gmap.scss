@@ -1,0 +1,23 @@
+@import '../../../../assets/css/common';
+
+//
+// Google maps
+// ========================================================================== //
+
+.map-area {
+  @include bg-image($image: 'map-bro.png', $repeat: repeat-x);
+  padding-top: 4px;
+  height: 65vh;
+  overflow: hidden;
+  width: 100%;
+  margin: 0;
+
+  @include respond-to($query: $screen-x2-min) {
+    height: 45vh;
+  }
+}
+
+#map-canvas {
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" itemscope itemtype="https://schema.org/Person">
+  <head>
+    <meta charset="UTF-8">
+    <base href="/">
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+    <title><%= META_TAGS.title %></title><% for (key in META_TAGS.site) { %>
+    <meta name="<%- key %>" content="<%- META_TAGS.site[key] %>"><% } %>
+    <!-- Preconnect URLs --><% META_TAGS.linkPreconnectTags.forEach(function(preconnect) { %>
+    <link rel="preconnect" href="<%- preconnect %>"><% }) %>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="/manifest.json?v=<%= LAST_MOD_TIME %>">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=0, width=device-width, height=device-height">
+    <meta name="theme-color" content="#0ba5a2">
+    <meta name="apple-mobile-web-app-title" content="<%= META_TAGS.title %>">
+    <meta content="yes" name="apple-mobile-web-app-capable"><% for (key in APPLE_ICON_SIZES) { %>
+    <link rel="apple-touch-icon" sizes="<%- APPLE_ICON_SIZES[key] %>" href="assets/images/touchicons/apple-touch-icon-<%- APPLE_ICON_SIZES[key] %>.png"><% } %>
+    <!-- Google Authorship and Publisher Markup --><% for(key in META_TAGS.linkTags) { %>
+    <link rel="<%- key %>" href="<%- META_TAGS.linkTags[key] %>"><% } %>
+    <!-- Schema.org markup for Google+ --><% for(key in META_TAGS.google) { %>
+    <meta itemprop="<%- key %>" content="<%- META_TAGS.google[key] %>"><% } %>
+    <!-- Twitter Card data --><% for(key in META_TAGS.twitter) { %>
+    <meta name="<%- key %>" content="<%- META_TAGS.twitter[key] %>"><% } %>
+    <!-- Open Graph data --><% for(key in META_TAGS.facebook) { %>
+    <meta property="<%- key %>" content="<%- META_TAGS.facebook[key] %>"><% } %>
+  </head>
+  <body>
+    <style>
+      html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        color: #fff;
+        background: #000;
+        font-family: "Open Sans",sans-serif;
+        font-weight: 300;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: scroll;
+        overflow-x: hidden;
+        margin: 0;
+      }
+      .ng-loading {
+        overflow: hidden;
+        margin: 0 auto !important;
+        background: #262B37;
+        height: 100%
+      }
+      .ng-loading-image {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        top: calc(50% - 20px);
+        left: calc(50% - 20px);
+        display: block
+      }
+      .browsehappy, .no-script {
+        background: #262B37;
+        text-align: center;
+        padding: 20px
+      }
+      .browsehappy a, .no-script a {
+        color: #00bdbd
+      }
+      .browsehappy a:hover, .no-script a:hover {
+        text-decoration: underline
+      }
+    </style>
+    <!--[if lt IE 10]><p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
+    <noscript><p class="no-script">You appear to have <strong>JavaScript</strong> disabled. This website requires JavaScript &ndash; please enable and retry.</p></noscript>
+    <app-container>
+      <div class="ng-loading">
+        <img class="ng-loading-image" src="assets/images/loading.gif" alt="Loading..."/>
+      </div>
+    </app-container>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<section class="experience" id="experience">
+  <div class="container">
+    <div class="heading">
+      <h2>Work Experience</h2>
+      <p>what I've done so far</p>
+    </div>
+    <div *ngFor="let job of jobs" class="row work-details">
+      <div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
+        <div class="work-year">{{job.year.from}} <i class="icon-angle-circled-right"></i><br>{{job.year.to}}</div>
+      </div>
+      <div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 right-area">
+        <div class="arrow-part"></div>
+        <div class="experience-container">
+          <h4>{{job.institution.name}}&nbsp;
+            <a *ngIf="job.institution.url"
+               href="{{job.institution.url}}"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="link js_track_link_click"
+               attr.aria-label="{{job.institution.name}}">
+              <i class="icon-link-ext"></i>
+            </a>
+          </h4>
+          <h5>{{job.title}}</h5>
+          <h5 class="sub-heading"><i>{{job.institution.location}}</i></h5>
+          <section [innerHtml]="job.content" class="content"></section>
+          <h6 *ngIf="job.accomplishments">Accomplishments</h6>
+          <section *ngIf="job.accomplishments" [innerHtml]="job.accomplishments" class="content"></section>
+          <ng-container *ngIf="job.video">
+            <ngui-inview>
+              <div *ngIf class="vid-container">
+                <iframe title="{{job.video.videoTitle}}" class="youtube-frame" width="1280" height="720" [src]="job.video.videoUrl | videoUrl" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </ngui-inview>
+          </ng-container>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

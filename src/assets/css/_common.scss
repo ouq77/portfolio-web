@@ -1,0 +1,94 @@
+@import 'css3-mixins';
+
+//
+// Colors
+// ========================================================================== //
+
+$white: #ffffff;
+$snow: #fafafa;
+$white-smoke: #f3f3f3;
+$whisper: #eeeeee;
+$whisper-dark: #e5e4e4;
+$link-water: #c3c8d6;
+$very-light-grey: #cccccc;
+$bitter-sweet: #ff675f;
+$sunset-orange-tint: #f9918c;
+$sunset-orange: #f5534b;
+$anakiwa: #95d9ee;
+$iris-blue: #00bdbd;
+$summer-sky: #2bb3dd;
+$curious-blue: #428bca;
+$cerulean: #0a64a4;
+$orient: #15596e;
+$nordic: #0e3946;
+$persian-green: #0a9f9f;
+$mischka: #a9abb0;
+$nobel: #999999;
+$manatee: #84868d;
+$chambray: #585f73;
+$blue-zodiac: #474d5d;
+$cloud-burst: #373d4c;
+$night-rider: #333333;
+$midnight-express: #262B37;
+$black-russian: #1b1f2b;
+$black-forest: #1b1f29;
+$black: #000000;
+$black-trans-point-7: rgba($black, .7);
+$black-forest-trans-point-8: rgba($black-forest, .8);
+
+//
+// Typography
+// ========================================================================== //
+
+$font-family-base: 'Open Sans', sans-serif;
+
+//
+// Media queries breakpoints
+// ========================================================================== //
+
+$screen-x4-min: 320px;
+$screen-x3-min: 360px;
+$screen-x2-min: 480px;
+$screen-x1-min: 650px;
+$screen-sm-min: 767px;
+$screen-m2-min: 810px;
+$screen-m1-min: 992px;
+$screen-lg-min: 1200px;
+
+//
+// Container & Heading mixin
+// ========================================================================== //
+
+@mixin container-heading($padding-bottom: 90px) {
+  .container {
+    padding-top: 85px;
+    padding-bottom: $padding-bottom;
+    .heading {
+      text-align: center;
+      padding-bottom: 15px;
+
+      p, blockquote {
+        padding-top: 5px;
+        padding-bottom: 41px;
+      }
+
+      @content;
+    }
+    .row {
+      margin: 0;
+    }
+  }
+}
+
+//
+// Media query mixin
+// ========================================================================== //
+@mixin respond-to($val: max-width, $query: $screen-sm-min) {
+  @media screen and ($val: $query) {
+    @content
+  }
+}
+
+@mixin bg-image($image, $color: transparent, $repeat: no-repeat, $x-pos: 0, $y-pos: 0) {
+  background: $color url('/assets/images/#{$image}') $repeat $x-pos $y-pos;
+}

@@ -1,1 +1,0 @@
-Codeschool images will be saved here before being resized.

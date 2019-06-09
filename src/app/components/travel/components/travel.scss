@@ -1,0 +1,19 @@
+@import '../../../../assets/css/common';
+
+//
+// Travel
+// ========================================================================== //
+
+.travel {
+  background: $white;
+
+  @include container-heading(0px) {
+    h2 {
+      color: $bitter-sweet;
+    }
+    blockquote {
+      color: $manatee;
+      line-height: 18px;
+    }
+  };
+}

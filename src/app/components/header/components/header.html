@@ -1,0 +1,45 @@
+<div class="banner row" id="home">
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 no-padding">
+    <div id="ri-grid" class="ri-grid ri-grid-loading">
+      <img class="ri-loading-image" src="assets/images/loading.gif" alt="Loading..." />
+      <ul class="cb-slideshow">
+        <li class="js_cb-slideshow-tile" *ngFor="let imageId of imageIds">
+          <a href="#" attr.aria-label="Instagram #{{imageId}}"><img src="/assets/images/instagram/{{imageId}}.jpg" alt="© Louw Swart"></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="banner-text container">
+  <h1>Louw Swart</h1>
+  <h2>ex-flight attendant turned programmer</h2>
+</div>
+<div class="menu">
+  <div class="navbar-wrapper">
+    <div class="container">
+      <div class="nav-wrapper">
+        <div class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div id="mss" class="navbar-header">
+              <button id="js_menu_button" type="button" aria-label="Nav toggle button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Menu</a>
+            </div>
+            <div id="js_navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="menu-item active"><a href="#home" class="js_track_link_click">Home</a></li>
+                <li class="menu-item"><a href="#about" class="js_track_link_click">About</a></li>
+                <li class="menu-item"><a href="#skills" class="js_track_link_click">Skills</a></li>
+                <li class="menu-item"><a href="#experience" class="js_track_link_click">Experience</a></li>
+                <li class="menu-item"><a href="#education" class="js_track_link_click">Education</a></li>
+                <li class="menu-item"><a href="#travel" class="js_track_link_click">Travel</a></li>
+                <li class="menu-item" id="js_contact_li"><a href="#contact" class="js_track_link_click">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

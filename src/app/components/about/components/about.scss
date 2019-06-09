@@ -1,0 +1,64 @@
+@import '../../../../assets/css/common';
+
+//
+// About me
+// ========================================================================== //
+
+.about {
+  background: $iris-blue;
+  color: $white;
+  position: relative;
+
+  @include container-heading();
+
+  .container {
+    .btn-normal {
+      color: $whisper;
+      background: $blue-zodiac;
+      font-family: $font-family-base;
+      font-size: 16px;
+      font-weight: 700;
+      padding: 16px 22px;
+      display: inline-block;
+      margin-bottom: 15px;
+      @include transition(all .2s ease-in-out);
+
+      &:hover {
+        color: $white;
+        background: $cloud-burst;
+        text-decoration: none;
+      }
+
+      @include respond-to($query: $screen-m1-min) {
+        margin-bottom: 50px;
+      }
+
+      @include respond-to($query: $screen-x2-min) {
+        font-size: 13px;
+        padding: 16px 14px;
+      }
+    }
+
+    .profile-pic {
+      @include respond-to($query: $screen-m1-min) {
+        text-align: center;
+      }
+    }
+
+    ul {
+      padding-bottom: 2rem;
+      padding-left: 2.5rem;
+    }
+
+    li > a {
+      color: $white;
+    }
+
+    @include respond-to($query: $screen-x2-min) {
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}

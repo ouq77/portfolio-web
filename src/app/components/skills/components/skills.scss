@@ -1,0 +1,85 @@
+@import '../../../../assets/css/common';
+
+//
+// Skills
+// ========================================================================== //
+
+.add-space {
+  height: 60px;
+  background: $whisper;
+}
+
+.skills {
+  background: $whisper;
+  color: $blue-zodiac;
+
+  @include container-heading(70px) {
+    p {
+      color: $blue-zodiac;
+    }
+    h2 {
+      color: $bitter-sweet;
+    }
+  };
+
+  .container {
+    .skill-area {
+      padding: 0;
+      .skill {
+        margin: 0 auto 23px;
+        text-align: center;
+        float: none;
+        padding: 0;
+        width: 200px;
+        p {
+          color: $manatee;
+          font-size: 13px;
+          line-height: 18px;
+          text-align: center;
+        }
+        img {
+          margin: 0 auto 33px;
+          width: 100%;
+          max-width: 152px;
+        }
+        h4 {
+          font-weight: 700;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
+
+.skill-background {
+  @include bg-image($image: 'skills.png');
+}
+
+.chart {
+  position: relative;
+  display: inline-block;
+  width: 152px;
+  height: 152px;
+  margin-bottom: 26px;
+  text-align: center;
+}
+
+.percent {
+  display: inline-block;
+  font-size: 21px;
+  color: $blue-zodiac;
+  line-height: 152px;
+  z-index: 2;
+  &:after {
+    content: '%';
+    margin-left: .1em;
+    font-size: .8em;
+  }
+}
+
+.angular {
+  margin-top: 100px;
+  .chart {
+    margin-top: 0;
+  }
+}
