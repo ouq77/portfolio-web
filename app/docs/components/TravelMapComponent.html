@@ -1,0 +1,1451 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Louw Swart // Portfolio</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/laravel.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">Louw Swart // Portfolio</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>TravelMapComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/components/travel/components/travel.gmap.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-googlemap</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./travel.gmap.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>travel.gmap.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_additionalMarkerWait">_additionalMarkerWait</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_cityMarkers">_cityMarkers</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_cruiseLines">_cruiseLines</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_flightLines">_flightLines</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_mapMarkersDrawn">_mapMarkersDrawn</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_mapUtil">_mapUtil</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_markerDropWait">_markerDropWait</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_markerUtil">_markerUtil</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_markerWait">_markerWait</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_polylineUtil">_polylineUtil</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_railPaths">_railPaths</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_railPathsLoaded">_railPathsLoaded</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_tilesLoaded">_tilesLoaded</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_tilesLoadedEvent">_tilesLoadedEvent</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_timeoutScroll">_timeoutScroll</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_travelService">_travelService</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_upcomingCruiseLines">_upcomingCruiseLines</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_upcomingFlightLines">_upcomingFlightLines</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_upcomingRailPaths">_upcomingRailPaths</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#map">map</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#canDropMarkersDrawLines">canDropMarkersDrawLines</a>
+                            </li>
+                            <li>
+                                <a href="#dropMarkersDrawLines">dropMarkersDrawLines</a>
+                            </li>
+                            <li>
+                                <a href="#initializeMap">initializeMap</a>
+                            </li>
+                            <li>
+                                <a href="#initRailTripPaths">initRailTripPaths</a>
+                            </li>
+                            <li>
+                                <a href="#initScrollListener">initScrollListener</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(_travelService: <a href="../injectables/TravelService.html">TravelService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="47" class="link-to-prism">src/app/components/travel/components/travel.gmap.ts:47</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>_travelService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/TravelService.html" target="_self" >TravelService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="canDropMarkersDrawLines"></a>
+                    <span class="name">
+                        <b>
+                            canDropMarkersDrawLines
+                        </b>
+                        <a href="#canDropMarkersDrawLines"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>canDropMarkersDrawLines()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="120"
+                            class="link-to-prism">src/app/components/travel/components/travel.gmap.ts:120</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="dropMarkersDrawLines"></a>
+                    <span class="name">
+                        <b>
+                            dropMarkersDrawLines
+                        </b>
+                        <a href="#dropMarkersDrawLines"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>dropMarkersDrawLines(wait: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="124"
+                            class="link-to-prism">src/app/components/travel/components/travel.gmap.ts:124</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>wait</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>750</code>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initializeMap"></a>
+                    <span class="name">
+                        <b>
+                            initializeMap
+                        </b>
+                        <a href="#initializeMap"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>initializeMap()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="82"
+                            class="link-to-prism">src/app/components/travel/components/travel.gmap.ts:82</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initRailTripPaths"></a>
+                    <span class="name">
+                        <b>
+                            initRailTripPaths
+                        </b>
+                        <a href="#initRailTripPaths"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>initRailTripPaths()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="71"
+                            class="link-to-prism">src/app/components/travel/components/travel.gmap.ts:71</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initScrollListener"></a>
+                    <span class="name">
+                        <b>
+                            initScrollListener
+                        </b>
+                        <a href="#initScrollListener"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>initScrollListener()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="104"
+                            class="link-to-prism">src/app/components/travel/components/travel.gmap.ts:104</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="65"
+                            class="link-to-prism">src/app/components/travel/components/travel.gmap.ts:65</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="_additionalMarkerWait"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            _additionalMarkerWait</b>
+                            <a href="#_additionalMarkerWait"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/components/travel/components/travel.gmap.ts:30</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="_cityMarkers"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            _cityMarkers</b>
+                            <a href="#_cityMarkers"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>Array&lt;google.maps.Marker&gt;</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/components/travel/components/travel.gmap.ts:32</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="_cruiseLines"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            _cruiseLines</b>
+                            <a href="#_cruiseLines"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>Array&lt;google.maps.Polyline&gt;</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/components/travel/components/travel.gmap.ts:33</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="_flightLines"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            _flightLines</b>
+                            <a href="#_flightLines"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>Array&lt;google.maps.Polyline&gt;</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/components/travel/components/travel.gmap.ts:34</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="_mapMarkersDrawn"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            _mapMarkersDrawn</b>
+                            <a href="#_mapMarkersDrawn"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/components/travel/components/travel.gmap.ts:36</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="_mapUtil"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            _mapUtil</b>
+                            <a href="#_mapUtil"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../classes/MapUtil.html" target="_self" >MapUtil</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/app/components/travel/components/travel.gmap.ts:37</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="_markerDropWait"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            _markerDropWait</b>
+                            <a href="#_markerDropWait"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/components/travel/components/travel.gmap.ts:31</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="_markerUtil"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            _markerUtil</b>
+                            <a href="#_markerUtil"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../classes/MarkerUtil.html" target="_self" >MarkerUtil</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/app/components/travel/components/travel.gmap.ts:38</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="_markerWait"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            _markerWait</b>
+                            <a href="#_markerWait"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/app/components/travel/components/travel.gmap.ts:40</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="_polylineUtil"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            _polylineUtil</b>
+                            <a href="#_polylineUtil"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../classes/PolylineUtil.html" target="_self" >PolylineUtil</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/components/travel/components/travel.gmap.ts:39</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="_railPaths"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            _railPaths</b>
+                            <a href="#_railPaths"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>Array&lt;string&gt;</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/components/travel/components/travel.gmap.ts:35</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="_railPathsLoaded"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            _railPathsLoaded</b>
+                            <a href="#_railPathsLoaded"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="47" class="link-to-prism">src/app/components/travel/components/travel.gmap.ts:47</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="_tilesLoaded"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            _tilesLoaded</b>
+                            <a href="#_tilesLoaded"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/app/components/travel/components/travel.gmap.ts:41</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="_tilesLoadedEvent"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            _tilesLoadedEvent</b>
+                            <a href="#_tilesLoadedEvent"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/app/components/travel/components/travel.gmap.ts:42</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="_timeoutScroll"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            _timeoutScroll</b>
+                            <a href="#_timeoutScroll"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="43" class="link-to-prism">src/app/components/travel/components/travel.gmap.ts:43</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="_travelService"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            _travelService</b>
+                            <a href="#_travelService"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../injectables/TravelService.html" target="_self" >TravelService</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/components/travel/components/travel.gmap.ts:29</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="_upcomingCruiseLines"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            _upcomingCruiseLines</b>
+                            <a href="#_upcomingCruiseLines"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>Array&lt;google.maps.Polyline&gt;</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/app/components/travel/components/travel.gmap.ts:44</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="_upcomingFlightLines"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            _upcomingFlightLines</b>
+                            <a href="#_upcomingFlightLines"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>Array&lt;google.maps.Polyline&gt;</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/app/components/travel/components/travel.gmap.ts:45</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="_upcomingRailPaths"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            _upcomingRailPaths</b>
+                            <a href="#_upcomingRailPaths"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>Array&lt;string&gt;</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">src/app/components/travel/components/travel.gmap.ts:46</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="map"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            map</b>
+                            <a href="#map"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>google.maps.Map</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/components/travel/components/travel.gmap.ts:28</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { cancelableDelay, delay } from &#x27;../../shared/common/delay&#x27;;
+import { elementInViewport } from &#x27;../../shared/common/element.in.viewport&#x27;;
+import { IAirport } from &#x27;../definitions/airport&#x27;;
+import { ICity } from &#x27;../definitions/city&#x27;;
+import { IPort } from &#x27;../definitions/port&#x27;;
+import { RailTrip, RailTrips } from &#x27;../definitions/rail.trips&#x27;;
+import { IStation } from &#x27;../definitions/station&#x27;;
+import { AIRPORTS } from &#x27;../models/airports&#x27;;
+import { CITIES } from &#x27;../models/cities&#x27;;
+import { CRUISES, UPCOMING_CRUISES } from &#x27;../models/cruises&#x27;;
+import { FLIGHTS, UPCOMING_FLIGHTS } from &#x27;../models/flights&#x27;;
+import { MAP_OPTIONS } from &#x27;../models/map.config&#x27;;
+import { AUCKLAND_POINT } from &#x27;../models/points&#x27;;
+import { PORTS } from &#x27;../models/ports&#x27;;
+import { STATIONS } from &#x27;../models/stations&#x27;;
+import { TravelService } from &#x27;../service/travel&#x27;;
+import { MapUtil } from &#x27;./gmap/map.util&#x27;;
+import { MarkerUtil } from &#x27;./gmap/marker.util&#x27;;
+import { PolylineUtil } from &#x27;./gmap/polyline.util&#x27;;
+
+@Component({
+  selector: &#x27;app-googlemap&#x27;,
+  styleUrls: [&#x27;./travel.gmap.scss&#x27;],
+  templateUrl: &#x27;travel.gmap.html&#x27;,
+})
+export class TravelMapComponent implements OnInit {
+  public map: google.maps.Map;
+  private _travelService: TravelService;
+  private _additionalMarkerWait: number;
+  private _markerDropWait: number;
+  private _cityMarkers: Array&lt;google.maps.Marker&gt;;
+  private _cruiseLines: Array&lt;google.maps.Polyline&gt;;
+  private _flightLines: Array&lt;google.maps.Polyline&gt;;
+  private _railPaths: Array&lt;string&gt;;
+  private _mapMarkersDrawn: boolean;
+  private _mapUtil: MapUtil;
+  private _markerUtil: MarkerUtil;
+  private _polylineUtil: PolylineUtil;
+  private _markerWait: number;
+  private _tilesLoaded: boolean;
+  private _tilesLoadedEvent: any;
+  private _timeoutScroll: any;
+  private _upcomingCruiseLines: Array&lt;google.maps.Polyline&gt;;
+  private _upcomingFlightLines: Array&lt;google.maps.Polyline&gt;;
+  private _upcomingRailPaths: Array&lt;string&gt;;
+  private _railPathsLoaded: boolean;
+
+  constructor(_travelService: TravelService) {
+    this._travelService &#x3D; _travelService;
+    this._additionalMarkerWait &#x3D; 0;
+    this._markerDropWait &#x3D; 0;
+    this._cityMarkers &#x3D; [];
+    this._cruiseLines &#x3D; [];
+    this._mapMarkersDrawn &#x3D; false;
+    this._mapUtil &#x3D; new MapUtil();
+    this._markerUtil &#x3D; new MarkerUtil();
+    this._polylineUtil &#x3D; new PolylineUtil();
+    this._tilesLoaded &#x3D; false;
+    this._upcomingCruiseLines &#x3D; [];
+    this._upcomingFlightLines &#x3D; [];
+    this._railPathsLoaded &#x3D; false;
+  }
+
+  ngOnInit(): void {
+    this.initRailTripPaths();
+    this.initializeMap();
+    this.initScrollListener();
+  }
+
+  initRailTripPaths(): void {
+    this._travelService.getRailTripPaths().subscribe(
+      (resp: RailTrips) &#x3D;&gt; {
+        this._railPaths &#x3D; resp.railTrips.map((railTrip: RailTrip) &#x3D;&gt; railTrip.path);
+        this._upcomingRailPaths &#x3D; resp.upcomingRailTrips.map((railTrip: RailTrip) &#x3D;&gt; railTrip.path);
+        this._railPathsLoaded &#x3D; true;
+      },
+      () &#x3D;&gt; console.warn(&#x27;railTripPaths not returned&#x27;),
+    );
+  }
+
+  initializeMap(): void {
+    const MAP_MAX_MOBILE_ZOOM_ZERO &#x3D; 768;
+    (($: JQueryStatic) &#x3D;&gt;
+      delay(250).then(() &#x3D;&gt; {
+        const mapOptions: google.maps.MapOptions &#x3D; Object.assign({}, MAP_OPTIONS);
+        if ($(window).width() &lt; MAP_MAX_MOBILE_ZOOM_ZERO) {
+          mapOptions.zoom &#x3D; 1;
+          mapOptions.minZoom &#x3D; 1;
+        }
+        this.map &#x3D; new google.maps.Map(document.getElementById(&#x27;map-canvas&#x27;), mapOptions);
+        this._flightLines &#x3D; this._polylineUtil.createPolylines(FLIGHTS, this.map, &#x27;#494c54&#x27;);
+        this._upcomingFlightLines &#x3D; this._polylineUtil.createDottedPolylines(UPCOMING_FLIGHTS, this.map, &#x27;#494c54&#x27;);
+        this._cruiseLines &#x3D; this._polylineUtil.createPolylines(CRUISES, this.map, &#x27;#00739c&#x27;);
+        this._upcomingCruiseLines &#x3D; this._polylineUtil.createDottedPolylines(UPCOMING_CRUISES, this.map, &#x27;#00739c&#x27;);
+        this._tilesLoadedEvent &#x3D; google.maps.event.addListener(this.map, &#x27;tilesloaded&#x27;, () &#x3D;&gt; {
+          google.maps.event.removeListener(this._tilesLoadedEvent);
+          this._tilesLoaded &#x3D; true;
+          this.dropMarkersDrawLines();
+        });
+      }))(jQuery);
+  }
+
+  initScrollListener(): void {
+    (($: JQueryStatic) &#x3D;&gt; {
+      $(document).on(&#x27;scroll&#x27;, () &#x3D;&gt; {
+        // wait half a second for scroll to stop
+        if (this._timeoutScroll) {
+          clearTimeout(this._timeoutScroll);
+        }
+        this._timeoutScroll &#x3D; cancelableDelay(250, () &#x3D;&gt; {
+          if (!this._mapMarkersDrawn) {
+            this.dropMarkersDrawLines(500);
+          }
+        });
+      });
+    })(jQuery);
+  }
+
+  canDropMarkersDrawLines(): boolean {
+    return !this._mapMarkersDrawn &amp;&amp; this._tilesLoaded &amp;&amp; this._railPathsLoaded;
+  }
+
+  dropMarkersDrawLines(wait: number &#x3D; 750): void {
+    this._markerWait &#x3D; wait;
+    (($: JQueryStatic) &#x3D;&gt;
+      $(&#x27;.js_trigger_map_marker&#x27;).each((index: number, triggerEl: Element) &#x3D;&gt; {
+        if (this.canDropMarkersDrawLines() &amp;&amp; elementInViewport($, &lt;JQuery&gt; $(triggerEl))) {
+          this._mapMarkersDrawn &#x3D; true;
+          delay(this._markerWait).then(() &#x3D;&gt; {
+            AIRPORTS.forEach((airport: IAirport) &#x3D;&gt; {
+              delay(++this._markerDropWait * 135)
+                .then(() &#x3D;&gt; this._markerUtil.addAirportMarker(this.map, airport));
+            });
+            PORTS.forEach((port: IPort) &#x3D;&gt; {
+              delay(++this._markerDropWait * 135)
+                .then(() &#x3D;&gt; this._markerUtil.addPortMarker(this.map, port));
+            });
+            STATIONS.forEach((station: IStation) &#x3D;&gt; {
+              delay(++this._markerDropWait * 135)
+                .then(() &#x3D;&gt; this._markerUtil.addStationMarker(this.map, station));
+            });
+            this._polylineUtil.pushToPolylines(this._flightLines, FLIGHTS);
+            this._polylineUtil.pushToPolylines(this._upcomingFlightLines, UPCOMING_FLIGHTS);
+            this._polylineUtil.pushToPolylines(this._cruiseLines, CRUISES);
+            this._polylineUtil.pushToPolylines(this._upcomingCruiseLines, UPCOMING_CRUISES);
+            this._polylineUtil.createPolylineFromPath(this._railPaths, this.map, &#x27;#ac3333&#x27;);
+            this._polylineUtil.createDottedPolylineFromPath(this._upcomingRailPaths, this.map, &#x27;#ac3333&#x27;);
+
+            this._additionalMarkerWait &#x3D; AIRPORTS.length + PORTS.length;
+            CITIES.forEach((city: ICity, _index: number) &#x3D;&gt;
+              delay((_index * 650) + this._additionalMarkerWait)
+                .then(() &#x3D;&gt; this._markerUtil.addCityMarker(this.map, city, this._cityMarkers)));
+            this._additionalMarkerWait &#x3D; this._additionalMarkerWait * 65;
+            delay((CITIES.length * 700) + this._additionalMarkerWait).then(() &#x3D;&gt; {
+              this.map.panTo(AUCKLAND_POINT);
+              this._mapUtil.zoomMap(this.map, this.map.getZoom() + 1, 5);
+            });
+            this._polylineUtil.setZoomChangedListener(this.map);
+            this._markerUtil.setZoomChangedListener(this.map);
+          });
+        }
+      }))(jQuery);
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;row map-area&quot;&gt;
+  &lt;div id&#x3D;&quot;map-canvas&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./travel.gmap.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">@import &#x27;../../../../assets/css/common&#x27;;
+
+//
+// Google maps
+// &#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D; //
+
+.map-area {
+  @include bg-image($image: &#x27;map-bro.png&#x27;, $repeat: repeat-x);
+  padding-top: 4px;
+  height: 65vh;
+  overflow: hidden;
+  width: 100%;
+  margin: 0;
+
+  @include respond-to($query: $screen-x2-min) {
+    height: 45vh;
+  }
+}
+
+#map-canvas {
+  width: 100%;
+  height: 100%;
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="row map-area">  <div id="map-canvas"></div></div></div>'
+    var COMPONENTS = [{'name': 'AboutComponent', 'selector': 'app-about'},{'name': 'AppComponent', 'selector': 'app-container'},{'name': 'ContactComponent', 'selector': 'app-contact'},{'name': 'ContactFormComponent', 'selector': 'app-contact-form'},{'name': 'EducationComponent', 'selector': 'app-education'},{'name': 'ExperienceComponent', 'selector': 'app-experience'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'SkillsComponent', 'selector': 'app-skills'},{'name': 'TravelComponent', 'selector': 'app-travel'},{'name': 'TravelMapComponent', 'selector': 'app-googlemap'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'TravelMapComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'TravelMapComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

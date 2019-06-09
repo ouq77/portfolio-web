@@ -1,23 +1,18 @@
 {
   "static": [
     {
-      "uri": "/css",
-      "location": "./app/css",
+      "uri": "/static",
+      "location": "./app",
       "cache": "365d"
     },
     {
-      "uri": "/fonts",
-      "location": "./app/fonts",
+      "uri": "/assets/markers",
+      "location": "./app/assets/markers",
       "cache": "365d"
     },
     {
-      "uri": "/js",
-      "location": "./app/js",
-      "cache": "365d"
-    },
-    {
-      "uri": "/markers",
-      "location": "./app/markers",
+      "uri": "/assets/resources",
+      "location": "./app/assets/resources",
       "cache": "365d"
     },
     {
