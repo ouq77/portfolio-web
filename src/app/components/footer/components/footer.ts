@@ -9,10 +9,9 @@ import { FooterService } from '../services/footer';
 })
 export class FooterComponent implements OnInit {
   public links: Array<Link>;
-  public currentDate: Date;
+  public currentDate: Date = new Date();
 
   constructor() {
-    this.currentDate = new Date();
   }
 
   ngOnInit() {

@@ -7,9 +7,9 @@ export const initMapApi = (mapApiLoaderService: MapApiLoaderService): (() => voi
 @Injectable()
 export class MapApiLoaderService {
 
-  constructor(private mapsApiLoader: MapsAPILoader) {}
+  constructor(private _mapsApiLoader: MapsAPILoader) {}
 
   loadMapApi(): Promise<void> {
-    return this.mapsApiLoader.load();
+    return this._mapsApiLoader.load();
   }
 }

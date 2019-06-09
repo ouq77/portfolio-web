@@ -13,35 +13,26 @@ import { ContactService } from '../services/contact';
   templateUrl: 'contact.form.html',
 })
 export class ContactFormComponent implements OnInit {
-  public email: FormControl;
+  public email: FormControl = new FormControl('', Validators.required);
   public errorMessages: Array<IErrorMessage>;
-  public form: FormGroup;
-  public heuning: FormControl;
-  public message: FormControl;
-  public name: FormControl;
-  public sentSuccessfully: boolean;
+  public heuning: FormControl = new FormControl('');
+  public message: FormControl = new FormControl('', Validators.required);
+  public name: FormControl = new FormControl('', Validators.required);
+  public sentSuccessfully = false;
   public serverErrors: string;
-  public submitBtnText: string;
-  public submitClicked: boolean;
-  public submitting: boolean;
-  private _contactService: ContactService;
+  public submitBtnText = 'Send message';
+  public submitClicked = false;
+  public submitting = false;
+  public form: FormGroup;
 
-  constructor(contactService: ContactService, fb: FormBuilder) {
-    this.email = new FormControl('', Validators.required);
-    this.heuning = new FormControl('');
-    this.message = new FormControl('', Validators.required);
-    this.name = new FormControl('', Validators.required);
+  constructor(private _contactService: ContactService,
+              private fb: FormBuilder) {
     this.form = fb.group({
       email: this.email,
       heuning: this.heuning,
       message: this.message,
       name: this.name,
     });
-    this.sentSuccessfully = false;
-    this.submitBtnText = 'Send message';
-    this.submitClicked = false;
-    this.submitting = false;
-    this._contactService = contactService;
   }
 
   ngOnInit(): void {

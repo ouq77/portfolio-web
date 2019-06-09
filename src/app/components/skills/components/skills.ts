@@ -10,12 +10,11 @@ import { SkillService } from '../services/skills';
   templateUrl: 'skills.html',
 })
 export class SkillsComponent implements OnInit {
-  public skills: Array<Skill>;
+  private _skillChartDrawn = false;
   private _timeoutScroll: any;
-  private _skillChartDrawn: boolean;
+  public skills: Array<Skill>;
 
   constructor() {
-    this._skillChartDrawn = false;
   }
 
   ngOnInit(): void {

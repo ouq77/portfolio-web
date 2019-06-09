@@ -5,10 +5,8 @@ import { RailTrips } from '../definitions/rail.trips';
 
 @Injectable()
 export class TravelService {
-  private _http: HttpClient;
 
-  constructor(http: HttpClient) {
-    this._http = http;
+  constructor(private _http: HttpClient) {
   }
 
   getRailTripPaths(): Observable<RailTrips> {

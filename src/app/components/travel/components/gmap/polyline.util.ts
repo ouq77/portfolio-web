@@ -3,7 +3,7 @@ import { IPoint } from '../../definitions/point';
 import { PolylineIconSequence } from '../../definitions/polyline.icon.sequence';
 
 export class PolylineUtil {
-  private _lineDrawWait: number;
+  private _lineDrawWait = 0;
   private _polylines: Array<google.maps.Polyline> = [];
   private _dottedPolylines: Array<PolylineIconSequence> = [];
   private _weightBase = 1.25;
@@ -14,7 +14,6 @@ export class PolylineUtil {
   private _weightExp5 = 6;
 
   constructor() {
-    this._lineDrawWait = 0;
   }
 
   createPolylines(journeys: Array<Array<IPoint>>, map: google.maps.Map, strokeColor: string): Array<google.maps.Polyline> {

@@ -9,15 +9,12 @@ import { EducationService } from '../services/education';
 })
 export class EducationComponent implements OnInit {
   public schools: Array<School>;
-  private _educationService: EducationService;
 
-  constructor(educationService: EducationService) {
-    this._educationService = educationService;
+  constructor() {
   }
 
   ngOnInit() {
     this.loadSchools();
-    // this.loadCodeSchool();
   }
 
   loadSchools(): void {

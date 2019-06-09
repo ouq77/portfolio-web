@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import { cancelableDelay, delay } from '../../shared/common/delay';
 import { elementInViewport } from '../../shared/common/element.in.viewport';
 import { IAirport } from '../definitions/airport';
@@ -26,45 +26,29 @@ import { PolylineUtil } from './gmap/polyline.util';
 })
 export class TravelMapComponent implements OnInit {
   public map: google.maps.Map;
-  private _travelService: TravelService;
-  private _additionalMarkerWait: number;
-  private _markerDropWait: number;
-  private _cityMarkers: Array<google.maps.Marker>;
-  private _cruiseLines: Array<google.maps.Polyline>;
-  private _flightLines: Array<google.maps.Polyline>;
-  private _railPaths: Array<string>;
-  private _mapMarkersDrawn: boolean;
-  private _mapUtil: MapUtil;
-  private _markerUtil: MarkerUtil;
-  private _polylineUtil: PolylineUtil;
-  private _markerWait: number;
-  private _tilesLoaded: boolean;
+  private _additionalMarkerWait = 0;
+  private _markerDropWait = 0;
+  private _cityMarkers: Array<google.maps.Marker> = [];
+  private _cruiseLines: Array<google.maps.Polyline> = [];
+  private _flightLines: Array<google.maps.Polyline> = [];
+  private _railPaths: Array<string> = [];
+  private _mapMarkersDrawn = false;
+  private _mapUtil: MapUtil = new MapUtil();
+  private _markerUtil: MarkerUtil = new MarkerUtil();
+  private _polylineUtil: PolylineUtil = new PolylineUtil();
+  private _upcomingCruiseLines: Array<google.maps.Polyline> = [];
+  private _upcomingFlightLines: Array<google.maps.Polyline> = [];
+  private _upcomingRailPaths: Array<string> = [];
+  private _railPathsLoaded = false;
+  private _mapInitialized = false;
   private _tilesLoadedEvent: any;
   private _timeoutScroll: any;
-  private _upcomingCruiseLines: Array<google.maps.Polyline>;
-  private _upcomingFlightLines: Array<google.maps.Polyline>;
-  private _upcomingRailPaths: Array<string>;
-  private _railPathsLoaded: boolean;
 
-  constructor(_travelService: TravelService) {
-    this._travelService = _travelService;
-    this._additionalMarkerWait = 0;
-    this._markerDropWait = 0;
-    this._cityMarkers = [];
-    this._cruiseLines = [];
-    this._mapMarkersDrawn = false;
-    this._mapUtil = new MapUtil();
-    this._markerUtil = new MarkerUtil();
-    this._polylineUtil = new PolylineUtil();
-    this._tilesLoaded = false;
-    this._upcomingCruiseLines = [];
-    this._upcomingFlightLines = [];
-    this._railPathsLoaded = false;
+  constructor(private _travelService: TravelService) {
   }
 
   ngOnInit(): void {
     this.initRailTripPaths();
-    this.initializeMap();
     this.initScrollListener();
   }
 
@@ -79,8 +63,25 @@ export class TravelMapComponent implements OnInit {
     );
   }
 
+  initScrollListener(): void {
+    (($: JQueryStatic) => {
+      $(document).on('scroll', () => {
+        // wait half a second for scroll to stop
+        if (this._timeoutScroll) {
+          clearTimeout(this._timeoutScroll);
+        }
+        this._timeoutScroll = cancelableDelay(250, () => {
+          if (!this._mapInitialized && document.getElementById('map-canvas') !== null) {
+            this.initializeMap();
+          }
+        });
+      });
+    })(jQuery);
+  }
+
   initializeMap(): void {
     const MAP_MAX_MOBILE_ZOOM_ZERO = 768;
+    this._mapInitialized = true;
     (($: JQueryStatic) =>
       delay(250).then(() => {
         const mapOptions: google.maps.MapOptions = Object.assign({}, MAP_OPTIONS);
@@ -95,71 +96,50 @@ export class TravelMapComponent implements OnInit {
         this._upcomingCruiseLines = this._polylineUtil.createDottedPolylines(UPCOMING_CRUISES, this.map, '#00739c');
         this._tilesLoadedEvent = google.maps.event.addListener(this.map, 'tilesloaded', () => {
           google.maps.event.removeListener(this._tilesLoadedEvent);
-          this._tilesLoaded = true;
           this.dropMarkersDrawLines();
         });
       }))(jQuery);
   }
 
-  initScrollListener(): void {
-    (($: JQueryStatic) => {
-      $(document).on('scroll', () => {
-        // wait half a second for scroll to stop
-        if (this._timeoutScroll) {
-          clearTimeout(this._timeoutScroll);
-        }
-        this._timeoutScroll = cancelableDelay(250, () => {
-          if (!this._mapMarkersDrawn) {
-            this.dropMarkersDrawLines(500);
-          }
-        });
-      });
-    })(jQuery);
-  }
-
   canDropMarkersDrawLines(): boolean {
-    return !this._mapMarkersDrawn && this._tilesLoaded && this._railPathsLoaded;
+    return !this._mapMarkersDrawn && this._railPathsLoaded;
   }
 
   dropMarkersDrawLines(wait: number = 750): void {
-    this._markerWait = wait;
-    (($: JQueryStatic) =>
-      $('.js_trigger_map_marker').each((index: number, triggerEl: Element) => {
-        if (this.canDropMarkersDrawLines() && elementInViewport($, <JQuery> $(triggerEl))) {
-          this._mapMarkersDrawn = true;
-          delay(this._markerWait).then(() => {
-            AIRPORTS.forEach((airport: IAirport) => {
-              delay(++this._markerDropWait * 135)
-                .then(() => this._markerUtil.addAirportMarker(this.map, airport));
-            });
-            PORTS.forEach((port: IPort) => {
-              delay(++this._markerDropWait * 135)
-                .then(() => this._markerUtil.addPortMarker(this.map, port));
-            });
-            STATIONS.forEach((station: IStation) => {
-              delay(++this._markerDropWait * 135)
-                .then(() => this._markerUtil.addStationMarker(this.map, station));
-            });
-            this._polylineUtil.pushToPolylines(this._flightLines, FLIGHTS);
-            this._polylineUtil.pushToPolylines(this._upcomingFlightLines, UPCOMING_FLIGHTS);
-            this._polylineUtil.pushToPolylines(this._cruiseLines, CRUISES);
-            this._polylineUtil.pushToPolylines(this._upcomingCruiseLines, UPCOMING_CRUISES);
-            this._polylineUtil.createPolylineFromPath(this._railPaths, this.map, '#ac3333');
-            this._polylineUtil.createDottedPolylineFromPath(this._upcomingRailPaths, this.map, '#ac3333');
+    if (this.canDropMarkersDrawLines()) {
+      this._mapMarkersDrawn = true;
+      delay(wait).then(() => {
+        AIRPORTS.forEach((airport: IAirport) => {
+          delay(++this._markerDropWait * 135)
+            .then(() => this._markerUtil.addAirportMarker(this.map, airport));
+        });
+        PORTS.forEach((port: IPort) => {
+          delay(++this._markerDropWait * 135)
+            .then(() => this._markerUtil.addPortMarker(this.map, port));
+        });
+        STATIONS.forEach((station: IStation) => {
+          delay(++this._markerDropWait * 135)
+            .then(() => this._markerUtil.addStationMarker(this.map, station));
+        });
+        this._polylineUtil.pushToPolylines(this._flightLines, FLIGHTS);
+        this._polylineUtil.pushToPolylines(this._upcomingFlightLines, UPCOMING_FLIGHTS);
+        this._polylineUtil.pushToPolylines(this._cruiseLines, CRUISES);
+        this._polylineUtil.pushToPolylines(this._upcomingCruiseLines, UPCOMING_CRUISES);
+        this._polylineUtil.createPolylineFromPath(this._railPaths, this.map, '#ac3333');
+        this._polylineUtil.createDottedPolylineFromPath(this._upcomingRailPaths, this.map, '#ac3333');
 
-            this._additionalMarkerWait = AIRPORTS.length + PORTS.length;
-            CITIES.forEach((city: ICity, _index: number) =>
-              delay((_index * 650) + this._additionalMarkerWait)
-                .then(() => this._markerUtil.addCityMarker(this.map, city, this._cityMarkers)));
-            this._additionalMarkerWait = this._additionalMarkerWait * 65;
-            delay((CITIES.length * 700) + this._additionalMarkerWait).then(() => {
-              this.map.panTo(AUCKLAND_POINT);
-              this._mapUtil.zoomMap(this.map, this.map.getZoom() + 1, 5);
-            });
-            this._polylineUtil.setZoomChangedListener(this.map);
-            this._markerUtil.setZoomChangedListener(this.map);
-          });
-        }
-      }))(jQuery);
+        this._additionalMarkerWait = AIRPORTS.length + PORTS.length;
+        CITIES.forEach((city: ICity, _index: number) =>
+          delay((_index * 650) + this._additionalMarkerWait)
+            .then(() => this._markerUtil.addCityMarker(this.map, city, this._cityMarkers)));
+        this._additionalMarkerWait = this._additionalMarkerWait * 65;
+        delay((CITIES.length * 700) + this._additionalMarkerWait).then(() => {
+          this.map.panTo(AUCKLAND_POINT);
+          this._mapUtil.zoomMap(this.map, this.map.getZoom() + 1, 5);
+        });
+        this._polylineUtil.setZoomChangedListener(this.map);
+        this._markerUtil.setZoomChangedListener(this.map);
+      });
+    }
   }
 }

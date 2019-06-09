@@ -43,10 +43,7 @@
               "src/assets/js/modernizr.custom.js",
               "src/assets/js/jquery.gridrotator.js",
               "src/assets/js/stick.up.js",
-              "src/assets/js/jquery.easypiechart.js",
-              "src/assets/js/pre-render.js",
-              "src/assets/js/google-analytics.js",
-              "src/assets/js/service-worker.js"
+              "src/assets/js/jquery.easypiechart.js"
             ]
           },
           "configurations": {
@@ -75,6 +72,17 @@
                   "maximumWarning": "2mb",
                   "maximumError": "5mb"
                 }
+              ],
+              "scripts": [
+                "node_modules/jquery/dist/jquery.min.js",
+                "node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js",
+                "src/assets/js/modernizr.custom.js",
+                "src/assets/js/jquery.gridrotator.js",
+                "src/assets/js/stick.up.js",
+                "src/assets/js/jquery.easypiechart.js",
+                "src/assets/js/pre-render.js",
+                "src/assets/js/google-analytics.js",
+                "src/assets/js/service-worker.js"
               ]
             }
           }

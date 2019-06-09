@@ -7,14 +7,12 @@ import { ERROR_MESSAGES } from '../models/error.messages';
 
 @Injectable()
 export class ContactService {
-  private _http: HttpClient;
 
   static getErrorMessages(): Promise<Array<IErrorMessage>> {
     return Promise.resolve(ERROR_MESSAGES);
   }
 
-  constructor(http: HttpClient) {
-    this._http = http;
+  constructor(private _http: HttpClient) {
   }
 
   send(message: ContactMessage): Observable<JSON> {

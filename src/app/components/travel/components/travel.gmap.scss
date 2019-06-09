@@ -12,6 +12,10 @@
   width: 100%;
   margin: 0;
 
+  .map-in-view {
+    display: unset;
+  }
+
   @include respond-to($query: $screen-x2-min) {
     height: 45vh;
   }

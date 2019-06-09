@@ -5,10 +5,8 @@ import { ImageIds } from '../definitions/image.ids';
 
 @Injectable()
 export class HeaderService {
-  private _http: HttpClient;
 
-  constructor(http: HttpClient) {
-    this._http = http;
+  constructor(private _http: HttpClient) {
   }
 
   getImageIds(): Observable<ImageIds> {

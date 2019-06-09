@@ -11,13 +11,11 @@ import { HeaderService } from '../services/header';
 })
 export class HeaderComponent implements OnInit {
   public imageIds: Array<string>;
-  private _headerService: HeaderService;
   private _previousWidth: number;
   private _previousHeight: number;
   private _onDraw: () => void;
 
-  constructor(_headerService: HeaderService) {
-    this._headerService = _headerService;
+  constructor(private _headerService: HeaderService) {
   }
 
   ngOnInit(): void {

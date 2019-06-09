@@ -11,16 +11,15 @@ export class MarkerUtil {
   private _portMarkers: Array<google.maps.Marker> = [];
   private _stationMarkers: Array<google.maps.Marker> = [];
   private _cityMarkers: Array<google.maps.Marker> = [];
+  private _infoWindow: google.maps.InfoWindow = new google.maps.InfoWindow();
   private _currentCityMarker: google.maps.Marker;
-  private _infoWindow: google.maps.InfoWindow;
-  private _markerToBounce: google.maps.Marker;
-  private _timeoutMarkerBounce: any;
   private _sizeBase = 1;
   private _sizeExp1 = 2;
   private _sizeExp2 = 4;
+  private _markerToBounce: google.maps.Marker;
+  private _timeoutMarkerBounce: any;
 
   constructor() {
-    this._infoWindow = new google.maps.InfoWindow();
   }
 
   addAirportMarker(map: google.maps.Map, airport: IAirport): void {
