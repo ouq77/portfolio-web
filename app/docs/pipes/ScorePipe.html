@@ -197,10 +197,8 @@ export class ScorePipe implements PipeTransform {
 
 @Pipe({name: &#x27;videoUrl&#x27;})
 export class VideoUrlPipe implements PipeTransform {
-  private _sanitationService: DomSanitizer;
 
-  constructor(sanitationService: DomSanitizer) {
-    this._sanitationService &#x3D; sanitationService;
+  constructor(private _sanitationService: DomSanitizer) {
   }
 
   transform(videoUrl: string): SafeResourceUrl {

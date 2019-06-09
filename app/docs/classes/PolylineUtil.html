@@ -238,6 +238,11 @@
 
                         </td>
                     </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>0</code>
+                        </td>
+                    </tr>
                         <tr>
                             <td class="col-md-4">
                                     <div class="io-line">Defined in <a href="" data-line="6" class="link-to-prism">src/app/components/travel/components/gmap/polyline.util.ts:6</a></div>
@@ -507,8 +512,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="84"
-                            class="link-to-prism">src/app/components/travel/components/gmap/polyline.util.ts:84</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="83"
+                            class="link-to-prism">src/app/components/travel/components/gmap/polyline.util.ts:83</a></div>
                 </td>
             </tr>
 
@@ -601,8 +606,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="56"
-                            class="link-to-prism">src/app/components/travel/components/gmap/polyline.util.ts:56</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="55"
+                            class="link-to-prism">src/app/components/travel/components/gmap/polyline.util.ts:55</a></div>
                 </td>
             </tr>
 
@@ -695,8 +700,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="37"
-                            class="link-to-prism">src/app/components/travel/components/gmap/polyline.util.ts:37</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="36"
+                            class="link-to-prism">src/app/components/travel/components/gmap/polyline.util.ts:36</a></div>
                 </td>
             </tr>
 
@@ -789,8 +794,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="20"
-                            class="link-to-prism">src/app/components/travel/components/gmap/polyline.util.ts:20</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="19"
+                            class="link-to-prism">src/app/components/travel/components/gmap/polyline.util.ts:19</a></div>
                 </td>
             </tr>
 
@@ -885,8 +890,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="148"
-                            class="link-to-prism">src/app/components/travel/components/gmap/polyline.util.ts:148</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="147"
+                            class="link-to-prism">src/app/components/travel/components/gmap/polyline.util.ts:147</a></div>
                 </td>
             </tr>
 
@@ -955,8 +960,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="114"
-                            class="link-to-prism">src/app/components/travel/components/gmap/polyline.util.ts:114</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="113"
+                            class="link-to-prism">src/app/components/travel/components/gmap/polyline.util.ts:113</a></div>
                 </td>
             </tr>
 
@@ -1037,8 +1042,8 @@
 
             <tr>
                 <td class="col-md-4">
-                    <div class="io-line">Defined in <a href="" data-line="128"
-                            class="link-to-prism">src/app/components/travel/components/gmap/polyline.util.ts:128</a></div>
+                    <div class="io-line">Defined in <a href="" data-line="127"
+                            class="link-to-prism">src/app/components/travel/components/gmap/polyline.util.ts:127</a></div>
                 </td>
             </tr>
 
@@ -1100,7 +1105,7 @@ import { IPoint } from &#x27;../../definitions/point&#x27;;
 import { PolylineIconSequence } from &#x27;../../definitions/polyline.icon.sequence&#x27;;
 
 export class PolylineUtil {
-  private _lineDrawWait: number;
+  private _lineDrawWait &#x3D; 0;
   private _polylines: Array&lt;google.maps.Polyline&gt; &#x3D; [];
   private _dottedPolylines: Array&lt;PolylineIconSequence&gt; &#x3D; [];
   private _weightBase &#x3D; 1.25;
@@ -1111,7 +1116,6 @@ export class PolylineUtil {
   private _weightExp5 &#x3D; 6;
 
   constructor() {
-    this._lineDrawWait &#x3D; 0;
   }
 
   createPolylines(journeys: Array&lt;Array&lt;IPoint&gt;&gt;, map: google.maps.Map, strokeColor: string): Array&lt;google.maps.Polyline&gt; {

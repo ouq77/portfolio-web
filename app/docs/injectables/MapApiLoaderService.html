@@ -97,7 +97,7 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-<code>constructor(mapsApiLoader: MapsAPILoader)</code>
+<code>constructor(_mapsApiLoader: MapsAPILoader)</code>
                     </td>
                 </tr>
                         <tr>
@@ -120,7 +120,7 @@
                                         </thead>
                                         <tbody>
                                                 <tr>
-                                                        <td>mapsApiLoader</td>
+                                                        <td>_mapsApiLoader</td>
                                                   
                                                         <td>
                                                                     <code>MapsAPILoader</code>
@@ -199,10 +199,10 @@ export const initMapApi &#x3D; (mapApiLoaderService: MapApiLoaderService): (() &
 @Injectable()
 export class MapApiLoaderService {
 
-  constructor(private mapsApiLoader: MapsAPILoader) {}
+  constructor(private _mapsApiLoader: MapsAPILoader) {}
 
   loadMapApi(): Promise&lt;void&gt; {
-    return this.mapsApiLoader.load();
+    return this._mapsApiLoader.load();
   }
 }
 </code></pre>
