@@ -11,12 +11,12 @@ module.exports = () => {
     csp({
       directives: {
         defaultSrc: ['\'self\''],
-        connectSrc: ['\'self\'', 'https://*.google-analytics.com'],
+        connectSrc: ['\'self\'', 'https://*.googletagmanager.com'],
         frameSrc: ['\'self\'', 'https://*.youtube.com'],
         fontSrc: ['\'self\'', 'data:', 'https://*.gstatic.com', 'https://maxcdn.bootstrapcdn.com'],
-        imgSrc: ['\'self\'', 'data:', 'https://*.googleapis.com', 'https://*.gstatic.com', 'https://*.google-analytics.com', 'https://*.bithound.io', 'https://*.rawgit.com'],
+        imgSrc: ['\'self\'', 'data:', 'https://*.googleapis.com', 'https://*.gstatic.com', 'https://*.googletagmanager.com', 'https://*.bithound.io', 'https://*.rawgit.com'],
         objectSrc: ['\'none\''],
-        scriptSrc: ['\'self\'', '\'unsafe-inline\'', 'https://*.googleapis.com', 'https://*.google-analytics.com', 'https://*.cloudflare.com'],
+        scriptSrc: ['\'self\'', '\'unsafe-inline\'', 'https://*.googleapis.com', 'https://*.googletagmanager.com', 'https://*.cloudflare.com'],
         styleSrc: ['\'self\'', '\'unsafe-inline\'', 'https://*.googleapis.com', 'https://*.bootstrapcdn.com']
       },
       browserSniff: false
