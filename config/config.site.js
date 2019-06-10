@@ -55,6 +55,8 @@ const META_TAGS = {
   linkPreconnectTags: [
     '//fonts.gstatic.com',
     '//www.google-analytics.com',
+    '//maps.googleapis.com',
+    '//www.youtube.com',
   ],
   linkTags: {
     author: 'https://plus.google.com/u/0/+LouwSwart/posts',
