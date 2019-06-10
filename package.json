@@ -36,7 +36,6 @@
     "node-fetch": "2.6.0",
     "nodemailer": "6.2.1",
     "ord": "1.0.1",
-    "prerender-node": "3.2.4",
     "referrer-policy": "1.2.0",
     "require-directory": "2.1.1",
     "serve-webp": "1.0.0",
