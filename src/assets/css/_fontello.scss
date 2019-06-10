@@ -4,13 +4,13 @@
   font-family: 'fontello';
   src: url('../fonts/fontello.eot?4253260');
   src: url('../fonts/fontello.eot?4253260#iefix') format('embedded-opentype'),
-  url('../fonts/fontello.woff2?4253260') format('woff2'),
-  url('../fonts/fontello.woff?4253260') format('woff'),
-  url('../fonts/fontello.ttf?4253260') format('truetype'),
-  url('../fonts/fontello.svg?4253260#fontello') format('svg');
+       url('../fonts/fontello.woff2?4253260') format('woff2'),
+       url('../fonts/fontello.woff?4253260') format('woff'),
+       url('../fonts/fontello.ttf?4253260') format('truetype'),
+       url('../fonts/fontello.svg?4253260#fontello') format('svg');
   font-weight: normal;
   font-style: normal;
-  font-display: auto;
+  font-display: swap;
 }
 
 [class^="icon-"]:before, [class*=" icon-"]:before {
