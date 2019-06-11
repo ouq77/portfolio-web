@@ -13,7 +13,7 @@
   margin: 0;
 
   .map-in-view {
-    display: unset;
+    display: inline;
   }
 
   @include respond-to($query: $screen-x2-min) {
