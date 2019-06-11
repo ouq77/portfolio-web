@@ -5,10 +5,23 @@ import { Job } from '../definitions/job';
  */
 export const JOBS: Array<Job> = [
   {
-    content: '<p>Currently on assignment at the DIA, on behalf of Accenture, where the tech stack includes <b>Angular (7)</b>, ' +
+    content: '',
+    institution: {
+      location: 'Wellington, New Zealand',
+      name: 'BNZ',
+      url: 'https://www.bnz.co.nz',
+    },
+    title: 'Senior Front-end Developer (Contract)',
+    year: {
+      from: 'Jun 2019',
+      to: 'Present',
+    },
+  },
+  {
+    content: '<p>Worked at the Department of Internal Affairs, on behalf of Accenture, where the tech stack included <b>Angular (7)</b>, ' +
       '<b>Java Spring Boot</b>, <b>Node.js</b> and <b>MongoDB</b> running in <b>Azure</b>.</p><p>As part of a <b>digital delivery</b> ' +
-      'team, I’m involved in several core services provided to the NZ public. These include online marriage licence applications, ' +
-      'certificate ordering and a citizenship pilot. Project work involves integrations with Payment Express, RealMe and other custom ' +
+      'team, I was involved in several core services provided to the NZ public. These included online marriage licence applications, ' +
+      'certificate ordering and a citizenship pilot. Project work involved integrations with Payment Express, RealMe and other custom ' +
       'backend systems.</p>',
     institution: {
       location: 'Wellington, New Zealand',
@@ -18,7 +31,7 @@ export const JOBS: Array<Job> = [
     title: 'Full-stack Developer (Contract)',
     year: {
       from: 'Jul 2018',
-      to: 'Present',
+      to: 'Jun 2019',
     },
   },
   {

@@ -7,6 +7,10 @@ out-tsc/
 # Only exists if Bazel was run
 bazel-out/
 
+# config
+config/*.json
+src/environments/environment.ts
+
 # dependencies
 node_modules/
 
@@ -44,9 +48,6 @@ typings/
 # System Files
 .DS_Store
 Thumbs.db
-
-# Generated files
-config/*.json
 
 # Heroku app - has own repo
 heroku/
