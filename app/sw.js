@@ -15,7 +15,7 @@
 
 // Incrementing CACHE_VERSION will kick off the install event and force previously cached
 // resources to be cached again.
-var CACHE_VERSION = 1560148187909;
+var CACHE_VERSION = 1560241402307;
 var CURRENT_CACHES = {
   offline: 'offline-v' + CACHE_VERSION,
   regular: 'regular-v' + CACHE_VERSION,
