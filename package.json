@@ -19,7 +19,6 @@
   "license": "MIT",
   "dependencies": {
     "body-parser": "1.19.0",
-    "cache-manager": "2.9.1",
     "camelcase": "5.3.1",
     "compression": "1.7.4",
     "convict": "5.0.0",
@@ -38,9 +37,8 @@
     "ord": "1.0.1",
     "referrer-policy": "1.2.0",
     "require-directory": "2.1.1",
-    "serve-webp": "1.0.0",
     "sharp": "0.22.1",
-    "webp-converter": "2.2.2"
+    "webp-middleware": "0.4.0"
   },
   "devDependencies": {
     "standard": "12.0.1"

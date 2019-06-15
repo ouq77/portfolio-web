@@ -6,6 +6,11 @@
       "cache": "365d"
     },
     {
+      "uri": "/assets/images",
+      "location": "./app/assets/images",
+      "cache": "0"
+    },
+    {
       "uri": "/assets/markers",
       "location": "./app/assets/markers",
       "cache": "365d"

@@ -19,7 +19,9 @@ app.use(userAgentBlocker(blockedUserAgents))
 app.use(middleware.helmet())
 app.use(require('body-parser').json({ type: ['json', 'application/csp-report'] }))
 app.use(middleware.heroku)
+// cache control set by middleware.assetsHeader
 app.use('/assets/images/*', middleware.assetsHeader)
+app.use(middleware.assetsWebp)
 
 expressStaticMappings.forEach((mapping) => {
   console.info(`mapping resource "${mapping.uri}" to static location "${mapping.location}" with cache "${mapping.cache}"`)
@@ -32,9 +34,6 @@ expressRedirectMappings.forEach((mapping) => {
     res.redirect(301, mapping.newUri)
   })
 })
-
-// cache set by middleware.assetsHeader
-app.get('/assets/images/*', routes.assets)
 
 app.post('/report-violation', cache({ nocache: true }), routes.reportviolation)
 app.get('/imageids', cache({ nocache: true }), routes.imageids)
