@@ -43,6 +43,9 @@
       @include respond-to($query: $screen-m1-min) {
         text-align: center;
       }
+      min-width: 295px;
+      min-height: 295px;
+      margin-top: 20px;
     }
 
     ul {
