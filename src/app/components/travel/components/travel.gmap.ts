@@ -1,6 +1,5 @@
 import {Component, OnInit} from '@angular/core';
 import { cancelableDelay, delay } from '../../shared/common/delay';
-import { elementInViewport } from '../../shared/common/element.in.viewport';
 import { IAirport } from '../definitions/airport';
 import { ICity } from '../definitions/city';
 import { IPort } from '../definitions/port';

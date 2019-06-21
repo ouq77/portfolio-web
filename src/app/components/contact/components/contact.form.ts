@@ -25,8 +25,8 @@ export class ContactFormComponent implements OnInit {
   public submitting = false;
   public form: FormGroup;
 
-  constructor(private _contactService: ContactService,
-              private fb: FormBuilder) {
+  constructor(public fb: FormBuilder,
+              private _contactService: ContactService) {
     this.form = fb.group({
       email: this.email,
       heuning: this.heuning,
