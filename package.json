@@ -1,7 +1,7 @@
 {
   "name": "ouq77-portfolio",
   "author": "ouq77",
-  "version": "8.2.4",
+  "version": "8.2.5",
   "description": "On-line portfolio of Louw Swart",
   "main": "server/server.js",
   "repository": {
