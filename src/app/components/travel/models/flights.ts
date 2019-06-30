@@ -49,5 +49,5 @@ export const FLIGHTS: Array<Array<IPoint>> = [
  * Array of Upcoming Flights for the Contact section
  */
 export const UPCOMING_FLIGHTS: Array<Array<IPoint>> = [
-  [WLG.loc, DUD.loc]
+  [WLG.loc, DUD.loc, CHC.loc]
 ];
