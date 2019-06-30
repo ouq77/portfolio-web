@@ -81,7 +81,7 @@ export const MEL: IAirport = new Airport('Melbourne', AUSTRALIA, 'MEL', new Poin
 export const GIS: IAirport = new Airport('Gisborne', NEW_ZEALAND, 'GIS', new Point(-38.6628665, 177.9806031), 'Gisborne Airport');
 export const PEK: IAirport = new Airport('Beijing', CHINA, 'PEK', new Point(40.079383, 116.6061803), 'Beijing Capital International Airport');
 export const PVG: IAirport = new Airport('Shanghai', CHINA, 'PVG', new Point(31.1443485, 121.8060843), 'Shanghai Pudong International Airport');
-export const DUD: IAirport = new Airport('Dunedin', CHINA, 'DUD', new Point(-45.9271045, 170.2071755), 'Dunedin International Airport');
+export const DUD: IAirport = new Airport('Dunedin', NEW_ZEALAND, 'DUD', new Point(-45.924735, 170.201256), 'Dunedin International Airport');
 
 /**
  * Array of all airports for the Contact section
