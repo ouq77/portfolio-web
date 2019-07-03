@@ -43,11 +43,11 @@ export const FLIGHTS: Array<Array<IPoint>> = [
   [BKKN.loc, KBV.loc], [HKT.loc, SIN.loc, MEL.loc, WLG.loc],
   [WLG.loc, GIS.loc], [AKL.loc, YVR.loc],
   [AKL.loc, PEK.loc, FRA.loc, PVG.loc, AKL.loc],
+  [WLG.loc, DUD.loc, CHC.loc],
 ];
 
 /**
  * Array of Upcoming Flights for the Contact section
  */
 export const UPCOMING_FLIGHTS: Array<Array<IPoint>> = [
-  [WLG.loc, DUD.loc, CHC.loc]
 ];
