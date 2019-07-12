@@ -9,3 +9,7 @@ node_modules/
 
 # Users Environment Variables
 server/config/env.local.json
+
+# Crypto
+*.key
+*.pem

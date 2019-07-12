@@ -51,11 +51,6 @@
       "cache": "365d"
     },
     {
-      "uri": "/docs",
-      "location": "./app/docs",
-      "cache": "1d"
-    },
-    {
       "uri": "/offline",
       "location": "./app/offline.html",
       "cache": "365d"

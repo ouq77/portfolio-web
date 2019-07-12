@@ -14,7 +14,7 @@ module.exports = () => {
         connectSrc: ['\'self\'', 'https://*.googletagmanager.com', 'https://*.google-analytics.com'],
         frameSrc: ['\'self\'', 'https://*.youtube.com'],
         fontSrc: ['\'self\'', 'data:', 'https://*.gstatic.com', 'https://maxcdn.bootstrapcdn.com'],
-        imgSrc: ['\'self\'', 'data:', 'https://*.googleapis.com', 'https://*.gstatic.com', 'https://*.googletagmanager.com', 'https://*.google-analytics.com', 'https://*.bithound.io', 'https://*.rawgit.com'],
+        imgSrc: ['\'self\'', 'data:', 'https://*.googleapis.com', 'https://*.gstatic.com', 'https://*.googletagmanager.com', 'https://*.google-analytics.com', 'https://*.rawgit.com'],
         objectSrc: ['\'none\''],
         scriptSrc: ['\'self\'', '\'unsafe-inline\'', 'https://*.googleapis.com', 'https://*.googletagmanager.com', 'https://*.google-analytics.com', 'https://*.cloudflare.com'],
         styleSrc: ['\'self\'', '\'unsafe-inline\'', 'https://*.googleapis.com', 'https://*.bootstrapcdn.com']

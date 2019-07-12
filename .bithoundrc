@@ -1,7 +1,0 @@
-{
-  "ignore": [
-    "node_modules/**",
-    "app/docs/**",
-    "app/js/bundle.*.min-*.js"
-  ]
-}
