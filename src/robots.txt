@@ -6,4 +6,3 @@ User-agent: Baiduspider-image
 Disallow: /
 
 User-agent: *
-Disallow: /docs/
