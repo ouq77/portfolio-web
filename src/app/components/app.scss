@@ -7,7 +7,7 @@
 .wrapper {
   width: 100%;
 
-  @include respond-to($query: $screen-x1-min) {
+  @include respond-to($query: $breakpoint-640) {
     top: 200px !important;
   }
 }

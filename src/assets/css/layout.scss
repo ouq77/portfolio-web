@@ -26,7 +26,7 @@ body {
   overflow: scroll;
   overflow-x: hidden;
 
-  @include respond-to($query: $screen-m1-min) {
+  @include respond-to($query: $breakpoint-992) {
     min-height: 700px;
   }
 }

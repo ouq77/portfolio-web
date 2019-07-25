@@ -7,7 +7,7 @@
 header {
   position: relative;
 
-  @include respond-to($query: $screen-m2-min) {
+  @include respond-to($query: $breakpoint-810) {
     font-size: 38px;
     span {
       font-size: 16px;
@@ -46,7 +46,7 @@ header {
     text-transform: none;
   }
 
-  @include respond-to($query: $screen-m1-min) {
+  @include respond-to($query: $breakpoint-992) {
     padding-left: 25px;
     padding-right: 25px;
     h1 {
@@ -58,7 +58,7 @@ header {
     }
   }
 
-  @include respond-to($query: $screen-x1-min) {
+  @include respond-to($query: $breakpoint-640) {
     h1 {
       font-size: 42px;
       line-height: 48px;
@@ -69,7 +69,7 @@ header {
     }
   }
 
-  @include respond-to($query: $screen-x3-min) {
+  @include respond-to($query: $breakpoint-360) {
     padding-top: 22px;
     h1 {
       font-size: 38px;
@@ -81,7 +81,7 @@ header {
     }
   }
 
-  @include respond-to($query: $screen-x4-min) {
+  @include respond-to($query: $breakpoint-320) {
     padding-top: 16px;
   }
 }
@@ -98,7 +98,7 @@ header {
   li {
     opacity: .5;
 
-    @include respond-to($query: $screen-x1-min) {
+    @include respond-to($query: $breakpoint-640) {
       opacity: .6;
     }
   }
@@ -239,16 +239,16 @@ header {
                   color: $white;
                 }
 
-                @include respond-to($query: $screen-m1-min) {
+                @include respond-to($query: $breakpoint-992) {
                   padding-left: 18px;
                   padding-right: 18px;
                 }
 
-                @include respond-to($query: $screen-m2-min) {
+                @include respond-to($query: $breakpoint-810) {
                   padding-left: 17px;
                 }
 
-                @include respond-to($query: $screen-x2-min) {
+                @include respond-to($query: $breakpoint-480) {
                   line-height: 17px;
                   padding-top: 20px;
                   padding-bottom: 11px;

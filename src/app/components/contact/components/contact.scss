@@ -52,7 +52,7 @@
   i {
     padding-right: 15px;
 
-    @include respond-to($query: $screen-m2-min) {
+    @include respond-to($query: $breakpoint-810) {
       padding-right: 5px;
     }
   }

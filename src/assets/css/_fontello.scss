@@ -125,7 +125,7 @@
   font-size: 1.8em;
   margin-left: .2em;
 
-  @include respond-to($val: max-width, $query: $screen-x3-min) {
+  @include respond-to($val: max-width, $query: $breakpoint-360) {
     font-size: 1.6em;
   }
 }

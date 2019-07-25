@@ -16,7 +16,7 @@
     display: inline;
   }
 
-  @include respond-to($query: $screen-x2-min) {
+  @include respond-to($query: $breakpoint-480) {
     height: 45vh;
   }
 }

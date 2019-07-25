@@ -46,14 +46,16 @@ $font-family-base: 'Open Sans', sans-serif;
 // Media queries breakpoints
 // ========================================================================== //
 
-$screen-x4-min: 320px;
-$screen-x3-min: 360px;
-$screen-x2-min: 480px;
-$screen-x1-min: 650px;
-$screen-sm-min: 767px;
-$screen-m2-min: 810px;
-$screen-m1-min: 992px;
-$screen-lg-min: 1200px;
+$breakpoint-320: 320px;
+$breakpoint-360: 360px;
+$breakpoint-380: 380px;
+$breakpoint-420: 420px;
+$breakpoint-480: 480px;
+$breakpoint-640: 650px;
+$breakpoint-767: 767px;
+$breakpoint-810: 810px;
+$breakpoint-992: 992px;
+$breakpoint-1200: 1200px;
 
 //
 // Container & Heading mixin
@@ -83,7 +85,7 @@ $screen-lg-min: 1200px;
 //
 // Media query mixin
 // ========================================================================== //
-@mixin respond-to($val: max-width, $query: $screen-sm-min) {
+@mixin respond-to($val: max-width, $query: $breakpoint-767) {
   @media screen and ($val: $query) {
     @content
   }

@@ -78,7 +78,7 @@
         padding: 40px 0 40px 0;
         @include border-radius(50%);
 
-        @include respond-to($val: min-width, $query: $screen-lg-min) {
+        @include respond-to($val: min-width, $query: $breakpoint-1200) {
           width: 140px;
           height: 140px;
           padding-top: 50px;

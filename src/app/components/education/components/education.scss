@@ -62,14 +62,14 @@
               .cs-badge {
                 min-height: 117px;
 
-                @include respond-to($val: max-width, $query: $screen-x2-min) {
+                @include respond-to($val: max-width, $query: $breakpoint-480) {
                   img {
                     width: 85px;
                     height: 85px;
                   }
                 }
 
-                @include respond-to($val: max-width, $query: $screen-x3-min) {
+                @include respond-to($val: max-width, $query: $breakpoint-360) {
                   img {
                     width: 75px;
                     height: 75px;
@@ -103,7 +103,7 @@
         padding: 40px 0 40px 0;
         @include border-radius(50%);
 
-        @include respond-to($val: min-width, $query: $screen-lg-min) {
+        @include respond-to($val: min-width, $query: $breakpoint-1200) {
           width: 140px;
           height: 140px;
           padding-top: 50px;
