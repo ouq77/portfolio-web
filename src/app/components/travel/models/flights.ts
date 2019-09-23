@@ -1,8 +1,10 @@
 import { IPoint } from '../definitions/point';
-import { ABJ, ACC, ADL, AKL, AMS, ARN, ATL, BFN, BGO, BKK, BKKN, BOM, BOO, BUQ, CBR, CDG, CHC, CPH, CPT, DAR,
+import {
+  ABJ, ACC, ADL, AKL, AMS, ARN, ATL, BFN, BGO, BKK, BKKN, BNE, BOM, BOO, BUQ, CBR, CDG, CHC, CPH, CPT, DAR,
   DKR, DPS, DRW, DUD, DUR, EBB, ELS, EZE, FIH, FRA, GBE, GIS, GRJ, GRU, HKG, HKGN, HKT, HLZ, HRE, IAD, JFK, JNB,
   KBV, KIM, KIX, LAD, LGA, LHR, LOS, LUN, LVI, MBD, MEL, MIA, MPM, MRU, NBO, NPL, NRT, NSN, PEK, PER, PLZ, PVG,
-  RAR, ROT, SID, SIN, SJV, SYD, TIU, TOS, TRD, TRG, USM, WDH, WLG, YVR, ZQN, ZRH } from './airports';
+  RAR, ROT, SID, SIN, SJV, SYD, TIU, TOS, TRD, TRG, USM, WDH, WLG, YVR, ZQN, ZRH
+} from './airports';
 
 /**
  * Array of Flights for the Contact section
@@ -50,4 +52,5 @@ export const FLIGHTS: Array<Array<IPoint>> = [
  * Array of Upcoming Flights for the Contact section
  */
 export const UPCOMING_FLIGHTS: Array<Array<IPoint>> = [
+  [WLG.loc, BNE.loc]
 ];
