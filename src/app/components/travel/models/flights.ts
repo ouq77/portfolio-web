@@ -1,9 +1,9 @@
 import { IPoint } from '../definitions/point';
 import {
-  ABJ, ACC, ADL, AKL, AMS, ARN, ATL, BFN, BGO, BKK, BKKN, BNE, BOM, BOO, BUQ, CBR, CDG, CHC, CPH, CPT, DAR,
+  ABJ, ACC, ADL, AKL, AMS, ARN, ATL, BFN, BGO, BKK, BKKN, BNE, BOM, BOO, BUQ, CBR, CDG, CHC, CPH, CPT, CXH, DAR,
   DKR, DPS, DRW, DUD, DUR, EBB, ELS, EZE, FIH, FRA, GBE, GIS, GRJ, GRU, HKG, HKGN, HKT, HLZ, HRE, IAD, JFK, JNB,
-  KBV, KIM, KIX, LAD, LGA, LHR, LOS, LUN, LVI, MBD, MEL, MIA, MPM, MRU, NBO, NPL, NRT, NSN, PEK, PER, PLZ, PVG,
-  RAR, ROT, SID, SIN, SJV, SYD, TIU, TOS, TRD, TRG, USM, WDH, WLG, YVR, ZQN, ZRH
+  KBV, KIM, KIX, LAD, LAX, LGA, LHR, LOS, LUN, LVI, MBD, MEL, MIA, MPM, MRU, NBO, NPL, NRT, NSN, PEK, PER, PLZ,
+  PVG, RAR, ROT, SFO, SID, SIN, SJV, SYD, TIU, TOS, TRD, TRG, USM, WDH, WLG, YUL, YVR, YWH, ZQN, ZRH,
 } from './airports';
 
 /**
@@ -43,7 +43,7 @@ export const FLIGHTS: Array<Array<IPoint>> = [
   [WLG.loc, TIU.loc], [WLG.loc, NSN.loc], [WLG.loc, NPL.loc],
   [WLG.loc, CBR.loc, SIN.loc, JNB.loc], [WLG.loc, ZQN.loc],
   [BKKN.loc, KBV.loc], [HKT.loc, SIN.loc, MEL.loc, WLG.loc],
-  [WLG.loc, GIS.loc], [AKL.loc, YVR.loc],
+  [WLG.loc, GIS.loc], [AKL.loc, YVR.loc], [CXH.loc, YWH.loc],
   [AKL.loc, PEK.loc, FRA.loc, PVG.loc, AKL.loc],
   [WLG.loc, DUD.loc, CHC.loc],
 ];
@@ -52,5 +52,5 @@ export const FLIGHTS: Array<Array<IPoint>> = [
  * Array of Upcoming Flights for the Contact section
  */
 export const UPCOMING_FLIGHTS: Array<Array<IPoint>> = [
-  [WLG.loc, BNE.loc]
+  [WLG.loc, BNE.loc], [SYD.loc, LAX.loc, YUL.loc, SFO.loc, AKL.loc],
 ];

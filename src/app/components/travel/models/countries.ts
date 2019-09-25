@@ -1,4 +1,5 @@
 export const AUSTRALIA = 'Australia';
+export const CANADA = 'Canada';
 export const CHINA = 'China';
 export const DENMARK = 'Denmark';
 export const HONG_KONG = 'Hong Kong';
