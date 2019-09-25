@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { Link } from '../definitions/link';
-import { FooterService } from '../services/footer';
+import { Component, OnInit } from '@angular/core'
+import { Link } from '../definitions/link'
+import { FooterService } from '../services/footer'
 
 @Component({
   selector: 'app-footer',
@@ -8,19 +8,19 @@ import { FooterService } from '../services/footer';
   templateUrl: 'footer.html',
 })
 export class FooterComponent implements OnInit {
-  public links: Array<Link>;
-  public currentDate: Date = new Date();
+  public links: Array<Link>
+  public currentDate: Date = new Date()
 
   constructor() {
   }
 
   ngOnInit() {
-    this.getLinks();
+    this.getLinks()
   }
 
   getLinks() {
     FooterService.getLinks().then(
       links => this.links = <Array<Link>> links,
-    );
+    )
   }
 }

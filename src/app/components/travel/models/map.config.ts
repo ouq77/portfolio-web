@@ -1,4 +1,4 @@
-import { START_POINT } from './points';
+import { START_POINT } from './points'
 
 /**
  * Configuration for the Map in the Contact section
@@ -177,4 +177,4 @@ export const MAP_OPTIONS: google.maps.MapOptions = {
     },
   ],
   zoom: 2,
-};
+}

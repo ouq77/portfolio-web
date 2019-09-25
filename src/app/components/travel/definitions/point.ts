@@ -1,23 +1,13 @@
 /**
  * Interface for a Point object
  */
-export interface IPoint {
+export interface Point {
   /**
    * Latitude for the point
    */
-  lat: number;
+  lat: number
   /**
    * Longitude for the point
    */
-  lng: number;
-}
-
-export class Point implements IPoint {
-  public lat: number;
-  public lng: number;
-
-  constructor(lat: number, lng: number) {
-    this.lat = lat;
-    this.lng = lng;
-  }
+  lng: number
 }

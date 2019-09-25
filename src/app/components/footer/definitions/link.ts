@@ -3,15 +3,15 @@
  */
 export interface Link {
   /**
-   * IIcon for the link
+   * Icon for the link
    */
-  icon: string;
+  icon: string
   /**
    * Title of the link
    */
-  title: string;
+  title: string
   /**
    * Web address for the link
    */
-  url: string;
+  url: string
 }

@@ -1,44 +1,28 @@
-import { IIcon } from './icon';
-import { IPoint } from './point';
+import { Icon } from './icon'
+import { Point } from './point'
 
 /**
  * Interface for a City object
  */
-export interface ICity {
+export interface City {
   /**
    * Location title
    */
-  description: string;
+  description: string
   /**
    * Location icon
    */
-  icon: IIcon;
+  icon: Icon
   /**
    * Location of the city
    */
-  loc: IPoint;
+  loc: Point
   /**
    * Location name
    */
-  name: string;
+  name: string
   /**
    * Current location?
    */
-  current: boolean;
-}
-
-export class City implements ICity {
-  public description: string;
-  public icon: IIcon;
-  public loc: IPoint;
-  public name: string;
-  public current: boolean;
-
-  constructor(description: string, icon: IIcon, loc: IPoint, name: string, current: boolean = false) {
-    this.description = description;
-    this.icon = icon;
-    this.loc = loc;
-    this.name = name;
-    this.current = current;
-  }
+  current?: boolean
 }

@@ -5,13 +5,13 @@ export interface Skill {
   /**
    * More about the skill
    */
-  content: string;
+  content: string
   /**
    * Level of confidence as a percentage
    */
-  level: number;
+  level: number
   /**
    * Name of the skill
    */
-  name: string;
+  name: string
 }

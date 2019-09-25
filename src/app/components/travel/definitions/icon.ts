@@ -1,25 +1,15 @@
 /**
  * Interface for an Icon object
  */
-import { ISize } from './size';
+import { Size } from './size'
 
-export interface IIcon {
+export interface Icon {
   /**
    * The icon size
    */
-  scaledSize: ISize;
+  scaledSize: Size
   /**
    * The icon url
    */
-  url: string;
-}
-
-export class Icon implements IIcon {
-  public scaledSize: ISize;
-  public url: string;
-
-  constructor(scaledSize: ISize, url: string) {
-    this.scaledSize = scaledSize;
-    this.url = url;
-  }
+  url: string
 }

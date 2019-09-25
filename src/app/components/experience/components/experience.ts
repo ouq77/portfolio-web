@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { Job } from '../definitions/job';
-import { ExperienceService } from '../services/experience';
+import { Component, OnInit } from '@angular/core'
+import { Job } from '../definitions/job'
+import { ExperienceService } from '../services/experience'
 
 @Component({
   selector: 'app-experience',
@@ -8,16 +8,16 @@ import { ExperienceService } from '../services/experience';
   templateUrl: 'experience.html',
 })
 export class ExperienceComponent implements OnInit {
-  public jobs: Array<Job>;
+  public jobs: Array<Job>
 
   ngOnInit(): void {
-    this.loadJobs();
+    this.loadJobs()
   }
 
   loadJobs(): void {
     ExperienceService.getJobs().then(
       jobs =>
         this.jobs = jobs,
-    );
+    )
   }
 }

@@ -5,11 +5,11 @@ export interface Job {
   /**
    * Optional accomplishments
    */
-  accomplishments?: string;
+  accomplishments?: string
   /**
    * Job description
    */
-  content: string;
+  content: string
   /**
    * Place of work details
    */
@@ -17,20 +17,20 @@ export interface Job {
     /**
      * Location of Employer office
      */
-    location: string;
+    location: string
     /**
      * Name of employer
      */
-    name: string;
+    name: string
     /**
      * Optional Employer web address
      */
-    url?: string;
-  };
+    url?: string
+  }
   /**
    * Job title
    */
-  title: string;
+  title: string
   /**
    * Optional YouTube video
    */
@@ -38,12 +38,12 @@ export interface Job {
     /**
      * YouTube video title
      */
-    videoTitle: string;
+    videoTitle: string
     /**
      * YouTube video url
      */
-    videoUrl: string;
-  };
+    videoUrl: string
+  }
   /**
    * Years of service
    */
@@ -51,10 +51,10 @@ export interface Job {
     /**
      * Start year
      */
-    from: string;
+    from: string
     /**
      * End year
      */
-    to: string;
-  };
+    to: string
+  }
 }

@@ -5,7 +5,7 @@ export interface School {
   /**
    * Blurb about school
    */
-  content: string;
+  content: string
   /**
    * School details
    */
@@ -13,20 +13,20 @@ export interface School {
     /**
      * School location
      */
-    location: string;
+    location: string
     /**
      * School name
      */
-    name: string;
+    name: string
     /**
      * Optional School web address
      */
-    url?: string;
-  };
+    url?: string
+  }
   /**
    * Highest qualification
    */
-  qualification: string;
+  qualification: string
   /**
    * Years attended
    */
@@ -34,10 +34,10 @@ export interface School {
     /**
      * Start year
      */
-    from: number;
+    from: number
     /**
      * End year
      */
-    to: number;
-  };
+    to: number
+  }
 }

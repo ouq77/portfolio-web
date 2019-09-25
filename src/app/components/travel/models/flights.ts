@@ -1,15 +1,15 @@
-import { IPoint } from '../definitions/point';
+import { Point } from '../definitions/point'
 import {
   ABJ, ACC, ADL, AKL, AMS, ARN, ATL, BFN, BGO, BKK, BKKN, BNE, BOM, BOO, BUQ, CBR, CDG, CHC, CPH, CPT, CXH, DAR,
   DKR, DPS, DRW, DUD, DUR, EBB, ELS, EZE, FIH, FRA, GBE, GIS, GRJ, GRU, HKG, HKGN, HKT, HLZ, HRE, IAD, JFK, JNB,
   KBV, KIM, KIX, LAD, LAX, LGA, LHR, LOS, LUN, LVI, MBD, MEL, MIA, MPM, MRU, NBO, NPL, NRT, NSN, PEK, PER, PLZ,
   PVG, RAR, ROT, SFO, SID, SIN, SJV, SYD, TIU, TOS, TRD, TRG, USM, WDH, WLG, YUL, YVR, YWH, ZQN, ZRH,
-} from './airports';
+} from './airports'
 
 /**
  * Array of Flights for the Contact section
  */
-export const FLIGHTS: Array<Array<IPoint>> = [
+export const FLIGHTS: Array<Array<Point>> = [
   [KIM.loc, PLZ.loc, ELS.loc], [KIM.loc, JNB.loc],
   [JNB.loc, AMS.loc, LHR.loc], [JNB.loc, NBO.loc, LHR.loc],
   [JNB.loc, CPT.loc], [JNB.loc, MBD.loc], [JNB.loc, DUR.loc],
@@ -46,11 +46,11 @@ export const FLIGHTS: Array<Array<IPoint>> = [
   [WLG.loc, GIS.loc], [AKL.loc, YVR.loc], [CXH.loc, YWH.loc],
   [AKL.loc, PEK.loc, FRA.loc, PVG.loc, AKL.loc],
   [WLG.loc, DUD.loc, CHC.loc],
-];
+]
 
 /**
  * Array of Upcoming Flights for the Contact section
  */
-export const UPCOMING_FLIGHTS: Array<Array<IPoint>> = [
+export const UPCOMING_FLIGHTS: Array<Array<Point>> = [
   [WLG.loc, BNE.loc], [SYD.loc, LAX.loc, YUL.loc, SFO.loc, AKL.loc],
-];
+]

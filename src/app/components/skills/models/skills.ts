@@ -1,4 +1,4 @@
-import { Skill } from '../definitions/skill';
+import { Skill } from '../definitions/skill'
 
 /**
  * Array of Skills for the Skills section
@@ -29,7 +29,7 @@ export const SKILLS: Array<Skill> = [
     level: 85,
     name: 'Version Control',
   },
-];
+]
 
 
 

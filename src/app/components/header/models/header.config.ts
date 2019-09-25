@@ -14,7 +14,7 @@ export const MENU_CONFIG: any = {
     6: 'contact',
   },
   topMargin: 'auto',
-};
+}
 
 /**
  * Grid Rotator config
@@ -40,4 +40,4 @@ export const GRID_ROTATOR_CONFIG: any = {
   w768: {
     columns: 4,
   },
-};
+}

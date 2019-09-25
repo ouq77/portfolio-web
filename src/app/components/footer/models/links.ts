@@ -1,4 +1,4 @@
-import { Link } from '../definitions/link';
+import { Link } from '../definitions/link'
 
 /**
  * Array of links for the Footer section
@@ -17,4 +17,4 @@ export const LINKS: Array<Link> = [
     title: 'See my Instagram here',
     url: 'https://instagram.com/ouq77',
   },
-];
+]

@@ -1,7 +1,7 @@
-import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
-import { RailTrips } from '../definitions/rail.trips';
+import { HttpClient } from '@angular/common/http'
+import { Injectable } from '@angular/core'
+import { Observable } from 'rxjs'
+import { RailTrips } from '../definitions/rail.trips'
 
 @Injectable()
 export class TravelService {
@@ -10,6 +10,6 @@ export class TravelService {
   }
 
   getRailTripPaths(): Observable<RailTrips> {
-    return this._http.get<RailTrips>('/railtrips');
+    return this._http.get<RailTrips>('/railtrips')
   }
 }

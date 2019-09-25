@@ -1,4 +1,4 @@
-import { IErrorMessage } from '../definitions/error.message';
+import { IErrorMessage } from '../definitions/error.message'
 
 /**
  * Array of Error messages for the Contact section
@@ -40,4 +40,4 @@ export const ERROR_MESSAGES: Array<IErrorMessage> = [
     code: 'e_generic',
     message: 'Something unexpected happened - please try again later...',
   },
-];
+]

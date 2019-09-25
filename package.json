@@ -85,5 +85,8 @@
     "tslint": "5.20.0",
     "typescript": "3.5.3",
     "uglify-js": "3.6.0"
+  },
+  "resolutions": {
+    "lodash": "4.17.15"
   }
 }

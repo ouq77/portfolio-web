@@ -1,43 +1,42 @@
-import { Point } from '../definitions/point';
-import { IStation, Station } from '../definitions/station';
-import { DENMARK, NEW_ZEALAND, NORWAY, SCOTLAND, SWEDEN, SWITZERLAND, UK } from './countries';
+import { Station } from '../definitions/station'
+import { DENMARK, NEW_ZEALAND, NORWAY, SCOTLAND, SWEDEN, SWITZERLAND, UK } from './countries'
 
-export const MYB: IStation = new Station('London', UK, 'MYB', new Point(51.522617, -0.162974), 'London Marylebone');
-export const AYS: IStation = new Station('Aylesbury', UK, 'AYS', new Point(51.813675, -0.814787), 'Aylesbury Station');
-export const KGX: IStation = new Station('London', UK, 'KGX', new Point(51.531433, -0.124240), `London King's Cross`);
-export const EDB: IStation = new Station('Edinburgh', SCOTLAND, 'EDB', new Point(55.951842, -3.190356), 'Edinburgh Waverley');
-export const VIC: IStation = new Station('London', UK, 'VIC', new Point(51.4952111, -0.1440114), 'London Victoria');
-export const BTN: IStation = new Station('Brighton', UK, 'BTN', new Point(50.829485, -0.141036), 'Brighton Station');
-export const EBN: IStation = new Station('Eastbourne', UK, 'EBN', new Point(50.769411, 0.281219), 'Eastbourne Station');
-export const HGS: IStation = new Station('Hastings', UK, 'HGS', new Point(50.858226, 0.577018), 'Hastings Station');
-export const CST: IStation = new Station('London', UK, 'CST', new Point(51.511275, -0.090282), 'London Cannon Street');
-export const BAN: IStation = new Station('Banbury', UK, 'BAN', new Point(52.060644, -1.327897), 'Banbury Station');
-export const WAT: IStation = new Station('London', UK, 'WAT', new Point(51.503106, -0.112390), 'London Waterloo');
-export const GLD: IStation = new Station('Guildford', UK, 'GLD', new Point(51.236765, -0.580707), 'Guildford Station');
-export const PAD: IStation = new Station('London', UK, 'PAD', new Point(51.516609, -0.176839), 'London Paddington');
-export const WNR: IStation = new Station('Windsor', UK, 'WNR', new Point(51.485719, -0.606355), 'Windsor and Eton Riverside Station');
-export const RDG: IStation = new Station('Reading', UK, 'RDG', new Point(51.459205, -0.972766), 'Reading Station');
-export const BCE: IStation = new Station('Bracknell', UK, 'BCE', new Point(51.413027, -0.752136), 'Bracknell Station');
-export const SOU: IStation = new Station('Southampton', UK, 'SOU', new Point(50.907530, -1.414277), 'Southampton Central Station');
-export const ZHB: IStation = new Station('Zürich', SWITZERLAND, 'ZHB', new Point(47.378375, 8.538908), 'Zürich Hauptbahnhof');
-export const BHB: IStation = new Station('Bern', SWITZERLAND, 'BHB', new Point(46.948348, 7.436341), 'Bahnhof Bern');
-export const GDB: IStation = new Station('Grindelwald', SWITZERLAND, 'GDB', new Point(46.624451, 8.033323), 'Bahnhof Grindelwald');
-export const CHB: IStation = new Station('Chiasso', SWITZERLAND, 'CHB', new Point(45.831830, 9.031275), 'Stazione di Chiasso');
-export const WEL: IStation = new Station('Wellington', NEW_ZEALAND, 'WELL', new Point(-41.279217, 174.780331), 'Wellington Station');
-export const HAM: IStation = new Station('Hamilton', NEW_ZEALAND, 'HAM', new Point(-37.790919, 175.265010), 'Hamilton Station');
-export const CHC: IStation = new Station('Christchurch', NEW_ZEALAND, 'CHCH', new Point(-43.539931, 172.607988), 'Christchurch Station');
-export const PIC: IStation = new Station('Picton', NEW_ZEALAND, 'PICT', new Point(-41.288347, 174.004794), 'Picton Station');
-export const XEV: IStation = new Station('Stockholm', SWEDEN, 'XEV', new Point(59.330616, 18.056583), 'Stockholm Central Station');
-export const ZGH: IStation = new Station('Copenhagen', DENMARK, 'ZGH', new Point(55.672667, 12.564894), 'Copenhagen Central Station');
-export const XZO: IStation = new Station('Oslo', NORWAY, 'XZO', new Point(59.910146, 10.755197), 'Oslo Central Station');
-export const QFV: IStation = new Station('Bergen', NORWAY, 'QFV', new Point(60.390254, 5.333838), 'Bergen Railway Station');
-export const XZT: IStation = new Station('Trondheim', NORWAY, 'XZT', new Point(63.436651, 10.398618), 'Trondheim Central Station');
-export const BOO: IStation = new Station('Bodø', NORWAY, 'BOO', new Point(67.286444, 14.391597), 'Bodø Station');
+export const MYB: Station = { city: 'London', country: UK, stationCode: 'MYB', loc: { lat: 51.522617, lng: -0.162974 }, name: 'London Marylebone' }
+export const AYS: Station = { city: 'Aylesbury', country: UK, stationCode: 'AYS', loc: { lat: 51.813675, lng: -0.814787 }, name: 'Aylesbury Station' }
+export const KGX: Station = { city: 'London', country: UK, stationCode: 'KGX', loc: { lat: 51.531433, lng: -0.124240 }, name: `London King's Cross` }
+export const EDB: Station = { city: 'Edinburgh', country: SCOTLAND, stationCode: 'EDB', loc: { lat: 55.951842, lng: -3.190356 }, name: 'Edinburgh Waverley' }
+export const VIC: Station = { city: 'London', country: UK, stationCode: 'VIC', loc: { lat: 51.4952111, lng: -0.1440114 }, name: 'London Victoria' }
+export const BTN: Station = { city: 'Brighton', country: UK, stationCode: 'BTN', loc: { lat: 50.829485, lng: -0.141036 }, name: 'Brighton Station' }
+export const EBN: Station = { city: 'Eastbourne', country: UK, stationCode: 'EBN', loc: { lat: 50.769411, lng: 0.281219 }, name: 'Eastbourne Station' }
+export const HGS: Station = { city: 'Hastings', country: UK, stationCode: 'HGS', loc: { lat: 50.858226, lng: 0.577018 }, name: 'Hastings Station' }
+export const CST: Station = { city: 'London', country: UK, stationCode: 'CST', loc: { lat: 51.511275, lng: -0.090282 }, name: 'London Cannon Street' }
+export const BAN: Station = { city: 'Banbury', country: UK, stationCode: 'BAN', loc: { lat: 52.060644, lng: -1.327897 }, name: 'Banbury Station' }
+export const WAT: Station = { city: 'London', country: UK, stationCode: 'WAT', loc: { lat: 51.503106, lng: -0.112390 }, name: 'London Waterloo' }
+export const GLD: Station = { city: 'Guildford', country: UK, stationCode: 'GLD', loc: { lat: 51.236765, lng: -0.580707 }, name: 'Guildford Station' }
+export const PAD: Station = { city: 'London', country: UK, stationCode: 'PAD', loc: { lat: 51.516609, lng: -0.176839 }, name: 'London Paddington' }
+export const WNR: Station = { city: 'Windsor', country: UK, stationCode: 'WNR', loc: { lat: 51.485719, lng: -0.606355 }, name: 'Windsor and Eton Riverside Station' }
+export const RDG: Station = { city: 'Reading', country: UK, stationCode: 'RDG', loc: { lat: 51.459205, lng: -0.972766 }, name: 'Reading Station' }
+export const BCE: Station = { city: 'Bracknell', country: UK, stationCode: 'BCE', loc: { lat: 51.413027, lng: -0.752136 }, name: 'Bracknell Station' }
+export const SOU: Station = { city: 'Southampton', country: UK, stationCode: 'SOU', loc: { lat: 50.907530, lng: -1.414277 }, name: 'Southampton Central Station' }
+export const ZHB: Station = { city: 'Zürich', country: SWITZERLAND, stationCode: 'ZHB', loc: { lat: 47.378375, lng: 8.538908 }, name: 'Zürich Hauptbahnhof' }
+export const BHB: Station = { city: 'Bern', country: SWITZERLAND, stationCode: 'BHB', loc: { lat: 46.948348, lng: 7.436341 }, name: 'Bahnhof Bern' }
+export const GDB: Station = { city: 'Grindelwald', country: SWITZERLAND, stationCode: 'GDB', loc: { lat: 46.624451, lng: 8.033323 }, name: 'Bahnhof Grindelwald' }
+export const CHB: Station = { city: 'Chiasso', country: SWITZERLAND, stationCode: 'CHB', loc: { lat: 45.831830, lng: 9.031275 }, name: 'Stazione di Chiasso' }
+export const WEL: Station = { city: 'Wellington', country: NEW_ZEALAND, stationCode: 'WELL', loc: { lat: -41.279217, lng: 174.780331 }, name: 'Wellington Station' }
+export const HAM: Station = { city: 'Hamilton', country: NEW_ZEALAND, stationCode: 'HAM', loc: { lat: -37.790919, lng: 175.265010 }, name: 'Hamilton Station' }
+export const CHC: Station = { city: 'Christchurch', country: NEW_ZEALAND, stationCode: 'CHCH', loc: { lat: -43.539931, lng: 172.607988 }, name: 'Christchurch Station' }
+export const PIC: Station = { city: 'Picton', country: NEW_ZEALAND, stationCode: 'PICT', loc: { lat: -41.288347, lng: 174.004794 }, name: 'Picton Station' }
+export const XEV: Station = { city: 'Stockholm', country: SWEDEN, stationCode: 'XEV', loc: { lat: 59.330616, lng: 18.056583 }, name: 'Stockholm Central Station' }
+export const ZGH: Station = { city: 'Copenhagen', country: DENMARK, stationCode: 'ZGH', loc: { lat: 55.672667, lng: 12.564894 }, name: 'Copenhagen Central Station' }
+export const XZO: Station = { city: 'Oslo', country: NORWAY, stationCode: 'XZO', loc: { lat: 59.910146, lng: 10.755197 }, name: 'Oslo Central Station' }
+export const QFV: Station = { city: 'Bergen', country: NORWAY, stationCode: 'QFV', loc: { lat: 60.390254, lng: 5.333838 }, name: 'Bergen Railway Station' }
+export const XZT: Station = { city: 'Trondheim', country: NORWAY, stationCode: 'XZT', loc: { lat: 63.436651, lng: 10.398618 }, name: 'Trondheim Central Station' }
+export const BOO: Station = { city: 'Bodø', country: NORWAY, stationCode: 'BOO', loc: { lat: 67.286444, lng: 14.391597 }, name: 'Bodø Station' }
 
 /**
  * Array of all ports for the Contact section
  */
-export const STATIONS: Array<IStation> = [
+export const STATIONS: Array<Station> = [
   MYB, AYS, KGX, EDB, VIC, BTN, EBN, HGS, CST, BAN, WAT, GLD, PAD, WNR, RDG, BCE, SOU, ZHB, BHB, GDB, CHB,
   WEL, HAM, CHC, PIC, XEV, ZGH, XZO, QFV, XZT, BOO,
-];
+]

@@ -1,4 +1,4 @@
-import { School } from '../definitions/school';
+import { School } from '../definitions/school'
 
 /**
  * Array of Schools for the Education section
@@ -17,4 +17,4 @@ export const SCHOOLS: Array<School> = [
       to: 2007,
     },
   },
-];
+]

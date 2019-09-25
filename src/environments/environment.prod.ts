@@ -3,4 +3,4 @@ export const environment = {
   google: {
     mapsApiKey: '<%= GOOGLE_ACCOUNT.maps_key %>',
   },
-};
+}

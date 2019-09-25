@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { School } from '../definitions/school';
-import { EducationService } from '../services/education';
+import { Component, OnInit } from '@angular/core'
+import { School } from '../definitions/school'
+import { EducationService } from '../services/education'
 
 @Component({
   selector: 'app-education',
@@ -8,18 +8,18 @@ import { EducationService } from '../services/education';
   templateUrl: 'education.html',
 })
 export class EducationComponent implements OnInit {
-  public schools: Array<School>;
+  public schools: Array<School>
 
   constructor() {
   }
 
   ngOnInit() {
-    this.loadSchools();
+    this.loadSchools()
   }
 
   loadSchools(): void {
     EducationService.getSchools().then(
       schools => this.schools = schools,
-    );
+    )
   }
 }

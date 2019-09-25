@@ -1,11 +1,11 @@
-import { Pipe, PipeTransform } from '@angular/core';
-import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
+import { Pipe, PipeTransform } from '@angular/core'
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser'
 
 @Pipe({name: 'trim'})
 export class TrimPipe implements PipeTransform {
 
   transform(value: string): string {
-    return value.trim();
+    return value.trim()
   }
 }
 
@@ -13,8 +13,8 @@ export class TrimPipe implements PipeTransform {
 export class BadgeUrlPipe implements PipeTransform {
 
   transform(badge: string): string {
-    const badgeId = badge.match(/(\/\d{2,3}\/)/);
-    return `https://www.codeschool.com/users/ouq77/badges${badgeId && badgeId[0] || ''}`;
+    const badgeId = badge.match(/(\/\d{2,3}\/)/)
+    return `https://www.codeschool.com/users/ouq77/badges${badgeId && badgeId[0] || ''}`
   }
 }
 
@@ -22,7 +22,7 @@ export class BadgeUrlPipe implements PipeTransform {
 export class MemberDatePipe implements PipeTransform {
 
   transform(memberDate: string): string {
-    return new Date(memberDate).toLocaleDateString();
+    return new Date(memberDate).toLocaleDateString()
   }
 }
 
@@ -30,7 +30,7 @@ export class MemberDatePipe implements PipeTransform {
 export class ScorePipe implements PipeTransform {
 
   transform(score: number): string {
-    return score.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+    return score.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')
   }
 }
 
@@ -41,6 +41,6 @@ export class VideoUrlPipe implements PipeTransform {
   }
 
   transform(videoUrl: string): SafeResourceUrl {
-    return this._sanitationService.bypassSecurityTrustResourceUrl(videoUrl);
+    return this._sanitationService.bypassSecurityTrustResourceUrl(videoUrl)
   }
 }

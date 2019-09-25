@@ -1,4 +1,4 @@
-import { Job } from '../definitions/job';
+import { Job } from '../definitions/job'
 
 /**
  * Array of Jobs for the Experience section
@@ -174,4 +174,4 @@ export const JOBS: Array<Job> = [
       to: 'Jan 2006',
     },
   },
-];
+]

@@ -2,7 +2,7 @@ export class AppService {
 
   static consoleMessage(): void {
     if (console) {
-      console.group('On-line Portfolio and CV for Louw Swart');
+      console.group('On-line Portfolio and CV for Louw Swart')
       console.log(`
 
               %c##%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#%c#
@@ -103,8 +103,8 @@ export class AppService {
         'color: #e3352a', 'color: #ee382c', 'color: #e3352a', 'color: #ee382c', 'color: #e3352a', 'color: #ee382c',
         'color: #e3352a', 'color: #e6362a', 'color: #ee382c', 'color: #e3352a', 'color: #ee382c', 'color: #e3352a',
         'color: #ee382c', 'color: #306b74', 'color: #2f6971', 'color: #2e6770', 'color: #2b6068', 'color: #2a5e66',
-        'color: #2c626a', 'color: #2b6169', 'color: #ee382c', 'color: #2b6169');
-      console.groupEnd();
+        'color: #2c626a', 'color: #2b6169', 'color: #ee382c', 'color: #2b6169')
+      console.groupEnd()
     }
   }
 }
