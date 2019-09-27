@@ -1,7 +1,7 @@
 {
   "name": "ouq77-portfolio",
   "author": "ouq77",
-  "version": "8.3.0",
+  "version": "8.3.1",
   "description": "On-line portfolio of Louw Swart",
   "main": "server/server.js",
   "repository": {
@@ -37,7 +37,7 @@
     "ord": "1.0.1",
     "referrer-policy": "1.2.0",
     "require-directory": "2.1.1",
-    "sharp": "0.23.0",
+    "sharp": "0.23.1",
     "webp-middleware": "0.4.0"
   },
   "devDependencies": {
@@ -46,5 +46,8 @@
   "scripts": {
     "ncu:update": "ncu -u && npm update && npm update -D",
     "start": "standard && node server/start.js"
+  },
+  "resolutions": {
+    "braces": "3.0.2"
   }
 }
