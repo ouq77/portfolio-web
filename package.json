@@ -46,8 +46,5 @@
   "scripts": {
     "ncu:update": "ncu -u && npm update && npm update -D",
     "start": "standard && node server/start.js"
-  },
-  "resolutions": {
-    "braces": "3.0.2"
   }
 }
