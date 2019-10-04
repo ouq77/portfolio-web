@@ -80,7 +80,7 @@ export const JOBS: Array<Job> = [
       name: 'Westpac NZ Ltd',
       url: 'https://www.westpac.co.nz',
     },
-    title: 'Analyst Programmer (UI)',
+    title: 'Front-end Developer (UI)',
     year: {
       from: 'Jun 2014',
       to: 'Mar 2016',

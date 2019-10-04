@@ -28,7 +28,7 @@ if (fs.existsSync(localSiteConfig)) {
 
 // --------------
 // Environment vars.
-const DESCRIPTION = 'On-line Portfolio and CV for Louw Swart - Analyst JavaScript Programmer based in Wellington, New Zealand';
+const DESCRIPTION = 'On-line Portfolio and CV for Louw Swart - Front-end Developer based in Wellington, New Zealand';
 const GOOGLE_ANALYTICS_ID = config.get('GOOGLE_ANALYTICS_ID');
 const GOOGLE_MAPS_API_KEY = config.get('GOOGLE_MAPS_API_KEY');
 const GOOGLE_SITE_VERIFICATION = config.get('GOOGLE_SITE_VERIFICATION');
@@ -66,7 +66,7 @@ const META_TAGS = {
   site: {
     description: DESCRIPTION,
     'google-site-verification': GOOGLE_SITE_VERIFICATION,
-    keywords: 'louw swart portfolio cv javascript ui developer analyst programmer java',
+    keywords: 'louw swart portfolio cv javascript ui developer front-end',
   },
   title: TITLE,
   twitter: {
