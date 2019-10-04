@@ -1,7 +1,7 @@
 {
   "name": "ouq77-portfolio",
   "author": "ouq77",
-  "version": "8.3.1",
+  "version": "8.3.2",
   "description": "On-line portfolio of Louw Swart",
   "main": "server/server.js",
   "repository": {
@@ -28,7 +28,7 @@
     "express-user-agent-blocker": "2.0.3",
     "forever-monitor": "1.7.1",
     "helmet": "3.21.1",
-    "helmet-csp": "2.9.2",
+    "helmet-csp": "2.9.3",
     "hpkp": "2.0.0",
     "hsts": "2.2.0",
     "netjet": "github:ouq77/netjet#exclude-options",
