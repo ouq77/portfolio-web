@@ -1,6 +1,6 @@
 {
   "name": "ouq77-portfolio",
-  "version": "8.4.3",
+  "version": "8.4.4",
   "author": "Louw Swart",
   "description": "On-line portfolio of Louw Swart",
   "license": "MIT",
@@ -56,12 +56,12 @@
   },
   "devDependencies": {
     "@agm/core": "1.0.0",
-    "@angular-devkit/build-angular": "0.803.10",
-    "@angular/cli": "8.3.10",
+    "@angular-devkit/build-angular": "0.803.12",
+    "@angular/cli": "8.3.12",
     "@angular/compiler-cli": "8.2.11",
     "@angular/language-service": "8.2.11",
     "@ngui/common": "0.6.0",
-    "@types/googlemaps": "3.37.7",
+    "@types/googlemaps": "3.38.0",
     "@types/jquery": "3.3.31",
     "@types/node": "12.11.1",
     "bootstrap-sass": "3.4.1",
@@ -87,6 +87,7 @@
     "uglify-js": "3.6.2"
   },
   "resolutions": {
+    "https-proxy-agent": "3.0.0",
     "lodash": "4.17.15"
   }
 }
