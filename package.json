@@ -1,7 +1,7 @@
 {
   "name": "ouq77-portfolio",
   "author": "ouq77",
-  "version": "8.4.4",
+  "version": "8.4.5",
   "description": "On-line portfolio of Louw Swart",
   "main": "server/server.js",
   "repository": {
@@ -27,8 +27,8 @@
     "express-cache-headers": "0.1.4",
     "express-user-agent-blocker": "2.0.3",
     "forever-monitor": "1.7.1",
-    "helmet": "3.21.1",
-    "helmet-csp": "2.9.3",
+    "helmet": "3.21.2",
+    "helmet-csp": "2.9.4",
     "hpkp": "2.0.0",
     "hsts": "2.2.0",
     "netjet": "github:ouq77/netjet#exclude-options",
@@ -37,7 +37,7 @@
     "ord": "1.0.1",
     "referrer-policy": "1.2.0",
     "require-directory": "2.1.1",
-    "sharp": "0.23.1",
+    "sharp": "0.23.2",
     "webp-middleware": "0.4.0"
   },
   "devDependencies": {
