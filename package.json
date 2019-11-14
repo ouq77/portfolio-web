@@ -1,6 +1,6 @@
 {
   "name": "ouq77-portfolio",
-  "version": "8.4.6",
+  "version": "9.0.0",
   "author": "Louw Swart",
   "description": "On-line portfolio of Louw Swart",
   "license": "MIT",
@@ -8,7 +8,7 @@
     "url": "https://github.com/ouq77/portfolio-web"
   },
   "engines": {
-    "node": "12",
+    "node": "13",
     "npm": "6"
   },
   "scripts": {
@@ -38,28 +38,28 @@
     "heroku:clean:resources": "rimraf heroku/app/assets/resources",
     "heroku:clean:files": "rimraf heroku/app/*.html heroku/app/*.js heroku/app/*.css heroku/app/*.ico heroku/app/*.json heroku/app/*.txt heroku/app/*.xml",
     "ncu:update": "ncu -u && npm update && npm update -D",
-    "postinstall": "npm prune"
+    "postinstall": "ngcc --properties es2015 browser module main --first-only --create-ivy-entry-points && npm prune"
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "8.2.13",
-    "@angular/common": "8.2.13",
-    "@angular/compiler": "8.2.13",
-    "@angular/core": "8.2.13",
-    "@angular/forms": "8.2.13",
-    "@angular/platform-browser": "8.2.13",
-    "@angular/platform-browser-dynamic": "8.2.13",
-    "@angular/router": "8.2.13",
+    "@angular/animations": "9.0.0-rc.2",
+    "@angular/common": "9.0.0-rc.2",
+    "@angular/compiler": "9.0.0-rc.2",
+    "@angular/core": "9.0.0-rc.2",
+    "@angular/forms": "9.0.0-rc.2",
+    "@angular/platform-browser": "9.0.0-rc.2",
+    "@angular/platform-browser-dynamic": "9.0.0-rc.2",
+    "@angular/router": "9.0.0-rc.2",
     "rxjs": "6.5.3",
     "tslib": "1.10.0",
     "zone.js": "0.10.2"
   },
   "devDependencies": {
     "@agm/core": "1.0.0",
-    "@angular-devkit/build-angular": "0.803.18",
-    "@angular/cli": "8.3.18",
-    "@angular/compiler-cli": "8.2.13",
-    "@angular/language-service": "8.2.13",
+    "@angular-devkit/build-angular": "0.900.0-rc.2",
+    "@angular/cli": "9.0.0-rc.2",
+    "@angular/compiler-cli": "9.0.0-rc.2",
+    "@angular/language-service": "9.0.0-rc.2",
     "@ngui/common": "0.6.0",
     "@types/googlemaps": "3.38.0",
     "@types/jquery": "3.3.31",
@@ -83,11 +83,11 @@
     "rimraf": "3.0.0",
     "ts-node": "8.5.0",
     "tslint": "5.20.1",
-    "typescript": "3.7.2",
+    "typescript": "3.6.4",
     "uglify-js": "3.6.9"
   },
   "resolutions": {
-    "https-proxy-agent": "3.0.0",
+    "https-proxy-agent": "3.0.1",
     "lodash": "4.17.15"
   }
 }
