@@ -20,9 +20,9 @@ export const JOBS: Array<Job> = [
   {
     content: '<p>Worked at the Department of Internal Affairs, on behalf of Accenture, where the tech stack included <b>Angular (7)</b>, ' +
       '<b>Java Spring Boot</b>, <b>Node.js</b> and <b>MongoDB</b> running in <b>Azure</b>.</p><p>As part of a <b>digital delivery</b> ' +
-      'team, I was involved in several core services provided to the NZ public. These included online marriage licence applications, ' +
-      'certificate ordering and a citizenship pilot. Project work involved integrations with Payment Express, RealMe and other custom ' +
-      'backend systems.</p>',
+      'team, I was involved in several core services provided to the NZ public. These included online <b>marriage licence</b> applications, ' +
+      '<b>certificate ordering</b>, including birth, marriage, death, and a <b>citizenship pilot</b>. Project work involved integrations with ' +
+      '<b>Payment Express</b> (PxPay), <b>RealMe</b> and other custom backend systems.</p>',
     institution: {
       location: 'Wellington, New Zealand',
       name: 'Accenture',
