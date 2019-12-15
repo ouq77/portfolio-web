@@ -46,11 +46,11 @@ export const FLIGHTS: Array<Array<Point>> = [
   [WLG.loc, GIS.loc], [AKL.loc, YVR.loc], [CXH.loc, YWH.loc],
   [AKL.loc, PEK.loc, FRA.loc, PVG.loc, AKL.loc],
   [WLG.loc, DUD.loc, CHC.loc], [WLG.loc, BNE.loc],
+  [SYD.loc, LAX.loc, YUL.loc, SFO.loc, AKL.loc],
 ]
 
 /**
  * Array of Upcoming Flights for the Contact section
  */
 export const UPCOMING_FLIGHTS: Array<Array<Point>> = [
-  [SYD.loc, LAX.loc, YUL.loc, SFO.loc, AKL.loc],
 ]

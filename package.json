@@ -1,6 +1,6 @@
 {
   "name": "ouq77-portfolio",
-  "version": "9.0.2",
+  "version": "9.0.3",
   "author": "Louw Swart",
   "description": "On-line portfolio of Louw Swart",
   "license": "MIT",
@@ -42,14 +42,14 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "9.0.0-rc.4",
-    "@angular/common": "9.0.0-rc.4",
-    "@angular/compiler": "9.0.0-rc.4",
-    "@angular/core": "9.0.0-rc.4",
-    "@angular/forms": "9.0.0-rc.4",
-    "@angular/platform-browser": "9.0.0-rc.4",
-    "@angular/platform-browser-dynamic": "9.0.0-rc.4",
-    "@angular/router": "9.0.0-rc.4",
+    "@angular/animations": "9.0.0-rc.6",
+    "@angular/common": "9.0.0-rc.6",
+    "@angular/compiler": "9.0.0-rc.6",
+    "@angular/core": "9.0.0-rc.6",
+    "@angular/forms": "9.0.0-rc.6",
+    "@angular/platform-browser": "9.0.0-rc.6",
+    "@angular/platform-browser-dynamic": "9.0.0-rc.6",
+    "@angular/router": "9.0.0-rc.6",
     "rxjs": "6.5.3",
     "tslib": "1.10.0",
     "zone.js": "0.10.2"
@@ -57,13 +57,13 @@
   "devDependencies": {
     "@agm/core": "1.1.0",
     "@angular-devkit/build-angular": "0.900.0-rc.4",
-    "@angular/cli": "9.0.0-rc.4",
-    "@angular/compiler-cli": "9.0.0-rc.4",
-    "@angular/language-service": "9.0.0-rc.4",
+    "@angular/cli": "9.0.0-rc.6",
+    "@angular/compiler-cli": "9.0.0-rc.6",
+    "@angular/language-service": "9.0.0-rc.6",
     "@ngui/common": "0.6.0",
     "@types/googlemaps": "3.38.1",
     "@types/jquery": "3.3.31",
-    "@types/node": "12.12.14",
+    "@types/node": "12.12.17",
     "bootstrap-sass": "3.4.1",
     "classlist.js": "1.1.20150312",
     "codelyzer": "5.2.0",
@@ -84,10 +84,11 @@
     "ts-node": "8.5.4",
     "tslint": "5.20.1",
     "typescript": "3.6.4",
-    "uglify-js": "3.7.1"
+    "uglify-js": "3.7.2"
   },
   "resolutions": {
     "https-proxy-agent": "3.0.1",
-    "lodash": "4.17.15"
+    "lodash": "4.17.15",
+    "serialize-javascript": "2.1.2"
   }
 }
