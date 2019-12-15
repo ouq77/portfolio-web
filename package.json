@@ -1,7 +1,7 @@
 {
   "name": "ouq77-portfolio",
   "author": "ouq77",
-  "version": "9.0.2",
+  "version": "9.0.3",
   "description": "On-line portfolio of Louw Swart",
   "main": "server/server.js",
   "repository": {
@@ -33,11 +33,11 @@
     "hsts": "2.2.0",
     "netjet": "github:ouq77/netjet#exclude-options",
     "node-fetch": "2.6.0",
-    "nodemailer": "6.3.1",
+    "nodemailer": "6.4.2",
     "ord": "1.0.1",
     "referrer-policy": "1.2.0",
     "require-directory": "2.1.1",
-    "sharp": "0.23.3",
+    "sharp": "0.23.4",
     "webp-middleware": "0.4.0"
   },
   "devDependencies": {
