@@ -1,6 +1,6 @@
 {
   "name": "ouq77-portfolio",
-  "version": "9.0.4",
+  "version": "9.0.5",
   "author": "Louw Swart",
   "description": "On-line portfolio of Louw Swart",
   "license": "MIT",
@@ -42,28 +42,28 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "9.0.0-rc.7",
-    "@angular/common": "9.0.0-rc.7",
-    "@angular/compiler": "9.0.0-rc.7",
-    "@angular/core": "9.0.0-rc.7",
-    "@angular/forms": "9.0.0-rc.7",
-    "@angular/platform-browser": "9.0.0-rc.7",
-    "@angular/platform-browser-dynamic": "9.0.0-rc.7",
-    "@angular/router": "9.0.0-rc.7",
+    "@angular/animations": "9.0.0-rc.8",
+    "@angular/common": "9.0.0-rc.8",
+    "@angular/compiler": "9.0.0-rc.8",
+    "@angular/core": "9.0.0-rc.8",
+    "@angular/forms": "9.0.0-rc.8",
+    "@angular/platform-browser": "9.0.0-rc.8",
+    "@angular/platform-browser-dynamic": "9.0.0-rc.8",
+    "@angular/router": "9.0.0-rc.8",
     "rxjs": "6.5.4",
     "tslib": "1.10.0",
     "zone.js": "0.10.2"
   },
   "devDependencies": {
     "@agm/core": "1.1.0",
-    "@angular-devkit/build-angular": "0.900.0-rc.7",
-    "@angular/cli": "9.0.0-rc.7",
-    "@angular/compiler-cli": "9.0.0-rc.7",
-    "@angular/language-service": "9.0.0-rc.7",
+    "@angular-devkit/build-angular": "0.900.0-rc.8",
+    "@angular/cli": "9.0.0-rc.8",
+    "@angular/compiler-cli": "9.0.0-rc.8",
+    "@angular/language-service": "9.0.0-rc.8",
     "@ngui/common": "0.6.0",
-    "@types/googlemaps": "3.39.0",
+    "@types/googlemaps": "3.39.1",
     "@types/jquery": "3.3.31",
-    "@types/node": "13.1.2",
+    "@types/node": "13.1.6",
     "bootstrap-sass": "3.4.1",
     "classlist.js": "1.1.20150312",
     "codelyzer": "5.2.1",
@@ -81,12 +81,13 @@
     "npm-run-all": "4.1.5",
     "npmversion": "1.7.0",
     "rimraf": "3.0.0",
-    "ts-node": "8.5.4",
+    "ts-node": "8.6.0",
     "tslint": "5.20.1",
     "typescript": "3.6.4",
-    "uglify-js": "3.7.3"
+    "uglify-js": "3.7.4"
   },
   "resolutions": {
-    "lodash": "4.17.15"
+    "lodash": "4.17.15",
+    "tree-kill": "1.2.2"
   }
 }
