@@ -13,8 +13,8 @@
     <meta name="viewport" content="initial-scale=1.0, user-scalable=0, width=device-width, height=device-height">
     <meta name="theme-color" content="#0ba5a2">
     <meta name="apple-mobile-web-app-title" content="<%= META_TAGS.title %>">
-    <meta content="yes" name="apple-mobile-web-app-capable"><% for (key in APPLE_ICON_SIZES) { %>
-    <link rel="apple-touch-icon" sizes="<%- APPLE_ICON_SIZES[key] %>" href="assets/images/touchicons/apple-touch-icon-<%- APPLE_ICON_SIZES[key] %>.png"><% } %>
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/touchicons/apple-touch-icon.png">
     <!-- Google Authorship and Publisher Markup --><% for(key in META_TAGS.linkTags) { %>
     <link rel="<%- key %>" href="<%- META_TAGS.linkTags[key] %>"><% } %>
     <!-- Schema.org markup for Google+ --><% for(key in META_TAGS.google) { %>

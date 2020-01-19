@@ -79,18 +79,6 @@ const META_TAGS = {
   },
 };
 
-const APPLE_ICON_SIZES = [
-  '57x57',
-  '60x60',
-  '72x72',
-  '76x76',
-  '114x114',
-  '120x120',
-  '144x144',
-  '152x152',
-  '180x180',
-];
-
 const GOOGLE_ACCOUNT = {
   analytics: GOOGLE_ANALYTICS_ID,
   maps_key: GOOGLE_MAPS_API_KEY,
@@ -102,7 +90,6 @@ const LAST_MOD_TIME = +now;
 
 module.exports = {
   META_TAGS,
-  APPLE_ICON_SIZES,
   GOOGLE_ACCOUNT,
   LAST_MOD_SITE,
   LAST_MOD_SITEMAP,
