@@ -12,6 +12,11 @@
       "src": "assets/images/manifesticons/ouq77-256x256.png",
       "sizes": "256x256",
       "type": "image/png"
+    },
+    {
+      "src": "assets/images/manifesticons/ouq77-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
     }
   ],
   "background_color": "#00bdbd",
