@@ -4,6 +4,7 @@ import { HttpClientModule } from '@angular/common/http'
 import { FormBuilder, FormsModule, ReactiveFormsModule } from '@angular/forms'
 import { BrowserModule } from '@angular/platform-browser'
 import { APP_INITIALIZER, NgModule } from '@angular/core'
+import { intersectionObserverPreset, LazyLoadImageModule } from 'ng-lazyload-image'
 import { NguiInviewModule } from '@ngui/common'
 import { environment } from '../environments/environment'
 
@@ -34,7 +35,6 @@ import { initMapApi, MapApiLoaderService } from './services/map-api-loader.servi
 import { SkillService } from './components/skills/services/skills'
 import { TravelService } from './components/travel/service/travel'
 
-
 @NgModule({
   bootstrap: [AppComponent],
   declarations: [
@@ -64,6 +64,9 @@ import { TravelService } from './components/travel/service/travel'
     BrowserModule,
     CommonModule,
     FormsModule,
+    LazyLoadImageModule.forRoot({
+      preset: intersectionObserverPreset,
+    }),
     HttpClientModule,
     NguiInviewModule,
     ReactiveFormsModule,

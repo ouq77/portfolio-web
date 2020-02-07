@@ -138,3 +138,12 @@ h6 {
     padding: 0;
   }
 }
+
+img.ng-lazyloaded {
+  animation: fadein .5s;
+}
+
+@keyframes fadein {
+  from { opacity: 0.5; }
+  to { opacity: 1; }
+}

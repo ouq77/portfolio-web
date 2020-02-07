@@ -25,9 +25,7 @@
         <a id="cv_request" href="#contact-form" class="btn-normal js_track_link_click" aria-label="Request CV">Request CV &amp; References</a>
       </div>
       <figure class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-md-offset-1 col-lg-offset-1 profile-pic">
-        <ngui-inview>
-          <img *ngIf src="assets/images/louw.swart.jpg" alt="Louw Swart" class="img-circle" width="295" height="295" />
-        </ngui-inview>
+        <img [defaultImage]="'/assets/images/louw.swart.partial.jpg'" [lazyLoad]="'/assets/images/louw.swart.jpg'" alt="Louw Swart" class="img-circle" width="295" height="295" />
       </figure>
     </div>
   </div>
