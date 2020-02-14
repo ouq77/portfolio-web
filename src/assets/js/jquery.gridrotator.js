@@ -532,42 +532,43 @@
       // element stays active
       $out.data('active', true);
 
-      // get the element (anchor) that will go in (first one inserted in
-      // this.outItems)
+      // get the element (anchor) that will go in (first one inserted in this.outItems)
       var $inA = this.outItems.shift();
 
       // save element that went out
       this.outItems.push($outA.clone().css('transition', 'none'));
 
-      // prepend in element
-      $inA.css(newElProp).prependTo($out);
+      if ($inA) {
+        // prepend in element
+        $inA.css(newElProp).prependTo($out);
 
-      var animProp = this._getAnimProperties($outA);
+        var animProp = this._getAnimProperties($outA);
 
-      $inA.css(animProp.startInProp);
-      $outA.css(animProp.startOutProp);
+        $inA.css(animProp.startInProp);
+        $outA.css(animProp.startOutProp);
 
-      this._setTransition($inA, 'all', animProp.animSpeed, animProp.delay, this.options.animEasingIn);
-      this._setTransition($outA, 'all', animProp.animSpeed, 0, this.options.animEasingOut);
+        this._setTransition($inA, 'all', animProp.animSpeed, animProp.delay, this.options.animEasingIn);
+        this._setTransition($outA, 'all', animProp.animSpeed, 0, this.options.animEasingOut);
 
-      this._applyTransition(
-        $inA,
-        animProp.endInProp,
-        animProp.animSpeed,
-        function() {
-          var $el = $(this), t = animProp.animSpeed === self.options.animSpeed
-          && isEmpty(animProp.endInProp) ? animProp.animSpeed : 0;
-          setTimeout(function() {
-            if (self.supportTransitions) {
-              $el.off(self.transEndEventName);
-            }
-            $el.next().remove();
-            $el.parent().data('active', false);
-          }, t);
-        },
-        animProp.animSpeed === 0 || isEmpty(animProp.endInProp)
-      );
-      this._applyTransition($outA, animProp.endOutProp, animProp.animSpeed);
+        this._applyTransition(
+          $inA,
+          animProp.endInProp,
+          animProp.animSpeed,
+          function() {
+            var $el = $(this), t = animProp.animSpeed === self.options.animSpeed
+            && isEmpty(animProp.endInProp) ? animProp.animSpeed : 0;
+            setTimeout(function() {
+              if (self.supportTransitions) {
+                $el.off(self.transEndEventName);
+              }
+              $el.next().remove();
+              $el.parent().data('active', false);
+            }, t);
+          },
+          animProp.animSpeed === 0 || isEmpty(animProp.endInProp)
+        );
+        this._applyTransition($outA, animProp.endOutProp, animProp.animSpeed);
+      }
     },
     _getRandom: function(cnt, limit) {
       var randArray = [];
