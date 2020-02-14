@@ -44,6 +44,7 @@ app.get('/imageids', cache({ nocache: true }), routes.imageids)
 app.post('/send', cache({ nocache: true }), routes.send)
 app.get('/exclude', cache({ ttl: cacheTimes.DAYS_IN_SECS_60 }), routes.exclude)
 app.get('/railtrips', cache({ nocache: true }), routes.railtrips)
+app.get('/cache', cache({ nocache: true }), routes.cache)
 app.get('/', cache({ nocache: true }), routes.html)
 app.get('/*', cache({ ttl: cacheTimes.DAYS_IN_SECS_60 }), routes.fourohfour)
 
