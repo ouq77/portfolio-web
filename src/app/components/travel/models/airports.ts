@@ -1,5 +1,5 @@
 import { Airport } from '../definitions/airport'
-import { AUSTRALIA, CANADA, CHINA, HONG_KONG, JAPAN, NEW_ZEALAND, NORWAY, SOUTH_AFRICA, SWEDEN, THAILAND, UK, USA, ZAMBIA, ZIMBABWE } from './countries'
+import { AUSTRALIA, CANADA, CHINA, GERMANY, HONG_KONG, JAPAN, NEW_ZEALAND, NORWAY, SOUTH_AFRICA, SWEDEN, THAILAND, UK, USA, ZAMBIA, ZIMBABWE } from './countries'
 
 export const JNB: Airport = { city: 'Johannesburg', country: SOUTH_AFRICA, iataCode: 'JNB', loc: { lat: -26.136837, lng: 28.241157 }, name: 'OR Tambo International' }
 export const CPT: Airport = { city: 'Cape Town', country: SOUTH_AFRICA, iataCode: 'CPT', loc: { lat: -33.971459, lng: 18.602241 }, name: 'Cape Town International' }
@@ -37,7 +37,7 @@ export const JFK: Airport = { city: 'New York', country: USA, iataCode: 'JFK', l
 export const LGA: Airport = { city: 'New York', country: USA, iataCode: 'LGA', loc: { lat: 40.776992, lng: -73.873376 }, name: 'LaGuardia' }
 export const YVR: Airport = { city: 'Vancouver', country: CANADA, iataCode: 'YVR', loc: { lat: 49.196659, lng: -123.181056 }, name: 'Vancouver International' }
 export const LHR: Airport = { city: 'London', country: UK, iataCode: 'LHR', loc: { lat: 51.469979, lng: -0.454044 }, name: 'London Heathrow' }
-export const FRA: Airport = { city: 'Frankfurt', country: 'Germany', iataCode: 'FRA', loc: { lat: 50.037936, lng: 8.562608 }, name: 'Frankfurt' }
+export const FRA: Airport = { city: 'Frankfurt', country: GERMANY, iataCode: 'FRA', loc: { lat: 50.037936, lng: 8.562608 }, name: 'Frankfurt' }
 export const ZRH: Airport = { city: 'Zurich', country: 'Switzerland', iataCode: 'ZRH', loc: { lat: 47.458256, lng: 8.555717 }, name: 'Zurich' }
 export const CDG: Airport = { city: 'Paris', country: 'France', iataCode: 'CDG', loc: { lat: 49.009702, lng: 2.548251 }, name: 'Charles de Gaulle' }
 export const CPH: Airport = { city: 'Copenhagen', country: 'Denmark', iataCode: 'CPH', loc: { lat: 55.618039, lng: 12.651198 }, name: 'Copenhagen' }
@@ -87,6 +87,8 @@ export const BNE: Airport = { city: 'Brisbane', country: AUSTRALIA, iataCode: 'B
 export const LAX: Airport = { city: 'Los Angeles', country: USA, iataCode: 'LAX', loc: { lat: 33.941709, lng: -118.409040  }, name: 'Los Angeles International' }
 export const YUL: Airport = { city: 'Montréal', country: CANADA, iataCode: 'YUL', loc: { lat: 45.465821, lng: -73.745975 }, name: 'Pierre Elliott Trudeau International' }
 export const SFO: Airport = { city: 'San Francisco', country: USA, iataCode: 'SFO', loc: { lat: 37.621432, lng: -122.379342 }, name: 'San Francisco International' }
+export const MUC: Airport = { city: 'München', country: GERMANY, iataCode: 'MUC', loc: {lat: 48.353299, lng: 11.780289}, name: 'Franz Josef Strauss International' }
+export const HAM: Airport = { city: 'Hamburg', country: GERMANY, iataCode: 'HAM', loc: {lat: 53.631985, lng: 9.993926}, name: 'Hamburg Airport Helmut Schmidt' }
 
 /**
  * Array of all airports for the Contact section
@@ -95,5 +97,5 @@ export const AIRPORTS: Array<Airport> = [
   KIM, PLZ, ELS, JNB, AMS, LHR, NBO, CPT, MBD, DUR, BFN, GRJ, MPM, GBE, WDH, BUQ, HRE, LVI, LUN, LAD, DAR, EBB,
   FIH, LOS, ABJ, ACC, DKR, SID, MIA, ATL, IAD, JFK, LGA, MRU, HKG, PER, SYD, EZE, GRU, YVR, FRA, ZRH, CDG, CPH,
   BOM, BKK, KIX, BKKN, USM, HKGN, DPS, DRW, ADL, HLZ, CHC, ZQN, AKL, WLG, NSN, TRG, ROT, RAR, NRT, SIN, ARN, BGO,
-  TRD, BOO, SJV, TOS, TIU, CBR, NPL, KBV, HKT, MEL, GIS, CXH, YWH, PEK, PVG, DUD, BNE, LAX, YUL, SFO,
+  TRD, BOO, SJV, TOS, TIU, CBR, NPL, KBV, HKT, MEL, GIS, CXH, YWH, PEK, PVG, DUD, BNE, LAX, YUL, SFO, MUC, HAM,
 ]
