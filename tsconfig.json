@@ -6,11 +6,11 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "importHelpers": true,
-    "module": "esnext",
     "lib": [
       "es2018",
       "dom"
     ],
+    "module": "esnext",
     "moduleResolution": "node",
     "noUnusedLocals": true,
     "noUnusedParameters": true,
