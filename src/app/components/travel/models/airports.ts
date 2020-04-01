@@ -87,8 +87,6 @@ export const BNE: Airport = { city: 'Brisbane', country: AUSTRALIA, iataCode: 'B
 export const LAX: Airport = { city: 'Los Angeles', country: USA, iataCode: 'LAX', loc: { lat: 33.941709, lng: -118.409040  }, name: 'Los Angeles International' }
 export const YUL: Airport = { city: 'Montréal', country: CANADA, iataCode: 'YUL', loc: { lat: 45.465821, lng: -73.745975 }, name: 'Pierre Elliott Trudeau International' }
 export const SFO: Airport = { city: 'San Francisco', country: USA, iataCode: 'SFO', loc: { lat: 37.621432, lng: -122.379342 }, name: 'San Francisco International' }
-export const MUC: Airport = { city: 'München', country: GERMANY, iataCode: 'MUC', loc: {lat: 48.353299, lng: 11.780289}, name: 'Franz Josef Strauss International' }
-export const HAM: Airport = { city: 'Hamburg', country: GERMANY, iataCode: 'HAM', loc: {lat: 53.631985, lng: 9.993926}, name: 'Hamburg Airport Helmut Schmidt' }
 
 /**
  * Array of all airports for the Contact section
@@ -97,5 +95,5 @@ export const AIRPORTS: Array<Airport> = [
   KIM, PLZ, ELS, JNB, AMS, LHR, NBO, CPT, MBD, DUR, BFN, GRJ, MPM, GBE, WDH, BUQ, HRE, LVI, LUN, LAD, DAR, EBB,
   FIH, LOS, ABJ, ACC, DKR, SID, MIA, ATL, IAD, JFK, LGA, MRU, HKG, PER, SYD, EZE, GRU, YVR, FRA, ZRH, CDG, CPH,
   BOM, BKK, KIX, BKKN, USM, HKGN, DPS, DRW, ADL, HLZ, CHC, ZQN, AKL, WLG, NSN, TRG, ROT, RAR, NRT, SIN, ARN, BGO,
-  TRD, BOO, SJV, TOS, TIU, CBR, NPL, KBV, HKT, MEL, GIS, CXH, YWH, PEK, PVG, DUD, BNE, LAX, YUL, SFO, MUC, HAM,
+  TRD, BOO, SJV, TOS, TIU, CBR, NPL, KBV, HKT, MEL, GIS, CXH, YWH, PEK, PVG, DUD, BNE, LAX, YUL, SFO,
 ]

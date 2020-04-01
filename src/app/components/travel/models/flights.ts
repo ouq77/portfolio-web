@@ -1,8 +1,8 @@
 import { Point } from '../definitions/point'
 import {
   ABJ, ACC, ADL, AKL, AMS, ARN, ATL, BFN, BGO, BKK, BKKN, BNE, BOM, BOO, BUQ, CBR, CDG, CHC, CPH, CPT, CXH, DAR,
-  DKR, DPS, DRW, DUD, DUR, EBB, ELS, EZE, FIH, FRA, GBE, GIS, GRJ, GRU, HAM, HKG, HKGN, HKT, HLZ, HRE, IAD, JFK,
-  JNB, KBV, KIM, KIX, LAD, LAX, LGA, LHR, LOS, LUN, LVI, MBD, MEL, MIA, MPM, MRU, MUC, NBO, NPL, NRT, NSN, PEK,
+  DKR, DPS, DRW, DUD, DUR, EBB, ELS, EZE, FIH, FRA, GBE, GIS, GRJ, GRU, HKG, HKGN, HKT, HLZ, HRE, IAD, JFK,
+  JNB, KBV, KIM, KIX, LAD, LAX, LGA, LHR, LOS, LUN, LVI, MBD, MEL, MIA, MPM, MRU, NBO, NPL, NRT, NSN, PEK,
   PER, PLZ, PVG, RAR, ROT, SFO, SID, SIN, SJV, SYD, TIU, TOS, TRD, TRG, USM, WDH, WLG, YUL, YVR, YWH, ZQN, ZRH,
 } from './airports'
 
@@ -52,6 +52,4 @@ export const FLIGHTS: Array<Array<Point>> = [
 /**
  * Array of Upcoming Flights for the Contact section
  */
-export const UPCOMING_FLIGHTS: Array<Array<Point>> = [
-  [SIN.loc, MUC.loc, HAM.loc],
-]
+export const UPCOMING_FLIGHTS: Array<Array<Point>> = []
