@@ -1,14 +1,14 @@
 {
   "name": "ouq77-portfolio",
   "author": "ouq77",
-  "version": "9.0.25",
+  "version": "9.0.26",
   "description": "On-line portfolio of Louw Swart",
   "main": "server/server.js",
   "repository": {
     "url": "https://github.com/ouq77/portfolio-web"
   },
   "engines": {
-    "node": "13",
+    "node": "14",
     "npm": "6"
   },
   "standard": {
@@ -43,6 +43,7 @@
   "devDependencies": {
     "standard": "14.3.3"
   },
+  "preinstall": "npx npm-force-resolutions",
   "scripts": {
     "ncu:update": "ncu -u && npm update && npm update -D",
     "start": "standard && node server/start.js"
