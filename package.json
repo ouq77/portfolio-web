@@ -11,7 +11,6 @@
     "node": "14",
     "npm": "6"
   },
-  "preinstall": "npx npm-force-resolutions",
   "scripts": {
     "ng": "ng",
     "start": "ng serve --proxy-config proxy.conf.js --disable-host-check",
@@ -38,7 +37,8 @@
     "heroku:clean:markers": "rimraf heroku/app/assets/markers",
     "heroku:clean:resources": "rimraf heroku/app/assets/resources",
     "heroku:clean:files": "rimraf heroku/app/*.html heroku/app/*.js heroku/app/*.css heroku/app/*.ico heroku/app/*.json heroku/app/*.txt heroku/app/*.xml",
-    "ncu:update": "ncu -u && npm update && npm update -D",
+    "ncu:update": "ncu -u && npm update && npm update -D && npm install",
+    "preinstall": "npx npm-force-resolutions",
     "postinstall": "ngcc --properties es2015 browser module main --first-only --create-ivy-entry-points && npm prune"
   },
   "private": true,
@@ -90,6 +90,7 @@
   },
   "resolutions": {
     "lodash": "4.17.15",
-    "minimist": "1.2.5"
+    "minimist": "1.2.5",
+    "yargs-parser": "^18.1.3"
   }
 }
