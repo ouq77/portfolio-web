@@ -1,5 +1,8 @@
 const fs = require('fs')
 const convict = require('convict')
+const formats = require('convict-format-with-validator')
+
+convict.addFormats({ email: formats.email, url: formats.url })
 
 const envConfig = convict({
   PORT: {

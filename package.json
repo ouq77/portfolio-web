@@ -1,7 +1,7 @@
 {
   "name": "ouq77-portfolio",
   "author": "ouq77",
-  "version": "9.0.26",
+  "version": "9.0.27",
   "description": "On-line portfolio of Louw Swart",
   "main": "server/server.js",
   "repository": {
@@ -21,7 +21,8 @@
     "body-parser": "1.19.0",
     "camelcase": "6.0.0",
     "compression": "1.7.4",
-    "convict": "5.2.0",
+    "convict": "6.0.0",
+    "convict-format-with-validator": "6.0.0",
     "debug": "4.1.1",
     "express": "4.17.1",
     "express-cache-headers": "0.1.4",
@@ -43,12 +44,13 @@
   "devDependencies": {
     "standard": "14.3.3"
   },
-  "preinstall": "npx npm-force-resolutions",
   "scripts": {
-    "ncu:update": "ncu -u && npm update && npm update -D",
+    "preinstall": "npx npm-force-resolutions",
+    "ncu:update": "ncu -u && npm update && npm update -D && npm install",
     "start": "standard && node server/start.js"
   },
   "resolutions": {
-    "minimist": "1.2.5"
+    "minimist": "1.2.5",
+    "yargs-parser": "^18.1.3"
   }
 }
