@@ -1,7 +1,7 @@
 {
   "name": "ouq77-portfolio",
   "author": "ouq77",
-  "version": "9.0.27",
+  "version": "9.0.28",
   "description": "On-line portfolio of Louw Swart",
   "main": "server/server.js",
   "repository": {
@@ -42,7 +42,7 @@
     "webp-middleware": "0.4.0"
   },
   "devDependencies": {
-    "standard": "14.3.3"
+    "standard": "14.3.4"
   },
   "scripts": {
     "preinstall": "npx npm-force-resolutions",
