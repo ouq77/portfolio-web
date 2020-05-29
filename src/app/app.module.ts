@@ -4,7 +4,7 @@ import { HttpClientModule } from '@angular/common/http'
 import { FormBuilder, FormsModule, ReactiveFormsModule } from '@angular/forms'
 import { BrowserModule } from '@angular/platform-browser'
 import { APP_INITIALIZER, NgModule } from '@angular/core'
-import { intersectionObserverPreset, LazyLoadImageModule } from 'ng-lazyload-image'
+import { LazyLoadImageModule, ScrollHooks } from 'ng-lazyload-image'
 import { NguiInviewModule } from '@ngui/common'
 import { environment } from '../environments/environment'
 
@@ -64,9 +64,7 @@ import { TravelService } from './components/travel/service/travel'
     BrowserModule,
     CommonModule,
     FormsModule,
-    LazyLoadImageModule.forRoot({
-      preset: intersectionObserverPreset,
-    }),
+    LazyLoadImageModule.forRoot(ScrollHooks),
     HttpClientModule,
     NguiInviewModule,
     ReactiveFormsModule,
