@@ -17,7 +17,6 @@ import { EducationComponent } from './components/education/components/education'
 import { ExperienceComponent } from './components/experience/components/experience'
 import { FooterComponent } from './components/footer/components/footer'
 import { HeaderComponent } from './components/header/components/header'
-import { SkillsComponent } from './components/skills/components/skills'
 import { TravelComponent } from './components/travel/components/travel'
 import { TravelMapComponent } from './components/travel/components/travel.gmap'
 
@@ -32,7 +31,6 @@ import { ExperienceService } from './components/experience/services/experience'
 import { FooterService } from './components/footer/services/footer'
 import { HeaderService } from './components/header/services/header'
 import { initMapApi, MapApiLoaderService } from './services/map-api-loader.service'
-import { SkillService } from './components/skills/services/skills'
 import { TravelService } from './components/travel/service/travel'
 
 @NgModule({
@@ -47,7 +45,6 @@ import { TravelService } from './components/travel/service/travel'
     ExperienceComponent,
     FooterComponent,
     HeaderComponent,
-    SkillsComponent,
     TravelComponent,
     TravelMapComponent,
     // Pipes
@@ -88,7 +85,6 @@ import { TravelService } from './components/travel/service/travel'
     FormBuilder,
     HeaderService,
     MapApiLoaderService,
-    SkillService,
     TravelService,
   ],
 })

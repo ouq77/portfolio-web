@@ -7,11 +7,10 @@ export const MENU_CONFIG: any = {
   parts: {
     0: 'home',
     1: 'about',
-    2: 'skills',
-    3: 'experience',
-    4: 'education',
-    5: 'travel',
-    6: 'contact',
+    2: 'experience',
+    3: 'education',
+    4: 'travel',
+    5: 'contact',
   },
   topMargin: 'auto',
 }
