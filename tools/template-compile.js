@@ -5,13 +5,14 @@ const path = require('path');
 const commandLineArgs = require('command-line-args');
 
 const optionDefinitions = [
-  {name: 'sources', alias: 's', type: String},
   {name: 'context', alias: 'c', type: String},
+  {name: 'dir', alias: 'd', type: String},
+  {name: 'sources', alias: 's', type: String},
 ];
 
-const processTemplates = (sources, context) => {
+const processTemplates = (sources, context, dir = 'dist') => {
   sources.forEach(source => {
-    glob(`dist/${source}`, (err, matches) => {
+    glob(`${dir}/${source}`, (err, matches) => {
       if (err) {
         console.log(`cannot compile sources for ${source}`);
         return;
@@ -50,12 +51,13 @@ const processTemplates = (sources, context) => {
 const templateCompile = () => {
   const options = commandLineArgs(optionDefinitions);
 
-  if (!options.sources) {
-    console.log('sources required');
-    process.exit();
-  }
   if (!options.context) {
     console.log('context required');
+    process.exit();
+  }
+
+  if (!options.sources) {
+    console.log('sources required');
     process.exit();
   }
 
@@ -67,7 +69,7 @@ const templateCompile = () => {
 
   const sources = options.sources.split('|');
 
-  processTemplates(sources, context);
+  processTemplates(sources, context, options.dir);
 };
 
 templateCompile();

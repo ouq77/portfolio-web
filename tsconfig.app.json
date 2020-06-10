@@ -8,10 +8,10 @@
     ]
   },
   "files": [
-    "src/main.ts",
-    "src/polyfills.ts"
+    "build/main.ts",
+    "build/polyfills.ts"
   ],
   "include": [
-    "src/**/*.d.ts"
+    "build/**/*.d.ts"
   ]
 }
