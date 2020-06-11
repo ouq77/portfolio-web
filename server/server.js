@@ -16,7 +16,7 @@ const app = express()
 app.use(require('compression')())
 app.use(require('netjet')({
   cache: { max: 100 },
-  excludes: ['**/*-es5.*.js', '**/scripts.*.js', '/assets/images/loading.gif', 'https://www.google-analytics.com/analytics.js'],
+  excludes: ['**/*-es5.*.js', '**/scripts.*.js', '/assets/images/loading.gif'],
   attributes: ['crossorigin=anonymous']
 }))
 app.use(userAgentBlocker(blockedUserAgents))

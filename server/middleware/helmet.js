@@ -10,13 +10,17 @@ module.exports = () => {
     helmet(),
     csp({
       directives: {
-        defaultSrc: ['\'self\''],
-        connectSrc: ['\'self\'', 'https://*.googletagmanager.com', 'https://*.google-analytics.com'],
+        baseUri: ['\'self\''],
+        defaultSrc: ['\'none\''],
+        connectSrc: ['\'self\''],
+        formAction: ['\'self\''],
         frameSrc: ['\'self\'', 'https://*.youtube.com'],
-        fontSrc: ['\'self\'', 'data:', 'https://*.gstatic.com', 'https://maxcdn.bootstrapcdn.com'],
-        imgSrc: ['\'self\'', 'data:', 'https://*.googleapis.com', 'https://*.gstatic.com', 'https://*.googletagmanager.com', 'https://*.google-analytics.com', 'https://*.rawgit.com'],
+        frameAncestors: ['\'self\''],
+        fontSrc: ['\'self\'', 'data:', 'https://*.gstatic.com', 'https://*.bootstrapcdn.com'],
+        imgSrc: ['\'self\'', 'data:', 'https://*.googleapis.com', 'https://*.gstatic.com'],
+        manifestSrc: ['\'self\''],
         objectSrc: ['\'none\''],
-        scriptSrc: ['\'self\'', '\'unsafe-inline\'', 'https://*.googleapis.com', 'https://*.googletagmanager.com', 'https://*.google-analytics.com', 'https://*.cloudflare.com'],
+        scriptSrc: ['\'self\'', '\'unsafe-inline\'', 'https://*.googleapis.com'],
         styleSrc: ['\'self\'', '\'unsafe-inline\'', 'https://*.googleapis.com', 'https://*.bootstrapcdn.com']
       },
       browserSniff: false
