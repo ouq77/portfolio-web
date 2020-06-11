@@ -83,7 +83,6 @@
                 "build/assets/js/jquery.gridrotator.js",
                 "build/assets/js/stick.up.js",
                 "build/assets/js/pre-render.js",
-                "build/assets/js/google-analytics.js",
                 "build/assets/js/service-worker.js"
               ]
             }

@@ -10,7 +10,7 @@ const optionDefinitions = [
   {name: 'sources', alias: 's', type: String},
 ];
 
-const processTemplates = (sources, context, dir = 'dist') => {
+const processTemplates = (dir, sources, context) => {
   sources.forEach(source => {
     glob(`${dir}/${source}`, (err, matches) => {
       if (err) {
@@ -67,9 +67,15 @@ const templateCompile = () => {
     console.log(`cannot access context '${options.context}'`);
   }
 
+  let dir = 'build'
+  if (options.dir) {
+    console.log(`overriding default '${dir}' with '${options.dir}'`)
+    dir = options.dir
+  }
+
   const sources = options.sources.split('|');
 
-  processTemplates(sources, context, options.dir);
+  processTemplates(dir, sources, context);
 };
 
 templateCompile();
