@@ -14,14 +14,14 @@ module.exports = () => {
         defaultSrc: ['\'none\''],
         connectSrc: ['\'self\''],
         formAction: ['\'self\''],
-        frameSrc: ['\'self\'', 'https://*.youtube.com'],
+        frameSrc: ['\'self\'', 'https://www.youtube.com'],
         frameAncestors: ['\'self\''],
-        fontSrc: ['\'self\'', 'data:', 'https://*.gstatic.com', 'https://*.bootstrapcdn.com'],
-        imgSrc: ['\'self\'', 'data:', 'https://*.googleapis.com', 'https://*.gstatic.com'],
+        fontSrc: ['\'self\'', 'data:', 'https://fonts.gstatic.com', 'https://maxcdn.bootstrapcdn.com'],
+        imgSrc: ['\'self\'', 'data:', 'https://maps.googleapis.com', 'https://maps.gstatic.com'],
         manifestSrc: ['\'self\''],
         objectSrc: ['\'none\''],
-        scriptSrc: ['\'self\'', '\'unsafe-inline\'', 'https://*.googleapis.com'],
-        styleSrc: ['\'self\'', '\'unsafe-inline\'', 'https://*.googleapis.com', 'https://*.bootstrapcdn.com']
+        scriptSrc: ['\'self\'', 'https://maps.googleapis.com'],
+        styleSrc: ['\'self\'', '\'unsafe-inline\'', 'https://fonts.googleapis.com', 'https://maps.googleapis.com', 'https://maxcdn.bootstrapcdn.com']
       },
       browserSniff: false
     }),
