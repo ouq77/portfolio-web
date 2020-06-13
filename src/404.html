@@ -9,34 +9,117 @@
     <meta name="robots" content="noindex, nofollow">
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,600"
-          rel="stylesheet"
-          type="text/css"
-          integrity="sha384-BZ1ixrX8OnRAa5n6JcbzRzULQdAEbt6kgZMlR8NbtlJvfpuSCxgya6QF0DpBozNp"
-          crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,900,300,700"
-          rel="stylesheet"
-          type="text/css"
-          integrity="sha384-Zec72V+hSrx4/GKBCxJY/aXgraUsNegz0wUiyJveokg5eS3DEhuLPKJqUpKB0wOt"
-          crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Ultra"
-          rel="stylesheet"
-          type="text/css"
-          integrity="sha384-Z9YN5b5UcWxVe7NzxQeNoPzapC6kqQG80Ycf858bdGIAvXpJ5cGo0OF0oECfM73H"
-          crossorigin="anonymous">
-
-    <!-- Latest compiled and minified Bootstrap CSS -->
-    <link rel="stylesheet"
-          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
-          integrity="sha384-pdapHxIh7EYuwy6K7iE41uXVxGCXY0sAjBzaElYGJUrzwodck3Lx6IE2lA0rFREo"
-          crossorigin="anonymous">
+    <style>
+      /* https://fonts.googleapis.com/css?family=Open+Sans:400,700,600 */
+      /* latin */
+      @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        src:
+          local('Open Sans Bold'),
+          local('OpenSans-Bold'),
+          url('static/fonts/OpenSans-Bold.woff2')
+          format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      /* https://fonts.googleapis.com/css?family=Ultra */
+      /* latin */
+      @font-face {
+        font-family: 'Ultra';
+        font-style: normal;
+        font-weight: 400;
+        src:
+          local('Ultra Regular'),
+          local('Ultra-Regular'),
+          url('static/fonts/Ultra.woff2')
+          format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+    </style>
 
     <!-- Core CSS -->
     <style>
+      h1 {
+        margin: .67em 0;
+        font-size: 2em
+      }
+
+      * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box
+      }
+
+      html {
+        font-family: sans-serif;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+        font-size: 10px;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+      }
+
       body {
         font-family: 'Open Sans', Helvetica, Arial, sans-serif !important;
         font-weight: lighter;
+        margin: 0;
+        font-size: 14px;
+        line-height: 1.42857143;
+        color: #333;
+        background-color: #fff
       }
+
+      a {
+        color: #337ab7;
+        text-decoration: none
+      }
+
+      a:focus, a:hover {
+        color: #23527c;
+        text-decoration: underline
+      }
+
+      a:focus {
+        outline: thin dotted;
+        outline: 5px auto -webkit-focus-ring-color;
+        outline-offset: -2px
+      }
+
+      h1, h2 {
+        font-family: inherit;
+        font-weight: 500;
+        line-height: 1.1;
+        color: inherit;
+        margin-top: 20px;
+        margin-bottom: 10px
+      }
+
+      h1 {
+        font-size: 36px
+      }
+
+      h2 {
+        font-size: 30px
+      }
+
+      p {
+        margin: 0 0 10px
+      }
+
+      .column {
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px
+      }
+
+      @media (min-width: 992px) {
+        .column {
+          float: left;
+          width: 100%
+        }
+      }
+
       /*=====================================================
        =            Media Queries for meow                  =
        =====================================================*/
@@ -1013,7 +1096,7 @@
     </style>
   </head>
   <body class="blue-bg">
-    <div class="col-md-12" style="top:48vmin">
+    <div class="column" style="top:48vmin">
       <div class="meow">
         <div class="cat">
           <div class="cat-inner">
@@ -1056,7 +1139,7 @@
         <h1>404</h1>
       </div>
     </div>
-    <div class="col-md-12">
+    <div class="column">
       <div class="message">
         <h2>You've disturbed my catnap!</h2>
         <p>The page you're looking for does not exist.</p><br>

@@ -1,6 +1,6 @@
 {
   "name": "ouq77-portfolio",
-  "version": "9.1.3",
+  "version": "9.1.4",
   "author": "Louw Swart",
   "description": "On-line portfolio of Louw Swart",
   "license": "MIT",
@@ -27,6 +27,7 @@
     "build:compile": "ng build --prod --subresource-integrity",
     "build:html-min-templates": "html-minifier --case-sensitive --collapse-whitespace --remove-comments --minify-css --minify-js --input-dir dist --output-dir dist --file-ext html",
     "build:uglify-js": "uglifyjs dist/sw.js --compress --output dist/sw.js",
+    "build:fonts": "ncp src/assets/resources dist/assets/resources",
     "bump:major": "npm-run-all bump:major:*",
     "bump:minor": "npm-run-all bump:minor:*",
     "bump:patch": "npm-run-all bump:patch:*",
