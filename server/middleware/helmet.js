@@ -12,16 +12,19 @@ module.exports = () => {
       directives: {
         baseUri: ['\'self\''],
         defaultSrc: ['\'none\''],
+        childSrc: ['\'self\'', 'https://www.youtube.com'],
         connectSrc: ['\'self\''],
         formAction: ['\'self\''],
-        frameSrc: ['\'self\'', 'https://www.youtube.com'],
+        frameSrc: ['\'none\''],
         frameAncestors: ['\'self\''],
-        fontSrc: ['\'self\'', 'data:', 'https://fonts.gstatic.com', 'https://maxcdn.bootstrapcdn.com'],
+        fontSrc: ['\'self\'', 'data:', 'https://fonts.gstatic.com'],
         imgSrc: ['\'self\'', 'data:', 'https://maps.googleapis.com', 'https://maps.gstatic.com'],
         manifestSrc: ['\'self\''],
         objectSrc: ['\'none\''],
+        reportUri: '/report-violation',
         scriptSrc: ['\'self\'', 'https://maps.googleapis.com'],
-        styleSrc: ['\'self\'', '\'unsafe-inline\'', 'https://fonts.googleapis.com', 'https://maps.googleapis.com', 'https://maxcdn.bootstrapcdn.com']
+        styleSrc: ['\'self\'', '\'unsafe-inline\'', 'https://fonts.googleapis.com', 'https://maps.googleapis.com'],
+        upgradeInsecureRequests: true
       },
       browserSniff: false
     }),
