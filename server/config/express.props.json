@@ -6,6 +6,11 @@
       "cache": "365d"
     },
     {
+      "uri": "/static/fonts",
+      "location": "./app/assets/resources",
+      "cache": "365d"
+    },
+    {
       "uri": "/assets/images",
       "location": "./app/assets/images",
       "cache": "0"

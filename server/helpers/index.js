@@ -1,6 +1,7 @@
 const imagePath = require('./image.path')
 const imagePersistence = require('./image.persistence')
 const imageResize = require('./image.resize')
+const index = require('./index.hashes')
 const mail = require('./mail')
 
 module.exports = {
@@ -13,6 +14,7 @@ module.exports = {
   isResizedImageExists: imagePath.isResizedImageExists,
   persist: imagePersistence.persist,
   resize: imageResize.resize,
+  hashes: index.hashes,
   validate: mail.validate,
   buildMessage: mail.buildMessage,
   buildMessageCopy: mail.buildMessageCopy

@@ -8,6 +8,7 @@ const cacheTimes = require('./config/cache.times')
 const instagramImages = require('./modules/instagram.images')
 const expressStaticMappings = require('./config/express.props.json').static
 const expressRedirectMappings = require('./config/express.props.json').redirects
+const hashes = require('./helpers').hashes
 const port = envConfig.PORT
 const blockedUserAgents = envConfig.BLOCKED_UA.split(',')
 const instagramImageIds = envConfig.INSTAGRAM_IMAGE_IDS.split(',')
@@ -15,7 +16,7 @@ const app = express()
 
 app.use(require('compression')())
 app.use(userAgentBlocker(blockedUserAgents))
-app.use(middleware.helmet())
+app.use(middleware.helmet(hashes))
 app.use(require('body-parser').json({ type: ['json', 'application/csp-report'] }))
 app.use(middleware.heroku)
 // cache control set by middleware.assetsHeader

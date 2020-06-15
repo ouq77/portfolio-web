@@ -5,25 +5,24 @@ const hsts = require('hsts')
 const referrerPolicy = require('referrer-policy')
 const hpkp = require('hpkp')
 
-module.exports = () => {
+module.exports = (hashes) => {
   const helmetMiddleware = [
     helmet(),
     csp({
       directives: {
         baseUri: ['\'self\''],
         defaultSrc: ['\'none\''],
-        childSrc: ['\'self\'', 'https://www.youtube.com'],
         connectSrc: ['\'self\''],
         formAction: ['\'self\''],
-        frameSrc: ['\'none\''],
+        frameSrc: ['\'self\'', 'https://www.youtube.com'],
         frameAncestors: ['\'self\''],
         fontSrc: ['\'self\'', 'data:', 'https://fonts.gstatic.com'],
         imgSrc: ['\'self\'', 'data:', 'https://maps.googleapis.com', 'https://maps.gstatic.com'],
         manifestSrc: ['\'self\''],
         objectSrc: ['\'none\''],
         reportUri: '/report-violation',
-        scriptSrc: ['\'self\'', 'https://maps.googleapis.com'],
-        styleSrc: ['\'self\'', '\'unsafe-inline\'', 'https://fonts.googleapis.com', 'https://maps.googleapis.com'],
+        scriptSrc: ['\'strict-dynamic\'', ...hashes, 'https://maps.googleapis.com', 'eval'],
+        styleSrc: ['\'self\'', 'https://fonts.googleapis.com', 'https://maps.googleapis.com', '\'unsafe-inline\''],
         upgradeInsecureRequests: true
       },
       browserSniff: false
