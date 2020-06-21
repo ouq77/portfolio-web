@@ -70,7 +70,6 @@
     "no-redundant-jsdoc": true,
     "no-switch-case-fall-through": true,
     "no-unused-expression": true,
-    "no-unused-variable": true,
     "no-var-requires": false,
     "object-literal-key-quotes": [
       true,

@@ -1,6 +1,6 @@
 {
   "name": "ouq77-portfolio",
-  "version": "9.1.4",
+  "version": "9.1.5",
   "author": "Louw Swart",
   "description": "On-line portfolio of Louw Swart",
   "license": "MIT",
@@ -66,8 +66,8 @@
   },
   "devDependencies": {
     "@agm/core": "1.1.0",
-    "@angular-devkit/build-angular": "0.901.8",
-    "@angular/cli": "9.1.8",
+    "@angular-devkit/build-angular": "0.901.9",
+    "@angular/cli": "9.1.9",
     "@angular/compiler-cli": "9.1.11",
     "@ngui/common": "0.6.0",
     "@types/googlemaps": "3.39.7",
