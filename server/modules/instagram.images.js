@@ -11,7 +11,7 @@ const fetchInstaImages = (imageIds) => {
 
   imageIds.forEach((imageId, index) => {
     const imageName = `${imageId}.jpg`
-    const imageUrl = `https://www.instagram.com/p/${imageId}/media/?size=m`
+    const imageUrl = `https://instagram.com/p/${imageId}/media/?size=m`
     const absoluteImagePath = getAbsoluteImagePath(imageBasePath, imageName)
     if (!isImageExists(absoluteImagePath)) {
       console.log(`fetching (${index + 1}) ${imageUrl}`)
