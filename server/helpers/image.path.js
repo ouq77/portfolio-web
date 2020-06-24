@@ -9,24 +9,12 @@ const getResizedImageName = (imageName, width = 95, height = 95) =>
 const getAbsoluteImagePath = (imageBasePath, imageName) =>
   `${imageBasePath}/${imageName}`
 
-const getAbsoluteImageOriginalPath = (imageBasePath, imageName) =>
-  `${imageBasePath}/original/${imageName}`
-
-const getAbsoluteImageResizedPath = (imageBasePath, imageName) =>
-  `${imageBasePath}/resized/${imageName}`
-
-const getRelativeImageResizedPath = (relativeImagePath, imageName) =>
-  `/${relativeImagePath}/resized/${imageName}`
-
-const isResizedImageExists = resizedImagePath =>
+const isImageExists = resizedImagePath =>
   fs.existsSync(resizedImagePath)
 
 module.exports = {
   getImageName,
   getResizedImageName,
   getAbsoluteImagePath,
-  getAbsoluteImageOriginalPath,
-  getAbsoluteImageResizedPath,
-  getRelativeImageResizedPath,
-  isResizedImageExists
+  isImageExists: isImageExists
 }

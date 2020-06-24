@@ -48,12 +48,14 @@ instagramImages.fetchInstaImages(instagramImageIds)
   .then((result) => {
     console.log(result)
     app.listen(port, () => {
+      console.log(`node ${process.version}`)
       console.info(`listening on port ${port}`)
     })
   })
   .catch(err => {
     console.error(err)
     app.listen(port, () => {
+      console.log(`node ${process.version}`)
       console.info(`listening on port ${port}`)
     })
   })
