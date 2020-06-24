@@ -71,7 +71,7 @@
     "@angular/compiler-cli": "9.1.11",
     "@ngui/common": "0.6.0",
     "@types/googlemaps": "3.39.7",
-    "@types/jquery": "3.3.38",
+    "@types/jquery": "3.5.0",
     "@types/node": "14.0.13",
     "bootstrap-sass": "3.4.1",
     "classlist.js": "1.1.20150312",
@@ -81,7 +81,7 @@
     "dateformat": "3.0.3",
     "glob": "7.1.6",
     "html-minifier": "4.0.0",
-    "intersection-observer": "0.10.0",
+    "intersection-observer": "0.11.0",
     "jquery": "3.5.1",
     "jsonfile": "6.0.1",
     "lodash": "4.17.15",
@@ -93,7 +93,7 @@
     "ts-node": "8.10.2",
     "tslint": "6.1.2",
     "typescript": "3.8.3",
-    "uglify-js": "3.9.4"
+    "uglify-js": "3.10.0"
   },
   "resolutions": {
     "lodash": "4.17.15",
