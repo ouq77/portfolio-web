@@ -1,8 +1,8 @@
-const path = require('path')
+const { resolve } = require('path')
 const { persist, getAbsoluteImagePath, isImageExists } = require('./../helpers')
 
 const relativeImagePath = 'assets/images/instagram'
-const imageBasePath = path.resolve(__dirname, `../../app/${relativeImagePath}`)
+const imageBasePath = resolve(__dirname, `../../app/${relativeImagePath}`)
 
 const fetchInstaImages = (imageIds) => {
   const instagramPromises = []

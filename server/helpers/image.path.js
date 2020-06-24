@@ -1,4 +1,4 @@
-const fs = require('fs')
+const { existsSync } = require('fs')
 
 const getImageName = imageUrl =>
   imageUrl.substr(imageUrl.lastIndexOf('/') + 1)
@@ -10,7 +10,7 @@ const getAbsoluteImagePath = (imageBasePath, imageName) =>
   `${imageBasePath}/${imageName}`
 
 const isImageExists = resizedImagePath =>
-  fs.existsSync(resizedImagePath)
+  existsSync(resizedImagePath)
 
 module.exports = {
   getImageName,

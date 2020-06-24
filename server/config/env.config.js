@@ -1,4 +1,4 @@
-const fs = require('fs')
+const { existsSync } = require('fs')
 const convict = require('convict')
 const formats = require('convict-format-with-validator')
 
@@ -69,7 +69,7 @@ const envConfig = convict({
 
 const envLocalConfig = './server/config/env.local.json'
 
-if (fs.existsSync(envLocalConfig)) {
+if (existsSync(envLocalConfig)) {
   envConfig.loadFile([envLocalConfig])
 }
 

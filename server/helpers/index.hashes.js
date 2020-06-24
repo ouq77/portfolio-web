@@ -1,4 +1,4 @@
-const fs = require('fs')
+const { readFileSync } = require('fs')
 const htmlparser2 = require('htmlparser2')
 
 const hashes = []
@@ -12,7 +12,7 @@ const parser = new htmlparser2.Parser(
     }
   }
 )
-parser.write(fs.readFileSync('./app/index.html').toString())
+parser.write(readFileSync('./app/index.html').toString())
 parser.end()
 
 module.exports = {

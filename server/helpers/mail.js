@@ -1,4 +1,4 @@
-const fs = require('fs')
+const { readFileSync } = require('fs')
 const envConfig = require('./../config/env.config').get()
 
 const DISALLOWED_CHARS = /[<>^|%()&+]/
@@ -9,8 +9,8 @@ const GMAIL_SENDER_EMAIL = envConfig.GMAIL_SENDER_EMAIL
 const CUSTOM_APP_DOMAIN = envConfig.CUSTOM_APP_DOMAIN
 const SUBJECT = 'Message from {0} | ' + CUSTOM_APP_DOMAIN
 const SUBJECT_COPY = 'Thanks for getting in touch'
-const CONTENT = fs.readFileSync('./server/config/email-template.html')
-const CONTENT_COPY = fs.readFileSync('./server/config/email-copy-template.html')
+const CONTENT = readFileSync('./server/config/email-template.html')
+const CONTENT_COPY = readFileSync('./server/config/email-copy-template.html')
 
 /**
  * Formats a value with the args passed in

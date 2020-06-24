@@ -1,6 +1,6 @@
 const webp = require('webp-middleware')
-const path = require('path')
+const { resolve } = require('path')
 
-module.exports = webp(path.resolve(__dirname, '../../app'), {
-  cacheDir: path.resolve(__dirname, '../../app/assets/webp', 'cache')
+module.exports = webp(resolve(__dirname, '../../app'), {
+  cacheDir: resolve(__dirname, '../../app/assets/webp', 'cache')
 })

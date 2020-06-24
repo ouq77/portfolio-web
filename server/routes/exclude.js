@@ -1,5 +1,5 @@
-const path = require('path')
+const { resolve } = require('path')
 
 module.exports = (req, res) => {
-  res.sendFile(path.resolve(__dirname, '../../app/exclude.html'))
+  res.sendFile(resolve(__dirname, '../../app/exclude.html'))
 }
