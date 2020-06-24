@@ -17,7 +17,7 @@ module.exports = (hashes) => {
         frameSrc: ['\'self\'', 'https://www.youtube.com'],
         frameAncestors: ['\'self\''],
         fontSrc: ['\'self\'', 'data:', 'https://fonts.gstatic.com'],
-        imgSrc: ['\'self\'', 'data:', 'https://maps.googleapis.com', 'https://maps.gstatic.com'],
+        imgSrc: ['\'self\'', 'data:', 'https://maps.googleapis.com', 'https://maps.gstatic.com', 'https://www.instagram.com', 'https://*.fbcdn.net'],
         manifestSrc: ['\'self\''],
         objectSrc: ['\'none\''],
         reportUri: '/report-violation',
