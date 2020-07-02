@@ -5,13 +5,11 @@ const middleware = require('./middleware')
 const routes = require('./routes')
 const envConfig = require('./config/env.config').get()
 const cacheTimes = require('./config/cache.times')
-const instagramImages = require('./modules/instagram.images')
 const expressStaticMappings = require('./config/express.props.json').static
 const expressRedirectMappings = require('./config/express.props.json').redirects
 const hashes = require('./helpers').hashes
 const port = envConfig.PORT
 const blockedUserAgents = envConfig.BLOCKED_UA.split(',')
-const instagramImageIds = envConfig.INSTAGRAM_IMAGE_IDS.split(',')
 const app = express()
 
 app.use(require('compression')())
@@ -40,22 +38,10 @@ app.get('/imageids', cache({ nocache: true }), routes.imageids)
 app.post('/send', cache({ nocache: true }), routes.send)
 app.get('/exclude', cache({ ttl: cacheTimes.DAYS_IN_SECS_60 }), routes.exclude)
 app.get('/railtrips', cache({ nocache: true }), routes.railtrips)
-app.get('/cache', cache({ nocache: true }), routes.cache)
 app.get('/', cache({ nocache: true }), routes.html)
 app.get('/*', cache({ ttl: cacheTimes.DAYS_IN_SECS_60 }), routes.fourohfour)
 
-instagramImages.fetchInstaImages(instagramImageIds)
-  .then((result) => {
-    console.log(result)
-    app.listen(port, () => {
-      console.log(`node ${process.version}`)
-      console.info(`listening on port ${port}`)
-    })
-  })
-  .catch(err => {
-    console.error(err)
-    app.listen(port, () => {
-      console.log(`node ${process.version}`)
-      console.info(`listening on port ${port}`)
-    })
-  })
+app.listen(port, () => {
+  console.log(`node ${process.version}`)
+  console.info(`listening on port ${port}`)
+})
