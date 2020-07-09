@@ -9,6 +9,7 @@ module.exports = (hashes) => {
   const helmetMiddleware = [
     helmet(),
     csp({
+      browserSniff: false,
       directives: {
         baseUri: ['\'self\''],
         defaultSrc: ['\'none\''],
@@ -21,11 +22,10 @@ module.exports = (hashes) => {
         manifestSrc: ['\'self\''],
         objectSrc: ['\'none\''],
         reportUri: '/report-violation',
-        scriptSrc: ['\'strict-dynamic\'', ...hashes, 'https://maps.googleapis.com', 'eval'],
-        styleSrc: ['\'self\'', 'https://fonts.googleapis.com', 'https://maps.googleapis.com', '\'unsafe-inline\''],
+        scriptSrc: ['\'strict-dynamic\'', ...hashes, 'https://maps.googleapis.com'],
+        styleSrc: ['\'self\'', '\'unsafe-inline\'', 'https://fonts.googleapis.com', 'https://maps.googleapis.com'],
         upgradeInsecureRequests: true
-      },
-      browserSniff: false
+      }
     }),
     hsts({
       maxAge: 5184000 // sixty days in seconds

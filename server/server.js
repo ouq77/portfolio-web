@@ -1,5 +1,6 @@
 const express = require('express')
 const cache = require('express-cache-headers')
+const cors = require('cors')
 const userAgentBlocker = require('express-user-agent-blocker')
 const middleware = require('./middleware')
 const routes = require('./routes')
@@ -15,6 +16,10 @@ const app = express()
 app.use(require('compression')())
 app.use(userAgentBlocker(blockedUserAgents))
 app.use(middleware.helmet(hashes))
+app.use(cors({
+  origin: [/ouq77\.kiwi$/],
+  methods: ['GET', 'POST']
+}))
 app.use(require('body-parser').json({ type: ['json', 'application/csp-report'] }))
 app.use(middleware.heroku)
 // cache control set by middleware.assetsHeader
