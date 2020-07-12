@@ -13,13 +13,13 @@ const port = envConfig.PORT
 const blockedUserAgents = envConfig.BLOCKED_UA.split(',')
 const app = express()
 
-app.use(require('compression')())
-app.use(userAgentBlocker(blockedUserAgents))
-app.use(middleware.helmet(hashes))
 app.use(cors({
-  origin: [/ouq77\.kiwi$/],
+  origin: [/ouq77\.kiwi$/, /ouq77\.herokuapp\.com/, /localhost/],
   methods: ['GET', 'POST']
 }))
+app.use(userAgentBlocker(blockedUserAgents))
+app.use(middleware.helmet(hashes))
+app.use(require('compression')())
 app.use(require('body-parser').json({ type: ['json', 'application/csp-report'] }))
 app.use(middleware.heroku)
 // cache control set by middleware.assetsHeader
