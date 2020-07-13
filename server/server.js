@@ -13,9 +13,17 @@ const port = envConfig.PORT
 const blockedUserAgents = envConfig.BLOCKED_UA.split(',')
 const app = express()
 
-app.use(cors({
-  origin: [/ouq77\.kiwi$/, /ouq77\.herokuapp\.com/, /localhost/],
-  methods: ['GET', 'POST']
+app.use(cors((req, callback) => {
+  let corsOptions = {
+    methods: ['GET', 'POST'],
+    origin: 'https://portfolio.ouq77.kiwi'
+  }
+  const origin = req.header('origin')
+  if (/(ouq77\.herokuapp\.com|localhost)/.test(origin)) {
+    // alternative allowed origins
+    corsOptions = { ...corsOptions, origin }
+  }
+  callback(null, corsOptions)
 }))
 app.use(userAgentBlocker(blockedUserAgents))
 app.use(middleware.helmet(hashes))
