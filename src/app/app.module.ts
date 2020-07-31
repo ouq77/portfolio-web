@@ -4,7 +4,7 @@ import { HttpClientModule } from '@angular/common/http'
 import { FormBuilder, FormsModule, ReactiveFormsModule } from '@angular/forms'
 import { BrowserModule } from '@angular/platform-browser'
 import { APP_INITIALIZER, NgModule } from '@angular/core'
-import { LazyLoadImageModule, ScrollHooks } from 'ng-lazyload-image'
+import { LazyLoadImageModule, LAZYLOAD_IMAGE_HOOKS, ScrollHooks } from 'ng-lazyload-image'
 import { NguiInviewModule } from '@ngui/common'
 import { environment } from '../environments/environment'
 
@@ -61,7 +61,7 @@ import { TravelService } from './components/travel/service/travel'
     BrowserModule,
     CommonModule,
     FormsModule,
-    LazyLoadImageModule.forRoot(ScrollHooks),
+    LazyLoadImageModule,
     HttpClientModule,
     NguiInviewModule,
     ReactiveFormsModule,
@@ -76,6 +76,10 @@ import { TravelService } from './components/travel/service/travel'
       useFactory: initMapApi,
       deps: [MapApiLoaderService],
       multi: true,
+    },
+    {
+      provide: LAZYLOAD_IMAGE_HOOKS,
+      useClass: ScrollHooks,
     },
     AppService,
     ContactService,
