@@ -1,6 +1,6 @@
 {
   "name": "ouq77-portfolio",
-  "version": "10.0.5",
+  "version": "10.0.6",
   "author": "Louw Swart",
   "description": "On-line portfolio of Louw Swart",
   "license": "MIT",
@@ -24,7 +24,7 @@
     "build:render:components": "node tools/template-compile -d build/app/components/footer/components -s 'footer.html' -c config/config.json",
     "build:render:files": "node tools/template-compile -s 'index.html|sitemap.xml|sw.js|environments/environment.prod.ts' -c config/config.json",
     "build:render:scripts": "node tools/template-compile -d build/assets/js -s 'service-worker.js' -c config/config.json",
-    "build:compile": "ng build --prod --subresource-integrity",
+    "build:compile": "ng build --prod",
     "build:html-min-templates": "html-minifier --case-sensitive --collapse-whitespace --remove-comments --minify-css --minify-js --input-dir dist --output-dir dist --file-ext html",
     "build:uglify-js": "uglifyjs dist/sw.js --compress --output dist/sw.js",
     "build:fonts": "ncp src/assets/resources dist/assets/resources",
@@ -69,7 +69,7 @@
     "@angular-devkit/build-angular": "0.1000.5",
     "@angular/cli": "10.0.5",
     "@angular/compiler-cli": "10.0.7",
-    "@ngui/common": "0.6.0",
+    "@ngui/common": "0.7.0",
     "@types/googlemaps": "3.39.11",
     "@types/jquery": "3.5.1",
     "@types/node": "14.0.27",
@@ -93,7 +93,7 @@
     "ts-node": "8.10.2",
     "tslint": "6.1.3",
     "typescript": "3.9.7",
-    "uglify-js": "3.10.0"
+    "uglify-js": "3.10.1"
   },
   "resolutions": {
     "lodash": "4.17.19",

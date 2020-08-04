@@ -55,6 +55,8 @@
                 }
               ],
               "index": "build/index.html",
+              "commonChunk": true,
+              "subresourceIntegrity": true,
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
