@@ -1,4 +1,4 @@
-const index = require('./index.hashes')
+const index = require('./hashes')
 const mail = require('./mail')
 
 module.exports = {

@@ -1,14 +1,23 @@
 const express = require('express')
 const cache = require('express-cache-headers')
 const cors = require('cors')
+const helmet = require('helmet')
 const userAgentBlocker = require('express-user-agent-blocker')
-const middleware = require('./middleware')
+const {
+  assetsHeader,
+  assetsWebp,
+  csp,
+  hashes,
+  heroku,
+  hsts,
+  referrerPolicy,
+  useragent
+} = require('./middleware')
 const routes = require('./routes')
 const envConfig = require('./config/env.config').get()
 const cacheTimes = require('./config/cache.times')
 const expressStaticMappings = require('./config/express.props.json').static
 const expressRedirectMappings = require('./config/express.props.json').redirects
-const hashes = require('./helpers').hashes
 const port = envConfig.PORT
 const blockedUserAgents = envConfig.BLOCKED_UA.split(',')
 const app = express()
@@ -26,13 +35,18 @@ app.use(cors((req, callback) => {
   callback(null, corsOptions)
 }))
 app.use(userAgentBlocker(blockedUserAgents))
-app.use(middleware.helmet(hashes))
+app.use(useragent)
+app.use(hashes)
+app.use(helmet())
+app.use(csp)
+app.use(hsts)
+app.use(referrerPolicy)
 app.use(require('compression')())
 app.use(require('body-parser').json({ type: ['json', 'application/csp-report'] }))
-app.use(middleware.heroku)
+app.use(heroku)
 // cache control set by middleware.assetsHeader
-app.use('/assets/images/*', middleware.assetsHeader)
-app.use(middleware.assetsWebp)
+app.use('/assets/images/*', assetsHeader)
+app.use(assetsWebp)
 
 expressStaticMappings.forEach((mapping) => {
   console.info(`mapping resource "${mapping.uri}" to static location "${mapping.location}" with cache "${mapping.cache}"`)
