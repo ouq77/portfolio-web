@@ -11,7 +11,8 @@ const {
   heroku,
   hsts,
   referrerPolicy,
-  useragent
+  useragent,
+  xXssProtection
 } = require('./middleware')
 const routes = require('./routes')
 const envConfig = require('./config/env.config').get()
@@ -37,10 +38,20 @@ app.use(cors((req, callback) => {
 app.use(userAgentBlocker(blockedUserAgents))
 app.use(useragent)
 app.use(hashes)
-app.use(helmet())
+// helmet
+app.use(helmet.dnsPrefetchControl())
+app.use(helmet.expectCt())
+app.use(helmet.frameguard())
+app.use(helmet.hidePoweredBy())
+app.use(helmet.ieNoOpen())
+app.use(helmet.noSniff())
+app.use(helmet.permittedCrossDomainPolicies())
+// custom helmet
 app.use(csp)
 app.use(hsts)
 app.use(referrerPolicy)
+app.use(xXssProtection)
+
 app.use(require('compression')())
 app.use(require('body-parser').json({ type: ['json', 'application/csp-report'] }))
 app.use(heroku)
