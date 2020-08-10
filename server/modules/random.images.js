@@ -17,4 +17,6 @@ const getIds = () => {
   return reducedImageIds
 }
 
-module.exports.getIds = getIds
+module.exports = {
+  getIds
+}

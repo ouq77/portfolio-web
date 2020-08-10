@@ -34,4 +34,6 @@ const send = (message) => new Promise((resolve, reject) => {
   })
 })
 
-module.exports.send = send
+module.exports = {
+  send
+}

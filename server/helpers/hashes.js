@@ -16,6 +16,4 @@ const parser = new htmlparser2.Parser(
 parser.write(readFileSync('./app/index.html').toString())
 parser.end()
 
-module.exports = {
-  hashes
-}
+module.exports = hashes

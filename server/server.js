@@ -14,9 +14,17 @@ const {
   useragent,
   xXssProtection
 } = require('./middleware')
-const routes = require('./routes')
+const {
+  exclude,
+  fourOhFour,
+  html,
+  imageIds,
+  railTrips,
+  reportViolation,
+  send
+} = require('./routes')
 const envConfig = require('./config/env.config').get()
-const cacheTimes = require('./config/cache.times')
+const { DAYS_IN_SECS_60 } = require('./config/cache.times')
 const expressStaticMappings = require('./config/express.props.json').static
 const expressRedirectMappings = require('./config/express.props.json').redirects
 const port = envConfig.PORT
@@ -71,13 +79,13 @@ expressRedirectMappings.forEach((mapping) => {
   })
 })
 
-app.post('/report-violation', cache({ nocache: true }), routes.reportviolation)
-app.get('/imageids', cache({ nocache: true }), routes.imageids)
-app.post('/send', cache({ nocache: true }), routes.send)
-app.get('/exclude', cache({ ttl: cacheTimes.DAYS_IN_SECS_60 }), routes.exclude)
-app.get('/railtrips', cache({ nocache: true }), routes.railtrips)
-app.get('/', cache({ nocache: true }), routes.html)
-app.get('/*', cache({ ttl: cacheTimes.DAYS_IN_SECS_60 }), routes.fourohfour)
+app.post('/report-violation', cache({ nocache: true }), reportViolation)
+app.get('/imageids', cache({ nocache: true }), imageIds)
+app.post('/send', cache({ nocache: true }), send)
+app.get('/exclude', cache({ ttl: DAYS_IN_SECS_60 }), exclude)
+app.get('/railtrips', cache({ nocache: true }), railTrips)
+app.get('/', cache({ nocache: true }), html)
+app.get('/*', cache({ ttl: DAYS_IN_SECS_60 }), fourOhFour)
 
 app.listen(port, () => {
   console.log(`node ${process.version}`)
