@@ -14,13 +14,13 @@ module.exports = (req, res, next) => {
       formAction: ["'self'"],
       frameSrc: ["'self'", 'https://www.youtube.com'],
       frameAncestors: ["'self'"],
-      fontSrc: ["'self'", 'data:', 'https://fonts.gstatic.com'],
-      imgSrc: ["'self'", 'data:', 'https://maps.googleapis.com', 'https://maps.gstatic.com', 'https://www.instagram.com', 'https://*.fbcdn.net'],
+      fontSrc: ["'self'", 'data:', 'https://*.gstatic.com'],
+      imgSrc: ["'self'", 'data:', 'https://*.googleapis.com', 'https://*.gstatic.com', 'https://www.instagram.com', 'https://*.fbcdn.net'],
       manifestSrc: ["'self'"],
       objectSrc: ["'none'"],
       reportUri: '/report-violation',
       scriptSrc,
-      styleSrc: ["'self'", "'unsafe-inline'", 'https://fonts.googleapis.com', 'https://maps.googleapis.com'],
+      styleSrc: ["'self'", "'unsafe-inline'", 'https://*.googleapis.com'],
       upgradeInsecureRequests: []
     }
   })(req, res, next)
