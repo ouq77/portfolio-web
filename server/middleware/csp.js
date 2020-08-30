@@ -15,7 +15,7 @@ module.exports = (req, res, next) => {
       frameSrc: ["'self'", 'https://www.youtube.com'],
       frameAncestors: ["'self'"],
       fontSrc: ["'self'", 'data:', 'https://*.gstatic.com'],
-      imgSrc: ["'self'", 'data:', 'https://*.googleapis.com', 'https://*.gstatic.com', 'https://www.instagram.com', 'https://*.fbcdn.net'],
+      imgSrc: ["'self'", 'data:', 'https://*.googleapis.com', 'https://*.gstatic.com', 'https://www.instagram.com', 'https://*.cdninstagram.com', 'https://*.fbcdn.net'],
       manifestSrc: ["'self'"],
       objectSrc: ["'none'"],
       reportUri: '/report-violation',
