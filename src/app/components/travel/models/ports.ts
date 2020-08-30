@@ -1,8 +1,12 @@
 import { Port } from '../definitions/port'
-import { DENMARK, NEW_CALEDONIA, NEW_ZEALAND, NORWAY, UK } from './countries'
+import { CANADA, DENMARK, NEW_CALEDONIA, NEW_ZEALAND, NORWAY, UK } from './countries'
 
 export const GBDVR: Port = { city: 'Dover', country: UK, portCode: 'GBDVR', loc: { lat: 51.124770, lng: 1.332870 }, name: 'Port of Dover' }
 export const FRCQF: Port = { city: 'Calais', country: 'France', portCode: 'FRCQF', loc: { lat: 50.966640, lng: 1.868510 }, name: 'Port of Calais' }
+export const BCTSA: Port = { city: 'Vancouver', country: CANADA, portCode: 'BCTSA', loc:  { lat: 49.007270, lng: -123.129760 }, name: 'Tsawwassen Ferry Terminal' }
+export const BCSWA: Port = { city: 'Swartz Bay', country: CANADA, portCode: 'BCSWA', loc: { lat: 48.688170, lng: -123.411860 }, name: 'Swartz Bay ferry terminal' }
+export const GBPME: Port = { city: 'Portsmouth', country: UK, portCode: 'GBPME', loc: { lat: 50.797030, lng: -1.109260 }, name: 'Port of Portsmouth' }
+export const GBRYD: Port = { city: 'Ryde', country: UK, portCode: 'GBRYD', loc: { lat: 50.739350, lng: -1.160030 }, name: 'Ryde Pier Head' }
 export const NZWLG: Port = { city: 'Wellington', country: NEW_ZEALAND, portCode: 'NZPCN', loc: { lat: -41.279930, lng: 174.781710 }, name: 'Port of Wellington' }
 export const NZPCN: Port = { city: 'Picton', country: NEW_ZEALAND, portCode: 'NZPCN', loc: { lat: -41.285700, lng: 174.005110 }, name: 'Port of Picton' }
 export const DKCPH: Port = { city: 'København', country: DENMARK, portCode: 'DKCPH', loc: { lat: 55.702022, lng: 12.595930 }, name: 'Port of Copenhagen' }
@@ -19,5 +23,6 @@ export const NCMEE: Port = { city: 'Mare', country: NEW_CALEDONIA, portCode: 'NC
  * Array of all ports for the Contact section
  */
 export const PORTS: Array<Port> = [
-  GBDVR, FRCQF, DKCPH, NOOSL, NOSVJ, NOTOS, NZAKL, NZPCN, NZWLG, NCNOU, LIFOU, VUVLI, NCMEE,
+  BCTSA, BCSWA, DKCPH, FRCQF, GBDVR, GBPME, GBRYD, LIFOU, NCMEE, NCNOU, NOOSL, NOSVJ, NOTOS,
+  NZAKL, NZPCN, NZWLG, VUVLI,
 ]

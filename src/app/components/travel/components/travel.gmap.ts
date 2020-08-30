@@ -18,6 +18,10 @@ import { MapUtil } from './gmap/map.util'
 import { MarkerUtil } from './gmap/marker.util'
 import { PolylineUtil } from './gmap/polyline.util'
 
+const DEFAULT_WAIT = 750
+const MAP_MAX_MOBILE_ZOOM_ZERO = 768
+const MARKER_DROP_LAG = 115
+
 @Component({
   selector: 'app-googlemap',
   styleUrls: ['./travel.gmap.scss'],
@@ -79,7 +83,6 @@ export class TravelMapComponent implements OnInit {
   }
 
   initializeMap(): void {
-    const MAP_MAX_MOBILE_ZOOM_ZERO = 768
     this._mapInitialized = true;
     (($: JQueryStatic) =>
       delay(250).then(() => {
@@ -104,20 +107,20 @@ export class TravelMapComponent implements OnInit {
     return !this._mapMarkersDrawn && this._railPathsLoaded
   }
 
-  dropMarkersDrawLines(wait: number = 750): void {
+  dropMarkersDrawLines(wait: number = DEFAULT_WAIT): void {
     if (this.canDropMarkersDrawLines()) {
       this._mapMarkersDrawn = true
       delay(wait).then(() => {
         AIRPORTS.forEach((airport: Airport) => {
-          delay(++this._markerDropWait * 135)
+          delay(++this._markerDropWait * MARKER_DROP_LAG)
             .then(() => this._markerUtil.addAirportMarker(this.map, airport))
         })
         PORTS.forEach((port: Port) => {
-          delay(++this._markerDropWait * 135)
+          delay(++this._markerDropWait * MARKER_DROP_LAG)
             .then(() => this._markerUtil.addPortMarker(this.map, port))
         })
         STATIONS.forEach((station: Station) => {
-          delay(++this._markerDropWait * 135)
+          delay(++this._markerDropWait * MARKER_DROP_LAG)
             .then(() => this._markerUtil.addStationMarker(this.map, station))
         })
         this._polylineUtil.pushToPolylines(this._flightLines, FLIGHTS)

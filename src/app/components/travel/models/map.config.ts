@@ -5,6 +5,7 @@ import { START_POINT } from './points'
  */
 export const MAP_OPTIONS: google.maps.MapOptions = {
   center: START_POINT,
+  mapTypeId: 'terrain',
   minZoom: 2,
   scrollwheel: false,
   styles: [

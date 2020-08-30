@@ -17,7 +17,7 @@ export const PAD: Station = { city: 'London', country: UK, stationCode: 'PAD', l
 export const WNR: Station = { city: 'Windsor', country: UK, stationCode: 'WNR', loc: { lat: 51.485719, lng: -0.606355 }, name: 'Windsor and Eton Riverside Station' }
 export const RDG: Station = { city: 'Reading', country: UK, stationCode: 'RDG', loc: { lat: 51.459205, lng: -0.972766 }, name: 'Reading Station' }
 export const BCE: Station = { city: 'Bracknell', country: UK, stationCode: 'BCE', loc: { lat: 51.413027, lng: -0.752136 }, name: 'Bracknell Station' }
-export const SOU: Station = { city: 'Southampton', country: UK, stationCode: 'SOU', loc: { lat: 50.907530, lng: -1.414277 }, name: 'Southampton Central Station' }
+export const PME: Station = { city: 'Portsmouth', country: UK, stationCode: 'PME', loc: { lat: 50.796958, lng: -1.107896 }, name: 'Portsmouth Harbour Station Pier' }
 export const ZHB: Station = { city: 'Zürich', country: SWITZERLAND, stationCode: 'ZHB', loc: { lat: 47.378375, lng: 8.538908 }, name: 'Zürich Hauptbahnhof' }
 export const BHB: Station = { city: 'Bern', country: SWITZERLAND, stationCode: 'BHB', loc: { lat: 46.948348, lng: 7.436341 }, name: 'Bahnhof Bern' }
 export const GDB: Station = { city: 'Grindelwald', country: SWITZERLAND, stationCode: 'GDB', loc: { lat: 46.624451, lng: 8.033323 }, name: 'Bahnhof Grindelwald' }
@@ -37,6 +37,6 @@ export const BOO: Station = { city: 'Bodø', country: NORWAY, stationCode: 'BOO'
  * Array of all ports for the Contact section
  */
 export const STATIONS: Array<Station> = [
-  MYB, AYS, KGX, EDB, VIC, BTN, EBN, HGS, CST, BAN, WAT, GLD, PAD, WNR, RDG, BCE, SOU, ZHB, BHB, GDB, CHB,
+  MYB, AYS, KGX, EDB, VIC, BTN, EBN, HGS, CST, BAN, WAT, GLD, PAD, WNR, RDG, BCE, PME, ZHB, BHB, GDB, CHB,
   WEL, HAM, CHC, PIC, XEV, ZGH, XZO, QFV, XZT, BOO,
 ]
