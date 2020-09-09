@@ -1,7 +1,7 @@
 {
   "name": "ouq77-portfolio",
   "author": "ouq77",
-  "version": "10.0.12",
+  "version": "10.0.13",
   "description": "On-line portfolio of Louw Swart",
   "main": "server/server.js",
   "repository": {
@@ -52,6 +52,7 @@
   "resolutions": {
     "lodash": "4.17.19",
     "minimist": "1.2.5",
+    "tar-stream": "2.1.3",
     "yargs-parser": "^18.1.3"
   }
 }
