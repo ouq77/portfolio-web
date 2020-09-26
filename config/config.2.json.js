@@ -1,5 +1,5 @@
 const jsonFile = require('jsonfile');
-const {META_TAGS, GOOGLE_ACCOUNT, LAST_MOD_SITE, LAST_MOD_SITEMAP, LAST_MOD_TIME} = require('./config.site.js');
+const { META_TAGS, GOOGLE_ACCOUNT, LAST_MOD_SITE, LAST_MOD_SITEMAP, LAST_MOD_TIME } = require('./config.site');
 
 const file = './config/config.json';
 
