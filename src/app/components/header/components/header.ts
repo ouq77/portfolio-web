@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core'
 import { delay } from '../../shared/common/delay'
-import { ImageIds } from '../definitions/image.ids'
+import { ImageUrls } from '../definitions/image.urls'
 import { GRID_ROTATOR_CONFIG, MENU_CONFIG } from '../models/header.config'
 import { HeaderService } from '../services/header'
 
@@ -10,7 +10,7 @@ import { HeaderService } from '../services/header'
   templateUrl: 'header.html',
 })
 export class HeaderComponent implements OnInit {
-  public imageIds: Array<string>
+  public imageUrls: Array<string>
   private _previousWidth: number
   private _previousHeight: number
   private _onDraw: () => void
@@ -24,9 +24,9 @@ export class HeaderComponent implements OnInit {
   }
 
   initImageIds(): void {
-    this._headerService.getImageIds().subscribe(
-      resp => this.initGridRotator((<ImageIds> resp).imageIds),
-      () => console.warn('imageIds not returned'),
+    this._headerService.getImageUrls().subscribe(
+      resp => this.initGridRotator((<ImageUrls> resp).imageUrls),
+      () => console.warn('imageUrls not returned'),
     )
   }
 
@@ -38,11 +38,11 @@ export class HeaderComponent implements OnInit {
     })(jQuery)
   }
 
-  initGridRotator(imageIds: Array<string>): void {
+  initGridRotator(imageUrls: Array<string>): void {
     this._onDraw = () => {
       this.setDynamicCssValues()
     }
-    this.imageIds = imageIds;
+    this.imageUrls = imageUrls;
     (($) => {
       // Delay 250ms for images to be rendered in template
       delay(250).then(() => {

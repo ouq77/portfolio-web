@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http'
 import { Injectable } from '@angular/core'
 import { Observable } from 'rxjs'
-import { ImageIds } from '../definitions/image.ids'
+import { ImageUrls } from '../definitions/image.urls'
 
 @Injectable()
 export class HeaderService {
@@ -9,7 +9,7 @@ export class HeaderService {
   constructor(private _http: HttpClient) {
   }
 
-  getImageIds(): Observable<ImageIds> {
-    return this._http.get<ImageIds>('/imageids')
+  getImageUrls(): Observable<ImageUrls> {
+    return this._http.get<ImageUrls>('/imageurls')
   }
 }
