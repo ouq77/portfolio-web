@@ -1,7 +1,7 @@
 {
   "name": "ouq77-portfolio",
   "author": "ouq77",
-  "version": "10.0.17",
+  "version": "10.1.0",
   "description": "On-line portfolio of Louw Swart",
   "main": "server/server.js",
   "repository": {
@@ -19,7 +19,7 @@
   "license": "MIT",
   "dependencies": {
     "body-parser": "1.19.0",
-    "camelcase": "6.0.0",
+    "camelcase": "6.1.0",
     "compression": "1.7.4",
     "convict": "6.0.0",
     "convict-format-with-validator": "6.0.0",
@@ -34,7 +34,8 @@
     "hpkp": "2.0.1",
     "hsts": "2.2.0",
     "htmlparser2": "5.0.0",
-    "nodemailer": "6.4.13",
+    "node-fetch": "2.6.1",
+    "nodemailer": "6.4.14",
     "ord": "1.0.1",
     "referrer-policy": "1.2.0",
     "require-directory": "2.1.1",
@@ -42,9 +43,10 @@
     "webp-middleware": "0.4.0"
   },
   "devDependencies": {
-    "standard": "14.3.4"
+    "standard": "15.0.0"
   },
   "scripts": {
+    "instagram:update": "node server/config/instagram.generate",
     "preinstall": "npx npm-force-resolutions",
     "ncu:update": "ncu -u && npm update && npm update -D && npm install",
     "start": "standard && node server/start.js"

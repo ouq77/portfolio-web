@@ -1,22 +1,20 @@
-const envConfig = require('./../config/env.config').get()
+const { imageUrls } = require('./../config/instagram.json')
+const { IMAGE_DISPLAY_COUNT } = require('./../config/env.config').get()
 
-const imageIds = envConfig.INSTAGRAM_IMAGE_IDS.split(',')
-const imageDisplayCount = envConfig.IMAGE_DISPLAY_COUNT
+const getImageUrls = () => {
+  const reducedImageUrls = []
+  const imageUrlsCopy = imageUrls.slice(0)
 
-const getIds = () => {
-  const reducedImageIds = []
-  const imageIdsCopy = imageIds.slice(0)
-
-  if (imageIds.length > imageDisplayCount) {
-    while (reducedImageIds.length < imageDisplayCount) {
-      reducedImageIds.push(imageIdsCopy.splice(Math.floor(Math.random() * (imageIdsCopy.length)), 1)[0])
+  if (imageUrls.length > IMAGE_DISPLAY_COUNT) {
+    while (reducedImageUrls.length < IMAGE_DISPLAY_COUNT) {
+      reducedImageUrls.push(imageUrlsCopy.splice(Math.floor(Math.random() * (imageUrlsCopy.length)), 1)[0])
     }
   } else {
-    console.error(`Not enough image ids: ${imageIds.length} of ${imageDisplayCount} required`)
+    console.error(`Not enough image ids: ${imageUrls.length} of ${IMAGE_DISPLAY_COUNT} required`)
   }
-  return reducedImageIds
+  return reducedImageUrls
 }
 
 module.exports = {
-  getIds
+  getImageUrls
 }

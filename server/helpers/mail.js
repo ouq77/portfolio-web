@@ -1,13 +1,11 @@
 const { readFileSync } = require('fs')
-const envConfig = require('./../config/env.config').get()
+const { CUSTOM_APP_DOMAIN, GMAIL_SENDER_EMAIL } = require('./../config/env.config').get()
 
 const DISALLOWED_CHARS = /[<>^|%()&+]/
 const URL_REGEX = /\(?(?:(http|https|ftp):\/\/)(?:((?:[^\W\s]|\.|-|[:]{1})+)@{1})?((?:www.)?(?:[^\W\s]|\.|-)+[\.][^\W\s]{2,4}|localhost(?=\/)|\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})(?::(\d*))?([\/]?[^\s\?]*[\/]{1})*(?:\/?([^\s\n\?\[\]\{\}#]*(?:(?=\.)){1}|[^\s\n\?\[\]\{\}\.#]*)?([\.]{1}[^\s\?#]*)?)?(?:\?{1}([^\s\n#\[\]]*))?([#][^\s\n]*)?\)?/ // eslint-disable-line no-useless-escape
 const EMAIL_REGEX = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/ // eslint-disable-line no-useless-escape
 
-const GMAIL_SENDER_EMAIL = envConfig.GMAIL_SENDER_EMAIL
-const CUSTOM_APP_DOMAIN = envConfig.CUSTOM_APP_DOMAIN
-const SUBJECT = 'Message from {0} | ' + CUSTOM_APP_DOMAIN
+const SUBJECT = `Message from {0} | ${CUSTOM_APP_DOMAIN}`
 const SUBJECT_COPY = 'Thanks for getting in touch'
 const CONTENT = readFileSync('./server/config/email-template.html')
 const CONTENT_COPY = readFileSync('./server/config/email-copy-template.html')
@@ -21,7 +19,8 @@ const CONTENT_COPY = readFileSync('./server/config/email-copy-template.html')
 const formatValue = (value, args) => {
   return value.replace(/{(\d+)}/g, (match, number) => {
     return typeof args[number] !== 'undefined'
-      ? args[number] : match
+      ? args[number]
+      : match
   })
 }
 

@@ -18,17 +18,15 @@ const {
   exclude,
   fourOhFour,
   html,
-  imageIds,
+  imageUrls,
   railTrips,
   reportViolation,
   send
 } = require('./routes')
-const envConfig = require('./config/env.config').get()
+const { BLOCKED_UA, PORT } = require('./config/env.config').get()
 const { DAYS_IN_SECS_60 } = require('./config/cache.times')
 const expressStaticMappings = require('./config/express.props.json').static
 const expressRedirectMappings = require('./config/express.props.json').redirects
-const port = envConfig.PORT
-const blockedUserAgents = envConfig.BLOCKED_UA.split(',')
 const app = express()
 
 app.use(cors((req, callback) => {
@@ -43,7 +41,7 @@ app.use(cors((req, callback) => {
   }
   callback(null, corsOptions)
 }))
-app.use(userAgentBlocker(blockedUserAgents))
+app.use(userAgentBlocker(BLOCKED_UA.split(',')))
 app.use(useragent)
 app.use(hashes)
 // helmet
@@ -80,14 +78,14 @@ expressRedirectMappings.forEach((mapping) => {
 })
 
 app.post('/report-violation', cache({ nocache: true }), reportViolation)
-app.get('/imageids', cache({ nocache: true }), imageIds)
+app.get('/imageurls', cache({ nocache: true }), imageUrls)
 app.post('/send', cache({ nocache: true }), send)
 app.get('/exclude', cache({ ttl: DAYS_IN_SECS_60 }), exclude)
 app.get('/railtrips', cache({ nocache: true }), railTrips)
 app.get('/', cache({ nocache: true }), html)
 app.get('/*', cache({ ttl: DAYS_IN_SECS_60 }), fourOhFour)
 
-app.listen(port, () => {
+app.listen(PORT, () => {
   console.log(`node ${process.version}`)
-  console.info(`listening on port ${port}`)
+  console.info(`listening on port ${PORT}`)
 })

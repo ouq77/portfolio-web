@@ -41,6 +41,18 @@ const envConfig = convict({
     env: 'CUSTOM_APP_DOMAIN',
     format: 'url'
   },
+  FB_APP_ID: {
+    default: '',
+    doc: 'The application\'s Facebook App Id',
+    env: 'FB_APP_ID',
+    format: String
+  },
+  FB_APP_SECRET: {
+    default: '',
+    doc: 'The application\'s Facebook App Secret',
+    env: 'FB_APP_ID',
+    format: String
+  },
   INSTAGRAM_IMAGE_IDS: {
     default: '',
     doc: 'The application\'s Instagram Image Ids',
