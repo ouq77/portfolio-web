@@ -22,6 +22,14 @@ fetch(`https://graph.facebook.com/oauth/access_token?client_id=${FB_APP_ID}&clie
       .then(data => {
         const imageUrls = []
         data.forEach(({ thumbnail_url }) => imageUrls.push(thumbnail_url))
-        fs.writeFileSync('./server/config/instagram.json', JSON.stringify({ imageUrls }, null, 2))
+        imageUrls.sort()
+        fs.writeFileSync(
+          './server/config/instagram.json',
+          JSON.stringify(
+            { imageUrls },
+            null,
+            2
+          )
+        )
       })
   })
