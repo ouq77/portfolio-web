@@ -1,7 +1,7 @@
 {
   "name": "ouq77-portfolio",
   "author": "ouq77",
-  "version": "10.1.4",
+  "version": "10.1.5",
   "description": "On-line portfolio of Louw Swart",
   "main": "server/server.js",
   "repository": {
@@ -24,18 +24,18 @@
     "convict": "6.0.0",
     "convict-format-with-validator": "6.0.0",
     "cors": "2.8.5",
-    "debug": "4.2.0",
+    "debug": "4.3.1",
     "express": "4.17.1",
     "express-cache-headers": "0.1.4",
     "express-user-agent-blocker": "2.0.3",
-    "forever-monitor": "3.0.1",
+    "forever-monitor": "3.0.3",
     "helmet": "4.2.0",
     "helmet-csp": "3.2.0",
     "hpkp": "2.0.1",
     "hsts": "2.2.0",
     "htmlparser2": "5.0.1",
     "node-fetch": "2.6.1",
-    "nodemailer": "6.4.15",
+    "nodemailer": "6.4.16",
     "ord": "1.0.1",
     "referrer-policy": "1.2.0",
     "require-directory": "2.1.1",
@@ -43,7 +43,7 @@
     "webp-middleware": "0.4.0"
   },
   "devDependencies": {
-    "standard": "16.0.1"
+    "standard": "16.0.3"
   },
   "scripts": {
     "instagram:update": "node server/config/instagram.generate",
