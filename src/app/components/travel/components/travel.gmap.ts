@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core'
+
 import { cancelableDelay, delay } from '../../shared/common/delay'
 import { Airport } from '../definitions/airport'
 import { City } from '../definitions/city'
@@ -14,9 +15,11 @@ import { AUCKLAND_POINT } from '../models/points'
 import { PORTS } from '../models/ports'
 import { STATIONS } from '../models/stations'
 import { TravelService } from '../service/travel'
+
 import { MapUtil } from './gmap/map.util'
 import { MarkerUtil } from './gmap/marker.util'
 import { PolylineUtil } from './gmap/polyline.util'
+
 
 const DEFAULT_WAIT = 750
 const MAP_MAX_MOBILE_ZOOM_ZERO = 768

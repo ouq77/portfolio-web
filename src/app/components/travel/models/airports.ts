@@ -1,4 +1,5 @@
 import { Airport } from '../definitions/airport'
+
 import { AUSTRALIA, CANADA, CHINA, GERMANY, HONG_KONG, JAPAN, NEW_ZEALAND, NORWAY, SOUTH_AFRICA, SWEDEN, THAILAND, UK, USA, ZAMBIA, ZIMBABWE } from './countries'
 
 export const JNB: Airport = { city: 'Johannesburg', country: SOUTH_AFRICA, iataCode: 'JNB', loc: { lat: -26.136837, lng: 28.241157 }, name: 'OR Tambo International' }

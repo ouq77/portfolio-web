@@ -1,4 +1,5 @@
 import { Port } from '../definitions/port'
+
 import { CANADA, DENMARK, NEW_CALEDONIA, NEW_ZEALAND, NORWAY, UK } from './countries'
 
 export const GBDVR: Port = { city: 'Dover', country: UK, portCode: 'GBDVR', loc: { lat: 51.124770, lng: 1.332870 }, name: 'Port of Dover' }

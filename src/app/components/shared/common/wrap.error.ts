@@ -1,4 +1,5 @@
 import { HttpErrorResponse } from '@angular/common/http'
+
 import { WrappedError } from '../definitions/wrapped.error'
 
 export const wrapError = (err: HttpErrorResponse): WrappedError => {

@@ -1,5 +1,6 @@
 import { City } from '../definitions/city'
 import { Icon } from '../definitions/icon'
+
 import { NEW_ZEALAND, SOUTH_AFRICA, UK } from './countries'
 import { CURRENT_ICON_URL, PREVIOUS_ICON_URL } from './marker.icons'
 import { CURRENT_MARKER_SIZE, PREVIOUS_MARKER_SIZE } from './marker.sizes'

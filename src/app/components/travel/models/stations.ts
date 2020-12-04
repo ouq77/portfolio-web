@@ -1,4 +1,5 @@
 import { Station } from '../definitions/station'
+
 import { DENMARK, NEW_ZEALAND, NORWAY, SCOTLAND, SWEDEN, SWITZERLAND, UK } from './countries'
 
 export const MYB: Station = { city: 'London', country: UK, stationCode: 'MYB', loc: { lat: 51.522617, lng: -0.162974 }, name: 'London Marylebone' }

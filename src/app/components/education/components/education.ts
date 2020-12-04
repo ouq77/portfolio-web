@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core'
+
 import { School } from '../definitions/school'
 import { EducationService } from '../services/education'
 

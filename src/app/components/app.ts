@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core'
+
 import { AppService } from '../services/app'
+
 import { cancelableDelay } from './shared/common/delay'
 import { elementInViewport } from './shared/common/element.in.viewport'
 

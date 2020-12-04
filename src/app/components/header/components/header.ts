@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core'
+
 import { delay } from '../../shared/common/delay'
 import { ImageUrls } from '../definitions/image.urls'
 import { GRID_ROTATOR_CONFIG, MENU_CONFIG } from '../models/header.config'
@@ -43,7 +44,7 @@ export class HeaderComponent implements OnInit {
       this.setDynamicCssValues()
     }
     this.imageUrls = imageUrls;
-    (($) => {
+    ($ => {
       // Delay 250ms for images to be rendered in template
       delay(250).then(() => {
         this.setBannerSize(this._previousWidth, this._previousHeight);
@@ -54,7 +55,7 @@ export class HeaderComponent implements OnInit {
   }
 
   initNavigation(): void {
-    (($) => {
+    ($ => {
       $(() => {
         (<any> $('.navbar-wrapper')).stickUp(MENU_CONFIG)
 

@@ -1,6 +1,7 @@
 import { HttpErrorResponse } from '@angular/common/http'
 import { Component, OnInit } from '@angular/core'
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms'
+
 import { wrapError } from '../../shared/common/wrap.error'
 import { WrappedError } from '../../shared/definitions/wrapped.error'
 import { ContactMessage } from '../definitions/contact.message'
@@ -41,7 +42,7 @@ export class ContactFormComponent implements OnInit {
 
   loadErrorMessages(): void {
     ContactService.getErrorMessages().then(
-      (errorMessages) => {
+      errorMessages => {
         this.errorMessages = errorMessages
       },
     )
@@ -89,9 +90,7 @@ export class ContactFormComponent implements OnInit {
   }
 
   errorFromCode(code: string): string {
-    return this.errorMessages.find((message: IErrorMessage) => {
-      return message.code === code
-    }).message
+    return this.errorMessages.find((message: IErrorMessage) => message.code === code).message
   }
 
   appendError(error: string): void {

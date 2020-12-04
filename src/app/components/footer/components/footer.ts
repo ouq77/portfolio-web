@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core'
+
 import { Link } from '../definitions/link'
 import { FooterService } from '../services/footer'
 
