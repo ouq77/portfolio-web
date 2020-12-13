@@ -1,14 +1,14 @@
 {
   "name": "ouq77-portfolio",
   "author": "ouq77",
-  "version": "10.1.8",
+  "version": "10.1.9",
   "description": "On-line portfolio of Louw Swart",
   "main": "server/server.js",
   "repository": {
     "url": "https://github.com/ouq77/portfolio-web"
   },
   "engines": {
-    "node": "14",
+    "node": "15",
     "npm": "6"
   },
   "standard": {
