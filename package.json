@@ -1,7 +1,7 @@
 {
   "name": "ouq77-portfolio",
   "author": "ouq77",
-  "version": "10.1.9",
+  "version": "10.1.10",
   "description": "On-line portfolio of Louw Swart",
   "main": "server/server.js",
   "repository": {
@@ -9,7 +9,7 @@
   },
   "engines": {
     "node": "15",
-    "npm": "6"
+    "npm": "7"
   },
   "standard": {
     "ignore": [
@@ -47,7 +47,6 @@
   },
   "scripts": {
     "instagram:update": "node server/config/instagram.generate",
-    "preinstall": "npx npm-force-resolutions",
     "ncu:update": "ncu -u && npm update && npm update -D && npm install",
     "start": "standard && node server/start.js"
   }
