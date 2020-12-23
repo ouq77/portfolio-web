@@ -11,10 +11,23 @@ export const JOBS: Array<Job> = [
       name: 'BNZ',
       url: 'https://www.bnz.co.nz',
     },
+    title: 'Senior Front-end Developer',
+    year: {
+      from: 'Oct 2020',
+      to: 'Present',
+    },
+  },
+  {
+    content: '',
+    institution: {
+      location: 'Wellington, New Zealand',
+      name: 'BNZ',
+      url: 'https://www.bnz.co.nz',
+    },
     title: 'Senior Front-end Developer (Contract)',
     year: {
       from: 'Jun 2019',
-      to: 'Present',
+      to: 'Sep 2020',
     },
   },
   {
@@ -53,7 +66,7 @@ export const JOBS: Array<Job> = [
       to: 'Jul 2018',
     },
   }, {
-    content: '<p>Completed a contract assignment (extended 3 times) with Fairfax Media as a <b>JavaScript Developer</b> in one of the ' +
+    content: '<p>Completed a contract assignment with Fairfax Media as a <b>JavaScript Developer</b> in one of the ' +
       'Wellington-based development teams.</p><p>I was closely involved in the implementation of a new <b>React</b> based front-end ' +
       'for the Stuff.co.nz news site. The application, including the back-end interfaces like <b>GraphQL</b>, is served via ' +
       '<b>Express</b> in a <b>Node.js</b> runtime.</p><p>Other projects included the implementation of an implicit flow client-side ' +
