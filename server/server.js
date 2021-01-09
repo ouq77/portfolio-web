@@ -11,6 +11,7 @@ const {
   heroku,
   hsts,
   referrerPolicy,
+  requireHttps,
   useragent,
   xXssProtection
 } = require('./middleware')
@@ -42,6 +43,7 @@ app.use(cors((req, callback) => {
   }
   callback(null, corsOptions)
 }))
+app.use(requireHttps)
 app.use(userAgentBlocker(BLOCKED_UA.split(',')))
 app.use(useragent)
 app.use(hashes)
