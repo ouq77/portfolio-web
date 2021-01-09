@@ -11,23 +11,10 @@ export const JOBS: Array<Job> = [
       name: 'BNZ',
       url: 'https://www.bnz.co.nz',
     },
-    title: 'Senior Front-end Developer',
-    year: {
-      from: 'Oct 2020',
-      to: 'Present',
-    },
-  },
-  {
-    content: '',
-    institution: {
-      location: 'Wellington, New Zealand',
-      name: 'BNZ',
-      url: 'https://www.bnz.co.nz',
-    },
-    title: 'Senior Front-end Developer (Contract)',
+    title: 'Senior Front-end Developer (Contract/Permanent)',
     year: {
       from: 'Jun 2019',
-      to: 'Sep 2020',
+      to: 'Present',
     },
   },
   {
