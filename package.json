@@ -19,6 +19,7 @@
   "license": "MIT",
   "dependencies": {
     "body-parser": "1.19.0",
+    "cache-manager": "3.4.0",
     "camelcase": "6.2.0",
     "compression": "1.7.4",
     "convict": "6.0.0",
@@ -46,7 +47,6 @@
     "standard": "16.0.3"
   },
   "scripts": {
-    "instagram:update": "node server/config/instagram.generate",
     "ncu:update": "ncu -u && npm update && npm update -D && npm install",
     "start": "standard && node server/start.js"
   }

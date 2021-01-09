@@ -1,8 +1,9 @@
-const { imageUrls } = require('./../config/instagram.json')
+const { instaCache } = require('./../helpers')
 const { IMAGE_DISPLAY_COUNT } = require('./../config/env.config').get()
 
-const getImageUrls = () => {
+const getImageUrls = async () => {
   const reducedImageUrls = []
+  const imageUrls = await instaCache()
   const imageUrlsCopy = imageUrls.slice(0)
 
   if (imageUrls.length > IMAGE_DISPLAY_COUNT) {

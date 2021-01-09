@@ -11,12 +11,6 @@ const envConfig = convict({
     env: 'PORT',
     format: 'port'
   },
-  PRE_RENDER_TOKEN: {
-    default: '',
-    doc: 'The application\'s Pre-render token',
-    env: 'PRE_RENDER_TOKEN',
-    format: String
-  },
   GMAIL_SENDER_EMAIL: {
     default: '',
     doc: 'The application\'s Sender Email, incl. name',
@@ -50,7 +44,7 @@ const envConfig = convict({
   FB_APP_SECRET: {
     default: '',
     doc: 'The application\'s Facebook App Secret',
-    env: 'FB_APP_ID',
+    env: 'FB_APP_SECRET',
     format: String
   },
   INSTAGRAM_IMAGE_IDS: {

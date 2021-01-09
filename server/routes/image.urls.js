@@ -1,4 +1,4 @@
 const { randomImages } = require('./../modules')
 
-module.exports = (req, res) =>
-  res.json({ imageUrls: randomImages.getImageUrls() })
+module.exports = async (req, res) =>
+  res.json({ imageUrls: await randomImages.getImageUrls() })

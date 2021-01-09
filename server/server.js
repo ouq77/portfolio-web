@@ -23,6 +23,7 @@ const {
   reportViolation,
   send
 } = require('./routes')
+const { instaCache } = require('./helpers')
 const { BLOCKED_UA, PORT } = require('./config/env.config').get()
 const { DAYS_IN_SECS_60 } = require('./config/cache.times')
 const expressStaticMappings = require('./config/express.props.json').static
@@ -85,7 +86,9 @@ app.get('/railtrips', cache({ nocache: true }), railTrips)
 app.get('/', cache({ nocache: true }), html)
 app.get('/*', cache({ ttl: DAYS_IN_SECS_60 }), fourOhFour)
 
-app.listen(PORT, () => {
-  console.log(`node ${process.version}`)
-  console.info(`listening on port ${PORT}`)
+instaCache().then(() => {
+  app.listen(PORT, () => {
+    console.log(`node ${process.version}`)
+    console.info(`listening on port ${PORT}`)
+  })
 })
