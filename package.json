@@ -1,7 +1,7 @@
 {
   "name": "ouq77-portfolio",
   "author": "ouq77",
-  "version": "10.3.5",
+  "version": "10.3.6",
   "description": "On-line portfolio of Louw Swart",
   "main": "server/server.js",
   "repository": {
@@ -19,7 +19,7 @@
   "license": "MIT",
   "dependencies": {
     "body-parser": "1.19.0",
-    "cache-manager": "3.4.0",
+    "cache-manager": "3.4.1",
     "camelcase": "6.2.0",
     "compression": "1.7.4",
     "convict": "6.0.0",
